@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<link rel="canonical" href="https://shuvendu-lahiri.github.io/nfv_dashboard/">
+<title>NFV audit dashboards</title>
+<style>
+:root { color-scheme:light; --ink:#243044; --muted:#596675; --line:#d8d4c9; --red:#a52020; --green:#146343; }
+* { box-sizing:border-box; }
+body { margin:0; color:var(--ink); background:linear-gradient(140deg,#f8f3e9,#eff5ef); font:16px/1.5 "Segoe UI",sans-serif; }
+main { max-width:1200px; margin:auto; padding:24px 18px 40px; }
+header { color:white; background:linear-gradient(120deg,#23394e,#216253); padding:24px; border-radius:16px; }
+header a { color:#d7efff; }
+h1 { margin:8px 0; font-size:clamp(26px,4vw,38px); }
+h2 { margin-top:0; }
+a { color:#185c95; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr)); gap:18px; margin-top:18px; }
+.card,.totals { padding:22px; background:#fffdf8; border:1px solid var(--line); border-radius:12px; box-shadow:0 6px 18px #2430440a; }
+.totals { margin-top:18px; }
+.red { color:var(--red); font-weight:700; }
+.green { color:var(--green); font-weight:700; }
+.muted { color:var(--muted); font-size:14px; }
+dl { display:grid; grid-template-columns:1fr auto; gap:9px 16px; }
+dt,dd { margin:0; }
+dd { font-weight:700; font-variant-numeric:tabular-nums; }
+.open { display:inline-block; margin-top:8px; padding:10px 15px; color:white; background:#216253; border-radius:6px; text-decoration:none; }
+footer { margin-top:22px; color:var(--muted); font-size:14px; overflow-wrap:anywhere; }
+</style>
+</head>
+<body>
+<main>
+<noscript>Read the <a href="https://github.com/shuvendu-lahiri/nfv_dashboard/blob/nfv-reports/README.md">GitHub-readable dashboard index</a>.</noscript>
+<header>
+<a href="https://arxiv.org/abs/2608.21516">Neuro-Formal Verification</a>
+<h1>NFV audit dashboards</h1>
+<p>Published results from the prototype NFV reviewer for Z3, LiteBox and NVX.</p>
+<p><strong>Conditional MODEL refutations are not confirmed source bugs.</strong>
+Verification concerns translated models under their stated assumptions; failure to refute is not evidence of correctness.</p>
+</header>
+<section class="totals" aria-label="Combined published results"><h2>Across all repositories</h2><p id="totals"></p><p id="outcomes"></p></section>
+<section id="repositories" class="grid" aria-label="Repository dashboards"></section>
+<footer>
+<p>Counts use the latest published report per PR, not every workflow attempt or previous report.
+Missing reports remain unknown, not successful zero-finding analyses. Each dashboard includes search,
+filters, highlighted refutations, original reports and workflow evidence.</p>
+<p id="snapshot"></p>
+<p><a href="https://github.com/shuvendu-lahiri/nfv_dashboard">Dashboard repository</a> &middot;
+<a href="data.json">Combined snapshot</a>. These pages are public static snapshots; no new audits or automatic refresh schedule are started by viewing them.</p>
+</footer>
+</main>
+<script type="application/json" id="data">{"schema": 1, "generated_at": "2026-10-23T19:44:16.794458+00:00", "summary": {"attempted_prs": 95, "published_reports": 79, "workflow_attempts": 145, "without_report": 16, "refuted_prs": 20, "properties": 441, "outcomes": {"refuted": 22, "verified": 244, "resources exhausted": 50, "type-check/audit failure": 125}}, "repositories": [{"name": "z3", "label": "Z3", "repository": "shuvendu-lahiri/z3", "generated_at": "2026-10-23T19:44:16.794458+00:00", "summary": {"selected_prs": 31, "attempted_prs": 31, "published_reports": 25, "workflow_attempts": 72, "without_report": 6, "refuted_prs": 4, "properties": 92, "outcomes": {"refuted": 4, "verified": 30, "resources exhausted": 20, "type-check/audit failure": 38}}}, {"name": "litebox", "label": "LiteBox", "repository": "shuvendu-lahiri/litebox", "generated_at": "2026-10-23T19:44:16.794458+00:00", "summary": {"selected_prs": 44, "attempted_prs": 44, "published_reports": 34, "workflow_attempts": 50, "without_report": 10, "refuted_prs": 10, "properties": 251, "outcomes": {"refuted": 11, "verified": 153, "resources exhausted": 28, "type-check/audit failure": 59}}}, {"name": "nvx", "label": "NVX", "repository": "shuvendu-lahiri/nvx", "generated_at": "2026-10-23T19:44:16.794458+00:00", "summary": {"selected_prs": 20, "attempted_prs": 20, "published_reports": 20, "workflow_attempts": 23, "without_report": 0, "refuted_prs": 6, "properties": 98, "outcomes": {"refuted": 7, "verified": 61, "resources exhausted": 2, "type-check/audit failure": 28}}}]}</script>
+<script>
+"use strict";
+const data = JSON.parse(document.getElementById("data").textContent);
+const text = (tag, value, className) => {
+  const element = document.createElement(tag);
+  element.textContent = value;
+  if (className) element.className = className;
+  return element;
+};
+const s = data.summary;
+document.getElementById("totals").textContent =
+  `${s.attempted_prs} attempted PRs / ${s.workflow_attempts} workflow attempts / ${s.published_reports} published reports / ${s.properties} properties.`;
+document.getElementById("outcomes").textContent =
+  `${s.outcomes.refuted} conditional model refutations across ${s.refuted_prs} PRs; ${s.outcomes.verified} model verifications; ${s.outcomes["resources exhausted"]} resources exhausted; ${s.outcomes["type-check/audit failure"]} type-check/audit failures; ${s.without_report} PRs without reports.`;
+for (const repository of data.repositories) {
+  const card = text("article", "", "card");
+  card.append(text("h2", repository.label), text("p", repository.repository, "muted"));
+  const stats = document.createElement("dl");
+  const summary = repository.summary;
+  for (const [label, value, className] of [
+    ["PRs attempted", summary.attempted_prs, ""],
+    ["Published reports", summary.published_reports, ""],
+    ["Conditional refutations", summary.outcomes.refuted, "red"],
+    ["PRs with refutations", summary.refuted_prs, "red"],
+    ["Model verifications", summary.outcomes.verified, "green"],
+    ["Resources exhausted", summary.outcomes["resources exhausted"], ""],
+    ["Type-check / audit failures", summary.outcomes["type-check/audit failure"], ""],
+    ["PRs without reports", summary.without_report, ""],
+  ]) stats.append(text("dt", label), text("dd", value, className));
+  const link = text("a", `Open ${repository.label} dashboard`, "open");
+  link.href = `${repository.name}/`;
+  card.append(stats, link, text("p", `Snapshot: ${repository.generated_at}`, "muted"));
+  document.getElementById("repositories").append(card);
+}
+document.getElementById("snapshot").textContent = `Latest snapshot: ${data.generated_at}. Per-repository snapshots and report history are retained.`;
+</script>
+</body>
+</html>
