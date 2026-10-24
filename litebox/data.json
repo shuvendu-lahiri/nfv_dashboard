@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/litebox",
-  "generated_at": "2026-10-24T18:47:17.208323+00:00",
+  "generated_at": "2026-10-24T18:55:33.708664+00:00",
   "name": "litebox",
   "label": "LiteBox",
   "summary": {
@@ -13,10 +13,10 @@
     "refuted_prs": 10,
     "properties": 288,
     "outcomes": {
-      "refuted": 12,
-      "verified": 201,
-      "resources exhausted": 25,
-      "type-check/audit failure": 50
+      "refuted": 13,
+      "verified": 204,
+      "resources exhausted": 23,
+      "type-check/audit failure": 48
     }
   },
   "prs": [
@@ -825,11 +825,11 @@
       "head_sha": "5eee7c65181b5d41b2efac5034f3565a87d64843",
       "head_branch": "nfv-replay-1538",
       "latest_report": {
-        "comment_id": 6384631284,
-        "url": "https://github.com/shuvendu-lahiri/litebox/pull/14#issuecomment-6384631284",
-        "published_at": "2026-10-24T13:12:01Z",
-        "updated_at": "2026-10-24T13:12:01Z",
-        "body_sha256": "0e08efddacdc05a3dafda53c33d88d5964994ea664f933caa124f8f2098acc57",
+        "comment_id": 6388190321,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/14#issuecomment-6388190321",
+        "published_at": "2026-10-24T18:53:27Z",
+        "updated_at": "2026-10-24T18:53:27Z",
+        "body_sha256": "22a605d41916058bf4267b80e1bf2a33eeaf347b64923abe09ec6c0f6f87ce6f",
         "source_sha_prefix": "5eee7c65181b",
         "base_sha_prefix": "f8e97d5ca89a",
         "run_id": 39366637569,
@@ -867,8 +867,27 @@
           "comment_id": 6384631284,
           "url": "https://github.com/shuvendu-lahiri/litebox/pull/14#issuecomment-6384631284",
           "published_at": "2026-10-24T13:12:01Z",
-          "updated_at": "2026-10-24T13:12:01Z",
+          "updated_at": "2026-10-24T18:53:35Z",
           "body_sha256": "0e08efddacdc05a3dafda53c33d88d5964994ea664f933caa124f8f2098acc57",
+          "source_sha_prefix": "5eee7c65181b",
+          "base_sha_prefix": "f8e97d5ca89a",
+          "run_id": 39366637569,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39366637569",
+          "counts": {
+            "refuted": 0,
+            "verified": 10,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 10,
+          "refutations": []
+        },
+        {
+          "comment_id": 6388190321,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/14#issuecomment-6388190321",
+          "published_at": "2026-10-24T18:53:27Z",
+          "updated_at": "2026-10-24T18:53:27Z",
+          "body_sha256": "22a605d41916058bf4267b80e1bf2a33eeaf347b64923abe09ec6c0f6f87ce6f",
           "source_sha_prefix": "5eee7c65181b",
           "base_sha_prefix": "f8e97d5ca89a",
           "run_id": 39366637569,
@@ -2054,11 +2073,11 @@
       "head_sha": "fee89b2eaf88b7cba45790d5807a582354f9d42e",
       "head_branch": "nfv-replay-1254",
       "latest_report": {
-        "comment_id": 6387204294,
-        "url": "https://github.com/shuvendu-lahiri/litebox/pull/33#issuecomment-6387204294",
-        "published_at": "2026-10-24T17:18:13Z",
-        "updated_at": "2026-10-24T17:18:13Z",
-        "body_sha256": "1fa7d58067ef54b5be7ee52b9746bd2a6645110ade64976a385b9db4d1ab9f9a",
+        "comment_id": 6388201818,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/33#issuecomment-6388201818",
+        "published_at": "2026-10-24T18:54:34Z",
+        "updated_at": "2026-10-24T18:54:34Z",
+        "body_sha256": "9856ab8852d50dabc70a81b64baee9039791be9d7a624b683cd64a0da28ab581",
         "source_sha_prefix": "fee89b2eaf88",
         "base_sha_prefix": "1bced5dd986f",
         "run_id": 39456104468,
@@ -2103,8 +2122,27 @@
           "comment_id": 6387204294,
           "url": "https://github.com/shuvendu-lahiri/litebox/pull/33#issuecomment-6387204294",
           "published_at": "2026-10-24T17:18:13Z",
-          "updated_at": "2026-10-24T17:18:13Z",
+          "updated_at": "2026-10-24T18:54:40Z",
           "body_sha256": "1fa7d58067ef54b5be7ee52b9746bd2a6645110ade64976a385b9db4d1ab9f9a",
+          "source_sha_prefix": "fee89b2eaf88",
+          "base_sha_prefix": "1bced5dd986f",
+          "run_id": 39456104468,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39456104468",
+          "counts": {
+            "refuted": 0,
+            "verified": 9,
+            "resources exhausted": 0,
+            "type-check/audit failure": 1
+          },
+          "properties": 10,
+          "refutations": []
+        },
+        {
+          "comment_id": 6388201818,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/33#issuecomment-6388201818",
+          "published_at": "2026-10-24T18:54:34Z",
+          "updated_at": "2026-10-24T18:54:34Z",
+          "body_sha256": "9856ab8852d50dabc70a81b64baee9039791be9d7a624b683cd64a0da28ab581",
           "source_sha_prefix": "fee89b2eaf88",
           "base_sha_prefix": "1bced5dd986f",
           "run_id": 39456104468,
@@ -2137,11 +2175,11 @@
       "head_sha": "19357d18cfb5fbdafda2b5e64730a7939a3ea079",
       "head_branch": "nfv-replay-1078",
       "latest_report": {
-        "comment_id": 6387173549,
-        "url": "https://github.com/shuvendu-lahiri/litebox/pull/34#issuecomment-6387173549",
-        "published_at": "2026-10-24T17:15:18Z",
-        "updated_at": "2026-10-24T17:15:18Z",
-        "body_sha256": "d9082ab2f139341d20631b8af1e17829fe3677ad09a2fb53244849b63ae50c3d",
+        "comment_id": 6388203409,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/34#issuecomment-6388203409",
+        "published_at": "2026-10-24T18:54:43Z",
+        "updated_at": "2026-10-24T18:54:43Z",
+        "body_sha256": "e8b143745849ef812c8ede81214313c3bd88618fcedaa69ca53004045346af00",
         "source_sha_prefix": "19357d18cfb5",
         "base_sha_prefix": "db4addac6cf5",
         "run_id": 39456543041,
@@ -2179,8 +2217,27 @@
           "comment_id": 6387173549,
           "url": "https://github.com/shuvendu-lahiri/litebox/pull/34#issuecomment-6387173549",
           "published_at": "2026-10-24T17:15:18Z",
-          "updated_at": "2026-10-24T17:15:18Z",
+          "updated_at": "2026-10-24T18:54:46Z",
           "body_sha256": "d9082ab2f139341d20631b8af1e17829fe3677ad09a2fb53244849b63ae50c3d",
+          "source_sha_prefix": "19357d18cfb5",
+          "base_sha_prefix": "db4addac6cf5",
+          "run_id": 39456543041,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39456543041",
+          "counts": {
+            "refuted": 0,
+            "verified": 2,
+            "resources exhausted": 4,
+            "type-check/audit failure": 1
+          },
+          "properties": 7,
+          "refutations": []
+        },
+        {
+          "comment_id": 6388203409,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/34#issuecomment-6388203409",
+          "published_at": "2026-10-24T18:54:43Z",
+          "updated_at": "2026-10-24T18:54:43Z",
+          "body_sha256": "e8b143745849ef812c8ede81214313c3bd88618fcedaa69ca53004045346af00",
           "source_sha_prefix": "19357d18cfb5",
           "base_sha_prefix": "db4addac6cf5",
           "run_id": 39456543041,
@@ -2461,11 +2518,11 @@
       "head_sha": "6956da7b17e6f9be6341467897a2b4f9f0639def",
       "head_branch": "nfv-staged-1665",
       "latest_report": {
-        "comment_id": 6387594761,
-        "url": "https://github.com/shuvendu-lahiri/litebox/pull/39#issuecomment-6387594761",
-        "published_at": "2026-10-24T17:55:41Z",
-        "updated_at": "2026-10-24T17:55:41Z",
-        "body_sha256": "ff503e7095954c9567ba736c3047191e9cd0aab44dc3eb8b7e1f632f267cacb7",
+        "comment_id": 6388205075,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/39#issuecomment-6388205075",
+        "published_at": "2026-10-24T18:54:52Z",
+        "updated_at": "2026-10-24T18:54:52Z",
+        "body_sha256": "a6709c440cb8db8f2603046c18df8a97a29d7737f4490f8e2044822c3ed98355",
         "source_sha_prefix": "6956da7b17e6",
         "base_sha_prefix": "16ffb35730c8",
         "run_id": 39532831209,
@@ -2516,8 +2573,40 @@
           "comment_id": 6387594761,
           "url": "https://github.com/shuvendu-lahiri/litebox/pull/39#issuecomment-6387594761",
           "published_at": "2026-10-24T17:55:41Z",
-          "updated_at": "2026-10-24T17:55:41Z",
+          "updated_at": "2026-10-24T18:55:03Z",
           "body_sha256": "ff503e7095954c9567ba736c3047191e9cd0aab44dc3eb8b7e1f632f267cacb7",
+          "source_sha_prefix": "6956da7b17e6",
+          "base_sha_prefix": "16ffb35730c8",
+          "run_id": 39532831209,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39532831209",
+          "counts": {
+            "refuted": 2,
+            "verified": 6,
+            "resources exhausted": 0,
+            "type-check/audit failure": 1
+          },
+          "properties": 9,
+          "refutations": [
+            {
+              "property_id": "P2",
+              "property": "Successful initialization over existing cipher state zeroizes that state.",
+              "input": "`iv = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]`; `key = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]`; `let Some(key) = tee_obj.get_key() = true`; `let Some(handle) = cryp_state.get_object_handle(true) = true`; `tee_obj_map.exists(handle) = true`; `let Some(handle) = cryp_state.get_object_handle(false) = false`; `tee_obj_map.exists(handle) = false`; `let Some(cryp_state) = tee_cryp_state_map.get_copy(state) = true`; abstract state: cipher algorithm-class condition = `true`; AES-CTR algorithm selection = `true`; successful object-copy lookup = `true`; presence of pre-existing cipher state = `true`; replacement effect of set_cipher = `false`; successful set_cipher result = `true`; zeroization effect of set_cipher = `false`; opaque cipher-state handle = `0`",
+              "sketch": "If the lookup and validation conditions permit cipher creation for a state with an existing cipher, tee_cryp_state_map.set_cipher(state, cipher)?; can succeed under the abstract call outcome while replacement and zeroization are both absent. In that conditional scenario, initialization succeeds without establishing that the prior sensitive cipher state was replaced and zeroized."
+            },
+            {
+              "property_id": "P4",
+              "property": "With a prior cipher, every released sensitive element is zero.",
+              "input": "abstract state: sensitive internal state of the supplied cipher argument = `[2]`; whether self.cipher already contains a cipher = `true`; sensitive state observed after release of the replaced cipher = `[1]`; sensitive internal state of the previously stored cipher = `[1]`",
+              "sketch": "If the prior cipher\u2019s abstract sensitive state remains nonzero when self.cipher = Some(cipher); replaces it, that prior state is not zeroized as it is released. The accepted refutation therefore conditionally shows that this replacement does not ensure the claimed zeroization behavior."
+            }
+          ]
+        },
+        {
+          "comment_id": 6388205075,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/39#issuecomment-6388205075",
+          "published_at": "2026-10-24T18:54:52Z",
+          "updated_at": "2026-10-24T18:54:52Z",
+          "body_sha256": "a6709c440cb8db8f2603046c18df8a97a29d7737f4490f8e2044822c3ed98355",
           "source_sha_prefix": "6956da7b17e6",
           "base_sha_prefix": "16ffb35730c8",
           "run_id": 39532831209,
@@ -2696,28 +2785,34 @@
       "head_sha": "31aee826f91fabb15ba011673c822b8b6d4a7ded",
       "head_branch": "nfv-staged-1637",
       "latest_report": {
-        "comment_id": 6307056163,
-        "url": "https://github.com/shuvendu-lahiri/litebox/pull/42#issuecomment-6307056163",
-        "published_at": "2026-10-21T03:09:39Z",
-        "updated_at": "2026-10-21T03:09:39Z",
-        "body_sha256": "10867878d553ec3509eaf5461eeb8755021a90126ade23b76390e1590c252e68",
+        "comment_id": 6388208161,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/42#issuecomment-6388208161",
+        "published_at": "2026-10-24T18:55:10Z",
+        "updated_at": "2026-10-24T18:55:10Z",
+        "body_sha256": "62e1df7c857d81fb4cca8362e9ba2872ac7eaaa07de6f87896cce2caf61afbf6",
         "source_sha_prefix": "31aee826f91f",
         "base_sha_prefix": "c75a700ce346",
         "run_id": 39532822431,
         "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39532822431",
         "counts": {
-          "refuted": 1,
-          "verified": 1,
-          "resources exhausted": 4,
-          "type-check/audit failure": 2
+          "refuted": 2,
+          "verified": 4,
+          "resources exhausted": 2,
+          "type-check/audit failure": 0
         },
         "properties": 8,
         "refutations": [
           {
-            "property_id": "P8",
-            "property": "After the selected vault-abort path completes, the hypothesized behavior is to print exactly the supplied static panic location only when the location pointer is non-null, print no location when it is null, and in either case finish by transferring control to VTL0 rather than returning.",
-            "input": "abstract state: whether VaultControls::detect() completes = `false`; effect of VaultControls::detect() = `2`; whether the detected-controls abort completes = `false`; effect of aborting detected vault controls = `3`; eviction-buffer contents = `[]`; vault.eviction.as_deref() is None = `false`; location.as_ref() yields Some(location) = `true`; printable identity of location = `100`; PAGE_SIZE = `4096`; effect of panic_to_vtl0() = `5`; serial_println! does not complete = `false`; effect of serial_println! = `4`; vault.spec.abort() completes = `true`; effect of vault.spec.abort() = `1`; VAULT.get() selects Some(vault) = `true`",
-            "sketch": "If crate::serial_println!(\"panicked inside the vault at {location}\") does not complete for a non-null location, control never reaches panic_to_vtl0()."
+            "property_id": "P3",
+            "property": "Exactly one VTL-switch call is observed.",
+            "input": "`err as u32 = 2147483648`; abstract state: overflow-checking mode for integer negation = `true`; outcome variant of raise_vtl0_gp_fault() = `false`; successful payload of raise_vtl0_gp_fault() = `0`; return behavior of the VTL-switch call = `false`",
+            "sketch": "If raise_vtl0_gp_fault() returns Err(err), err as u32 is 2147483648, and overflow checking is enabled, evaluating (err as u32).reinterpret_as_signed().neg().into() would negate i32::MIN and overflow. This would prevent evaluation of the enclosing VTL-switch call, conditionally refuting the requirement that it be invoked exactly once."
+          },
+          {
+            "property_id": "P6",
+            "property": "A non-null location emits exactly one vault-panic line.",
+            "input": "`if let Some(location) = unsafe { location.as_ref() } { = true`; abstract state: presence of an eviction buffer in the installed vault = `false`; validity and static lifetime of the non-null location pointer = `true`; number of matching vault-panic lines attributed to the serial print operation = `0`; presence outcome of VAULT.get() = `false`",
+            "sketch": "If the non-null branch is selected under the abstract pointer-validity assumption and the abstract serial-output effect of crate::serial_println!(\"panicked inside the vault at {location}\"); is zero matching lines, the requirement to print exactly one such line is not satisfied. The accepted refutation therefore conditionally indicates that reaching this macro call alone does not establish the claimed line count, while the subsequent panic_to_vtl0 call remains unconditional in the captured source."
           }
         ]
       },
@@ -2726,7 +2821,7 @@
           "comment_id": 6307056163,
           "url": "https://github.com/shuvendu-lahiri/litebox/pull/42#issuecomment-6307056163",
           "published_at": "2026-10-21T03:09:39Z",
-          "updated_at": "2026-10-21T03:09:39Z",
+          "updated_at": "2026-10-24T18:55:21Z",
           "body_sha256": "10867878d553ec3509eaf5461eeb8755021a90126ade23b76390e1590c252e68",
           "source_sha_prefix": "31aee826f91f",
           "base_sha_prefix": "c75a700ce346",
@@ -2745,6 +2840,38 @@
               "property": "After the selected vault-abort path completes, the hypothesized behavior is to print exactly the supplied static panic location only when the location pointer is non-null, print no location when it is null, and in either case finish by transferring control to VTL0 rather than returning.",
               "input": "abstract state: whether VaultControls::detect() completes = `false`; effect of VaultControls::detect() = `2`; whether the detected-controls abort completes = `false`; effect of aborting detected vault controls = `3`; eviction-buffer contents = `[]`; vault.eviction.as_deref() is None = `false`; location.as_ref() yields Some(location) = `true`; printable identity of location = `100`; PAGE_SIZE = `4096`; effect of panic_to_vtl0() = `5`; serial_println! does not complete = `false`; effect of serial_println! = `4`; vault.spec.abort() completes = `true`; effect of vault.spec.abort() = `1`; VAULT.get() selects Some(vault) = `true`",
               "sketch": "If crate::serial_println!(\"panicked inside the vault at {location}\") does not complete for a non-null location, control never reaches panic_to_vtl0()."
+            }
+          ]
+        },
+        {
+          "comment_id": 6388208161,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/42#issuecomment-6388208161",
+          "published_at": "2026-10-24T18:55:10Z",
+          "updated_at": "2026-10-24T18:55:10Z",
+          "body_sha256": "62e1df7c857d81fb4cca8362e9ba2872ac7eaaa07de6f87896cce2caf61afbf6",
+          "source_sha_prefix": "31aee826f91f",
+          "base_sha_prefix": "c75a700ce346",
+          "run_id": 39532822431,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39532822431",
+          "counts": {
+            "refuted": 2,
+            "verified": 4,
+            "resources exhausted": 2,
+            "type-check/audit failure": 0
+          },
+          "properties": 8,
+          "refutations": [
+            {
+              "property_id": "P3",
+              "property": "Exactly one VTL-switch call is observed.",
+              "input": "`err as u32 = 2147483648`; abstract state: overflow-checking mode for integer negation = `true`; outcome variant of raise_vtl0_gp_fault() = `false`; successful payload of raise_vtl0_gp_fault() = `0`; return behavior of the VTL-switch call = `false`",
+              "sketch": "If raise_vtl0_gp_fault() returns Err(err), err as u32 is 2147483648, and overflow checking is enabled, evaluating (err as u32).reinterpret_as_signed().neg().into() would negate i32::MIN and overflow. This would prevent evaluation of the enclosing VTL-switch call, conditionally refuting the requirement that it be invoked exactly once."
+            },
+            {
+              "property_id": "P6",
+              "property": "A non-null location emits exactly one vault-panic line.",
+              "input": "`if let Some(location) = unsafe { location.as_ref() } { = true`; abstract state: presence of an eviction buffer in the installed vault = `false`; validity and static lifetime of the non-null location pointer = `true`; number of matching vault-panic lines attributed to the serial print operation = `0`; presence outcome of VAULT.get() = `false`",
+              "sketch": "If the non-null branch is selected under the abstract pointer-validity assumption and the abstract serial-output effect of crate::serial_println!(\"panicked inside the vault at {location}\"); is zero matching lines, the requirement to print exactly one such line is not satisfied. The accepted refutation therefore conditionally indicates that reaching this macro call alone does not establish the claimed line count, while the subsequent panic_to_vtl0 call remains unconditional in the captured source."
             }
           ]
         }
@@ -2864,11 +2991,11 @@
       "head_sha": "69c37c3d59ea563e4dd80672d171c8cbca248168",
       "head_branch": "nfv-staged-1633",
       "latest_report": {
-        "comment_id": 6387940255,
-        "url": "https://github.com/shuvendu-lahiri/litebox/pull/44#issuecomment-6387940255",
-        "published_at": "2026-10-24T18:29:07Z",
-        "updated_at": "2026-10-24T18:29:07Z",
-        "body_sha256": "8d1b3355dd7becdb339de83fb32660b62fc543bea44fa148a41221caaa898c5a",
+        "comment_id": 6388210553,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/44#issuecomment-6388210553",
+        "published_at": "2026-10-24T18:55:24Z",
+        "updated_at": "2026-10-24T18:55:24Z",
+        "body_sha256": "4e59a3afa31cdd47dd5933e672ec30d7f2291c09321def11b03981de061539dd",
         "source_sha_prefix": "69c37c3d59ea",
         "base_sha_prefix": "958545d6d7fb",
         "run_id": 39532816407,
@@ -2906,8 +3033,27 @@
           "comment_id": 6387940255,
           "url": "https://github.com/shuvendu-lahiri/litebox/pull/44#issuecomment-6387940255",
           "published_at": "2026-10-24T18:29:07Z",
-          "updated_at": "2026-10-24T18:29:07Z",
+          "updated_at": "2026-10-24T18:55:32Z",
           "body_sha256": "8d1b3355dd7becdb339de83fb32660b62fc543bea44fa148a41221caaa898c5a",
+          "source_sha_prefix": "69c37c3d59ea",
+          "base_sha_prefix": "958545d6d7fb",
+          "run_id": 39532816407,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39532816407",
+          "counts": {
+            "refuted": 0,
+            "verified": 9,
+            "resources exhausted": 0,
+            "type-check/audit failure": 1
+          },
+          "properties": 10,
+          "refutations": []
+        },
+        {
+          "comment_id": 6388210553,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/44#issuecomment-6388210553",
+          "published_at": "2026-10-24T18:55:24Z",
+          "updated_at": "2026-10-24T18:55:24Z",
+          "body_sha256": "4e59a3afa31cdd47dd5933e672ec30d7f2291c09321def11b03981de061539dd",
           "source_sha_prefix": "69c37c3d59ea",
           "base_sha_prefix": "958545d6d7fb",
           "run_id": 39532816407,

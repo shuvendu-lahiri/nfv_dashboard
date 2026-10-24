@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/nvx",
-  "generated_at": "2026-10-24T18:47:17.208323+00:00",
+  "generated_at": "2026-10-24T18:55:33.708664+00:00",
   "name": "nvx",
   "label": "NVX",
   "summary": {
@@ -14,9 +14,9 @@
     "properties": 102,
     "outcomes": {
       "refuted": 4,
-      "verified": 74,
+      "verified": 77,
       "resources exhausted": 5,
-      "type-check/audit failure": 19
+      "type-check/audit failure": 16
     }
   },
   "prs": [
@@ -351,11 +351,11 @@
       "head_sha": "1f88dd5b30b961cc6376bc39aaed32253e4e3e30",
       "head_branch": "nfv-pedro-742",
       "latest_report": {
-        "comment_id": 6383361770,
-        "url": "https://github.com/shuvendu-lahiri/nvx/pull/5#issuecomment-6383361770",
-        "published_at": "2026-10-24T10:56:49Z",
-        "updated_at": "2026-10-24T10:56:49Z",
-        "body_sha256": "6d7eec8dbe9f7a100cc4d0574086eb339e74d23b18a583052c3b1291ee422106",
+        "comment_id": 6388187830,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/5#issuecomment-6388187830",
+        "published_at": "2026-10-24T18:53:13Z",
+        "updated_at": "2026-10-24T18:53:13Z",
+        "body_sha256": "a53ebcc4b14596682c50892061addfb35a07ca846359aa3d31623111cddef3cf",
         "source_sha_prefix": "1f88dd5b30b9",
         "base_sha_prefix": "f71302a2ea87",
         "run_id": 39890427567,
@@ -393,8 +393,27 @@
           "comment_id": 6383361770,
           "url": "https://github.com/shuvendu-lahiri/nvx/pull/5#issuecomment-6383361770",
           "published_at": "2026-10-24T10:56:49Z",
-          "updated_at": "2026-10-24T10:56:49Z",
+          "updated_at": "2026-10-24T18:53:18Z",
           "body_sha256": "6d7eec8dbe9f7a100cc4d0574086eb339e74d23b18a583052c3b1291ee422106",
+          "source_sha_prefix": "1f88dd5b30b9",
+          "base_sha_prefix": "f71302a2ea87",
+          "run_id": 39890427567,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39890427567",
+          "counts": {
+            "refuted": 0,
+            "verified": 4,
+            "resources exhausted": 0,
+            "type-check/audit failure": 1
+          },
+          "properties": 5,
+          "refutations": []
+        },
+        {
+          "comment_id": 6388187830,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/5#issuecomment-6388187830",
+          "published_at": "2026-10-24T18:53:13Z",
+          "updated_at": "2026-10-24T18:53:13Z",
+          "body_sha256": "a53ebcc4b14596682c50892061addfb35a07ca846359aa3d31623111cddef3cf",
           "source_sha_prefix": "1f88dd5b30b9",
           "base_sha_prefix": "f71302a2ea87",
           "run_id": 39890427567,
@@ -490,11 +509,11 @@
       "head_sha": "63221745fa27d1e52d3d7fb8bd865534ee1c0a0f",
       "head_branch": "nfv-pedro-689",
       "latest_report": {
-        "comment_id": 6383542807,
-        "url": "https://github.com/shuvendu-lahiri/nvx/pull/7#issuecomment-6383542807",
-        "published_at": "2026-10-24T11:16:14Z",
-        "updated_at": "2026-10-24T11:16:14Z",
-        "body_sha256": "4e1b6446b6b8cce71bb39f463d1fe02e945ca05e6ab16664b92f41095c7a4a4b",
+        "comment_id": 6388189013,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/7#issuecomment-6388189013",
+        "published_at": "2026-10-24T18:53:20Z",
+        "updated_at": "2026-10-24T18:53:20Z",
+        "body_sha256": "7a02aeb4a8bdda16d8b0e0f93a2ba9a4294732948b996f01f49174527df6e5df",
         "source_sha_prefix": "63221745fa27",
         "base_sha_prefix": "fa35136d4db5",
         "run_id": 39891744153,
@@ -532,8 +551,27 @@
           "comment_id": 6383542807,
           "url": "https://github.com/shuvendu-lahiri/nvx/pull/7#issuecomment-6383542807",
           "published_at": "2026-10-24T11:16:14Z",
-          "updated_at": "2026-10-24T11:16:14Z",
+          "updated_at": "2026-10-24T18:53:24Z",
           "body_sha256": "4e1b6446b6b8cce71bb39f463d1fe02e945ca05e6ab16664b92f41095c7a4a4b",
+          "source_sha_prefix": "63221745fa27",
+          "base_sha_prefix": "fa35136d4db5",
+          "run_id": 39891744153,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39891744153",
+          "counts": {
+            "refuted": 0,
+            "verified": 2,
+            "resources exhausted": 0,
+            "type-check/audit failure": 1
+          },
+          "properties": 3,
+          "refutations": []
+        },
+        {
+          "comment_id": 6388189013,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/7#issuecomment-6388189013",
+          "published_at": "2026-10-24T18:53:20Z",
+          "updated_at": "2026-10-24T18:53:20Z",
+          "body_sha256": "7a02aeb4a8bdda16d8b0e0f93a2ba9a4294732948b996f01f49174527df6e5df",
           "source_sha_prefix": "63221745fa27",
           "base_sha_prefix": "fa35136d4db5",
           "run_id": 39891744153,
@@ -1077,11 +1115,11 @@
       "head_sha": "9261ed1f31426f75123f35c68fada188fb047c67",
       "head_branch": "nfv-pedro-680",
       "latest_report": {
-        "comment_id": 6384666255,
-        "url": "https://github.com/shuvendu-lahiri/nvx/pull/14#issuecomment-6384666255",
-        "published_at": "2026-10-24T13:15:31Z",
-        "updated_at": "2026-10-24T13:15:31Z",
-        "body_sha256": "1bdc2e6d4f76434be4c42dc6e29a982942a262ab61aec83bbcc11a6faa824b78",
+        "comment_id": 6388192224,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/14#issuecomment-6388192224",
+        "published_at": "2026-10-24T18:53:38Z",
+        "updated_at": "2026-10-24T18:53:38Z",
+        "body_sha256": "aefaed102f00925ab621cd61e523a70d42aed1945660b990d8dd42c5ffb078f2",
         "source_sha_prefix": "9261ed1f3142",
         "base_sha_prefix": "0a5afbe87d11",
         "run_id": 39893712214,
@@ -1119,8 +1157,27 @@
           "comment_id": 6384666255,
           "url": "https://github.com/shuvendu-lahiri/nvx/pull/14#issuecomment-6384666255",
           "published_at": "2026-10-24T13:15:31Z",
-          "updated_at": "2026-10-24T13:15:31Z",
+          "updated_at": "2026-10-24T18:53:45Z",
           "body_sha256": "1bdc2e6d4f76434be4c42dc6e29a982942a262ab61aec83bbcc11a6faa824b78",
+          "source_sha_prefix": "9261ed1f3142",
+          "base_sha_prefix": "0a5afbe87d11",
+          "run_id": 39893712214,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39893712214",
+          "counts": {
+            "refuted": 0,
+            "verified": 6,
+            "resources exhausted": 1,
+            "type-check/audit failure": 0
+          },
+          "properties": 7,
+          "refutations": []
+        },
+        {
+          "comment_id": 6388192224,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/14#issuecomment-6388192224",
+          "published_at": "2026-10-24T18:53:38Z",
+          "updated_at": "2026-10-24T18:53:38Z",
+          "body_sha256": "aefaed102f00925ab621cd61e523a70d42aed1945660b990d8dd42c5ffb078f2",
           "source_sha_prefix": "9261ed1f3142",
           "base_sha_prefix": "0a5afbe87d11",
           "run_id": 39893712214,
@@ -1235,28 +1292,28 @@
       "head_sha": "1576d97c5c0c7b73a7fee98e6bfe19e6317adeed",
       "head_branch": "nfv-pedro-659",
       "latest_report": {
-        "comment_id": 6357198686,
-        "url": "https://github.com/shuvendu-lahiri/nvx/pull/16#issuecomment-6357198686",
-        "published_at": "2026-10-23T04:12:55Z",
-        "updated_at": "2026-10-23T04:12:55Z",
-        "body_sha256": "c5707e93b22bad2416bf394c014a95bdc5f2151eb2d42e6e469711720bc0d8ac",
+        "comment_id": 6388197564,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/16#issuecomment-6388197564",
+        "published_at": "2026-10-24T18:54:09Z",
+        "updated_at": "2026-10-24T18:54:09Z",
+        "body_sha256": "71c60ac1013c0d0c6129dba39e37179c4353b75a9d08a6b1004dd2a65fb55251",
         "source_sha_prefix": "1576d97c5c0c",
         "base_sha_prefix": "7a32915eac21",
         "run_id": 39896467670,
         "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39896467670",
         "counts": {
           "refuted": 1,
-          "verified": 4,
+          "verified": 7,
           "resources exhausted": 0,
-          "type-check/audit failure": 4
+          "type-check/audit failure": 1
         },
         "properties": 9,
         "refutations": [
           {
-            "property_id": "P8",
-            "property": "When close is called, it attempts to stop the interaction before draining queued output; if interaction shutdown raises, it still attempts the drain when the transcript is open; and regardless of shutdown or drain failure, it attempts to close the transcript. If final transcript closure returns normally, the process is marked finished.",
-            "input": "`self._finished = false`; `not self._log.closed = true`; `self.process.poll() is None = true`; abstract state: queued output items available to _drain_available = `[]`; whether the transcript close operation raises = `false`; whether self._interaction.close() raises = `false`; whether terminate(self.process) raises = `true`; per-chunk transcript write and flush outcomes = `[]`",
-            "sketch": "If terminate(self.process) raises before the surrounding try block is entered, interaction shutdown, draining, and final transcript closure are skipped."
+            "property_id": "P4",
+            "property": "Missing the EOF deadline triggers output-timeout failure.",
+            "input": "`time.monotonic() = 2`; `time.monotonic() = 0`; `returncode = 0`; `timeout = 1`; abstract state: per-element results of `time.monotonic() = [0]`; times at which successive queue outcomes become observable = `[2]`; whether the time-ABI finish or exit check raises TimeAbiFailure = `false`; whether self.process.wait raises subprocess.TimeoutExpired = `false`; successive outcomes of self._chunks.get = `[1]`; queue iteration at which EOF or the deadline ends the loop = `0`",
+            "sketch": "If `remaining <= 0` is false before the blocking queue call but EOF becomes observable only after the deadline, the loop can break and reach `process.wait` without selecting the output-timeout failure path."
           }
         ]
       },
@@ -1265,7 +1322,7 @@
           "comment_id": 6357198686,
           "url": "https://github.com/shuvendu-lahiri/nvx/pull/16#issuecomment-6357198686",
           "published_at": "2026-10-23T04:12:55Z",
-          "updated_at": "2026-10-23T04:12:55Z",
+          "updated_at": "2026-10-24T18:54:23Z",
           "body_sha256": "c5707e93b22bad2416bf394c014a95bdc5f2151eb2d42e6e469711720bc0d8ac",
           "source_sha_prefix": "1576d97c5c0c",
           "base_sha_prefix": "7a32915eac21",
@@ -1284,6 +1341,32 @@
               "property": "When close is called, it attempts to stop the interaction before draining queued output; if interaction shutdown raises, it still attempts the drain when the transcript is open; and regardless of shutdown or drain failure, it attempts to close the transcript. If final transcript closure returns normally, the process is marked finished.",
               "input": "`self._finished = false`; `not self._log.closed = true`; `self.process.poll() is None = true`; abstract state: queued output items available to _drain_available = `[]`; whether the transcript close operation raises = `false`; whether self._interaction.close() raises = `false`; whether terminate(self.process) raises = `true`; per-chunk transcript write and flush outcomes = `[]`",
               "sketch": "If terminate(self.process) raises before the surrounding try block is entered, interaction shutdown, draining, and final transcript closure are skipped."
+            }
+          ]
+        },
+        {
+          "comment_id": 6388197564,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/16#issuecomment-6388197564",
+          "published_at": "2026-10-24T18:54:09Z",
+          "updated_at": "2026-10-24T18:54:09Z",
+          "body_sha256": "71c60ac1013c0d0c6129dba39e37179c4353b75a9d08a6b1004dd2a65fb55251",
+          "source_sha_prefix": "1576d97c5c0c",
+          "base_sha_prefix": "7a32915eac21",
+          "run_id": 39896467670,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39896467670",
+          "counts": {
+            "refuted": 1,
+            "verified": 7,
+            "resources exhausted": 0,
+            "type-check/audit failure": 1
+          },
+          "properties": 9,
+          "refutations": [
+            {
+              "property_id": "P4",
+              "property": "Missing the EOF deadline triggers output-timeout failure.",
+              "input": "`time.monotonic() = 2`; `time.monotonic() = 0`; `returncode = 0`; `timeout = 1`; abstract state: per-element results of `time.monotonic() = [0]`; times at which successive queue outcomes become observable = `[2]`; whether the time-ABI finish or exit check raises TimeAbiFailure = `false`; whether self.process.wait raises subprocess.TimeoutExpired = `false`; successive outcomes of self._chunks.get = `[1]`; queue iteration at which EOF or the deadline ends the loop = `0`",
+              "sketch": "If `remaining <= 0` is false before the blocking queue call but EOF becomes observable only after the deadline, the loop can break and reach `process.wait` without selecting the output-timeout failure path."
             }
           ]
         }

@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/z3",
-  "generated_at": "2026-10-24T18:47:17.208323+00:00",
+  "generated_at": "2026-10-24T18:55:33.708664+00:00",
   "name": "z3",
   "label": "Z3",
   "summary": {
@@ -1120,11 +1120,11 @@
       "head_sha": "b17b5e3bcbea01203db74b10621ff327813180b6",
       "head_branch": "nfv-cohort/11123-head",
       "latest_report": {
-        "comment_id": 6384498642,
-        "url": "https://github.com/shuvendu-lahiri/z3/pull/35#issuecomment-6384498642",
-        "published_at": "2026-10-24T12:58:24Z",
-        "updated_at": "2026-10-24T12:58:24Z",
-        "body_sha256": "59ad43af40187e1777e7fa24768d1c399d82040449ffbfcc44336a5fd8ef75e5",
+        "comment_id": 6388194175,
+        "url": "https://github.com/shuvendu-lahiri/z3/pull/35#issuecomment-6388194175",
+        "published_at": "2026-10-24T18:53:49Z",
+        "updated_at": "2026-10-24T18:53:49Z",
+        "body_sha256": "20fb4763c7131fe317285575119a884992f48e48e28d105128d2d5b9f240c8a2",
         "source_sha_prefix": "b17b5e3bcbea",
         "base_sha_prefix": "b2077ba66ff8",
         "run_id": 39012427142,
@@ -1141,7 +1141,7 @@
             "property_id": "P1",
             "property": "Under the complete padding guard, the returned string meets the known length lower bound.",
             "input": "`m_util.str.is_string(fresh, s) = true`; `fresh = true`; `lo.is_pos() = true`; `lo.is_unsigned() = true`; `lo.get_unsigned() = 2`; `lower_bound2(e, lo) = true`; `is_var(result) = false`; `m_util.is_seq(result) = true`; `m.is_value(result) = false`; `val = false`; abstract state: fresh concrete string returned for the unresolved sequence = `[0]`; expression selected by get_ite_value = `0`; representative value for the selected expression = `[]`; result after rewriting = `[]`; selected expression identity = `0`; fresh value requested for a variable result = `[]`",
-            "sketch": "If the one-character fresh string encodes as the five-byte text `(u/redacted){0}` and need is 2, `padded.length() < need` is false. The loop therefore skips appending `a`, leaving the reconstructed string shorter than the reported lower bound."
+            "sketch": "If the one-character fresh string encodes as the five-byte text `\\u{0}` and need is 2, `padded.length() < need` is false. The loop therefore skips appending `a`, leaving the reconstructed string shorter than the reported lower bound."
           }
         ]
       },
@@ -1176,7 +1176,7 @@
           "comment_id": 6384498642,
           "url": "https://github.com/shuvendu-lahiri/z3/pull/35#issuecomment-6384498642",
           "published_at": "2026-10-24T12:58:24Z",
-          "updated_at": "2026-10-24T12:58:24Z",
+          "updated_at": "2026-10-24T18:53:57Z",
           "body_sha256": "59ad43af40187e1777e7fa24768d1c399d82040449ffbfcc44336a5fd8ef75e5",
           "source_sha_prefix": "b17b5e3bcbea",
           "base_sha_prefix": "b2077ba66ff8",
@@ -1195,6 +1195,32 @@
               "property": "Under the complete padding guard, the returned string meets the known length lower bound.",
               "input": "`m_util.str.is_string(fresh, s) = true`; `fresh = true`; `lo.is_pos() = true`; `lo.is_unsigned() = true`; `lo.get_unsigned() = 2`; `lower_bound2(e, lo) = true`; `is_var(result) = false`; `m_util.is_seq(result) = true`; `m.is_value(result) = false`; `val = false`; abstract state: fresh concrete string returned for the unresolved sequence = `[0]`; expression selected by get_ite_value = `0`; representative value for the selected expression = `[]`; result after rewriting = `[]`; selected expression identity = `0`; fresh value requested for a variable result = `[]`",
               "sketch": "If the one-character fresh string encodes as the five-byte text `(u/redacted){0}` and need is 2, `padded.length() < need` is false. The loop therefore skips appending `a`, leaving the reconstructed string shorter than the reported lower bound."
+            }
+          ]
+        },
+        {
+          "comment_id": 6388194175,
+          "url": "https://github.com/shuvendu-lahiri/z3/pull/35#issuecomment-6388194175",
+          "published_at": "2026-10-24T18:53:49Z",
+          "updated_at": "2026-10-24T18:53:49Z",
+          "body_sha256": "20fb4763c7131fe317285575119a884992f48e48e28d105128d2d5b9f240c8a2",
+          "source_sha_prefix": "b17b5e3bcbea",
+          "base_sha_prefix": "b2077ba66ff8",
+          "run_id": 39012427142,
+          "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39012427142",
+          "counts": {
+            "refuted": 1,
+            "verified": 1,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 2,
+          "refutations": [
+            {
+              "property_id": "P1",
+              "property": "Under the complete padding guard, the returned string meets the known length lower bound.",
+              "input": "`m_util.str.is_string(fresh, s) = true`; `fresh = true`; `lo.is_pos() = true`; `lo.is_unsigned() = true`; `lo.get_unsigned() = 2`; `lower_bound2(e, lo) = true`; `is_var(result) = false`; `m_util.is_seq(result) = true`; `m.is_value(result) = false`; `val = false`; abstract state: fresh concrete string returned for the unresolved sequence = `[0]`; expression selected by get_ite_value = `0`; representative value for the selected expression = `[]`; result after rewriting = `[]`; selected expression identity = `0`; fresh value requested for a variable result = `[]`",
+              "sketch": "If the one-character fresh string encodes as the five-byte text `\\u{0}` and need is 2, `padded.length() < need` is false. The loop therefore skips appending `a`, leaving the reconstructed string shorter than the reported lower bound."
             }
           ]
         }
@@ -1236,11 +1262,11 @@
       "head_sha": "ad6f26e2c143495a92cd2dee56872d6fdf6aa5f1",
       "head_branch": "nfv-cohort/11130-head",
       "latest_report": {
-        "comment_id": 6385103774,
-        "url": "https://github.com/shuvendu-lahiri/z3/pull/37#issuecomment-6385103774",
-        "published_at": "2026-10-24T13:59:37Z",
-        "updated_at": "2026-10-24T13:59:37Z",
-        "body_sha256": "dfba9eb3738d238fd142aa011191f6f5aa0d7e4fe7319953040c1834c570d758",
+        "comment_id": 6388200584,
+        "url": "https://github.com/shuvendu-lahiri/z3/pull/37#issuecomment-6388200584",
+        "published_at": "2026-10-24T18:54:26Z",
+        "updated_at": "2026-10-24T18:54:26Z",
+        "body_sha256": "c90c12c3a9fa391ff4bb4c78fb70dee34d773e598f31c8238a1e45767849e1c8",
         "source_sha_prefix": "ad6f26e2c143",
         "base_sha_prefix": "0a5e0c1bd484",
         "run_id": 39012839420,
@@ -1259,8 +1285,27 @@
           "comment_id": 6385103774,
           "url": "https://github.com/shuvendu-lahiri/z3/pull/37#issuecomment-6385103774",
           "published_at": "2026-10-24T13:59:37Z",
-          "updated_at": "2026-10-24T13:59:37Z",
+          "updated_at": "2026-10-24T18:54:31Z",
           "body_sha256": "dfba9eb3738d238fd142aa011191f6f5aa0d7e4fe7319953040c1834c570d758",
+          "source_sha_prefix": "ad6f26e2c143",
+          "base_sha_prefix": "0a5e0c1bd484",
+          "run_id": 39012839420,
+          "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39012839420",
+          "counts": {
+            "refuted": 0,
+            "verified": 6,
+            "resources exhausted": 2,
+            "type-check/audit failure": 1
+          },
+          "properties": 9,
+          "refutations": []
+        },
+        {
+          "comment_id": 6388200584,
+          "url": "https://github.com/shuvendu-lahiri/z3/pull/37#issuecomment-6388200584",
+          "published_at": "2026-10-24T18:54:26Z",
+          "updated_at": "2026-10-24T18:54:26Z",
+          "body_sha256": "c90c12c3a9fa391ff4bb4c78fb70dee34d773e598f31c8238a1e45767849e1c8",
           "source_sha_prefix": "ad6f26e2c143",
           "base_sha_prefix": "0a5e0c1bd484",
           "run_id": 39012839420,
