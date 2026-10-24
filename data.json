@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "generated_at": "2026-10-24T15:34:35.522912+00:00",
+  "generated_at": "2026-10-24T15:51:58.054571+00:00",
   "summary": {
     "attempted_prs": 95,
     "published_reports": 84,
-    "workflow_attempts": 212,
+    "workflow_attempts": 216,
     "without_report": 11,
     "refuted_prs": 22,
-    "properties": 499,
+    "properties": 496,
     "outcomes": {
       "refuted": 24,
       "verified": 309,
-      "resources exhausted": 50,
-      "type-check/audit failure": 116
+      "resources exhausted": 48,
+      "type-check/audit failure": 115
     }
   },
   "repositories": [
@@ -20,20 +20,20 @@
       "name": "z3",
       "label": "Z3",
       "repository": "shuvendu-lahiri/z3",
-      "generated_at": "2026-10-24T15:34:35.522912+00:00",
+      "generated_at": "2026-10-24T15:51:58.054571+00:00",
       "summary": {
         "selected_prs": 31,
         "attempted_prs": 31,
         "published_reports": 27,
-        "workflow_attempts": 97,
+        "workflow_attempts": 99,
         "without_report": 4,
         "refuted_prs": 5,
-        "properties": 116,
+        "properties": 113,
         "outcomes": {
           "refuted": 5,
           "verified": 62,
-          "resources exhausted": 16,
-          "type-check/audit failure": 33
+          "resources exhausted": 14,
+          "type-check/audit failure": 32
         }
       }
     },
@@ -41,12 +41,12 @@
       "name": "litebox",
       "label": "LiteBox",
       "repository": "shuvendu-lahiri/litebox",
-      "generated_at": "2026-10-24T15:34:35.522912+00:00",
+      "generated_at": "2026-10-24T15:51:58.054571+00:00",
       "summary": {
         "selected_prs": 44,
         "attempted_prs": 44,
         "published_reports": 37,
-        "workflow_attempts": 72,
+        "workflow_attempts": 74,
         "without_report": 7,
         "refuted_prs": 13,
         "properties": 281,
@@ -62,7 +62,7 @@
       "name": "nvx",
       "label": "NVX",
       "repository": "shuvendu-lahiri/nvx",
-      "generated_at": "2026-10-24T15:34:35.522912+00:00",
+      "generated_at": "2026-10-24T15:51:58.054571+00:00",
       "summary": {
         "selected_prs": 20,
         "attempted_prs": 20,
