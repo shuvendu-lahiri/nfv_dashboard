@@ -5,7 +5,7 @@ Published results from the prototype [Neuro-Formal Verification](https://arxiv.o
 
 **[Live interactive dashboard](https://shuvendu-lahiri.github.io/nfv_dashboard/nvx/)** / [all repositories](https://shuvendu-lahiri.github.io/nfv_dashboard/) or [download the standalone HTML](index.html) (no server or external dependencies).
 
-Snapshot: 2026-10-24T18:37:03.757323+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
+Snapshot: 2026-10-24T18:47:17.208323+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
 
 **20 PRs attempted; 43 workflow attempts; 20 published reports; 4 PRs with 4 conditional refutations; 74 model verifications; 0 PRs without a published report.**
 
