@@ -5,14 +5,15 @@ Published results from the prototype [Neuro-Formal Verification](https://arxiv.o
 
 **[Live interactive dashboard](https://shuvendu-lahiri.github.io/nfv_dashboard/litebox/)** / [all repositories](https://shuvendu-lahiri.github.io/nfv_dashboard/) or [download the standalone HTML](index.html) (no server or external dependencies).
 
-Snapshot: 2026-10-24T09:00:27.264791+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
+Snapshot: 2026-10-24T09:38:28.415691+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
 
-**44 PRs attempted; 51 workflow attempts; 34 published reports; 9 PRs with 10 conditional refutations; 154 model verifications; 10 PRs without a published report.**
+**44 PRs attempted; 52 workflow attempts; 34 published reports; 9 PRs with 10 conditional refutations; 155 model verifications; 10 PRs without a published report.**
 
 ## All attempted PRs (refutations first)
 
 | PR | Change | Latest report | Properties | Refuted | Verified | Exhausted | Audit failure | Evidence |
 |---|---|---|---:|---:|---:|---:|---:|---|
+| [shuvendu-lahiri/litebox#2](https://github.com/shuvendu-lahiri/litebox/pull/2) | Replay change 1656: copy broker pipe and socket reads in bulk | **REFUTED (model)** | 9 | **1** | 8 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/2#issuecomment-6382629152) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39205431424) |
 | [shuvendu-lahiri/litebox#38](https://github.com/shuvendu-lahiri/litebox/pull/38) | Staged NFV audit \- change 1668: Stacked runners: Add virtual init | **REFUTED (model)** | 8 | **1** | 2 | 3 | 2 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/38#issuecomment-6307252325) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532833594) |
 | [shuvendu-lahiri/litebox#43](https://github.com/shuvendu-lahiri/litebox/pull/43) | Staged NFV audit \- change 1635: Cherry\-pick "LVBS: Allow concurrent vault entries" | **REFUTED (model)** | 10 | **1** | 0 | 2 | 7 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/43#issuecomment-6307191865) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532819562) |
 | [shuvendu-lahiri/litebox#42](https://github.com/shuvendu-lahiri/litebox/pull/42) | Staged NFV audit \- change 1637: Cherry\-pick "LVBS: Clean up after a panic inside the vault" | **REFUTED (model)** | 8 | **1** | 1 | 4 | 2 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/42#issuecomment-6307056163) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532822431) |
@@ -21,7 +22,6 @@ Snapshot: 2026-10-24T09:00:27.264791+00:00. Latest published report per PR suppl
 | [shuvendu-lahiri/litebox#32](https://github.com/shuvendu-lahiri/litebox/pull/32) | Replay change 1255: Cherry pick change 1107 Migrate in\-memory file system to new backend | **REFUTED (model)** | 10 | **1** | 8 | 1 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/32#issuecomment-6295599807) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39449644221) |
 | [shuvendu-lahiri/litebox#30](https://github.com/shuvendu-lahiri/litebox/pull/30) | Replay change 1273: Cherry pick change 1111 Reduce locking contention over fd iterations | **REFUTED (model)** | 9 | **1** | 5 | 0 | 3 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/30#issuecomment-6294367207) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39440593410) |
 | [shuvendu-lahiri/litebox#24](https://github.com/shuvendu-lahiri/litebox/pull/24) | Replay change 1297: Cherry pick change 1231 Switch to explicit file system \`Context\`s | **REFUTED (model)** | 10 | **1** | 8 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/24#issuecomment-6291911996) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39424463467) |
-| [shuvendu-lahiri/litebox#2](https://github.com/shuvendu-lahiri/litebox/pull/2) | Replay change 1656: copy broker pipe and socket reads in bulk | **REFUTED (model)** | 8 | **1** | 7 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/2#issuecomment-6260871431) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39205431424) |
 | [shuvendu-lahiri/litebox#27](https://github.com/shuvendu-lahiri/litebox/pull/27) | Replay change 1281: Cherry pick change 1165 Join the spawned handles in tests | Published | 7 | 0 | 7 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/27#issuecomment-6382201720) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39432560915) |
 | [shuvendu-lahiri/litebox#39](https://github.com/shuvendu-lahiri/litebox/pull/39) | Staged NFV audit \- change 1665: Zeroize sensitive data in OP\-TEE crypto syscalls | Published | 9 | 0 | 2 | 0 | 7 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/39#issuecomment-6307021315) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532831209) |
 | [shuvendu-lahiri/litebox#44](https://github.com/shuvendu-lahiri/litebox/pull/44) | Staged NFV audit \- change 1633: Cherry\-pick "Fix handle allocator overflows in OP\-TEE shim" | Published | 9 | 0 | 2 | 0 | 7 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/44#issuecomment-6306994781) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532816407) |
@@ -61,6 +61,12 @@ Snapshot: 2026-10-24T09:00:27.264791+00:00. Latest published report per PR suppl
 ## Conditional model refutations
 
 The following property texts are extracted from the published reports, without new adjudication or inference. The original report contains assumptions, source overlays and native evidence.
+
+### shuvendu-lahiri/litebox#2 / P4
+
+An invalid queue range must panic\.
+
+[Original report](https://github.com/shuvendu-lahiri/litebox/pull/2#issuecomment-6382629152)
 
 ### shuvendu-lahiri/litebox#38 / P4
 
@@ -115,12 +121,6 @@ For a valid live descriptor whose table slot is occupied: if its shared entry is
 For a non\-root missing target opened with CREAT after its parent is successfully resolved, open should return NoWritePerms without creating the file when the supplied context cannot change entries in that parent; otherwise it should request creation using the supplied mode and the supplied context's acting user as owner\.
 
 [Original report](https://github.com/shuvendu-lahiri/litebox/pull/24#issuecomment-6291911996)
-
-### shuvendu-lahiri/litebox#2 / P3
-
-For any VecDeque and any valid range with start &lt;= end &lt;= queue length, copy\_from\_queue returns the bytes in that logical queue range, in order and with length end \- start, including empty ranges and ranges crossing the deque's physical slice boundary, without modifying the queue\.
-
-[Original report](https://github.com/shuvendu-lahiri/litebox/pull/2#issuecomment-6260871431)
 
 ## Refresh and validate
 

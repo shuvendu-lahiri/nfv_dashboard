@@ -1,20 +1,20 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/litebox",
-  "generated_at": "2026-10-24T09:00:27.264791+00:00",
+  "generated_at": "2026-10-24T09:38:28.415691+00:00",
   "name": "litebox",
   "label": "LiteBox",
   "summary": {
     "selected_prs": 44,
     "attempted_prs": 44,
     "published_reports": 34,
-    "workflow_attempts": 51,
+    "workflow_attempts": 52,
     "without_report": 10,
     "refuted_prs": 9,
-    "properties": 251,
+    "properties": 252,
     "outcomes": {
       "refuted": 10,
-      "verified": 154,
+      "verified": 155,
       "resources exhausted": 28,
       "type-check/audit failure": 59
     }
@@ -28,28 +28,28 @@
       "head_sha": "48692a45ef484468fd6328aa63ab4a46fe233fc3",
       "head_branch": "nfv-replay-1656",
       "latest_report": {
-        "comment_id": 6260871431,
-        "url": "https://github.com/shuvendu-lahiri/litebox/pull/2#issuecomment-6260871431",
-        "published_at": "2026-10-19T06:09:58Z",
-        "updated_at": "2026-10-19T06:40:44Z",
-        "body_sha256": "dc7e0f9a6824763a0803ad4a7cb349c9ae116444125d99ab938a05a6b8e1e364",
+        "comment_id": 6382629152,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/2#issuecomment-6382629152",
+        "published_at": "2026-10-24T09:36:49Z",
+        "updated_at": "2026-10-24T09:36:49Z",
+        "body_sha256": "7a5737a99977b40bd7342ba346245a5878fb88d9881753bcdbcf1a62d76b34e3",
         "source_sha_prefix": "48692a45ef48",
         "base_sha_prefix": "197e2c2fea72",
         "run_id": 39205431424,
         "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39205431424",
         "counts": {
           "refuted": 1,
-          "verified": 7,
+          "verified": 8,
           "resources exhausted": 0,
           "type-check/audit failure": 0
         },
-        "properties": 8,
+        "properties": 9,
         "refutations": [
           {
-            "property_id": "P3",
-            "property": "For any VecDeque and any valid range with start <= end <= queue length, copy_from_queue returns the bytes in that logical queue range, in order and with length end - start, including empty ranges and ranges crossing the deque's physical slice boundary, without modifying the queue.",
-            "input": "`range.end = 1`; `queue = [0]`; `front.len() = 1`; `range.start = 0`; abstract state: capacity-reservation outcome = `false`",
-            "sketch": "If data.try_reserve_exact(range.len()) fails for this valid range, copy_from_queue propagates OutOfMemory instead of returning the requested bytes."
+            "property_id": "P4",
+            "property": "An invalid queue range must panic.",
+            "input": "`range.end = 1`; `queue = []`; `front.len() = 0`; `range.start = 0`; abstract state: allocation reservation outcome = `false`",
+            "sketch": "If the empty queue is queried with range 0..1 and the allocation reservation fails, data.try_reserve_exact(range.len()) returns an error before the out-of-bounds slice expressions are reached."
           }
         ]
       },
@@ -58,7 +58,7 @@
           "comment_id": 6260871431,
           "url": "https://github.com/shuvendu-lahiri/litebox/pull/2#issuecomment-6260871431",
           "published_at": "2026-10-19T06:09:58Z",
-          "updated_at": "2026-10-19T06:40:44Z",
+          "updated_at": "2026-10-24T09:36:48Z",
           "body_sha256": "dc7e0f9a6824763a0803ad4a7cb349c9ae116444125d99ab938a05a6b8e1e364",
           "source_sha_prefix": "48692a45ef48",
           "base_sha_prefix": "197e2c2fea72",
@@ -79,16 +79,42 @@
               "sketch": "If data.try_reserve_exact(range.len()) fails for this valid range, copy_from_queue propagates OutOfMemory instead of returning the requested bytes."
             }
           ]
+        },
+        {
+          "comment_id": 6382629152,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/2#issuecomment-6382629152",
+          "published_at": "2026-10-24T09:36:49Z",
+          "updated_at": "2026-10-24T09:36:49Z",
+          "body_sha256": "7a5737a99977b40bd7342ba346245a5878fb88d9881753bcdbcf1a62d76b34e3",
+          "source_sha_prefix": "48692a45ef48",
+          "base_sha_prefix": "197e2c2fea72",
+          "run_id": 39205431424,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39205431424",
+          "counts": {
+            "refuted": 1,
+            "verified": 8,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 9,
+          "refutations": [
+            {
+              "property_id": "P4",
+              "property": "An invalid queue range must panic.",
+              "input": "`range.end = 1`; `queue = []`; `front.len() = 0`; `range.start = 0`; abstract state: allocation reservation outcome = `false`",
+              "sketch": "If the empty queue is queried with range 0..1 and the allocation reservation fails, data.try_reserve_exact(range.len()) returns an error before the out-of-bounds slice expressions are reached."
+            }
+          ]
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39205431424,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39205431424",
         "status": "completed",
         "conclusion": "success",
-        "attempt": 1
+        "attempt": 2
       }
     },
     {

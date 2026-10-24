@@ -1,22 +1,22 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/z3",
-  "generated_at": "2026-10-24T09:00:27.264791+00:00",
+  "generated_at": "2026-10-24T09:38:28.415691+00:00",
   "name": "z3",
   "label": "Z3",
   "summary": {
     "selected_prs": 31,
     "attempted_prs": 31,
     "published_reports": 25,
-    "workflow_attempts": 73,
+    "workflow_attempts": 75,
     "without_report": 6,
     "refuted_prs": 4,
-    "properties": 92,
+    "properties": 94,
     "outcomes": {
       "refuted": 4,
       "verified": 30,
       "resources exhausted": 20,
-      "type-check/audit failure": 38
+      "type-check/audit failure": 40
     }
   },
   "prs": [
@@ -47,11 +47,11 @@
       "head_sha": "7703145b8955aa00f079afd3fdb25dfe582a77d2",
       "head_branch": "nfv-replay/10910-head",
       "latest_report": {
-        "comment_id": 6231866490,
-        "url": "https://github.com/shuvendu-lahiri/z3/pull/20#issuecomment-6231866490",
-        "published_at": "2026-10-17T08:41:54Z",
-        "updated_at": "2026-10-17T08:41:54Z",
-        "body_sha256": "91ca77b239a7cf57fffd8638a1ab613c31a9c093a7f0eae0862869357620907b",
+        "comment_id": 6382555028,
+        "url": "https://github.com/shuvendu-lahiri/z3/pull/20#issuecomment-6382555028",
+        "published_at": "2026-10-24T09:28:32Z",
+        "updated_at": "2026-10-24T09:28:32Z",
+        "body_sha256": "a9313d712f5ecbab8f5f1fb65baf4acb0130b1299d40038f4c140dbc75622453",
         "source_sha_prefix": "7703145b8955",
         "base_sha_prefix": "9079f382d2ba",
         "run_id": 38965099587,
@@ -60,9 +60,9 @@
           "refuted": 0,
           "verified": 3,
           "resources exhausted": 0,
-          "type-check/audit failure": 0
+          "type-check/audit failure": 2
         },
-        "properties": 3,
+        "properties": 5,
         "refutations": []
       },
       "report_history": [
@@ -146,7 +146,7 @@
           "comment_id": 6231866490,
           "url": "https://github.com/shuvendu-lahiri/z3/pull/20#issuecomment-6231866490",
           "published_at": "2026-10-17T08:41:54Z",
-          "updated_at": "2026-10-17T08:41:54Z",
+          "updated_at": "2026-10-24T09:28:31Z",
           "body_sha256": "91ca77b239a7cf57fffd8638a1ab613c31a9c093a7f0eae0862869357620907b",
           "source_sha_prefix": "7703145b8955",
           "base_sha_prefix": "9079f382d2ba",
@@ -160,16 +160,35 @@
           },
           "properties": 3,
           "refutations": []
+        },
+        {
+          "comment_id": 6382555028,
+          "url": "https://github.com/shuvendu-lahiri/z3/pull/20#issuecomment-6382555028",
+          "published_at": "2026-10-24T09:28:32Z",
+          "updated_at": "2026-10-24T09:28:32Z",
+          "body_sha256": "a9313d712f5ecbab8f5f1fb65baf4acb0130b1299d40038f4c140dbc75622453",
+          "source_sha_prefix": "7703145b8955",
+          "base_sha_prefix": "9079f382d2ba",
+          "run_id": 38965099587,
+          "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/38965099587",
+          "counts": {
+            "refuted": 0,
+            "verified": 3,
+            "resources exhausted": 0,
+            "type-check/audit failure": 2
+          },
+          "properties": 5,
+          "refutations": []
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 17,
+      "attempts": 18,
       "latest_run": {
         "id": 38965099587,
         "url": "https://github.com/shuvendu-lahiri/z3/actions/runs/38965099587",
         "status": "completed",
         "conclusion": "success",
-        "attempt": 4
+        "attempt": 5
       }
     },
     {
@@ -652,13 +671,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 2,
+      "attempts": 3,
       "latest_run": {
         "id": 39011178503,
         "url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39011178503",
         "status": "completed",
         "conclusion": "failure",
-        "attempt": 2
+        "attempt": 3
       }
     },
     {
