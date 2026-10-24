@@ -5,9 +5,9 @@ Published results from the prototype [Neuro-Formal Verification](https://arxiv.o
 
 **[Live interactive dashboard](https://shuvendu-lahiri.github.io/nfv_dashboard/z3/)** / [all repositories](https://shuvendu-lahiri.github.io/nfv_dashboard/) or [download the standalone HTML](index.html) (no server or external dependencies).
 
-Snapshot: 2026-10-24T13:21:07.038893+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
+Snapshot: 2026-10-24T13:52:30.219586+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
 
-**31 PRs attempted; 89 workflow attempts; 26 published reports; 3 PRs with 3 conditional refutations; 44 model verifications; 5 PRs without a published report.**
+**31 PRs attempted; 90 workflow attempts; 26 published reports; 3 PRs with 3 conditional refutations; 44 model verifications; 5 PRs without a published report.**
 
 ## All attempted PRs (refutations first)
 
@@ -39,7 +39,7 @@ Snapshot: 2026-10-24T13:21:07.038893+00:00. Latest published report per PR suppl
 | [shuvendu-lahiri/z3#33](https://github.com/shuvendu-lahiri/z3/pull/33) | NFV replay Z3Prover/z3\#11117: params: parse unsigned API limits without depending on long | Published / latest attempt: failure | 1 | 0 | 1 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/z3/pull/33#issuecomment-6231170012) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39012005732) / [latest attempt](https://github.com/shuvendu-lahiri/z3/actions/runs/39012005732) |
 | [shuvendu-lahiri/z3#22](https://github.com/shuvendu-lahiri/z3/pull/22) | Add exp/atan2 transcendental support to nla\_core | Published (older head) / latest attempt: cancelled | 10 | 0 | 1 | 0 | 9 | [Report](https://github.com/shuvendu-lahiri/z3/pull/22#issuecomment-6206551734) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/38837955521) / [latest attempt](https://github.com/shuvendu-lahiri/z3/actions/runs/38952644587) |
 | [shuvendu-lahiri/z3#21](https://github.com/shuvendu-lahiri/z3/pull/21) | Fix false \`unsat\` for inexact symbolic Real\-to\-FloatingPoint rounding | Published (older head) / latest attempt: cancelled | 10 | 0 | 0 | 10 | 0 | [Report](https://github.com/shuvendu-lahiri/z3/pull/21#issuecomment-6206176939) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/38835819515) / [latest attempt](https://github.com/shuvendu-lahiri/z3/actions/runs/38952645412) |
-| [shuvendu-lahiri/z3#37](https://github.com/shuvendu-lahiri/z3/pull/37) | NFV replay Z3Prover/z3\#11130: root subst\. in stoi bug \(nseq\) | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/z3/actions/runs/39012839420) |
+| [shuvendu-lahiri/z3#37](https://github.com/shuvendu-lahiri/z3/pull/37) | NFV replay Z3Prover/z3\#11130: root subst\. in stoi bug \(nseq\) | No published report (in\_progress) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/z3/actions/runs/39012839420) |
 | [shuvendu-lahiri/z3#36](https://github.com/shuvendu-lahiri/z3/pull/36) | NFV replay Z3Prover/z3\#11136: \[code\-simplifier\] Remove redundant match\_iff check in PR\_QUANT\_INTRO proof validation | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/z3/actions/runs/39012568191) |
 | [shuvendu-lahiri/z3#31](https://github.com/shuvendu-lahiri/z3/pull/31) | NFV replay Z3Prover/z3\#11146: \[code\-simplifier\] Use existing match\_equiv helper instead of repeating its definition | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/z3/actions/runs/39011222164) |
 | [shuvendu-lahiri/z3#30](https://github.com/shuvendu-lahiri/z3/pull/30) | NFV replay Z3Prover/z3\#11148: Document default error handler exit behavior and install non\-exit handler on JNI context creation | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/z3/actions/runs/39011209640) |
