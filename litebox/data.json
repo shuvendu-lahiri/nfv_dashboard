@@ -1,22 +1,22 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/litebox",
-  "generated_at": "2026-10-24T16:03:15.524264+00:00",
+  "generated_at": "2026-10-24T16:36:43.843741+00:00",
   "name": "litebox",
   "label": "LiteBox",
   "summary": {
     "selected_prs": 44,
     "attempted_prs": 44,
     "published_reports": 37,
-    "workflow_attempts": 76,
+    "workflow_attempts": 79,
     "without_report": 7,
-    "refuted_prs": 13,
-    "properties": 281,
+    "refuted_prs": 12,
+    "properties": 280,
     "outcomes": {
-      "refuted": 15,
+      "refuted": 14,
       "verified": 171,
-      "resources exhausted": 27,
-      "type-check/audit failure": 68
+      "resources exhausted": 28,
+      "type-check/audit failure": 67
     }
   },
   "prs": [
@@ -1760,37 +1760,30 @@
       "head_sha": "c10a405363e0577f6b7f68a25f94b6a218ef3246",
       "head_branch": "nfv-replay-1273",
       "latest_report": {
-        "comment_id": 6294367207,
-        "url": "https://github.com/shuvendu-lahiri/litebox/pull/30#issuecomment-6294367207",
-        "published_at": "2026-10-20T15:20:47Z",
-        "updated_at": "2026-10-20T15:20:47Z",
-        "body_sha256": "a1e1c99ca1e4e111d0614668831970a31a685386abf89616d39767e43efd533f",
+        "comment_id": 6386746637,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/30#issuecomment-6386746637",
+        "published_at": "2026-10-24T16:35:31Z",
+        "updated_at": "2026-10-24T16:35:31Z",
+        "body_sha256": "e7b79949f6149c17f37b0a519ba8faa0962b68767881443d418e1ed546a90e16",
         "source_sha_prefix": "c10a405363e0",
         "base_sha_prefix": "ead459266034",
         "run_id": 39440593410,
         "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39440593410",
         "counts": {
-          "refuted": 1,
+          "refuted": 0,
           "verified": 5,
-          "resources exhausted": 0,
-          "type-check/audit failure": 3
+          "resources exhausted": 1,
+          "type-check/audit failure": 2
         },
-        "properties": 9,
-        "refutations": [
-          {
-            "property_id": "P3",
-            "property": "For a valid live descriptor whose table slot is occupied: if its shared entry is uniquely owned, call `can_close_immediately` once; when it returns true, mark the descriptor closed, remove the slot, and return `Closed` with the underlying subsystem entry, but when it returns false, restore the same slot, leave the descriptor open, and return `Deferred`. If the entry has multiple strong owners, do not call the closure; mark the supplied descriptor closed, restore the shared entry in its slot, and return `Duplicated` containing a new descriptor for that same slot.",
-            "input": "`can_close_immediately(old.x.entry.read().as_subsystem::<Subsystem>()) = false`; `fd = 0`; `Arc::strong_count(&old.x) = 1`; abstract state: closed state of an aliased fd after the callback = `true`; descriptor-table entry identities = `[0]`; initial closed state of fd = `false`; descriptor-table slot occupancy = `[true]`",
-            "sketch": "If can_close_immediately(old.x.entry.read().as_subsystem::(Subsystem)()) closes an aliased fd and then returns false, the deferred branch restores the table slot but does not reopen the descriptor."
-          }
-        ]
+        "properties": 8,
+        "refutations": []
       },
       "report_history": [
         {
           "comment_id": 6294367207,
           "url": "https://github.com/shuvendu-lahiri/litebox/pull/30#issuecomment-6294367207",
           "published_at": "2026-10-20T15:20:47Z",
-          "updated_at": "2026-10-20T15:20:47Z",
+          "updated_at": "2026-10-24T16:35:30Z",
           "body_sha256": "a1e1c99ca1e4e111d0614668831970a31a685386abf89616d39767e43efd533f",
           "source_sha_prefix": "c10a405363e0",
           "base_sha_prefix": "ead459266034",
@@ -1811,16 +1804,35 @@
               "sketch": "If can_close_immediately(old.x.entry.read().as_subsystem::(Subsystem)()) closes an aliased fd and then returns false, the deferred branch restores the table slot but does not reopen the descriptor."
             }
           ]
+        },
+        {
+          "comment_id": 6386746637,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/30#issuecomment-6386746637",
+          "published_at": "2026-10-24T16:35:31Z",
+          "updated_at": "2026-10-24T16:35:31Z",
+          "body_sha256": "e7b79949f6149c17f37b0a519ba8faa0962b68767881443d418e1ed546a90e16",
+          "source_sha_prefix": "c10a405363e0",
+          "base_sha_prefix": "ead459266034",
+          "run_id": 39440593410,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39440593410",
+          "counts": {
+            "refuted": 0,
+            "verified": 5,
+            "resources exhausted": 1,
+            "type-check/audit failure": 2
+          },
+          "properties": 8,
+          "refutations": []
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39440593410,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39440593410",
         "status": "completed",
         "conclusion": "success",
-        "attempt": 1
+        "attempt": 2
       }
     },
     {
@@ -1871,13 +1883,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39447927739,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39447927739",
-        "status": "completed",
-        "conclusion": "success",
-        "attempt": 1
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
       }
     },
     {
@@ -1942,13 +1954,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39449644221,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39449644221",
-        "status": "completed",
-        "conclusion": "success",
-        "attempt": 1
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
       }
     },
     {
