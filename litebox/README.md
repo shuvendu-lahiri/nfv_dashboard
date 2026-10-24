@@ -5,9 +5,9 @@ Published results from the prototype [Neuro-Formal Verification](https://arxiv.o
 
 **[Live interactive dashboard](https://shuvendu-lahiri.github.io/nfv_dashboard/litebox/)** / [all repositories](https://shuvendu-lahiri.github.io/nfv_dashboard/) or [download the standalone HTML](index.html) (no server or external dependencies).
 
-Snapshot: 2026-10-24T10:26:48.408977+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
+Snapshot: 2026-10-24T10:44:31.966292+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
 
-**44 PRs attempted; 53 workflow attempts; 35 published reports; 10 PRs with 12 conditional refutations; 159 model verifications; 9 PRs without a published report.**
+**44 PRs attempted; 55 workflow attempts; 35 published reports; 10 PRs with 12 conditional refutations; 159 model verifications; 9 PRs without a published report.**
 
 ## All attempted PRs (refutations first)
 
@@ -47,7 +47,7 @@ Snapshot: 2026-10-24T10:26:48.408977+00:00. Latest published report per PR suppl
 | [shuvendu-lahiri/litebox#14](https://github.com/shuvendu-lahiri/litebox/pull/14) | Replay change 1538: Implement LocalFs backend | Published | 10 | 0 | 9 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/14#issuecomment-6283484987) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39366637569) |
 | [shuvendu-lahiri/litebox#13](https://github.com/shuvendu-lahiri/litebox/pull/13) | Replay change 1539: Introduce \`LocalFs\` mounting to CLI | Published | 7 | 0 | 4 | 0 | 3 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/13#issuecomment-6282967620) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39363406105) |
 | [shuvendu-lahiri/litebox#10](https://github.com/shuvendu-lahiri/litebox/pull/10) | Replay change 1646: Cherry pick change 1548 Reject O\_CREAT \| O\_EXCL before backend open | Published | 3 | 0 | 3 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/10#issuecomment-6282208977) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39358987665) |
-| [shuvendu-lahiri/litebox#4](https://github.com/shuvendu-lahiri/litebox/pull/4) | Replay change 1641: implement partial backend walks | Published | 10 | 0 | 7 | 1 | 2 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/4#issuecomment-6261868399) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39209801291) |
+| [shuvendu-lahiri/litebox#4](https://github.com/shuvendu-lahiri/litebox/pull/4) | Replay change 1641: implement partial backend walks | Published / latest attempt: failure | 10 | 0 | 7 | 1 | 2 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/4#issuecomment-6261868399) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39209801291) / [latest attempt](https://github.com/shuvendu-lahiri/litebox/actions/runs/39209801291) |
 | [shuvendu-lahiri/litebox#47](https://github.com/shuvendu-lahiri/litebox/pull/47) | Add LiteBox NFV audit dashboard | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39871498222) |
 | [shuvendu-lahiri/litebox#37](https://github.com/shuvendu-lahiri/litebox/pull/37) | Staged NFV audit \- change 1676: Plausible results for statfs | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532837030) |
 | [shuvendu-lahiri/litebox#29](https://github.com/shuvendu-lahiri/litebox/pull/29) | Replay change 1278: Cherry pick change 1113 Migrate 9p file system to new backend | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39440128194) |
