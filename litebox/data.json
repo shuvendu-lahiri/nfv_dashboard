@@ -1,20 +1,20 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/litebox",
-  "generated_at": "2026-10-23T19:44:16.794458+00:00",
+  "generated_at": "2026-10-24T09:00:27.264791+00:00",
   "name": "litebox",
   "label": "LiteBox",
   "summary": {
     "selected_prs": 44,
     "attempted_prs": 44,
     "published_reports": 34,
-    "workflow_attempts": 50,
+    "workflow_attempts": 51,
     "without_report": 10,
-    "refuted_prs": 10,
+    "refuted_prs": 9,
     "properties": 251,
     "outcomes": {
-      "refuted": 11,
-      "verified": 153,
+      "refuted": 10,
+      "verified": 154,
       "resources exhausted": 28,
       "type-check/audit failure": 59
     }
@@ -1101,37 +1101,30 @@
       "head_sha": "966b0986a08a678eea06e78191f5f06798347558",
       "head_branch": "nfv-replay-1281",
       "latest_report": {
-        "comment_id": 6292943415,
-        "url": "https://github.com/shuvendu-lahiri/litebox/pull/27#issuecomment-6292943415",
-        "published_at": "2026-10-20T14:14:55Z",
-        "updated_at": "2026-10-20T14:14:55Z",
-        "body_sha256": "8416d6b2b5919df9d68adea333a22a4ab2b19d14957ca8ec659ce9343d8a0e3b",
+        "comment_id": 6382201720,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/27#issuecomment-6382201720",
+        "published_at": "2026-10-24T08:51:01Z",
+        "updated_at": "2026-10-24T08:51:01Z",
+        "body_sha256": "886cb2adf8b814452a47b5b6b8b3c615406a0c79951b01cc8aade47f6e8e09e8",
         "source_sha_prefix": "966b0986a08a",
         "base_sha_prefix": "e1be52d8cd71",
         "run_id": 39432560915,
         "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39432560915",
         "counts": {
-          "refuted": 1,
-          "verified": 6,
+          "refuted": 0,
+          "verified": 7,
           "resources exhausted": 0,
           "type-check/audit failure": 0
         },
         "properties": 7,
-        "refutations": [
-          {
-            "property_id": "P7",
-            "property": "For every socket type and blocking mode exercised by this helper, after spawning both receiver threads, the function waits for both receiver handles to finish before returning and propagates a panic from either receiver by panicking itself.",
-            "input": "`is_nonblocking = false`; abstract state: completion of the send, sleep, and socket-close phase before the joins = `false`; completion of the sleep and send phase between receiver spawns = `true`; completion of socket-pair setup before receiver creation = `true`; panic outcome of the receiver1 closure = `false`; successful creation of the receiver1 thread handle = `true`; panic outcome of the receiver2 closure = `true`; successful creation of the receiver2 thread handle = `true`; socket type supplied to unix_socketpair_bidirectional = `0`",
-            "sketch": "If both receiver spawn calls return handles, the receiver2 closure panics, and an abstracted operation after the second spawn but before the joins panics, then receiver2.join().unwrap(); is skipped. Under that condition, the function does not wait through this join or propagate receiver2's panic through its unwrap, conditionally refuting the stated guarantee."
-          }
-        ]
+        "refutations": []
       },
       "report_history": [
         {
           "comment_id": 6292943415,
           "url": "https://github.com/shuvendu-lahiri/litebox/pull/27#issuecomment-6292943415",
           "published_at": "2026-10-20T14:14:55Z",
-          "updated_at": "2026-10-20T14:14:55Z",
+          "updated_at": "2026-10-24T08:51:00Z",
           "body_sha256": "8416d6b2b5919df9d68adea333a22a4ab2b19d14957ca8ec659ce9343d8a0e3b",
           "source_sha_prefix": "966b0986a08a",
           "base_sha_prefix": "e1be52d8cd71",
@@ -1152,16 +1145,35 @@
               "sketch": "If both receiver spawn calls return handles, the receiver2 closure panics, and an abstracted operation after the second spawn but before the joins panics, then receiver2.join().unwrap(); is skipped. Under that condition, the function does not wait through this join or propagate receiver2's panic through its unwrap, conditionally refuting the stated guarantee."
             }
           ]
+        },
+        {
+          "comment_id": 6382201720,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/27#issuecomment-6382201720",
+          "published_at": "2026-10-24T08:51:01Z",
+          "updated_at": "2026-10-24T08:51:01Z",
+          "body_sha256": "886cb2adf8b814452a47b5b6b8b3c615406a0c79951b01cc8aade47f6e8e09e8",
+          "source_sha_prefix": "966b0986a08a",
+          "base_sha_prefix": "e1be52d8cd71",
+          "run_id": 39432560915,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39432560915",
+          "counts": {
+            "refuted": 0,
+            "verified": 7,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 7,
+          "refutations": []
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39432560915,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39432560915",
         "status": "completed",
         "conclusion": "success",
-        "attempt": 1
+        "attempt": 2
       }
     },
     {

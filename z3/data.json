@@ -1,14 +1,14 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/z3",
-  "generated_at": "2026-10-23T19:44:16.794458+00:00",
+  "generated_at": "2026-10-24T09:00:27.264791+00:00",
   "name": "z3",
   "label": "Z3",
   "summary": {
     "selected_prs": 31,
     "attempted_prs": 31,
     "published_reports": 25,
-    "workflow_attempts": 72,
+    "workflow_attempts": 73,
     "without_report": 6,
     "refuted_prs": 4,
     "properties": 92,
@@ -652,13 +652,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39011178503,
         "url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39011178503",
         "status": "completed",
-        "conclusion": "success",
-        "attempt": 1
+        "conclusion": "failure",
+        "attempt": 2
       }
     },
     {

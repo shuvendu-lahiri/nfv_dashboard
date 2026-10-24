@@ -1,22 +1,22 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/nvx",
-  "generated_at": "2026-10-23T19:44:16.794458+00:00",
+  "generated_at": "2026-10-24T09:00:27.264791+00:00",
   "name": "nvx",
   "label": "NVX",
   "summary": {
     "selected_prs": 20,
     "attempted_prs": 20,
     "published_reports": 20,
-    "workflow_attempts": 23,
+    "workflow_attempts": 25,
     "without_report": 0,
-    "refuted_prs": 6,
+    "refuted_prs": 4,
     "properties": 98,
     "outcomes": {
-      "refuted": 7,
-      "verified": 61,
+      "refuted": 5,
+      "verified": 66,
       "resources exhausted": 2,
-      "type-check/audit failure": 28
+      "type-check/audit failure": 25
     }
   },
   "prs": [
@@ -28,37 +28,30 @@
       "head_sha": "487c340542147e201d9870ad8f499c4874e80c63",
       "head_branch": "nfv-pedro-747",
       "latest_report": {
-        "comment_id": 6356007501,
-        "url": "https://github.com/shuvendu-lahiri/nvx/pull/1#issuecomment-6356007501",
-        "published_at": "2026-10-23T02:34:26Z",
-        "updated_at": "2026-10-23T02:34:26Z",
-        "body_sha256": "b459c0f58eeac91edaf511befb3d7628b34982a82294bda96edb79707edd96f3",
+        "comment_id": 6382219305,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/1#issuecomment-6382219305",
+        "published_at": "2026-10-24T08:52:56Z",
+        "updated_at": "2026-10-24T08:52:56Z",
+        "body_sha256": "480b5d3f2bbcefd5a3b3aeb90201ee7658c40855f4baed065602dc7e59a745ed",
         "source_sha_prefix": "487c34054214",
         "base_sha_prefix": "519982e16ffd",
         "run_id": 39888393336,
         "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39888393336",
         "counts": {
-          "refuted": 1,
-          "verified": 5,
+          "refuted": 0,
+          "verified": 8,
           "resources exhausted": 0,
-          "type-check/audit failure": 1
+          "type-check/audit failure": 0
         },
-        "properties": 7,
-        "refutations": [
-          {
-            "property_id": "P7",
-            "property": "encode_next is transactional on failure: if the entry sequence is u64::MAX, it returns SequenceOverflow for the requested record type before attempting record encoding; otherwise, if record encoding rejects the record, it propagates that error. In either case, it leaves both the sequence and output unchanged.",
-            "input": "`identity.epoch = 0`; `&identity.instance_id = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]`; `output = []`; `payload = []`; `record_type = 0`; `*sequence = 0`; abstract state: error returned by encode_record = `0`; whether encode_record accepts the record = `false`; output state after encode_record returns an error = `[1]`",
-            "sketch": "If `encode_record(` rejects after changing `output`, the error is propagated before `sequence` advances, but the changed output remains."
-          }
-        ]
+        "properties": 8,
+        "refutations": []
       },
       "report_history": [
         {
           "comment_id": 6356007501,
           "url": "https://github.com/shuvendu-lahiri/nvx/pull/1#issuecomment-6356007501",
           "published_at": "2026-10-23T02:34:26Z",
-          "updated_at": "2026-10-23T02:34:26Z",
+          "updated_at": "2026-10-24T08:52:55Z",
           "body_sha256": "b459c0f58eeac91edaf511befb3d7628b34982a82294bda96edb79707edd96f3",
           "source_sha_prefix": "487c34054214",
           "base_sha_prefix": "519982e16ffd",
@@ -79,16 +72,35 @@
               "sketch": "If `encode_record(` rejects after changing `output`, the error is propagated before `sequence` advances, but the changed output remains."
             }
           ]
+        },
+        {
+          "comment_id": 6382219305,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/1#issuecomment-6382219305",
+          "published_at": "2026-10-24T08:52:56Z",
+          "updated_at": "2026-10-24T08:52:56Z",
+          "body_sha256": "480b5d3f2bbcefd5a3b3aeb90201ee7658c40855f4baed065602dc7e59a745ed",
+          "source_sha_prefix": "487c34054214",
+          "base_sha_prefix": "519982e16ffd",
+          "run_id": 39888393336,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39888393336",
+          "counts": {
+            "refuted": 0,
+            "verified": 8,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 8,
+          "refutations": []
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39888393336,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39888393336",
         "status": "completed",
         "conclusion": "success",
-        "attempt": 1
+        "attempt": 2
       },
       "source_number": 747,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/747",
@@ -702,37 +714,30 @@
       "head_sha": "dd02cd576fdd5cf813b0b64f7ac93cd1db417b86",
       "head_branch": "nfv-pedro-714",
       "latest_report": {
-        "comment_id": 6356987972,
-        "url": "https://github.com/shuvendu-lahiri/nvx/pull/12#issuecomment-6356987972",
-        "published_at": "2026-10-23T03:55:20Z",
-        "updated_at": "2026-10-23T03:55:20Z",
-        "body_sha256": "0d54bae372c8704ef7fdc6a817ed5a1f17ac71d35b41f321f7bd6c6751cd1ac4",
+        "comment_id": 6382206968,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/12#issuecomment-6382206968",
+        "published_at": "2026-10-24T08:51:32Z",
+        "updated_at": "2026-10-24T08:51:32Z",
+        "body_sha256": "89cb85c1b142ed718a23269afc8318f6496018539722f164801d150e9998a2ab",
         "source_sha_prefix": "dd02cd576fdd",
         "base_sha_prefix": "198754ffbf25",
         "run_id": 39893502095,
         "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39893502095",
         "counts": {
-          "refuted": 1,
-          "verified": 5,
+          "refuted": 0,
+          "verified": 7,
           "resources exhausted": 0,
-          "type-check/audit failure": 3
+          "type-check/audit failure": 1
         },
-        "properties": 9,
-        "refutations": [
-          {
-            "property_id": "P4",
-            "property": "Hypothesis: once the fuzz query and package restoration succeed, the function runs the workspace nextest command before the workspace doctest command; if the nextest invocation raises, the doctest invocation is not reached.",
-            "input": "`path.is_file() = true`; `result.returncode = 0`; `os.name == \"nt\" = false`; abstract state: availability of the cargo executable = `true`; strict UTF-8 decoding outcome for fuzz output = `false`; doctest run_checked outcome = `false`; completion of the fuzz-crate capture command = `true`; decoded fuzz-package lines = `[]`; nextest run_checked outcome = `false`; package-restoration call outcome = `true`; static excluded-package sequence = `[]`",
-            "sketch": "If the file and tool checks return, the fuzz query has return code zero, package restoration returns, and fuzz_crates.stdout.decode(\"utf-8\").splitlines() raises, then neither the nextest call nor the doctest call is reached. Thus successful fuzz querying and package restoration alone do not ensure the claimed call ordering."
-          }
-        ]
+        "properties": 8,
+        "refutations": []
       },
       "report_history": [
         {
           "comment_id": 6356987972,
           "url": "https://github.com/shuvendu-lahiri/nvx/pull/12#issuecomment-6356987972",
           "published_at": "2026-10-23T03:55:20Z",
-          "updated_at": "2026-10-23T03:55:20Z",
+          "updated_at": "2026-10-24T08:51:31Z",
           "body_sha256": "0d54bae372c8704ef7fdc6a817ed5a1f17ac71d35b41f321f7bd6c6751cd1ac4",
           "source_sha_prefix": "dd02cd576fdd",
           "base_sha_prefix": "198754ffbf25",
@@ -753,16 +758,35 @@
               "sketch": "If the file and tool checks return, the fuzz query has return code zero, package restoration returns, and fuzz_crates.stdout.decode(\"utf-8\").splitlines() raises, then neither the nextest call nor the doctest call is reached. Thus successful fuzz querying and package restoration alone do not ensure the claimed call ordering."
             }
           ]
+        },
+        {
+          "comment_id": 6382206968,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/12#issuecomment-6382206968",
+          "published_at": "2026-10-24T08:51:32Z",
+          "updated_at": "2026-10-24T08:51:32Z",
+          "body_sha256": "89cb85c1b142ed718a23269afc8318f6496018539722f164801d150e9998a2ab",
+          "source_sha_prefix": "dd02cd576fdd",
+          "base_sha_prefix": "198754ffbf25",
+          "run_id": 39893502095,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39893502095",
+          "counts": {
+            "refuted": 0,
+            "verified": 7,
+            "resources exhausted": 0,
+            "type-check/audit failure": 1
+          },
+          "properties": 8,
+          "refutations": []
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39893502095,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39893502095",
         "status": "completed",
-        "conclusion": "failure",
-        "attempt": 1
+        "conclusion": "success",
+        "attempt": 2
       },
       "source_number": 714,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/714",

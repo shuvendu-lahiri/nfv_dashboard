@@ -5,16 +5,16 @@ Published results from the prototype [Neuro-Formal Verification](https://arxiv.o
 
 **[Live interactive dashboard](https://shuvendu-lahiri.github.io/nfv_dashboard/z3/)** / [all repositories](https://shuvendu-lahiri.github.io/nfv_dashboard/) or [download the standalone HTML](index.html) (no server or external dependencies).
 
-Snapshot: 2026-10-23T19:44:16.794458+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
+Snapshot: 2026-10-24T09:00:27.264791+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
 
-**31 PRs attempted; 72 workflow attempts; 25 published reports; 4 PRs with 4 conditional refutations; 30 model verifications; 6 PRs without a published report.**
+**31 PRs attempted; 73 workflow attempts; 25 published reports; 4 PRs with 4 conditional refutations; 30 model verifications; 6 PRs without a published report.**
 
 ## All attempted PRs (refutations first)
 
 | PR | Change | Latest report | Properties | Refuted | Verified | Exhausted | Audit failure | Evidence |
 |---|---|---|---:|---:|---:|---:|---:|---|
 | [shuvendu-lahiri/z3#41](https://github.com/shuvendu-lahiri/z3/pull/41) | Staged NFV audit \- change 11239: Check xor gate clauses in the native Tseitin proof checker | **REFUTED (model)** | 6 | **1** | 0 | 1 | 4 | [Report](https://github.com/shuvendu-lahiri/z3/pull/41#issuecomment-6306928614) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39532858434) |
-| [shuvendu-lahiri/z3#28](https://github.com/shuvendu-lahiri/z3/pull/28) | NFV replay Z3Prover/z3\#11161: Honor binary exponents in Z3Py FPVal | **REFUTED (model)** | 7 | **1** | 6 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/z3/pull/28#issuecomment-6231334612) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39011178503) |
+| [shuvendu-lahiri/z3#28](https://github.com/shuvendu-lahiri/z3/pull/28) | NFV replay Z3Prover/z3\#11161: Honor binary exponents in Z3Py FPVal | **REFUTED (model)** / latest attempt: failure | 7 | **1** | 6 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/z3/pull/28#issuecomment-6231334612) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39011178503) / [latest attempt](https://github.com/shuvendu-lahiri/z3/actions/runs/39011178503) |
 | [shuvendu-lahiri/z3#29](https://github.com/shuvendu-lahiri/z3/pull/29) | NFV replay Z3Prover/z3\#11153: Bound finite\-field factor splitting per SMT search | **REFUTED (model)** | 4 | **1** | 2 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/z3/pull/29#issuecomment-6231234572) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39011193107) |
 | [shuvendu-lahiri/z3#35](https://github.com/shuvendu-lahiri/z3/pull/35) | NFV replay Z3Prover/z3\#11123: fix\(seq\): respect known length lower bounds when minting fresh model values \(\#7664\) | **REFUTED (model)** | 1 | **1** | 0 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/z3/pull/35#issuecomment-6231227079) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39012427142) |
 | [shuvendu-lahiri/z3#40](https://github.com/shuvendu-lahiri/z3/pull/40) | Staged NFV audit \- change 11245: Check alldiff gate clauses natively and log root distinct as input | Published | 10 | 0 | 1 | 3 | 6 | [Report](https://github.com/shuvendu-lahiri/z3/pull/40#issuecomment-6307102053) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39532863673) |

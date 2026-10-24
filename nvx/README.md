@@ -5,9 +5,9 @@ Published results from the prototype [Neuro-Formal Verification](https://arxiv.o
 
 **[Live interactive dashboard](https://shuvendu-lahiri.github.io/nfv_dashboard/nvx/)** / [all repositories](https://shuvendu-lahiri.github.io/nfv_dashboard/) or [download the standalone HTML](index.html) (no server or external dependencies).
 
-Snapshot: 2026-10-23T19:44:16.794458+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
+Snapshot: 2026-10-24T09:00:27.264791+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
 
-**20 PRs attempted; 23 workflow attempts; 20 published reports; 6 PRs with 7 conditional refutations; 61 model verifications; 0 PRs without a published report.**
+**20 PRs attempted; 25 workflow attempts; 20 published reports; 4 PRs with 5 conditional refutations; 66 model verifications; 0 PRs without a published report.**
 
 ## All attempted PRs (refutations first)
 
@@ -17,8 +17,8 @@ Snapshot: 2026-10-23T19:44:16.794458+00:00. Latest published report per PR suppl
 | [shuvendu-lahiri/nvx#20](https://github.com/shuvendu-lahiri/nvx/pull/20) | [Source change 657](https://redirect.github.com/microsoft/nvx/pull/657) / adversarial: keep executor close bounded when a child holds stdout | **REFUTED (model)** | 10 | **1** | 8 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/20#issuecomment-6357548128) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39898919181) |
 | [shuvendu-lahiri/nvx#16](https://github.com/shuvendu-lahiri/nvx/pull/16) | [Source change 659](https://redirect.github.com/microsoft/nvx/pull/659) / microvm tests: stream OpenVMM transcripts to disk as they are read | **REFUTED (model)** | 9 | **1** | 4 | 0 | 4 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/16#issuecomment-6357198686) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39896467670) |
 | [shuvendu-lahiri/nvx#17](https://github.com/shuvendu-lahiri/nvx/pull/17) | [Source change 678](https://redirect.github.com/microsoft/nvx/pull/678) / nvx\-rs: build the NVXS unit tests' epoch identities with one function | **REFUTED (model)** | 6 | **1** | 5 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/17#issuecomment-6357154101) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39896853340) |
-| [shuvendu-lahiri/nvx#12](https://github.com/shuvendu-lahiri/nvx/pull/12) | [Source change 714](https://redirect.github.com/microsoft/nvx/pull/714) / ci: link the Windows OpenVMM test builds with /Brepro for sccache | **REFUTED (model)** / latest attempt: failure | 9 | **1** | 5 | 0 | 3 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/12#issuecomment-6356987972) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39893502095) / [latest attempt](https://github.com/shuvendu-lahiri/nvx/actions/runs/39893502095) |
-| [shuvendu-lahiri/nvx#1](https://github.com/shuvendu-lahiri/nvx/pull/1) | [Source change 747](https://redirect.github.com/microsoft/nvx/pull/747) / nvx\-rs: encode the NVXS roles' DATA and CREDIT with one function | **REFUTED (model)** | 7 | **1** | 5 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/1#issuecomment-6356007501) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39888393336) |
+| [shuvendu-lahiri/nvx#1](https://github.com/shuvendu-lahiri/nvx/pull/1) | [Source change 747](https://redirect.github.com/microsoft/nvx/pull/747) / nvx\-rs: encode the NVXS roles' DATA and CREDIT with one function | Published | 8 | 0 | 8 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/1#issuecomment-6382219305) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39888393336) |
+| [shuvendu-lahiri/nvx#12](https://github.com/shuvendu-lahiri/nvx/pull/12) | [Source change 714](https://redirect.github.com/microsoft/nvx/pull/714) / ci: link the Windows OpenVMM test builds with /Brepro for sccache | Published | 8 | 0 | 7 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/12#issuecomment-6382206968) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39893502095) |
 | [shuvendu-lahiri/nvx#6](https://github.com/shuvendu-lahiri/nvx/pull/6) | [Source change 705](https://redirect.github.com/microsoft/nvx/pull/705) / nvx\-rs: write the NVXS record header with one function | Published | 5 | 0 | 3 | 0 | 2 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/6#issuecomment-6358109237) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39891550289) |
 | [shuvendu-lahiri/nvx#10](https://github.com/shuvendu-lahiri/nvx/pull/10) | [Source change 683](https://redirect.github.com/microsoft/nvx/pull/683) / nvx\-rs: check the golden tests' fixture sections with one function | Published | 2 | 0 | 1 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/10#issuecomment-6357877960) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39892893751) |
 | [shuvendu-lahiri/nvx#9](https://github.com/shuvendu-lahiri/nvx/pull/9) | [Source change 684](https://redirect.github.com/microsoft/nvx/pull/684) / nvx\-rs: send the guest's attachment, ACK, and CREDIT with one method | Published | 1 | 0 | 1 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/9#issuecomment-6357808175) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39892693600) |
@@ -67,18 +67,6 @@ When close is called, it attempts to stop the interaction before draining queued
 The test completes without assertion failure only when the unsplit stream produces exactly five events and leaves 21 outstanding bytes, and both the events and outstanding\-byte count remain identical when the stream is split at every individual position from 0 through its full length or at every interior position simultaneously \(one byte at a time\)\.
 
 [Original report](https://github.com/shuvendu-lahiri/nvx/pull/17#issuecomment-6357154101)
-
-### shuvendu-lahiri/nvx#12 / P4
-
-Hypothesis: once the fuzz query and package restoration succeed, the function runs the workspace nextest command before the workspace doctest command; if the nextest invocation raises, the doctest invocation is not reached\.
-
-[Original report](https://github.com/shuvendu-lahiri/nvx/pull/12#issuecomment-6356987972)
-
-### shuvendu-lahiri/nvx#1 / P7
-
-encode\_next is transactional on failure: if the entry sequence is u64::MAX, it returns SequenceOverflow for the requested record type before attempting record encoding; otherwise, if record encoding rejects the record, it propagates that error\. In either case, it leaves both the sequence and output unchanged\.
-
-[Original report](https://github.com/shuvendu-lahiri/nvx/pull/1#issuecomment-6356007501)
 
 ## Refresh and validate
 

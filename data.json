@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "generated_at": "2026-10-23T19:44:16.794458+00:00",
+  "generated_at": "2026-10-24T09:00:27.264791+00:00",
   "summary": {
     "attempted_prs": 95,
     "published_reports": 79,
-    "workflow_attempts": 145,
+    "workflow_attempts": 149,
     "without_report": 16,
-    "refuted_prs": 20,
+    "refuted_prs": 17,
     "properties": 441,
     "outcomes": {
-      "refuted": 22,
-      "verified": 244,
+      "refuted": 19,
+      "verified": 250,
       "resources exhausted": 50,
-      "type-check/audit failure": 125
+      "type-check/audit failure": 122
     }
   },
   "repositories": [
@@ -20,12 +20,12 @@
       "name": "z3",
       "label": "Z3",
       "repository": "shuvendu-lahiri/z3",
-      "generated_at": "2026-10-23T19:44:16.794458+00:00",
+      "generated_at": "2026-10-24T09:00:27.264791+00:00",
       "summary": {
         "selected_prs": 31,
         "attempted_prs": 31,
         "published_reports": 25,
-        "workflow_attempts": 72,
+        "workflow_attempts": 73,
         "without_report": 6,
         "refuted_prs": 4,
         "properties": 92,
@@ -41,18 +41,18 @@
       "name": "litebox",
       "label": "LiteBox",
       "repository": "shuvendu-lahiri/litebox",
-      "generated_at": "2026-10-23T19:44:16.794458+00:00",
+      "generated_at": "2026-10-24T09:00:27.264791+00:00",
       "summary": {
         "selected_prs": 44,
         "attempted_prs": 44,
         "published_reports": 34,
-        "workflow_attempts": 50,
+        "workflow_attempts": 51,
         "without_report": 10,
-        "refuted_prs": 10,
+        "refuted_prs": 9,
         "properties": 251,
         "outcomes": {
-          "refuted": 11,
-          "verified": 153,
+          "refuted": 10,
+          "verified": 154,
           "resources exhausted": 28,
           "type-check/audit failure": 59
         }
@@ -62,20 +62,20 @@
       "name": "nvx",
       "label": "NVX",
       "repository": "shuvendu-lahiri/nvx",
-      "generated_at": "2026-10-23T19:44:16.794458+00:00",
+      "generated_at": "2026-10-24T09:00:27.264791+00:00",
       "summary": {
         "selected_prs": 20,
         "attempted_prs": 20,
         "published_reports": 20,
-        "workflow_attempts": 23,
+        "workflow_attempts": 25,
         "without_report": 0,
-        "refuted_prs": 6,
+        "refuted_prs": 4,
         "properties": 98,
         "outcomes": {
-          "refuted": 7,
-          "verified": 61,
+          "refuted": 5,
+          "verified": 66,
           "resources exhausted": 2,
-          "type-check/audit failure": 28
+          "type-check/audit failure": 25
         }
       }
     }

@@ -5,9 +5,9 @@ Published results from the prototype [Neuro-Formal Verification](https://arxiv.o
 
 **[Live interactive dashboard](https://shuvendu-lahiri.github.io/nfv_dashboard/litebox/)** / [all repositories](https://shuvendu-lahiri.github.io/nfv_dashboard/) or [download the standalone HTML](index.html) (no server or external dependencies).
 
-Snapshot: 2026-10-23T19:44:16.794458+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
+Snapshot: 2026-10-24T09:00:27.264791+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
 
-**44 PRs attempted; 50 workflow attempts; 34 published reports; 10 PRs with 11 conditional refutations; 153 model verifications; 10 PRs without a published report.**
+**44 PRs attempted; 51 workflow attempts; 34 published reports; 9 PRs with 10 conditional refutations; 154 model verifications; 10 PRs without a published report.**
 
 ## All attempted PRs (refutations first)
 
@@ -20,9 +20,9 @@ Snapshot: 2026-10-23T19:44:16.794458+00:00. Latest published report per PR suppl
 | [shuvendu-lahiri/litebox#33](https://github.com/shuvendu-lahiri/litebox/pull/33) | Replay change 1254: Cherry pick change 1106 Improve handle management | **REFUTED (model)** | 10 | **1** | 6 | 1 | 2 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/33#issuecomment-6296426613) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39456104468) |
 | [shuvendu-lahiri/litebox#32](https://github.com/shuvendu-lahiri/litebox/pull/32) | Replay change 1255: Cherry pick change 1107 Migrate in\-memory file system to new backend | **REFUTED (model)** | 10 | **1** | 8 | 1 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/32#issuecomment-6295599807) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39449644221) |
 | [shuvendu-lahiri/litebox#30](https://github.com/shuvendu-lahiri/litebox/pull/30) | Replay change 1273: Cherry pick change 1111 Reduce locking contention over fd iterations | **REFUTED (model)** | 9 | **1** | 5 | 0 | 3 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/30#issuecomment-6294367207) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39440593410) |
-| [shuvendu-lahiri/litebox#27](https://github.com/shuvendu-lahiri/litebox/pull/27) | Replay change 1281: Cherry pick change 1165 Join the spawned handles in tests | **REFUTED (model)** | 7 | **1** | 6 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/27#issuecomment-6292943415) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39432560915) |
 | [shuvendu-lahiri/litebox#24](https://github.com/shuvendu-lahiri/litebox/pull/24) | Replay change 1297: Cherry pick change 1231 Switch to explicit file system \`Context\`s | **REFUTED (model)** | 10 | **1** | 8 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/24#issuecomment-6291911996) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39424463467) |
 | [shuvendu-lahiri/litebox#2](https://github.com/shuvendu-lahiri/litebox/pull/2) | Replay change 1656: copy broker pipe and socket reads in bulk | **REFUTED (model)** | 8 | **1** | 7 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/2#issuecomment-6260871431) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39205431424) |
+| [shuvendu-lahiri/litebox#27](https://github.com/shuvendu-lahiri/litebox/pull/27) | Replay change 1281: Cherry pick change 1165 Join the spawned handles in tests | Published | 7 | 0 | 7 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/27#issuecomment-6382201720) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39432560915) |
 | [shuvendu-lahiri/litebox#39](https://github.com/shuvendu-lahiri/litebox/pull/39) | Staged NFV audit \- change 1665: Zeroize sensitive data in OP\-TEE crypto syscalls | Published | 9 | 0 | 2 | 0 | 7 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/39#issuecomment-6307021315) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532831209) |
 | [shuvendu-lahiri/litebox#44](https://github.com/shuvendu-lahiri/litebox/pull/44) | Staged NFV audit \- change 1633: Cherry\-pick "Fix handle allocator overflows in OP\-TEE shim" | Published | 9 | 0 | 2 | 0 | 7 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/44#issuecomment-6306994781) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532816407) |
 | [shuvendu-lahiri/litebox#41](https://github.com/shuvendu-lahiri/litebox/pull/41) | Staged NFV audit \- change 1652: Accept inherited ignored signals in the Linux userland runner | Published | 4 | 0 | 1 | 1 | 2 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/41#issuecomment-6306966220) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532828639) |
@@ -109,12 +109,6 @@ For a valid directory handle and supported flags, requesting WRONLY or RDWR trig
 For a valid live descriptor whose table slot is occupied: if its shared entry is uniquely owned, call \`can\_close\_immediately\` once; when it returns true, mark the descriptor closed, remove the slot, and return \`Closed\` with the underlying subsystem entry, but when it returns false, restore the same slot, leave the descriptor open, and return \`Deferred\`\. If the entry has multiple strong owners, do not call the closure; mark the supplied descriptor closed, restore the shared entry in its slot, and return \`Duplicated\` containing a new descriptor for that same slot\.
 
 [Original report](https://github.com/shuvendu-lahiri/litebox/pull/30#issuecomment-6294367207)
-
-### shuvendu-lahiri/litebox#27 / P7
-
-For every socket type and blocking mode exercised by this helper, after spawning both receiver threads, the function waits for both receiver handles to finish before returning and propagates a panic from either receiver by panicking itself\.
-
-[Original report](https://github.com/shuvendu-lahiri/litebox/pull/27#issuecomment-6292943415)
 
 ### shuvendu-lahiri/litebox#24 / P3
 
