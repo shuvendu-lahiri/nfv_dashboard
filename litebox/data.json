@@ -1,14 +1,14 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/litebox",
-  "generated_at": "2026-10-24T15:04:43.574171+00:00",
+  "generated_at": "2026-10-24T15:34:35.522912+00:00",
   "name": "litebox",
   "label": "LiteBox",
   "summary": {
     "selected_prs": 44,
     "attempted_prs": 44,
     "published_reports": 37,
-    "workflow_attempts": 70,
+    "workflow_attempts": 72,
     "without_report": 7,
     "refuted_prs": 13,
     "properties": 281,
@@ -1295,11 +1295,11 @@
       "head_sha": "b00ca05f9502ab4d672c6c44bc6dd12b4e45e032",
       "head_branch": "nfv-replay-1448",
       "latest_report": {
-        "comment_id": 6291042276,
-        "url": "https://github.com/shuvendu-lahiri/litebox/pull/22#issuecomment-6291042276",
-        "published_at": "2026-10-20T12:39:30Z",
-        "updated_at": "2026-10-20T12:39:30Z",
-        "body_sha256": "4ad3d5a91dad6d2290225d28d06fd45b1a40bfc67e4f308bb07329e87f4bba05",
+        "comment_id": 6385829780,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/22#issuecomment-6385829780",
+        "published_at": "2026-10-24T15:10:03Z",
+        "updated_at": "2026-10-24T15:10:03Z",
+        "body_sha256": "8c4999981190a02648e73bc8e38fa534da922fd1da782552bc9aaab0c8389801",
         "source_sha_prefix": "b00ca05f9502",
         "base_sha_prefix": "44d0638e63b9",
         "run_id": 39421605628,
@@ -1318,8 +1318,27 @@
           "comment_id": 6291042276,
           "url": "https://github.com/shuvendu-lahiri/litebox/pull/22#issuecomment-6291042276",
           "published_at": "2026-10-20T12:39:30Z",
-          "updated_at": "2026-10-20T12:39:30Z",
+          "updated_at": "2026-10-24T15:10:02Z",
           "body_sha256": "4ad3d5a91dad6d2290225d28d06fd45b1a40bfc67e4f308bb07329e87f4bba05",
+          "source_sha_prefix": "b00ca05f9502",
+          "base_sha_prefix": "44d0638e63b9",
+          "run_id": 39421605628,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39421605628",
+          "counts": {
+            "refuted": 0,
+            "verified": 4,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 4,
+          "refutations": []
+        },
+        {
+          "comment_id": 6385829780,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/22#issuecomment-6385829780",
+          "published_at": "2026-10-24T15:10:03Z",
+          "updated_at": "2026-10-24T15:10:03Z",
+          "body_sha256": "8c4999981190a02648e73bc8e38fa534da922fd1da782552bc9aaab0c8389801",
           "source_sha_prefix": "b00ca05f9502",
           "base_sha_prefix": "44d0638e63b9",
           "run_id": 39421605628,
@@ -1339,8 +1358,8 @@
       "latest_run": {
         "id": 39421605628,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39421605628",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       }
     },
@@ -1392,13 +1411,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39422364492,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39422364492",
-        "status": "completed",
-        "conclusion": "success",
-        "attempt": 1
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
       }
     },
     {
@@ -1463,13 +1482,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39424463467,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39424463467",
-        "status": "completed",
-        "conclusion": "success",
-        "attempt": 1
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
       }
     },
     {

@@ -1,22 +1,22 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/z3",
-  "generated_at": "2026-10-24T15:04:43.574171+00:00",
+  "generated_at": "2026-10-24T15:34:35.522912+00:00",
   "name": "z3",
   "label": "Z3",
   "summary": {
     "selected_prs": 31,
     "attempted_prs": 31,
     "published_reports": 27,
-    "workflow_attempts": 95,
+    "workflow_attempts": 97,
     "without_report": 4,
-    "refuted_prs": 4,
-    "properties": 117,
+    "refuted_prs": 5,
+    "properties": 116,
     "outcomes": {
-      "refuted": 4,
-      "verified": 59,
-      "resources exhausted": 17,
-      "type-check/audit failure": 37
+      "refuted": 5,
+      "verified": 62,
+      "resources exhausted": 16,
+      "type-check/audit failure": 33
     }
   },
   "prs": [
@@ -1632,20 +1632,20 @@
       "head_sha": "25a0ccca02a3c4f38adef536da22fc005a4ddfcc",
       "head_branch": "nfv-staged-11241",
       "latest_report": {
-        "comment_id": 6306904677,
-        "url": "https://github.com/shuvendu-lahiri/z3/pull/42#issuecomment-6306904677",
-        "published_at": "2026-10-21T02:57:58Z",
-        "updated_at": "2026-10-21T02:57:58Z",
-        "body_sha256": "872cc0d2652abdb733691b2457aefd4680f1414d7d0a7d1ec966dbf8d44c366c",
+        "comment_id": 6385926056,
+        "url": "https://github.com/shuvendu-lahiri/z3/pull/42#issuecomment-6385926056",
+        "published_at": "2026-10-24T15:19:20Z",
+        "updated_at": "2026-10-24T15:19:20Z",
+        "body_sha256": "b6d6b85c771a5cf556d86e0ea87fa9c70357ef6d93d8446ea962510c323264ab",
         "source_sha_prefix": "25a0ccca02a3",
         "base_sha_prefix": "ba5b72ec202c",
         "run_id": 39532861238,
         "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39532861238",
         "counts": {
           "refuted": 0,
-          "verified": 0,
+          "verified": 1,
           "resources exhausted": 0,
-          "type-check/audit failure": 1
+          "type-check/audit failure": 0
         },
         "properties": 1,
         "refutations": []
@@ -1655,7 +1655,7 @@
           "comment_id": 6306904677,
           "url": "https://github.com/shuvendu-lahiri/z3/pull/42#issuecomment-6306904677",
           "published_at": "2026-10-21T02:57:58Z",
-          "updated_at": "2026-10-21T02:57:58Z",
+          "updated_at": "2026-10-24T15:19:19Z",
           "body_sha256": "872cc0d2652abdb733691b2457aefd4680f1414d7d0a7d1ec966dbf8d44c366c",
           "source_sha_prefix": "25a0ccca02a3",
           "base_sha_prefix": "ba5b72ec202c",
@@ -1669,6 +1669,25 @@
           },
           "properties": 1,
           "refutations": []
+        },
+        {
+          "comment_id": 6385926056,
+          "url": "https://github.com/shuvendu-lahiri/z3/pull/42#issuecomment-6385926056",
+          "published_at": "2026-10-24T15:19:20Z",
+          "updated_at": "2026-10-24T15:19:20Z",
+          "body_sha256": "b6d6b85c771a5cf556d86e0ea87fa9c70357ef6d93d8446ea962510c323264ab",
+          "source_sha_prefix": "25a0ccca02a3",
+          "base_sha_prefix": "ba5b72ec202c",
+          "run_id": 39532861238,
+          "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39532861238",
+          "counts": {
+            "refuted": 0,
+            "verified": 1,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 1,
+          "refutations": []
         }
       ],
       "report_matches_current_head": true,
@@ -1676,8 +1695,8 @@
       "latest_run": {
         "id": 39532861238,
         "url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39532861238",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       }
     },
@@ -1689,30 +1708,37 @@
       "head_sha": "7af51642c5c4d450e03c7813f245753b733747d5",
       "head_branch": "nfv-staged-11237",
       "latest_report": {
-        "comment_id": 6306868942,
-        "url": "https://github.com/shuvendu-lahiri/z3/pull/43#issuecomment-6306868942",
-        "published_at": "2026-10-21T02:55:04Z",
-        "updated_at": "2026-10-21T02:55:04Z",
-        "body_sha256": "07e5ffbbe939f0c0a6ae8d4c81da7761f6d8c5ecb2ed61d35b220f60a4867f5a",
+        "comment_id": 6386071462,
+        "url": "https://github.com/shuvendu-lahiri/z3/pull/43#issuecomment-6386071462",
+        "published_at": "2026-10-24T15:33:14Z",
+        "updated_at": "2026-10-24T15:33:14Z",
+        "body_sha256": "b44bfe0d8419e7731c56cbcebd0d8685a05c4aa757bd926cdf0a6a03dcfd6bcd",
         "source_sha_prefix": "7af51642c5c4",
         "base_sha_prefix": "e249e9e22756",
         "run_id": 39532855682,
         "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39532855682",
         "counts": {
-          "refuted": 0,
-          "verified": 0,
-          "resources exhausted": 1,
-          "type-check/audit failure": 3
+          "refuted": 1,
+          "verified": 2,
+          "resources exhausted": 0,
+          "type-check/audit failure": 0
         },
-        "properties": 4,
-        "refutations": []
+        "properties": 3,
+        "refutations": [
+          {
+            "property_id": "P3",
+            "property": "Every created row uses a nonzero selected-row pivot coefficient.",
+            "input": "`check_ineq(r) = false`; `m_conseq.is_zero() = false`; `reduce_eq() = true`; `m_conseq.is_zero() = false`; `reduce_eq() = true`; abstract state: per-element results of `coeff = [0]`; per-element results of `r2.m_coeffs.find(v, B) = [true]`; per-element results of `B = [1]`; pending tight inequalities = `0`",
+            "sketch": "If coeff is zero, B is positive, and the lookup succeeds, !r2.m_coeffs.find(v, B) || (coeff > 0 && B > 0) || (coeff < 0 && B < 0) is false; the candidate is not skipped and fresh(m_ineqs) is called without strictly opposite signs."
+          }
+        ]
       },
       "report_history": [
         {
           "comment_id": 6306868942,
           "url": "https://github.com/shuvendu-lahiri/z3/pull/43#issuecomment-6306868942",
           "published_at": "2026-10-21T02:55:04Z",
-          "updated_at": "2026-10-21T02:55:04Z",
+          "updated_at": "2026-10-24T15:33:13Z",
           "body_sha256": "07e5ffbbe939f0c0a6ae8d4c81da7761f6d8c5ecb2ed61d35b220f60a4867f5a",
           "source_sha_prefix": "7af51642c5c4",
           "base_sha_prefix": "e249e9e22756",
@@ -1726,16 +1752,42 @@
           },
           "properties": 4,
           "refutations": []
+        },
+        {
+          "comment_id": 6386071462,
+          "url": "https://github.com/shuvendu-lahiri/z3/pull/43#issuecomment-6386071462",
+          "published_at": "2026-10-24T15:33:14Z",
+          "updated_at": "2026-10-24T15:33:14Z",
+          "body_sha256": "b44bfe0d8419e7731c56cbcebd0d8685a05c4aa757bd926cdf0a6a03dcfd6bcd",
+          "source_sha_prefix": "7af51642c5c4",
+          "base_sha_prefix": "e249e9e22756",
+          "run_id": 39532855682,
+          "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39532855682",
+          "counts": {
+            "refuted": 1,
+            "verified": 2,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 3,
+          "refutations": [
+            {
+              "property_id": "P3",
+              "property": "Every created row uses a nonzero selected-row pivot coefficient.",
+              "input": "`check_ineq(r) = false`; `m_conseq.is_zero() = false`; `reduce_eq() = true`; `m_conseq.is_zero() = false`; `reduce_eq() = true`; abstract state: per-element results of `coeff = [0]`; per-element results of `r2.m_coeffs.find(v, B) = [true]`; per-element results of `B = [1]`; pending tight inequalities = `0`",
+              "sketch": "If coeff is zero, B is positive, and the lookup succeeds, !r2.m_coeffs.find(v, B) || (coeff > 0 && B > 0) || (coeff < 0 && B < 0) is false; the candidate is not skipped and fresh(m_ineqs) is called without strictly opposite signs."
+            }
+          ]
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39532855682,
         "url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39532855682",
         "status": "completed",
         "conclusion": "success",
-        "attempt": 1
+        "attempt": 2
       }
     },
     {
@@ -1786,13 +1838,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39532851433,
         "url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39532851433",
-        "status": "completed",
-        "conclusion": "success",
-        "attempt": 1
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
       }
     },
     {

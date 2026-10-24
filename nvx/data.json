@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/nvx",
-  "generated_at": "2026-10-24T15:04:43.574171+00:00",
+  "generated_at": "2026-10-24T15:34:35.522912+00:00",
   "name": "nvx",
   "label": "NVX",
   "summary": {
@@ -11,12 +11,12 @@
     "workflow_attempts": 43,
     "without_report": 0,
     "refuted_prs": 4,
-    "properties": 103,
+    "properties": 102,
     "outcomes": {
       "refuted": 4,
       "verified": 74,
       "resources exhausted": 5,
-      "type-check/audit failure": 20
+      "type-check/audit failure": 19
     }
   },
   "prs": [
@@ -1567,11 +1567,11 @@
       "head_sha": "5e46844aaa747e7630be141dd1c478cfbb5a9d4b",
       "head_branch": "nfv-pedro-657",
       "latest_report": {
-        "comment_id": 6357548128,
-        "url": "https://github.com/shuvendu-lahiri/nvx/pull/20#issuecomment-6357548128",
-        "published_at": "2026-10-23T04:41:46Z",
-        "updated_at": "2026-10-23T04:41:46Z",
-        "body_sha256": "ed4c00d557164407a1a1ed5b9d16207fee3ee8f1dca07f6589e09dc644915c3b",
+        "comment_id": 6385797194,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/20#issuecomment-6385797194",
+        "published_at": "2026-10-24T15:06:58Z",
+        "updated_at": "2026-10-24T15:06:58Z",
+        "body_sha256": "94026fe2dd217c73f48c2da269a88ff5a8fcbe84b88176940bd0c817c071c725",
         "source_sha_prefix": "5e46844aaa74",
         "base_sha_prefix": "6e21fec614b0",
         "run_id": 39898919181,
@@ -1580,15 +1580,15 @@
           "refuted": 1,
           "verified": 8,
           "resources exhausted": 0,
-          "type-check/audit failure": 1
+          "type-check/audit failure": 0
         },
-        "properties": 10,
+        "properties": 9,
         "refutations": [
           {
-            "property_id": "P7",
-            "property": "If process creation raises OSError, the constructor closes the already-opened stderr log and propagates that error; if process creation succeeds but either protocol pipe is absent, it terminates the process, closes the stderr log, and raises ScriptError rather than returning a partially initialized client.",
-            "input": "`candidate.is_file() = false`; `command is None = true`; abstract state: closing stderr after detecting a missing pipe raises = `false`; closing the stderr log in the OSError handler raises = `true`; log-directory setup completes normally = `true`; queue and reader-thread initialization completes normally = `false`; local executor environment construction completes normally = `true`; process creation raises OSError = `true`; process creation raises a non-OSError exception = `false`; candidate path resolution completes normally = `false`; sanitized environment construction completes normally = `false`; opening stderr.log completes normally = `true`; the created process has a stdin protocol pipe = `false`; the created process has a stdout protocol pipe = `false`; terminating a process raises = `false`; command lookup finds an executable = `false`",
-            "sketch": "If subprocess.Popen raises OSError and self._stderr_stream.close() also raises, the handler exits at the close call before reaching the bare raise."
+            "property_id": "P6",
+            "property": "A process-creation OSError closes the opened stderr log.",
+            "input": "`command is None = true`; abstract state: fallback command-file status = `true`; local executor environment setup outcome = `true`; executor-client log-directory creation outcome = `true`; subprocess creation outcome = `true`; response-reader setup outcome = `true`; stderr log close outcome = `false`; stderr log opening outcome = `true`; spawned process stdin availability = `true`; spawned process stdout availability = `true`; process terminate-call outcome = `true`; command lookup result = `true`",
+            "sketch": "If subprocess creation raises OSError and self._stderr_stream.close() also raises, cleanup does not complete and the following bare raise is skipped."
           }
         ]
       },
@@ -1597,7 +1597,7 @@
           "comment_id": 6357548128,
           "url": "https://github.com/shuvendu-lahiri/nvx/pull/20#issuecomment-6357548128",
           "published_at": "2026-10-23T04:41:46Z",
-          "updated_at": "2026-10-23T04:41:46Z",
+          "updated_at": "2026-10-24T15:06:57Z",
           "body_sha256": "ed4c00d557164407a1a1ed5b9d16207fee3ee8f1dca07f6589e09dc644915c3b",
           "source_sha_prefix": "5e46844aaa74",
           "base_sha_prefix": "6e21fec614b0",
@@ -1618,6 +1618,32 @@
               "sketch": "If subprocess.Popen raises OSError and self._stderr_stream.close() also raises, the handler exits at the close call before reaching the bare raise."
             }
           ]
+        },
+        {
+          "comment_id": 6385797194,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/20#issuecomment-6385797194",
+          "published_at": "2026-10-24T15:06:58Z",
+          "updated_at": "2026-10-24T15:06:58Z",
+          "body_sha256": "94026fe2dd217c73f48c2da269a88ff5a8fcbe84b88176940bd0c817c071c725",
+          "source_sha_prefix": "5e46844aaa74",
+          "base_sha_prefix": "6e21fec614b0",
+          "run_id": 39898919181,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39898919181",
+          "counts": {
+            "refuted": 1,
+            "verified": 8,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 9,
+          "refutations": [
+            {
+              "property_id": "P6",
+              "property": "A process-creation OSError closes the opened stderr log.",
+              "input": "`command is None = true`; abstract state: fallback command-file status = `true`; local executor environment setup outcome = `true`; executor-client log-directory creation outcome = `true`; subprocess creation outcome = `true`; response-reader setup outcome = `true`; stderr log close outcome = `false`; stderr log opening outcome = `true`; spawned process stdin availability = `true`; spawned process stdout availability = `true`; process terminate-call outcome = `true`; command lookup result = `true`",
+              "sketch": "If subprocess creation raises OSError and self._stderr_stream.close() also raises, cleanup does not complete and the following bare raise is skipped."
+            }
+          ]
         }
       ],
       "report_matches_current_head": true,
@@ -1625,8 +1651,8 @@
       "latest_run": {
         "id": 39898919181,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39898919181",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       },
       "source_number": 657,

@@ -5,7 +5,7 @@ Published results from the prototype [Neuro-Formal Verification](https://arxiv.o
 
 **[Live interactive dashboard](https://shuvendu-lahiri.github.io/nfv_dashboard/nvx/)** / [all repositories](https://shuvendu-lahiri.github.io/nfv_dashboard/) or [download the standalone HTML](index.html) (no server or external dependencies).
 
-Snapshot: 2026-10-24T15:04:43.574171+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
+Snapshot: 2026-10-24T15:34:35.522912+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
 
 **20 PRs attempted; 43 workflow attempts; 20 published reports; 4 PRs with 4 conditional refutations; 74 model verifications; 0 PRs without a published report.**
 
@@ -13,9 +13,9 @@ Snapshot: 2026-10-24T15:04:43.574171+00:00. Latest published report per PR suppl
 
 | PR | Change | Latest report | Properties | Refuted | Verified | Exhausted | Audit failure | Evidence |
 |---|---|---|---:|---:|---:|---:|---:|---|
+| [shuvendu-lahiri/nvx#20](https://github.com/shuvendu-lahiri/nvx/pull/20) | [Source change 657](https://redirect.github.com/microsoft/nvx/pull/657) / adversarial: keep executor close bounded when a child holds stdout | **REFUTED (model)** | 9 | **1** | 8 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/20#issuecomment-6385797194) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39898919181) |
 | [shuvendu-lahiri/nvx#19](https://github.com/shuvendu-lahiri/nvx/pull/19) | [Source change 658](https://redirect.github.com/microsoft/nvx/pull/658) / performance: keep results measured before a history reset out of the series | **REFUTED (model)** | 10 | **1** | 6 | 0 | 3 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/19#issuecomment-6385668120) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39898539854) |
 | [shuvendu-lahiri/nvx#11](https://github.com/shuvendu-lahiri/nvx/pull/11) | [Source change 682](https://redirect.github.com/microsoft/nvx/pull/682) / nvx\-rs: parse legacy egress rules with the MXC form's helpers | **REFUTED (model)** | 7 | **1** | 4 | 0 | 2 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/11#issuecomment-6384226118) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39893495398) |
-| [shuvendu-lahiri/nvx#20](https://github.com/shuvendu-lahiri/nvx/pull/20) | [Source change 657](https://redirect.github.com/microsoft/nvx/pull/657) / adversarial: keep executor close bounded when a child holds stdout | **REFUTED (model)** / latest attempt: in\_progress | 10 | **1** | 8 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/20#issuecomment-6357548128) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39898919181) / [latest attempt](https://github.com/shuvendu-lahiri/nvx/actions/runs/39898919181) |
 | [shuvendu-lahiri/nvx#16](https://github.com/shuvendu-lahiri/nvx/pull/16) | [Source change 659](https://redirect.github.com/microsoft/nvx/pull/659) / microvm tests: stream OpenVMM transcripts to disk as they are read | **REFUTED (model)** / latest attempt: failure | 9 | **1** | 4 | 0 | 4 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/16#issuecomment-6357198686) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39896467670) / [latest attempt](https://github.com/shuvendu-lahiri/nvx/actions/runs/39896467670) |
 | [shuvendu-lahiri/nvx#18](https://github.com/shuvendu-lahiri/nvx/pull/18) | [Source change 664](https://redirect.github.com/microsoft/nvx/pull/664) / release: name the mismatched fields in Ubuntu artifact manifest errors | Published | 5 | 0 | 3 | 0 | 2 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/18#issuecomment-6385338262) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39896859074) |
 | [shuvendu-lahiri/nvx#17](https://github.com/shuvendu-lahiri/nvx/pull/17) | [Source change 678](https://redirect.github.com/microsoft/nvx/pull/678) / nvx\-rs: build the NVXS unit tests' epoch identities with one function | Published | 6 | 0 | 5 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/17#issuecomment-6385037482) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39896853340) |
@@ -38,6 +38,12 @@ Snapshot: 2026-10-24T15:04:43.574171+00:00. Latest published report per PR suppl
 
 The following property texts are extracted from the published reports, without new adjudication or inference. The original report contains assumptions, source overlays and native evidence.
 
+### shuvendu-lahiri/nvx#20 / P6
+
+A process\-creation OSError closes the opened stderr log\.
+
+[Original report](https://github.com/shuvendu-lahiri/nvx/pull/20#issuecomment-6385797194)
+
 ### shuvendu-lahiri/nvx#19 / P10
 
 A successful git retrieval writes using the relative basename\.
@@ -49,12 +55,6 @@ A successful git retrieval writes using the relative basename\.
 A missing cidr produces an Unsupported error\.
 
 [Original report](https://github.com/shuvendu-lahiri/nvx/pull/11#issuecomment-6384226118)
-
-### shuvendu-lahiri/nvx#20 / P7
-
-If process creation raises OSError, the constructor closes the already\-opened stderr log and propagates that error; if process creation succeeds but either protocol pipe is absent, it terminates the process, closes the stderr log, and raises ScriptError rather than returning a partially initialized client\.
-
-[Original report](https://github.com/shuvendu-lahiri/nvx/pull/20#issuecomment-6357548128)
 
 ### shuvendu-lahiri/nvx#16 / P8
 
