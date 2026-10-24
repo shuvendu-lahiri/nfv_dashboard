@@ -5,14 +5,15 @@ Published results from the prototype [Neuro-Formal Verification](https://arxiv.o
 
 **[Live interactive dashboard](https://shuvendu-lahiri.github.io/nfv_dashboard/litebox/)** / [all repositories](https://shuvendu-lahiri.github.io/nfv_dashboard/) or [download the standalone HTML](index.html) (no server or external dependencies).
 
-Snapshot: 2026-10-24T17:37:23.013120+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
+Snapshot: 2026-10-24T18:09:48.148912+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
 
-**44 PRs attempted; 87 workflow attempts; 38 published reports; 11 PRs with 13 conditional refutations; 177 model verifications; 6 PRs without a published report.**
+**44 PRs attempted; 91 workflow attempts; 38 published reports; 10 PRs with 12 conditional refutations; 186 model verifications; 6 PRs without a published report.**
 
 ## All attempted PRs (refutations first)
 
 | PR | Change | Latest report | Properties | Refuted | Verified | Exhausted | Audit failure | Evidence |
 |---|---|---|---:|---:|---:|---:|---:|---|
+| [shuvendu-lahiri/litebox#39](https://github.com/shuvendu-lahiri/litebox/pull/39) | Staged NFV audit \- change 1665: Zeroize sensitive data in OP\-TEE crypto syscalls | **REFUTED (model)** | 9 | **2** | 6 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/39#issuecomment-6387594761) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532831209) |
 | [shuvendu-lahiri/litebox#31](https://github.com/shuvendu-lahiri/litebox/pull/31) | Replay change 1272: Cherry pick change 1110 Fix checking of directory search/read perms | **REFUTED (model)** | 9 | **1** | 6 | 0 | 2 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/31#issuecomment-6387051342) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39447927739) |
 | [shuvendu-lahiri/litebox#24](https://github.com/shuvendu-lahiri/litebox/pull/24) | Replay change 1297: Cherry pick change 1231 Switch to explicit file system \`Context\`s | **REFUTED (model)** | 10 | **1** | 8 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/24#issuecomment-6386308409) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39424463467) |
 | [shuvendu-lahiri/litebox#18](https://github.com/shuvendu-lahiri/litebox/pull/18) | Replay change 1470: Bump SNP and LVBS nightly toolchains | **REFUTED (model)** | 8 | **1** | 6 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/18#issuecomment-6385081547) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39415165751) |
@@ -20,10 +21,11 @@ Snapshot: 2026-10-24T17:37:23.013120+00:00. Latest published report per PR suppl
 | [shuvendu-lahiri/litebox#8](https://github.com/shuvendu-lahiri/litebox/pull/8) | Replay change 1648: Cherry pick change 1564 Refactor to remove \`litebox::path::Arg\` | **REFUTED (model)** | 10 | **1** | 6 | 0 | 3 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/8#issuecomment-6383719541) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39357363330) |
 | [shuvendu-lahiri/litebox#3](https://github.com/shuvendu-lahiri/litebox/pull/3) | Replay change 1640: replace procfd special cases with filesystem symlinks | **REFUTED (model)** | 10 | **2** | 4 | 0 | 4 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/3#issuecomment-6383064179) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39390206732) |
 | [shuvendu-lahiri/litebox#2](https://github.com/shuvendu-lahiri/litebox/pull/2) | Replay change 1656: copy broker pipe and socket reads in bulk | **REFUTED (model)** | 9 | **1** | 8 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/2#issuecomment-6382629152) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39205431424) |
-| [shuvendu-lahiri/litebox#38](https://github.com/shuvendu-lahiri/litebox/pull/38) | Staged NFV audit \- change 1668: Stacked runners: Add virtual init | **REFUTED (model)** / latest attempt: in\_progress | 8 | **1** | 2 | 3 | 2 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/38#issuecomment-6307252325) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532833594) / [latest attempt](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532833594) |
-| [shuvendu-lahiri/litebox#43](https://github.com/shuvendu-lahiri/litebox/pull/43) | Staged NFV audit \- change 1635: Cherry\-pick "LVBS: Allow concurrent vault entries" | **REFUTED (model)** | 10 | **1** | 0 | 2 | 7 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/43#issuecomment-6307191865) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532819562) |
-| [shuvendu-lahiri/litebox#42](https://github.com/shuvendu-lahiri/litebox/pull/42) | Staged NFV audit \- change 1637: Cherry\-pick "LVBS: Clean up after a panic inside the vault" | **REFUTED (model)** | 8 | **1** | 1 | 4 | 2 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/42#issuecomment-6307056163) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532822431) |
-| [shuvendu-lahiri/litebox#35](https://github.com/shuvendu-lahiri/litebox/pull/35) | Replay change 1059: Minor cleanup over change 1056 | **REFUTED (model)** / latest attempt: in\_progress | 10 | **2** | 6 | 0 | 2 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/35#issuecomment-6297535430) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39460648199) / [latest attempt](https://github.com/shuvendu-lahiri/litebox/actions/runs/39460648199) |
+| [shuvendu-lahiri/litebox#43](https://github.com/shuvendu-lahiri/litebox/pull/43) | Staged NFV audit \- change 1635: Cherry\-pick "LVBS: Allow concurrent vault entries" | **REFUTED (model)** / latest attempt: in\_progress | 10 | **1** | 0 | 2 | 7 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/43#issuecomment-6307191865) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532819562) / [latest attempt](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532819562) |
+| [shuvendu-lahiri/litebox#42](https://github.com/shuvendu-lahiri/litebox/pull/42) | Staged NFV audit \- change 1637: Cherry\-pick "LVBS: Clean up after a panic inside the vault" | **REFUTED (model)** / latest attempt: in\_progress | 8 | **1** | 1 | 4 | 2 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/42#issuecomment-6307056163) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532822431) / [latest attempt](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532822431) |
+| [shuvendu-lahiri/litebox#41](https://github.com/shuvendu-lahiri/litebox/pull/41) | Staged NFV audit \- change 1652: Accept inherited ignored signals in the Linux userland runner | Published | 6 | 0 | 5 | 1 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/41#issuecomment-6387720259) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532828639) |
+| [shuvendu-lahiri/litebox#38](https://github.com/shuvendu-lahiri/litebox/pull/38) | Staged NFV audit \- change 1668: Stacked runners: Add virtual init | Published | 7 | 0 | 6 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/38#issuecomment-6387516345) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532833594) |
+| [shuvendu-lahiri/litebox#35](https://github.com/shuvendu-lahiri/litebox/pull/35) | Replay change 1059: Minor cleanup over change 1056 | Published | 6 | 0 | 3 | 0 | 3 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/35#issuecomment-6387473232) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39460648199) |
 | [shuvendu-lahiri/litebox#33](https://github.com/shuvendu-lahiri/litebox/pull/33) | Replay change 1254: Cherry pick change 1106 Improve handle management | Published | 10 | 0 | 9 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/33#issuecomment-6387204294) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39456104468) |
 | [shuvendu-lahiri/litebox#34](https://github.com/shuvendu-lahiri/litebox/pull/34) | Replay change 1078: Normalize objdump snapshot output | Published | 7 | 0 | 2 | 4 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/34#issuecomment-6387173549) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39456543041) |
 | [shuvendu-lahiri/litebox#32](https://github.com/shuvendu-lahiri/litebox/pull/32) | Replay change 1255: Cherry pick change 1107 Migrate in\-memory file system to new backend | Published | 10 | 0 | 8 | 1 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/32#issuecomment-6387156766) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39449644221) |
@@ -43,9 +45,7 @@ Snapshot: 2026-10-24T17:37:23.013120+00:00. Latest published report per PR suppl
 | [shuvendu-lahiri/litebox#9](https://github.com/shuvendu-lahiri/litebox/pull/9) | Replay change 1647: Cherry pick change 1558 Minor error cleanup for \`NoSearchPerms\` | Published | 10 | 0 | 10 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/9#issuecomment-6383869303) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39405410051) |
 | [shuvendu-lahiri/litebox#7](https://github.com/shuvendu-lahiri/litebox/pull/7) | Replay change 1657: Cherry pick change 1566 Add support for symlink resolution | Published | 10 | 0 | 9 | 1 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/7#issuecomment-6383605651) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39399231191) |
 | [shuvendu-lahiri/litebox#27](https://github.com/shuvendu-lahiri/litebox/pull/27) | Replay change 1281: Cherry pick change 1165 Join the spawned handles in tests | Published | 7 | 0 | 7 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/27#issuecomment-6382201720) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39432560915) |
-| [shuvendu-lahiri/litebox#39](https://github.com/shuvendu-lahiri/litebox/pull/39) | Staged NFV audit \- change 1665: Zeroize sensitive data in OP\-TEE crypto syscalls | Published / latest attempt: in\_progress | 9 | 0 | 2 | 0 | 7 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/39#issuecomment-6307021315) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532831209) / [latest attempt](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532831209) |
-| [shuvendu-lahiri/litebox#44](https://github.com/shuvendu-lahiri/litebox/pull/44) | Staged NFV audit \- change 1633: Cherry\-pick "Fix handle allocator overflows in OP\-TEE shim" | Published | 9 | 0 | 2 | 0 | 7 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/44#issuecomment-6306994781) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532816407) |
-| [shuvendu-lahiri/litebox#41](https://github.com/shuvendu-lahiri/litebox/pull/41) | Staged NFV audit \- change 1652: Accept inherited ignored signals in the Linux userland runner | Published | 4 | 0 | 1 | 1 | 2 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/41#issuecomment-6306966220) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532828639) |
+| [shuvendu-lahiri/litebox#44](https://github.com/shuvendu-lahiri/litebox/pull/44) | Staged NFV audit \- change 1633: Cherry\-pick "Fix handle allocator overflows in OP\-TEE shim" | Published / latest attempt: in\_progress | 9 | 0 | 2 | 0 | 7 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/44#issuecomment-6306994781) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532816407) / [latest attempt](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532816407) |
 | [shuvendu-lahiri/litebox#40](https://github.com/shuvendu-lahiri/litebox/pull/40) | Staged NFV audit \- change 1651: Spin before sleeping and skip needless wakes on the broker control ring | Published / latest attempt: failure | 10 | 0 | 5 | 1 | 4 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/40#issuecomment-6306958335) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532825730) / [latest attempt](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532825730) |
 | [shuvendu-lahiri/litebox#45](https://github.com/shuvendu-lahiri/litebox/pull/45) | Staged NFV audit \- change 1623: Cherry\-pick "Fix the failure handling of non\-page\-sized memory allocation" | Published | 8 | 0 | 2 | 1 | 5 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/45#issuecomment-6306907644) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532695234) |
 | [shuvendu-lahiri/litebox#46](https://github.com/shuvendu-lahiri/litebox/pull/46) | Staged NFV audit \- change 1621: Fix delayed SIGCHLD after wait4 returns ECHILD | Published | 4 | 0 | 0 | 2 | 2 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/46#issuecomment-6306751843) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532813376) |
@@ -61,6 +61,18 @@ Snapshot: 2026-10-24T17:37:23.013120+00:00. Latest published report per PR suppl
 ## Conditional model refutations
 
 The following property texts are extracted from the published reports, without new adjudication or inference. The original report contains assumptions, source overlays and native evidence.
+
+### shuvendu-lahiri/litebox#39 / P2
+
+Successful initialization over existing cipher state zeroizes that state\.
+
+[Original report](https://github.com/shuvendu-lahiri/litebox/pull/39#issuecomment-6387594761)
+
+### shuvendu-lahiri/litebox#39 / P4
+
+With a prior cipher, every released sensitive element is zero\.
+
+[Original report](https://github.com/shuvendu-lahiri/litebox/pull/39#issuecomment-6387594761)
 
 ### shuvendu-lahiri/litebox#31 / P2
 
@@ -110,12 +122,6 @@ An invalid queue range must panic\.
 
 [Original report](https://github.com/shuvendu-lahiri/litebox/pull/2#issuecomment-6382629152)
 
-### shuvendu-lahiri/litebox#38 / P4
-
-It is expected that when neither a pending launch nor a virtual init exists, associate follows the legacy root path: it creates no broker process during association, returns an Association marked as not launched with an empty process cell, and places no pending launch in its New state\.
-
-[Original report](https://github.com/shuvendu-lahiri/litebox/pull/38#issuecomment-6307252325)
-
 ### shuvendu-lahiri/litebox#43 / P10
 
 After the thunk returns and before trampoline returns to its caller, the function is expected to zero all VAULT\_STACK\_SIZE bytes beginning at VAULT\_STACK\_BOTTOM, restore the caller's stack pointer and CR3, replace VTL1 extended state with the saved user state or initialization state, zero the listed caller\-saved general\-purpose registers, and perform the configured CPU\-buffer clearing operation\.
@@ -127,18 +133,6 @@ After the thunk returns and before trampoline returns to its caller, the functio
 After the selected vault\-abort path completes, the hypothesized behavior is to print exactly the supplied static panic location only when the location pointer is non\-null, print no location when it is null, and in either case finish by transferring control to VTL0 rather than returning\.
 
 [Original report](https://github.com/shuvendu-lahiri/litebox/pull/42#issuecomment-6307056163)
-
-### shuvendu-lahiri/litebox#35 / P2
-
-Assuming argv\_len \+ env\_len does not overflow and the declared region is within argv\_and\_env, argument parsing is expected to walk consecutive NUL\-terminated strings by their encoded byte lengths, classify strings whose starting offset is below argv\_len as argv and the remainder as envp, and use the first argv string as the UTF\-8 program path\. A missing NUL, an empty argv list, or a non\-UTF\-8 first argument makes parsing fail and causes invalid\-parameter termination rather than continuing startup\.
-
-[Original report](https://github.com/shuvendu-lahiri/litebox/pull/35#issuecomment-6297535430)
-
-### shuvendu-lahiri/litebox#35 / P10
-
-For every handle\_page\_fault error not recovered through a kernel\-space exception\-table fixup—including non\-AccessError errors, AccessError at a user\-space instruction pointer, and AccessError with no matching fixup—page\_fault\_handler invokes platform termination with SM\_SEV\_TERM\_SET and SM\_TERM\_EXCEPTION\.
-
-[Original report](https://github.com/shuvendu-lahiri/litebox/pull/35#issuecomment-6297535430)
 
 ## Refresh and validate
 

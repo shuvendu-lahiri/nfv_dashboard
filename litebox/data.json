@@ -1,22 +1,22 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/litebox",
-  "generated_at": "2026-10-24T17:37:23.013120+00:00",
+  "generated_at": "2026-10-24T18:09:48.148912+00:00",
   "name": "litebox",
   "label": "LiteBox",
   "summary": {
     "selected_prs": 44,
     "attempted_prs": 44,
     "published_reports": 38,
-    "workflow_attempts": 87,
+    "workflow_attempts": 91,
     "without_report": 6,
-    "refuted_prs": 11,
-    "properties": 293,
+    "refuted_prs": 10,
+    "properties": 290,
     "outcomes": {
-      "refuted": 13,
-      "verified": 177,
-      "resources exhausted": 31,
-      "type-check/audit failure": 72
+      "refuted": 12,
+      "verified": 186,
+      "resources exhausted": 28,
+      "type-check/audit failure": 64
     }
   },
   "prs": [
@@ -2213,43 +2213,30 @@
       "head_sha": "08a70d9a2450ca851e55ea7da32b7e81ed358f4e",
       "head_branch": "nfv-replay-1059",
       "latest_report": {
-        "comment_id": 6297535430,
-        "url": "https://github.com/shuvendu-lahiri/litebox/pull/35#issuecomment-6297535430",
-        "published_at": "2026-10-20T17:56:23Z",
-        "updated_at": "2026-10-20T17:56:23Z",
-        "body_sha256": "f672f7b6c682e9e0e3a1803cd25003e9a3c8eec6a064f2b412a71ebc5abfad34",
+        "comment_id": 6387473232,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/35#issuecomment-6387473232",
+        "published_at": "2026-10-24T17:44:09Z",
+        "updated_at": "2026-10-24T17:44:09Z",
+        "body_sha256": "f41e7d10937f176183fb9de947408364918a301fd5de813c6a29bafb2d6ea07b",
         "source_sha_prefix": "08a70d9a2450",
         "base_sha_prefix": "39f0272a6db2",
         "run_id": 39460648199,
         "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39460648199",
         "counts": {
-          "refuted": 2,
-          "verified": 6,
+          "refuted": 0,
+          "verified": 3,
           "resources exhausted": 0,
-          "type-check/audit failure": 2
+          "type-check/audit failure": 3
         },
-        "properties": 10,
-        "refutations": [
-          {
-            "property_id": "P2",
-            "property": "Assuming argv_len + env_len does not overflow and the declared region is within argv_and_env, argument parsing is expected to walk consecutive NUL-terminated strings by their encoded byte lengths, classify strings whose starting offset is below argv_len as argv and the remainder as envp, and use the first argv string as the UTF-8 program path. A missing NUL, an empty argv list, or a non-UTF-8 first argument makes parsing fail and causes invalid-parameter termination rather than continuing startup.",
-            "input": "`params.argv_and_env = [65, 0]`; `params.argv_len.reinterpret_as_unsigned() as usize = 1`; `params.env_len.reinterpret_as_unsigned() as usize = 0`; abstract state: whether SHIM was already initialized = `false`",
-            "sketch": "If the declared region contains only byte 65 but the backing array has a following NUL, core::ffi::CStr::from_bytes_until_nul(\u00b6ms.argv_and_env[idx..]) can accept that NUL outside the declared region, allowing parsing to continue after consuming more than argv_len + env_len bytes."
-          },
-          {
-            "property_id": "P10",
-            "property": "For every handle_page_fault error not recovered through a kernel-space exception-table fixup\u2014including non-AccessError errors, AccessError at a user-space instruction pointer, and AccessError with no matching fixup\u2014page_fault_handler invokes platform termination with SM_SEV_TERM_SET and SM_TERM_EXCEPTION.",
-            "input": "`litebox_platform_linux_kernel::arch::instructions::cr2() = 0`; `pt_regs.orig_rax = 0`; `pt_regs.rip = 0`; abstract state: whether the page-fault error logging invocation completes normally = `false`; whether the PageFaultError is AccessError = `false`; whether handle_page_fault returns Err = `true`; recovery address returned by search_exception_tables = `0`; whether search_exception_tables finds a matching fixup = `false`; whether SHIM is initialized = `true`; TASK_ADDR_MAX = `0`",
-            "sketch": "If handle_page_fault returns a non-AccessError error and the preceding logging invocation does not complete normally, platform.terminate(globals::SM_SEV_TERM_SET, globals::SM_TERM_EXCEPTION); is not reached."
-          }
-        ]
+        "properties": 6,
+        "refutations": []
       },
       "report_history": [
         {
           "comment_id": 6297535430,
           "url": "https://github.com/shuvendu-lahiri/litebox/pull/35#issuecomment-6297535430",
           "published_at": "2026-10-20T17:56:23Z",
-          "updated_at": "2026-10-20T17:56:23Z",
+          "updated_at": "2026-10-24T17:44:08Z",
           "body_sha256": "f672f7b6c682e9e0e3a1803cd25003e9a3c8eec6a064f2b412a71ebc5abfad34",
           "source_sha_prefix": "08a70d9a2450",
           "base_sha_prefix": "39f0272a6db2",
@@ -2276,6 +2263,25 @@
               "sketch": "If handle_page_fault returns a non-AccessError error and the preceding logging invocation does not complete normally, platform.terminate(globals::SM_SEV_TERM_SET, globals::SM_TERM_EXCEPTION); is not reached."
             }
           ]
+        },
+        {
+          "comment_id": 6387473232,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/35#issuecomment-6387473232",
+          "published_at": "2026-10-24T17:44:09Z",
+          "updated_at": "2026-10-24T17:44:09Z",
+          "body_sha256": "f41e7d10937f176183fb9de947408364918a301fd5de813c6a29bafb2d6ea07b",
+          "source_sha_prefix": "08a70d9a2450",
+          "base_sha_prefix": "39f0272a6db2",
+          "run_id": 39460648199,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39460648199",
+          "counts": {
+            "refuted": 0,
+            "verified": 3,
+            "resources exhausted": 0,
+            "type-check/audit failure": 3
+          },
+          "properties": 6,
+          "refutations": []
         }
       ],
       "report_matches_current_head": true,
@@ -2283,8 +2289,8 @@
       "latest_run": {
         "id": 39460648199,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39460648199",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       }
     },
@@ -2372,37 +2378,30 @@
       "head_sha": "a696e39865984f11de65058dd560efdf9c92dc9f",
       "head_branch": "nfv-staged-1668",
       "latest_report": {
-        "comment_id": 6307252325,
-        "url": "https://github.com/shuvendu-lahiri/litebox/pull/38#issuecomment-6307252325",
-        "published_at": "2026-10-21T03:25:02Z",
-        "updated_at": "2026-10-21T03:25:02Z",
-        "body_sha256": "c919d9b9458bc205b4bcc0754effd9da41bf123ac614fba834031e465a087d33",
+        "comment_id": 6387516345,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/38#issuecomment-6387516345",
+        "published_at": "2026-10-24T17:48:13Z",
+        "updated_at": "2026-10-24T17:48:13Z",
+        "body_sha256": "ef15dc32c9b6a3c3786b3f9b08796e7aa8c376a1581618931dbbb826f343d91c",
         "source_sha_prefix": "a696e3986598",
         "base_sha_prefix": "1f814858d6d7",
         "run_id": 39532833594,
         "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39532833594",
         "counts": {
-          "refuted": 1,
-          "verified": 2,
-          "resources exhausted": 3,
-          "type-check/audit failure": 2
+          "refuted": 0,
+          "verified": 6,
+          "resources exhausted": 0,
+          "type-check/audit failure": 1
         },
-        "properties": 8,
-        "refutations": [
-          {
-            "property_id": "P4",
-            "property": "It is expected that when neither a pending launch nor a virtual init exists, associate follows the legacy root path: it creates no broker process during association, returns an Association marked as not launched with an empty process cell, and places no pending launch in its New state.",
-            "input": "abstract state: opaque operation success state = `[]`; opaque operation results = `[]`; packed launch and virtual-init state = `[]`; packed source integer state = `[]`",
-            "sketch": "If `launch` and `self.init` are both absent but `PinnedControlRing::new(control_ring_pages).expect(\"the pages hold the control ring\");` panics, the legacy arm creates no broker process but `associate` also does not return the intended empty, not-launched association."
-          }
-        ]
+        "properties": 7,
+        "refutations": []
       },
       "report_history": [
         {
           "comment_id": 6307252325,
           "url": "https://github.com/shuvendu-lahiri/litebox/pull/38#issuecomment-6307252325",
           "published_at": "2026-10-21T03:25:02Z",
-          "updated_at": "2026-10-21T03:25:02Z",
+          "updated_at": "2026-10-24T17:48:11Z",
           "body_sha256": "c919d9b9458bc205b4bcc0754effd9da41bf123ac614fba834031e465a087d33",
           "source_sha_prefix": "a696e3986598",
           "base_sha_prefix": "1f814858d6d7",
@@ -2423,6 +2422,25 @@
               "sketch": "If `launch` and `self.init` are both absent but `PinnedControlRing::new(control_ring_pages).expect(\"the pages hold the control ring\");` panics, the legacy arm creates no broker process but `associate` also does not return the intended empty, not-launched association."
             }
           ]
+        },
+        {
+          "comment_id": 6387516345,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/38#issuecomment-6387516345",
+          "published_at": "2026-10-24T17:48:13Z",
+          "updated_at": "2026-10-24T17:48:13Z",
+          "body_sha256": "ef15dc32c9b6a3c3786b3f9b08796e7aa8c376a1581618931dbbb826f343d91c",
+          "source_sha_prefix": "a696e3986598",
+          "base_sha_prefix": "1f814858d6d7",
+          "run_id": 39532833594,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39532833594",
+          "counts": {
+            "refuted": 0,
+            "verified": 6,
+            "resources exhausted": 0,
+            "type-check/audit failure": 1
+          },
+          "properties": 7,
+          "refutations": []
         }
       ],
       "report_matches_current_head": true,
@@ -2430,8 +2448,8 @@
       "latest_run": {
         "id": 39532833594,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39532833594",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       }
     },
@@ -2443,30 +2461,43 @@
       "head_sha": "6956da7b17e6f9be6341467897a2b4f9f0639def",
       "head_branch": "nfv-staged-1665",
       "latest_report": {
-        "comment_id": 6307021315,
-        "url": "https://github.com/shuvendu-lahiri/litebox/pull/39#issuecomment-6307021315",
-        "published_at": "2026-10-21T03:06:57Z",
-        "updated_at": "2026-10-21T03:06:57Z",
-        "body_sha256": "68be01c7a15c18061104365a0c7c39c338a997acd541c8c8328335899bb6efbb",
+        "comment_id": 6387594761,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/39#issuecomment-6387594761",
+        "published_at": "2026-10-24T17:55:41Z",
+        "updated_at": "2026-10-24T17:55:41Z",
+        "body_sha256": "ff503e7095954c9567ba736c3047191e9cd0aab44dc3eb8b7e1f632f267cacb7",
         "source_sha_prefix": "6956da7b17e6",
         "base_sha_prefix": "16ffb35730c8",
         "run_id": 39532831209,
         "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39532831209",
         "counts": {
-          "refuted": 0,
-          "verified": 2,
+          "refuted": 2,
+          "verified": 6,
           "resources exhausted": 0,
-          "type-check/audit failure": 7
+          "type-check/audit failure": 1
         },
         "properties": 9,
-        "refutations": []
+        "refutations": [
+          {
+            "property_id": "P2",
+            "property": "Successful initialization over existing cipher state zeroizes that state.",
+            "input": "`iv = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]`; `key = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]`; `let Some(key) = tee_obj.get_key() = true`; `let Some(handle) = cryp_state.get_object_handle(true) = true`; `tee_obj_map.exists(handle) = true`; `let Some(handle) = cryp_state.get_object_handle(false) = false`; `tee_obj_map.exists(handle) = false`; `let Some(cryp_state) = tee_cryp_state_map.get_copy(state) = true`; abstract state: cipher algorithm-class condition = `true`; AES-CTR algorithm selection = `true`; successful object-copy lookup = `true`; presence of pre-existing cipher state = `true`; replacement effect of set_cipher = `false`; successful set_cipher result = `true`; zeroization effect of set_cipher = `false`; opaque cipher-state handle = `0`",
+            "sketch": "If the lookup and validation conditions permit cipher creation for a state with an existing cipher, tee_cryp_state_map.set_cipher(state, cipher)?; can succeed under the abstract call outcome while replacement and zeroization are both absent. In that conditional scenario, initialization succeeds without establishing that the prior sensitive cipher state was replaced and zeroized."
+          },
+          {
+            "property_id": "P4",
+            "property": "With a prior cipher, every released sensitive element is zero.",
+            "input": "abstract state: sensitive internal state of the supplied cipher argument = `[2]`; whether self.cipher already contains a cipher = `true`; sensitive state observed after release of the replaced cipher = `[1]`; sensitive internal state of the previously stored cipher = `[1]`",
+            "sketch": "If the prior cipher\u2019s abstract sensitive state remains nonzero when self.cipher = Some(cipher); replaces it, that prior state is not zeroized as it is released. The accepted refutation therefore conditionally shows that this replacement does not ensure the claimed zeroization behavior."
+          }
+        ]
       },
       "report_history": [
         {
           "comment_id": 6307021315,
           "url": "https://github.com/shuvendu-lahiri/litebox/pull/39#issuecomment-6307021315",
           "published_at": "2026-10-21T03:06:57Z",
-          "updated_at": "2026-10-21T03:06:57Z",
+          "updated_at": "2026-10-24T17:55:39Z",
           "body_sha256": "68be01c7a15c18061104365a0c7c39c338a997acd541c8c8328335899bb6efbb",
           "source_sha_prefix": "6956da7b17e6",
           "base_sha_prefix": "16ffb35730c8",
@@ -2480,6 +2511,38 @@
           },
           "properties": 9,
           "refutations": []
+        },
+        {
+          "comment_id": 6387594761,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/39#issuecomment-6387594761",
+          "published_at": "2026-10-24T17:55:41Z",
+          "updated_at": "2026-10-24T17:55:41Z",
+          "body_sha256": "ff503e7095954c9567ba736c3047191e9cd0aab44dc3eb8b7e1f632f267cacb7",
+          "source_sha_prefix": "6956da7b17e6",
+          "base_sha_prefix": "16ffb35730c8",
+          "run_id": 39532831209,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39532831209",
+          "counts": {
+            "refuted": 2,
+            "verified": 6,
+            "resources exhausted": 0,
+            "type-check/audit failure": 1
+          },
+          "properties": 9,
+          "refutations": [
+            {
+              "property_id": "P2",
+              "property": "Successful initialization over existing cipher state zeroizes that state.",
+              "input": "`iv = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]`; `key = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]`; `let Some(key) = tee_obj.get_key() = true`; `let Some(handle) = cryp_state.get_object_handle(true) = true`; `tee_obj_map.exists(handle) = true`; `let Some(handle) = cryp_state.get_object_handle(false) = false`; `tee_obj_map.exists(handle) = false`; `let Some(cryp_state) = tee_cryp_state_map.get_copy(state) = true`; abstract state: cipher algorithm-class condition = `true`; AES-CTR algorithm selection = `true`; successful object-copy lookup = `true`; presence of pre-existing cipher state = `true`; replacement effect of set_cipher = `false`; successful set_cipher result = `true`; zeroization effect of set_cipher = `false`; opaque cipher-state handle = `0`",
+              "sketch": "If the lookup and validation conditions permit cipher creation for a state with an existing cipher, tee_cryp_state_map.set_cipher(state, cipher)?; can succeed under the abstract call outcome while replacement and zeroization are both absent. In that conditional scenario, initialization succeeds without establishing that the prior sensitive cipher state was replaced and zeroized."
+            },
+            {
+              "property_id": "P4",
+              "property": "With a prior cipher, every released sensitive element is zero.",
+              "input": "abstract state: sensitive internal state of the supplied cipher argument = `[2]`; whether self.cipher already contains a cipher = `true`; sensitive state observed after release of the replaced cipher = `[1]`; sensitive internal state of the previously stored cipher = `[1]`",
+              "sketch": "If the prior cipher\u2019s abstract sensitive state remains nonzero when self.cipher = Some(cipher); replaces it, that prior state is not zeroized as it is released. The accepted refutation therefore conditionally shows that this replacement does not ensure the claimed zeroization behavior."
+            }
+          ]
         }
       ],
       "report_matches_current_head": true,
@@ -2487,8 +2550,8 @@
       "latest_run": {
         "id": 39532831209,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39532831209",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       }
     },
@@ -2557,22 +2620,22 @@
       "head_sha": "9ca1fde88dcb7fa148042f7680de147557f48d37",
       "head_branch": "nfv-staged-1652",
       "latest_report": {
-        "comment_id": 6306966220,
-        "url": "https://github.com/shuvendu-lahiri/litebox/pull/41#issuecomment-6306966220",
-        "published_at": "2026-10-21T03:02:35Z",
-        "updated_at": "2026-10-21T03:02:35Z",
-        "body_sha256": "876705872d204bbfb9d46b60bcb6c07774c6b1b36c6bc8ee34335977ba4ce83f",
+        "comment_id": 6387720259,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/41#issuecomment-6387720259",
+        "published_at": "2026-10-24T18:07:39Z",
+        "updated_at": "2026-10-24T18:07:39Z",
+        "body_sha256": "596fd05d4a203140f662a6cf0359e3e5932b65d3e4ab2d4c43e8f6338077cdd6",
         "source_sha_prefix": "9ca1fde88dcb",
         "base_sha_prefix": "00d29b11e1f7",
         "run_id": 39532828639,
         "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39532828639",
         "counts": {
           "refuted": 0,
-          "verified": 1,
+          "verified": 5,
           "resources exhausted": 1,
-          "type-check/audit failure": 2
+          "type-check/audit failure": 0
         },
-        "properties": 4,
+        "properties": 6,
         "refutations": []
       },
       "report_history": [
@@ -2580,7 +2643,7 @@
           "comment_id": 6306966220,
           "url": "https://github.com/shuvendu-lahiri/litebox/pull/41#issuecomment-6306966220",
           "published_at": "2026-10-21T03:02:35Z",
-          "updated_at": "2026-10-21T03:02:35Z",
+          "updated_at": "2026-10-24T18:07:38Z",
           "body_sha256": "876705872d204bbfb9d46b60bcb6c07774c6b1b36c6bc8ee34335977ba4ce83f",
           "source_sha_prefix": "9ca1fde88dcb",
           "base_sha_prefix": "00d29b11e1f7",
@@ -2594,16 +2657,35 @@
           },
           "properties": 4,
           "refutations": []
+        },
+        {
+          "comment_id": 6387720259,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/41#issuecomment-6387720259",
+          "published_at": "2026-10-24T18:07:39Z",
+          "updated_at": "2026-10-24T18:07:39Z",
+          "body_sha256": "596fd05d4a203140f662a6cf0359e3e5932b65d3e4ab2d4c43e8f6338077cdd6",
+          "source_sha_prefix": "9ca1fde88dcb",
+          "base_sha_prefix": "00d29b11e1f7",
+          "run_id": 39532828639,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39532828639",
+          "counts": {
+            "refuted": 0,
+            "verified": 5,
+            "resources exhausted": 1,
+            "type-check/audit failure": 0
+          },
+          "properties": 6,
+          "refutations": []
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39532828639,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39532828639",
         "status": "completed",
         "conclusion": "success",
-        "attempt": 1
+        "attempt": 2
       }
     },
     {
@@ -2668,13 +2750,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39532822431,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39532822431",
-        "status": "completed",
-        "conclusion": "success",
-        "attempt": 1
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
       }
     },
     {
@@ -2739,13 +2821,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39532819562,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39532819562",
-        "status": "completed",
-        "conclusion": "success",
-        "attempt": 1
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
       }
     },
     {
@@ -2796,13 +2878,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39532816407,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39532816407",
-        "status": "completed",
-        "conclusion": "success",
-        "attempt": 1
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
       }
     },
     {
