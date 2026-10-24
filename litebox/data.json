@@ -1,22 +1,22 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/litebox",
-  "generated_at": "2026-10-24T16:36:43.843741+00:00",
+  "generated_at": "2026-10-24T17:15:57.300578+00:00",
   "name": "litebox",
   "label": "LiteBox",
   "summary": {
     "selected_prs": 44,
     "attempted_prs": 44,
-    "published_reports": 37,
-    "workflow_attempts": 79,
-    "without_report": 7,
+    "published_reports": 38,
+    "workflow_attempts": 83,
+    "without_report": 6,
     "refuted_prs": 12,
-    "properties": 280,
+    "properties": 293,
     "outcomes": {
       "refuted": 14,
-      "verified": 171,
-      "resources exhausted": 28,
-      "type-check/audit failure": 67
+      "verified": 174,
+      "resources exhausted": 32,
+      "type-check/audit failure": 73
     }
   },
   "prs": [
@@ -1740,15 +1740,53 @@
       "state": "open",
       "head_sha": "2bff8e6ef70e800cb62f3cd761700d46f9f62029",
       "head_branch": "nfv-replay-1278",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6386849622,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/29#issuecomment-6386849622",
+        "published_at": "2026-10-24T16:44:33Z",
+        "updated_at": "2026-10-24T16:44:33Z",
+        "body_sha256": "ee0415bfc01039d38d3b0639e735ed025ac716512eb06d1f9c63c82e61225f3c",
+        "source_sha_prefix": "2bff8e6ef70e",
+        "base_sha_prefix": "55162aaa714d",
+        "run_id": 39440128194,
+        "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39440128194",
+        "counts": {
+          "refuted": 0,
+          "verified": 6,
+          "resources exhausted": 1,
+          "type-check/audit failure": 3
+        },
+        "properties": 10,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6386849622,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/29#issuecomment-6386849622",
+          "published_at": "2026-10-24T16:44:33Z",
+          "updated_at": "2026-10-24T16:44:33Z",
+          "body_sha256": "ee0415bfc01039d38d3b0639e735ed025ac716512eb06d1f9c63c82e61225f3c",
+          "source_sha_prefix": "2bff8e6ef70e",
+          "base_sha_prefix": "55162aaa714d",
+          "run_id": 39440128194,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39440128194",
+          "counts": {
+            "refuted": 0,
+            "verified": 6,
+            "resources exhausted": 1,
+            "type-check/audit failure": 3
+          },
+          "properties": 10,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 2,
       "latest_run": {
         "id": 39440128194,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39440128194",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       }
     },
@@ -1843,30 +1881,37 @@
       "head_sha": "30b138ebdad78977a0546c85aec3c2867b309506",
       "head_branch": "nfv-replay-1272",
       "latest_report": {
-        "comment_id": 6295515250,
-        "url": "https://github.com/shuvendu-lahiri/litebox/pull/31#issuecomment-6295515250",
-        "published_at": "2026-10-20T16:14:04Z",
-        "updated_at": "2026-10-20T16:14:04Z",
-        "body_sha256": "a2f613e58f9474e0eac6f1acd054330db072f16bd1ddf1f89430c05a7c47fa40",
+        "comment_id": 6387051342,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/31#issuecomment-6387051342",
+        "published_at": "2026-10-24T17:03:50Z",
+        "updated_at": "2026-10-24T17:03:50Z",
+        "body_sha256": "a1332d1a4a18173918337beb51861ae4c76b6458296fd068296f57e1f23f1f78",
         "source_sha_prefix": "30b138ebdad7",
         "base_sha_prefix": "d311c4081d55",
         "run_id": 39447927739,
         "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39447927739",
         "counts": {
-          "refuted": 0,
-          "verified": 9,
+          "refuted": 1,
+          "verified": 6,
           "resources exhausted": 0,
-          "type-check/audit failure": 0
+          "type-check/audit failure": 2
         },
         "properties": 9,
-        "refutations": []
+        "refutations": [
+          {
+            "property_id": "P2",
+            "property": "Allowed creation calls create_file_at.",
+            "input": "`Self::can_change_entries_in_dir(context, &parent) = true`; `flags.contains(OFlags::CREAT) = true`; `mode = 0`; abstract state: backend-provided seek behavior = `false`; backend file-creation outcome = `true`; descriptor-table insertion result = `0`; the open has reached the missing-target branch = `true`; outcome of obtaining an owned parent-directory handle = `false`; the parent directory has been resolved = `true`",
+            "sketch": "If changing entries is permitted but `.owned_parent_dir(parent.handle)` returns an error, `open` propagates that error before file creation or descriptor insertion."
+          }
+        ]
       },
       "report_history": [
         {
           "comment_id": 6295515250,
           "url": "https://github.com/shuvendu-lahiri/litebox/pull/31#issuecomment-6295515250",
           "published_at": "2026-10-20T16:14:04Z",
-          "updated_at": "2026-10-20T16:14:04Z",
+          "updated_at": "2026-10-24T17:03:48Z",
           "body_sha256": "a2f613e58f9474e0eac6f1acd054330db072f16bd1ddf1f89430c05a7c47fa40",
           "source_sha_prefix": "30b138ebdad7",
           "base_sha_prefix": "d311c4081d55",
@@ -1880,6 +1925,32 @@
           },
           "properties": 9,
           "refutations": []
+        },
+        {
+          "comment_id": 6387051342,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/31#issuecomment-6387051342",
+          "published_at": "2026-10-24T17:03:50Z",
+          "updated_at": "2026-10-24T17:03:50Z",
+          "body_sha256": "a1332d1a4a18173918337beb51861ae4c76b6458296fd068296f57e1f23f1f78",
+          "source_sha_prefix": "30b138ebdad7",
+          "base_sha_prefix": "d311c4081d55",
+          "run_id": 39447927739,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39447927739",
+          "counts": {
+            "refuted": 1,
+            "verified": 6,
+            "resources exhausted": 0,
+            "type-check/audit failure": 2
+          },
+          "properties": 9,
+          "refutations": [
+            {
+              "property_id": "P2",
+              "property": "Allowed creation calls create_file_at.",
+              "input": "`Self::can_change_entries_in_dir(context, &parent) = true`; `flags.contains(OFlags::CREAT) = true`; `mode = 0`; abstract state: backend-provided seek behavior = `false`; backend file-creation outcome = `true`; descriptor-table insertion result = `0`; the open has reached the missing-target branch = `true`; outcome of obtaining an owned parent-directory handle = `false`; the parent directory has been resolved = `true`",
+              "sketch": "If changing entries is permitted but `.owned_parent_dir(parent.handle)` returns an error, `open` propagates that error before file creation or descriptor insertion."
+            }
+          ]
         }
       ],
       "report_matches_current_head": true,
@@ -1887,8 +1958,8 @@
       "latest_run": {
         "id": 39447927739,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39447927739",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       }
     },
@@ -1900,37 +1971,30 @@
       "head_sha": "98e892dd8ab9c8e0e0a2103c9f27f28e18aee265",
       "head_branch": "nfv-replay-1255",
       "latest_report": {
-        "comment_id": 6295599807,
-        "url": "https://github.com/shuvendu-lahiri/litebox/pull/32#issuecomment-6295599807",
-        "published_at": "2026-10-20T16:18:04Z",
-        "updated_at": "2026-10-20T16:18:04Z",
-        "body_sha256": "82edec310fa19d9457ed811d819a52c28d955f95024a251c3105d525625d2638",
+        "comment_id": 6387156766,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/32#issuecomment-6387156766",
+        "published_at": "2026-10-24T17:13:45Z",
+        "updated_at": "2026-10-24T17:13:45Z",
+        "body_sha256": "a45323e1c889c3ecc17b704dc90db967dc6eb69525f9cdd1405bb0b7ec217a1e",
         "source_sha_prefix": "98e892dd8ab9",
         "base_sha_prefix": "e55c7fade00e",
         "run_id": 39449644221,
         "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39449644221",
         "counts": {
-          "refuted": 1,
+          "refuted": 0,
           "verified": 8,
           "resources exhausted": 1,
-          "type-check/audit failure": 0
+          "type-check/audit failure": 1
         },
         "properties": 10,
-        "refutations": [
-          {
-            "property_id": "P3",
-            "property": "For a valid directory handle and supported flags, requesting WRONLY or RDWR triggers the writable-directory workaround and emits a debug log rather than rejecting the directory merely because write access was requested. Unless PATH is set, the function still returns AccessNotAllowed when the current user lacks any requested read or write permission; PATH bypasses those access checks, and otherwise a directory handle preserving the flags is returned.",
-            "input": "`permissions.can_read_by(self.current_user) = true`; `permissions.can_write_by(self.current_user) = true`; `flags = 1`; abstract state: observable logging effect of the writable-directory debug invocation = `false`; valid walking directory handle for the in-memory backend = `true`; normal completion of the supported-open-flags check = `true`",
-            "sketch": "If flags is WRONLY, the handle and flags satisfy the stated validity conditions, and the current user passes the requested write-permission check, the writable-directory branch evaluates litebox_util_log::debug!( and can return a directory handle preserving those flags. If the explicitly abstracted observable logging effect is absent, the accepted refutation conditionally contradicts the intended debug-log emission without establishing a concrete logging implementation behavior."
-          }
-        ]
+        "refutations": []
       },
       "report_history": [
         {
           "comment_id": 6295599807,
           "url": "https://github.com/shuvendu-lahiri/litebox/pull/32#issuecomment-6295599807",
           "published_at": "2026-10-20T16:18:04Z",
-          "updated_at": "2026-10-20T16:18:04Z",
+          "updated_at": "2026-10-24T17:13:43Z",
           "body_sha256": "82edec310fa19d9457ed811d819a52c28d955f95024a251c3105d525625d2638",
           "source_sha_prefix": "98e892dd8ab9",
           "base_sha_prefix": "e55c7fade00e",
@@ -1951,6 +2015,25 @@
               "sketch": "If flags is WRONLY, the handle and flags satisfy the stated validity conditions, and the current user passes the requested write-permission check, the writable-directory branch evaluates litebox_util_log::debug!( and can return a directory handle preserving those flags. If the explicitly abstracted observable logging effect is absent, the accepted refutation conditionally contradicts the intended debug-log emission without establishing a concrete logging implementation behavior."
             }
           ]
+        },
+        {
+          "comment_id": 6387156766,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/32#issuecomment-6387156766",
+          "published_at": "2026-10-24T17:13:45Z",
+          "updated_at": "2026-10-24T17:13:45Z",
+          "body_sha256": "a45323e1c889c3ecc17b704dc90db967dc6eb69525f9cdd1405bb0b7ec217a1e",
+          "source_sha_prefix": "98e892dd8ab9",
+          "base_sha_prefix": "e55c7fade00e",
+          "run_id": 39449644221,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39449644221",
+          "counts": {
+            "refuted": 0,
+            "verified": 8,
+            "resources exhausted": 1,
+            "type-check/audit failure": 1
+          },
+          "properties": 10,
+          "refutations": []
         }
       ],
       "report_matches_current_head": true,
@@ -1958,8 +2041,8 @@
       "latest_run": {
         "id": 39449644221,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39449644221",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       }
     },
@@ -2025,13 +2108,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39456104468,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39456104468",
-        "status": "completed",
-        "conclusion": "success",
-        "attempt": 1
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
       }
     },
     {
@@ -2042,11 +2125,11 @@
       "head_sha": "19357d18cfb5fbdafda2b5e64730a7939a3ea079",
       "head_branch": "nfv-replay-1078",
       "latest_report": {
-        "comment_id": 6296136265,
-        "url": "https://github.com/shuvendu-lahiri/litebox/pull/34#issuecomment-6296136265",
-        "published_at": "2026-10-20T16:44:52Z",
-        "updated_at": "2026-10-20T16:44:52Z",
-        "body_sha256": "ea17104fb4690b2d6a12c980f4592235356bb641ba13392aba4b71e51374820c",
+        "comment_id": 6387173549,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/34#issuecomment-6387173549",
+        "published_at": "2026-10-24T17:15:18Z",
+        "updated_at": "2026-10-24T17:15:18Z",
+        "body_sha256": "d9082ab2f139341d20631b8af1e17829fe3677ad09a2fb53244849b63ae50c3d",
         "source_sha_prefix": "19357d18cfb5",
         "base_sha_prefix": "db4addac6cf5",
         "run_id": 39456543041,
@@ -2054,10 +2137,10 @@
         "counts": {
           "refuted": 0,
           "verified": 2,
-          "resources exhausted": 1,
+          "resources exhausted": 4,
           "type-check/audit failure": 1
         },
-        "properties": 4,
+        "properties": 7,
         "refutations": []
       },
       "report_history": [
@@ -2065,7 +2148,7 @@
           "comment_id": 6296136265,
           "url": "https://github.com/shuvendu-lahiri/litebox/pull/34#issuecomment-6296136265",
           "published_at": "2026-10-20T16:44:52Z",
-          "updated_at": "2026-10-20T16:44:52Z",
+          "updated_at": "2026-10-24T17:15:17Z",
           "body_sha256": "ea17104fb4690b2d6a12c980f4592235356bb641ba13392aba4b71e51374820c",
           "source_sha_prefix": "19357d18cfb5",
           "base_sha_prefix": "db4addac6cf5",
@@ -2079,16 +2162,35 @@
           },
           "properties": 4,
           "refutations": []
+        },
+        {
+          "comment_id": 6387173549,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/34#issuecomment-6387173549",
+          "published_at": "2026-10-24T17:15:18Z",
+          "updated_at": "2026-10-24T17:15:18Z",
+          "body_sha256": "d9082ab2f139341d20631b8af1e17829fe3677ad09a2fb53244849b63ae50c3d",
+          "source_sha_prefix": "19357d18cfb5",
+          "base_sha_prefix": "db4addac6cf5",
+          "run_id": 39456543041,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39456543041",
+          "counts": {
+            "refuted": 0,
+            "verified": 2,
+            "resources exhausted": 4,
+            "type-check/audit failure": 1
+          },
+          "properties": 7,
+          "refutations": []
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39456543041,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39456543041",
         "status": "completed",
         "conclusion": "success",
-        "attempt": 1
+        "attempt": 2
       }
     },
     {
@@ -2165,13 +2267,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39460648199,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39460648199",
-        "status": "completed",
-        "conclusion": "success",
-        "attempt": 1
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
       }
     },
     {
@@ -2222,13 +2324,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39462655079,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39462655079",
-        "status": "completed",
-        "conclusion": "success",
-        "attempt": 1
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
       }
     },
     {
