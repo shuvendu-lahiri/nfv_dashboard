@@ -5,16 +5,16 @@ Published results from the prototype [Neuro-Formal Verification](https://arxiv.o
 
 **[Live interactive dashboard](https://shuvendu-lahiri.github.io/nfv_dashboard/z3/)** / [all repositories](https://shuvendu-lahiri.github.io/nfv_dashboard/) or [download the standalone HTML](index.html) (no server or external dependencies).
 
-Snapshot: 2026-10-24T11:37:25.157109+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
+Snapshot: 2026-10-24T11:53:42.768008+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
 
-**31 PRs attempted; 82 workflow attempts; 25 published reports; 3 PRs with 3 conditional refutations; 34 model verifications; 6 PRs without a published report.**
+**31 PRs attempted; 84 workflow attempts; 25 published reports; 3 PRs with 3 conditional refutations; 34 model verifications; 6 PRs without a published report.**
 
 ## All attempted PRs (refutations first)
 
 | PR | Change | Latest report | Properties | Refuted | Verified | Exhausted | Audit failure | Evidence |
 |---|---|---|---:|---:|---:|---:|---:|---|
+| [shuvendu-lahiri/z3#29](https://github.com/shuvendu-lahiri/z3/pull/29) | NFV replay Z3Prover/z3\#11153: Bound finite\-field factor splitting per SMT search | **REFUTED (model)** | 5 | **1** | 2 | 0 | 2 | [Report](https://github.com/shuvendu-lahiri/z3/pull/29#issuecomment-6383789499) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39011193107) |
 | [shuvendu-lahiri/z3#41](https://github.com/shuvendu-lahiri/z3/pull/41) | Staged NFV audit \- change 11239: Check xor gate clauses in the native Tseitin proof checker | **REFUTED (model)** | 6 | **1** | 0 | 1 | 4 | [Report](https://github.com/shuvendu-lahiri/z3/pull/41#issuecomment-6306928614) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39532858434) |
-| [shuvendu-lahiri/z3#29](https://github.com/shuvendu-lahiri/z3/pull/29) | NFV replay Z3Prover/z3\#11153: Bound finite\-field factor splitting per SMT search | **REFUTED (model)** / latest attempt: in\_progress | 4 | **1** | 2 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/z3/pull/29#issuecomment-6231234572) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39011193107) / [latest attempt](https://github.com/shuvendu-lahiri/z3/actions/runs/39011193107) |
 | [shuvendu-lahiri/z3#35](https://github.com/shuvendu-lahiri/z3/pull/35) | NFV replay Z3Prover/z3\#11123: fix\(seq\): respect known length lower bounds when minting fresh model values \(\#7664\) | **REFUTED (model)** | 1 | **1** | 0 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/z3/pull/35#issuecomment-6231227079) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39012427142) |
 | [shuvendu-lahiri/z3#27](https://github.com/shuvendu-lahiri/z3/pull/27) | NFV replay Z3Prover/z3\#11160: Fix floating\-point rounding for extreme integer exponents | Published | 5 | 0 | 3 | 0 | 2 | [Report](https://github.com/shuvendu-lahiri/z3/pull/27#issuecomment-6383679732) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39011165580) |
 | [shuvendu-lahiri/z3#26](https://github.com/shuvendu-lahiri/z3/pull/26) | NFV replay Z3Prover/z3\#11162: Avoid array\-theory give\-up for uninterpreted uses of lambdas | Published | 1 | 0 | 1 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/z3/pull/26#issuecomment-6383360848) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39011150890) |
@@ -41,7 +41,7 @@ Snapshot: 2026-10-24T11:37:25.157109+00:00. Latest published report per PR suppl
 | [shuvendu-lahiri/z3#37](https://github.com/shuvendu-lahiri/z3/pull/37) | NFV replay Z3Prover/z3\#11130: root subst\. in stoi bug \(nseq\) | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/z3/actions/runs/39012839420) |
 | [shuvendu-lahiri/z3#36](https://github.com/shuvendu-lahiri/z3/pull/36) | NFV replay Z3Prover/z3\#11136: \[code\-simplifier\] Remove redundant match\_iff check in PR\_QUANT\_INTRO proof validation | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/z3/actions/runs/39012568191) |
 | [shuvendu-lahiri/z3#32](https://github.com/shuvendu-lahiri/z3/pull/32) | NFV replay Z3Prover/z3\#11166: Fix thread\-safety defects in parallel SMT reached via the qfbv fallback | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/z3/actions/runs/39011236095) |
-| [shuvendu-lahiri/z3#31](https://github.com/shuvendu-lahiri/z3/pull/31) | NFV replay Z3Prover/z3\#11146: \[code\-simplifier\] Use existing match\_equiv helper instead of repeating its definition | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/z3/actions/runs/39011222164) |
+| [shuvendu-lahiri/z3#31](https://github.com/shuvendu-lahiri/z3/pull/31) | NFV replay Z3Prover/z3\#11146: \[code\-simplifier\] Use existing match\_equiv helper instead of repeating its definition | No published report (queued) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/z3/actions/runs/39011222164) |
 | [shuvendu-lahiri/z3#30](https://github.com/shuvendu-lahiri/z3/pull/30) | NFV replay Z3Prover/z3\#11148: Document default error handler exit behavior and install non\-exit handler on JNI context creation | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/z3/actions/runs/39011209640) |
 | [shuvendu-lahiri/z3#19](https://github.com/shuvendu-lahiri/z3/pull/19) | Fix invalid model for to\_fp\-from\-real zero sign \(\#7431\) | No published report (success) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/z3/actions/runs/38483080218) |
 
@@ -49,17 +49,17 @@ Snapshot: 2026-10-24T11:37:25.157109+00:00. Latest published report per PR suppl
 
 The following property texts are extracted from the published reports, without new adjudication or inference. The original report contains assumptions, source overlays and native evidence.
 
+### shuvendu-lahiri/z3#29 / P1
+
+A normally completed search initialization leaves the factor\-split clause counter at zero\.
+
+[Original report](https://github.com/shuvendu-lahiri/z3/pull/29#issuecomment-6383789499)
+
 ### shuvendu-lahiri/z3#41 / P3
 
 When the process exit handler runs during an active replay, with g\_captured referring to the replay's captured stream, it reports that replay ended prematurely together with the captured output and terminates with failure status 1; when no replay is active, it returns without forcing failure\.
 
 [Original report](https://github.com/shuvendu-lahiri/z3/pull/41#issuecomment-6306928614)
-
-### shuvendu-lahiri/z3#29 / P1
-
-Assuming called helpers return normally, during a propagate\_roots invocation factor\_split\_clauses increases exactly once for each axiom actually emitted from a successful fallback factor\_split result, and does not increase for digit, zero\-product, or square\-root clauses, nor when the candidate branches are empty or already satisfied\.
-
-[Original report](https://github.com/shuvendu-lahiri/z3/pull/29#issuecomment-6231234572)
 
 ### shuvendu-lahiri/z3#35 / P1
 

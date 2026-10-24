@@ -1,22 +1,22 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/litebox",
-  "generated_at": "2026-10-24T11:37:25.157109+00:00",
+  "generated_at": "2026-10-24T11:53:42.768008+00:00",
   "name": "litebox",
   "label": "LiteBox",
   "summary": {
     "selected_prs": 44,
     "attempted_prs": 44,
     "published_reports": 36,
-    "workflow_attempts": 58,
+    "workflow_attempts": 59,
     "without_report": 8,
     "refuted_prs": 11,
     "properties": 272,
     "outcomes": {
       "refuted": 13,
-      "verified": 166,
-      "resources exhausted": 28,
-      "type-check/audit failure": 65
+      "verified": 168,
+      "resources exhausted": 27,
+      "type-check/audit failure": 64
     }
   },
   "prs": [
@@ -431,20 +431,20 @@
       "head_sha": "eea3a2a500ff672387457d73bf2ffd744c0ff565",
       "head_branch": "nfv-replay-1647",
       "latest_report": {
-        "comment_id": 6289057416,
-        "url": "https://github.com/shuvendu-lahiri/litebox/pull/9#issuecomment-6289057416",
-        "published_at": "2026-10-20T10:40:58Z",
-        "updated_at": "2026-10-20T10:40:58Z",
-        "body_sha256": "bb63ac93780bf64f3fc9df3888f5f3bc1bf7038ee181c6b3367571cd7120dd79",
+        "comment_id": 6383869303,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/9#issuecomment-6383869303",
+        "published_at": "2026-10-24T11:52:29Z",
+        "updated_at": "2026-10-24T11:52:29Z",
+        "body_sha256": "a83075a03be86b0ec929e75e1fd5e37993af9aa4bfa6b8b241452fcc8a31d2c1",
         "source_sha_prefix": "eea3a2a500ff",
         "base_sha_prefix": "4d0a75f028be",
         "run_id": 39405410051,
         "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39405410051",
         "counts": {
           "refuted": 0,
-          "verified": 8,
-          "resources exhausted": 1,
-          "type-check/audit failure": 1
+          "verified": 10,
+          "resources exhausted": 0,
+          "type-check/audit failure": 0
         },
         "properties": 10,
         "refutations": []
@@ -454,7 +454,7 @@
           "comment_id": 6289057416,
           "url": "https://github.com/shuvendu-lahiri/litebox/pull/9#issuecomment-6289057416",
           "published_at": "2026-10-20T10:40:58Z",
-          "updated_at": "2026-10-20T10:40:58Z",
+          "updated_at": "2026-10-24T11:52:28Z",
           "body_sha256": "bb63ac93780bf64f3fc9df3888f5f3bc1bf7038ee181c6b3367571cd7120dd79",
           "source_sha_prefix": "eea3a2a500ff",
           "base_sha_prefix": "4d0a75f028be",
@@ -468,6 +468,25 @@
           },
           "properties": 10,
           "refutations": []
+        },
+        {
+          "comment_id": 6383869303,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/9#issuecomment-6383869303",
+          "published_at": "2026-10-24T11:52:29Z",
+          "updated_at": "2026-10-24T11:52:29Z",
+          "body_sha256": "a83075a03be86b0ec929e75e1fd5e37993af9aa4bfa6b8b241452fcc8a31d2c1",
+          "source_sha_prefix": "eea3a2a500ff",
+          "base_sha_prefix": "4d0a75f028be",
+          "run_id": 39405410051,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39405410051",
+          "counts": {
+            "refuted": 0,
+            "verified": 10,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 10,
+          "refutations": []
         }
       ],
       "report_matches_current_head": true,
@@ -475,8 +494,8 @@
       "latest_run": {
         "id": 39405410051,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39405410051",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       }
     },
@@ -528,13 +547,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39358987665,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39358987665",
-        "status": "completed",
-        "conclusion": "success",
-        "attempt": 1
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
       }
     },
     {
