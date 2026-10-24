@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "generated_at": "2026-10-24T19:52:30.613293+00:00",
+  "generated_at": "2026-10-24T20:18:57.290213+00:00",
   "summary": {
     "attempted_prs": 95,
-    "published_reports": 88,
-    "workflow_attempts": 250,
-    "without_report": 7,
+    "published_reports": 91,
+    "workflow_attempts": 253,
+    "without_report": 4,
     "refuted_prs": 19,
-    "properties": 512,
+    "properties": 538,
     "outcomes": {
       "refuted": 22,
-      "verified": 352,
-      "resources exhausted": 47,
-      "type-check/audit failure": 91
+      "verified": 358,
+      "resources exhausted": 66,
+      "type-check/audit failure": 92
     }
   },
   "repositories": [
@@ -20,7 +20,7 @@
       "name": "z3",
       "label": "Z3",
       "repository": "shuvendu-lahiri/z3",
-      "generated_at": "2026-10-24T19:52:30.613293+00:00",
+      "generated_at": "2026-10-24T20:18:57.290213+00:00",
       "summary": {
         "selected_prs": 31,
         "attempted_prs": 31,
@@ -41,20 +41,20 @@
       "name": "litebox",
       "label": "LiteBox",
       "repository": "shuvendu-lahiri/litebox",
-      "generated_at": "2026-10-24T19:52:30.613293+00:00",
+      "generated_at": "2026-10-24T20:18:57.290213+00:00",
       "summary": {
         "selected_prs": 44,
         "attempted_prs": 44,
-        "published_reports": 39,
-        "workflow_attempts": 100,
-        "without_report": 5,
+        "published_reports": 42,
+        "workflow_attempts": 103,
+        "without_report": 2,
         "refuted_prs": 10,
-        "properties": 293,
+        "properties": 319,
         "outcomes": {
           "refuted": 13,
-          "verified": 206,
-          "resources exhausted": 26,
-          "type-check/audit failure": 48
+          "verified": 212,
+          "resources exhausted": 45,
+          "type-check/audit failure": 49
         }
       }
     },
@@ -62,7 +62,7 @@
       "name": "nvx",
       "label": "NVX",
       "repository": "shuvendu-lahiri/nvx",
-      "generated_at": "2026-10-24T19:52:30.613293+00:00",
+      "generated_at": "2026-10-24T20:18:57.290213+00:00",
       "summary": {
         "selected_prs": 20,
         "attempted_prs": 20,
