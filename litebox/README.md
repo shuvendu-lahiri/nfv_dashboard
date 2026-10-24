@@ -5,9 +5,9 @@ Published results from the prototype [Neuro-Formal Verification](https://arxiv.o
 
 **[Live interactive dashboard](https://shuvendu-lahiri.github.io/nfv_dashboard/litebox/)** / [all repositories](https://shuvendu-lahiri.github.io/nfv_dashboard/) or [download the standalone HTML](index.html) (no server or external dependencies).
 
-Snapshot: 2026-10-24T20:29:09.459872+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
+Snapshot: 2026-10-24T21:32:44.590769+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
 
-**44 PRs attempted; 103 workflow attempts; 42 published reports; 11 PRs with 14 conditional refutations; 211 model verifications; 2 PRs without a published report.**
+**44 PRs attempted; 105 workflow attempts; 44 published reports; 11 PRs with 14 conditional refutations; 220 model verifications; 0 PRs without a published report.**
 
 ## All attempted PRs (refutations first)
 
@@ -24,6 +24,8 @@ Snapshot: 2026-10-24T20:29:09.459872+00:00. Latest published report per PR suppl
 | [shuvendu-lahiri/litebox#8](https://github.com/shuvendu-lahiri/litebox/pull/8) | Replay change 1648: Cherry pick change 1564 Refactor to remove \`litebox::path::Arg\` | **REFUTED (model)** | 10 | **1** | 6 | 0 | 3 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/8#issuecomment-6383719541) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39357363330) |
 | [shuvendu-lahiri/litebox#3](https://github.com/shuvendu-lahiri/litebox/pull/3) | Replay change 1640: replace procfd special cases with filesystem symlinks | **REFUTED (model)** | 10 | **2** | 4 | 0 | 4 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/3#issuecomment-6383064179) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39390206732) |
 | [shuvendu-lahiri/litebox#2](https://github.com/shuvendu-lahiri/litebox/pull/2) | Replay change 1656: copy broker pipe and socket reads in bulk | **REFUTED (model)** | 9 | **1** | 8 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/2#issuecomment-6382629152) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39205431424) |
+| [shuvendu-lahiri/litebox#47](https://github.com/shuvendu-lahiri/litebox/pull/47) | Add LiteBox NFV audit dashboard | Published | 9 | 0 | 5 | 0 | 4 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/47#issuecomment-6389785633) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39871498222) |
+| [shuvendu-lahiri/litebox#6](https://github.com/shuvendu-lahiri/litebox/pull/6) | Replay change 1671: Route chown syscalls | Published | 6 | 0 | 4 | 2 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/6#issuecomment-6389571849) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39397856512) |
 | [shuvendu-lahiri/litebox#25](https://github.com/shuvendu-lahiri/litebox/pull/25) | Replay change 1284: Cherry pick change 1226 Retire legacy \`FileSystem\` trait | Published | 10 | 0 | 4 | 6 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/25#issuecomment-6389163200) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39430657719) |
 | [shuvendu-lahiri/litebox#17](https://github.com/shuvendu-lahiri/litebox/pull/17) | Replay change 1672: Route chmod syscalls | Published | 6 | 0 | 5 | 1 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/17#issuecomment-6389161071) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39415165794) |
 | [shuvendu-lahiri/litebox#40](https://github.com/shuvendu-lahiri/litebox/pull/40) | Staged NFV audit \- change 1651: Spin before sleeping and skip needless wakes on the broker control ring | Published | 9 | 0 | 7 | 2 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/40#issuecomment-6389144883) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532825730) |
@@ -55,8 +57,6 @@ Snapshot: 2026-10-24T20:29:09.459872+00:00. Latest published report per PR suppl
 | [shuvendu-lahiri/litebox#9](https://github.com/shuvendu-lahiri/litebox/pull/9) | Replay change 1647: Cherry pick change 1558 Minor error cleanup for \`NoSearchPerms\` | Published | 10 | 0 | 10 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/9#issuecomment-6383869303) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39405410051) |
 | [shuvendu-lahiri/litebox#7](https://github.com/shuvendu-lahiri/litebox/pull/7) | Replay change 1657: Cherry pick change 1566 Add support for symlink resolution | Published | 10 | 0 | 9 | 1 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/7#issuecomment-6383605651) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39399231191) |
 | [shuvendu-lahiri/litebox#27](https://github.com/shuvendu-lahiri/litebox/pull/27) | Replay change 1281: Cherry pick change 1165 Join the spawned handles in tests | Published | 7 | 0 | 7 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/27#issuecomment-6382201720) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39432560915) |
-| [shuvendu-lahiri/litebox#47](https://github.com/shuvendu-lahiri/litebox/pull/47) | Add LiteBox NFV audit dashboard | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39871498222) |
-| [shuvendu-lahiri/litebox#6](https://github.com/shuvendu-lahiri/litebox/pull/6) | Replay change 1671: Route chown syscalls | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39397856512) |
 
 ## Conditional model refutations
 
