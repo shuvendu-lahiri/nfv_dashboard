@@ -5,17 +5,18 @@ Published results from the prototype [Neuro-Formal Verification](https://arxiv.o
 
 **[Live interactive dashboard](https://shuvendu-lahiri.github.io/nfv_dashboard/z3/)** / [all repositories](https://shuvendu-lahiri.github.io/nfv_dashboard/) or [download the standalone HTML](index.html) (no server or external dependencies).
 
-Snapshot: 2026-10-24T14:37:43.528228+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
+Snapshot: 2026-10-24T15:04:43.574171+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
 
-**31 PRs attempted; 93 workflow attempts; 27 published reports; 3 PRs with 3 conditional refutations; 51 model verifications; 4 PRs without a published report.**
+**31 PRs attempted; 95 workflow attempts; 27 published reports; 4 PRs with 4 conditional refutations; 59 model verifications; 4 PRs without a published report.**
 
 ## All attempted PRs (refutations first)
 
 | PR | Change | Latest report | Properties | Refuted | Verified | Exhausted | Audit failure | Evidence |
 |---|---|---|---:|---:|---:|---:|---:|---|
+| [shuvendu-lahiri/z3#40](https://github.com/shuvendu-lahiri/z3/pull/40) | Staged NFV audit \- change 11245: Check alldiff gate clauses natively and log root distinct as input | **REFUTED (model)** | 9 | **1** | 5 | 0 | 3 | [Report](https://github.com/shuvendu-lahiri/z3/pull/40#issuecomment-6385766326) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39532863673) |
+| [shuvendu-lahiri/z3#41](https://github.com/shuvendu-lahiri/z3/pull/41) | Staged NFV audit \- change 11239: Check xor gate clauses in the native Tseitin proof checker | **REFUTED (model)** | 6 | **1** | 4 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/z3/pull/41#issuecomment-6385751609) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39532858434) |
 | [shuvendu-lahiri/z3#35](https://github.com/shuvendu-lahiri/z3/pull/35) | NFV replay Z3Prover/z3\#11123: fix\(seq\): respect known length lower bounds when minting fresh model values \(\#7664\) | **REFUTED (model)** | 2 | **1** | 1 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/z3/pull/35#issuecomment-6384498642) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39012427142) |
 | [shuvendu-lahiri/z3#29](https://github.com/shuvendu-lahiri/z3/pull/29) | NFV replay Z3Prover/z3\#11153: Bound finite\-field factor splitting per SMT search | **REFUTED (model)** | 5 | **1** | 2 | 0 | 2 | [Report](https://github.com/shuvendu-lahiri/z3/pull/29#issuecomment-6383789499) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39011193107) |
-| [shuvendu-lahiri/z3#41](https://github.com/shuvendu-lahiri/z3/pull/41) | Staged NFV audit \- change 11239: Check xor gate clauses in the native Tseitin proof checker | **REFUTED (model)** | 6 | **1** | 0 | 1 | 4 | [Report](https://github.com/shuvendu-lahiri/z3/pull/41#issuecomment-6306928614) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39532858434) |
 | [shuvendu-lahiri/z3#39](https://github.com/shuvendu-lahiri/z3/pull/39) | NFV replay Z3Prover/z3\#11111: Fix unit detection in the SAT proof trimmer | Published | 1 | 0 | 0 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/z3/pull/39#issuecomment-6385232407) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39015881455) |
 | [shuvendu-lahiri/z3#38](https://github.com/shuvendu-lahiri/z3/pull/38) | NFV replay Z3Prover/z3\#11114: smt: run MBQI after a theory gives up instead of answering unknown | Published | 3 | 0 | 3 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/z3/pull/38#issuecomment-6385217118) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39012980760) |
 | [shuvendu-lahiri/z3#37](https://github.com/shuvendu-lahiri/z3/pull/37) | NFV replay Z3Prover/z3\#11130: root subst\. in stoi bug \(nseq\) | Published | 9 | 0 | 6 | 2 | 1 | [Report](https://github.com/shuvendu-lahiri/z3/pull/37#issuecomment-6385103774) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39012839420) |
@@ -28,9 +29,8 @@ Snapshot: 2026-10-24T14:37:43.528228+00:00. Latest published report per PR suppl
 | [shuvendu-lahiri/z3#23](https://github.com/shuvendu-lahiri/z3/pull/23) | NFV replay Z3Prover/z3\#11165: Avoid regex unfolding for provably out\-of\-range substring offsets | Published | 4 | 0 | 2 | 0 | 2 | [Report](https://github.com/shuvendu-lahiri/z3/pull/23#issuecomment-6382921550) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39010841303) |
 | [shuvendu-lahiri/z3#28](https://github.com/shuvendu-lahiri/z3/pull/28) | NFV replay Z3Prover/z3\#11161: Honor binary exponents in Z3Py FPVal | Published | 7 | 0 | 7 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/z3/pull/28#issuecomment-6382902190) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39011178503) |
 | [shuvendu-lahiri/z3#20](https://github.com/shuvendu-lahiri/z3/pull/20) | Port recursive\-function MBQI handling to SAT/SMT | Published | 5 | 0 | 3 | 0 | 2 | [Report](https://github.com/shuvendu-lahiri/z3/pull/20#issuecomment-6382555028) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/38965099587) |
-| [shuvendu-lahiri/z3#40](https://github.com/shuvendu-lahiri/z3/pull/40) | Staged NFV audit \- change 11245: Check alldiff gate clauses natively and log root distinct as input | Published / latest attempt: in\_progress | 10 | 0 | 1 | 3 | 6 | [Report](https://github.com/shuvendu-lahiri/z3/pull/40#issuecomment-6307102053) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39532863673) / [latest attempt](https://github.com/shuvendu-lahiri/z3/actions/runs/39532863673) |
 | [shuvendu-lahiri/z3#44](https://github.com/shuvendu-lahiri/z3/pull/44) | Staged NFV audit \- change 11236: Reject malformed implied\-equality proof hints | Published | 6 | 0 | 3 | 1 | 2 | [Report](https://github.com/shuvendu-lahiri/z3/pull/44#issuecomment-6307041366) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39532851433) |
-| [shuvendu-lahiri/z3#42](https://github.com/shuvendu-lahiri/z3/pull/42) | Staged NFV audit \- change 11241: Enable model completion during Spacer term\-graph projection | Published | 1 | 0 | 0 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/z3/pull/42#issuecomment-6306904677) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39532861238) |
+| [shuvendu-lahiri/z3#42](https://github.com/shuvendu-lahiri/z3/pull/42) | Staged NFV audit \- change 11241: Enable model completion during Spacer term\-graph projection | Published / latest attempt: in\_progress | 1 | 0 | 0 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/z3/pull/42#issuecomment-6306904677) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39532861238) / [latest attempt](https://github.com/shuvendu-lahiri/z3/actions/runs/39532861238) |
 | [shuvendu-lahiri/z3#46](https://github.com/shuvendu-lahiri/z3/pull/46) | Staged NFV audit \- change 11235: Fix macro\-induced solve\-eqs performance regression | Published | 1 | 0 | 0 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/z3/pull/46#issuecomment-6306893713) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39532848529) |
 | [shuvendu-lahiri/z3#48](https://github.com/shuvendu-lahiri/z3/pull/48) | Staged NFV audit \- change 11221: \[WIP\] Fix Spacer returning unsat on reachable error in Z3 | Published | 4 | 0 | 1 | 2 | 1 | [Report](https://github.com/shuvendu-lahiri/z3/pull/48#issuecomment-6306883806) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39532842941) |
 | [shuvendu-lahiri/z3#43](https://github.com/shuvendu-lahiri/z3/pull/43) | Staged NFV audit \- change 11237: Handle constant rows in implied\-equality proof checking | Published | 4 | 0 | 0 | 1 | 3 | [Report](https://github.com/shuvendu-lahiri/z3/pull/43#issuecomment-6306868942) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39532855682) |
@@ -49,6 +49,18 @@ Snapshot: 2026-10-24T14:37:43.528228+00:00. Latest published report per PR suppl
 
 The following property texts are extracted from the published reports, without new adjudication or inference. The original report contains assumptions, source overlays and native evidence.
 
+### shuvendu-lahiri/z3#40 / P2
+
+An accepted negated OR gate contains no unsupported disjunct kind\.
+
+[Original report](https://github.com/shuvendu-lahiri/z3/pull/40#issuecomment-6385766326)
+
+### shuvendu-lahiri/z3#41 / P1
+
+Acceptance requires the first xor argument to be fixed when present\.
+
+[Original report](https://github.com/shuvendu-lahiri/z3/pull/41#issuecomment-6385751609)
+
 ### shuvendu-lahiri/z3#35 / P1
 
 Under the complete padding guard, the returned string meets the known length lower bound\.
@@ -60,12 +72,6 @@ Under the complete padding guard, the returned string meets the known length low
 A normally completed search initialization leaves the factor\-split clause counter at zero\.
 
 [Original report](https://github.com/shuvendu-lahiri/z3/pull/29#issuecomment-6383789499)
-
-### shuvendu-lahiri/z3#41 / P3
-
-When the process exit handler runs during an active replay, with g\_captured referring to the replay's captured stream, it reports that replay ended prematurely together with the captured output and terminates with failure status 1; when no replay is active, it returns without forcing failure\.
-
-[Original report](https://github.com/shuvendu-lahiri/z3/pull/41#issuecomment-6306928614)
 
 ## Refresh and validate
 

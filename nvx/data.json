@@ -1,20 +1,20 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/nvx",
-  "generated_at": "2026-10-24T14:37:43.528228+00:00",
+  "generated_at": "2026-10-24T15:04:43.574171+00:00",
   "name": "nvx",
   "label": "NVX",
   "summary": {
     "selected_prs": 20,
     "attempted_prs": 20,
     "published_reports": 20,
-    "workflow_attempts": 42,
+    "workflow_attempts": 43,
     "without_report": 0,
-    "refuted_prs": 3,
+    "refuted_prs": 4,
     "properties": 103,
     "outcomes": {
-      "refuted": 3,
-      "verified": 75,
+      "refuted": 4,
+      "verified": 74,
       "resources exhausted": 5,
       "type-check/audit failure": 20
     }
@@ -1474,30 +1474,37 @@
       "head_sha": "c395e1c359947a2e1324938d1a390266ae51927d",
       "head_branch": "nfv-pedro-658",
       "latest_report": {
-        "comment_id": 6357486315,
-        "url": "https://github.com/shuvendu-lahiri/nvx/pull/19#issuecomment-6357486315",
-        "published_at": "2026-10-23T04:36:36Z",
-        "updated_at": "2026-10-23T04:36:36Z",
-        "body_sha256": "4c57272c7e219a7bcec5e27af82095ae5f68de6d2bb1b176b2b0f8d722115627",
+        "comment_id": 6385668120,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/19#issuecomment-6385668120",
+        "published_at": "2026-10-24T14:54:37Z",
+        "updated_at": "2026-10-24T14:54:37Z",
+        "body_sha256": "91b01d966b9df91bd1ac55765d082f086cadad0a33ea60d6096db241dcaa7487",
         "source_sha_prefix": "c395e1c35994",
         "base_sha_prefix": "f181b782921c",
         "run_id": 39898539854,
         "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39898539854",
         "counts": {
-          "refuted": 0,
-          "verified": 7,
+          "refuted": 1,
+          "verified": 6,
           "resources exhausted": 0,
           "type-check/audit failure": 3
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [
+          {
+            "property_id": "P10",
+            "property": "A successful git retrieval writes using the relative basename.",
+            "input": "`legacy = false`; `Path(relative).name = []`; `shown.returncode = 0`; `shown.stdout = [1]`; abstract state: constructed temporary file path = `[6]`; whether the git show subprocess completed normally = `true`; whether read_results raises = `false`; results returned by read_results = `[]`; stem associated with the basename of relative = `[]`; temporary directory basename = `[9]`; whether the temporary directory was created normally = `true`; temporary directory path identity = `[7]`; temporary directory stem = `[8]`; whether write_bytes completed normally = `true`",
+            "sketch": "If Path(relative).name is empty, Path(temporary) / Path(relative).name retains the temporary directory's basename, so the path passed to write_bytes and read_results does not have the required empty basename."
+          }
+        ]
       },
       "report_history": [
         {
           "comment_id": 6357486315,
           "url": "https://github.com/shuvendu-lahiri/nvx/pull/19#issuecomment-6357486315",
           "published_at": "2026-10-23T04:36:36Z",
-          "updated_at": "2026-10-23T04:36:36Z",
+          "updated_at": "2026-10-24T14:54:36Z",
           "body_sha256": "4c57272c7e219a7bcec5e27af82095ae5f68de6d2bb1b176b2b0f8d722115627",
           "source_sha_prefix": "c395e1c35994",
           "base_sha_prefix": "f181b782921c",
@@ -1511,6 +1518,32 @@
           },
           "properties": 10,
           "refutations": []
+        },
+        {
+          "comment_id": 6385668120,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/19#issuecomment-6385668120",
+          "published_at": "2026-10-24T14:54:37Z",
+          "updated_at": "2026-10-24T14:54:37Z",
+          "body_sha256": "91b01d966b9df91bd1ac55765d082f086cadad0a33ea60d6096db241dcaa7487",
+          "source_sha_prefix": "c395e1c35994",
+          "base_sha_prefix": "f181b782921c",
+          "run_id": 39898539854,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39898539854",
+          "counts": {
+            "refuted": 1,
+            "verified": 6,
+            "resources exhausted": 0,
+            "type-check/audit failure": 3
+          },
+          "properties": 10,
+          "refutations": [
+            {
+              "property_id": "P10",
+              "property": "A successful git retrieval writes using the relative basename.",
+              "input": "`legacy = false`; `Path(relative).name = []`; `shown.returncode = 0`; `shown.stdout = [1]`; abstract state: constructed temporary file path = `[6]`; whether the git show subprocess completed normally = `true`; whether read_results raises = `false`; results returned by read_results = `[]`; stem associated with the basename of relative = `[]`; temporary directory basename = `[9]`; whether the temporary directory was created normally = `true`; temporary directory path identity = `[7]`; temporary directory stem = `[8]`; whether write_bytes completed normally = `true`",
+              "sketch": "If Path(relative).name is empty, Path(temporary) / Path(relative).name retains the temporary directory's basename, so the path passed to write_bytes and read_results does not have the required empty basename."
+            }
+          ]
         }
       ],
       "report_matches_current_head": true,
@@ -1518,8 +1551,8 @@
       "latest_run": {
         "id": 39898539854,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39898539854",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       },
       "source_number": 658,
@@ -1588,13 +1621,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39898919181,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39898919181",
-        "status": "completed",
-        "conclusion": "success",
-        "attempt": 1
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
       },
       "source_number": 657,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/657",

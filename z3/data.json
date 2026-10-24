@@ -1,22 +1,22 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/z3",
-  "generated_at": "2026-10-24T14:37:43.528228+00:00",
+  "generated_at": "2026-10-24T15:04:43.574171+00:00",
   "name": "z3",
   "label": "Z3",
   "summary": {
     "selected_prs": 31,
     "attempted_prs": 31,
     "published_reports": 27,
-    "workflow_attempts": 93,
+    "workflow_attempts": 95,
     "without_report": 4,
-    "refuted_prs": 3,
-    "properties": 118,
+    "refuted_prs": 4,
+    "properties": 117,
     "outcomes": {
-      "refuted": 3,
-      "verified": 51,
-      "resources exhausted": 21,
-      "type-check/audit failure": 43
+      "refuted": 4,
+      "verified": 59,
+      "resources exhausted": 17,
+      "type-check/audit failure": 37
     }
   },
   "prs": [
@@ -1445,30 +1445,37 @@
       "head_sha": "039c294cab1f0cba1d2cf93fad301c530673747e",
       "head_branch": "nfv-staged-11245",
       "latest_report": {
-        "comment_id": 6307102053,
-        "url": "https://github.com/shuvendu-lahiri/z3/pull/40#issuecomment-6307102053",
-        "published_at": "2026-10-21T03:13:04Z",
-        "updated_at": "2026-10-21T03:13:04Z",
-        "body_sha256": "fed13d1fbc6f9f29ff8974746de9e349b547f6835578ca433a624d1bc7b618b4",
+        "comment_id": 6385766326,
+        "url": "https://github.com/shuvendu-lahiri/z3/pull/40#issuecomment-6385766326",
+        "published_at": "2026-10-24T15:04:06Z",
+        "updated_at": "2026-10-24T15:04:06Z",
+        "body_sha256": "3f05bbafb1d45cd76bc9d9906a456d441247173d8bad337bd037dbe79cafc106",
         "source_sha_prefix": "039c294cab1f",
         "base_sha_prefix": "a6f1461e16c1",
         "run_id": 39532863673,
         "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39532863673",
         "counts": {
-          "refuted": 0,
-          "verified": 1,
-          "resources exhausted": 3,
-          "type-check/audit failure": 6
+          "refuted": 1,
+          "verified": 5,
+          "resources exhausted": 0,
+          "type-check/audit failure": 3
         },
-        "properties": 10,
-        "refutations": []
+        "properties": 9,
+        "refutations": [
+          {
+            "property_id": "P2",
+            "property": "An accepted negated OR gate contains no unsupported disjunct kind.",
+            "input": "`negated = true`; `m.is_false(some_eq) = false`; `m.is_or(some_eq) = true`; abstract state: per-element results of `d->get_arg(i) = [1, 1]`; per-disjunct expression classifications = `[1, 3]`; left equality-operand identities for the disjuncts = `[0, 0]`; right equality-operand identities for the disjuncts = `[0, 0]`; per-element results of `m.are_distinct(x, y) = []`; non-or expression classification = `0`; left operand identity of a non-or equality = `0`; right operand identity of a non-or equality = `0`",
+            "sketch": "If `m.is_true(e)` holds for the first disjunct while d has a repeated argument, gate_holds returns true before checking the later unsupported disjunct."
+          }
+        ]
       },
       "report_history": [
         {
           "comment_id": 6307102053,
           "url": "https://github.com/shuvendu-lahiri/z3/pull/40#issuecomment-6307102053",
           "published_at": "2026-10-21T03:13:04Z",
-          "updated_at": "2026-10-21T03:13:04Z",
+          "updated_at": "2026-10-24T15:04:05Z",
           "body_sha256": "fed13d1fbc6f9f29ff8974746de9e349b547f6835578ca433a624d1bc7b618b4",
           "source_sha_prefix": "039c294cab1f",
           "base_sha_prefix": "a6f1461e16c1",
@@ -1482,6 +1489,32 @@
           },
           "properties": 10,
           "refutations": []
+        },
+        {
+          "comment_id": 6385766326,
+          "url": "https://github.com/shuvendu-lahiri/z3/pull/40#issuecomment-6385766326",
+          "published_at": "2026-10-24T15:04:06Z",
+          "updated_at": "2026-10-24T15:04:06Z",
+          "body_sha256": "3f05bbafb1d45cd76bc9d9906a456d441247173d8bad337bd037dbe79cafc106",
+          "source_sha_prefix": "039c294cab1f",
+          "base_sha_prefix": "a6f1461e16c1",
+          "run_id": 39532863673,
+          "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39532863673",
+          "counts": {
+            "refuted": 1,
+            "verified": 5,
+            "resources exhausted": 0,
+            "type-check/audit failure": 3
+          },
+          "properties": 9,
+          "refutations": [
+            {
+              "property_id": "P2",
+              "property": "An accepted negated OR gate contains no unsupported disjunct kind.",
+              "input": "`negated = true`; `m.is_false(some_eq) = false`; `m.is_or(some_eq) = true`; abstract state: per-element results of `d->get_arg(i) = [1, 1]`; per-disjunct expression classifications = `[1, 3]`; left equality-operand identities for the disjuncts = `[0, 0]`; right equality-operand identities for the disjuncts = `[0, 0]`; per-element results of `m.are_distinct(x, y) = []`; non-or expression classification = `0`; left operand identity of a non-or equality = `0`; right operand identity of a non-or equality = `0`",
+              "sketch": "If `m.is_true(e)` holds for the first disjunct while d has a repeated argument, gate_holds returns true before checking the later unsupported disjunct."
+            }
+          ]
         }
       ],
       "report_matches_current_head": true,
@@ -1489,8 +1522,8 @@
       "latest_run": {
         "id": 39532863673,
         "url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39532863673",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       }
     },
@@ -1502,28 +1535,28 @@
       "head_sha": "22acd8144ddda83b3f82dac5f80dc7dee6c65720",
       "head_branch": "nfv-staged-11239",
       "latest_report": {
-        "comment_id": 6306928614,
-        "url": "https://github.com/shuvendu-lahiri/z3/pull/41#issuecomment-6306928614",
-        "published_at": "2026-10-21T02:59:47Z",
-        "updated_at": "2026-10-21T02:59:47Z",
-        "body_sha256": "c6fb2417a9b71d5fc2f59d7dd4bf803fbe62fde910b2addde72209f908738f1b",
+        "comment_id": 6385751609,
+        "url": "https://github.com/shuvendu-lahiri/z3/pull/41#issuecomment-6385751609",
+        "published_at": "2026-10-24T15:02:43Z",
+        "updated_at": "2026-10-24T15:02:43Z",
+        "body_sha256": "e45d2cb3f0c105aae3fb3000f136801cd72a409e946bc0f8eb3087ff0525b9b5",
         "source_sha_prefix": "22acd8144ddd",
         "base_sha_prefix": "1b953914654b",
         "run_id": 39532858434,
         "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39532858434",
         "counts": {
           "refuted": 1,
-          "verified": 0,
-          "resources exhausted": 1,
-          "type-check/audit failure": 4
+          "verified": 4,
+          "resources exhausted": 0,
+          "type-check/audit failure": 1
         },
         "properties": 6,
         "refutations": [
           {
-            "property_id": "P3",
-            "property": "When the process exit handler runs during an active replay, with g_captured referring to the replay's captured stream, it reports that replay ended prematurely together with the captured output and terminates with failure status 1; when no replay is active, it returns without forcing failure.",
-            "input": "`g_captured->str() = [65]`; `g_replaying = true`; `\"proof replay exited before completing:\\n\" = [112, 114, 111, 111, 102, 32, 114, 101, 112, 108, 97, 121, 32, 101, 120, 105, 116, 101, 100, 32, 98, 101, 102, 111, 114, 101, 32, 99, 111, 109, 112, 108, 101, 116, 105, 110, 103, 58, 10]`; abstract state: whether g_captured refers to a live captured stream = `true`; whether the diagnostic-prefix insertion throws = `false`; std::cerr state after inserting the diagnostic prefix = `[112, 114, 111, 111, 102, 32, 114, 101, 112, 108, 97, 121, 32, 101, 120, 105, 116, 101, 100, 32, 98, 101, 102, 111, 114, 101, 32, 99, 111, 109, 112, 108, 101, 116, 105, 110, 103, 58, 10]`; std::cerr state after inserting the captured output = `[112, 114, 111, 111, 102, 32, 114, 101, 112, 108, 97, 121, 32, 101, 120, 105, 116, 101, 100, 32, 98, 101, 102, 111, 114, 101, 32, 99, 111, 109, 112, 108, 101, 116, 105, 110, 103, 58, 10]`; initial std::cerr output state = `[]`; string-extraction failure state = `[]`; whether g_captured->str() throws = `false`; whether insertion of g_captured->str() throws = `false`",
-            "sketch": "If g_replaying is true and the captured text is the byte 65, `std::cerr << \"proof replay exited before completing:\\n\" << g_captured->str()` can complete with only the diagnostic prefix visible, omitting the captured output required by the intended property."
+            "property_id": "P1",
+            "property": "Acceptance requires the first xor argument to be fixed when present.",
+            "input": "`m.is_xor(main_expr) = false`; abstract state: per-element results of `equiv(a, arg) = [true]`; per-occurrence xor argument fixedness = `[false]`; per-element results of `m.is_true(arg) || is_complement(arg) = [false]`",
+            "sketch": "If equiv(a, arg) is true for another clause literal, check accepts the negated xor clause before checking whether the xor argument is fixed."
           }
         ]
       },
@@ -1532,7 +1565,7 @@
           "comment_id": 6306928614,
           "url": "https://github.com/shuvendu-lahiri/z3/pull/41#issuecomment-6306928614",
           "published_at": "2026-10-21T02:59:47Z",
-          "updated_at": "2026-10-21T02:59:47Z",
+          "updated_at": "2026-10-24T15:02:42Z",
           "body_sha256": "c6fb2417a9b71d5fc2f59d7dd4bf803fbe62fde910b2addde72209f908738f1b",
           "source_sha_prefix": "22acd8144ddd",
           "base_sha_prefix": "1b953914654b",
@@ -1553,16 +1586,42 @@
               "sketch": "If g_replaying is true and the captured text is the byte 65, `std::cerr << \"proof replay exited before completing:\\n\" << g_captured->str()` can complete with only the diagnostic prefix visible, omitting the captured output required by the intended property."
             }
           ]
+        },
+        {
+          "comment_id": 6385751609,
+          "url": "https://github.com/shuvendu-lahiri/z3/pull/41#issuecomment-6385751609",
+          "published_at": "2026-10-24T15:02:43Z",
+          "updated_at": "2026-10-24T15:02:43Z",
+          "body_sha256": "e45d2cb3f0c105aae3fb3000f136801cd72a409e946bc0f8eb3087ff0525b9b5",
+          "source_sha_prefix": "22acd8144ddd",
+          "base_sha_prefix": "1b953914654b",
+          "run_id": 39532858434,
+          "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39532858434",
+          "counts": {
+            "refuted": 1,
+            "verified": 4,
+            "resources exhausted": 0,
+            "type-check/audit failure": 1
+          },
+          "properties": 6,
+          "refutations": [
+            {
+              "property_id": "P1",
+              "property": "Acceptance requires the first xor argument to be fixed when present.",
+              "input": "`m.is_xor(main_expr) = false`; abstract state: per-element results of `equiv(a, arg) = [true]`; per-occurrence xor argument fixedness = `[false]`; per-element results of `m.is_true(arg) || is_complement(arg) = [false]`",
+              "sketch": "If equiv(a, arg) is true for another clause literal, check accepts the negated xor clause before checking whether the xor argument is fixed."
+            }
+          ]
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39532858434,
         "url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39532858434",
         "status": "completed",
         "conclusion": "success",
-        "attempt": 1
+        "attempt": 2
       }
     },
     {
@@ -1613,13 +1672,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39532861238,
         "url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39532861238",
-        "status": "completed",
-        "conclusion": "success",
-        "attempt": 1
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
       }
     },
     {

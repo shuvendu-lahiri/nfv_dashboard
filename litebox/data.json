@@ -1,14 +1,14 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/litebox",
-  "generated_at": "2026-10-24T14:37:43.528228+00:00",
+  "generated_at": "2026-10-24T15:04:43.574171+00:00",
   "name": "litebox",
   "label": "LiteBox",
   "summary": {
     "selected_prs": 44,
     "attempted_prs": 44,
     "published_reports": 37,
-    "workflow_attempts": 69,
+    "workflow_attempts": 70,
     "without_report": 7,
     "refuted_prs": 13,
     "properties": 281,
@@ -1335,13 +1335,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39421605628,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39421605628",
-        "status": "completed",
-        "conclusion": "success",
-        "attempt": 1
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
       }
     },
     {

@@ -5,16 +5,17 @@ Published results from the prototype [Neuro-Formal Verification](https://arxiv.o
 
 **[Live interactive dashboard](https://shuvendu-lahiri.github.io/nfv_dashboard/nvx/)** / [all repositories](https://shuvendu-lahiri.github.io/nfv_dashboard/) or [download the standalone HTML](index.html) (no server or external dependencies).
 
-Snapshot: 2026-10-24T14:37:43.528228+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
+Snapshot: 2026-10-24T15:04:43.574171+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
 
-**20 PRs attempted; 42 workflow attempts; 20 published reports; 3 PRs with 3 conditional refutations; 75 model verifications; 0 PRs without a published report.**
+**20 PRs attempted; 43 workflow attempts; 20 published reports; 4 PRs with 4 conditional refutations; 74 model verifications; 0 PRs without a published report.**
 
 ## All attempted PRs (refutations first)
 
 | PR | Change | Latest report | Properties | Refuted | Verified | Exhausted | Audit failure | Evidence |
 |---|---|---|---:|---:|---:|---:|---:|---|
+| [shuvendu-lahiri/nvx#19](https://github.com/shuvendu-lahiri/nvx/pull/19) | [Source change 658](https://redirect.github.com/microsoft/nvx/pull/658) / performance: keep results measured before a history reset out of the series | **REFUTED (model)** | 10 | **1** | 6 | 0 | 3 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/19#issuecomment-6385668120) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39898539854) |
 | [shuvendu-lahiri/nvx#11](https://github.com/shuvendu-lahiri/nvx/pull/11) | [Source change 682](https://redirect.github.com/microsoft/nvx/pull/682) / nvx\-rs: parse legacy egress rules with the MXC form's helpers | **REFUTED (model)** | 7 | **1** | 4 | 0 | 2 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/11#issuecomment-6384226118) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39893495398) |
-| [shuvendu-lahiri/nvx#20](https://github.com/shuvendu-lahiri/nvx/pull/20) | [Source change 657](https://redirect.github.com/microsoft/nvx/pull/657) / adversarial: keep executor close bounded when a child holds stdout | **REFUTED (model)** | 10 | **1** | 8 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/20#issuecomment-6357548128) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39898919181) |
+| [shuvendu-lahiri/nvx#20](https://github.com/shuvendu-lahiri/nvx/pull/20) | [Source change 657](https://redirect.github.com/microsoft/nvx/pull/657) / adversarial: keep executor close bounded when a child holds stdout | **REFUTED (model)** / latest attempt: in\_progress | 10 | **1** | 8 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/20#issuecomment-6357548128) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39898919181) / [latest attempt](https://github.com/shuvendu-lahiri/nvx/actions/runs/39898919181) |
 | [shuvendu-lahiri/nvx#16](https://github.com/shuvendu-lahiri/nvx/pull/16) | [Source change 659](https://redirect.github.com/microsoft/nvx/pull/659) / microvm tests: stream OpenVMM transcripts to disk as they are read | **REFUTED (model)** / latest attempt: failure | 9 | **1** | 4 | 0 | 4 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/16#issuecomment-6357198686) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39896467670) / [latest attempt](https://github.com/shuvendu-lahiri/nvx/actions/runs/39896467670) |
 | [shuvendu-lahiri/nvx#18](https://github.com/shuvendu-lahiri/nvx/pull/18) | [Source change 664](https://redirect.github.com/microsoft/nvx/pull/664) / release: name the mismatched fields in Ubuntu artifact manifest errors | Published | 5 | 0 | 3 | 0 | 2 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/18#issuecomment-6385338262) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39896859074) |
 | [shuvendu-lahiri/nvx#17](https://github.com/shuvendu-lahiri/nvx/pull/17) | [Source change 678](https://redirect.github.com/microsoft/nvx/pull/678) / nvx\-rs: build the NVXS unit tests' epoch identities with one function | Published | 6 | 0 | 5 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/17#issuecomment-6385037482) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39896853340) |
@@ -32,11 +33,16 @@ Snapshot: 2026-10-24T14:37:43.528228+00:00. Latest published report per PR suppl
 | [shuvendu-lahiri/nvx#1](https://github.com/shuvendu-lahiri/nvx/pull/1) | [Source change 747](https://redirect.github.com/microsoft/nvx/pull/747) / nvx\-rs: encode the NVXS roles' DATA and CREDIT with one function | Published | 8 | 0 | 8 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/1#issuecomment-6382219305) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39888393336) |
 | [shuvendu-lahiri/nvx#12](https://github.com/shuvendu-lahiri/nvx/pull/12) | [Source change 714](https://redirect.github.com/microsoft/nvx/pull/714) / ci: link the Windows OpenVMM test builds with /Brepro for sccache | Published | 8 | 0 | 7 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/12#issuecomment-6382206968) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39893502095) |
 | [shuvendu-lahiri/nvx#6](https://github.com/shuvendu-lahiri/nvx/pull/6) | [Source change 705](https://redirect.github.com/microsoft/nvx/pull/705) / nvx\-rs: write the NVXS record header with one function | Published / latest attempt: failure | 5 | 0 | 3 | 0 | 2 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/6#issuecomment-6358109237) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39891550289) / [latest attempt](https://github.com/shuvendu-lahiri/nvx/actions/runs/39891550289) |
-| [shuvendu-lahiri/nvx#19](https://github.com/shuvendu-lahiri/nvx/pull/19) | [Source change 658](https://redirect.github.com/microsoft/nvx/pull/658) / performance: keep results measured before a history reset out of the series | Published / latest attempt: in\_progress | 10 | 0 | 7 | 0 | 3 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/19#issuecomment-6357486315) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39898539854) / [latest attempt](https://github.com/shuvendu-lahiri/nvx/actions/runs/39898539854) |
 
 ## Conditional model refutations
 
 The following property texts are extracted from the published reports, without new adjudication or inference. The original report contains assumptions, source overlays and native evidence.
+
+### shuvendu-lahiri/nvx#19 / P10
+
+A successful git retrieval writes using the relative basename\.
+
+[Original report](https://github.com/shuvendu-lahiri/nvx/pull/19#issuecomment-6385668120)
 
 ### shuvendu-lahiri/nvx#11 / P5
 

@@ -5,9 +5,9 @@ Published results from the prototype [Neuro-Formal Verification](https://arxiv.o
 
 **[Live interactive dashboard](https://shuvendu-lahiri.github.io/nfv_dashboard/litebox/)** / [all repositories](https://shuvendu-lahiri.github.io/nfv_dashboard/) or [download the standalone HTML](index.html) (no server or external dependencies).
 
-Snapshot: 2026-10-24T14:37:43.528228+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
+Snapshot: 2026-10-24T15:04:43.574171+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
 
-**44 PRs attempted; 69 workflow attempts; 37 published reports; 13 PRs with 15 conditional refutations; 173 model verifications; 7 PRs without a published report.**
+**44 PRs attempted; 70 workflow attempts; 37 published reports; 13 PRs with 15 conditional refutations; 173 model verifications; 7 PRs without a published report.**
 
 ## All attempted PRs (refutations first)
 
@@ -48,7 +48,7 @@ Snapshot: 2026-10-24T14:37:43.528228+00:00. Latest published report per PR suppl
 | [shuvendu-lahiri/litebox#31](https://github.com/shuvendu-lahiri/litebox/pull/31) | Replay change 1272: Cherry pick change 1110 Fix checking of directory search/read perms | Published | 9 | 0 | 9 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/31#issuecomment-6295515250) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39447927739) |
 | [shuvendu-lahiri/litebox#28](https://github.com/shuvendu-lahiri/litebox/pull/28) | Replay change 1279: Stabilize broker TCP client test | Published | 1 | 0 | 1 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/28#issuecomment-6293319969) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39437995772) |
 | [shuvendu-lahiri/litebox#23](https://github.com/shuvendu-lahiri/litebox/pull/23) | Replay change 1301: Sync ulitebox to latest main | Published | 10 | 0 | 4 | 6 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/23#issuecomment-6292062542) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39422364492) |
-| [shuvendu-lahiri/litebox#22](https://github.com/shuvendu-lahiri/litebox/pull/22) | Replay change 1448: Unseal file system \`Backend\` | Published | 4 | 0 | 4 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/22#issuecomment-6291042276) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39421605628) |
+| [shuvendu-lahiri/litebox#22](https://github.com/shuvendu-lahiri/litebox/pull/22) | Replay change 1448: Unseal file system \`Backend\` | Published / latest attempt: in\_progress | 4 | 0 | 4 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/22#issuecomment-6291042276) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39421605628) / [latest attempt](https://github.com/shuvendu-lahiri/litebox/actions/runs/39421605628) |
 | [shuvendu-lahiri/litebox#4](https://github.com/shuvendu-lahiri/litebox/pull/4) | Replay change 1641: implement partial backend walks | Published / latest attempt: failure | 10 | 0 | 7 | 1 | 2 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/4#issuecomment-6261868399) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39209801291) / [latest attempt](https://github.com/shuvendu-lahiri/litebox/actions/runs/39209801291) |
 | [shuvendu-lahiri/litebox#47](https://github.com/shuvendu-lahiri/litebox/pull/47) | Add LiteBox NFV audit dashboard | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39871498222) |
 | [shuvendu-lahiri/litebox#37](https://github.com/shuvendu-lahiri/litebox/pull/37) | Staged NFV audit \- change 1676: Plausible results for statfs | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532837030) |
