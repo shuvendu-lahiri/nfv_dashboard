@@ -1,22 +1,22 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/nvx",
-  "generated_at": "2026-10-24T12:08:00.425258+00:00",
+  "generated_at": "2026-10-24T12:30:08.851094+00:00",
   "name": "nvx",
   "label": "NVX",
   "summary": {
     "selected_prs": 20,
     "attempted_prs": 20,
     "published_reports": 20,
-    "workflow_attempts": 34,
+    "workflow_attempts": 36,
     "without_report": 0,
-    "refuted_prs": 4,
-    "properties": 102,
+    "refuted_prs": 5,
+    "properties": 101,
     "outcomes": {
-      "refuted": 5,
+      "refuted": 6,
       "verified": 71,
       "resources exhausted": 2,
-      "type-check/audit failure": 24
+      "type-check/audit failure": 22
     }
   },
   "prs": [
@@ -727,11 +727,11 @@
       "head_sha": "62db246008f6006669ffe20b93caffdb31dbd085",
       "head_branch": "nfv-pedro-683",
       "latest_report": {
-        "comment_id": 6357877960,
-        "url": "https://github.com/shuvendu-lahiri/nvx/pull/10#issuecomment-6357877960",
-        "published_at": "2026-10-23T05:08:58Z",
-        "updated_at": "2026-10-23T05:08:58Z",
-        "body_sha256": "f57e9d984a0942637792951a80863d03377913faa16aa8161fdb98fa6452f20a",
+        "comment_id": 6384026244,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/10#issuecomment-6384026244",
+        "published_at": "2026-10-24T12:09:04Z",
+        "updated_at": "2026-10-24T12:09:04Z",
+        "body_sha256": "2375aa54fff113a4a3517e5a9ced862d60ecdfd99c60325ae8964ba0c84cd612",
         "source_sha_prefix": "62db246008f6",
         "base_sha_prefix": "fce85c15747c",
         "run_id": 39892893751,
@@ -740,9 +740,9 @@
           "refuted": 0,
           "verified": 1,
           "resources exhausted": 0,
-          "type-check/audit failure": 1
+          "type-check/audit failure": 0
         },
-        "properties": 2,
+        "properties": 1,
         "refutations": []
       },
       "report_history": [
@@ -750,7 +750,7 @@
           "comment_id": 6357877960,
           "url": "https://github.com/shuvendu-lahiri/nvx/pull/10#issuecomment-6357877960",
           "published_at": "2026-10-23T05:08:58Z",
-          "updated_at": "2026-10-23T05:08:58Z",
+          "updated_at": "2026-10-24T12:09:03Z",
           "body_sha256": "f57e9d984a0942637792951a80863d03377913faa16aa8161fdb98fa6452f20a",
           "source_sha_prefix": "62db246008f6",
           "base_sha_prefix": "fce85c15747c",
@@ -764,6 +764,25 @@
           },
           "properties": 2,
           "refutations": []
+        },
+        {
+          "comment_id": 6384026244,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/10#issuecomment-6384026244",
+          "published_at": "2026-10-24T12:09:04Z",
+          "updated_at": "2026-10-24T12:09:04Z",
+          "body_sha256": "2375aa54fff113a4a3517e5a9ced862d60ecdfd99c60325ae8964ba0c84cd612",
+          "source_sha_prefix": "62db246008f6",
+          "base_sha_prefix": "fce85c15747c",
+          "run_id": 39892893751,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39892893751",
+          "counts": {
+            "refuted": 0,
+            "verified": 1,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 1,
+          "refutations": []
         }
       ],
       "report_matches_current_head": true,
@@ -771,8 +790,8 @@
       "latest_run": {
         "id": 39892893751,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39892893751",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 3
       },
       "source_number": 683,
@@ -787,30 +806,37 @@
       "head_sha": "389e4d6788082efa9c96a1838bac2196c3a3255c",
       "head_branch": "nfv-pedro-682",
       "latest_report": {
-        "comment_id": 6356740440,
-        "url": "https://github.com/shuvendu-lahiri/nvx/pull/11#issuecomment-6356740440",
-        "published_at": "2026-10-23T03:34:18Z",
-        "updated_at": "2026-10-23T03:34:18Z",
-        "body_sha256": "aee966c5b90078191b25ea319440d3d84eb7f1e0dfa44e296ab5885e54b1613a",
+        "comment_id": 6384226118,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/11#issuecomment-6384226118",
+        "published_at": "2026-10-24T12:29:55Z",
+        "updated_at": "2026-10-24T12:29:55Z",
+        "body_sha256": "1a428f2e67c9ce6c66b44c98ef99db1a628235b0df1bb1cab28a34d6c4480692",
         "source_sha_prefix": "389e4d678808",
         "base_sha_prefix": "b0cab5f25918",
         "run_id": 39893495398,
         "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39893495398",
         "counts": {
-          "refuted": 0,
+          "refuted": 1,
           "verified": 4,
           "resources exhausted": 0,
-          "type-check/audit failure": 3
+          "type-check/audit failure": 2
         },
         "properties": 7,
-        "refutations": []
+        "refutations": [
+          {
+            "property_id": "P5",
+            "property": "A missing cidr produces an Unsupported error.",
+            "input": "abstract state: except array-conversion error message = `[]`; except array-conversion error category = `false`; description text = `[]`; destination construction error message = `[]`; destination construction error category = `false`; destination construction result = `false`; whether except is an array = `false`; exception parsing error message = `[]`; exception parsing error category = `false`; per-exception network parsing results = `[]`; whether object.get(\"cidr\") finds a member = `false`; whether object.get(\"except\") finds a member = `false`; error message produced by invalid = `[]`; error category produced by invalid = `false`; cidr parsing error message = `[]`; cidr parsing error category = `false`; result of parsing the cidr network = `false`",
+            "sketch": "If `invalid(format!(\"{description}.cidr is required\"))` produces a non-Unsupported error with an empty message, the early return still skips `except` parsing and destination construction, but its error category and message do not satisfy the intended property."
+          }
+        ]
       },
       "report_history": [
         {
           "comment_id": 6356740440,
           "url": "https://github.com/shuvendu-lahiri/nvx/pull/11#issuecomment-6356740440",
           "published_at": "2026-10-23T03:34:18Z",
-          "updated_at": "2026-10-23T03:34:18Z",
+          "updated_at": "2026-10-24T12:29:53Z",
           "body_sha256": "aee966c5b90078191b25ea319440d3d84eb7f1e0dfa44e296ab5885e54b1613a",
           "source_sha_prefix": "389e4d678808",
           "base_sha_prefix": "b0cab5f25918",
@@ -824,16 +850,42 @@
           },
           "properties": 7,
           "refutations": []
+        },
+        {
+          "comment_id": 6384226118,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/11#issuecomment-6384226118",
+          "published_at": "2026-10-24T12:29:55Z",
+          "updated_at": "2026-10-24T12:29:55Z",
+          "body_sha256": "1a428f2e67c9ce6c66b44c98ef99db1a628235b0df1bb1cab28a34d6c4480692",
+          "source_sha_prefix": "389e4d678808",
+          "base_sha_prefix": "b0cab5f25918",
+          "run_id": 39893495398,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39893495398",
+          "counts": {
+            "refuted": 1,
+            "verified": 4,
+            "resources exhausted": 0,
+            "type-check/audit failure": 2
+          },
+          "properties": 7,
+          "refutations": [
+            {
+              "property_id": "P5",
+              "property": "A missing cidr produces an Unsupported error.",
+              "input": "abstract state: except array-conversion error message = `[]`; except array-conversion error category = `false`; description text = `[]`; destination construction error message = `[]`; destination construction error category = `false`; destination construction result = `false`; whether except is an array = `false`; exception parsing error message = `[]`; exception parsing error category = `false`; per-exception network parsing results = `[]`; whether object.get(\"cidr\") finds a member = `false`; whether object.get(\"except\") finds a member = `false`; error message produced by invalid = `[]`; error category produced by invalid = `false`; cidr parsing error message = `[]`; cidr parsing error category = `false`; result of parsing the cidr network = `false`",
+              "sketch": "If `invalid(format!(\"{description}.cidr is required\"))` produces a non-Unsupported error with an empty message, the early return still skips `except` parsing and destination construction, but its error category and message do not satisfy the intended property."
+            }
+          ]
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39893495398,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39893495398",
-        "status": "completed",
-        "conclusion": "success",
-        "attempt": 1
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
       },
       "source_number": 682,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/682",
@@ -999,13 +1051,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39893507724,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39893507724",
-        "status": "completed",
-        "conclusion": "failure",
-        "attempt": 1
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
       },
       "source_number": 681,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/681",
