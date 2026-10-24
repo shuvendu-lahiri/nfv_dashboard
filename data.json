@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "generated_at": "2026-10-24T12:59:49.150802+00:00",
+  "generated_at": "2026-10-24T13:21:07.038893+00:00",
   "summary": {
     "attempted_prs": 95,
     "published_reports": 82,
-    "workflow_attempts": 188,
+    "workflow_attempts": 192,
     "without_report": 13,
-    "refuted_prs": 20,
-    "properties": 484,
+    "refuted_prs": 19,
+    "properties": 485,
     "outcomes": {
-      "refuted": 23,
-      "verified": 281,
-      "resources exhausted": 52,
-      "type-check/audit failure": 128
+      "refuted": 21,
+      "verified": 286,
+      "resources exhausted": 55,
+      "type-check/audit failure": 123
     }
   },
   "repositories": [
@@ -20,12 +20,12 @@
       "name": "z3",
       "label": "Z3",
       "repository": "shuvendu-lahiri/z3",
-      "generated_at": "2026-10-24T12:59:49.150802+00:00",
+      "generated_at": "2026-10-24T13:21:07.038893+00:00",
       "summary": {
         "selected_prs": 31,
         "attempted_prs": 31,
         "published_reports": 26,
-        "workflow_attempts": 88,
+        "workflow_attempts": 89,
         "without_report": 5,
         "refuted_prs": 3,
         "properties": 110,
@@ -41,20 +41,20 @@
       "name": "litebox",
       "label": "LiteBox",
       "repository": "shuvendu-lahiri/litebox",
-      "generated_at": "2026-10-24T12:59:49.150802+00:00",
+      "generated_at": "2026-10-24T13:21:07.038893+00:00",
       "summary": {
         "selected_prs": 44,
         "attempted_prs": 44,
         "published_reports": 36,
-        "workflow_attempts": 63,
+        "workflow_attempts": 65,
         "without_report": 8,
         "refuted_prs": 12,
         "properties": 273,
         "outcomes": {
           "refuted": 14,
-          "verified": 166,
+          "verified": 167,
           "resources exhausted": 30,
-          "type-check/audit failure": 63
+          "type-check/audit failure": 62
         }
       }
     },
@@ -62,20 +62,20 @@
       "name": "nvx",
       "label": "NVX",
       "repository": "shuvendu-lahiri/nvx",
-      "generated_at": "2026-10-24T12:59:49.150802+00:00",
+      "generated_at": "2026-10-24T13:21:07.038893+00:00",
       "summary": {
         "selected_prs": 20,
         "attempted_prs": 20,
         "published_reports": 20,
-        "workflow_attempts": 37,
+        "workflow_attempts": 38,
         "without_report": 0,
-        "refuted_prs": 5,
-        "properties": 101,
+        "refuted_prs": 4,
+        "properties": 102,
         "outcomes": {
-          "refuted": 6,
-          "verified": 71,
-          "resources exhausted": 2,
-          "type-check/audit failure": 22
+          "refuted": 4,
+          "verified": 75,
+          "resources exhausted": 5,
+          "type-check/audit failure": 18
         }
       }
     }
