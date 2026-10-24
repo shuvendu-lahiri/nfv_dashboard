@@ -5,18 +5,19 @@ Published results from the prototype [Neuro-Formal Verification](https://arxiv.o
 
 **[Live interactive dashboard](https://shuvendu-lahiri.github.io/nfv_dashboard/z3/)** / [all repositories](https://shuvendu-lahiri.github.io/nfv_dashboard/) or [download the standalone HTML](index.html) (no server or external dependencies).
 
-Snapshot: 2026-10-24T09:38:28.415691+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
+Snapshot: 2026-10-24T10:26:48.408977+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
 
-**31 PRs attempted; 75 workflow attempts; 25 published reports; 4 PRs with 4 conditional refutations; 30 model verifications; 6 PRs without a published report.**
+**31 PRs attempted; 77 workflow attempts; 25 published reports; 3 PRs with 3 conditional refutations; 31 model verifications; 6 PRs without a published report.**
 
 ## All attempted PRs (refutations first)
 
 | PR | Change | Latest report | Properties | Refuted | Verified | Exhausted | Audit failure | Evidence |
 |---|---|---|---:|---:|---:|---:|---:|---|
 | [shuvendu-lahiri/z3#41](https://github.com/shuvendu-lahiri/z3/pull/41) | Staged NFV audit \- change 11239: Check xor gate clauses in the native Tseitin proof checker | **REFUTED (model)** | 6 | **1** | 0 | 1 | 4 | [Report](https://github.com/shuvendu-lahiri/z3/pull/41#issuecomment-6306928614) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39532858434) |
-| [shuvendu-lahiri/z3#28](https://github.com/shuvendu-lahiri/z3/pull/28) | NFV replay Z3Prover/z3\#11161: Honor binary exponents in Z3Py FPVal | **REFUTED (model)** / latest attempt: failure | 7 | **1** | 6 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/z3/pull/28#issuecomment-6231334612) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39011178503) / [latest attempt](https://github.com/shuvendu-lahiri/z3/actions/runs/39011178503) |
 | [shuvendu-lahiri/z3#29](https://github.com/shuvendu-lahiri/z3/pull/29) | NFV replay Z3Prover/z3\#11153: Bound finite\-field factor splitting per SMT search | **REFUTED (model)** | 4 | **1** | 2 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/z3/pull/29#issuecomment-6231234572) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39011193107) |
 | [shuvendu-lahiri/z3#35](https://github.com/shuvendu-lahiri/z3/pull/35) | NFV replay Z3Prover/z3\#11123: fix\(seq\): respect known length lower bounds when minting fresh model values \(\#7664\) | **REFUTED (model)** | 1 | **1** | 0 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/z3/pull/35#issuecomment-6231227079) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39012427142) |
+| [shuvendu-lahiri/z3#23](https://github.com/shuvendu-lahiri/z3/pull/23) | NFV replay Z3Prover/z3\#11165: Avoid regex unfolding for provably out\-of\-range substring offsets | Published | 4 | 0 | 2 | 0 | 2 | [Report](https://github.com/shuvendu-lahiri/z3/pull/23#issuecomment-6382921550) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39010841303) |
+| [shuvendu-lahiri/z3#28](https://github.com/shuvendu-lahiri/z3/pull/28) | NFV replay Z3Prover/z3\#11161: Honor binary exponents in Z3Py FPVal | Published | 7 | 0 | 7 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/z3/pull/28#issuecomment-6382902190) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39011178503) |
 | [shuvendu-lahiri/z3#20](https://github.com/shuvendu-lahiri/z3/pull/20) | Port recursive\-function MBQI handling to SAT/SMT | Published | 5 | 0 | 3 | 0 | 2 | [Report](https://github.com/shuvendu-lahiri/z3/pull/20#issuecomment-6382555028) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/38965099587) |
 | [shuvendu-lahiri/z3#40](https://github.com/shuvendu-lahiri/z3/pull/40) | Staged NFV audit \- change 11245: Check alldiff gate clauses natively and log root distinct as input | Published | 10 | 0 | 1 | 3 | 6 | [Report](https://github.com/shuvendu-lahiri/z3/pull/40#issuecomment-6307102053) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39532863673) |
 | [shuvendu-lahiri/z3#44](https://github.com/shuvendu-lahiri/z3/pull/44) | Staged NFV audit \- change 11236: Reject malformed implied\-equality proof hints | Published | 6 | 0 | 3 | 1 | 2 | [Report](https://github.com/shuvendu-lahiri/z3/pull/44#issuecomment-6307041366) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39532851433) |
@@ -33,7 +34,6 @@ Snapshot: 2026-10-24T09:38:28.415691+00:00. Latest published report per PR suppl
 | [shuvendu-lahiri/z3#33](https://github.com/shuvendu-lahiri/z3/pull/33) | NFV replay Z3Prover/z3\#11117: params: parse unsigned API limits without depending on long | Published | 1 | 0 | 1 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/z3/pull/33#issuecomment-6231170012) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39012005732) |
 | [shuvendu-lahiri/z3#27](https://github.com/shuvendu-lahiri/z3/pull/27) | NFV replay Z3Prover/z3\#11160: Fix floating\-point rounding for extreme integer exponents | Published | 3 | 0 | 3 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/z3/pull/27#issuecomment-6231102654) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39011165580) |
 | [shuvendu-lahiri/z3#25](https://github.com/shuvendu-lahiri/z3/pull/25) | NFV replay Z3Prover/z3\#11159: Correct RTN selection for real\-to\-float conversion | Published | 2 | 0 | 2 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/z3/pull/25#issuecomment-6231022253) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39010871224) |
-| [shuvendu-lahiri/z3#23](https://github.com/shuvendu-lahiri/z3/pull/23) | NFV replay Z3Prover/z3\#11165: Avoid regex unfolding for provably out\-of\-range substring offsets | Published | 3 | 0 | 2 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/z3/pull/23#issuecomment-6231012598) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39010841303) |
 | [shuvendu-lahiri/z3#26](https://github.com/shuvendu-lahiri/z3/pull/26) | NFV replay Z3Prover/z3\#11162: Avoid array\-theory give\-up for uninterpreted uses of lambdas | Published | 1 | 0 | 1 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/z3/pull/26#issuecomment-6230980655) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39011150890) |
 | [shuvendu-lahiri/z3#24](https://github.com/shuvendu-lahiri/z3/pull/24) | NFV replay Z3Prover/z3\#11164: Fix MBQI returning \`unknown\` on array model values over uninterpreted sorts | Published | 1 | 0 | 0 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/z3/pull/24#issuecomment-6230955224) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39010856073) |
 | [shuvendu-lahiri/z3#22](https://github.com/shuvendu-lahiri/z3/pull/22) | Add exp/atan2 transcendental support to nla\_core | Published (older head) / latest attempt: cancelled | 10 | 0 | 1 | 0 | 9 | [Report](https://github.com/shuvendu-lahiri/z3/pull/22#issuecomment-6206551734) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/38837955521) / [latest attempt](https://github.com/shuvendu-lahiri/z3/actions/runs/38952644587) |
@@ -54,12 +54,6 @@ The following property texts are extracted from the published reports, without n
 When the process exit handler runs during an active replay, with g\_captured referring to the replay's captured stream, it reports that replay ended prematurely together with the captured output and terminates with failure status 1; when no replay is active, it returns without forcing failure\.
 
 [Original report](https://github.com/shuvendu-lahiri/z3/pull/41#issuecomment-6306928614)
-
-### shuvendu-lahiri/z3#28 / P6
-
-For a well\-formed string \`&lt;significand&gt;\*\(2\*\*&lt;old&gt;\)\` with integer \`old\` and an integer supplied exponent, conversion should remove the wrapper and combine the exponents exactly once, returning \`&lt;significand&gt;p&lt;old \+ exp&gt;\` unless the sum is zero, in which case it should return only \`&lt;significand&gt;\`\.
-
-[Original report](https://github.com/shuvendu-lahiri/z3/pull/28#issuecomment-6231334612)
 
 ### shuvendu-lahiri/z3#29 / P1
 

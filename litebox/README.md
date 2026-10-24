@@ -5,14 +5,15 @@ Published results from the prototype [Neuro-Formal Verification](https://arxiv.o
 
 **[Live interactive dashboard](https://shuvendu-lahiri.github.io/nfv_dashboard/litebox/)** / [all repositories](https://shuvendu-lahiri.github.io/nfv_dashboard/) or [download the standalone HTML](index.html) (no server or external dependencies).
 
-Snapshot: 2026-10-24T09:38:28.415691+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
+Snapshot: 2026-10-24T10:26:48.408977+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
 
-**44 PRs attempted; 52 workflow attempts; 34 published reports; 9 PRs with 10 conditional refutations; 155 model verifications; 10 PRs without a published report.**
+**44 PRs attempted; 53 workflow attempts; 35 published reports; 10 PRs with 12 conditional refutations; 159 model verifications; 9 PRs without a published report.**
 
 ## All attempted PRs (refutations first)
 
 | PR | Change | Latest report | Properties | Refuted | Verified | Exhausted | Audit failure | Evidence |
 |---|---|---|---:|---:|---:|---:|---:|---|
+| [shuvendu-lahiri/litebox#3](https://github.com/shuvendu-lahiri/litebox/pull/3) | Replay change 1640: replace procfd special cases with filesystem symlinks | **REFUTED (model)** | 10 | **2** | 4 | 0 | 4 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/3#issuecomment-6383064179) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39390206732) |
 | [shuvendu-lahiri/litebox#2](https://github.com/shuvendu-lahiri/litebox/pull/2) | Replay change 1656: copy broker pipe and socket reads in bulk | **REFUTED (model)** | 9 | **1** | 8 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/2#issuecomment-6382629152) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39205431424) |
 | [shuvendu-lahiri/litebox#38](https://github.com/shuvendu-lahiri/litebox/pull/38) | Staged NFV audit \- change 1668: Stacked runners: Add virtual init | **REFUTED (model)** | 8 | **1** | 2 | 3 | 2 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/38#issuecomment-6307252325) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532833594) |
 | [shuvendu-lahiri/litebox#43](https://github.com/shuvendu-lahiri/litebox/pull/43) | Staged NFV audit \- change 1635: Cherry\-pick "LVBS: Allow concurrent vault entries" | **REFUTED (model)** | 10 | **1** | 0 | 2 | 7 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/43#issuecomment-6307191865) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532819562) |
@@ -56,11 +57,22 @@ Snapshot: 2026-10-24T09:38:28.415691+00:00. Latest published report per PR suppl
 | [shuvendu-lahiri/litebox#17](https://github.com/shuvendu-lahiri/litebox/pull/17) | Replay change 1672: Route chmod syscalls | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39415165794) |
 | [shuvendu-lahiri/litebox#8](https://github.com/shuvendu-lahiri/litebox/pull/8) | Replay change 1648: Cherry pick change 1564 Refactor to remove \`litebox::path::Arg\` | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39357363330) |
 | [shuvendu-lahiri/litebox#6](https://github.com/shuvendu-lahiri/litebox/pull/6) | Replay change 1671: Route chown syscalls | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39397856512) |
-| [shuvendu-lahiri/litebox#3](https://github.com/shuvendu-lahiri/litebox/pull/3) | Replay change 1640: replace procfd special cases with filesystem symlinks | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39390206732) |
 
 ## Conditional model refutations
 
 The following property texts are extracted from the published reports, without new adjudication or inference. The original report contains assumptions, source overlays and native evidence.
+
+### shuvendu-lahiri/litebox#3 / P5
+
+An invalid extension returns an error\.
+
+[Original report](https://github.com/shuvendu-lahiri/litebox/pull/3#issuecomment-6383064179)
+
+### shuvendu-lahiri/litebox#3 / P8
+
+A nonempty declared region without a final NUL terminator triggers invalid\-parameter termination\.
+
+[Original report](https://github.com/shuvendu-lahiri/litebox/pull/3#issuecomment-6383064179)
 
 ### shuvendu-lahiri/litebox#2 / P4
 

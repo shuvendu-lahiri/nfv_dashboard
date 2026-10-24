@@ -1,22 +1,22 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/z3",
-  "generated_at": "2026-10-24T09:38:28.415691+00:00",
+  "generated_at": "2026-10-24T10:26:48.408977+00:00",
   "name": "z3",
   "label": "Z3",
   "summary": {
     "selected_prs": 31,
     "attempted_prs": 31,
     "published_reports": 25,
-    "workflow_attempts": 75,
+    "workflow_attempts": 77,
     "without_report": 6,
-    "refuted_prs": 4,
-    "properties": 94,
+    "refuted_prs": 3,
+    "properties": 95,
     "outcomes": {
-      "refuted": 4,
-      "verified": 30,
+      "refuted": 3,
+      "verified": 31,
       "resources exhausted": 20,
-      "type-check/audit failure": 40
+      "type-check/audit failure": 41
     }
   },
   "prs": [
@@ -332,11 +332,11 @@
       "head_sha": "fde9013a129436ba1a0b11a813569cfb8442b2d2",
       "head_branch": "nfv-cohort/11165-head",
       "latest_report": {
-        "comment_id": 6231012598,
-        "url": "https://github.com/shuvendu-lahiri/z3/pull/23#issuecomment-6231012598",
-        "published_at": "2026-10-17T07:05:38Z",
-        "updated_at": "2026-10-17T07:05:38Z",
-        "body_sha256": "789eb9b60444b79a0a08439262f96168c9068e4af53c42939c3b07e8fedab776",
+        "comment_id": 6382921550,
+        "url": "https://github.com/shuvendu-lahiri/z3/pull/23#issuecomment-6382921550",
+        "published_at": "2026-10-24T10:08:05Z",
+        "updated_at": "2026-10-24T10:08:05Z",
+        "body_sha256": "31902d8b815ccb7f59cbb134979cdf2e07dc4f4979dfd3998ebdf4ee72f84bb9",
         "source_sha_prefix": "fde9013a1294",
         "base_sha_prefix": "7afcedc45991",
         "run_id": 39010841303,
@@ -345,9 +345,9 @@
           "refuted": 0,
           "verified": 2,
           "resources exhausted": 0,
-          "type-check/audit failure": 1
+          "type-check/audit failure": 2
         },
-        "properties": 3,
+        "properties": 4,
         "refutations": []
       },
       "report_history": [
@@ -355,7 +355,7 @@
           "comment_id": 6231012598,
           "url": "https://github.com/shuvendu-lahiri/z3/pull/23#issuecomment-6231012598",
           "published_at": "2026-10-17T07:05:38Z",
-          "updated_at": "2026-10-17T07:05:38Z",
+          "updated_at": "2026-10-24T10:08:04Z",
           "body_sha256": "789eb9b60444b79a0a08439262f96168c9068e4af53c42939c3b07e8fedab776",
           "source_sha_prefix": "fde9013a1294",
           "base_sha_prefix": "7afcedc45991",
@@ -369,16 +369,35 @@
           },
           "properties": 3,
           "refutations": []
+        },
+        {
+          "comment_id": 6382921550,
+          "url": "https://github.com/shuvendu-lahiri/z3/pull/23#issuecomment-6382921550",
+          "published_at": "2026-10-24T10:08:05Z",
+          "updated_at": "2026-10-24T10:08:05Z",
+          "body_sha256": "31902d8b815ccb7f59cbb134979cdf2e07dc4f4979dfd3998ebdf4ee72f84bb9",
+          "source_sha_prefix": "fde9013a1294",
+          "base_sha_prefix": "7afcedc45991",
+          "run_id": 39010841303,
+          "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39010841303",
+          "counts": {
+            "refuted": 0,
+            "verified": 2,
+            "resources exhausted": 0,
+            "type-check/audit failure": 2
+          },
+          "properties": 4,
+          "refutations": []
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39010841303,
         "url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39010841303",
         "status": "completed",
         "conclusion": "success",
-        "attempt": 1
+        "attempt": 2
       }
     },
     {
@@ -617,37 +636,30 @@
       "head_sha": "b9bafe70b2dc71b13b31430fe87785ef1cffc59f",
       "head_branch": "nfv-cohort/11161-head",
       "latest_report": {
-        "comment_id": 6231334612,
-        "url": "https://github.com/shuvendu-lahiri/z3/pull/28#issuecomment-6231334612",
-        "published_at": "2026-10-17T07:42:52Z",
-        "updated_at": "2026-10-17T07:42:52Z",
-        "body_sha256": "ce5402691aa4c8db606b2c839091d549671bea42ba08025ffea2cb7f7b20f254",
+        "comment_id": 6382902190,
+        "url": "https://github.com/shuvendu-lahiri/z3/pull/28#issuecomment-6382902190",
+        "published_at": "2026-10-24T10:06:36Z",
+        "updated_at": "2026-10-24T10:06:36Z",
+        "body_sha256": "ea9880982b3286e00be6fe40766cb84775a6c925667e4cf3bc0594d10280a354",
         "source_sha_prefix": "b9bafe70b2dc",
         "base_sha_prefix": "c31e2ff30d39",
         "run_id": 39011178503,
         "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39011178503",
         "counts": {
-          "refuted": 1,
-          "verified": 6,
+          "refuted": 0,
+          "verified": 7,
           "resources exhausted": 0,
           "type-check/audit failure": 0
         },
         "properties": 7,
-        "refutations": [
-          {
-            "property_id": "P6",
-            "property": "For a well-formed string `<significand>*(2**<old>)` with integer `old` and an integer supplied exponent, conversion should remove the wrapper and combine the exponents exactly once, returning `<significand>p<old + exp>` unless the sum is zero, in which case it should return only `<significand>`.",
-            "input": "`exp = 0`; `val = [49, 42, 40, 50, 42, 42, 48, 41]`; abstract state: integer parsed from the wrapped exponent = `0`; significand prefix of val = `[49]`",
-            "sketch": "If `val` is `1*(2**0)` and the supplied exponent is zero, line 10783 changes `exp` to the string `\"0\"`. The condition `exp == 0` is then false, causing the `p0` suffix to be retained."
-          }
-        ]
+        "refutations": []
       },
       "report_history": [
         {
           "comment_id": 6231334612,
           "url": "https://github.com/shuvendu-lahiri/z3/pull/28#issuecomment-6231334612",
           "published_at": "2026-10-17T07:42:52Z",
-          "updated_at": "2026-10-17T07:42:52Z",
+          "updated_at": "2026-10-24T10:06:35Z",
           "body_sha256": "ce5402691aa4c8db606b2c839091d549671bea42ba08025ffea2cb7f7b20f254",
           "source_sha_prefix": "b9bafe70b2dc",
           "base_sha_prefix": "c31e2ff30d39",
@@ -668,16 +680,35 @@
               "sketch": "If `val` is `1*(2**0)` and the supplied exponent is zero, line 10783 changes `exp` to the string `\"0\"`. The condition `exp == 0` is then false, causing the `p0` suffix to be retained."
             }
           ]
+        },
+        {
+          "comment_id": 6382902190,
+          "url": "https://github.com/shuvendu-lahiri/z3/pull/28#issuecomment-6382902190",
+          "published_at": "2026-10-24T10:06:36Z",
+          "updated_at": "2026-10-24T10:06:36Z",
+          "body_sha256": "ea9880982b3286e00be6fe40766cb84775a6c925667e4cf3bc0594d10280a354",
+          "source_sha_prefix": "b9bafe70b2dc",
+          "base_sha_prefix": "c31e2ff30d39",
+          "run_id": 39011178503,
+          "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39011178503",
+          "counts": {
+            "refuted": 0,
+            "verified": 7,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 7,
+          "refutations": []
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 3,
+      "attempts": 4,
       "latest_run": {
         "id": 39011178503,
         "url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39011178503",
         "status": "completed",
-        "conclusion": "failure",
-        "attempt": 3
+        "conclusion": "success",
+        "attempt": 4
       }
     },
     {
