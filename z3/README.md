@@ -5,17 +5,18 @@ Published results from the prototype [Neuro-Formal Verification](https://arxiv.o
 
 **[Live interactive dashboard](https://shuvendu-lahiri.github.io/nfv_dashboard/z3/)** / [all repositories](https://shuvendu-lahiri.github.io/nfv_dashboard/) or [download the standalone HTML](index.html) (no server or external dependencies).
 
-Snapshot: 2026-10-24T12:30:08.851094+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
+Snapshot: 2026-10-24T12:59:49.150802+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
 
-**31 PRs attempted; 86 workflow attempts; 26 published reports; 3 PRs with 3 conditional refutations; 43 model verifications; 5 PRs without a published report.**
+**31 PRs attempted; 88 workflow attempts; 26 published reports; 3 PRs with 3 conditional refutations; 44 model verifications; 5 PRs without a published report.**
 
 ## All attempted PRs (refutations first)
 
 | PR | Change | Latest report | Properties | Refuted | Verified | Exhausted | Audit failure | Evidence |
 |---|---|---|---:|---:|---:|---:|---:|---|
+| [shuvendu-lahiri/z3#35](https://github.com/shuvendu-lahiri/z3/pull/35) | NFV replay Z3Prover/z3\#11123: fix\(seq\): respect known length lower bounds when minting fresh model values \(\#7664\) | **REFUTED (model)** | 2 | **1** | 1 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/z3/pull/35#issuecomment-6384498642) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39012427142) |
 | [shuvendu-lahiri/z3#29](https://github.com/shuvendu-lahiri/z3/pull/29) | NFV replay Z3Prover/z3\#11153: Bound finite\-field factor splitting per SMT search | **REFUTED (model)** | 5 | **1** | 2 | 0 | 2 | [Report](https://github.com/shuvendu-lahiri/z3/pull/29#issuecomment-6383789499) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39011193107) |
 | [shuvendu-lahiri/z3#41](https://github.com/shuvendu-lahiri/z3/pull/41) | Staged NFV audit \- change 11239: Check xor gate clauses in the native Tseitin proof checker | **REFUTED (model)** | 6 | **1** | 0 | 1 | 4 | [Report](https://github.com/shuvendu-lahiri/z3/pull/41#issuecomment-6306928614) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39532858434) |
-| [shuvendu-lahiri/z3#35](https://github.com/shuvendu-lahiri/z3/pull/35) | NFV replay Z3Prover/z3\#11123: fix\(seq\): respect known length lower bounds when minting fresh model values \(\#7664\) | **REFUTED (model)** | 1 | **1** | 0 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/z3/pull/35#issuecomment-6231227079) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39012427142) |
+| [shuvendu-lahiri/z3#34](https://github.com/shuvendu-lahiri/z3/pull/34) | NFV replay Z3Prover/z3\#11128: wrong length evaluation in seq model \(nseq\) | Published | 1 | 0 | 1 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/z3/pull/34#issuecomment-6384331655) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39012414006) |
 | [shuvendu-lahiri/z3#32](https://github.com/shuvendu-lahiri/z3/pull/32) | NFV replay Z3Prover/z3\#11166: Fix thread\-safety defects in parallel SMT reached via the qfbv fallback | Published | 9 | 0 | 9 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/z3/pull/32#issuecomment-6384221871) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39011236095) |
 | [shuvendu-lahiri/z3#27](https://github.com/shuvendu-lahiri/z3/pull/27) | NFV replay Z3Prover/z3\#11160: Fix floating\-point rounding for extreme integer exponents | Published | 5 | 0 | 3 | 0 | 2 | [Report](https://github.com/shuvendu-lahiri/z3/pull/27#issuecomment-6383679732) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39011165580) |
 | [shuvendu-lahiri/z3#26](https://github.com/shuvendu-lahiri/z3/pull/26) | NFV replay Z3Prover/z3\#11162: Avoid array\-theory give\-up for uninterpreted uses of lambdas | Published | 1 | 0 | 1 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/z3/pull/26#issuecomment-6383360848) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39011150890) |
@@ -35,7 +36,6 @@ Snapshot: 2026-10-24T12:30:08.851094+00:00. Latest published report per PR suppl
 | [shuvendu-lahiri/z3#47](https://github.com/shuvendu-lahiri/z3/pull/47) | Staged NFV audit \- change 11227: Prevent assertion in finite\-set union cardinality bounds | Published | 2 | 0 | 1 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/z3/pull/47#issuecomment-6306596567) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39532698130) |
 | [shuvendu-lahiri/z3#39](https://github.com/shuvendu-lahiri/z3/pull/39) | NFV replay Z3Prover/z3\#11111: Fix unit detection in the SAT proof trimmer | Published | 2 | 0 | 0 | 0 | 2 | [Report](https://github.com/shuvendu-lahiri/z3/pull/39#issuecomment-6231676360) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39015881455) |
 | [shuvendu-lahiri/z3#38](https://github.com/shuvendu-lahiri/z3/pull/38) | NFV replay Z3Prover/z3\#11114: smt: run MBQI after a theory gives up instead of answering unknown | Published | 3 | 0 | 2 | 1 | 0 | [Report](https://github.com/shuvendu-lahiri/z3/pull/38#issuecomment-6231379994) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39012980760) |
-| [shuvendu-lahiri/z3#34](https://github.com/shuvendu-lahiri/z3/pull/34) | NFV replay Z3Prover/z3\#11128: wrong length evaluation in seq model \(nseq\) | Published | 1 | 0 | 1 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/z3/pull/34#issuecomment-6231186119) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39012414006) |
 | [shuvendu-lahiri/z3#33](https://github.com/shuvendu-lahiri/z3/pull/33) | NFV replay Z3Prover/z3\#11117: params: parse unsigned API limits without depending on long | Published / latest attempt: failure | 1 | 0 | 1 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/z3/pull/33#issuecomment-6231170012) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/39012005732) / [latest attempt](https://github.com/shuvendu-lahiri/z3/actions/runs/39012005732) |
 | [shuvendu-lahiri/z3#22](https://github.com/shuvendu-lahiri/z3/pull/22) | Add exp/atan2 transcendental support to nla\_core | Published (older head) / latest attempt: cancelled | 10 | 0 | 1 | 0 | 9 | [Report](https://github.com/shuvendu-lahiri/z3/pull/22#issuecomment-6206551734) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/38837955521) / [latest attempt](https://github.com/shuvendu-lahiri/z3/actions/runs/38952644587) |
 | [shuvendu-lahiri/z3#21](https://github.com/shuvendu-lahiri/z3/pull/21) | Fix false \`unsat\` for inexact symbolic Real\-to\-FloatingPoint rounding | Published (older head) / latest attempt: cancelled | 10 | 0 | 0 | 10 | 0 | [Report](https://github.com/shuvendu-lahiri/z3/pull/21#issuecomment-6206176939) / [run](https://github.com/shuvendu-lahiri/z3/actions/runs/38835819515) / [latest attempt](https://github.com/shuvendu-lahiri/z3/actions/runs/38952645412) |
@@ -49,6 +49,12 @@ Snapshot: 2026-10-24T12:30:08.851094+00:00. Latest published report per PR suppl
 
 The following property texts are extracted from the published reports, without new adjudication or inference. The original report contains assumptions, source overlays and native evidence.
 
+### shuvendu-lahiri/z3#35 / P1
+
+Under the complete padding guard, the returned string meets the known length lower bound\.
+
+[Original report](https://github.com/shuvendu-lahiri/z3/pull/35#issuecomment-6384498642)
+
 ### shuvendu-lahiri/z3#29 / P1
 
 A normally completed search initialization leaves the factor\-split clause counter at zero\.
@@ -60,12 +66,6 @@ A normally completed search initialization leaves the factor\-split clause count
 When the process exit handler runs during an active replay, with g\_captured referring to the replay's captured stream, it reports that replay ended prematurely together with the captured output and terminates with failure status 1; when no replay is active, it returns without forcing failure\.
 
 [Original report](https://github.com/shuvendu-lahiri/z3/pull/41#issuecomment-6306928614)
-
-### shuvendu-lahiri/z3#35 / P1
-
-When the unresolved\-sequence fallback obtains a concrete fresh string and the original term has a reported positive unsigned length lower bound no greater than 65,536, a fresh string shorter than that bound is returned with its original content preserved and enough trailing 'a' characters added to reach the bound\. If the bound is absent, nonpositive, non\-unsigned, above 65,536, or already met by the fresh string, this padding step leaves the fresh value unchanged\.
-
-[Original report](https://github.com/shuvendu-lahiri/z3/pull/35#issuecomment-6231227079)
 
 ## Refresh and validate
 

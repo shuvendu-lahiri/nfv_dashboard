@@ -1,20 +1,20 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/z3",
-  "generated_at": "2026-10-24T12:30:08.851094+00:00",
+  "generated_at": "2026-10-24T12:59:49.150802+00:00",
   "name": "z3",
   "label": "Z3",
   "summary": {
     "selected_prs": 31,
     "attempted_prs": 31,
     "published_reports": 26,
-    "workflow_attempts": 86,
+    "workflow_attempts": 88,
     "without_report": 5,
     "refuted_prs": 3,
-    "properties": 109,
+    "properties": 110,
     "outcomes": {
       "refuted": 3,
-      "verified": 43,
+      "verified": 44,
       "resources exhausted": 20,
       "type-check/audit failure": 43
     }
@@ -1044,11 +1044,11 @@
       "head_sha": "a07e8ea780e1a2815f63ecae4283da779b44f38f",
       "head_branch": "nfv-cohort/11128-head",
       "latest_report": {
-        "comment_id": 6231186119,
-        "url": "https://github.com/shuvendu-lahiri/z3/pull/34#issuecomment-6231186119",
-        "published_at": "2026-10-17T07:25:02Z",
-        "updated_at": "2026-10-17T07:25:02Z",
-        "body_sha256": "870bbb0eec3d084f1e4f447a691466d8789d4ac73694a9f3025eb0f7dfab0ecd",
+        "comment_id": 6384331655,
+        "url": "https://github.com/shuvendu-lahiri/z3/pull/34#issuecomment-6384331655",
+        "published_at": "2026-10-24T12:40:55Z",
+        "updated_at": "2026-10-24T12:40:55Z",
+        "body_sha256": "7bbc670def229675fbc7673ed3c67651cc62076cc6ba2de659d2920e412a3dbb",
         "source_sha_prefix": "a07e8ea780e1",
         "base_sha_prefix": "55ab9f6e9b2e",
         "run_id": 39012414006,
@@ -1067,8 +1067,27 @@
           "comment_id": 6231186119,
           "url": "https://github.com/shuvendu-lahiri/z3/pull/34#issuecomment-6231186119",
           "published_at": "2026-10-17T07:25:02Z",
-          "updated_at": "2026-10-17T07:25:02Z",
+          "updated_at": "2026-10-24T12:40:54Z",
           "body_sha256": "870bbb0eec3d084f1e4f447a691466d8789d4ac73694a9f3025eb0f7dfab0ecd",
+          "source_sha_prefix": "a07e8ea780e1",
+          "base_sha_prefix": "55ab9f6e9b2e",
+          "run_id": 39012414006,
+          "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39012414006",
+          "counts": {
+            "refuted": 0,
+            "verified": 1,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 1,
+          "refutations": []
+        },
+        {
+          "comment_id": 6384331655,
+          "url": "https://github.com/shuvendu-lahiri/z3/pull/34#issuecomment-6384331655",
+          "published_at": "2026-10-24T12:40:55Z",
+          "updated_at": "2026-10-24T12:40:55Z",
+          "body_sha256": "7bbc670def229675fbc7673ed3c67651cc62076cc6ba2de659d2920e412a3dbb",
           "source_sha_prefix": "a07e8ea780e1",
           "base_sha_prefix": "55ab9f6e9b2e",
           "run_id": 39012414006,
@@ -1084,13 +1103,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39012414006,
         "url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39012414006",
         "status": "completed",
         "conclusion": "success",
-        "attempt": 1
+        "attempt": 2
       }
     },
     {
@@ -1101,28 +1120,28 @@
       "head_sha": "b17b5e3bcbea01203db74b10621ff327813180b6",
       "head_branch": "nfv-cohort/11123-head",
       "latest_report": {
-        "comment_id": 6231227079,
-        "url": "https://github.com/shuvendu-lahiri/z3/pull/35#issuecomment-6231227079",
-        "published_at": "2026-10-17T07:30:02Z",
-        "updated_at": "2026-10-17T07:30:02Z",
-        "body_sha256": "812adc2088c1b0751926bcccc7353910a57687903a77ae36efe1b38959d70590",
+        "comment_id": 6384498642,
+        "url": "https://github.com/shuvendu-lahiri/z3/pull/35#issuecomment-6384498642",
+        "published_at": "2026-10-24T12:58:24Z",
+        "updated_at": "2026-10-24T12:58:24Z",
+        "body_sha256": "59ad43af40187e1777e7fa24768d1c399d82040449ffbfcc44336a5fd8ef75e5",
         "source_sha_prefix": "b17b5e3bcbea",
         "base_sha_prefix": "b2077ba66ff8",
         "run_id": 39012427142,
         "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39012427142",
         "counts": {
           "refuted": 1,
-          "verified": 0,
+          "verified": 1,
           "resources exhausted": 0,
           "type-check/audit failure": 0
         },
-        "properties": 1,
+        "properties": 2,
         "refutations": [
           {
             "property_id": "P1",
-            "property": "When the unresolved-sequence fallback obtains a concrete fresh string and the original term has a reported positive unsigned length lower bound no greater than 65,536, a fresh string shorter than that bound is returned with its original content preserved and enough trailing 'a' characters added to reach the bound. If the bound is absent, nonpositive, non-unsigned, above 65,536, or already met by the fresh string, this padding step leaves the fresh value unchanged.",
-            "input": "`m_util.str.mk_string(zstring(padded.c_str())) = []`; `s.encode() = []`; `fresh = true`; `m_util.str.is_string(fresh, s) = true`; `s.length() = 0`; `val = false`; `lower_bound2(e, lo) = true`; `is_var(result) = false`; `m_util.is_seq(result) = true`; `m.is_value(result) = false`; abstract state: original sequence expression = `[]`; fallback fresh string = `[]`; initial fresh value = `[]`; result of get_ite_value(e) = `[]`; denominator of lo = `1`; numerator of lo = `1`; representative of e = `[]`; rewritten representative = `[]`",
-            "sketch": "If the lower bound is 1 and the fresh string has length 0, the loop appends one 'a'. If m_util.str.mk_string(zstring(padded.c_str())) then yields the empty string, the returned value does not reach that bound."
+            "property": "Under the complete padding guard, the returned string meets the known length lower bound.",
+            "input": "`m_util.str.is_string(fresh, s) = true`; `fresh = true`; `lo.is_pos() = true`; `lo.is_unsigned() = true`; `lo.get_unsigned() = 2`; `lower_bound2(e, lo) = true`; `is_var(result) = false`; `m_util.is_seq(result) = true`; `m.is_value(result) = false`; `val = false`; abstract state: fresh concrete string returned for the unresolved sequence = `[0]`; expression selected by get_ite_value = `0`; representative value for the selected expression = `[]`; result after rewriting = `[]`; selected expression identity = `0`; fresh value requested for a variable result = `[]`",
+            "sketch": "If the one-character fresh string encodes as the five-byte text `(u/redacted){0}` and need is 2, `padded.length() < need` is false. The loop therefore skips appending `a`, leaving the reconstructed string shorter than the reported lower bound."
           }
         ]
       },
@@ -1131,7 +1150,7 @@
           "comment_id": 6231227079,
           "url": "https://github.com/shuvendu-lahiri/z3/pull/35#issuecomment-6231227079",
           "published_at": "2026-10-17T07:30:02Z",
-          "updated_at": "2026-10-17T07:30:02Z",
+          "updated_at": "2026-10-24T12:58:23Z",
           "body_sha256": "812adc2088c1b0751926bcccc7353910a57687903a77ae36efe1b38959d70590",
           "source_sha_prefix": "b17b5e3bcbea",
           "base_sha_prefix": "b2077ba66ff8",
@@ -1152,16 +1171,42 @@
               "sketch": "If the lower bound is 1 and the fresh string has length 0, the loop appends one 'a'. If m_util.str.mk_string(zstring(padded.c_str())) then yields the empty string, the returned value does not reach that bound."
             }
           ]
+        },
+        {
+          "comment_id": 6384498642,
+          "url": "https://github.com/shuvendu-lahiri/z3/pull/35#issuecomment-6384498642",
+          "published_at": "2026-10-24T12:58:24Z",
+          "updated_at": "2026-10-24T12:58:24Z",
+          "body_sha256": "59ad43af40187e1777e7fa24768d1c399d82040449ffbfcc44336a5fd8ef75e5",
+          "source_sha_prefix": "b17b5e3bcbea",
+          "base_sha_prefix": "b2077ba66ff8",
+          "run_id": 39012427142,
+          "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39012427142",
+          "counts": {
+            "refuted": 1,
+            "verified": 1,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 2,
+          "refutations": [
+            {
+              "property_id": "P1",
+              "property": "Under the complete padding guard, the returned string meets the known length lower bound.",
+              "input": "`m_util.str.is_string(fresh, s) = true`; `fresh = true`; `lo.is_pos() = true`; `lo.is_unsigned() = true`; `lo.get_unsigned() = 2`; `lower_bound2(e, lo) = true`; `is_var(result) = false`; `m_util.is_seq(result) = true`; `m.is_value(result) = false`; `val = false`; abstract state: fresh concrete string returned for the unresolved sequence = `[0]`; expression selected by get_ite_value = `0`; representative value for the selected expression = `[]`; result after rewriting = `[]`; selected expression identity = `0`; fresh value requested for a variable result = `[]`",
+              "sketch": "If the one-character fresh string encodes as the five-byte text `(u/redacted){0}` and need is 2, `padded.length() < need` is false. The loop therefore skips appending `a`, leaving the reconstructed string shorter than the reported lower bound."
+            }
+          ]
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39012427142,
         "url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39012427142",
         "status": "completed",
         "conclusion": "success",
-        "attempt": 1
+        "attempt": 2
       }
     },
     {

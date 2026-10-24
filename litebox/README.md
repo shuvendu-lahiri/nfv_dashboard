@@ -5,14 +5,15 @@ Published results from the prototype [Neuro-Formal Verification](https://arxiv.o
 
 **[Live interactive dashboard](https://shuvendu-lahiri.github.io/nfv_dashboard/litebox/)** / [all repositories](https://shuvendu-lahiri.github.io/nfv_dashboard/) or [download the standalone HTML](index.html) (no server or external dependencies).
 
-Snapshot: 2026-10-24T12:30:08.851094+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
+Snapshot: 2026-10-24T12:59:49.150802+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
 
-**44 PRs attempted; 62 workflow attempts; 36 published reports; 11 PRs with 13 conditional refutations; 167 model verifications; 8 PRs without a published report.**
+**44 PRs attempted; 63 workflow attempts; 36 published reports; 12 PRs with 14 conditional refutations; 166 model verifications; 8 PRs without a published report.**
 
 ## All attempted PRs (refutations first)
 
 | PR | Change | Latest report | Properties | Refuted | Verified | Exhausted | Audit failure | Evidence |
 |---|---|---|---:|---:|---:|---:|---:|---|
+| [shuvendu-lahiri/litebox#13](https://github.com/shuvendu-lahiri/litebox/pull/13) | Replay change 1539: Introduce \`LocalFs\` mounting to CLI | **REFUTED (model)** | 5 | **1** | 3 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/13#issuecomment-6384318525) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39363406105) |
 | [shuvendu-lahiri/litebox#8](https://github.com/shuvendu-lahiri/litebox/pull/8) | Replay change 1648: Cherry pick change 1564 Refactor to remove \`litebox::path::Arg\` | **REFUTED (model)** | 10 | **1** | 6 | 0 | 3 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/8#issuecomment-6383719541) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39357363330) |
 | [shuvendu-lahiri/litebox#3](https://github.com/shuvendu-lahiri/litebox/pull/3) | Replay change 1640: replace procfd special cases with filesystem symlinks | **REFUTED (model)** | 10 | **2** | 4 | 0 | 4 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/3#issuecomment-6383064179) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39390206732) |
 | [shuvendu-lahiri/litebox#2](https://github.com/shuvendu-lahiri/litebox/pull/2) | Replay change 1656: copy broker pipe and socket reads in bulk | **REFUTED (model)** | 9 | **1** | 8 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/2#issuecomment-6382629152) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39205431424) |
@@ -46,8 +47,7 @@ Snapshot: 2026-10-24T12:30:08.851094+00:00. Latest published report per PR suppl
 | [shuvendu-lahiri/litebox#21](https://github.com/shuvendu-lahiri/litebox/pull/21) | Replay change 1452: Add fallible backend constructors to ComposerBuilder mounts | Published | 2 | 0 | 2 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/21#issuecomment-6290668756) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39419250767) |
 | [shuvendu-lahiri/litebox#20](https://github.com/shuvendu-lahiri/litebox/pull/20) | Replay change 1453: Add a ratchet test limiting pub use | Published | 1 | 0 | 0 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/20#issuecomment-6290330639) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39417204232) |
 | [shuvendu-lahiri/litebox#15](https://github.com/shuvendu-lahiri/litebox/pull/15) | Replay change 1533: Use try\_update instead of deprecated fetch\_update for atomics | Published | 7 | 0 | 6 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/15#issuecomment-6283835919) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39370711394) |
-| [shuvendu-lahiri/litebox#14](https://github.com/shuvendu-lahiri/litebox/pull/14) | Replay change 1538: Implement LocalFs backend | Published | 10 | 0 | 9 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/14#issuecomment-6283484987) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39366637569) |
-| [shuvendu-lahiri/litebox#13](https://github.com/shuvendu-lahiri/litebox/pull/13) | Replay change 1539: Introduce \`LocalFs\` mounting to CLI | Published / latest attempt: in\_progress | 7 | 0 | 4 | 0 | 3 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/13#issuecomment-6282967620) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39363406105) / [latest attempt](https://github.com/shuvendu-lahiri/litebox/actions/runs/39363406105) |
+| [shuvendu-lahiri/litebox#14](https://github.com/shuvendu-lahiri/litebox/pull/14) | Replay change 1538: Implement LocalFs backend | Published / latest attempt: in\_progress | 10 | 0 | 9 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/14#issuecomment-6283484987) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39366637569) / [latest attempt](https://github.com/shuvendu-lahiri/litebox/actions/runs/39366637569) |
 | [shuvendu-lahiri/litebox#4](https://github.com/shuvendu-lahiri/litebox/pull/4) | Replay change 1641: implement partial backend walks | Published / latest attempt: failure | 10 | 0 | 7 | 1 | 2 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/4#issuecomment-6261868399) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39209801291) / [latest attempt](https://github.com/shuvendu-lahiri/litebox/actions/runs/39209801291) |
 | [shuvendu-lahiri/litebox#47](https://github.com/shuvendu-lahiri/litebox/pull/47) | Add LiteBox NFV audit dashboard | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39871498222) |
 | [shuvendu-lahiri/litebox#37](https://github.com/shuvendu-lahiri/litebox/pull/37) | Staged NFV audit \- change 1676: Plausible results for statfs | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532837030) |
@@ -61,6 +61,12 @@ Snapshot: 2026-10-24T12:30:08.851094+00:00. Latest published report per PR suppl
 ## Conditional model refutations
 
 The following property texts are extracted from the published reports, without new adjudication or inference. The original report contains assumptions, source overlays and native evidence.
+
+### shuvendu-lahiri/litebox#13 / P4
+
+If pre\-mount setup succeeds and no LocalFs mount fails, the function returns no error\.
+
+[Original report](https://github.com/shuvendu-lahiri/litebox/pull/13#issuecomment-6384318525)
 
 ### shuvendu-lahiri/litebox#8 / P2
 

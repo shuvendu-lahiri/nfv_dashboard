@@ -1,22 +1,22 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/litebox",
-  "generated_at": "2026-10-24T12:30:08.851094+00:00",
+  "generated_at": "2026-10-24T12:59:49.150802+00:00",
   "name": "litebox",
   "label": "LiteBox",
   "summary": {
     "selected_prs": 44,
     "attempted_prs": 44,
     "published_reports": 36,
-    "workflow_attempts": 62,
+    "workflow_attempts": 63,
     "without_report": 8,
-    "refuted_prs": 11,
-    "properties": 275,
+    "refuted_prs": 12,
+    "properties": 273,
     "outcomes": {
-      "refuted": 13,
-      "verified": 167,
+      "refuted": 14,
+      "verified": 166,
       "resources exhausted": 30,
-      "type-check/audit failure": 65
+      "type-check/audit failure": 63
     }
   },
   "prs": [
@@ -735,30 +735,37 @@
       "head_sha": "30341463499cec81390269c311ac08ce727f31d3",
       "head_branch": "nfv-replay-1539",
       "latest_report": {
-        "comment_id": 6282967620,
-        "url": "https://github.com/shuvendu-lahiri/litebox/pull/13#issuecomment-6282967620",
-        "published_at": "2026-10-20T03:52:37Z",
-        "updated_at": "2026-10-20T03:52:37Z",
-        "body_sha256": "99e986af22025ee28ad0d176452dd3d4dd5da19a7f00806bc71c9d8c01a45323",
+        "comment_id": 6384318525,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/13#issuecomment-6384318525",
+        "published_at": "2026-10-24T12:39:33Z",
+        "updated_at": "2026-10-24T12:39:33Z",
+        "body_sha256": "717e02dc0262d8cf1ec910e242003403f0ee4cbd95be9729ac8d046e8ca5c898",
         "source_sha_prefix": "30341463499c",
         "base_sha_prefix": "e2712e7a6065",
         "run_id": 39363406105,
         "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39363406105",
         "counts": {
-          "refuted": 0,
-          "verified": 4,
+          "refuted": 1,
+          "verified": 3,
           "resources exhausted": 0,
-          "type-check/audit failure": 3
+          "type-check/audit failure": 1
         },
-        "properties": 7,
-        "refutations": []
+        "properties": 5,
+        "refutations": [
+          {
+            "property_id": "P4",
+            "property": "If pre-mount setup succeeds and no LocalFs mount fails, the function returns no error.",
+            "input": "abstract state: failure outcome of builder.build() = `true`; per-mount host paths = `[]`; per-mount failure outcomes of LocalFs::new(&mount.host, allocator) = `[]`; per-mount underlying I/O error kinds = `[]`; initial_files validation or mapping failure state = `false`; initial_files processing error kind = `0`",
+            "sketch": "If the mount slice is empty, the loop performs no LocalFs construction and builder.build() is reached. If builder.build() returns an error, the function returns a contextualized I/O error rather than succeeding, contradicting the claimed successful-return requirement for the vacuous case in which all mount attempts succeed."
+          }
+        ]
       },
       "report_history": [
         {
           "comment_id": 6282967620,
           "url": "https://github.com/shuvendu-lahiri/litebox/pull/13#issuecomment-6282967620",
           "published_at": "2026-10-20T03:52:37Z",
-          "updated_at": "2026-10-20T03:52:37Z",
+          "updated_at": "2026-10-24T12:39:32Z",
           "body_sha256": "99e986af22025ee28ad0d176452dd3d4dd5da19a7f00806bc71c9d8c01a45323",
           "source_sha_prefix": "30341463499c",
           "base_sha_prefix": "e2712e7a6065",
@@ -772,6 +779,32 @@
           },
           "properties": 7,
           "refutations": []
+        },
+        {
+          "comment_id": 6384318525,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/13#issuecomment-6384318525",
+          "published_at": "2026-10-24T12:39:33Z",
+          "updated_at": "2026-10-24T12:39:33Z",
+          "body_sha256": "717e02dc0262d8cf1ec910e242003403f0ee4cbd95be9729ac8d046e8ca5c898",
+          "source_sha_prefix": "30341463499c",
+          "base_sha_prefix": "e2712e7a6065",
+          "run_id": 39363406105,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39363406105",
+          "counts": {
+            "refuted": 1,
+            "verified": 3,
+            "resources exhausted": 0,
+            "type-check/audit failure": 1
+          },
+          "properties": 5,
+          "refutations": [
+            {
+              "property_id": "P4",
+              "property": "If pre-mount setup succeeds and no LocalFs mount fails, the function returns no error.",
+              "input": "abstract state: failure outcome of builder.build() = `true`; per-mount host paths = `[]`; per-mount failure outcomes of LocalFs::new(&mount.host, allocator) = `[]`; per-mount underlying I/O error kinds = `[]`; initial_files validation or mapping failure state = `false`; initial_files processing error kind = `0`",
+              "sketch": "If the mount slice is empty, the loop performs no LocalFs construction and builder.build() is reached. If builder.build() returns an error, the function returns a contextualized I/O error rather than succeeding, contradicting the claimed successful-return requirement for the vacuous case in which all mount attempts succeed."
+            }
+          ]
         }
       ],
       "report_matches_current_head": true,
@@ -779,8 +812,8 @@
       "latest_run": {
         "id": 39363406105,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39363406105",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       }
     },
@@ -832,13 +865,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39366637569,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39366637569",
-        "status": "completed",
-        "conclusion": "success",
-        "attempt": 1
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
       }
     },
     {
