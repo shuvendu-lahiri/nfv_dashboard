@@ -1,22 +1,22 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/litebox",
-  "generated_at": "2026-10-24T18:09:48.148912+00:00",
+  "generated_at": "2026-10-24T18:37:03.757323+00:00",
   "name": "litebox",
   "label": "LiteBox",
   "summary": {
     "selected_prs": 44,
     "attempted_prs": 44,
     "published_reports": 38,
-    "workflow_attempts": 91,
+    "workflow_attempts": 94,
     "without_report": 6,
     "refuted_prs": 10,
-    "properties": 290,
+    "properties": 289,
     "outcomes": {
       "refuted": 12,
-      "verified": 186,
-      "resources exhausted": 28,
-      "type-check/audit failure": 64
+      "verified": 198,
+      "resources exhausted": 26,
+      "type-check/audit failure": 53
     }
   },
   "prs": [
@@ -2754,8 +2754,8 @@
       "latest_run": {
         "id": 39532822431,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39532822431",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "failure",
         "attempt": 2
       }
     },
@@ -2767,28 +2767,28 @@
       "head_sha": "7db8df93c19c5c9d6da3bfbe2b6361781978daba",
       "head_branch": "nfv-staged-1635",
       "latest_report": {
-        "comment_id": 6307191865,
-        "url": "https://github.com/shuvendu-lahiri/litebox/pull/43#issuecomment-6307191865",
-        "published_at": "2026-10-21T03:20:01Z",
-        "updated_at": "2026-10-21T03:20:01Z",
-        "body_sha256": "0ace364e1b63716eb5ae423cd10a109c0331fcb4e1c2bab51f196bc5c4499c64",
+        "comment_id": 6388020752,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/43#issuecomment-6388020752",
+        "published_at": "2026-10-24T18:37:02Z",
+        "updated_at": "2026-10-24T18:37:02Z",
+        "body_sha256": "d14e6e4244d244262ac96c3a5daa1d5a26d993d95c3646bede33a4644df0aeab",
         "source_sha_prefix": "7db8df93c19c",
         "base_sha_prefix": "9b2673d89667",
         "run_id": 39532819562,
         "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39532819562",
         "counts": {
           "refuted": 1,
-          "verified": 0,
-          "resources exhausted": 2,
-          "type-check/audit failure": 7
+          "verified": 4,
+          "resources exhausted": 1,
+          "type-check/audit failure": 4
         },
         "properties": 10,
         "refutations": [
           {
-            "property_id": "P10",
-            "property": "After the thunk returns and before trampoline returns to its caller, the function is expected to zero all VAULT_STACK_SIZE bytes beginning at VAULT_STACK_BOTTOM, restore the caller's stack pointer and CR3, replace VTL1 extended state with the saved user state or initialization state, zero the listed caller-saved general-purpose registers, and perform the configured CPU-buffer clearing operation.",
-            "input": "abstract state: state after an abnormal assembly outcome = `[]`; ordinary or abnormal assembly outcome = `0`; initial architectural and machine state = `[]`; extended and microarchitectural state associated with the assembly macros = `[]`; documented trampoline safety conditions = `[true, true, true]`; state returned by thunk = `[]`; packed trampoline operands, addresses, constants, and offsets = `[0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]`",
-            "sketch": "If VAULT_STACK_SIZE is 1, `\"rep stosq\"` receives a count of zero because the size is divided by eight, leaving the configured byte unwiped."
+            "property_id": "P9",
+            "property": "Speculation remains in the retpoline capture loop.",
+            "input": "`VAULT_PRK_VA.cast_signed() = 12288`; `arg = 8192`; `thunk = 4096`; `vault_p4 = 0`; abstract state: interrupt state while trampoline runs = `true`; processor return-prediction behavior at the retpoline return = `false`; validity of the supplied thunk = `true`; caller ownership of the vault slot = `true`",
+            "sketch": "If return prediction does not follow the RSB entry, the `\"ret\"` instruction can still transfer architecturally to thunk, but the intended claim that speculation remains in the capture loop does not follow."
           }
         ]
       },
@@ -2797,7 +2797,7 @@
           "comment_id": 6307191865,
           "url": "https://github.com/shuvendu-lahiri/litebox/pull/43#issuecomment-6307191865",
           "published_at": "2026-10-21T03:20:01Z",
-          "updated_at": "2026-10-21T03:20:01Z",
+          "updated_at": "2026-10-24T18:37:01Z",
           "body_sha256": "0ace364e1b63716eb5ae423cd10a109c0331fcb4e1c2bab51f196bc5c4499c64",
           "source_sha_prefix": "7db8df93c19c",
           "base_sha_prefix": "9b2673d89667",
@@ -2816,6 +2816,32 @@
               "property": "After the thunk returns and before trampoline returns to its caller, the function is expected to zero all VAULT_STACK_SIZE bytes beginning at VAULT_STACK_BOTTOM, restore the caller's stack pointer and CR3, replace VTL1 extended state with the saved user state or initialization state, zero the listed caller-saved general-purpose registers, and perform the configured CPU-buffer clearing operation.",
               "input": "abstract state: state after an abnormal assembly outcome = `[]`; ordinary or abnormal assembly outcome = `0`; initial architectural and machine state = `[]`; extended and microarchitectural state associated with the assembly macros = `[]`; documented trampoline safety conditions = `[true, true, true]`; state returned by thunk = `[]`; packed trampoline operands, addresses, constants, and offsets = `[0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]`",
               "sketch": "If VAULT_STACK_SIZE is 1, `\"rep stosq\"` receives a count of zero because the size is divided by eight, leaving the configured byte unwiped."
+            }
+          ]
+        },
+        {
+          "comment_id": 6388020752,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/43#issuecomment-6388020752",
+          "published_at": "2026-10-24T18:37:02Z",
+          "updated_at": "2026-10-24T18:37:02Z",
+          "body_sha256": "d14e6e4244d244262ac96c3a5daa1d5a26d993d95c3646bede33a4644df0aeab",
+          "source_sha_prefix": "7db8df93c19c",
+          "base_sha_prefix": "9b2673d89667",
+          "run_id": 39532819562,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39532819562",
+          "counts": {
+            "refuted": 1,
+            "verified": 4,
+            "resources exhausted": 1,
+            "type-check/audit failure": 4
+          },
+          "properties": 10,
+          "refutations": [
+            {
+              "property_id": "P9",
+              "property": "Speculation remains in the retpoline capture loop.",
+              "input": "`VAULT_PRK_VA.cast_signed() = 12288`; `arg = 8192`; `thunk = 4096`; `vault_p4 = 0`; abstract state: interrupt state while trampoline runs = `true`; processor return-prediction behavior at the retpoline return = `false`; validity of the supplied thunk = `true`; caller ownership of the vault slot = `true`",
+              "sketch": "If return prediction does not follow the RSB entry, the `\"ret\"` instruction can still transfer architecturally to thunk, but the intended claim that speculation remains in the capture loop does not follow."
             }
           ]
         }
@@ -2838,22 +2864,22 @@
       "head_sha": "69c37c3d59ea563e4dd80672d171c8cbca248168",
       "head_branch": "nfv-staged-1633",
       "latest_report": {
-        "comment_id": 6306994781,
-        "url": "https://github.com/shuvendu-lahiri/litebox/pull/44#issuecomment-6306994781",
-        "published_at": "2026-10-21T03:04:53Z",
-        "updated_at": "2026-10-21T03:04:53Z",
-        "body_sha256": "6fedd1299b317de29a45270db28d86b3dc8e812fd928978b3a3fc35fe9bde779",
+        "comment_id": 6387940255,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/44#issuecomment-6387940255",
+        "published_at": "2026-10-24T18:29:07Z",
+        "updated_at": "2026-10-24T18:29:07Z",
+        "body_sha256": "8d1b3355dd7becdb339de83fb32660b62fc543bea44fa148a41221caaa898c5a",
         "source_sha_prefix": "69c37c3d59ea",
         "base_sha_prefix": "958545d6d7fb",
         "run_id": 39532816407,
         "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39532816407",
         "counts": {
           "refuted": 0,
-          "verified": 2,
+          "verified": 9,
           "resources exhausted": 0,
-          "type-check/audit failure": 7
+          "type-check/audit failure": 1
         },
-        "properties": 9,
+        "properties": 10,
         "refutations": []
       },
       "report_history": [
@@ -2861,7 +2887,7 @@
           "comment_id": 6306994781,
           "url": "https://github.com/shuvendu-lahiri/litebox/pull/44#issuecomment-6306994781",
           "published_at": "2026-10-21T03:04:53Z",
-          "updated_at": "2026-10-21T03:04:53Z",
+          "updated_at": "2026-10-24T18:29:06Z",
           "body_sha256": "6fedd1299b317de29a45270db28d86b3dc8e812fd928978b3a3fc35fe9bde779",
           "source_sha_prefix": "69c37c3d59ea",
           "base_sha_prefix": "958545d6d7fb",
@@ -2875,6 +2901,25 @@
           },
           "properties": 9,
           "refutations": []
+        },
+        {
+          "comment_id": 6387940255,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/44#issuecomment-6387940255",
+          "published_at": "2026-10-24T18:29:07Z",
+          "updated_at": "2026-10-24T18:29:07Z",
+          "body_sha256": "8d1b3355dd7becdb339de83fb32660b62fc543bea44fa148a41221caaa898c5a",
+          "source_sha_prefix": "69c37c3d59ea",
+          "base_sha_prefix": "958545d6d7fb",
+          "run_id": 39532816407,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39532816407",
+          "counts": {
+            "refuted": 0,
+            "verified": 9,
+            "resources exhausted": 0,
+            "type-check/audit failure": 1
+          },
+          "properties": 10,
+          "refutations": []
         }
       ],
       "report_matches_current_head": true,
@@ -2882,8 +2927,8 @@
       "latest_run": {
         "id": 39532816407,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39532816407",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       }
     },
@@ -2935,13 +2980,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39532695234,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39532695234",
-        "status": "completed",
-        "conclusion": "success",
-        "attempt": 1
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
       }
     },
     {
@@ -2952,22 +2997,22 @@
       "head_sha": "50f286cbd7492237f4ee4c571177cd03dd07debe",
       "head_branch": "nfv-staged-1621",
       "latest_report": {
-        "comment_id": 6306751843,
-        "url": "https://github.com/shuvendu-lahiri/litebox/pull/46#issuecomment-6306751843",
-        "published_at": "2026-10-21T02:47:30Z",
-        "updated_at": "2026-10-21T02:47:30Z",
-        "body_sha256": "55223cb7528dd456ba5ff2aca9f81a302a003ddbe5d1e26290c48775c0b73df6",
+        "comment_id": 6387966596,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/46#issuecomment-6387966596",
+        "published_at": "2026-10-24T18:31:43Z",
+        "updated_at": "2026-10-24T18:31:43Z",
+        "body_sha256": "3cdf0cb1054c6aad9e26f4900a5f442b56f45b236816ac14dd11d7df4994e1ad",
         "source_sha_prefix": "50f286cbd749",
         "base_sha_prefix": "df71130470a4",
         "run_id": 39532813376,
         "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39532813376",
         "counts": {
           "refuted": 0,
-          "verified": 0,
-          "resources exhausted": 2,
-          "type-check/audit failure": 2
+          "verified": 1,
+          "resources exhausted": 1,
+          "type-check/audit failure": 0
         },
-        "properties": 4,
+        "properties": 2,
         "refutations": []
       },
       "report_history": [
@@ -2975,7 +3020,7 @@
           "comment_id": 6306751843,
           "url": "https://github.com/shuvendu-lahiri/litebox/pull/46#issuecomment-6306751843",
           "published_at": "2026-10-21T02:47:30Z",
-          "updated_at": "2026-10-21T02:47:30Z",
+          "updated_at": "2026-10-24T18:31:42Z",
           "body_sha256": "55223cb7528dd456ba5ff2aca9f81a302a003ddbe5d1e26290c48775c0b73df6",
           "source_sha_prefix": "50f286cbd749",
           "base_sha_prefix": "df71130470a4",
@@ -2989,16 +3034,35 @@
           },
           "properties": 4,
           "refutations": []
+        },
+        {
+          "comment_id": 6387966596,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/46#issuecomment-6387966596",
+          "published_at": "2026-10-24T18:31:43Z",
+          "updated_at": "2026-10-24T18:31:43Z",
+          "body_sha256": "3cdf0cb1054c6aad9e26f4900a5f442b56f45b236816ac14dd11d7df4994e1ad",
+          "source_sha_prefix": "50f286cbd749",
+          "base_sha_prefix": "df71130470a4",
+          "run_id": 39532813376,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39532813376",
+          "counts": {
+            "refuted": 0,
+            "verified": 1,
+            "resources exhausted": 1,
+            "type-check/audit failure": 0
+          },
+          "properties": 2,
+          "refutations": []
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39532813376,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39532813376",
         "status": "completed",
         "conclusion": "success",
-        "attempt": 1
+        "attempt": 2
       }
     },
     {
@@ -3011,13 +3075,13 @@
       "latest_report": null,
       "report_history": [],
       "report_matches_current_head": null,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39871498222,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39871498222",
         "status": "completed",
         "conclusion": "failure",
-        "attempt": 1
+        "attempt": 2
       }
     }
   ]

@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "generated_at": "2026-10-24T18:09:48.148912+00:00",
+  "generated_at": "2026-10-24T18:37:03.757323+00:00",
   "summary": {
     "attempted_prs": 95,
     "published_reports": 85,
-    "workflow_attempts": 236,
+    "workflow_attempts": 239,
     "without_report": 10,
     "refuted_prs": 19,
-    "properties": 501,
+    "properties": 500,
     "outcomes": {
       "refuted": 21,
-      "verified": 324,
-      "resources exhausted": 45,
-      "type-check/audit failure": 111
+      "verified": 336,
+      "resources exhausted": 43,
+      "type-check/audit failure": 100
     }
   },
   "repositories": [
@@ -20,7 +20,7 @@
       "name": "z3",
       "label": "Z3",
       "repository": "shuvendu-lahiri/z3",
-      "generated_at": "2026-10-24T18:09:48.148912+00:00",
+      "generated_at": "2026-10-24T18:37:03.757323+00:00",
       "summary": {
         "selected_prs": 31,
         "attempted_prs": 31,
@@ -41,20 +41,20 @@
       "name": "litebox",
       "label": "LiteBox",
       "repository": "shuvendu-lahiri/litebox",
-      "generated_at": "2026-10-24T18:09:48.148912+00:00",
+      "generated_at": "2026-10-24T18:37:03.757323+00:00",
       "summary": {
         "selected_prs": 44,
         "attempted_prs": 44,
         "published_reports": 38,
-        "workflow_attempts": 91,
+        "workflow_attempts": 94,
         "without_report": 6,
         "refuted_prs": 10,
-        "properties": 290,
+        "properties": 289,
         "outcomes": {
           "refuted": 12,
-          "verified": 186,
-          "resources exhausted": 28,
-          "type-check/audit failure": 64
+          "verified": 198,
+          "resources exhausted": 26,
+          "type-check/audit failure": 53
         }
       }
     },
@@ -62,7 +62,7 @@
       "name": "nvx",
       "label": "NVX",
       "repository": "shuvendu-lahiri/nvx",
-      "generated_at": "2026-10-24T18:09:48.148912+00:00",
+      "generated_at": "2026-10-24T18:37:03.757323+00:00",
       "summary": {
         "selected_prs": 20,
         "attempted_prs": 20,
