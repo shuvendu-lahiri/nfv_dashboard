@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "generated_at": "2026-10-24T13:52:30.219586+00:00",
+  "generated_at": "2026-10-24T14:11:48.556591+00:00",
   "summary": {
     "attempted_prs": 95,
-    "published_reports": 82,
-    "workflow_attempts": 196,
-    "without_report": 13,
+    "published_reports": 84,
+    "workflow_attempts": 200,
+    "without_report": 11,
     "refuted_prs": 19,
-    "properties": 485,
+    "properties": 502,
     "outcomes": {
       "refuted": 21,
-      "verified": 286,
-      "resources exhausted": 55,
-      "type-check/audit failure": 123
+      "verified": 299,
+      "resources exhausted": 56,
+      "type-check/audit failure": 126
     }
   },
   "repositories": [
@@ -20,20 +20,20 @@
       "name": "z3",
       "label": "Z3",
       "repository": "shuvendu-lahiri/z3",
-      "generated_at": "2026-10-24T13:52:30.219586+00:00",
+      "generated_at": "2026-10-24T14:11:48.556591+00:00",
       "summary": {
         "selected_prs": 31,
         "attempted_prs": 31,
-        "published_reports": 26,
-        "workflow_attempts": 90,
-        "without_report": 5,
+        "published_reports": 27,
+        "workflow_attempts": 92,
+        "without_report": 4,
         "refuted_prs": 3,
-        "properties": 110,
+        "properties": 119,
         "outcomes": {
           "refuted": 3,
-          "verified": 44,
-          "resources exhausted": 20,
-          "type-check/audit failure": 43
+          "verified": 51,
+          "resources exhausted": 21,
+          "type-check/audit failure": 44
         }
       }
     },
@@ -41,20 +41,20 @@
       "name": "litebox",
       "label": "LiteBox",
       "repository": "shuvendu-lahiri/litebox",
-      "generated_at": "2026-10-24T13:52:30.219586+00:00",
+      "generated_at": "2026-10-24T14:11:48.556591+00:00",
       "summary": {
         "selected_prs": 44,
         "attempted_prs": 44,
-        "published_reports": 36,
-        "workflow_attempts": 66,
-        "without_report": 8,
-        "refuted_prs": 12,
-        "properties": 273,
+        "published_reports": 37,
+        "workflow_attempts": 67,
+        "without_report": 7,
+        "refuted_prs": 13,
+        "properties": 281,
         "outcomes": {
-          "refuted": 14,
-          "verified": 167,
+          "refuted": 15,
+          "verified": 173,
           "resources exhausted": 30,
-          "type-check/audit failure": 62
+          "type-check/audit failure": 63
         }
       }
     },
@@ -62,20 +62,20 @@
       "name": "nvx",
       "label": "NVX",
       "repository": "shuvendu-lahiri/nvx",
-      "generated_at": "2026-10-24T13:52:30.219586+00:00",
+      "generated_at": "2026-10-24T14:11:48.556591+00:00",
       "summary": {
         "selected_prs": 20,
         "attempted_prs": 20,
         "published_reports": 20,
-        "workflow_attempts": 40,
+        "workflow_attempts": 41,
         "without_report": 0,
-        "refuted_prs": 4,
+        "refuted_prs": 3,
         "properties": 102,
         "outcomes": {
-          "refuted": 4,
+          "refuted": 3,
           "verified": 75,
           "resources exhausted": 5,
-          "type-check/audit failure": 18
+          "type-check/audit failure": 19
         }
       }
     }

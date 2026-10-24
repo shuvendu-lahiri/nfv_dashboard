@@ -5,14 +5,15 @@ Published results from the prototype [Neuro-Formal Verification](https://arxiv.o
 
 **[Live interactive dashboard](https://shuvendu-lahiri.github.io/nfv_dashboard/litebox/)** / [all repositories](https://shuvendu-lahiri.github.io/nfv_dashboard/) or [download the standalone HTML](index.html) (no server or external dependencies).
 
-Snapshot: 2026-10-24T13:52:30.219586+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
+Snapshot: 2026-10-24T14:11:48.556591+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
 
-**44 PRs attempted; 66 workflow attempts; 36 published reports; 12 PRs with 14 conditional refutations; 167 model verifications; 8 PRs without a published report.**
+**44 PRs attempted; 67 workflow attempts; 37 published reports; 13 PRs with 15 conditional refutations; 173 model verifications; 7 PRs without a published report.**
 
 ## All attempted PRs (refutations first)
 
 | PR | Change | Latest report | Properties | Refuted | Verified | Exhausted | Audit failure | Evidence |
 |---|---|---|---:|---:|---:|---:|---:|---|
+| [shuvendu-lahiri/litebox#18](https://github.com/shuvendu-lahiri/litebox/pull/18) | Replay change 1470: Bump SNP and LVBS nightly toolchains | **REFUTED (model)** | 8 | **1** | 6 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/18#issuecomment-6385081547) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39415165751) |
 | [shuvendu-lahiri/litebox#13](https://github.com/shuvendu-lahiri/litebox/pull/13) | Replay change 1539: Introduce \`LocalFs\` mounting to CLI | **REFUTED (model)** | 5 | **1** | 3 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/13#issuecomment-6384318525) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39363406105) |
 | [shuvendu-lahiri/litebox#8](https://github.com/shuvendu-lahiri/litebox/pull/8) | Replay change 1648: Cherry pick change 1564 Refactor to remove \`litebox::path::Arg\` | **REFUTED (model)** | 10 | **1** | 6 | 0 | 3 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/8#issuecomment-6383719541) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39357363330) |
 | [shuvendu-lahiri/litebox#3](https://github.com/shuvendu-lahiri/litebox/pull/3) | Replay change 1640: replace procfd special cases with filesystem symlinks | **REFUTED (model)** | 10 | **2** | 4 | 0 | 4 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/3#issuecomment-6383064179) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39390206732) |
@@ -45,7 +46,7 @@ Snapshot: 2026-10-24T13:52:30.219586+00:00. Latest published report per PR suppl
 | [shuvendu-lahiri/litebox#28](https://github.com/shuvendu-lahiri/litebox/pull/28) | Replay change 1279: Stabilize broker TCP client test | Published | 1 | 0 | 1 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/28#issuecomment-6293319969) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39437995772) |
 | [shuvendu-lahiri/litebox#23](https://github.com/shuvendu-lahiri/litebox/pull/23) | Replay change 1301: Sync ulitebox to latest main | Published | 10 | 0 | 4 | 6 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/23#issuecomment-6292062542) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39422364492) |
 | [shuvendu-lahiri/litebox#22](https://github.com/shuvendu-lahiri/litebox/pull/22) | Replay change 1448: Unseal file system \`Backend\` | Published | 4 | 0 | 4 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/22#issuecomment-6291042276) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39421605628) |
-| [shuvendu-lahiri/litebox#19](https://github.com/shuvendu-lahiri/litebox/pull/19) | Replay change 1469: Fixups for Rust 1\.99\.0 | Published | 10 | 0 | 8 | 1 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/19#issuecomment-6290757106) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39416362695) |
+| [shuvendu-lahiri/litebox#19](https://github.com/shuvendu-lahiri/litebox/pull/19) | Replay change 1469: Fixups for Rust 1\.99\.0 | Published / latest attempt: in\_progress | 10 | 0 | 8 | 1 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/19#issuecomment-6290757106) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39416362695) / [latest attempt](https://github.com/shuvendu-lahiri/litebox/actions/runs/39416362695) |
 | [shuvendu-lahiri/litebox#21](https://github.com/shuvendu-lahiri/litebox/pull/21) | Replay change 1452: Add fallible backend constructors to ComposerBuilder mounts | Published | 2 | 0 | 2 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/21#issuecomment-6290668756) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39419250767) |
 | [shuvendu-lahiri/litebox#20](https://github.com/shuvendu-lahiri/litebox/pull/20) | Replay change 1453: Add a ratchet test limiting pub use | Published | 1 | 0 | 0 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/20#issuecomment-6290330639) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39417204232) |
 | [shuvendu-lahiri/litebox#4](https://github.com/shuvendu-lahiri/litebox/pull/4) | Replay change 1641: implement partial backend walks | Published / latest attempt: failure | 10 | 0 | 7 | 1 | 2 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/4#issuecomment-6261868399) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39209801291) / [latest attempt](https://github.com/shuvendu-lahiri/litebox/actions/runs/39209801291) |
@@ -54,13 +55,18 @@ Snapshot: 2026-10-24T13:52:30.219586+00:00. Latest published report per PR suppl
 | [shuvendu-lahiri/litebox#29](https://github.com/shuvendu-lahiri/litebox/pull/29) | Replay change 1278: Cherry pick change 1113 Migrate 9p file system to new backend | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39440128194) |
 | [shuvendu-lahiri/litebox#26](https://github.com/shuvendu-lahiri/litebox/pull/26) | Replay change 1282: Cherry pick change 1195 Switch layered to overlay filesystem | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39431692418) |
 | [shuvendu-lahiri/litebox#25](https://github.com/shuvendu-lahiri/litebox/pull/25) | Replay change 1284: Cherry pick change 1226 Retire legacy \`FileSystem\` trait | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39430657719) |
-| [shuvendu-lahiri/litebox#18](https://github.com/shuvendu-lahiri/litebox/pull/18) | Replay change 1470: Bump SNP and LVBS nightly toolchains | No published report (in\_progress) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39415165751) |
 | [shuvendu-lahiri/litebox#17](https://github.com/shuvendu-lahiri/litebox/pull/17) | Replay change 1672: Route chmod syscalls | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39415165794) |
 | [shuvendu-lahiri/litebox#6](https://github.com/shuvendu-lahiri/litebox/pull/6) | Replay change 1671: Route chown syscalls | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39397856512) |
 
 ## Conditional model refutations
 
 The following property texts are extracted from the published reports, without new adjudication or inference. The original report contains assumptions, source overlays and native evidence.
+
+### shuvendu-lahiri/litebox#18 / P3
+
+Every BSP invocation constructs a platform\.
+
+[Original report](https://github.com/shuvendu-lahiri/litebox/pull/18#issuecomment-6385081547)
 
 ### shuvendu-lahiri/litebox#13 / P4
 

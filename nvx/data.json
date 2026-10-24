@@ -1,22 +1,22 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/nvx",
-  "generated_at": "2026-10-24T13:52:30.219586+00:00",
+  "generated_at": "2026-10-24T14:11:48.556591+00:00",
   "name": "nvx",
   "label": "NVX",
   "summary": {
     "selected_prs": 20,
     "attempted_prs": 20,
     "published_reports": 20,
-    "workflow_attempts": 40,
+    "workflow_attempts": 41,
     "without_report": 0,
-    "refuted_prs": 4,
+    "refuted_prs": 3,
     "properties": 102,
     "outcomes": {
-      "refuted": 4,
+      "refuted": 3,
       "verified": 75,
       "resources exhausted": 5,
-      "type-check/audit failure": 18
+      "type-check/audit failure": 19
     }
   },
   "prs": [
@@ -1309,37 +1309,30 @@
       "head_sha": "e83a8e2b93d7fc34595df63ade0f4ba9fc721eb8",
       "head_branch": "nfv-pedro-678",
       "latest_report": {
-        "comment_id": 6357154101,
-        "url": "https://github.com/shuvendu-lahiri/nvx/pull/17#issuecomment-6357154101",
-        "published_at": "2026-10-23T04:09:20Z",
-        "updated_at": "2026-10-23T04:09:20Z",
-        "body_sha256": "254a8bf10365545c039a284fd28db1c32b180378f1096bc37f989ea910762596",
+        "comment_id": 6385037482,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/17#issuecomment-6385037482",
+        "published_at": "2026-10-24T13:52:57Z",
+        "updated_at": "2026-10-24T13:52:57Z",
+        "body_sha256": "86c8034f6e80496c2222be18a154bb44e7ff87ade287edc9a56ffd3567b53ead",
         "source_sha_prefix": "e83a8e2b93d7",
         "base_sha_prefix": "12e3b9521456",
         "run_id": 39896853340,
         "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39896853340",
         "counts": {
-          "refuted": 1,
+          "refuted": 0,
           "verified": 5,
           "resources exhausted": 0,
-          "type-check/audit failure": 0
+          "type-check/audit failure": 1
         },
         "properties": 6,
-        "refutations": [
-          {
-            "property_id": "P4",
-            "property": "The test completes without assertion failure only when the unsplit stream produces exactly five events and leaves 21 outstanding bytes, and both the events and outstanding-byte count remain identical when the stream is split at every individual position from 0 through its full length or at every interior position simultaneously (one byte at a time).",
-            "input": "`expected.0 = []`; `expected.1 = 0`; `stream.len() = 1`; abstract state: events returned by the one-byte-at-a-time run = `[]`; outstanding bytes returned by the one-byte-at-a-time run = `0`; events returned for individual split positions = `[]`; boundaries between event results for individual split positions = `[0, 0, 0]`; outstanding-byte results for individual split positions = `[0, 0]`",
-            "sketch": "If `run(&[])` returns no events, `assert_eq!(expected.0.len(), 5);` fails because the event count is zero rather than five."
-          }
-        ]
+        "refutations": []
       },
       "report_history": [
         {
           "comment_id": 6357154101,
           "url": "https://github.com/shuvendu-lahiri/nvx/pull/17#issuecomment-6357154101",
           "published_at": "2026-10-23T04:09:20Z",
-          "updated_at": "2026-10-23T04:09:20Z",
+          "updated_at": "2026-10-24T13:52:55Z",
           "body_sha256": "254a8bf10365545c039a284fd28db1c32b180378f1096bc37f989ea910762596",
           "source_sha_prefix": "e83a8e2b93d7",
           "base_sha_prefix": "12e3b9521456",
@@ -1360,6 +1353,25 @@
               "sketch": "If `run(&[])` returns no events, `assert_eq!(expected.0.len(), 5);` fails because the event count is zero rather than five."
             }
           ]
+        },
+        {
+          "comment_id": 6385037482,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/17#issuecomment-6385037482",
+          "published_at": "2026-10-24T13:52:57Z",
+          "updated_at": "2026-10-24T13:52:57Z",
+          "body_sha256": "86c8034f6e80496c2222be18a154bb44e7ff87ade287edc9a56ffd3567b53ead",
+          "source_sha_prefix": "e83a8e2b93d7",
+          "base_sha_prefix": "12e3b9521456",
+          "run_id": 39896853340,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39896853340",
+          "counts": {
+            "refuted": 0,
+            "verified": 5,
+            "resources exhausted": 0,
+            "type-check/audit failure": 1
+          },
+          "properties": 6,
+          "refutations": []
         }
       ],
       "report_matches_current_head": true,
@@ -1367,8 +1379,8 @@
       "latest_run": {
         "id": 39896853340,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39896853340",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       },
       "source_number": 678,
@@ -1423,13 +1435,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39896859074,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39896859074",
-        "status": "completed",
-        "conclusion": "success",
-        "attempt": 1
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
       },
       "source_number": 664,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/664",

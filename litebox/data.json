@@ -1,22 +1,22 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/litebox",
-  "generated_at": "2026-10-24T13:52:30.219586+00:00",
+  "generated_at": "2026-10-24T14:11:48.556591+00:00",
   "name": "litebox",
   "label": "LiteBox",
   "summary": {
     "selected_prs": 44,
     "attempted_prs": 44,
-    "published_reports": 36,
-    "workflow_attempts": 66,
-    "without_report": 8,
-    "refuted_prs": 12,
-    "properties": 273,
+    "published_reports": 37,
+    "workflow_attempts": 67,
+    "without_report": 7,
+    "refuted_prs": 13,
+    "properties": 281,
     "outcomes": {
-      "refuted": 14,
-      "verified": 167,
+      "refuted": 15,
+      "verified": 173,
       "resources exhausted": 30,
-      "type-check/audit failure": 62
+      "type-check/audit failure": 63
     }
   },
   "prs": [
@@ -995,15 +995,67 @@
       "state": "open",
       "head_sha": "a699504485169de118536e8688104e41d0271cf1",
       "head_branch": "nfv-replay-1470",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6385081547,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/18#issuecomment-6385081547",
+        "published_at": "2026-10-24T13:57:21Z",
+        "updated_at": "2026-10-24T13:57:21Z",
+        "body_sha256": "7bba03db129f771aedb1d932b6df16b7024ba3d04ab0112eee54060a23c416f3",
+        "source_sha_prefix": "a69950448516",
+        "base_sha_prefix": "296b918727b1",
+        "run_id": 39415165751,
+        "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39415165751",
+        "counts": {
+          "refuted": 1,
+          "verified": 6,
+          "resources exhausted": 0,
+          "type-check/audit failure": 1
+        },
+        "properties": 8,
+        "refutations": [
+          {
+            "property_id": "P3",
+            "property": "Every BSP invocation constructs a platform.",
+            "input": "`is_bsp = true`; `Platform::new(vtl1_start, vtl1_end, text_phys_start, text_phys_end) = 1`; abstract state: platform previously stored in BOOT_PLATFORM = `0`; whether BOOT_PLATFORM already contains a platform = `false`; exceptional completion of BSP initialization before platform construction = `true`; whether hvcall::init returns an error = `false`",
+            "sketch": "If the BSP-only initialization panics first, `Platform::new(vtl1_start, vtl1_end, text_phys_start, text_phys_end)` and the following `BOOT_PLATFORM.set(platform)` are skipped, so the BSP does not construct or publish a platform."
+          }
+        ]
+      },
+      "report_history": [
+        {
+          "comment_id": 6385081547,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/18#issuecomment-6385081547",
+          "published_at": "2026-10-24T13:57:21Z",
+          "updated_at": "2026-10-24T13:57:21Z",
+          "body_sha256": "7bba03db129f771aedb1d932b6df16b7024ba3d04ab0112eee54060a23c416f3",
+          "source_sha_prefix": "a69950448516",
+          "base_sha_prefix": "296b918727b1",
+          "run_id": 39415165751,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39415165751",
+          "counts": {
+            "refuted": 1,
+            "verified": 6,
+            "resources exhausted": 0,
+            "type-check/audit failure": 1
+          },
+          "properties": 8,
+          "refutations": [
+            {
+              "property_id": "P3",
+              "property": "Every BSP invocation constructs a platform.",
+              "input": "`is_bsp = true`; `Platform::new(vtl1_start, vtl1_end, text_phys_start, text_phys_end) = 1`; abstract state: platform previously stored in BOOT_PLATFORM = `0`; whether BOOT_PLATFORM already contains a platform = `false`; exceptional completion of BSP initialization before platform construction = `true`; whether hvcall::init returns an error = `false`",
+              "sketch": "If the BSP-only initialization panics first, `Platform::new(vtl1_start, vtl1_end, text_phys_start, text_phys_end)` and the following `BOOT_PLATFORM.set(platform)` are skipped, so the BSP does not construct or publish a platform."
+            }
+          ]
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 2,
       "latest_run": {
         "id": 39415165751,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39415165751",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       }
     },
@@ -1055,13 +1107,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39416362695,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39416362695",
-        "status": "completed",
-        "conclusion": "success",
-        "attempt": 1
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
       }
     },
     {

@@ -5,9 +5,9 @@ Published results from the prototype [Neuro-Formal Verification](https://arxiv.o
 
 **[Live interactive dashboard](https://shuvendu-lahiri.github.io/nfv_dashboard/nvx/)** / [all repositories](https://shuvendu-lahiri.github.io/nfv_dashboard/) or [download the standalone HTML](index.html) (no server or external dependencies).
 
-Snapshot: 2026-10-24T13:52:30.219586+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
+Snapshot: 2026-10-24T14:11:48.556591+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
 
-**20 PRs attempted; 40 workflow attempts; 20 published reports; 4 PRs with 4 conditional refutations; 75 model verifications; 0 PRs without a published report.**
+**20 PRs attempted; 41 workflow attempts; 20 published reports; 3 PRs with 3 conditional refutations; 75 model verifications; 0 PRs without a published report.**
 
 ## All attempted PRs (refutations first)
 
@@ -16,7 +16,7 @@ Snapshot: 2026-10-24T13:52:30.219586+00:00. Latest published report per PR suppl
 | [shuvendu-lahiri/nvx#11](https://github.com/shuvendu-lahiri/nvx/pull/11) | [Source change 682](https://redirect.github.com/microsoft/nvx/pull/682) / nvx\-rs: parse legacy egress rules with the MXC form's helpers | **REFUTED (model)** | 7 | **1** | 4 | 0 | 2 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/11#issuecomment-6384226118) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39893495398) |
 | [shuvendu-lahiri/nvx#20](https://github.com/shuvendu-lahiri/nvx/pull/20) | [Source change 657](https://redirect.github.com/microsoft/nvx/pull/657) / adversarial: keep executor close bounded when a child holds stdout | **REFUTED (model)** | 10 | **1** | 8 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/20#issuecomment-6357548128) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39898919181) |
 | [shuvendu-lahiri/nvx#16](https://github.com/shuvendu-lahiri/nvx/pull/16) | [Source change 659](https://redirect.github.com/microsoft/nvx/pull/659) / microvm tests: stream OpenVMM transcripts to disk as they are read | **REFUTED (model)** / latest attempt: failure | 9 | **1** | 4 | 0 | 4 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/16#issuecomment-6357198686) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39896467670) / [latest attempt](https://github.com/shuvendu-lahiri/nvx/actions/runs/39896467670) |
-| [shuvendu-lahiri/nvx#17](https://github.com/shuvendu-lahiri/nvx/pull/17) | [Source change 678](https://redirect.github.com/microsoft/nvx/pull/678) / nvx\-rs: build the NVXS unit tests' epoch identities with one function | **REFUTED (model)** / latest attempt: in\_progress | 6 | **1** | 5 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/17#issuecomment-6357154101) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39896853340) / [latest attempt](https://github.com/shuvendu-lahiri/nvx/actions/runs/39896853340) |
+| [shuvendu-lahiri/nvx#17](https://github.com/shuvendu-lahiri/nvx/pull/17) | [Source change 678](https://redirect.github.com/microsoft/nvx/pull/678) / nvx\-rs: build the NVXS unit tests' epoch identities with one function | Published | 6 | 0 | 5 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/17#issuecomment-6385037482) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39896853340) |
 | [shuvendu-lahiri/nvx#15](https://github.com/shuvendu-lahiri/nvx/pull/15) | [Source change 679](https://redirect.github.com/microsoft/nvx/pull/679) / nvx\-rs: run the guest programs' main through one shared function | Published | 2 | 0 | 1 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/15#issuecomment-6384718515) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39895920868) |
 | [shuvendu-lahiri/nvx#14](https://github.com/shuvendu-lahiri/nvx/pull/14) | [Source change 680](https://redirect.github.com/microsoft/nvx/pull/680) / nvx\-rs: check the CLI session's replies through shared methods | Published | 7 | 0 | 6 | 1 | 0 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/14#issuecomment-6384666255) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39893712214) |
 | [shuvendu-lahiri/nvx#13](https://github.com/shuvendu-lahiri/nvx/pull/13) | [Source change 681](https://redirect.github.com/microsoft/nvx/pull/681) / nvx\-rs: report the time probe's invalid options with one method | Published | 10 | 0 | 6 | 4 | 0 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/13#issuecomment-6384590061) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39893507724) |
@@ -32,7 +32,7 @@ Snapshot: 2026-10-24T13:52:30.219586+00:00. Latest published report per PR suppl
 | [shuvendu-lahiri/nvx#12](https://github.com/shuvendu-lahiri/nvx/pull/12) | [Source change 714](https://redirect.github.com/microsoft/nvx/pull/714) / ci: link the Windows OpenVMM test builds with /Brepro for sccache | Published | 8 | 0 | 7 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/12#issuecomment-6382206968) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39893502095) |
 | [shuvendu-lahiri/nvx#6](https://github.com/shuvendu-lahiri/nvx/pull/6) | [Source change 705](https://redirect.github.com/microsoft/nvx/pull/705) / nvx\-rs: write the NVXS record header with one function | Published / latest attempt: failure | 5 | 0 | 3 | 0 | 2 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/6#issuecomment-6358109237) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39891550289) / [latest attempt](https://github.com/shuvendu-lahiri/nvx/actions/runs/39891550289) |
 | [shuvendu-lahiri/nvx#19](https://github.com/shuvendu-lahiri/nvx/pull/19) | [Source change 658](https://redirect.github.com/microsoft/nvx/pull/658) / performance: keep results measured before a history reset out of the series | Published | 10 | 0 | 7 | 0 | 3 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/19#issuecomment-6357486315) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39898539854) |
-| [shuvendu-lahiri/nvx#18](https://github.com/shuvendu-lahiri/nvx/pull/18) | [Source change 664](https://redirect.github.com/microsoft/nvx/pull/664) / release: name the mismatched fields in Ubuntu artifact manifest errors | Published | 4 | 0 | 3 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/18#issuecomment-6357212057) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39896859074) |
+| [shuvendu-lahiri/nvx#18](https://github.com/shuvendu-lahiri/nvx/pull/18) | [Source change 664](https://redirect.github.com/microsoft/nvx/pull/664) / release: name the mismatched fields in Ubuntu artifact manifest errors | Published / latest attempt: in\_progress | 4 | 0 | 3 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/18#issuecomment-6357212057) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39896859074) / [latest attempt](https://github.com/shuvendu-lahiri/nvx/actions/runs/39896859074) |
 
 ## Conditional model refutations
 
@@ -55,12 +55,6 @@ If process creation raises OSError, the constructor closes the already\-opened s
 When close is called, it attempts to stop the interaction before draining queued output; if interaction shutdown raises, it still attempts the drain when the transcript is open; and regardless of shutdown or drain failure, it attempts to close the transcript\. If final transcript closure returns normally, the process is marked finished\.
 
 [Original report](https://github.com/shuvendu-lahiri/nvx/pull/16#issuecomment-6357198686)
-
-### shuvendu-lahiri/nvx#17 / P4
-
-The test completes without assertion failure only when the unsplit stream produces exactly five events and leaves 21 outstanding bytes, and both the events and outstanding\-byte count remain identical when the stream is split at every individual position from 0 through its full length or at every interior position simultaneously \(one byte at a time\)\.
-
-[Original report](https://github.com/shuvendu-lahiri/nvx/pull/17#issuecomment-6357154101)
 
 ## Refresh and validate
 
