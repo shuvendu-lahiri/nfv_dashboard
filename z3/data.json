@@ -1,22 +1,22 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/z3",
-  "generated_at": "2026-10-24T15:51:58.054571+00:00",
+  "generated_at": "2026-10-24T16:03:15.524264+00:00",
   "name": "z3",
   "label": "Z3",
   "summary": {
     "selected_prs": 31,
     "attempted_prs": 31,
     "published_reports": 27,
-    "workflow_attempts": 99,
+    "workflow_attempts": 101,
     "without_report": 4,
     "refuted_prs": 5,
     "properties": 113,
     "outcomes": {
       "refuted": 5,
-      "verified": 62,
+      "verified": 63,
       "resources exhausted": 14,
-      "type-check/audit failure": 32
+      "type-check/audit failure": 31
     }
   },
   "prs": [
@@ -1950,20 +1950,20 @@
       "head_sha": "1bd0dc6e53d13af5402f8ace403237ff70c0e64e",
       "head_branch": "nfv-staged-11235",
       "latest_report": {
-        "comment_id": 6306893713,
-        "url": "https://github.com/shuvendu-lahiri/z3/pull/46#issuecomment-6306893713",
-        "published_at": "2026-10-21T02:57:04Z",
-        "updated_at": "2026-10-21T02:57:04Z",
-        "body_sha256": "a1707751002608bc8c33383d90808554e03b0f1533b9bdea849de1d099cdc951",
+        "comment_id": 6386350225,
+        "url": "https://github.com/shuvendu-lahiri/z3/pull/46#issuecomment-6386350225",
+        "published_at": "2026-10-24T15:59:56Z",
+        "updated_at": "2026-10-24T15:59:56Z",
+        "body_sha256": "a98f5deb58dd9a7e3c26ebd527eb4708511a03f80a3a8c2c55315d5b1b92cf7a",
         "source_sha_prefix": "1bd0dc6e53d1",
         "base_sha_prefix": "3dd6e81d5612",
         "run_id": 39532848529,
         "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39532848529",
         "counts": {
           "refuted": 0,
-          "verified": 0,
+          "verified": 1,
           "resources exhausted": 0,
-          "type-check/audit failure": 1
+          "type-check/audit failure": 0
         },
         "properties": 1,
         "refutations": []
@@ -1973,7 +1973,7 @@
           "comment_id": 6306893713,
           "url": "https://github.com/shuvendu-lahiri/z3/pull/46#issuecomment-6306893713",
           "published_at": "2026-10-21T02:57:04Z",
-          "updated_at": "2026-10-21T02:57:04Z",
+          "updated_at": "2026-10-24T15:59:55Z",
           "body_sha256": "a1707751002608bc8c33383d90808554e03b0f1533b9bdea849de1d099cdc951",
           "source_sha_prefix": "1bd0dc6e53d1",
           "base_sha_prefix": "3dd6e81d5612",
@@ -1987,6 +1987,25 @@
           },
           "properties": 1,
           "refutations": []
+        },
+        {
+          "comment_id": 6386350225,
+          "url": "https://github.com/shuvendu-lahiri/z3/pull/46#issuecomment-6386350225",
+          "published_at": "2026-10-24T15:59:56Z",
+          "updated_at": "2026-10-24T15:59:56Z",
+          "body_sha256": "a98f5deb58dd9a7e3c26ebd527eb4708511a03f80a3a8c2c55315d5b1b92cf7a",
+          "source_sha_prefix": "1bd0dc6e53d1",
+          "base_sha_prefix": "3dd6e81d5612",
+          "run_id": 39532848529,
+          "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39532848529",
+          "counts": {
+            "refuted": 0,
+            "verified": 1,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 1,
+          "refutations": []
         }
       ],
       "report_matches_current_head": true,
@@ -1994,8 +2013,8 @@
       "latest_run": {
         "id": 39532848529,
         "url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39532848529",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       }
     },
@@ -2047,13 +2066,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39532698130,
         "url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39532698130",
-        "status": "completed",
-        "conclusion": "success",
-        "attempt": 1
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
       }
     },
     {
@@ -2104,13 +2123,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39532842941,
         "url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39532842941",
-        "status": "completed",
-        "conclusion": "success",
-        "attempt": 1
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
       }
     },
     {

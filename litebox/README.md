@@ -5,14 +5,15 @@ Published results from the prototype [Neuro-Formal Verification](https://arxiv.o
 
 **[Live interactive dashboard](https://shuvendu-lahiri.github.io/nfv_dashboard/litebox/)** / [all repositories](https://shuvendu-lahiri.github.io/nfv_dashboard/) or [download the standalone HTML](index.html) (no server or external dependencies).
 
-Snapshot: 2026-10-24T15:51:58.054571+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
+Snapshot: 2026-10-24T16:03:15.524264+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
 
-**44 PRs attempted; 74 workflow attempts; 37 published reports; 13 PRs with 15 conditional refutations; 173 model verifications; 7 PRs without a published report.**
+**44 PRs attempted; 76 workflow attempts; 37 published reports; 13 PRs with 15 conditional refutations; 171 model verifications; 7 PRs without a published report.**
 
 ## All attempted PRs (refutations first)
 
 | PR | Change | Latest report | Properties | Refuted | Verified | Exhausted | Audit failure | Evidence |
 |---|---|---|---:|---:|---:|---:|---:|---|
+| [shuvendu-lahiri/litebox#24](https://github.com/shuvendu-lahiri/litebox/pull/24) | Replay change 1297: Cherry pick change 1231 Switch to explicit file system \`Context\`s | **REFUTED (model)** | 10 | **1** | 8 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/24#issuecomment-6386308409) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39424463467) |
 | [shuvendu-lahiri/litebox#18](https://github.com/shuvendu-lahiri/litebox/pull/18) | Replay change 1470: Bump SNP and LVBS nightly toolchains | **REFUTED (model)** | 8 | **1** | 6 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/18#issuecomment-6385081547) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39415165751) |
 | [shuvendu-lahiri/litebox#13](https://github.com/shuvendu-lahiri/litebox/pull/13) | Replay change 1539: Introduce \`LocalFs\` mounting to CLI | **REFUTED (model)** | 5 | **1** | 3 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/13#issuecomment-6384318525) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39363406105) |
 | [shuvendu-lahiri/litebox#8](https://github.com/shuvendu-lahiri/litebox/pull/8) | Replay change 1648: Cherry pick change 1564 Refactor to remove \`litebox::path::Arg\` | **REFUTED (model)** | 10 | **1** | 6 | 0 | 3 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/8#issuecomment-6383719541) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39357363330) |
@@ -25,7 +26,8 @@ Snapshot: 2026-10-24T15:51:58.054571+00:00. Latest published report per PR suppl
 | [shuvendu-lahiri/litebox#33](https://github.com/shuvendu-lahiri/litebox/pull/33) | Replay change 1254: Cherry pick change 1106 Improve handle management | **REFUTED (model)** | 10 | **1** | 6 | 1 | 2 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/33#issuecomment-6296426613) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39456104468) |
 | [shuvendu-lahiri/litebox#32](https://github.com/shuvendu-lahiri/litebox/pull/32) | Replay change 1255: Cherry pick change 1107 Migrate in\-memory file system to new backend | **REFUTED (model)** | 10 | **1** | 8 | 1 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/32#issuecomment-6295599807) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39449644221) |
 | [shuvendu-lahiri/litebox#30](https://github.com/shuvendu-lahiri/litebox/pull/30) | Replay change 1273: Cherry pick change 1111 Reduce locking contention over fd iterations | **REFUTED (model)** | 9 | **1** | 5 | 0 | 3 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/30#issuecomment-6294367207) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39440593410) |
-| [shuvendu-lahiri/litebox#24](https://github.com/shuvendu-lahiri/litebox/pull/24) | Replay change 1297: Cherry pick change 1231 Switch to explicit file system \`Context\`s | **REFUTED (model)** / latest attempt: in\_progress | 10 | **1** | 8 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/24#issuecomment-6291911996) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39424463467) / [latest attempt](https://github.com/shuvendu-lahiri/litebox/actions/runs/39424463467) |
+| [shuvendu-lahiri/litebox#28](https://github.com/shuvendu-lahiri/litebox/pull/28) | Replay change 1279: Stabilize broker TCP client test | Published | 1 | 0 | 1 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/28#issuecomment-6386380592) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39437995772) |
+| [shuvendu-lahiri/litebox#23](https://github.com/shuvendu-lahiri/litebox/pull/23) | Replay change 1301: Sync ulitebox to latest main | Published | 10 | 0 | 2 | 4 | 4 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/23#issuecomment-6386307299) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39422364492) |
 | [shuvendu-lahiri/litebox#22](https://github.com/shuvendu-lahiri/litebox/pull/22) | Replay change 1448: Unseal file system \`Backend\` | Published | 4 | 0 | 4 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/22#issuecomment-6385829780) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39421605628) |
 | [shuvendu-lahiri/litebox#19](https://github.com/shuvendu-lahiri/litebox/pull/19) | Replay change 1469: Fixups for Rust 1\.99\.0 | Published | 10 | 0 | 7 | 0 | 3 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/19#issuecomment-6385478792) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39416362695) |
 | [shuvendu-lahiri/litebox#21](https://github.com/shuvendu-lahiri/litebox/pull/21) | Replay change 1452: Add fallible backend constructors to ComposerBuilder mounts | Published | 2 | 0 | 2 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/21#issuecomment-6385478151) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39419250767) |
@@ -47,12 +49,10 @@ Snapshot: 2026-10-24T15:51:58.054571+00:00. Latest published report per PR suppl
 | [shuvendu-lahiri/litebox#36](https://github.com/shuvendu-lahiri/litebox/pull/36) | Replay change 1040: Migrate Tar\-RO file system to new backend | Published | 10 | 0 | 8 | 1 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/36#issuecomment-6297309950) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39462655079) |
 | [shuvendu-lahiri/litebox#34](https://github.com/shuvendu-lahiri/litebox/pull/34) | Replay change 1078: Normalize objdump snapshot output | Published | 4 | 0 | 2 | 1 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/34#issuecomment-6296136265) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39456543041) |
 | [shuvendu-lahiri/litebox#31](https://github.com/shuvendu-lahiri/litebox/pull/31) | Replay change 1272: Cherry pick change 1110 Fix checking of directory search/read perms | Published | 9 | 0 | 9 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/31#issuecomment-6295515250) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39447927739) |
-| [shuvendu-lahiri/litebox#28](https://github.com/shuvendu-lahiri/litebox/pull/28) | Replay change 1279: Stabilize broker TCP client test | Published | 1 | 0 | 1 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/28#issuecomment-6293319969) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39437995772) |
-| [shuvendu-lahiri/litebox#23](https://github.com/shuvendu-lahiri/litebox/pull/23) | Replay change 1301: Sync ulitebox to latest main | Published / latest attempt: in\_progress | 10 | 0 | 4 | 6 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/23#issuecomment-6292062542) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39422364492) / [latest attempt](https://github.com/shuvendu-lahiri/litebox/actions/runs/39422364492) |
 | [shuvendu-lahiri/litebox#4](https://github.com/shuvendu-lahiri/litebox/pull/4) | Replay change 1641: implement partial backend walks | Published / latest attempt: failure | 10 | 0 | 7 | 1 | 2 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/4#issuecomment-6261868399) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39209801291) / [latest attempt](https://github.com/shuvendu-lahiri/litebox/actions/runs/39209801291) |
 | [shuvendu-lahiri/litebox#47](https://github.com/shuvendu-lahiri/litebox/pull/47) | Add LiteBox NFV audit dashboard | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39871498222) |
 | [shuvendu-lahiri/litebox#37](https://github.com/shuvendu-lahiri/litebox/pull/37) | Staged NFV audit \- change 1676: Plausible results for statfs | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532837030) |
-| [shuvendu-lahiri/litebox#29](https://github.com/shuvendu-lahiri/litebox/pull/29) | Replay change 1278: Cherry pick change 1113 Migrate 9p file system to new backend | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39440128194) |
+| [shuvendu-lahiri/litebox#29](https://github.com/shuvendu-lahiri/litebox/pull/29) | Replay change 1278: Cherry pick change 1113 Migrate 9p file system to new backend | No published report (in\_progress) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39440128194) |
 | [shuvendu-lahiri/litebox#26](https://github.com/shuvendu-lahiri/litebox/pull/26) | Replay change 1282: Cherry pick change 1195 Switch layered to overlay filesystem | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39431692418) |
 | [shuvendu-lahiri/litebox#25](https://github.com/shuvendu-lahiri/litebox/pull/25) | Replay change 1284: Cherry pick change 1226 Retire legacy \`FileSystem\` trait | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39430657719) |
 | [shuvendu-lahiri/litebox#17](https://github.com/shuvendu-lahiri/litebox/pull/17) | Replay change 1672: Route chmod syscalls | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39415165794) |
@@ -61,6 +61,12 @@ Snapshot: 2026-10-24T15:51:58.054571+00:00. Latest published report per PR suppl
 ## Conditional model refutations
 
 The following property texts are extracted from the published reports, without new adjudication or inference. The original report contains assumptions, source overlays and native evidence.
+
+### shuvendu-lahiri/litebox#24 / P9
+
+An empty pathname returns ENOENT\.
+
+[Original report](https://github.com/shuvendu-lahiri/litebox/pull/24#issuecomment-6386308409)
 
 ### shuvendu-lahiri/litebox#18 / P3
 
@@ -145,12 +151,6 @@ For a valid directory handle and supported flags, requesting WRONLY or RDWR trig
 For a valid live descriptor whose table slot is occupied: if its shared entry is uniquely owned, call \`can\_close\_immediately\` once; when it returns true, mark the descriptor closed, remove the slot, and return \`Closed\` with the underlying subsystem entry, but when it returns false, restore the same slot, leave the descriptor open, and return \`Deferred\`\. If the entry has multiple strong owners, do not call the closure; mark the supplied descriptor closed, restore the shared entry in its slot, and return \`Duplicated\` containing a new descriptor for that same slot\.
 
 [Original report](https://github.com/shuvendu-lahiri/litebox/pull/30#issuecomment-6294367207)
-
-### shuvendu-lahiri/litebox#24 / P3
-
-For a non\-root missing target opened with CREAT after its parent is successfully resolved, open should return NoWritePerms without creating the file when the supplied context cannot change entries in that parent; otherwise it should request creation using the supplied mode and the supplied context's acting user as owner\.
-
-[Original report](https://github.com/shuvendu-lahiri/litebox/pull/24#issuecomment-6291911996)
 
 ## Refresh and validate
 
