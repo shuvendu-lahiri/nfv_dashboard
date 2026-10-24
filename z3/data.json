@@ -1,22 +1,22 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/z3",
-  "generated_at": "2026-10-24T10:57:49.803103+00:00",
+  "generated_at": "2026-10-24T11:37:25.157109+00:00",
   "name": "z3",
   "label": "Z3",
   "summary": {
     "selected_prs": 31,
     "attempted_prs": 31,
     "published_reports": 25,
-    "workflow_attempts": 81,
+    "workflow_attempts": 82,
     "without_report": 6,
     "refuted_prs": 3,
-    "properties": 97,
+    "properties": 99,
     "outcomes": {
       "refuted": 3,
       "verified": 34,
       "resources exhausted": 20,
-      "type-check/audit failure": 40
+      "type-check/audit failure": 42
     }
   },
   "prs": [
@@ -636,11 +636,11 @@
       "head_sha": "8426cfeef52e21da3bc449c079503bd93d5a07f4",
       "head_branch": "nfv-cohort/11160-head",
       "latest_report": {
-        "comment_id": 6231102654,
-        "url": "https://github.com/shuvendu-lahiri/z3/pull/27#issuecomment-6231102654",
-        "published_at": "2026-10-17T07:15:59Z",
-        "updated_at": "2026-10-17T07:15:59Z",
-        "body_sha256": "c5092bd438bc8dff2fb665b2bac956778c9faa902e2cf0d88d805e01563233ef",
+        "comment_id": 6383679732,
+        "url": "https://github.com/shuvendu-lahiri/z3/pull/27#issuecomment-6383679732",
+        "published_at": "2026-10-24T11:31:19Z",
+        "updated_at": "2026-10-24T11:31:19Z",
+        "body_sha256": "da71e37b1a7dfcd75b464dad35057eb22f1df970062b2e78f4a46a64aadfd175",
         "source_sha_prefix": "8426cfeef52e",
         "base_sha_prefix": "62a74d45e7c7",
         "run_id": 39011165580,
@@ -649,9 +649,9 @@
           "refuted": 0,
           "verified": 3,
           "resources exhausted": 0,
-          "type-check/audit failure": 0
+          "type-check/audit failure": 2
         },
-        "properties": 3,
+        "properties": 5,
         "refutations": []
       },
       "report_history": [
@@ -659,7 +659,7 @@
           "comment_id": 6231102654,
           "url": "https://github.com/shuvendu-lahiri/z3/pull/27#issuecomment-6231102654",
           "published_at": "2026-10-17T07:15:59Z",
-          "updated_at": "2026-10-17T07:15:59Z",
+          "updated_at": "2026-10-24T11:31:18Z",
           "body_sha256": "c5092bd438bc8dff2fb665b2bac956778c9faa902e2cf0d88d805e01563233ef",
           "source_sha_prefix": "8426cfeef52e",
           "base_sha_prefix": "62a74d45e7c7",
@@ -673,6 +673,25 @@
           },
           "properties": 3,
           "refutations": []
+        },
+        {
+          "comment_id": 6383679732,
+          "url": "https://github.com/shuvendu-lahiri/z3/pull/27#issuecomment-6383679732",
+          "published_at": "2026-10-24T11:31:19Z",
+          "updated_at": "2026-10-24T11:31:19Z",
+          "body_sha256": "da71e37b1a7dfcd75b464dad35057eb22f1df970062b2e78f4a46a64aadfd175",
+          "source_sha_prefix": "8426cfeef52e",
+          "base_sha_prefix": "62a74d45e7c7",
+          "run_id": 39011165580,
+          "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39011165580",
+          "counts": {
+            "refuted": 0,
+            "verified": 3,
+            "resources exhausted": 0,
+            "type-check/audit failure": 2
+          },
+          "properties": 5,
+          "refutations": []
         }
       ],
       "report_matches_current_head": true,
@@ -680,8 +699,8 @@
       "latest_run": {
         "id": 39011165580,
         "url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39011165580",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       }
     },
@@ -830,13 +849,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 39011193107,
         "url": "https://github.com/shuvendu-lahiri/z3/actions/runs/39011193107",
-        "status": "completed",
-        "conclusion": "success",
-        "attempt": 1
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
       }
     },
     {

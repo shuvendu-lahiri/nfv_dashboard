@@ -1,22 +1,22 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/litebox",
-  "generated_at": "2026-10-24T10:57:49.803103+00:00",
+  "generated_at": "2026-10-24T11:37:25.157109+00:00",
   "name": "litebox",
   "label": "LiteBox",
   "summary": {
     "selected_prs": 44,
     "attempted_prs": 44,
-    "published_reports": 35,
-    "workflow_attempts": 56,
-    "without_report": 9,
-    "refuted_prs": 10,
-    "properties": 262,
+    "published_reports": 36,
+    "workflow_attempts": 58,
+    "without_report": 8,
+    "refuted_prs": 11,
+    "properties": 272,
     "outcomes": {
-      "refuted": 12,
-      "verified": 159,
+      "refuted": 13,
+      "verified": 166,
       "resources exhausted": 28,
-      "type-check/audit failure": 63
+      "type-check/audit failure": 65
     }
   },
   "prs": [
@@ -284,20 +284,20 @@
       "head_sha": "55e080d12464baf4dea74614a5a7f12b8f4b3e00",
       "head_branch": "nfv-replay-1657",
       "latest_report": {
-        "comment_id": 6288438653,
-        "url": "https://github.com/shuvendu-lahiri/litebox/pull/7#issuecomment-6288438653",
-        "published_at": "2026-10-20T10:03:14Z",
-        "updated_at": "2026-10-20T10:03:14Z",
-        "body_sha256": "c0bd7f0f26b0913d38309f8d525c310d9a094a5267fd0b4c8e540e5fae39cfa2",
+        "comment_id": 6383605651,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/7#issuecomment-6383605651",
+        "published_at": "2026-10-24T11:23:06Z",
+        "updated_at": "2026-10-24T11:23:06Z",
+        "body_sha256": "06dd73232ed765e0a393a69e5ec50dfe117276658e180cd07a36ff504fff7be3",
         "source_sha_prefix": "55e080d12464",
         "base_sha_prefix": "01a0cb6f0277",
         "run_id": 39399231191,
         "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39399231191",
         "counts": {
           "refuted": 0,
-          "verified": 8,
+          "verified": 9,
           "resources exhausted": 1,
-          "type-check/audit failure": 1
+          "type-check/audit failure": 0
         },
         "properties": 10,
         "refutations": []
@@ -307,7 +307,7 @@
           "comment_id": 6288438653,
           "url": "https://github.com/shuvendu-lahiri/litebox/pull/7#issuecomment-6288438653",
           "published_at": "2026-10-20T10:03:14Z",
-          "updated_at": "2026-10-20T10:03:14Z",
+          "updated_at": "2026-10-24T11:23:05Z",
           "body_sha256": "c0bd7f0f26b0913d38309f8d525c310d9a094a5267fd0b4c8e540e5fae39cfa2",
           "source_sha_prefix": "55e080d12464",
           "base_sha_prefix": "01a0cb6f0277",
@@ -321,6 +321,25 @@
           },
           "properties": 10,
           "refutations": []
+        },
+        {
+          "comment_id": 6383605651,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/7#issuecomment-6383605651",
+          "published_at": "2026-10-24T11:23:06Z",
+          "updated_at": "2026-10-24T11:23:06Z",
+          "body_sha256": "06dd73232ed765e0a393a69e5ec50dfe117276658e180cd07a36ff504fff7be3",
+          "source_sha_prefix": "55e080d12464",
+          "base_sha_prefix": "01a0cb6f0277",
+          "run_id": 39399231191,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39399231191",
+          "counts": {
+            "refuted": 0,
+            "verified": 9,
+            "resources exhausted": 1,
+            "type-check/audit failure": 0
+          },
+          "properties": 10,
+          "refutations": []
         }
       ],
       "report_matches_current_head": true,
@@ -328,8 +347,8 @@
       "latest_run": {
         "id": 39399231191,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39399231191",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       }
     },
@@ -340,16 +359,68 @@
       "state": "open",
       "head_sha": "80551d038abb0a8091f266c74700dd17e314918b",
       "head_branch": "nfv-replay-1648",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
-      "attempts": 1,
+      "latest_report": {
+        "comment_id": 6383719541,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/8#issuecomment-6383719541",
+        "published_at": "2026-10-24T11:35:44Z",
+        "updated_at": "2026-10-24T11:35:44Z",
+        "body_sha256": "c1ee191bfbb0f9c84eb4d7acff76206811f8b43540ca5c4686d193b971cf7c24",
+        "source_sha_prefix": "80551d038abb",
+        "base_sha_prefix": "6f2085b7ed71",
+        "run_id": 39357363330,
+        "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39357363330",
+        "counts": {
+          "refuted": 1,
+          "verified": 6,
+          "resources exhausted": 0,
+          "type-check/audit failure": 3
+        },
+        "properties": 10,
+        "refutations": [
+          {
+            "property_id": "P2",
+            "property": "With no unsupported flags and successful path resolution, sys_unlinkat returns normally.",
+            "input": "`dirfd = 0`; `Errno::EINVAL = 22`; `Errno::ENOENT = 2`; `flags.intersects(AtFlags::AT_REMOVEDIR.complement()) = false`; `flags.contains(AtFlags::AT_REMOVEDIR) = false`; `pathname = [47]`; abstract state: normal completion of context acquisition = `false`; FsPath variant produced by path resolution = `0`; whether FsPath::new succeeds = `true`; FsPath::new failure code = `1`; absolute path produced by FsPath::new = `[47]`; converted rmdir_file error = `1`; rmdir_file success result = `true`; converted unlink_file error = `1`; unlink_file success result = `true`",
+            "sketch": "If fs.context.read() does not complete normally after path resolution succeeds, sys_unlinkat reaches neither removal call and does not return the selected operation's result."
+          }
+        ]
+      },
+      "report_history": [
+        {
+          "comment_id": 6383719541,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/8#issuecomment-6383719541",
+          "published_at": "2026-10-24T11:35:44Z",
+          "updated_at": "2026-10-24T11:35:44Z",
+          "body_sha256": "c1ee191bfbb0f9c84eb4d7acff76206811f8b43540ca5c4686d193b971cf7c24",
+          "source_sha_prefix": "80551d038abb",
+          "base_sha_prefix": "6f2085b7ed71",
+          "run_id": 39357363330,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39357363330",
+          "counts": {
+            "refuted": 1,
+            "verified": 6,
+            "resources exhausted": 0,
+            "type-check/audit failure": 3
+          },
+          "properties": 10,
+          "refutations": [
+            {
+              "property_id": "P2",
+              "property": "With no unsupported flags and successful path resolution, sys_unlinkat returns normally.",
+              "input": "`dirfd = 0`; `Errno::EINVAL = 22`; `Errno::ENOENT = 2`; `flags.intersects(AtFlags::AT_REMOVEDIR.complement()) = false`; `flags.contains(AtFlags::AT_REMOVEDIR) = false`; `pathname = [47]`; abstract state: normal completion of context acquisition = `false`; FsPath variant produced by path resolution = `0`; whether FsPath::new succeeds = `true`; FsPath::new failure code = `1`; absolute path produced by FsPath::new = `[47]`; converted rmdir_file error = `1`; rmdir_file success result = `true`; converted unlink_file error = `1`; unlink_file success result = `true`",
+              "sketch": "If fs.context.read() does not complete normally after path resolution succeeds, sys_unlinkat reaches neither removal call and does not return the selected operation's result."
+            }
+          ]
+        }
+      ],
+      "report_matches_current_head": true,
+      "attempts": 2,
       "latest_run": {
         "id": 39357363330,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39357363330",
         "status": "completed",
-        "conclusion": "failure",
-        "attempt": 1
+        "conclusion": "success",
+        "attempt": 2
       }
     },
     {
@@ -400,13 +471,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 2,
+      "attempts": 3,
       "latest_run": {
         "id": 39405410051,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39405410051",
-        "status": "completed",
-        "conclusion": "success",
-        "attempt": 1
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
       }
     },
     {
