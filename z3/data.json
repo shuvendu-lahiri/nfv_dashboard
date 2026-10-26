@@ -1,22 +1,22 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/z3",
-  "generated_at": "2026-10-24T21:33:09.300190+00:00",
+  "generated_at": "2026-10-26T17:54:10.540224+00:00",
   "name": "z3",
   "label": "Z3",
   "summary": {
-    "selected_prs": 31,
-    "attempted_prs": 31,
-    "published_reports": 30,
-    "workflow_attempts": 107,
+    "selected_prs": 41,
+    "attempted_prs": 41,
+    "published_reports": 40,
+    "workflow_attempts": 117,
     "without_report": 1,
     "refuted_prs": 5,
-    "properties": 118,
+    "properties": 159,
     "outcomes": {
       "refuted": 5,
-      "verified": 68,
-      "resources exhausted": 16,
-      "type-check/audit failure": 29
+      "verified": 90,
+      "resources exhausted": 34,
+      "type-check/audit failure": 30
     }
   },
   "prs": [
@@ -2422,6 +2422,576 @@
         "status": "completed",
         "conclusion": "success",
         "attempt": 2
+      }
+    },
+    {
+      "number": 50,
+      "title": "NFV audit - change 11051: recfun: require a strictly decreasing recursive call before unfolding a ground constructor argument",
+      "url": "https://github.com/shuvendu-lahiri/z3/pull/50",
+      "state": "open",
+      "head_sha": "59f67a5d1a55173cb1f30d13531242c28016ee08",
+      "head_branch": "nfv-bench-20261026-11051-head",
+      "latest_report": {
+        "comment_id": 6412740549,
+        "url": "https://github.com/shuvendu-lahiri/z3/pull/50#issuecomment-6412740549",
+        "published_at": "2026-10-26T09:33:00Z",
+        "updated_at": "2026-10-26T09:33:00Z",
+        "body_sha256": "f19108328b2437c2c1728ae84c4d85e0bc7e9601a47e70428f8258e019384037",
+        "source_sha_prefix": "59f67a5d1a55",
+        "base_sha_prefix": "c9dd0b4dc50d",
+        "run_id": 40296533839,
+        "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/40296533839",
+        "counts": {
+          "refuted": 0,
+          "verified": 4,
+          "resources exhausted": 0,
+          "type-check/audit failure": 0
+        },
+        "properties": 4,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6412740549,
+          "url": "https://github.com/shuvendu-lahiri/z3/pull/50#issuecomment-6412740549",
+          "published_at": "2026-10-26T09:33:00Z",
+          "updated_at": "2026-10-26T09:33:00Z",
+          "body_sha256": "f19108328b2437c2c1728ae84c4d85e0bc7e9601a47e70428f8258e019384037",
+          "source_sha_prefix": "59f67a5d1a55",
+          "base_sha_prefix": "c9dd0b4dc50d",
+          "run_id": 40296533839,
+          "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/40296533839",
+          "counts": {
+            "refuted": 0,
+            "verified": 4,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 4,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
+      "attempts": 1,
+      "latest_run": {
+        "id": 40296533839,
+        "url": "https://github.com/shuvendu-lahiri/z3/actions/runs/40296533839",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      }
+    },
+    {
+      "number": 51,
+      "title": "NFV audit - change 11079: Preserve normalization bridges for deferred arithmetic inequalities",
+      "url": "https://github.com/shuvendu-lahiri/z3/pull/51",
+      "state": "open",
+      "head_sha": "8d3d7cd0dcf372e312f100ef443cbb1fe3a3f81b",
+      "head_branch": "nfv-bench-20261026-11079-head",
+      "latest_report": {
+        "comment_id": 6412444161,
+        "url": "https://github.com/shuvendu-lahiri/z3/pull/51#issuecomment-6412444161",
+        "published_at": "2026-10-26T09:17:11Z",
+        "updated_at": "2026-10-26T09:17:11Z",
+        "body_sha256": "759b10b51e0bcdb686f662f9dd44f5cb7bf56ad63103af0a50561885c76a481d",
+        "source_sha_prefix": "8d3d7cd0dcf3",
+        "base_sha_prefix": "9e77880c865f",
+        "run_id": 40296556162,
+        "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/40296556162",
+        "counts": {
+          "refuted": 0,
+          "verified": 0,
+          "resources exhausted": 1,
+          "type-check/audit failure": 0
+        },
+        "properties": 1,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6412444161,
+          "url": "https://github.com/shuvendu-lahiri/z3/pull/51#issuecomment-6412444161",
+          "published_at": "2026-10-26T09:17:11Z",
+          "updated_at": "2026-10-26T09:17:11Z",
+          "body_sha256": "759b10b51e0bcdb686f662f9dd44f5cb7bf56ad63103af0a50561885c76a481d",
+          "source_sha_prefix": "8d3d7cd0dcf3",
+          "base_sha_prefix": "9e77880c865f",
+          "run_id": 40296556162,
+          "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/40296556162",
+          "counts": {
+            "refuted": 0,
+            "verified": 0,
+            "resources exhausted": 1,
+            "type-check/audit failure": 0
+          },
+          "properties": 1,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
+      "attempts": 1,
+      "latest_run": {
+        "id": 40296556162,
+        "url": "https://github.com/shuvendu-lahiri/z3/actions/runs/40296556162",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      }
+    },
+    {
+      "number": 52,
+      "title": "NFV audit - change 11330: Preserve singleton cardinalities for array fields",
+      "url": "https://github.com/shuvendu-lahiri/z3/pull/52",
+      "state": "open",
+      "head_sha": "b0e05134f40746883bc597ab8eee718f6f87ada2",
+      "head_branch": "nfv-bench-20261026-11330-head",
+      "latest_report": {
+        "comment_id": 6412569770,
+        "url": "https://github.com/shuvendu-lahiri/z3/pull/52#issuecomment-6412569770",
+        "published_at": "2026-10-26T09:24:01Z",
+        "updated_at": "2026-10-26T09:24:01Z",
+        "body_sha256": "79fff795bb5ba1e1b8451fa330789d344167a9a96d10c2285be30b1c5b6eff33",
+        "source_sha_prefix": "b0e05134f407",
+        "base_sha_prefix": "36974ad3d98a",
+        "run_id": 40296575400,
+        "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/40296575400",
+        "counts": {
+          "refuted": 0,
+          "verified": 5,
+          "resources exhausted": 2,
+          "type-check/audit failure": 0
+        },
+        "properties": 7,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6412569770,
+          "url": "https://github.com/shuvendu-lahiri/z3/pull/52#issuecomment-6412569770",
+          "published_at": "2026-10-26T09:24:01Z",
+          "updated_at": "2026-10-26T09:24:01Z",
+          "body_sha256": "79fff795bb5ba1e1b8451fa330789d344167a9a96d10c2285be30b1c5b6eff33",
+          "source_sha_prefix": "b0e05134f407",
+          "base_sha_prefix": "36974ad3d98a",
+          "run_id": 40296575400,
+          "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/40296575400",
+          "counts": {
+            "refuted": 0,
+            "verified": 5,
+            "resources exhausted": 2,
+            "type-check/audit failure": 0
+          },
+          "properties": 7,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
+      "attempts": 1,
+      "latest_run": {
+        "id": 40296575400,
+        "url": "https://github.com/shuvendu-lahiri/z3/actions/runs/40296575400",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      }
+    },
+    {
+      "number": 53,
+      "title": "NFV audit - change 11082: Make heuristic comparator ties deterministic",
+      "url": "https://github.com/shuvendu-lahiri/z3/pull/53",
+      "state": "open",
+      "head_sha": "2b6266921f1b609803d8594d33460edc73125789",
+      "head_branch": "nfv-bench-20261026-11082-head",
+      "latest_report": {
+        "comment_id": 6413007979,
+        "url": "https://github.com/shuvendu-lahiri/z3/pull/53#issuecomment-6413007979",
+        "published_at": "2026-10-26T09:47:28Z",
+        "updated_at": "2026-10-26T09:47:28Z",
+        "body_sha256": "91531e867e74df990446edd37a028df8a7da1353affdc43e7d11a376d143ea32",
+        "source_sha_prefix": "2b6266921f1b",
+        "base_sha_prefix": "7e68fff05bbd",
+        "run_id": 40296592893,
+        "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/40296592893",
+        "counts": {
+          "refuted": 0,
+          "verified": 3,
+          "resources exhausted": 7,
+          "type-check/audit failure": 0
+        },
+        "properties": 10,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6413007979,
+          "url": "https://github.com/shuvendu-lahiri/z3/pull/53#issuecomment-6413007979",
+          "published_at": "2026-10-26T09:47:28Z",
+          "updated_at": "2026-10-26T09:47:28Z",
+          "body_sha256": "91531e867e74df990446edd37a028df8a7da1353affdc43e7d11a376d143ea32",
+          "source_sha_prefix": "2b6266921f1b",
+          "base_sha_prefix": "7e68fff05bbd",
+          "run_id": 40296592893,
+          "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/40296592893",
+          "counts": {
+            "refuted": 0,
+            "verified": 3,
+            "resources exhausted": 7,
+            "type-check/audit failure": 0
+          },
+          "properties": 10,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
+      "attempts": 1,
+      "latest_run": {
+        "id": 40296592893,
+        "url": "https://github.com/shuvendu-lahiri/z3/actions/runs/40296592893",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      }
+    },
+    {
+      "number": 54,
+      "title": "NFV audit - change 11086: Fix invalid model for to_fp-from-real zero sign ( change 7431)",
+      "url": "https://github.com/shuvendu-lahiri/z3/pull/54",
+      "state": "open",
+      "head_sha": "c69577887d57338c2edcffced3ac79e4051564ae",
+      "head_branch": "nfv-bench-20261026-11086-head",
+      "latest_report": {
+        "comment_id": 6412870103,
+        "url": "https://github.com/shuvendu-lahiri/z3/pull/54#issuecomment-6412870103",
+        "published_at": "2026-10-26T09:40:02Z",
+        "updated_at": "2026-10-26T09:40:02Z",
+        "body_sha256": "812b5efffcefdd2df62bbe91fba22e55a03d5cb5636edb02663f2b5163c130b9",
+        "source_sha_prefix": "c69577887d57",
+        "base_sha_prefix": "485b05a0276a",
+        "run_id": 40296613539,
+        "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/40296613539",
+        "counts": {
+          "refuted": 0,
+          "verified": 1,
+          "resources exhausted": 2,
+          "type-check/audit failure": 0
+        },
+        "properties": 3,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6412870103,
+          "url": "https://github.com/shuvendu-lahiri/z3/pull/54#issuecomment-6412870103",
+          "published_at": "2026-10-26T09:40:02Z",
+          "updated_at": "2026-10-26T09:40:02Z",
+          "body_sha256": "812b5efffcefdd2df62bbe91fba22e55a03d5cb5636edb02663f2b5163c130b9",
+          "source_sha_prefix": "c69577887d57",
+          "base_sha_prefix": "485b05a0276a",
+          "run_id": 40296613539,
+          "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/40296613539",
+          "counts": {
+            "refuted": 0,
+            "verified": 1,
+            "resources exhausted": 2,
+            "type-check/audit failure": 0
+          },
+          "properties": 3,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
+      "attempts": 1,
+      "latest_run": {
+        "id": 40296613539,
+        "url": "https://github.com/shuvendu-lahiri/z3/actions/runs/40296613539",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      }
+    },
+    {
+      "number": 55,
+      "title": "NFV audit - change 11087: [code-simplifier] Simplify duplicated delay-ineq normalization in theory_lra",
+      "url": "https://github.com/shuvendu-lahiri/z3/pull/55",
+      "state": "open",
+      "head_sha": "ba6f8ceb040a3b63cbaeca6a388b76d10ec1289c",
+      "head_branch": "nfv-bench-20261026-11087-head",
+      "latest_report": {
+        "comment_id": 6412567597,
+        "url": "https://github.com/shuvendu-lahiri/z3/pull/55#issuecomment-6412567597",
+        "published_at": "2026-10-26T09:23:54Z",
+        "updated_at": "2026-10-26T09:23:54Z",
+        "body_sha256": "8b4f48baede924d094c510bdd79dd1265120904b581ca6d3ced8a62620a5dc4d",
+        "source_sha_prefix": "ba6f8ceb040a",
+        "base_sha_prefix": "2f5ef9abf613",
+        "run_id": 40296631365,
+        "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/40296631365",
+        "counts": {
+          "refuted": 0,
+          "verified": 1,
+          "resources exhausted": 0,
+          "type-check/audit failure": 0
+        },
+        "properties": 1,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6412567597,
+          "url": "https://github.com/shuvendu-lahiri/z3/pull/55#issuecomment-6412567597",
+          "published_at": "2026-10-26T09:23:54Z",
+          "updated_at": "2026-10-26T09:23:54Z",
+          "body_sha256": "8b4f48baede924d094c510bdd79dd1265120904b581ca6d3ced8a62620a5dc4d",
+          "source_sha_prefix": "ba6f8ceb040a",
+          "base_sha_prefix": "2f5ef9abf613",
+          "run_id": 40296631365,
+          "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/40296631365",
+          "counts": {
+            "refuted": 0,
+            "verified": 1,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 1,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
+      "attempts": 1,
+      "latest_run": {
+        "id": 40296631365,
+        "url": "https://github.com/shuvendu-lahiri/z3/actions/runs/40296631365",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      }
+    },
+    {
+      "number": 56,
+      "title": "NFV audit - change 11091: Keep symbolic regex ranges out of ground equivalence checks",
+      "url": "https://github.com/shuvendu-lahiri/z3/pull/56",
+      "state": "open",
+      "head_sha": "35d49bd285eedc245f1804e09b792c800ceef0bb",
+      "head_branch": "nfv-bench-20261026-11091-head",
+      "latest_report": {
+        "comment_id": 6412499957,
+        "url": "https://github.com/shuvendu-lahiri/z3/pull/56#issuecomment-6412499957",
+        "published_at": "2026-10-26T09:20:16Z",
+        "updated_at": "2026-10-26T09:20:16Z",
+        "body_sha256": "d156a8ef871dfdd849996b2fd9b572aea9b96b3825e1fe5baf2f9e5161b8d299",
+        "source_sha_prefix": "35d49bd285ee",
+        "base_sha_prefix": "57e649e7b629",
+        "run_id": 40296647633,
+        "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/40296647633",
+        "counts": {
+          "refuted": 0,
+          "verified": 1,
+          "resources exhausted": 0,
+          "type-check/audit failure": 1
+        },
+        "properties": 2,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6412499957,
+          "url": "https://github.com/shuvendu-lahiri/z3/pull/56#issuecomment-6412499957",
+          "published_at": "2026-10-26T09:20:16Z",
+          "updated_at": "2026-10-26T09:20:16Z",
+          "body_sha256": "d156a8ef871dfdd849996b2fd9b572aea9b96b3825e1fe5baf2f9e5161b8d299",
+          "source_sha_prefix": "35d49bd285ee",
+          "base_sha_prefix": "57e649e7b629",
+          "run_id": 40296647633,
+          "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/40296647633",
+          "counts": {
+            "refuted": 0,
+            "verified": 1,
+            "resources exhausted": 0,
+            "type-check/audit failure": 1
+          },
+          "properties": 2,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
+      "attempts": 1,
+      "latest_run": {
+        "id": 40296647633,
+        "url": "https://github.com/shuvendu-lahiri/z3/actions/runs/40296647633",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      }
+    },
+    {
+      "number": 57,
+      "title": "NFV audit - change 11099: determinism: Use a fixed null ID in theory traces",
+      "url": "https://github.com/shuvendu-lahiri/z3/pull/57",
+      "state": "open",
+      "head_sha": "18d8244be8f074e6173b58f71fe1eeca8d2302b5",
+      "head_branch": "nfv-bench-20261026-11099-head",
+      "latest_report": {
+        "comment_id": 6412850641,
+        "url": "https://github.com/shuvendu-lahiri/z3/pull/57#issuecomment-6412850641",
+        "published_at": "2026-10-26T09:38:57Z",
+        "updated_at": "2026-10-26T09:38:57Z",
+        "body_sha256": "ed824e55ef03cc2be3e9d3d7c853f81ae3e594d3aa36e8d48a4e737d90222f71",
+        "source_sha_prefix": "18d8244be8f0",
+        "base_sha_prefix": "ae7ecd08f2db",
+        "run_id": 40296665905,
+        "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/40296665905",
+        "counts": {
+          "refuted": 0,
+          "verified": 0,
+          "resources exhausted": 1,
+          "type-check/audit failure": 0
+        },
+        "properties": 1,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6412850641,
+          "url": "https://github.com/shuvendu-lahiri/z3/pull/57#issuecomment-6412850641",
+          "published_at": "2026-10-26T09:38:57Z",
+          "updated_at": "2026-10-26T09:38:57Z",
+          "body_sha256": "ed824e55ef03cc2be3e9d3d7c853f81ae3e594d3aa36e8d48a4e737d90222f71",
+          "source_sha_prefix": "18d8244be8f0",
+          "base_sha_prefix": "ae7ecd08f2db",
+          "run_id": 40296665905,
+          "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/40296665905",
+          "counts": {
+            "refuted": 0,
+            "verified": 0,
+            "resources exhausted": 1,
+            "type-check/audit failure": 0
+          },
+          "properties": 1,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
+      "attempts": 1,
+      "latest_run": {
+        "id": 40296665905,
+        "url": "https://github.com/shuvendu-lahiri/z3/actions/runs/40296665905",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      }
+    },
+    {
+      "number": 58,
+      "title": "NFV audit - change 11105: A few fixes",
+      "url": "https://github.com/shuvendu-lahiri/z3/pull/58",
+      "state": "open",
+      "head_sha": "7e6499406acb5c46868d5cffcf1943a10c1fdf54",
+      "head_branch": "nfv-bench-20261026-11105-head",
+      "latest_report": {
+        "comment_id": 6412917346,
+        "url": "https://github.com/shuvendu-lahiri/z3/pull/58#issuecomment-6412917346",
+        "published_at": "2026-10-26T09:42:35Z",
+        "updated_at": "2026-10-26T09:42:35Z",
+        "body_sha256": "f082a019b1dd0845d66797004a1a7eea5411895906e1868b63140fbc0fc796ca",
+        "source_sha_prefix": "7e6499406acb",
+        "base_sha_prefix": "3ab41629fef1",
+        "run_id": 40296683882,
+        "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/40296683882",
+        "counts": {
+          "refuted": 0,
+          "verified": 5,
+          "resources exhausted": 4,
+          "type-check/audit failure": 0
+        },
+        "properties": 9,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6412917346,
+          "url": "https://github.com/shuvendu-lahiri/z3/pull/58#issuecomment-6412917346",
+          "published_at": "2026-10-26T09:42:35Z",
+          "updated_at": "2026-10-26T09:42:35Z",
+          "body_sha256": "f082a019b1dd0845d66797004a1a7eea5411895906e1868b63140fbc0fc796ca",
+          "source_sha_prefix": "7e6499406acb",
+          "base_sha_prefix": "3ab41629fef1",
+          "run_id": 40296683882,
+          "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/40296683882",
+          "counts": {
+            "refuted": 0,
+            "verified": 5,
+            "resources exhausted": 4,
+            "type-check/audit failure": 0
+          },
+          "properties": 9,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
+      "attempts": 1,
+      "latest_run": {
+        "id": 40296683882,
+        "url": "https://github.com/shuvendu-lahiri/z3/actions/runs/40296683882",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      }
+    },
+    {
+      "number": 59,
+      "title": "NFV audit - change 11165: Avoid regex unfolding for provably out-of-range substring offsets",
+      "url": "https://github.com/shuvendu-lahiri/z3/pull/59",
+      "state": "open",
+      "head_sha": "0e9b92d5e0177b244913cc0a9b7c52541b941240",
+      "head_branch": "nfv-bench-20261026-11165-head",
+      "latest_report": {
+        "comment_id": 6412947395,
+        "url": "https://github.com/shuvendu-lahiri/z3/pull/59#issuecomment-6412947395",
+        "published_at": "2026-10-26T09:44:13Z",
+        "updated_at": "2026-10-26T09:44:13Z",
+        "body_sha256": "d905a032098c77c2fe97db98ef36cd10c95650bbf98d8e4d0f72bb74713aeefd",
+        "source_sha_prefix": "0e9b92d5e017",
+        "base_sha_prefix": "b8d4033b0ab7",
+        "run_id": 40296700318,
+        "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/40296700318",
+        "counts": {
+          "refuted": 0,
+          "verified": 2,
+          "resources exhausted": 1,
+          "type-check/audit failure": 0
+        },
+        "properties": 3,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6412947395,
+          "url": "https://github.com/shuvendu-lahiri/z3/pull/59#issuecomment-6412947395",
+          "published_at": "2026-10-26T09:44:13Z",
+          "updated_at": "2026-10-26T09:44:13Z",
+          "body_sha256": "d905a032098c77c2fe97db98ef36cd10c95650bbf98d8e4d0f72bb74713aeefd",
+          "source_sha_prefix": "0e9b92d5e017",
+          "base_sha_prefix": "b8d4033b0ab7",
+          "run_id": 40296700318,
+          "run_url": "https://github.com/shuvendu-lahiri/z3/actions/runs/40296700318",
+          "counts": {
+            "refuted": 0,
+            "verified": 2,
+            "resources exhausted": 1,
+            "type-check/audit failure": 0
+          },
+          "properties": 3,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
+      "attempts": 1,
+      "latest_run": {
+        "id": 40296700318,
+        "url": "https://github.com/shuvendu-lahiri/z3/actions/runs/40296700318",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
       }
     }
   ]
