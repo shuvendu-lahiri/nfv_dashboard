@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "generated_at": "2026-10-29T21:23:17.043603+00:00",
+  "generated_at": "2026-10-29T21:58:21.422443+00:00",
   "summary": {
     "attempted_prs": 135,
     "published_reports": 116,
-    "workflow_attempts": 296,
+    "workflow_attempts": 306,
     "without_report": 19,
     "refuted_prs": 21,
     "properties": 684,
@@ -62,12 +62,12 @@
       "name": "nvx",
       "label": "NVX",
       "repository": "shuvendu-lahiri/nvx",
-      "generated_at": "2026-10-29T21:23:17.043603+00:00",
+      "generated_at": "2026-10-29T21:58:21.422443+00:00",
       "summary": {
         "selected_prs": 50,
         "attempted_prs": 50,
         "published_reports": 32,
-        "workflow_attempts": 74,
+        "workflow_attempts": 84,
         "without_report": 18,
         "refuted_prs": 5,
         "properties": 192,
