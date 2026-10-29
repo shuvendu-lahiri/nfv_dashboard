@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "generated_at": "2026-10-29T23:03:06.875628+00:00",
+  "generated_at": "2026-10-29T23:34:58.387216+00:00",
   "summary": {
     "attempted_prs": 135,
     "published_reports": 117,
     "workflow_attempts": 316,
     "without_report": 18,
-    "refuted_prs": 20,
+    "refuted_prs": 21,
     "properties": 689,
     "outcomes": {
-      "refuted": 23,
-      "verified": 461,
+      "refuted": 24,
+      "verified": 459,
       "resources exhausted": 97,
-      "type-check/audit failure": 108
+      "type-check/audit failure": 109
     }
   },
   "repositories": [
@@ -62,20 +62,20 @@
       "name": "nvx",
       "label": "NVX",
       "repository": "shuvendu-lahiri/nvx",
-      "generated_at": "2026-10-29T23:03:06.875628+00:00",
+      "generated_at": "2026-10-29T23:34:58.387216+00:00",
       "summary": {
         "selected_prs": 50,
         "attempted_prs": 50,
         "published_reports": 33,
         "workflow_attempts": 94,
         "without_report": 17,
-        "refuted_prs": 4,
+        "refuted_prs": 5,
         "properties": 197,
         "outcomes": {
-          "refuted": 4,
-          "verified": 151,
+          "refuted": 5,
+          "verified": 149,
           "resources exhausted": 12,
-          "type-check/audit failure": 30
+          "type-check/audit failure": 31
         }
       }
     }

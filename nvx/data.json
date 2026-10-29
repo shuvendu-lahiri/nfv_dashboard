@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/nvx",
-  "generated_at": "2026-10-29T23:03:06.875628+00:00",
+  "generated_at": "2026-10-29T23:34:58.387216+00:00",
   "name": "nvx",
   "label": "NVX",
   "summary": {
@@ -10,13 +10,13 @@
     "published_reports": 33,
     "workflow_attempts": 94,
     "without_report": 17,
-    "refuted_prs": 4,
+    "refuted_prs": 5,
     "properties": 197,
     "outcomes": {
-      "refuted": 4,
-      "verified": 151,
+      "refuted": 5,
+      "verified": 149,
       "resources exhausted": 12,
-      "type-check/audit failure": 30
+      "type-check/audit failure": 31
     }
   },
   "prs": [
@@ -2420,8 +2420,8 @@
       "latest_run": {
         "id": 40835208517,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835208517",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "failure",
         "attempt": 2
       },
       "source_number": 881,
@@ -2578,30 +2578,37 @@
       "head_sha": "fec5b920eba885d67020b5b76f3c8c4e9b67d093",
       "head_branch": "nfv-campaign-901851d8-874-head",
       "latest_report": {
-        "comment_id": 6491226135,
-        "url": "https://github.com/shuvendu-lahiri/nvx/pull/35#issuecomment-6491226135",
-        "published_at": "2026-10-29T07:58:38Z",
-        "updated_at": "2026-10-29T07:58:38Z",
-        "body_sha256": "ca348f8c322d09ab79465eade61250c4cadf8031d747911aa211fc51c737046d",
+        "comment_id": 6510867527,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/35#issuecomment-6510867527",
+        "published_at": "2026-10-29T23:22:49Z",
+        "updated_at": "2026-10-29T23:22:49Z",
+        "body_sha256": "a32a80c5bcc233fa23ac6e99d99ff76d8c49b8223d449b45fd1e063939f15fa8",
         "source_sha_prefix": "fec5b920eba8",
         "base_sha_prefix": "55d0dc37ec27",
         "run_id": 40835273267,
         "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835273267",
         "counts": {
-          "refuted": 0,
-          "verified": 2,
+          "refuted": 1,
+          "verified": 0,
           "resources exhausted": 0,
-          "type-check/audit failure": 1
+          "type-check/audit failure": 2
         },
         "properties": 3,
-        "refutations": []
+        "refutations": [
+          {
+            "property_id": "P3",
+            "property": "Encoding a clone produces exactly 17 bytes.",
+            "input": "`transaction.as_bytes() = []`; abstract state: whether self.transaction is Some = `true`; the stored bytes of transaction = `[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]`",
+            "sketch": "If transaction.as_bytes() is empty for a present 16-byte transaction ID, encode appends the clone marker but none of the transaction bytes, so the returned encoding has length 1 instead of 17."
+          }
+        ]
       },
       "report_history": [
         {
           "comment_id": 6491226135,
           "url": "https://github.com/shuvendu-lahiri/nvx/pull/35#issuecomment-6491226135",
           "published_at": "2026-10-29T07:58:38Z",
-          "updated_at": "2026-10-29T07:58:38Z",
+          "updated_at": "2026-10-29T23:22:48Z",
           "body_sha256": "ca348f8c322d09ab79465eade61250c4cadf8031d747911aa211fc51c737046d",
           "source_sha_prefix": "fec5b920eba8",
           "base_sha_prefix": "55d0dc37ec27",
@@ -2615,6 +2622,32 @@
           },
           "properties": 3,
           "refutations": []
+        },
+        {
+          "comment_id": 6510867527,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/35#issuecomment-6510867527",
+          "published_at": "2026-10-29T23:22:49Z",
+          "updated_at": "2026-10-29T23:22:49Z",
+          "body_sha256": "a32a80c5bcc233fa23ac6e99d99ff76d8c49b8223d449b45fd1e063939f15fa8",
+          "source_sha_prefix": "fec5b920eba8",
+          "base_sha_prefix": "55d0dc37ec27",
+          "run_id": 40835273267,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835273267",
+          "counts": {
+            "refuted": 1,
+            "verified": 0,
+            "resources exhausted": 0,
+            "type-check/audit failure": 2
+          },
+          "properties": 3,
+          "refutations": [
+            {
+              "property_id": "P3",
+              "property": "Encoding a clone produces exactly 17 bytes.",
+              "input": "`transaction.as_bytes() = []`; abstract state: whether self.transaction is Some = `true`; the stored bytes of transaction = `[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]`",
+              "sketch": "If transaction.as_bytes() is empty for a present 16-byte transaction ID, encode appends the clone marker but none of the transaction bytes, so the returned encoding has length 1 instead of 17."
+            }
+          ]
         }
       ],
       "report_matches_current_head": true,
@@ -2622,8 +2655,8 @@
       "latest_run": {
         "id": 40835273267,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835273267",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       },
       "source_number": 874,
@@ -2644,7 +2677,7 @@
       "latest_run": {
         "id": 40835290323,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835290323",
-        "status": "queued",
+        "status": "in_progress",
         "conclusion": null,
         "attempt": 2
       },
@@ -2704,7 +2737,7 @@
       "latest_run": {
         "id": 40835305967,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835305967",
-        "status": "queued",
+        "status": "in_progress",
         "conclusion": null,
         "attempt": 2
       },
