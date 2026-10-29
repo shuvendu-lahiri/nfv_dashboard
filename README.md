@@ -15,7 +15,7 @@ under their stated assumptions; failure to refute is not evidence of correctness
 
 Latest published reports supply the counts. Earlier reports remain in each
 repository's `data.json`. Failed or missing publication is shown explicitly, not
-as a successful zero-finding analysis. NVX retains its selected 20-PR campaign
+as a successful zero-finding analysis. NVX retains its recorded campaign cohorts
 and source-change links; Z3 and LiteBox include all non-skipped reviewer attempts.
 
 ## Refresh

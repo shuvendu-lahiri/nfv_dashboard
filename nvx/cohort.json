@@ -1,9 +1,18 @@
 {
   "repository": "shuvendu-lahiri/nvx",
   "source_repository": "microsoft/nvx",
-  "author": "ppenna",
-  "selection_policy": "Twenty most recently merged supported-source PRs by the selected author, excluding GitHub/workflow changes; exact full diffs retained",
+  "selection_policy": "Original twenty-PR cohort plus subsequent immutable-source NFV campaigns; retain attempted replays with captured upstream source metadata",
   "prs": [
+    {
+      "number": 1,
+      "source_number": 747,
+      "source_title": "nvx-rs: encode the NVXS roles' DATA and CREDIT with one function",
+      "source_head_sha": "8beb6e266b89b68f51b0b8f079745800b26d4855",
+      "source_base_sha": "2817f4eb79911ef8380dc2b580b9d5c77e6b5b21",
+      "source_merged_at": "2026-10-22T10:43:26Z",
+      "replay_head_sha": "487c340542147e201d9870ad8f499c4874e80c63",
+      "source_url": "https://redirect.github.com/microsoft/nvx/pull/747"
+    },
     {
       "number": 2,
       "source_number": 758,
@@ -33,16 +42,6 @@
       "source_merged_at": "2026-10-22T13:38:21Z",
       "replay_head_sha": "256b3e4f698aff1d363561b092535092ca6b53bb",
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/750"
-    },
-    {
-      "number": 1,
-      "source_number": 747,
-      "source_title": "nvx-rs: encode the NVXS roles' DATA and CREDIT with one function",
-      "source_head_sha": "8beb6e266b89b68f51b0b8f079745800b26d4855",
-      "source_base_sha": "2817f4eb79911ef8380dc2b580b9d5c77e6b5b21",
-      "source_merged_at": "2026-10-22T10:43:26Z",
-      "replay_head_sha": "487c340542147e201d9870ad8f499c4874e80c63",
-      "source_url": "https://redirect.github.com/microsoft/nvx/pull/747"
     },
     {
       "number": 5,
@@ -203,6 +202,307 @@
       "source_merged_at": "2026-10-20T22:10:48Z",
       "replay_head_sha": "5e46844aaa747e7630be141dd1c478cfbb5a9d4b",
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/657"
+    },
+    {
+      "number": 21,
+      "source_number": 937,
+      "source_title": "nvx-rs: give a clone's failures documented statuses",
+      "source_head_sha": "3d8aed5db3c3c905f69e3734a3d8af3f2a18ea60",
+      "source_base_sha": "499fc744c36a1c1e7c624248713fe47675ab2c11",
+      "source_merged_at": null,
+      "replay_head_sha": "22be9b77b79b3cb1bd93fa3126ebc9634545172f",
+      "source_url": "https://redirect.github.com/microsoft/nvx/pull/937"
+    },
+    {
+      "number": 22,
+      "source_number": 936,
+      "source_title": "nvx-rs: repair a clone's restore in the guest",
+      "source_head_sha": "499fc744c36a1c1e7c624248713fe47675ab2c11",
+      "source_base_sha": "e9a0339a5b70a07fe98764ab5d2290321d5aa8c6",
+      "source_merged_at": null,
+      "replay_head_sha": "0016c06edd714a308ebe695e69b27d059d910a23",
+      "source_url": "https://redirect.github.com/microsoft/nvx/pull/936"
+    },
+    {
+      "number": 23,
+      "source_number": 935,
+      "source_title": "openvmm: pin amd.genoa.v2 for Genoa hosts without the TSA immunities",
+      "source_head_sha": "a5385715a821e69ac6b1251926ee30774f5ab3ba",
+      "source_base_sha": "612d2ff310e21219195155612a772f550355bf48",
+      "source_merged_at": null,
+      "replay_head_sha": "493cd9cfc8aab405bf1abf26a9e67edcaf464449",
+      "source_url": "https://redirect.github.com/microsoft/nvx/pull/935"
+    },
+    {
+      "number": 24,
+      "source_number": 916,
+      "source_title": "nvx-rs: finish the --memory-mib checks of sandbox provision and start",
+      "source_head_sha": "58e87ff26b6038987d0181ea932c048cb9d1f51e",
+      "source_base_sha": "18c73d23a51e4f36ca610f2c862b06b18de6fffe",
+      "source_merged_at": "2026-10-27T02:35:43Z",
+      "replay_head_sha": "6b33c912032453f6c7a9b1739352d9a3487c8a99",
+      "source_url": "https://redirect.github.com/microsoft/nvx/pull/916"
+    },
+    {
+      "number": 25,
+      "source_number": 908,
+      "source_title": "sandbox: reserve the double quote in live share targets",
+      "source_head_sha": "049565ccedb2c752bc8f41bb373cf2f69f8059a1",
+      "source_base_sha": "8709dc8c56278057209d58c41197bcd3821f30e2",
+      "source_merged_at": "2026-10-26T21:09:06Z",
+      "replay_head_sha": "f1d39d6fc9cc203a733a8ee05d2dc15a45b7d63c",
+      "source_url": "https://redirect.github.com/microsoft/nvx/pull/908"
+    },
+    {
+      "number": 26,
+      "source_number": 900,
+      "source_title": "nvx-rs: fail a provision at once for a lock file that Windows refuses for good",
+      "source_head_sha": "4aa1c2666f9b4b16022a70beed324eef3b8c8150",
+      "source_base_sha": "1ff24c52991a38a29851426bc4411aab9a596322",
+      "source_merged_at": "2026-10-25T15:37:54Z",
+      "replay_head_sha": "4d6279618b03ea2616cef877483f9d2f86841d3f",
+      "source_url": "https://redirect.github.com/microsoft/nvx/pull/900"
+    },
+    {
+      "number": 27,
+      "source_number": 894,
+      "source_title": "nvx-rs: read a process's stat line as bytes on Linux",
+      "source_head_sha": "eca76ea94e0cf478bac6d435dd2d2ca7e9771127",
+      "source_base_sha": "650e7cfdac9c508fe5127693eaac0daeeff15205",
+      "source_merged_at": "2026-10-25T14:18:59Z",
+      "replay_head_sha": "15abc9b17a795059c110c61836997ff47ec65930",
+      "source_url": "https://redirect.github.com/microsoft/nvx/pull/894"
+    },
+    {
+      "number": 28,
+      "source_number": 893,
+      "source_title": "nvx-rs: conservatively mark output without a terminal outcome",
+      "source_head_sha": "1c1ac2a2520e1cb05810f5cb7f6b788827838f17",
+      "source_base_sha": "17e449ff0e5dda7e7e68ba99bc67799371ee996d",
+      "source_merged_at": "2026-10-25T13:17:51Z",
+      "replay_head_sha": "ff1f0b80baa9358af60b4a88beff065230a48525",
+      "source_url": "https://redirect.github.com/microsoft/nvx/pull/893"
+    },
+    {
+      "number": 29,
+      "source_number": 886,
+      "source_title": "nvx-rs: reserve the launch of a leased clone, and document the lock order",
+      "source_head_sha": "7c97c9c06a1e341ae222ec964331e82531115fa6",
+      "source_base_sha": "3fbaf8aeb78a0b8d610285461bb2f03a87e5e062",
+      "source_merged_at": "2026-10-27T19:41:51Z",
+      "replay_head_sha": "320a6973ecfda4dca1b2cc7279303edf7cc52f43",
+      "source_url": "https://redirect.github.com/microsoft/nvx/pull/886"
+    },
+    {
+      "number": 30,
+      "source_number": 885,
+      "source_title": "nvx-rs: lease eligible templates to clones, and retire them",
+      "source_head_sha": "3fbaf8aeb78a0b8d610285461bb2f03a87e5e062",
+      "source_base_sha": "5e751ca3fced46274c3555b327ed583d21dbdce0",
+      "source_merged_at": "2026-10-27T19:06:43Z",
+      "replay_head_sha": "f95cfe14e1b0b08d074e7607516346abecdbc211",
+      "source_url": "https://redirect.github.com/microsoft/nvx/pull/885"
+    },
+    {
+      "number": 31,
+      "source_number": 881,
+      "source_title": "nvx-rs: add the template store",
+      "source_head_sha": "5e751ca3fced46274c3555b327ed583d21dbdce0",
+      "source_base_sha": "675190a308e2cde0485e83f1f397f6f15a79ae06",
+      "source_merged_at": "2026-10-27T18:11:54Z",
+      "replay_head_sha": "03ee8e261a3e7901ceebeb794b3ae9fb23f06f07",
+      "source_url": "https://redirect.github.com/microsoft/nvx/pull/881"
+    },
+    {
+      "number": 32,
+      "source_number": 880,
+      "source_title": "nvx-rs: return a restore's seed in memory and zero it on drop",
+      "source_head_sha": "9b6f035790f5a08e936db971b7d9df2990013669",
+      "source_base_sha": "e0214759ec55954565d21a5050dea20057963362",
+      "source_merged_at": "2026-10-28T03:50:39Z",
+      "replay_head_sha": "be7ef0f2ed09930a0d14f333ba7fd014f88d6f26",
+      "source_url": "https://redirect.github.com/microsoft/nvx/pull/880"
+    },
+    {
+      "number": 33,
+      "source_number": 877,
+      "source_title": "nvx-rs: prepare a template's guest for a capture before root assembly",
+      "source_head_sha": "060eefc2d3ccaca66aa5ab8429898cf96eb9750a",
+      "source_base_sha": "7c97c9c06a1e341ae222ec964331e82531115fa6",
+      "source_merged_at": "2026-10-27T19:44:32Z",
+      "replay_head_sha": "7033f1ca12c7fcd636ef8206b873a8bec0986079",
+      "source_url": "https://redirect.github.com/microsoft/nvx/pull/877"
+    },
+    {
+      "number": 34,
+      "source_number": 876,
+      "source_title": "nvx-rs: bind a resolver file into entries, and return removable runtime binds",
+      "source_head_sha": "f3e0317c24773d0f2e9806ebe19f73822b258d10",
+      "source_base_sha": "d70c0ba33374052617f9cffcf6b32d6f63eca966",
+      "source_merged_at": "2026-10-27T13:03:01Z",
+      "replay_head_sha": "04c3c22ab8242ce7ec4e087fae3f1e855356fb83",
+      "source_url": "https://redirect.github.com/microsoft/nvx/pull/876"
+    },
+    {
+      "number": 35,
+      "source_number": 874,
+      "source_title": "nvx-rs: encode what Ready reports about an activation, with conformance vectors",
+      "source_head_sha": "f341f0903c1b5d8033bd4ca124753222cf5df3a2",
+      "source_base_sha": "e257f718fd1715231450070fe96e102d5d2384b2",
+      "source_merged_at": "2026-10-27T15:28:14Z",
+      "replay_head_sha": "fec5b920eba885d67020b5b76f3c8c4e9b67d093",
+      "source_url": "https://redirect.github.com/microsoft/nvx/pull/874"
+    },
+    {
+      "number": 36,
+      "source_number": 873,
+      "source_title": "nvx-rs: encode activation records canonically",
+      "source_head_sha": "c177b95758f8c130ddc11ff977ae52a7fe943f61",
+      "source_base_sha": "91aa8852ba9e4164fac2dfbfdd82bf9086190796",
+      "source_merged_at": "2026-10-27T14:28:17Z",
+      "replay_head_sha": "07eb99c40c1baad5198bf4b5320b3d4932d93725",
+      "source_url": "https://redirect.github.com/microsoft/nvx/pull/873"
+    },
+    {
+      "number": 37,
+      "source_number": 871,
+      "source_title": "nvx-rs: define the activation record of a layered root and its limits",
+      "source_head_sha": "0e11a6597e89aeb5356415771f9c6e03aa034a06",
+      "source_base_sha": "ad4d2e0d32759c7683e41857410ea96621a93ba9",
+      "source_merged_at": "2026-10-27T13:47:49Z",
+      "replay_head_sha": "fac490853e287639e663cccdc106810b06f3306e",
+      "source_url": "https://redirect.github.com/microsoft/nvx/pull/871"
+    },
+    {
+      "number": 38,
+      "source_number": 864,
+      "source_title": "nvx-rs: mount the host export as a source of a root's mappings",
+      "source_head_sha": "b68497613398f4984fe9c86f2f7d1a32840f3177",
+      "source_base_sha": "8c678005cef08486f250812ecfc3ae9a82de6c84",
+      "source_merged_at": "2026-10-25T16:01:48Z",
+      "replay_head_sha": "40041b5930cf74ac38e63f21947c0cbcb616510b",
+      "source_url": "https://redirect.github.com/microsoft/nvx/pull/864"
+    },
+    {
+      "number": 39,
+      "source_number": 831,
+      "source_title": "nvx-rs: let an execution drive a program that its caller started",
+      "source_head_sha": "d00841e174c5b6c6a1a3051baccb25e522f5e4ae",
+      "source_base_sha": "ffb03cdea271dc2f49e19f2af842a9240a5327ee",
+      "source_merged_at": "2026-10-24T00:50:03Z",
+      "replay_head_sha": "acdd71a03e003953a95c20fc3505b1707207d873",
+      "source_url": "https://redirect.github.com/microsoft/nvx/pull/831"
+    },
+    {
+      "number": 40,
+      "source_number": 830,
+      "source_title": "nvx-rs: retire the golden CLI scenarios",
+      "source_head_sha": "7b0feefc1bed24e8c276611117e16e16ae4a96bd",
+      "source_base_sha": "ae0ceb4380160229a6757123be95465bb2bf1d8c",
+      "source_merged_at": "2026-10-25T11:02:44Z",
+      "replay_head_sha": "208e496313312ab798ea36eb58e49043f135c94e",
+      "source_url": "https://redirect.github.com/microsoft/nvx/pull/830"
+    },
+    {
+      "number": 41,
+      "source_number": 829,
+      "source_title": "sandbox: refuse the (uid_t)-1 sentinel in --workload-user",
+      "source_head_sha": "71aef6dd762a582bbcdde096a1a38300be373ea8",
+      "source_base_sha": "2546c3d0df90009aeacef1de53e8cdcb9e93cc1c",
+      "source_merged_at": "2026-10-26T16:29:15Z",
+      "replay_head_sha": "3f91c640597f9357b27d36cf2ba318159abe61ed",
+      "source_url": "https://redirect.github.com/microsoft/nvx/pull/829"
+    },
+    {
+      "number": 42,
+      "source_number": 828,
+      "source_title": "nvx-rs: retire the egress policy fixture and read policies as strict JSON",
+      "source_head_sha": "8d08b871f7fd27471b732ebee84ab0eecab3ae55",
+      "source_base_sha": "4f02399485a65747aec09bc2030b713a68a1c613",
+      "source_merged_at": "2026-10-25T02:14:11Z",
+      "replay_head_sha": "87110c77645a9934894b76b5f10442cd8cdeeb59",
+      "source_url": "https://redirect.github.com/microsoft/nvx/pull/828"
+    },
+    {
+      "number": 43,
+      "source_number": 827,
+      "source_title": "nvx-rs: split the credit module into one submodule per structure",
+      "source_head_sha": "004d3f8d1a299f562167731ade8d864fe1e780a3",
+      "source_base_sha": "8bd62b23c5e530b68d6a023abff265829425c848",
+      "source_merged_at": "2026-10-25T11:28:14Z",
+      "replay_head_sha": "efe2653c47db0d2e42d34bfaaf5136f932f42ca1",
+      "source_url": "https://redirect.github.com/microsoft/nvx/pull/827"
+    },
+    {
+      "number": 44,
+      "source_number": 824,
+      "source_title": "nvx-rs: check egress policies against a reference model and property tests",
+      "source_head_sha": "ed3d733e99c24bcf245277e9367f9f9ecc3d5403",
+      "source_base_sha": "4f02399485a65747aec09bc2030b713a68a1c613",
+      "source_merged_at": "2026-10-24T17:01:47Z",
+      "replay_head_sha": "078e9477314c3785a4cdbcd820c0ed03e44a9ac5",
+      "source_url": "https://redirect.github.com/microsoft/nvx/pull/824"
+    },
+    {
+      "number": 45,
+      "source_number": 823,
+      "source_title": "Specify sandbox launch and option contracts before fixture retirement",
+      "source_head_sha": "878ac04990f75f6433cdee8f4d1f9fda50e46483",
+      "source_base_sha": "f8a2f60791339b39267af01ee64cfe4faaa861a5",
+      "source_merged_at": "2026-10-24T16:21:07Z",
+      "replay_head_sha": "18260b6aa4e81f4ce2decaa10613af1a04393f12",
+      "source_url": "https://redirect.github.com/microsoft/nvx/pull/823"
+    },
+    {
+      "number": 46,
+      "source_number": 815,
+      "source_title": "nvx-rs: sleep a Linux wait's last millisecond instead of polling a whole one",
+      "source_head_sha": "8c3d63e5fc12fe0208126b930fa992df43a70f48",
+      "source_base_sha": "c5a0dd76ce4d26d1858f372f77ae2eec2440d408",
+      "source_merged_at": "2026-10-23T20:35:54Z",
+      "replay_head_sha": "2a613c6956b5f0465178d80b881e0310f0cb7928",
+      "source_url": "https://redirect.github.com/microsoft/nvx/pull/815"
+    },
+    {
+      "number": 47,
+      "source_number": 814,
+      "source_title": "nvx-rs: reset an entered program's signals and let a command search PATH",
+      "source_head_sha": "8bea7f7194e35ad8743eaf2e424c53bda2fe5757",
+      "source_base_sha": "af013efcdd76cd3c36e8bd6abf3f8a9583073164",
+      "source_merged_at": "2026-10-23T20:41:08Z",
+      "replay_head_sha": "43f03f2be1ddf77b7bf65896d2cb21e712f90fae",
+      "source_url": "https://redirect.github.com/microsoft/nvx/pull/814"
+    },
+    {
+      "number": 48,
+      "source_number": 813,
+      "source_title": "sandbox: bind GPT disks, plan adapter launches, and stage registered images",
+      "source_head_sha": "dca61fcd53f6b47288417de4d0214435a4871fec",
+      "source_base_sha": "a83bb88e5b72bf80acddbaeb6c52a4719cb979ce",
+      "source_merged_at": "2026-10-23T18:36:24Z",
+      "replay_head_sha": "5526beb0d94e09288d37c6606073717811368c0e",
+      "source_url": "https://redirect.github.com/microsoft/nvx/pull/813"
+    },
+    {
+      "number": 49,
+      "source_number": 807,
+      "source_title": "nvx-rs: skip journal loading for GPT lower layers",
+      "source_head_sha": "8c0db85f004f61cd036830e975fa4c7463afeba6",
+      "source_base_sha": "5b8040fb15e43b7539d3808a7535b1be07b6e267",
+      "source_merged_at": "2026-10-23T15:58:16Z",
+      "replay_head_sha": "9830eb7dad10ceac082a5596a0b3052bf266dd02",
+      "source_url": "https://redirect.github.com/microsoft/nvx/pull/807"
+    },
+    {
+      "number": 50,
+      "source_number": 801,
+      "source_title": "openvmm: let platform snapshots activate vCPUs at restore",
+      "source_head_sha": "42bfb8e13d63b4e04b15bb67b98f0044b3dd9259",
+      "source_base_sha": "f4494453f33007401eeb29b25bd361d883f622ed",
+      "source_merged_at": "2026-10-25T13:20:09Z",
+      "replay_head_sha": "7c3af85c2880202193102e6ec19d15cf68d32eac",
+      "source_url": "https://redirect.github.com/microsoft/nvx/pull/801"
     }
-  ]
+  ],
+  "initial_cohort_author": "ppenna"
 }
