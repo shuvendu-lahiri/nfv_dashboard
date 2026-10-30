@@ -1,22 +1,22 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/litebox",
-  "generated_at": "2026-10-30T22:05:18.670734+00:00",
+  "generated_at": "2026-10-30T22:27:24.916902+00:00",
   "name": "litebox",
   "label": "LiteBox",
   "summary": {
     "selected_prs": 54,
     "attempted_prs": 54,
-    "published_reports": 46,
+    "published_reports": 49,
     "workflow_attempts": 115,
-    "without_report": 8,
+    "without_report": 5,
     "refuted_prs": 11,
-    "properties": 348,
+    "properties": 378,
     "outcomes": {
       "refuted": 14,
-      "verified": 231,
-      "resources exhausted": 51,
-      "type-check/audit failure": 52
+      "verified": 255,
+      "resources exhausted": 53,
+      "type-check/audit failure": 56
     }
   },
   "prs": [
@@ -3669,15 +3669,53 @@
       "state": "open",
       "head_sha": "ffcc4952d6e3bf872d4bf9d51da70f949348c580",
       "head_branch": "nfv-campaign-901851d8-1762-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6534695800,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/49#issuecomment-6534695800",
+        "published_at": "2026-10-30T22:19:03Z",
+        "updated_at": "2026-10-30T22:19:03Z",
+        "body_sha256": "6a881a0d0f04aafdd3e146b915443b9ccdf8fcb0288fc32e81bbe847cfad5b6a",
+        "source_sha_prefix": "ffcc4952d6e3",
+        "base_sha_prefix": "3d0e08eda50f",
+        "run_id": 41130444869,
+        "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130444869",
+        "counts": {
+          "refuted": 0,
+          "verified": 7,
+          "resources exhausted": 1,
+          "type-check/audit failure": 2
+        },
+        "properties": 10,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6534695800,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/49#issuecomment-6534695800",
+          "published_at": "2026-10-30T22:19:03Z",
+          "updated_at": "2026-10-30T22:19:03Z",
+          "body_sha256": "6a881a0d0f04aafdd3e146b915443b9ccdf8fcb0288fc32e81bbe847cfad5b6a",
+          "source_sha_prefix": "ffcc4952d6e3",
+          "base_sha_prefix": "3d0e08eda50f",
+          "run_id": 41130444869,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130444869",
+          "counts": {
+            "refuted": 0,
+            "verified": 7,
+            "resources exhausted": 1,
+            "type-check/audit failure": 2
+          },
+          "properties": 10,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 1,
       "latest_run": {
         "id": 41130444869,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130444869",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 1
       }
     },
@@ -3764,15 +3802,53 @@
       "state": "open",
       "head_sha": "b1564fc19370fb3e83f8aeac5cde3b23febde429",
       "head_branch": "nfv-campaign-901851d8-1757-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6534676983,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/52#issuecomment-6534676983",
+        "published_at": "2026-10-30T22:17:46Z",
+        "updated_at": "2026-10-30T22:17:46Z",
+        "body_sha256": "35757ae06c45826addb33bc55ce5c512259e022f1ba342798606d90de69f1dd3",
+        "source_sha_prefix": "b1564fc19370",
+        "base_sha_prefix": "8c2443c8e5d5",
+        "run_id": 41130499764,
+        "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130499764",
+        "counts": {
+          "refuted": 0,
+          "verified": 9,
+          "resources exhausted": 1,
+          "type-check/audit failure": 0
+        },
+        "properties": 10,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6534676983,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/52#issuecomment-6534676983",
+          "published_at": "2026-10-30T22:17:46Z",
+          "updated_at": "2026-10-30T22:17:46Z",
+          "body_sha256": "35757ae06c45826addb33bc55ce5c512259e022f1ba342798606d90de69f1dd3",
+          "source_sha_prefix": "b1564fc19370",
+          "base_sha_prefix": "8c2443c8e5d5",
+          "run_id": 41130499764,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130499764",
+          "counts": {
+            "refuted": 0,
+            "verified": 9,
+            "resources exhausted": 1,
+            "type-check/audit failure": 0
+          },
+          "properties": 10,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 1,
       "latest_run": {
         "id": 41130499764,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130499764",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 1
       }
     },
@@ -3783,15 +3859,53 @@
       "state": "open",
       "head_sha": "9d85e8763361d1f0a60ca331f567ea6e768f2f4b",
       "head_branch": "nfv-campaign-901851d8-1753-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6534731140,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/53#issuecomment-6534731140",
+        "published_at": "2026-10-30T22:21:31Z",
+        "updated_at": "2026-10-30T22:21:31Z",
+        "body_sha256": "f36e83dd57b054df06aaf67a6a6a93e2d2771193f8f4ec4c3f3ee5caa0060ac2",
+        "source_sha_prefix": "9d85e8763361",
+        "base_sha_prefix": "ac7a3f7a76a7",
+        "run_id": 41130517106,
+        "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130517106",
+        "counts": {
+          "refuted": 0,
+          "verified": 8,
+          "resources exhausted": 0,
+          "type-check/audit failure": 2
+        },
+        "properties": 10,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6534731140,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/53#issuecomment-6534731140",
+          "published_at": "2026-10-30T22:21:31Z",
+          "updated_at": "2026-10-30T22:21:31Z",
+          "body_sha256": "f36e83dd57b054df06aaf67a6a6a93e2d2771193f8f4ec4c3f3ee5caa0060ac2",
+          "source_sha_prefix": "9d85e8763361",
+          "base_sha_prefix": "ac7a3f7a76a7",
+          "run_id": 41130517106,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130517106",
+          "counts": {
+            "refuted": 0,
+            "verified": 8,
+            "resources exhausted": 0,
+            "type-check/audit failure": 2
+          },
+          "properties": 10,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 1,
       "latest_run": {
         "id": 41130517106,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130517106",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 1
       }
     },

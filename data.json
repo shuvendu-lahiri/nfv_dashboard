@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "generated_at": "2026-10-30T22:05:18.670734+00:00",
+  "generated_at": "2026-10-30T22:27:24.916902+00:00",
   "summary": {
     "attempted_prs": 145,
-    "published_reports": 131,
+    "published_reports": 134,
     "workflow_attempts": 356,
-    "without_report": 14,
+    "without_report": 11,
     "refuted_prs": 26,
-    "properties": 795,
+    "properties": 825,
     "outcomes": {
       "refuted": 33,
-      "verified": 522,
-      "resources exhausted": 103,
-      "type-check/audit failure": 137
+      "verified": 546,
+      "resources exhausted": 105,
+      "type-check/audit failure": 141
     }
   },
   "repositories": [
@@ -41,20 +41,20 @@
       "name": "litebox",
       "label": "LiteBox",
       "repository": "shuvendu-lahiri/litebox",
-      "generated_at": "2026-10-30T22:05:18.670734+00:00",
+      "generated_at": "2026-10-30T22:27:24.916902+00:00",
       "summary": {
         "selected_prs": 54,
         "attempted_prs": 54,
-        "published_reports": 46,
+        "published_reports": 49,
         "workflow_attempts": 115,
-        "without_report": 8,
+        "without_report": 5,
         "refuted_prs": 11,
-        "properties": 348,
+        "properties": 378,
         "outcomes": {
           "refuted": 14,
-          "verified": 231,
-          "resources exhausted": 51,
-          "type-check/audit failure": 52
+          "verified": 255,
+          "resources exhausted": 53,
+          "type-check/audit failure": 56
         }
       }
     },
