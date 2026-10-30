@@ -1,22 +1,22 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/nvx",
-  "generated_at": "2026-10-30T00:08:09.479317+00:00",
+  "generated_at": "2026-10-30T00:39:52.619150+00:00",
   "name": "nvx",
   "label": "NVX",
   "summary": {
     "selected_prs": 50,
     "attempted_prs": 50,
-    "published_reports": 37,
+    "published_reports": 39,
     "workflow_attempts": 104,
-    "without_report": 13,
+    "without_report": 11,
     "refuted_prs": 8,
-    "properties": 232,
+    "properties": 238,
     "outcomes": {
       "refuted": 9,
-      "verified": 167,
-      "resources exhausted": 14,
-      "type-check/audit failure": 42
+      "verified": 168,
+      "resources exhausted": 17,
+      "type-check/audit failure": 44
     }
   },
   "prs": [
@@ -3138,15 +3138,53 @@
       "state": "open",
       "head_sha": "3f91c640597f9357b27d36cf2ba318159abe61ed",
       "head_branch": "nfv-campaign-901851d8-829-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6511868068,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/41#issuecomment-6511868068",
+        "published_at": "2026-10-30T00:30:15Z",
+        "updated_at": "2026-10-30T00:30:15Z",
+        "body_sha256": "5b0f713132448ffadac24b89ae7049dfbd5c2c8620f91cea987cc46cd07e1b93",
+        "source_sha_prefix": "3f91c640597f",
+        "base_sha_prefix": "f2e3334e8cb8",
+        "run_id": 40954969307,
+        "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40954969307",
+        "counts": {
+          "refuted": 0,
+          "verified": 0,
+          "resources exhausted": 0,
+          "type-check/audit failure": 2
+        },
+        "properties": 2,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6511868068,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/41#issuecomment-6511868068",
+          "published_at": "2026-10-30T00:30:15Z",
+          "updated_at": "2026-10-30T00:30:15Z",
+          "body_sha256": "5b0f713132448ffadac24b89ae7049dfbd5c2c8620f91cea987cc46cd07e1b93",
+          "source_sha_prefix": "3f91c640597f",
+          "base_sha_prefix": "f2e3334e8cb8",
+          "run_id": 40954969307,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40954969307",
+          "counts": {
+            "refuted": 0,
+            "verified": 0,
+            "resources exhausted": 0,
+            "type-check/audit failure": 2
+          },
+          "properties": 2,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 2,
       "latest_run": {
         "id": 40954969307,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40954969307",
-        "status": "queued",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       },
       "source_number": 829,
@@ -3167,8 +3205,8 @@
       "latest_run": {
         "id": 40954992358,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40954992358",
-        "status": "queued",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "failure",
         "attempt": 2
       },
       "source_number": 828,
@@ -3189,7 +3227,7 @@
       "latest_run": {
         "id": 40955012283,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955012283",
-        "status": "queued",
+        "status": "in_progress",
         "conclusion": null,
         "attempt": 2
       },
@@ -3314,15 +3352,53 @@
       "state": "open",
       "head_sha": "9830eb7dad10ceac082a5596a0b3052bf266dd02",
       "head_branch": "nfv-campaign-901851d8-807-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6511934056,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/49#issuecomment-6511934056",
+        "published_at": "2026-10-30T00:34:32Z",
+        "updated_at": "2026-10-30T00:34:32Z",
+        "body_sha256": "44012763009f2cf342243f7891cba7467db73a76dc88184dac7ca75371452d05",
+        "source_sha_prefix": "9830eb7dad10",
+        "base_sha_prefix": "8c3856f1f044",
+        "run_id": 40955134520,
+        "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955134520",
+        "counts": {
+          "refuted": 0,
+          "verified": 1,
+          "resources exhausted": 3,
+          "type-check/audit failure": 0
+        },
+        "properties": 4,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6511934056,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/49#issuecomment-6511934056",
+          "published_at": "2026-10-30T00:34:32Z",
+          "updated_at": "2026-10-30T00:34:32Z",
+          "body_sha256": "44012763009f2cf342243f7891cba7467db73a76dc88184dac7ca75371452d05",
+          "source_sha_prefix": "9830eb7dad10",
+          "base_sha_prefix": "8c3856f1f044",
+          "run_id": 40955134520,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955134520",
+          "counts": {
+            "refuted": 0,
+            "verified": 1,
+            "resources exhausted": 3,
+            "type-check/audit failure": 0
+          },
+          "properties": 4,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 2,
       "latest_run": {
         "id": 40955134520,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955134520",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       },
       "source_number": 807,
@@ -3343,8 +3419,8 @@
       "latest_run": {
         "id": 40955154888,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955154888",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "failure",
         "attempt": 2
       },
       "source_number": 801,
