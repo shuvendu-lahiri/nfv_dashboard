@@ -1,22 +1,22 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/litebox",
-  "generated_at": "2026-10-26T17:54:10.540224+00:00",
+  "generated_at": "2026-10-30T22:05:18.670734+00:00",
   "name": "litebox",
   "label": "LiteBox",
   "summary": {
-    "selected_prs": 44,
-    "attempted_prs": 44,
-    "published_reports": 44,
-    "workflow_attempts": 105,
-    "without_report": 0,
+    "selected_prs": 54,
+    "attempted_prs": 54,
+    "published_reports": 46,
+    "workflow_attempts": 115,
+    "without_report": 8,
     "refuted_prs": 11,
-    "properties": 333,
+    "properties": 348,
     "outcomes": {
       "refuted": 14,
-      "verified": 220,
+      "verified": 231,
       "resources exhausted": 51,
-      "type-check/audit failure": 48
+      "type-check/audit failure": 52
     }
   },
   "prs": [
@@ -3603,6 +3603,272 @@
         "status": "completed",
         "conclusion": "success",
         "attempt": 4
+      }
+    },
+    {
+      "number": 48,
+      "title": "NFV audit - change 1763: Stacked runners: Wake console writers that found the device full",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/48",
+      "state": "open",
+      "head_sha": "c4b2e03f427298cfd85c68098e8e9a2945ec6bf2",
+      "head_branch": "nfv-campaign-901851d8-1763-head",
+      "latest_report": {
+        "comment_id": 6534296819,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/48#issuecomment-6534296819",
+        "published_at": "2026-10-30T21:53:26Z",
+        "updated_at": "2026-10-30T21:53:26Z",
+        "body_sha256": "5c48d1d79471d2dd36dba7be668998051a2edfda9c58796a3c64e9d9c71a7a5e",
+        "source_sha_prefix": "c4b2e03f4272",
+        "base_sha_prefix": "7e865d113f64",
+        "run_id": 41130426553,
+        "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130426553",
+        "counts": {
+          "refuted": 0,
+          "verified": 5,
+          "resources exhausted": 0,
+          "type-check/audit failure": 0
+        },
+        "properties": 5,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6534296819,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/48#issuecomment-6534296819",
+          "published_at": "2026-10-30T21:53:26Z",
+          "updated_at": "2026-10-30T21:53:26Z",
+          "body_sha256": "5c48d1d79471d2dd36dba7be668998051a2edfda9c58796a3c64e9d9c71a7a5e",
+          "source_sha_prefix": "c4b2e03f4272",
+          "base_sha_prefix": "7e865d113f64",
+          "run_id": 41130426553,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130426553",
+          "counts": {
+            "refuted": 0,
+            "verified": 5,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 5,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41130426553,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130426553",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      }
+    },
+    {
+      "number": 49,
+      "title": "NFV audit - change 1762: Add rename support",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/49",
+      "state": "open",
+      "head_sha": "ffcc4952d6e3bf872d4bf9d51da70f949348c580",
+      "head_branch": "nfv-campaign-901851d8-1762-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41130444869,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130444869",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 1
+      }
+    },
+    {
+      "number": 50,
+      "title": "NFV audit - change 1761: Resume interrupted futex waits, polls, and selects like Linux",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/50",
+      "state": "open",
+      "head_sha": "1bcd3a31ff96f8c747b945c805a37395749e11d4",
+      "head_branch": "nfv-campaign-901851d8-1761-head",
+      "latest_report": {
+        "comment_id": 6534426803,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/50#issuecomment-6534426803",
+        "published_at": "2026-10-30T22:01:24Z",
+        "updated_at": "2026-10-30T22:01:24Z",
+        "body_sha256": "b0e4fd98bba210821cdbf0e4800d5ba285b40b78ff7150722b5273dbaca8ee9e",
+        "source_sha_prefix": "1bcd3a31ff96",
+        "base_sha_prefix": "0ffd53eb6f6b",
+        "run_id": 41130462405,
+        "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130462405",
+        "counts": {
+          "refuted": 0,
+          "verified": 6,
+          "resources exhausted": 0,
+          "type-check/audit failure": 4
+        },
+        "properties": 10,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6534426803,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/50#issuecomment-6534426803",
+          "published_at": "2026-10-30T22:01:24Z",
+          "updated_at": "2026-10-30T22:01:24Z",
+          "body_sha256": "b0e4fd98bba210821cdbf0e4800d5ba285b40b78ff7150722b5273dbaca8ee9e",
+          "source_sha_prefix": "1bcd3a31ff96",
+          "base_sha_prefix": "0ffd53eb6f6b",
+          "run_id": 41130462405,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130462405",
+          "counts": {
+            "refuted": 0,
+            "verified": 6,
+            "resources exhausted": 0,
+            "type-check/audit failure": 4
+          },
+          "properties": 10,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41130462405,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130462405",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      }
+    },
+    {
+      "number": 51,
+      "title": "NFV audit - change 1760: Wait for runner helper threads to start before running the guest",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/51",
+      "state": "open",
+      "head_sha": "5f57ec50b80c7944ba2ab6c9205ad1fc40be26f6",
+      "head_branch": "nfv-campaign-901851d8-1760-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41130479576,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130479576",
+        "status": "completed",
+        "conclusion": "failure",
+        "attempt": 1
+      }
+    },
+    {
+      "number": 52,
+      "title": "NFV audit - change 1757: Deliver host objects from the broker to runners",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/52",
+      "state": "open",
+      "head_sha": "b1564fc19370fb3e83f8aeac5cde3b23febde429",
+      "head_branch": "nfv-campaign-901851d8-1757-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41130499764,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130499764",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 1
+      }
+    },
+    {
+      "number": 53,
+      "title": "NFV audit - change 1753: Stacked runners: Add virtio-vsock driver",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/53",
+      "state": "open",
+      "head_sha": "9d85e8763361d1f0a60ca331f567ea6e768f2f4b",
+      "head_branch": "nfv-campaign-901851d8-1753-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41130517106,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130517106",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 1
+      }
+    },
+    {
+      "number": 54,
+      "title": "NFV audit - change 1751: Support sched_getscheduler and sched_getparam",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/54",
+      "state": "open",
+      "head_sha": "fec5c36e95cb5463d177cda8d1961f0703112508",
+      "head_branch": "nfv-campaign-901851d8-1751-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41130532806,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130532806",
+        "status": "completed",
+        "conclusion": "failure",
+        "attempt": 1
+      }
+    },
+    {
+      "number": 55,
+      "title": "NFV audit - change 1750: Stacked runners: Take pending interrupts before retrying upcall",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/55",
+      "state": "open",
+      "head_sha": "2f837d01f76eeead48aead559a0ba9affb284ea1",
+      "head_branch": "nfv-campaign-901851d8-1750-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41130552868,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130552868",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 1
+      }
+    },
+    {
+      "number": 56,
+      "title": "NFV audit - change 1748: Do socket I/O directly on shared buffers",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/56",
+      "state": "open",
+      "head_sha": "aa47d78129fc51708b4589485a37772df13c4165",
+      "head_branch": "nfv-campaign-901851d8-1748-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41130574811,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130574811",
+        "status": "completed",
+        "conclusion": "failure",
+        "attempt": 1
+      }
+    },
+    {
+      "number": 57,
+      "title": "NFV audit - change 1747: Redirect jumps to unpatchable syscalls",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/57",
+      "state": "open",
+      "head_sha": "da0ae34fd4642f6ae34c58e5c9f6b412528cedfe",
+      "head_branch": "nfv-campaign-901851d8-1747-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41130589390,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130589390",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 1
       }
     }
   ]
