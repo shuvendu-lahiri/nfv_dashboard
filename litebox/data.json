@@ -1,22 +1,22 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/litebox",
-  "generated_at": "2026-10-30T22:27:24.916902+00:00",
+  "generated_at": "2026-10-30T22:51:29.808286+00:00",
   "name": "litebox",
   "label": "LiteBox",
   "summary": {
-    "selected_prs": 54,
-    "attempted_prs": 54,
-    "published_reports": 49,
-    "workflow_attempts": 115,
-    "without_report": 5,
+    "selected_prs": 64,
+    "attempted_prs": 64,
+    "published_reports": 51,
+    "workflow_attempts": 125,
+    "without_report": 13,
     "refuted_prs": 11,
-    "properties": 378,
+    "properties": 392,
     "outcomes": {
       "refuted": 14,
-      "verified": 255,
-      "resources exhausted": 53,
-      "type-check/audit failure": 56
+      "verified": 265,
+      "resources exhausted": 54,
+      "type-check/audit failure": 59
     }
   },
   "prs": [
@@ -3935,15 +3935,53 @@
       "state": "open",
       "head_sha": "2f837d01f76eeead48aead559a0ba9affb284ea1",
       "head_branch": "nfv-campaign-901851d8-1750-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6534848894,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/55#issuecomment-6534848894",
+        "published_at": "2026-10-30T22:29:15Z",
+        "updated_at": "2026-10-30T22:29:15Z",
+        "body_sha256": "ad7e1810d610b9819e7b5fc2b33590d2d4ad02292d3e33608c0a260084317b2d",
+        "source_sha_prefix": "2f837d01f76e",
+        "base_sha_prefix": "b5641b563cef",
+        "run_id": 41130552868,
+        "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130552868",
+        "counts": {
+          "refuted": 0,
+          "verified": 1,
+          "resources exhausted": 0,
+          "type-check/audit failure": 3
+        },
+        "properties": 4,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6534848894,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/55#issuecomment-6534848894",
+          "published_at": "2026-10-30T22:29:15Z",
+          "updated_at": "2026-10-30T22:29:15Z",
+          "body_sha256": "ad7e1810d610b9819e7b5fc2b33590d2d4ad02292d3e33608c0a260084317b2d",
+          "source_sha_prefix": "2f837d01f76e",
+          "base_sha_prefix": "b5641b563cef",
+          "run_id": 41130552868,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130552868",
+          "counts": {
+            "refuted": 0,
+            "verified": 1,
+            "resources exhausted": 0,
+            "type-check/audit failure": 3
+          },
+          "properties": 4,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 1,
       "latest_run": {
         "id": 41130552868,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130552868",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 1
       }
     },
@@ -3973,13 +4011,241 @@
       "state": "open",
       "head_sha": "da0ae34fd4642f6ae34c58e5c9f6b412528cedfe",
       "head_branch": "nfv-campaign-901851d8-1747-head",
+      "latest_report": {
+        "comment_id": 6534838741,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/57#issuecomment-6534838741",
+        "published_at": "2026-10-30T22:28:33Z",
+        "updated_at": "2026-10-30T22:28:33Z",
+        "body_sha256": "26525fd7274ae6270107f74949127ace1c08ddc7662a4863f0ad6f9ff5950a0c",
+        "source_sha_prefix": "da0ae34fd464",
+        "base_sha_prefix": "0c5af1019855",
+        "run_id": 41130589390,
+        "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130589390",
+        "counts": {
+          "refuted": 0,
+          "verified": 9,
+          "resources exhausted": 1,
+          "type-check/audit failure": 0
+        },
+        "properties": 10,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6534838741,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/57#issuecomment-6534838741",
+          "published_at": "2026-10-30T22:28:33Z",
+          "updated_at": "2026-10-30T22:28:33Z",
+          "body_sha256": "26525fd7274ae6270107f74949127ace1c08ddc7662a4863f0ad6f9ff5950a0c",
+          "source_sha_prefix": "da0ae34fd464",
+          "base_sha_prefix": "0c5af1019855",
+          "run_id": 41130589390,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130589390",
+          "counts": {
+            "refuted": 0,
+            "verified": 9,
+            "resources exhausted": 1,
+            "type-check/audit failure": 0
+          },
+          "properties": 10,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41130589390,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130589390",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      }
+    },
+    {
+      "number": 58,
+      "title": "NFV audit - change 1746: Resume interrupted relative sleeps through restart_syscall",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/58",
+      "state": "open",
+      "head_sha": "9632754b4c002a35798919d94517059d263001b2",
+      "head_branch": "nfv-campaign-901851d8-1746-head",
       "latest_report": null,
       "report_history": [],
       "report_matches_current_head": null,
       "attempts": 1,
       "latest_run": {
-        "id": 41130589390,
-        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130589390",
+        "id": 41140657618,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41140657618",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 1
+      }
+    },
+    {
+      "number": 59,
+      "title": "NFV audit - change 1745: Remove the unused copy-on-write file mapping path",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/59",
+      "state": "open",
+      "head_sha": "5fa4c8d6e74860f10627f93da03aea485425b99d",
+      "head_branch": "nfv-campaign-901851d8-1745-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41140668369,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41140668369",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 1
+      }
+    },
+    {
+      "number": 60,
+      "title": "NFV audit - change 1743: Add symlink creation support",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/60",
+      "state": "open",
+      "head_sha": "2320547b06f644fdbc5a44415d6d1d2b0086a61c",
+      "head_branch": "nfv-campaign-901851d8-1743-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41140681353,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41140681353",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 1
+      }
+    },
+    {
+      "number": 61,
+      "title": "NFV audit - change 1742: Name shared anonymous memory lazily",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/61",
+      "state": "open",
+      "head_sha": "d8f8fcb9f286f731d37da7d7cd87c1541e267656",
+      "head_branch": "nfv-campaign-901851d8-1742-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41140695554,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41140695554",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 1
+      }
+    },
+    {
+      "number": 62,
+      "title": "NFV audit - change 1740: Fix argv/envp order on initial stack",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/62",
+      "state": "open",
+      "head_sha": "14d2c60f32e8c9208d188806b131fe2802fc3b32",
+      "head_branch": "nfv-campaign-901851d8-1740-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41140710653,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41140710653",
+        "status": "queued",
+        "conclusion": null,
+        "attempt": 1
+      }
+    },
+    {
+      "number": 63,
+      "title": "NFV audit - change 1738: Fix the Linux sysinfo ABI layout",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/63",
+      "state": "open",
+      "head_sha": "b5fd4f92e492cae7bbe91bd4089069a514d50bae",
+      "head_branch": "nfv-campaign-901851d8-1738-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41140724678,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41140724678",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 1
+      }
+    },
+    {
+      "number": 64,
+      "title": "NFV audit - change 1737: Change TA verification to take a X.509 cert",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/64",
+      "state": "open",
+      "head_sha": "b88f75eb5a7924b90570bb412e37394381098bba",
+      "head_branch": "nfv-campaign-901851d8-1737-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41140738657,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41140738657",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 1
+      }
+    },
+    {
+      "number": 65,
+      "title": "NFV audit - change 1734: Support AF_UNIX SOCK_SEQPACKET sockets",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/65",
+      "state": "open",
+      "head_sha": "1cb575d6d14dddf5d3a52ab0492bc3769767dc6c",
+      "head_branch": "nfv-campaign-901851d8-1734-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41140753055,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41140753055",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 1
+      }
+    },
+    {
+      "number": 66,
+      "title": "NFV audit - change 1732: Preserve AArch64 code execute permission during cache synchronization",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/66",
+      "state": "open",
+      "head_sha": "ac63787c445d68c92f59104b191b22056ac54e7e",
+      "head_branch": "nfv-campaign-901851d8-1732-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41140765965,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41140765965",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 1
+      }
+    },
+    {
+      "number": 67,
+      "title": "NFV audit - change 1731: Stacked runners: Cap the CPU time charged per run at one slice",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/67",
+      "state": "open",
+      "head_sha": "3a403ad8acf6c6e24ee20a346f2e11c58aaf3d83",
+      "head_branch": "nfv-campaign-901851d8-1731-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41140780172,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41140780172",
         "status": "in_progress",
         "conclusion": null,
         "attempt": 1
