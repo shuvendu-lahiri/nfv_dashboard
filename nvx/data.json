@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/nvx",
-  "generated_at": "2026-10-30T01:44:17.105514+00:00",
+  "generated_at": "2026-10-30T02:16:37.458442+00:00",
   "name": "nvx",
   "label": "NVX",
   "summary": {
@@ -11,12 +11,12 @@
     "workflow_attempts": 114,
     "without_report": 5,
     "refuted_prs": 11,
-    "properties": 288,
+    "properties": 287,
     "outcomes": {
       "refuted": 14,
-      "verified": 200,
+      "verified": 201,
       "resources exhausted": 19,
-      "type-check/audit failure": 55
+      "type-check/audit failure": 53
     }
   },
   "prs": [
@@ -98,8 +98,8 @@
       "latest_run": {
         "id": 39888393336,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39888393336",
-        "status": "queued",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "failure",
         "attempt": 3
       },
       "source_number": 747,
@@ -114,11 +114,11 @@
       "head_sha": "6f0a3614664c2ce1156e8c74c3c156567fce5d51",
       "head_branch": "nfv-pedro-758",
       "latest_report": {
-        "comment_id": 6382400640,
-        "url": "https://github.com/shuvendu-lahiri/nvx/pull/2#issuecomment-6382400640",
-        "published_at": "2026-10-24T09:13:19Z",
-        "updated_at": "2026-10-24T09:13:19Z",
-        "body_sha256": "3000b1edcd1ef837e8459177dc4971bea3048de5b4fc84f92cbc10983bb8e17b",
+        "comment_id": 6513024485,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/2#issuecomment-6513024485",
+        "published_at": "2026-10-30T01:54:49Z",
+        "updated_at": "2026-10-30T01:54:49Z",
+        "body_sha256": "5ac55b324de19bb7852f9786c7ee4557f62b69441c4d53b946f220cd52a1d013",
         "source_sha_prefix": "6f0a3614664c",
         "base_sha_prefix": "92f9484e6899",
         "run_id": 39890408953,
@@ -156,8 +156,27 @@
           "comment_id": 6382400640,
           "url": "https://github.com/shuvendu-lahiri/nvx/pull/2#issuecomment-6382400640",
           "published_at": "2026-10-24T09:13:19Z",
-          "updated_at": "2026-10-24T09:13:19Z",
+          "updated_at": "2026-10-30T01:54:48Z",
           "body_sha256": "3000b1edcd1ef837e8459177dc4971bea3048de5b4fc84f92cbc10983bb8e17b",
+          "source_sha_prefix": "6f0a3614664c",
+          "base_sha_prefix": "92f9484e6899",
+          "run_id": 39890408953,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39890408953",
+          "counts": {
+            "refuted": 0,
+            "verified": 1,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 1,
+          "refutations": []
+        },
+        {
+          "comment_id": 6513024485,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/2#issuecomment-6513024485",
+          "published_at": "2026-10-30T01:54:49Z",
+          "updated_at": "2026-10-30T01:54:49Z",
+          "body_sha256": "5ac55b324de19bb7852f9786c7ee4557f62b69441c4d53b946f220cd52a1d013",
           "source_sha_prefix": "6f0a3614664c",
           "base_sha_prefix": "92f9484e6899",
           "run_id": 39890408953,
@@ -177,8 +196,8 @@
       "latest_run": {
         "id": 39890408953,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39890408953",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 3
       },
       "source_number": 758,
@@ -193,11 +212,11 @@
       "head_sha": "09cbaae595e8cce752086618d45501d2e59a0ffd",
       "head_branch": "nfv-pedro-755",
       "latest_report": {
-        "comment_id": 6382784741,
-        "url": "https://github.com/shuvendu-lahiri/nvx/pull/3#issuecomment-6382784741",
-        "published_at": "2026-10-24T09:54:33Z",
-        "updated_at": "2026-10-24T09:54:33Z",
-        "body_sha256": "0e957afafdba65bd9077c7e010806defe04df85af7b3165ddb4da0cf2e475f18",
+        "comment_id": 6513108632,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/3#issuecomment-6513108632",
+        "published_at": "2026-10-30T02:01:20Z",
+        "updated_at": "2026-10-30T02:01:20Z",
+        "body_sha256": "816311f06249c444d8d84d9a542ebdfa79d74e7d17139eb1c50ec1c799828adf",
         "source_sha_prefix": "09cbaae595e8",
         "base_sha_prefix": "4e247d1135eb",
         "run_id": 39890415139,
@@ -235,8 +254,27 @@
           "comment_id": 6382784741,
           "url": "https://github.com/shuvendu-lahiri/nvx/pull/3#issuecomment-6382784741",
           "published_at": "2026-10-24T09:54:33Z",
-          "updated_at": "2026-10-24T09:54:33Z",
+          "updated_at": "2026-10-30T02:01:18Z",
           "body_sha256": "0e957afafdba65bd9077c7e010806defe04df85af7b3165ddb4da0cf2e475f18",
+          "source_sha_prefix": "09cbaae595e8",
+          "base_sha_prefix": "4e247d1135eb",
+          "run_id": 39890415139,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39890415139",
+          "counts": {
+            "refuted": 0,
+            "verified": 1,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 1,
+          "refutations": []
+        },
+        {
+          "comment_id": 6513108632,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/3#issuecomment-6513108632",
+          "published_at": "2026-10-30T02:01:20Z",
+          "updated_at": "2026-10-30T02:01:20Z",
+          "body_sha256": "816311f06249c444d8d84d9a542ebdfa79d74e7d17139eb1c50ec1c799828adf",
           "source_sha_prefix": "09cbaae595e8",
           "base_sha_prefix": "4e247d1135eb",
           "run_id": 39890415139,
@@ -256,8 +294,8 @@
       "latest_run": {
         "id": 39890415139,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39890415139",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 3
       },
       "source_number": 755,
@@ -272,11 +310,11 @@
       "head_sha": "256b3e4f698aff1d363561b092535092ca6b53bb",
       "head_branch": "nfv-pedro-750",
       "latest_report": {
-        "comment_id": 6383210022,
-        "url": "https://github.com/shuvendu-lahiri/nvx/pull/4#issuecomment-6383210022",
-        "published_at": "2026-10-24T10:39:37Z",
-        "updated_at": "2026-10-24T10:39:37Z",
-        "body_sha256": "c1fc981fc6b03c4b50b20674dcccaa8bea9a7b6e6525cac065e9fb111d0595d3",
+        "comment_id": 6513130206,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/4#issuecomment-6513130206",
+        "published_at": "2026-10-30T02:02:59Z",
+        "updated_at": "2026-10-30T02:02:59Z",
+        "body_sha256": "a50705763e875a61047ef3283e7541b6d15d16061c39c6f8c2a14b77920a029b",
         "source_sha_prefix": "256b3e4f698a",
         "base_sha_prefix": "621724b44a38",
         "run_id": 39890421003,
@@ -285,9 +323,9 @@
           "refuted": 0,
           "verified": 1,
           "resources exhausted": 0,
-          "type-check/audit failure": 1
+          "type-check/audit failure": 0
         },
-        "properties": 2,
+        "properties": 1,
         "refutations": []
       },
       "report_history": [
@@ -314,7 +352,7 @@
           "comment_id": 6383210022,
           "url": "https://github.com/shuvendu-lahiri/nvx/pull/4#issuecomment-6383210022",
           "published_at": "2026-10-24T10:39:37Z",
-          "updated_at": "2026-10-24T10:39:37Z",
+          "updated_at": "2026-10-30T02:02:58Z",
           "body_sha256": "c1fc981fc6b03c4b50b20674dcccaa8bea9a7b6e6525cac065e9fb111d0595d3",
           "source_sha_prefix": "256b3e4f698a",
           "base_sha_prefix": "621724b44a38",
@@ -328,6 +366,25 @@
           },
           "properties": 2,
           "refutations": []
+        },
+        {
+          "comment_id": 6513130206,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/4#issuecomment-6513130206",
+          "published_at": "2026-10-30T02:02:59Z",
+          "updated_at": "2026-10-30T02:02:59Z",
+          "body_sha256": "a50705763e875a61047ef3283e7541b6d15d16061c39c6f8c2a14b77920a029b",
+          "source_sha_prefix": "256b3e4f698a",
+          "base_sha_prefix": "621724b44a38",
+          "run_id": 39890421003,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39890421003",
+          "counts": {
+            "refuted": 0,
+            "verified": 1,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 1,
+          "refutations": []
         }
       ],
       "report_matches_current_head": true,
@@ -335,8 +392,8 @@
       "latest_run": {
         "id": 39890421003,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39890421003",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 3
       },
       "source_number": 750,
@@ -351,11 +408,11 @@
       "head_sha": "1f88dd5b30b961cc6376bc39aaed32253e4e3e30",
       "head_branch": "nfv-pedro-742",
       "latest_report": {
-        "comment_id": 6388187830,
-        "url": "https://github.com/shuvendu-lahiri/nvx/pull/5#issuecomment-6388187830",
-        "published_at": "2026-10-24T18:53:13Z",
-        "updated_at": "2026-10-24T18:53:13Z",
-        "body_sha256": "a53ebcc4b14596682c50892061addfb35a07ca846359aa3d31623111cddef3cf",
+        "comment_id": 6513232485,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/5#issuecomment-6513232485",
+        "published_at": "2026-10-30T02:10:39Z",
+        "updated_at": "2026-10-30T02:10:39Z",
+        "body_sha256": "9f4cd301dc9281e3e97188101a65e66d66520b882b1cab8c9d55a7b0c0bad096",
         "source_sha_prefix": "1f88dd5b30b9",
         "base_sha_prefix": "f71302a2ea87",
         "run_id": 39890427567,
@@ -412,8 +469,27 @@
           "comment_id": 6388187830,
           "url": "https://github.com/shuvendu-lahiri/nvx/pull/5#issuecomment-6388187830",
           "published_at": "2026-10-24T18:53:13Z",
-          "updated_at": "2026-10-24T18:53:13Z",
+          "updated_at": "2026-10-30T02:10:38Z",
           "body_sha256": "a53ebcc4b14596682c50892061addfb35a07ca846359aa3d31623111cddef3cf",
+          "source_sha_prefix": "1f88dd5b30b9",
+          "base_sha_prefix": "f71302a2ea87",
+          "run_id": 39890427567,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39890427567",
+          "counts": {
+            "refuted": 0,
+            "verified": 4,
+            "resources exhausted": 0,
+            "type-check/audit failure": 1
+          },
+          "properties": 5,
+          "refutations": []
+        },
+        {
+          "comment_id": 6513232485,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/5#issuecomment-6513232485",
+          "published_at": "2026-10-30T02:10:39Z",
+          "updated_at": "2026-10-30T02:10:39Z",
+          "body_sha256": "9f4cd301dc9281e3e97188101a65e66d66520b882b1cab8c9d55a7b0c0bad096",
           "source_sha_prefix": "1f88dd5b30b9",
           "base_sha_prefix": "f71302a2ea87",
           "run_id": 39890427567,
@@ -433,8 +509,8 @@
       "latest_run": {
         "id": 39890427567,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39890427567",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 3
       },
       "source_number": 742,
@@ -528,20 +604,20 @@
       "head_sha": "63221745fa27d1e52d3d7fb8bd865534ee1c0a0f",
       "head_branch": "nfv-pedro-689",
       "latest_report": {
-        "comment_id": 6388189013,
-        "url": "https://github.com/shuvendu-lahiri/nvx/pull/7#issuecomment-6388189013",
-        "published_at": "2026-10-24T18:53:20Z",
-        "updated_at": "2026-10-24T18:53:20Z",
-        "body_sha256": "7a02aeb4a8bdda16d8b0e0f93a2ba9a4294732948b996f01f49174527df6e5df",
+        "comment_id": 6513286729,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/7#issuecomment-6513286729",
+        "published_at": "2026-10-30T02:14:38Z",
+        "updated_at": "2026-10-30T02:14:38Z",
+        "body_sha256": "9e822fc8a5dc37d099cf58dc1d83a4841bf50df9ca8f385d17735e98e10ad83d",
         "source_sha_prefix": "63221745fa27",
         "base_sha_prefix": "fa35136d4db5",
         "run_id": 39891744153,
         "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39891744153",
         "counts": {
           "refuted": 0,
-          "verified": 2,
+          "verified": 3,
           "resources exhausted": 0,
-          "type-check/audit failure": 1
+          "type-check/audit failure": 0
         },
         "properties": 3,
         "refutations": []
@@ -589,7 +665,7 @@
           "comment_id": 6388189013,
           "url": "https://github.com/shuvendu-lahiri/nvx/pull/7#issuecomment-6388189013",
           "published_at": "2026-10-24T18:53:20Z",
-          "updated_at": "2026-10-24T18:53:20Z",
+          "updated_at": "2026-10-30T02:14:37Z",
           "body_sha256": "7a02aeb4a8bdda16d8b0e0f93a2ba9a4294732948b996f01f49174527df6e5df",
           "source_sha_prefix": "63221745fa27",
           "base_sha_prefix": "fa35136d4db5",
@@ -603,6 +679,25 @@
           },
           "properties": 3,
           "refutations": []
+        },
+        {
+          "comment_id": 6513286729,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/7#issuecomment-6513286729",
+          "published_at": "2026-10-30T02:14:38Z",
+          "updated_at": "2026-10-30T02:14:38Z",
+          "body_sha256": "9e822fc8a5dc37d099cf58dc1d83a4841bf50df9ca8f385d17735e98e10ad83d",
+          "source_sha_prefix": "63221745fa27",
+          "base_sha_prefix": "fa35136d4db5",
+          "run_id": 39891744153,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39891744153",
+          "counts": {
+            "refuted": 0,
+            "verified": 3,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 3,
+          "refutations": []
         }
       ],
       "report_matches_current_head": true,
@@ -610,8 +705,8 @@
       "latest_run": {
         "id": 39891744153,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39891744153",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 3
       },
       "source_number": 689,
@@ -689,8 +784,8 @@
       "latest_run": {
         "id": 39892492366,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39892492366",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "failure",
         "attempt": 3
       },
       "source_number": 685,
@@ -705,11 +800,11 @@
       "head_sha": "551a6706e8131419da428634b76cc9e5525c3845",
       "head_branch": "nfv-pedro-684",
       "latest_report": {
-        "comment_id": 6383899877,
-        "url": "https://github.com/shuvendu-lahiri/nvx/pull/9#issuecomment-6383899877",
-        "published_at": "2026-10-24T11:55:52Z",
-        "updated_at": "2026-10-24T11:55:52Z",
-        "body_sha256": "e7693dd16943e7b6b119d07abebde4c453672bd6843abd3cc3f41d9b2b279ac5",
+        "comment_id": 6513306763,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/9#issuecomment-6513306763",
+        "published_at": "2026-10-30T02:16:06Z",
+        "updated_at": "2026-10-30T02:16:06Z",
+        "body_sha256": "94e62e31dda81c03a9c925ab813ff3c48d80d1a5b3ea40fb0384de0c51d9707a",
         "source_sha_prefix": "551a6706e813",
         "base_sha_prefix": "e02a8684c011",
         "run_id": 39892693600,
@@ -747,8 +842,27 @@
           "comment_id": 6383899877,
           "url": "https://github.com/shuvendu-lahiri/nvx/pull/9#issuecomment-6383899877",
           "published_at": "2026-10-24T11:55:52Z",
-          "updated_at": "2026-10-24T11:55:52Z",
+          "updated_at": "2026-10-30T02:16:05Z",
           "body_sha256": "e7693dd16943e7b6b119d07abebde4c453672bd6843abd3cc3f41d9b2b279ac5",
+          "source_sha_prefix": "551a6706e813",
+          "base_sha_prefix": "e02a8684c011",
+          "run_id": 39892693600,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39892693600",
+          "counts": {
+            "refuted": 0,
+            "verified": 1,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 1,
+          "refutations": []
+        },
+        {
+          "comment_id": 6513306763,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/9#issuecomment-6513306763",
+          "published_at": "2026-10-30T02:16:06Z",
+          "updated_at": "2026-10-30T02:16:06Z",
+          "body_sha256": "94e62e31dda81c03a9c925ab813ff3c48d80d1a5b3ea40fb0384de0c51d9707a",
           "source_sha_prefix": "551a6706e813",
           "base_sha_prefix": "e02a8684c011",
           "run_id": 39892693600,
