@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/nvx",
-  "generated_at": "2026-10-30T03:20:45.732268+00:00",
+  "generated_at": "2026-10-30T03:52:49.435121+00:00",
   "name": "nvx",
   "label": "NVX",
   "summary": {
@@ -11,12 +11,12 @@
     "workflow_attempts": 124,
     "without_report": 5,
     "refuted_prs": 10,
-    "properties": 285,
+    "properties": 287,
     "outcomes": {
       "refuted": 13,
-      "verified": 199,
-      "resources exhausted": 19,
-      "type-check/audit failure": 54
+      "verified": 201,
+      "resources exhausted": 18,
+      "type-check/audit failure": 55
     }
   },
   "prs": [
@@ -1225,23 +1225,30 @@
       "head_sha": "b7ee8752a2147beb18ba4f21335d749a383b173e",
       "head_branch": "nfv-pedro-681",
       "latest_report": {
-        "comment_id": 6384590061,
-        "url": "https://github.com/shuvendu-lahiri/nvx/pull/13#issuecomment-6384590061",
-        "published_at": "2026-10-24T13:07:45Z",
-        "updated_at": "2026-10-24T13:07:45Z",
-        "body_sha256": "cefbc89222221d7f334263b0a66e124841e77bc5c9d6505e0ae998d59da3adc1",
+        "comment_id": 6514438588,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/13#issuecomment-6514438588",
+        "published_at": "2026-10-30T03:44:47Z",
+        "updated_at": "2026-10-30T03:44:47Z",
+        "body_sha256": "dec745ec5eb3439c71bb88818bc7aac2c2499bc588c06677fc8e9d9bdda8dbd1",
         "source_sha_prefix": "b7ee8752a214",
         "base_sha_prefix": "ced1c6317da8",
         "run_id": 39893507724,
         "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39893507724",
         "counts": {
-          "refuted": 0,
-          "verified": 6,
+          "refuted": 1,
+          "verified": 5,
           "resources exhausted": 4,
           "type-check/audit failure": 0
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [
+          {
+            "property_id": "P2",
+            "property": "A positive selected measurement duration causes one measured-line write attempt.",
+            "input": "`DEFAULT_MEASURE_MS = 1`; abstract state: accepted clock option kinds = `[]`; accepted clock option values = `[]`; completion of the TSC-rate measurement call = `false`; completion of the diagnostic work before measurement = `true`",
+            "sketch": "If measure_ms is positive but measure_tsc_hz(Duration::from_millis(measure_ms)) does not return, the measurement call occurs but evaluation never reaches the attempted write of the tsc_hz_measured line."
+          }
+        ]
       },
       "report_history": [
         {
@@ -1280,7 +1287,7 @@
           "comment_id": 6384590061,
           "url": "https://github.com/shuvendu-lahiri/nvx/pull/13#issuecomment-6384590061",
           "published_at": "2026-10-24T13:07:45Z",
-          "updated_at": "2026-10-24T13:07:45Z",
+          "updated_at": "2026-10-30T03:44:46Z",
           "body_sha256": "cefbc89222221d7f334263b0a66e124841e77bc5c9d6505e0ae998d59da3adc1",
           "source_sha_prefix": "b7ee8752a214",
           "base_sha_prefix": "ced1c6317da8",
@@ -1294,6 +1301,32 @@
           },
           "properties": 10,
           "refutations": []
+        },
+        {
+          "comment_id": 6514438588,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/13#issuecomment-6514438588",
+          "published_at": "2026-10-30T03:44:47Z",
+          "updated_at": "2026-10-30T03:44:47Z",
+          "body_sha256": "dec745ec5eb3439c71bb88818bc7aac2c2499bc588c06677fc8e9d9bdda8dbd1",
+          "source_sha_prefix": "b7ee8752a214",
+          "base_sha_prefix": "ced1c6317da8",
+          "run_id": 39893507724,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39893507724",
+          "counts": {
+            "refuted": 1,
+            "verified": 5,
+            "resources exhausted": 4,
+            "type-check/audit failure": 0
+          },
+          "properties": 10,
+          "refutations": [
+            {
+              "property_id": "P2",
+              "property": "A positive selected measurement duration causes one measured-line write attempt.",
+              "input": "`DEFAULT_MEASURE_MS = 1`; abstract state: accepted clock option kinds = `[]`; accepted clock option values = `[]`; completion of the TSC-rate measurement call = `false`; completion of the diagnostic work before measurement = `true`",
+              "sketch": "If measure_ms is positive but measure_tsc_hz(Duration::from_millis(measure_ms)) does not return, the measurement call occurs but evaluation never reaches the attempted write of the tsc_hz_measured line."
+            }
+          ]
         }
       ],
       "report_matches_current_head": true,
@@ -1301,8 +1334,8 @@
       "latest_run": {
         "id": 39893507724,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39893507724",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 3
       },
       "source_number": 681,
@@ -1317,11 +1350,11 @@
       "head_sha": "9261ed1f31426f75123f35c68fada188fb047c67",
       "head_branch": "nfv-pedro-680",
       "latest_report": {
-        "comment_id": 6388192224,
-        "url": "https://github.com/shuvendu-lahiri/nvx/pull/14#issuecomment-6388192224",
-        "published_at": "2026-10-24T18:53:38Z",
-        "updated_at": "2026-10-24T18:53:38Z",
-        "body_sha256": "aefaed102f00925ab621cd61e523a70d42aed1945660b990d8dd42c5ffb078f2",
+        "comment_id": 6514444195,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/14#issuecomment-6514444195",
+        "published_at": "2026-10-30T03:45:14Z",
+        "updated_at": "2026-10-30T03:45:14Z",
+        "body_sha256": "b90b6d3a4e1dd73aae7e9f57467100def0d6f07bd26b472cefd428a713e760f0",
         "source_sha_prefix": "9261ed1f3142",
         "base_sha_prefix": "0a5afbe87d11",
         "run_id": 39893712214,
@@ -1329,8 +1362,8 @@
         "counts": {
           "refuted": 0,
           "verified": 6,
-          "resources exhausted": 1,
-          "type-check/audit failure": 0
+          "resources exhausted": 0,
+          "type-check/audit failure": 1
         },
         "properties": 7,
         "refutations": []
@@ -1378,7 +1411,7 @@
           "comment_id": 6388192224,
           "url": "https://github.com/shuvendu-lahiri/nvx/pull/14#issuecomment-6388192224",
           "published_at": "2026-10-24T18:53:38Z",
-          "updated_at": "2026-10-24T18:53:38Z",
+          "updated_at": "2026-10-30T03:45:13Z",
           "body_sha256": "aefaed102f00925ab621cd61e523a70d42aed1945660b990d8dd42c5ffb078f2",
           "source_sha_prefix": "9261ed1f3142",
           "base_sha_prefix": "0a5afbe87d11",
@@ -1392,6 +1425,25 @@
           },
           "properties": 7,
           "refutations": []
+        },
+        {
+          "comment_id": 6514444195,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/14#issuecomment-6514444195",
+          "published_at": "2026-10-30T03:45:14Z",
+          "updated_at": "2026-10-30T03:45:14Z",
+          "body_sha256": "b90b6d3a4e1dd73aae7e9f57467100def0d6f07bd26b472cefd428a713e760f0",
+          "source_sha_prefix": "9261ed1f3142",
+          "base_sha_prefix": "0a5afbe87d11",
+          "run_id": 39893712214,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39893712214",
+          "counts": {
+            "refuted": 0,
+            "verified": 6,
+            "resources exhausted": 0,
+            "type-check/audit failure": 1
+          },
+          "properties": 7,
+          "refutations": []
         }
       ],
       "report_matches_current_head": true,
@@ -1399,8 +1451,8 @@
       "latest_run": {
         "id": 39893712214,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39893712214",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 3
       },
       "source_number": 680,
@@ -1513,30 +1565,23 @@
       "head_sha": "1576d97c5c0c7b73a7fee98e6bfe19e6317adeed",
       "head_branch": "nfv-pedro-659",
       "latest_report": {
-        "comment_id": 6388197564,
-        "url": "https://github.com/shuvendu-lahiri/nvx/pull/16#issuecomment-6388197564",
-        "published_at": "2026-10-24T18:54:09Z",
-        "updated_at": "2026-10-24T18:54:09Z",
-        "body_sha256": "71c60ac1013c0d0c6129dba39e37179c4353b75a9d08a6b1004dd2a65fb55251",
+        "comment_id": 6514363939,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/16#issuecomment-6514363939",
+        "published_at": "2026-10-30T03:38:39Z",
+        "updated_at": "2026-10-30T03:38:39Z",
+        "body_sha256": "51f4ed2f3975410a6a5b5491de59b65a5fbde253ccb301970e172dedf2c97982",
         "source_sha_prefix": "1576d97c5c0c",
         "base_sha_prefix": "7a32915eac21",
         "run_id": 39896467670,
         "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39896467670",
         "counts": {
-          "refuted": 1,
-          "verified": 7,
+          "refuted": 0,
+          "verified": 8,
           "resources exhausted": 0,
-          "type-check/audit failure": 1
+          "type-check/audit failure": 2
         },
-        "properties": 9,
-        "refutations": [
-          {
-            "property_id": "P4",
-            "property": "Missing the EOF deadline triggers output-timeout failure.",
-            "input": "`time.monotonic() = 2`; `time.monotonic() = 0`; `returncode = 0`; `timeout = 1`; abstract state: per-element results of `time.monotonic() = [0]`; times at which successive queue outcomes become observable = `[2]`; whether the time-ABI finish or exit check raises TimeAbiFailure = `false`; whether self.process.wait raises subprocess.TimeoutExpired = `false`; successive outcomes of self._chunks.get = `[1]`; queue iteration at which EOF or the deadline ends the loop = `0`",
-            "sketch": "If `remaining <= 0` is false before the blocking queue call but EOF becomes observable only after the deadline, the loop can break and reach `process.wait` without selecting the output-timeout failure path."
-          }
-        ]
+        "properties": 10,
+        "refutations": []
       },
       "report_history": [
         {
@@ -1569,7 +1614,7 @@
           "comment_id": 6388197564,
           "url": "https://github.com/shuvendu-lahiri/nvx/pull/16#issuecomment-6388197564",
           "published_at": "2026-10-24T18:54:09Z",
-          "updated_at": "2026-10-24T18:54:09Z",
+          "updated_at": "2026-10-30T03:38:38Z",
           "body_sha256": "71c60ac1013c0d0c6129dba39e37179c4353b75a9d08a6b1004dd2a65fb55251",
           "source_sha_prefix": "1576d97c5c0c",
           "base_sha_prefix": "7a32915eac21",
@@ -1590,6 +1635,25 @@
               "sketch": "If `remaining <= 0` is false before the blocking queue call but EOF becomes observable only after the deadline, the loop can break and reach `process.wait` without selecting the output-timeout failure path."
             }
           ]
+        },
+        {
+          "comment_id": 6514363939,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/16#issuecomment-6514363939",
+          "published_at": "2026-10-30T03:38:39Z",
+          "updated_at": "2026-10-30T03:38:39Z",
+          "body_sha256": "51f4ed2f3975410a6a5b5491de59b65a5fbde253ccb301970e172dedf2c97982",
+          "source_sha_prefix": "1576d97c5c0c",
+          "base_sha_prefix": "7a32915eac21",
+          "run_id": 39896467670,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39896467670",
+          "counts": {
+            "refuted": 0,
+            "verified": 8,
+            "resources exhausted": 0,
+            "type-check/audit failure": 2
+          },
+          "properties": 10,
+          "refutations": []
         }
       ],
       "report_matches_current_head": true,
@@ -1597,8 +1661,8 @@
       "latest_run": {
         "id": 39896467670,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39896467670",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 3
       },
       "source_number": 659,
@@ -1613,23 +1677,30 @@
       "head_sha": "e83a8e2b93d7fc34595df63ade0f4ba9fc721eb8",
       "head_branch": "nfv-pedro-678",
       "latest_report": {
-        "comment_id": 6385037482,
-        "url": "https://github.com/shuvendu-lahiri/nvx/pull/17#issuecomment-6385037482",
-        "published_at": "2026-10-24T13:52:57Z",
-        "updated_at": "2026-10-24T13:52:57Z",
-        "body_sha256": "86c8034f6e80496c2222be18a154bb44e7ff87ade287edc9a56ffd3567b53ead",
+        "comment_id": 6514396713,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/17#issuecomment-6514396713",
+        "published_at": "2026-10-30T03:41:19Z",
+        "updated_at": "2026-10-30T03:41:19Z",
+        "body_sha256": "f1118c93dc9e3401cc72be6bdee71a93feedad4eacd54fbd05414bf62df27e3d",
         "source_sha_prefix": "e83a8e2b93d7",
         "base_sha_prefix": "12e3b9521456",
         "run_id": 39896853340,
         "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39896853340",
         "counts": {
-          "refuted": 0,
-          "verified": 5,
+          "refuted": 1,
+          "verified": 6,
           "resources exhausted": 0,
-          "type-check/audit failure": 1
+          "type-check/audit failure": 0
         },
-        "properties": 6,
-        "refutations": []
+        "properties": 7,
+        "refutations": [
+          {
+            "property_id": "P4",
+            "property": "The unsplit run produces five events.",
+            "input": "`expected.0 = []`; `expected.1 = 0`; `assert_eq!(run(&cuts), expected, \"one byte at a time\") = false`; `stream.len() = 0`; abstract state: per-element results of `assert_eq!(run(&[cut]), expected, \"split at {cut}\") = [false]`",
+            "sketch": "If expected.0 is empty, assert_eq!(expected.0.len(), 5) fails because its length is zero."
+          }
+        ]
       },
       "report_history": [
         {
@@ -1662,7 +1733,7 @@
           "comment_id": 6385037482,
           "url": "https://github.com/shuvendu-lahiri/nvx/pull/17#issuecomment-6385037482",
           "published_at": "2026-10-24T13:52:57Z",
-          "updated_at": "2026-10-24T13:52:57Z",
+          "updated_at": "2026-10-30T03:41:18Z",
           "body_sha256": "86c8034f6e80496c2222be18a154bb44e7ff87ade287edc9a56ffd3567b53ead",
           "source_sha_prefix": "e83a8e2b93d7",
           "base_sha_prefix": "12e3b9521456",
@@ -1676,6 +1747,32 @@
           },
           "properties": 6,
           "refutations": []
+        },
+        {
+          "comment_id": 6514396713,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/17#issuecomment-6514396713",
+          "published_at": "2026-10-30T03:41:19Z",
+          "updated_at": "2026-10-30T03:41:19Z",
+          "body_sha256": "f1118c93dc9e3401cc72be6bdee71a93feedad4eacd54fbd05414bf62df27e3d",
+          "source_sha_prefix": "e83a8e2b93d7",
+          "base_sha_prefix": "12e3b9521456",
+          "run_id": 39896853340,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39896853340",
+          "counts": {
+            "refuted": 1,
+            "verified": 6,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 7,
+          "refutations": [
+            {
+              "property_id": "P4",
+              "property": "The unsplit run produces five events.",
+              "input": "`expected.0 = []`; `expected.1 = 0`; `assert_eq!(run(&cuts), expected, \"one byte at a time\") = false`; `stream.len() = 0`; abstract state: per-element results of `assert_eq!(run(&[cut]), expected, \"split at {cut}\") = [false]`",
+              "sketch": "If expected.0 is empty, assert_eq!(expected.0.len(), 5) fails because its length is zero."
+            }
+          ]
         }
       ],
       "report_matches_current_head": true,
@@ -1683,8 +1780,8 @@
       "latest_run": {
         "id": 39896853340,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39896853340",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 3
       },
       "source_number": 678,
@@ -1797,30 +1894,23 @@
       "head_sha": "c395e1c359947a2e1324938d1a390266ae51927d",
       "head_branch": "nfv-pedro-658",
       "latest_report": {
-        "comment_id": 6385668120,
-        "url": "https://github.com/shuvendu-lahiri/nvx/pull/19#issuecomment-6385668120",
-        "published_at": "2026-10-24T14:54:37Z",
-        "updated_at": "2026-10-24T14:54:37Z",
-        "body_sha256": "91b01d966b9df91bd1ac55765d082f086cadad0a33ea60d6096db241dcaa7487",
+        "comment_id": 6514510507,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/19#issuecomment-6514510507",
+        "published_at": "2026-10-30T03:50:42Z",
+        "updated_at": "2026-10-30T03:50:42Z",
+        "body_sha256": "88ccddccdc501c53a56465df70427aaccc31983aadb86bdb18b79ee44dbea91c",
         "source_sha_prefix": "c395e1c35994",
         "base_sha_prefix": "f181b782921c",
         "run_id": 39898539854,
         "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39898539854",
         "counts": {
-          "refuted": 1,
-          "verified": 6,
+          "refuted": 0,
+          "verified": 7,
           "resources exhausted": 0,
           "type-check/audit failure": 3
         },
         "properties": 10,
-        "refutations": [
-          {
-            "property_id": "P10",
-            "property": "A successful git retrieval writes using the relative basename.",
-            "input": "`legacy = false`; `Path(relative).name = []`; `shown.returncode = 0`; `shown.stdout = [1]`; abstract state: constructed temporary file path = `[6]`; whether the git show subprocess completed normally = `true`; whether read_results raises = `false`; results returned by read_results = `[]`; stem associated with the basename of relative = `[]`; temporary directory basename = `[9]`; whether the temporary directory was created normally = `true`; temporary directory path identity = `[7]`; temporary directory stem = `[8]`; whether write_bytes completed normally = `true`",
-            "sketch": "If Path(relative).name is empty, Path(temporary) / Path(relative).name retains the temporary directory's basename, so the path passed to write_bytes and read_results does not have the required empty basename."
-          }
-        ]
+        "refutations": []
       },
       "report_history": [
         {
@@ -1846,7 +1936,7 @@
           "comment_id": 6385668120,
           "url": "https://github.com/shuvendu-lahiri/nvx/pull/19#issuecomment-6385668120",
           "published_at": "2026-10-24T14:54:37Z",
-          "updated_at": "2026-10-24T14:54:37Z",
+          "updated_at": "2026-10-30T03:50:41Z",
           "body_sha256": "91b01d966b9df91bd1ac55765d082f086cadad0a33ea60d6096db241dcaa7487",
           "source_sha_prefix": "c395e1c35994",
           "base_sha_prefix": "f181b782921c",
@@ -1867,6 +1957,25 @@
               "sketch": "If Path(relative).name is empty, Path(temporary) / Path(relative).name retains the temporary directory's basename, so the path passed to write_bytes and read_results does not have the required empty basename."
             }
           ]
+        },
+        {
+          "comment_id": 6514510507,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/19#issuecomment-6514510507",
+          "published_at": "2026-10-30T03:50:42Z",
+          "updated_at": "2026-10-30T03:50:42Z",
+          "body_sha256": "88ccddccdc501c53a56465df70427aaccc31983aadb86bdb18b79ee44dbea91c",
+          "source_sha_prefix": "c395e1c35994",
+          "base_sha_prefix": "f181b782921c",
+          "run_id": 39898539854,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39898539854",
+          "counts": {
+            "refuted": 0,
+            "verified": 7,
+            "resources exhausted": 0,
+            "type-check/audit failure": 3
+          },
+          "properties": 10,
+          "refutations": []
         }
       ],
       "report_matches_current_head": true,
@@ -1874,8 +1983,8 @@
       "latest_run": {
         "id": 39898539854,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39898539854",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 3
       },
       "source_number": 658,
@@ -1974,7 +2083,7 @@
       "latest_run": {
         "id": 39898919181,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39898919181",
-        "status": "in_progress",
+        "status": "queued",
         "conclusion": null,
         "attempt": 3
       },
