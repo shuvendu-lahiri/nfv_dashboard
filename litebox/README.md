@@ -5,14 +5,15 @@ Published results from the prototype [Neuro-Formal Verification](https://arxiv.o
 
 **[Live interactive dashboard](https://shuvendu-lahiri.github.io/nfv_dashboard/litebox/)** / [all repositories](https://shuvendu-lahiri.github.io/nfv_dashboard/) or [download the standalone HTML](index.html) (no server or external dependencies).
 
-Snapshot: 2026-10-30T23:31:45.703989+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
+Snapshot: 2026-10-30T23:53:51.741410+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
 
-**64 PRs attempted; 125 workflow attempts; 54 published reports; 11 PRs with 14 conditional refutations; 268 model verifications; 10 PRs without a published report.**
+**64 PRs attempted; 125 workflow attempts; 57 published reports; 12 PRs with 15 conditional refutations; 292 model verifications; 7 PRs without a published report.**
 
 ## All attempted PRs (refutations first)
 
 | PR | Change | Latest report | Properties | Refuted | Verified | Exhausted | Audit failure | Evidence |
 |---|---|---|---:|---:|---:|---:|---:|---|
+| [shuvendu-lahiri/litebox#65](https://github.com/shuvendu-lahiri/litebox/pull/65) | NFV audit \- change 1734: Support AF\_UNIX SOCK\_SEQPACKET sockets | **REFUTED (model)** | 10 | **1** | 9 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/65#issuecomment-6535926145) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41140753055) |
 | [shuvendu-lahiri/litebox#36](https://github.com/shuvendu-lahiri/litebox/pull/36) | Replay change 1040: Migrate Tar\-RO file system to new backend | **REFUTED (model)** | 10 | **1** | 5 | 4 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/36#issuecomment-6389082690) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39462655079) |
 | [shuvendu-lahiri/litebox#42](https://github.com/shuvendu-lahiri/litebox/pull/42) | Staged NFV audit \- change 1637: Cherry\-pick "LVBS: Clean up after a panic inside the vault" | **REFUTED (model)** / latest attempt: failure | 8 | **2** | 4 | 2 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/42#issuecomment-6388208161) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532822431) / [latest attempt](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532822431) |
 | [shuvendu-lahiri/litebox#39](https://github.com/shuvendu-lahiri/litebox/pull/39) | Staged NFV audit \- change 1665: Zeroize sensitive data in OP\-TEE crypto syscalls | **REFUTED (model)** | 9 | **2** | 6 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/39#issuecomment-6388205075) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532831209) |
@@ -24,6 +25,8 @@ Snapshot: 2026-10-30T23:31:45.703989+00:00. Latest published report per PR suppl
 | [shuvendu-lahiri/litebox#8](https://github.com/shuvendu-lahiri/litebox/pull/8) | Replay change 1648: Cherry pick change 1564 Refactor to remove \`litebox::path::Arg\` | **REFUTED (model)** | 10 | **1** | 6 | 0 | 3 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/8#issuecomment-6383719541) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39357363330) |
 | [shuvendu-lahiri/litebox#3](https://github.com/shuvendu-lahiri/litebox/pull/3) | Replay change 1640: replace procfd special cases with filesystem symlinks | **REFUTED (model)** | 10 | **2** | 4 | 0 | 4 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/3#issuecomment-6383064179) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39390206732) |
 | [shuvendu-lahiri/litebox#2](https://github.com/shuvendu-lahiri/litebox/pull/2) | Replay change 1656: copy broker pipe and socket reads in bulk | **REFUTED (model)** | 9 | **1** | 8 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/2#issuecomment-6382629152) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39205431424) |
+| [shuvendu-lahiri/litebox#64](https://github.com/shuvendu-lahiri/litebox/pull/64) | NFV audit \- change 1737: Change TA verification to take a X\.509 cert | Published | 7 | 0 | 7 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/64#issuecomment-6535837172) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41140738657) |
+| [shuvendu-lahiri/litebox#60](https://github.com/shuvendu-lahiri/litebox/pull/60) | NFV audit \- change 1743: Add symlink creation support | Published | 10 | 0 | 8 | 1 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/60#issuecomment-6535818771) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41140681353) |
 | [shuvendu-lahiri/litebox#62](https://github.com/shuvendu-lahiri/litebox/pull/62) | NFV audit \- change 1740: Fix argv/envp order on initial stack | Published | 1 | 0 | 1 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/62#issuecomment-6535571954) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41140710653) |
 | [shuvendu-lahiri/litebox#66](https://github.com/shuvendu-lahiri/litebox/pull/66) | NFV audit \- change 1732: Preserve AArch64 code execute permission during cache synchronization | Published | 1 | 0 | 1 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/66#issuecomment-6535540062) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41140765965) |
 | [shuvendu-lahiri/litebox#59](https://github.com/shuvendu-lahiri/litebox/pull/59) | NFV audit \- change 1745: Remove the unused copy\-on\-write file mapping path | Published | 1 | 0 | 1 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/59#issuecomment-6535323097) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41140668369) |
@@ -68,11 +71,8 @@ Snapshot: 2026-10-30T23:31:45.703989+00:00. Latest published report per PR suppl
 | [shuvendu-lahiri/litebox#7](https://github.com/shuvendu-lahiri/litebox/pull/7) | Replay change 1657: Cherry pick change 1566 Add support for symlink resolution | Published | 10 | 0 | 9 | 1 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/7#issuecomment-6383605651) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39399231191) |
 | [shuvendu-lahiri/litebox#27](https://github.com/shuvendu-lahiri/litebox/pull/27) | Replay change 1281: Cherry pick change 1165 Join the spawned handles in tests | Published | 7 | 0 | 7 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/27#issuecomment-6382201720) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39432560915) |
 | [shuvendu-lahiri/litebox#67](https://github.com/shuvendu-lahiri/litebox/pull/67) | NFV audit \- change 1731: Stacked runners: Cap the CPU time charged per run at one slice | No published report (in\_progress) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41140780172) |
-| [shuvendu-lahiri/litebox#65](https://github.com/shuvendu-lahiri/litebox/pull/65) | NFV audit \- change 1734: Support AF\_UNIX SOCK\_SEQPACKET sockets | No published report (in\_progress) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41140753055) |
-| [shuvendu-lahiri/litebox#64](https://github.com/shuvendu-lahiri/litebox/pull/64) | NFV audit \- change 1737: Change TA verification to take a X\.509 cert | No published report (in\_progress) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41140738657) |
 | [shuvendu-lahiri/litebox#63](https://github.com/shuvendu-lahiri/litebox/pull/63) | NFV audit \- change 1738: Fix the Linux sysinfo ABI layout | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41140724678) |
-| [shuvendu-lahiri/litebox#61](https://github.com/shuvendu-lahiri/litebox/pull/61) | NFV audit \- change 1742: Name shared anonymous memory lazily | No published report (in\_progress) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41140695554) |
-| [shuvendu-lahiri/litebox#60](https://github.com/shuvendu-lahiri/litebox/pull/60) | NFV audit \- change 1743: Add symlink creation support | No published report (in\_progress) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41140681353) |
+| [shuvendu-lahiri/litebox#61](https://github.com/shuvendu-lahiri/litebox/pull/61) | NFV audit \- change 1742: Name shared anonymous memory lazily | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41140695554) |
 | [shuvendu-lahiri/litebox#58](https://github.com/shuvendu-lahiri/litebox/pull/58) | NFV audit \- change 1746: Resume interrupted relative sleeps through restart\_syscall | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41140657618) |
 | [shuvendu-lahiri/litebox#56](https://github.com/shuvendu-lahiri/litebox/pull/56) | NFV audit \- change 1748: Do socket I/O directly on shared buffers | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41130574811) |
 | [shuvendu-lahiri/litebox#54](https://github.com/shuvendu-lahiri/litebox/pull/54) | NFV audit \- change 1751: Support sched\_getscheduler and sched\_getparam | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41130532806) |
@@ -81,6 +81,12 @@ Snapshot: 2026-10-30T23:31:45.703989+00:00. Latest published report per PR suppl
 ## Conditional model refutations
 
 The following property texts are extracted from the published reports, without new adjudication or inference. The original report contains assumptions, source overlays and native evidence.
+
+### shuvendu-lahiri/litebox#65 / P7
+
+A non\-shut channel with no room returns the blocking\-mode\-appropriate would\-block result\.
+
+[Original report](https://github.com/shuvendu-lahiri/litebox/pull/65#issuecomment-6535926145)
 
 ### shuvendu-lahiri/litebox#36 / P7
 

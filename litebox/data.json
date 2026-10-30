@@ -1,22 +1,22 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/litebox",
-  "generated_at": "2026-10-30T23:31:45.703989+00:00",
+  "generated_at": "2026-10-30T23:53:51.741410+00:00",
   "name": "litebox",
   "label": "LiteBox",
   "summary": {
     "selected_prs": 64,
     "attempted_prs": 64,
-    "published_reports": 54,
+    "published_reports": 57,
     "workflow_attempts": 125,
-    "without_report": 10,
-    "refuted_prs": 11,
-    "properties": 395,
+    "without_report": 7,
+    "refuted_prs": 12,
+    "properties": 422,
     "outcomes": {
-      "refuted": 14,
-      "verified": 268,
-      "resources exhausted": 54,
-      "type-check/audit failure": 59
+      "refuted": 15,
+      "verified": 292,
+      "resources exhausted": 55,
+      "type-check/audit failure": 60
     }
   },
   "prs": [
@@ -4144,15 +4144,53 @@
       "state": "open",
       "head_sha": "2320547b06f644fdbc5a44415d6d1d2b0086a61c",
       "head_branch": "nfv-campaign-901851d8-1743-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6535818771,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/60#issuecomment-6535818771",
+        "published_at": "2026-10-30T23:38:51Z",
+        "updated_at": "2026-10-30T23:38:51Z",
+        "body_sha256": "5a7238cce88c48eebbfdfc5ec62e6e07a0e7934b8c31e3d0b7eb22f51d5fa4f8",
+        "source_sha_prefix": "2320547b06f6",
+        "base_sha_prefix": "b8c683b01778",
+        "run_id": 41140681353,
+        "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41140681353",
+        "counts": {
+          "refuted": 0,
+          "verified": 8,
+          "resources exhausted": 1,
+          "type-check/audit failure": 1
+        },
+        "properties": 10,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6535818771,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/60#issuecomment-6535818771",
+          "published_at": "2026-10-30T23:38:51Z",
+          "updated_at": "2026-10-30T23:38:51Z",
+          "body_sha256": "5a7238cce88c48eebbfdfc5ec62e6e07a0e7934b8c31e3d0b7eb22f51d5fa4f8",
+          "source_sha_prefix": "2320547b06f6",
+          "base_sha_prefix": "b8c683b01778",
+          "run_id": 41140681353,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41140681353",
+          "counts": {
+            "refuted": 0,
+            "verified": 8,
+            "resources exhausted": 1,
+            "type-check/audit failure": 1
+          },
+          "properties": 10,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 1,
       "latest_run": {
         "id": 41140681353,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41140681353",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 1
       }
     },
@@ -4170,8 +4208,8 @@
       "latest_run": {
         "id": 41140695554,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41140695554",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "failure",
         "attempt": 1
       }
     },
@@ -4258,15 +4296,53 @@
       "state": "open",
       "head_sha": "b88f75eb5a7924b90570bb412e37394381098bba",
       "head_branch": "nfv-campaign-901851d8-1737-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6535837172,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/64#issuecomment-6535837172",
+        "published_at": "2026-10-30T23:40:18Z",
+        "updated_at": "2026-10-30T23:40:18Z",
+        "body_sha256": "35722a7af4f6d029c628b7a16c0a20b50fa6a5609b3df29647457c352d32d0c9",
+        "source_sha_prefix": "b88f75eb5a79",
+        "base_sha_prefix": "58eb9b47df01",
+        "run_id": 41140738657,
+        "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41140738657",
+        "counts": {
+          "refuted": 0,
+          "verified": 7,
+          "resources exhausted": 0,
+          "type-check/audit failure": 0
+        },
+        "properties": 7,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6535837172,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/64#issuecomment-6535837172",
+          "published_at": "2026-10-30T23:40:18Z",
+          "updated_at": "2026-10-30T23:40:18Z",
+          "body_sha256": "35722a7af4f6d029c628b7a16c0a20b50fa6a5609b3df29647457c352d32d0c9",
+          "source_sha_prefix": "b88f75eb5a79",
+          "base_sha_prefix": "58eb9b47df01",
+          "run_id": 41140738657,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41140738657",
+          "counts": {
+            "refuted": 0,
+            "verified": 7,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 7,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 1,
       "latest_run": {
         "id": 41140738657,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41140738657",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 1
       }
     },
@@ -4277,15 +4353,67 @@
       "state": "open",
       "head_sha": "1cb575d6d14dddf5d3a52ab0492bc3769767dc6c",
       "head_branch": "nfv-campaign-901851d8-1734-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6535926145,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/65#issuecomment-6535926145",
+        "published_at": "2026-10-30T23:46:27Z",
+        "updated_at": "2026-10-30T23:46:27Z",
+        "body_sha256": "794c6902fecd37d591a1931221b6e9f433f14563ec6a64b0b8804d44c5ed0a3b",
+        "source_sha_prefix": "1cb575d6d14d",
+        "base_sha_prefix": "d54f03b146ca",
+        "run_id": 41140753055,
+        "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41140753055",
+        "counts": {
+          "refuted": 1,
+          "verified": 9,
+          "resources exhausted": 0,
+          "type-check/audit failure": 0
+        },
+        "properties": 10,
+        "refutations": [
+          {
+            "property_id": "P7",
+            "property": "A non-shut channel with no room returns the blocking-mode-appropriate would-block result.",
+            "input": "`queued = 0`; `self.data.len() = 0`; `DATAGRAM_OVERHEAD = 0`; `nonblocking = false`; `channel.room() = 0`; `channel.is_shut() = false`; abstract state: broker queued-byte accounting = `0`; outcome of charging the receiver quota = `false`; datagram identity and contents = `0`; queued datagram contents = `[]`; receiver quota charge = `0`; outcome of reserving one datagram slot = `false`; sender registration state after a failed wait = `false`; outcome of registering the sender as a waiter = `false`; sender registration in the channel waiters = `false`",
+            "sketch": "If the channel is open with zero room and channel.wait(self)? returns an error without registering the sender, the question-mark operator propagates that error. The subsequent would-block return is then skipped, so the required waiter registration and blocking-mode-appropriate would-block result do not follow."
+          }
+        ]
+      },
+      "report_history": [
+        {
+          "comment_id": 6535926145,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/65#issuecomment-6535926145",
+          "published_at": "2026-10-30T23:46:27Z",
+          "updated_at": "2026-10-30T23:46:27Z",
+          "body_sha256": "794c6902fecd37d591a1931221b6e9f433f14563ec6a64b0b8804d44c5ed0a3b",
+          "source_sha_prefix": "1cb575d6d14d",
+          "base_sha_prefix": "d54f03b146ca",
+          "run_id": 41140753055,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41140753055",
+          "counts": {
+            "refuted": 1,
+            "verified": 9,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 10,
+          "refutations": [
+            {
+              "property_id": "P7",
+              "property": "A non-shut channel with no room returns the blocking-mode-appropriate would-block result.",
+              "input": "`queued = 0`; `self.data.len() = 0`; `DATAGRAM_OVERHEAD = 0`; `nonblocking = false`; `channel.room() = 0`; `channel.is_shut() = false`; abstract state: broker queued-byte accounting = `0`; outcome of charging the receiver quota = `false`; datagram identity and contents = `0`; queued datagram contents = `[]`; receiver quota charge = `0`; outcome of reserving one datagram slot = `false`; sender registration state after a failed wait = `false`; outcome of registering the sender as a waiter = `false`; sender registration in the channel waiters = `false`",
+              "sketch": "If the channel is open with zero room and channel.wait(self)? returns an error without registering the sender, the question-mark operator propagates that error. The subsequent would-block return is then skipped, so the required waiter registration and blocking-mode-appropriate would-block result do not follow."
+            }
+          ]
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 1,
       "latest_run": {
         "id": 41140753055,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41140753055",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 1
       }
     },
