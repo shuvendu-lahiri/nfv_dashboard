@@ -1,22 +1,22 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/nvx",
-  "generated_at": "2026-10-30T01:11:43.795194+00:00",
+  "generated_at": "2026-10-30T01:44:17.105514+00:00",
   "name": "nvx",
   "label": "NVX",
   "summary": {
     "selected_prs": 50,
     "attempted_prs": 50,
-    "published_reports": 43,
-    "workflow_attempts": 104,
-    "without_report": 7,
-    "refuted_prs": 10,
-    "properties": 269,
+    "published_reports": 45,
+    "workflow_attempts": 114,
+    "without_report": 5,
+    "refuted_prs": 11,
+    "properties": 288,
     "outcomes": {
-      "refuted": 11,
-      "verified": 193,
-      "resources exhausted": 17,
-      "type-check/audit failure": 48
+      "refuted": 14,
+      "verified": 200,
+      "resources exhausted": 19,
+      "type-check/audit failure": 55
     }
   },
   "prs": [
@@ -94,13 +94,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 2,
+      "attempts": 3,
       "latest_run": {
         "id": 39888393336,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39888393336",
-        "status": "completed",
-        "conclusion": "success",
-        "attempt": 2
+        "status": "queued",
+        "conclusion": null,
+        "attempt": 3
       },
       "source_number": 747,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/747",
@@ -173,13 +173,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 2,
+      "attempts": 3,
       "latest_run": {
         "id": 39890408953,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39890408953",
-        "status": "completed",
-        "conclusion": "success",
-        "attempt": 2
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 3
       },
       "source_number": 758,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/758",
@@ -252,13 +252,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 2,
+      "attempts": 3,
       "latest_run": {
         "id": 39890415139,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39890415139",
-        "status": "completed",
-        "conclusion": "success",
-        "attempt": 2
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 3
       },
       "source_number": 755,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/755",
@@ -331,13 +331,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 2,
+      "attempts": 3,
       "latest_run": {
         "id": 39890421003,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39890421003",
-        "status": "completed",
-        "conclusion": "success",
-        "attempt": 2
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 3
       },
       "source_number": 750,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/750",
@@ -429,13 +429,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 2,
+      "attempts": 3,
       "latest_run": {
         "id": 39890427567,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39890427567",
-        "status": "completed",
-        "conclusion": "success",
-        "attempt": 2
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 3
       },
       "source_number": 742,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/742",
@@ -508,13 +508,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 4,
+      "attempts": 5,
       "latest_run": {
         "id": 39891550289,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39891550289",
-        "status": "completed",
-        "conclusion": "success",
-        "attempt": 4
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 5
       },
       "source_number": 705,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/705",
@@ -606,13 +606,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 2,
+      "attempts": 3,
       "latest_run": {
         "id": 39891744153,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39891744153",
-        "status": "completed",
-        "conclusion": "success",
-        "attempt": 2
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 3
       },
       "source_number": 689,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/689",
@@ -685,13 +685,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 2,
+      "attempts": 3,
       "latest_run": {
         "id": 39892492366,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39892492366",
-        "status": "completed",
-        "conclusion": "success",
-        "attempt": 2
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 3
       },
       "source_number": 685,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/685",
@@ -764,13 +764,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 3,
+      "attempts": 4,
       "latest_run": {
         "id": 39892693600,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39892693600",
-        "status": "completed",
-        "conclusion": "success",
-        "attempt": 3
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 4
       },
       "source_number": 684,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/684",
@@ -1022,13 +1022,13 @@
         }
       ],
       "report_matches_current_head": true,
-      "attempts": 2,
+      "attempts": 3,
       "latest_run": {
         "id": 39893502095,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39893502095",
-        "status": "completed",
-        "conclusion": "success",
-        "attempt": 2
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 3
       },
       "source_number": 714,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/714",
@@ -3294,15 +3294,53 @@
       "state": "open",
       "head_sha": "078e9477314c3785a4cdbcd820c0ed03e44a9ac5",
       "head_branch": "nfv-campaign-901851d8-824-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6512537229,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/44#issuecomment-6512537229",
+        "published_at": "2026-10-30T01:18:25Z",
+        "updated_at": "2026-10-30T01:18:25Z",
+        "body_sha256": "e676ad3c40032a674f78592ecaea91f460408667b04c30a0ce7b4904c7a3baff",
+        "source_sha_prefix": "078e9477314c",
+        "base_sha_prefix": "86ac3f9cc594",
+        "run_id": 40955033538,
+        "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955033538",
+        "counts": {
+          "refuted": 0,
+          "verified": 4,
+          "resources exhausted": 2,
+          "type-check/audit failure": 4
+        },
+        "properties": 10,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6512537229,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/44#issuecomment-6512537229",
+          "published_at": "2026-10-30T01:18:25Z",
+          "updated_at": "2026-10-30T01:18:25Z",
+          "body_sha256": "e676ad3c40032a674f78592ecaea91f460408667b04c30a0ce7b4904c7a3baff",
+          "source_sha_prefix": "078e9477314c",
+          "base_sha_prefix": "86ac3f9cc594",
+          "run_id": 40955033538,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955033538",
+          "counts": {
+            "refuted": 0,
+            "verified": 4,
+            "resources exhausted": 2,
+            "type-check/audit failure": 4
+          },
+          "properties": 10,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 2,
       "latest_run": {
         "id": 40955033538,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955033538",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       },
       "source_number": 824,
@@ -3316,15 +3354,91 @@
       "state": "open",
       "head_sha": "18260b6aa4e81f4ce2decaa10613af1a04393f12",
       "head_branch": "nfv-campaign-901851d8-823-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6512446360,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/45#issuecomment-6512446360",
+        "published_at": "2026-10-30T01:11:48Z",
+        "updated_at": "2026-10-30T01:11:48Z",
+        "body_sha256": "fa9bbc208abe587316996a110541020d155f8fa43ca8e2f6db791b1e0b50edab",
+        "source_sha_prefix": "18260b6aa4e8",
+        "base_sha_prefix": "ca3e99a2b236",
+        "run_id": 40955054329,
+        "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955054329",
+        "counts": {
+          "refuted": 3,
+          "verified": 3,
+          "resources exhausted": 0,
+          "type-check/audit failure": 3
+        },
+        "properties": 9,
+        "refutations": [
+          {
+            "property_id": "P6",
+            "property": "All eight malformed mount values are rejected as unsupported.",
+            "input": "abstract state: Unsupported results from the three SandboxMount::parse calls = `[true, true, true]`; per-element results of `refused(parse_mount_value(value)) = [true, true, true, true, true, true, true, false]`; per-element results of `parse_mount_value(value).unwrap() = [true, true, true, true, true]`",
+            "sketch": "If parse_mount_value(value) does not produce an Unsupported error for \"/workspace,host,with,commas\", refused(parse_mount_value(value)) does not accept that listed malformed value."
+          },
+          {
+            "property_id": "P8",
+            "property": "The EROFS launch for identity (1, 2) produces the expected kernel command line.",
+            "input": "abstract state: per-element results of `launch.plan().kernel_command_line(\"quiet\").unwrap() = [false, true, true, true, true, true]`; per-element results of `launch.plan().kernel_command_line(\"quiet\").unwrap() = [true, true, true, true, true, true]`; per-element results of `SandboxLaunch::new( = [true, true, true, true, true, true]`; per-element results of `launch.plan().one_shot_openvmm_arguments().unwrap() = [true, true, true, true, true, true]`; per-element results of `launch.plan().one_shot_openvmm_arguments().unwrap() = [true, true, true, true, true, true]`; per-element results of `assert_eq!(launch.plan().openvmm_arguments().unwrap(), expected); = [true, true, true, true, true, true]`; per-element results of `launch.plan().openvmm_arguments().unwrap() = [true, true, true, true, true, true]`",
+            "sketch": "If the first Erofs launch and both preceding argument assertions succeed, but launch.plan().kernel_command_line(\"quiet\").unwrap() differs from the required formatted command line, the final assertion fails."
+          },
+          {
+            "property_id": "P9",
+            "property": "The read-only directory arguments equal the expected mount pair.",
+            "input": "abstract state: arguments[8..] for the read-only directory share = `[]`; arguments[8..] for the read-write directory share = `[1, 3]`; arguments[8..] for the read-only file share = `[4, 5, 6, 7]`; arguments[8..] for the read-write file share = `[4, 5, 6, 8]`; per-element results of `.ends_with(\" nvx_maps=1\") = [true, true, true, true]`; per-element results of `command_line.contains(\"nvx_share=\") = [false, false, false, false]`; per-element results of `command_line.ends_with(&format!(\" nvx_share={name},/workspace,{mode},file\")) = [false, true, false, true]`; success of export attachment and planning operations for the four access-and-kind cases = `[true, true, true, true]`",
+            "sketch": "If the read-only directory case yields an empty `&arguments[8..]`, it cannot equal the required direct-mount argument pair."
+          }
+        ]
+      },
+      "report_history": [
+        {
+          "comment_id": 6512446360,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/45#issuecomment-6512446360",
+          "published_at": "2026-10-30T01:11:48Z",
+          "updated_at": "2026-10-30T01:11:48Z",
+          "body_sha256": "fa9bbc208abe587316996a110541020d155f8fa43ca8e2f6db791b1e0b50edab",
+          "source_sha_prefix": "18260b6aa4e8",
+          "base_sha_prefix": "ca3e99a2b236",
+          "run_id": 40955054329,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955054329",
+          "counts": {
+            "refuted": 3,
+            "verified": 3,
+            "resources exhausted": 0,
+            "type-check/audit failure": 3
+          },
+          "properties": 9,
+          "refutations": [
+            {
+              "property_id": "P6",
+              "property": "All eight malformed mount values are rejected as unsupported.",
+              "input": "abstract state: Unsupported results from the three SandboxMount::parse calls = `[true, true, true]`; per-element results of `refused(parse_mount_value(value)) = [true, true, true, true, true, true, true, false]`; per-element results of `parse_mount_value(value).unwrap() = [true, true, true, true, true]`",
+              "sketch": "If parse_mount_value(value) does not produce an Unsupported error for \"/workspace,host,with,commas\", refused(parse_mount_value(value)) does not accept that listed malformed value."
+            },
+            {
+              "property_id": "P8",
+              "property": "The EROFS launch for identity (1, 2) produces the expected kernel command line.",
+              "input": "abstract state: per-element results of `launch.plan().kernel_command_line(\"quiet\").unwrap() = [false, true, true, true, true, true]`; per-element results of `launch.plan().kernel_command_line(\"quiet\").unwrap() = [true, true, true, true, true, true]`; per-element results of `SandboxLaunch::new( = [true, true, true, true, true, true]`; per-element results of `launch.plan().one_shot_openvmm_arguments().unwrap() = [true, true, true, true, true, true]`; per-element results of `launch.plan().one_shot_openvmm_arguments().unwrap() = [true, true, true, true, true, true]`; per-element results of `assert_eq!(launch.plan().openvmm_arguments().unwrap(), expected); = [true, true, true, true, true, true]`; per-element results of `launch.plan().openvmm_arguments().unwrap() = [true, true, true, true, true, true]`",
+              "sketch": "If the first Erofs launch and both preceding argument assertions succeed, but launch.plan().kernel_command_line(\"quiet\").unwrap() differs from the required formatted command line, the final assertion fails."
+            },
+            {
+              "property_id": "P9",
+              "property": "The read-only directory arguments equal the expected mount pair.",
+              "input": "abstract state: arguments[8..] for the read-only directory share = `[]`; arguments[8..] for the read-write directory share = `[1, 3]`; arguments[8..] for the read-only file share = `[4, 5, 6, 7]`; arguments[8..] for the read-write file share = `[4, 5, 6, 8]`; per-element results of `.ends_with(\" nvx_maps=1\") = [true, true, true, true]`; per-element results of `command_line.contains(\"nvx_share=\") = [false, false, false, false]`; per-element results of `command_line.ends_with(&format!(\" nvx_share={name},/workspace,{mode},file\")) = [false, true, false, true]`; success of export attachment and planning operations for the four access-and-kind cases = `[true, true, true, true]`",
+              "sketch": "If the read-only directory case yields an empty `&arguments[8..]`, it cannot equal the required direct-mount argument pair."
+            }
+          ]
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 2,
       "latest_run": {
         "id": 40955054329,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955054329",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       },
       "source_number": 823,
