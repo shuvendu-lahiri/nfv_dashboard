@@ -1,22 +1,22 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/nvx",
-  "generated_at": "2026-10-29T23:34:58.387216+00:00",
+  "generated_at": "2026-10-30T00:08:09.479317+00:00",
   "name": "nvx",
   "label": "NVX",
   "summary": {
     "selected_prs": 50,
     "attempted_prs": 50,
-    "published_reports": 33,
-    "workflow_attempts": 94,
-    "without_report": 17,
-    "refuted_prs": 5,
-    "properties": 197,
+    "published_reports": 37,
+    "workflow_attempts": 104,
+    "without_report": 13,
+    "refuted_prs": 8,
+    "properties": 232,
     "outcomes": {
-      "refuted": 5,
-      "verified": 149,
-      "resources exhausted": 12,
-      "type-check/audit failure": 31
+      "refuted": 9,
+      "verified": 167,
+      "resources exhausted": 14,
+      "type-check/audit failure": 42
     }
   },
   "prs": [
@@ -2435,15 +2435,53 @@
       "state": "open",
       "head_sha": "be7ef0f2ed09930a0d14f333ba7fd014f88d6f26",
       "head_branch": "nfv-campaign-901851d8-880-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6511107158,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/32#issuecomment-6511107158",
+        "published_at": "2026-10-29T23:38:57Z",
+        "updated_at": "2026-10-29T23:38:57Z",
+        "body_sha256": "8066fbdd61419b3f7d24cbe57b2cf841943d44c31ac4ab650c16877efae6d640",
+        "source_sha_prefix": "be7ef0f2ed09",
+        "base_sha_prefix": "a0106bbe1d9e",
+        "run_id": 40835224989,
+        "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835224989",
+        "counts": {
+          "refuted": 0,
+          "verified": 6,
+          "resources exhausted": 0,
+          "type-check/audit failure": 4
+        },
+        "properties": 10,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6511107158,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/32#issuecomment-6511107158",
+          "published_at": "2026-10-29T23:38:57Z",
+          "updated_at": "2026-10-29T23:38:57Z",
+          "body_sha256": "8066fbdd61419b3f7d24cbe57b2cf841943d44c31ac4ab650c16877efae6d640",
+          "source_sha_prefix": "be7ef0f2ed09",
+          "base_sha_prefix": "a0106bbe1d9e",
+          "run_id": 40835224989,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835224989",
+          "counts": {
+            "refuted": 0,
+            "verified": 6,
+            "resources exhausted": 0,
+            "type-check/audit failure": 4
+          },
+          "properties": 10,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 2,
       "latest_run": {
         "id": 40835224989,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835224989",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       },
       "source_number": 880,
@@ -2458,11 +2496,11 @@
       "head_sha": "7033f1ca12c7fcd636ef8206b873a8bec0986079",
       "head_branch": "nfv-campaign-901851d8-877-head",
       "latest_report": {
-        "comment_id": 6491543730,
-        "url": "https://github.com/shuvendu-lahiri/nvx/pull/33#issuecomment-6491543730",
-        "published_at": "2026-10-29T08:15:33Z",
-        "updated_at": "2026-10-29T08:15:33Z",
-        "body_sha256": "f3e359cac70f73992e91b8d6f9c8fb996763c9ed3d527f7aabb447de4ce52ac2",
+        "comment_id": 6511402632,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/33#issuecomment-6511402632",
+        "published_at": "2026-10-29T23:58:34Z",
+        "updated_at": "2026-10-29T23:58:34Z",
+        "body_sha256": "bbc2fd769cf8b8d04aabc141a4ba575b9de2aef0d1574a77eb52226251720776",
         "source_sha_prefix": "7033f1ca12c7",
         "base_sha_prefix": "9fa84877841b",
         "run_id": 40835242182,
@@ -2481,8 +2519,27 @@
           "comment_id": 6491543730,
           "url": "https://github.com/shuvendu-lahiri/nvx/pull/33#issuecomment-6491543730",
           "published_at": "2026-10-29T08:15:33Z",
-          "updated_at": "2026-10-29T08:15:33Z",
+          "updated_at": "2026-10-29T23:58:33Z",
           "body_sha256": "f3e359cac70f73992e91b8d6f9c8fb996763c9ed3d527f7aabb447de4ce52ac2",
+          "source_sha_prefix": "7033f1ca12c7",
+          "base_sha_prefix": "9fa84877841b",
+          "run_id": 40835242182,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835242182",
+          "counts": {
+            "refuted": 0,
+            "verified": 6,
+            "resources exhausted": 1,
+            "type-check/audit failure": 3
+          },
+          "properties": 10,
+          "refutations": []
+        },
+        {
+          "comment_id": 6511402632,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/33#issuecomment-6511402632",
+          "published_at": "2026-10-29T23:58:34Z",
+          "updated_at": "2026-10-29T23:58:34Z",
+          "body_sha256": "bbc2fd769cf8b8d04aabc141a4ba575b9de2aef0d1574a77eb52226251720776",
           "source_sha_prefix": "7033f1ca12c7",
           "base_sha_prefix": "9fa84877841b",
           "run_id": 40835242182,
@@ -2502,8 +2559,8 @@
       "latest_run": {
         "id": 40835242182,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835242182",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       },
       "source_number": 877,
@@ -2518,22 +2575,22 @@
       "head_sha": "04c3c22ab8242ce7ec4e087fae3f1e855356fb83",
       "head_branch": "nfv-campaign-901851d8-876-head",
       "latest_report": {
-        "comment_id": 6491323232,
-        "url": "https://github.com/shuvendu-lahiri/nvx/pull/34#issuecomment-6491323232",
-        "published_at": "2026-10-29T08:03:54Z",
-        "updated_at": "2026-10-29T08:03:54Z",
-        "body_sha256": "730c76635de5b708eb79d2146c89796ea95fa10e1014d4e1fe52696e4be76dc4",
+        "comment_id": 6511179031,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/34#issuecomment-6511179031",
+        "published_at": "2026-10-29T23:43:24Z",
+        "updated_at": "2026-10-29T23:43:24Z",
+        "body_sha256": "f8dc55cf40929d4878aaafe755396432dca35b36d6c7cf315501ad36b8fd6cde",
         "source_sha_prefix": "04c3c22ab824",
         "base_sha_prefix": "0a0c98b7766e",
         "run_id": 40835258683,
         "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835258683",
         "counts": {
           "refuted": 0,
-          "verified": 7,
+          "verified": 8,
           "resources exhausted": 0,
           "type-check/audit failure": 2
         },
-        "properties": 9,
+        "properties": 10,
         "refutations": []
       },
       "report_history": [
@@ -2541,7 +2598,7 @@
           "comment_id": 6491323232,
           "url": "https://github.com/shuvendu-lahiri/nvx/pull/34#issuecomment-6491323232",
           "published_at": "2026-10-29T08:03:54Z",
-          "updated_at": "2026-10-29T08:03:54Z",
+          "updated_at": "2026-10-29T23:43:23Z",
           "body_sha256": "730c76635de5b708eb79d2146c89796ea95fa10e1014d4e1fe52696e4be76dc4",
           "source_sha_prefix": "04c3c22ab824",
           "base_sha_prefix": "0a0c98b7766e",
@@ -2555,6 +2612,25 @@
           },
           "properties": 9,
           "refutations": []
+        },
+        {
+          "comment_id": 6511179031,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/34#issuecomment-6511179031",
+          "published_at": "2026-10-29T23:43:24Z",
+          "updated_at": "2026-10-29T23:43:24Z",
+          "body_sha256": "f8dc55cf40929d4878aaafe755396432dca35b36d6c7cf315501ad36b8fd6cde",
+          "source_sha_prefix": "04c3c22ab824",
+          "base_sha_prefix": "0a0c98b7766e",
+          "run_id": 40835258683,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835258683",
+          "counts": {
+            "refuted": 0,
+            "verified": 8,
+            "resources exhausted": 0,
+            "type-check/audit failure": 2
+          },
+          "properties": 10,
+          "refutations": []
         }
       ],
       "report_matches_current_head": true,
@@ -2562,8 +2638,8 @@
       "latest_run": {
         "id": 40835258683,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835258683",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       },
       "source_number": 876,
@@ -2670,15 +2746,79 @@
       "state": "open",
       "head_sha": "07eb99c40c1baad5198bf4b5320b3d4932d93725",
       "head_branch": "nfv-campaign-901851d8-873-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6511471874,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/36#issuecomment-6511471874",
+        "published_at": "2026-10-30T00:03:25Z",
+        "updated_at": "2026-10-30T00:03:25Z",
+        "body_sha256": "045c8569aa94d98fdc3eaffaffd7d479f88167448c555b722624e5fcf2a9bb96",
+        "source_sha_prefix": "07eb99c40c1b",
+        "base_sha_prefix": "f4647dd9efcb",
+        "run_id": 40835290323,
+        "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835290323",
+        "counts": {
+          "refuted": 2,
+          "verified": 6,
+          "resources exhausted": 0,
+          "type-check/audit failure": 2
+        },
+        "properties": 10,
+        "refutations": [
+          {
+            "property_id": "P6",
+            "property": "from_tag(0x01) returns Restore.",
+            "input": "`tag = 1`; abstract state: contents of Self::ALL = `[]`",
+            "sketch": "If Self::ALL is empty and tag is 0x01, the search has no element for which field.tag() == tag can be evaluated. It would return None rather than Restore, conditionally refuting the stated property. Because the contents of Self::ALL are not captured, this does not establish a source-confirmed bug."
+          },
+          {
+            "property_id": "P10",
+            "property": "Every matching declared code returns that declaration's choice.",
+            "input": "`code = 1`; abstract state: ordered codes in the macro-generated match arms = `[1, 1]`",
+            "sketch": "If the abstract macro-generated declarations contain two `$code => Some($choice)` arms with code 1, `match code` selects the first matching arm. The function then cannot return the corresponding choice for both declarations, conditionally refuting the claimed exact correspondence."
+          }
+        ]
+      },
+      "report_history": [
+        {
+          "comment_id": 6511471874,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/36#issuecomment-6511471874",
+          "published_at": "2026-10-30T00:03:25Z",
+          "updated_at": "2026-10-30T00:03:25Z",
+          "body_sha256": "045c8569aa94d98fdc3eaffaffd7d479f88167448c555b722624e5fcf2a9bb96",
+          "source_sha_prefix": "07eb99c40c1b",
+          "base_sha_prefix": "f4647dd9efcb",
+          "run_id": 40835290323,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835290323",
+          "counts": {
+            "refuted": 2,
+            "verified": 6,
+            "resources exhausted": 0,
+            "type-check/audit failure": 2
+          },
+          "properties": 10,
+          "refutations": [
+            {
+              "property_id": "P6",
+              "property": "from_tag(0x01) returns Restore.",
+              "input": "`tag = 1`; abstract state: contents of Self::ALL = `[]`",
+              "sketch": "If Self::ALL is empty and tag is 0x01, the search has no element for which field.tag() == tag can be evaluated. It would return None rather than Restore, conditionally refuting the stated property. Because the contents of Self::ALL are not captured, this does not establish a source-confirmed bug."
+            },
+            {
+              "property_id": "P10",
+              "property": "Every matching declared code returns that declaration's choice.",
+              "input": "`code = 1`; abstract state: ordered codes in the macro-generated match arms = `[1, 1]`",
+              "sketch": "If the abstract macro-generated declarations contain two `$code => Some($choice)` arms with code 1, `match code` selects the first matching arm. The function then cannot return the corresponding choice for both declarations, conditionally refuting the claimed exact correspondence."
+            }
+          ]
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 2,
       "latest_run": {
         "id": 40835290323,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835290323",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       },
       "source_number": 873,
@@ -2693,11 +2833,11 @@
       "head_sha": "fac490853e287639e663cccdc106810b06f3306e",
       "head_branch": "nfv-campaign-901851d8-871-head",
       "latest_report": {
-        "comment_id": 6491291370,
-        "url": "https://github.com/shuvendu-lahiri/nvx/pull/37#issuecomment-6491291370",
-        "published_at": "2026-10-29T08:02:11Z",
-        "updated_at": "2026-10-29T08:02:11Z",
-        "body_sha256": "218f3685fbf54ceea7018e71dc3167c34889267dd982f93df535326b480da12f",
+        "comment_id": 6511138775,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/37#issuecomment-6511138775",
+        "published_at": "2026-10-29T23:41:02Z",
+        "updated_at": "2026-10-29T23:41:02Z",
+        "body_sha256": "cd717e1659ed9d7c90ee5f12b62314a72174f89afe4a455df4e7e510154b1cb3",
         "source_sha_prefix": "fac490853e28",
         "base_sha_prefix": "44ee73c4126f",
         "run_id": 40835305967,
@@ -2716,8 +2856,27 @@
           "comment_id": 6491291370,
           "url": "https://github.com/shuvendu-lahiri/nvx/pull/37#issuecomment-6491291370",
           "published_at": "2026-10-29T08:02:11Z",
-          "updated_at": "2026-10-29T08:02:11Z",
+          "updated_at": "2026-10-29T23:41:01Z",
           "body_sha256": "218f3685fbf54ceea7018e71dc3167c34889267dd982f93df535326b480da12f",
+          "source_sha_prefix": "fac490853e28",
+          "base_sha_prefix": "44ee73c4126f",
+          "run_id": 40835305967,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835305967",
+          "counts": {
+            "refuted": 0,
+            "verified": 5,
+            "resources exhausted": 0,
+            "type-check/audit failure": 2
+          },
+          "properties": 7,
+          "refutations": []
+        },
+        {
+          "comment_id": 6511138775,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/37#issuecomment-6511138775",
+          "published_at": "2026-10-29T23:41:02Z",
+          "updated_at": "2026-10-29T23:41:02Z",
+          "body_sha256": "cd717e1659ed9d7c90ee5f12b62314a72174f89afe4a455df4e7e510154b1cb3",
           "source_sha_prefix": "fac490853e28",
           "base_sha_prefix": "44ee73c4126f",
           "run_id": 40835305967,
@@ -2737,8 +2896,8 @@
       "latest_run": {
         "id": 40835305967,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835305967",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       },
       "source_number": 871,
@@ -2752,15 +2911,53 @@
       "state": "open",
       "head_sha": "40041b5930cf74ac38e63f21947c0cbcb616510b",
       "head_branch": "nfv-campaign-901851d8-864-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6511382280,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/38#issuecomment-6511382280",
+        "published_at": "2026-10-29T23:57:07Z",
+        "updated_at": "2026-10-29T23:57:07Z",
+        "body_sha256": "9f09911e82c10b69b958021a7113933fd6a5616ea3dc38c904e4b6a894e98485",
+        "source_sha_prefix": "40041b5930cf",
+        "base_sha_prefix": "c1d4d49e3402",
+        "run_id": 40835322389,
+        "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835322389",
+        "counts": {
+          "refuted": 0,
+          "verified": 5,
+          "resources exhausted": 1,
+          "type-check/audit failure": 2
+        },
+        "properties": 8,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6511382280,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/38#issuecomment-6511382280",
+          "published_at": "2026-10-29T23:57:07Z",
+          "updated_at": "2026-10-29T23:57:07Z",
+          "body_sha256": "9f09911e82c10b69b958021a7113933fd6a5616ea3dc38c904e4b6a894e98485",
+          "source_sha_prefix": "40041b5930cf",
+          "base_sha_prefix": "c1d4d49e3402",
+          "run_id": 40835322389,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835322389",
+          "counts": {
+            "refuted": 0,
+            "verified": 5,
+            "resources exhausted": 1,
+            "type-check/audit failure": 2
+          },
+          "properties": 8,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 2,
       "latest_run": {
         "id": 40835322389,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835322389",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       },
       "source_number": 864,
@@ -2775,30 +2972,37 @@
       "head_sha": "acdd71a03e003953a95c20fc3505b1707207d873",
       "head_branch": "nfv-campaign-901851d8-831-head",
       "latest_report": {
-        "comment_id": 6491678007,
-        "url": "https://github.com/shuvendu-lahiri/nvx/pull/39#issuecomment-6491678007",
-        "published_at": "2026-10-29T08:22:52Z",
-        "updated_at": "2026-10-29T08:22:52Z",
-        "body_sha256": "7b2c6be46d3afe8b110ce29d71f21aca40f1d6f073fd3d5e0337e1c03b99a45d",
+        "comment_id": 6511347815,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/39#issuecomment-6511347815",
+        "published_at": "2026-10-29T23:54:45Z",
+        "updated_at": "2026-10-29T23:54:45Z",
+        "body_sha256": "f7146b6532ec10cbbc825398773b28a9e5cccd41b40e62aaaec7580623b0afbb",
         "source_sha_prefix": "acdd71a03e00",
         "base_sha_prefix": "650a3203362b",
         "run_id": 40835334327,
         "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835334327",
         "counts": {
-          "refuted": 0,
-          "verified": 10,
-          "resources exhausted": 0,
-          "type-check/audit failure": 0
+          "refuted": 1,
+          "verified": 5,
+          "resources exhausted": 1,
+          "type-check/audit failure": 3
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [
+          {
+            "property_id": "P10",
+            "property": "A configured cgroup receives a kill attempt.",
+            "input": "`process = 1`; `options.process_group = false`; `unreaped = false`; abstract state: whether options.cgroup is configured = `true`; panic from the configured cgroup kill = `false`; result of the configured cgroup kill = `false`; panic while dropping descriptors = `true`; result of sys::kill_process_group(process) = `false`; result of sys::kill_process(process) = `false`",
+            "sketch": "If dropping descriptors panics while a cgroup is configured, control unwinds before `cgroup.kill(*scope)`, so the configured cgroup kill is not attempted."
+          }
+        ]
       },
       "report_history": [
         {
           "comment_id": 6491678007,
           "url": "https://github.com/shuvendu-lahiri/nvx/pull/39#issuecomment-6491678007",
           "published_at": "2026-10-29T08:22:52Z",
-          "updated_at": "2026-10-29T08:22:52Z",
+          "updated_at": "2026-10-29T23:54:44Z",
           "body_sha256": "7b2c6be46d3afe8b110ce29d71f21aca40f1d6f073fd3d5e0337e1c03b99a45d",
           "source_sha_prefix": "acdd71a03e00",
           "base_sha_prefix": "650a3203362b",
@@ -2812,6 +3016,32 @@
           },
           "properties": 10,
           "refutations": []
+        },
+        {
+          "comment_id": 6511347815,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/39#issuecomment-6511347815",
+          "published_at": "2026-10-29T23:54:45Z",
+          "updated_at": "2026-10-29T23:54:45Z",
+          "body_sha256": "f7146b6532ec10cbbc825398773b28a9e5cccd41b40e62aaaec7580623b0afbb",
+          "source_sha_prefix": "acdd71a03e00",
+          "base_sha_prefix": "650a3203362b",
+          "run_id": 40835334327,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835334327",
+          "counts": {
+            "refuted": 1,
+            "verified": 5,
+            "resources exhausted": 1,
+            "type-check/audit failure": 3
+          },
+          "properties": 10,
+          "refutations": [
+            {
+              "property_id": "P10",
+              "property": "A configured cgroup receives a kill attempt.",
+              "input": "`process = 1`; `options.process_group = false`; `unreaped = false`; abstract state: whether options.cgroup is configured = `true`; panic from the configured cgroup kill = `false`; result of the configured cgroup kill = `false`; panic while dropping descriptors = `true`; result of sys::kill_process_group(process) = `false`; result of sys::kill_process(process) = `false`",
+              "sketch": "If dropping descriptors panics while a cgroup is configured, control unwinds before `cgroup.kill(*scope)`, so the configured cgroup kill is not attempted."
+            }
+          ]
         }
       ],
       "report_matches_current_head": true,
@@ -2819,8 +3049,8 @@
       "latest_run": {
         "id": 40835334327,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835334327",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       },
       "source_number": 831,
@@ -2834,15 +3064,67 @@
       "state": "open",
       "head_sha": "208e496313312ab798ea36eb58e49043f135c94e",
       "head_branch": "nfv-campaign-901851d8-830-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6511347416,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/40#issuecomment-6511347416",
+        "published_at": "2026-10-29T23:54:43Z",
+        "updated_at": "2026-10-29T23:54:43Z",
+        "body_sha256": "22b69f590462c175a19daafa0e55fb2da39051abf77ff3c1c811b4384cb3eb6a",
+        "source_sha_prefix": "208e49631331",
+        "base_sha_prefix": "1c2ece786e26",
+        "run_id": 40835350142,
+        "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835350142",
+        "counts": {
+          "refuted": 1,
+          "verified": 5,
+          "resources exhausted": 0,
+          "type-check/audit failure": 0
+        },
+        "properties": 6,
+        "refutations": [
+          {
+            "property_id": "P4",
+            "property": "A non-list `layers` value produces the malformed-configuration failure.",
+            "input": "`format.is_some_and(|format| equals_int(document, format, expected)) = true`; `shares.any = false`; `shares.exported = false`; `plan.is_some() = false`; abstract state: whether `deserialize_export` reports malformed configuration = `false`; per-element results of `matches!(document.node(layer), Node::Object(_)) = []`; identities of values yielded while iterating `layers` = `[]`; kind of the value stored under `layers` = `1`; presence of the `layers` member = `true`; result of constructing the sandbox launch = `0`; per-layer success of reading textual `path` = `[]`; result of the identity, scratch, hostname, and limit reads = `0`; per-layer recognition of the layer role = `[]`; per-layer success of reading textual `role` = `[]`; per-layer success of reading textual `uuid` = `[]`; success of final launch validation = `true`; success of attaching the export plan = `true`",
+            "sketch": "If `layers` is an empty object, `iterate(document, layers_value)?` returns no items; the layer checks are skipped and the remaining valid configuration can be accepted."
+          }
+        ]
+      },
+      "report_history": [
+        {
+          "comment_id": 6511347416,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/40#issuecomment-6511347416",
+          "published_at": "2026-10-29T23:54:43Z",
+          "updated_at": "2026-10-29T23:54:43Z",
+          "body_sha256": "22b69f590462c175a19daafa0e55fb2da39051abf77ff3c1c811b4384cb3eb6a",
+          "source_sha_prefix": "208e49631331",
+          "base_sha_prefix": "1c2ece786e26",
+          "run_id": 40835350142,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835350142",
+          "counts": {
+            "refuted": 1,
+            "verified": 5,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 6,
+          "refutations": [
+            {
+              "property_id": "P4",
+              "property": "A non-list `layers` value produces the malformed-configuration failure.",
+              "input": "`format.is_some_and(|format| equals_int(document, format, expected)) = true`; `shares.any = false`; `shares.exported = false`; `plan.is_some() = false`; abstract state: whether `deserialize_export` reports malformed configuration = `false`; per-element results of `matches!(document.node(layer), Node::Object(_)) = []`; identities of values yielded while iterating `layers` = `[]`; kind of the value stored under `layers` = `1`; presence of the `layers` member = `true`; result of constructing the sandbox launch = `0`; per-layer success of reading textual `path` = `[]`; result of the identity, scratch, hostname, and limit reads = `0`; per-layer recognition of the layer role = `[]`; per-layer success of reading textual `role` = `[]`; per-layer success of reading textual `uuid` = `[]`; success of final launch validation = `true`; success of attaching the export plan = `true`",
+              "sketch": "If `layers` is an empty object, `iterate(document, layers_value)?` returns no items; the layer checks are skipped and the remaining valid configuration can be accepted."
+            }
+          ]
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 2,
       "latest_run": {
         "id": 40835350142,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835350142",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       },
       "source_number": 830,
@@ -2859,13 +3141,13 @@
       "latest_report": null,
       "report_history": [],
       "report_matches_current_head": null,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 40954969307,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40954969307",
-        "status": "completed",
-        "conclusion": "failure",
-        "attempt": 1
+        "status": "queued",
+        "conclusion": null,
+        "attempt": 2
       },
       "source_number": 829,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/829",
@@ -2881,13 +3163,13 @@
       "latest_report": null,
       "report_history": [],
       "report_matches_current_head": null,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 40954992358,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40954992358",
-        "status": "completed",
-        "conclusion": "cancelled",
-        "attempt": 1
+        "status": "queued",
+        "conclusion": null,
+        "attempt": 2
       },
       "source_number": 828,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/828",
@@ -2903,13 +3185,13 @@
       "latest_report": null,
       "report_history": [],
       "report_matches_current_head": null,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 40955012283,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955012283",
-        "status": "completed",
-        "conclusion": "cancelled",
-        "attempt": 1
+        "status": "queued",
+        "conclusion": null,
+        "attempt": 2
       },
       "source_number": 827,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/827",
@@ -2925,13 +3207,13 @@
       "latest_report": null,
       "report_history": [],
       "report_matches_current_head": null,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 40955033538,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955033538",
-        "status": "completed",
-        "conclusion": "cancelled",
-        "attempt": 1
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
       },
       "source_number": 824,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/824",
@@ -2947,13 +3229,13 @@
       "latest_report": null,
       "report_history": [],
       "report_matches_current_head": null,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 40955054329,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955054329",
-        "status": "completed",
-        "conclusion": "cancelled",
-        "attempt": 1
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
       },
       "source_number": 823,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/823",
@@ -2969,13 +3251,13 @@
       "latest_report": null,
       "report_history": [],
       "report_matches_current_head": null,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 40955075088,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955075088",
-        "status": "completed",
-        "conclusion": "cancelled",
-        "attempt": 1
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
       },
       "source_number": 815,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/815",
@@ -2991,13 +3273,13 @@
       "latest_report": null,
       "report_history": [],
       "report_matches_current_head": null,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 40955092049,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955092049",
-        "status": "completed",
-        "conclusion": "cancelled",
-        "attempt": 1
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
       },
       "source_number": 814,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/814",
@@ -3013,13 +3295,13 @@
       "latest_report": null,
       "report_history": [],
       "report_matches_current_head": null,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 40955111250,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955111250",
-        "status": "completed",
-        "conclusion": "cancelled",
-        "attempt": 1
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
       },
       "source_number": 813,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/813",
@@ -3035,13 +3317,13 @@
       "latest_report": null,
       "report_history": [],
       "report_matches_current_head": null,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 40955134520,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955134520",
-        "status": "completed",
-        "conclusion": "cancelled",
-        "attempt": 1
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
       },
       "source_number": 807,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/807",
@@ -3057,13 +3339,13 @@
       "latest_report": null,
       "report_history": [],
       "report_matches_current_head": null,
-      "attempts": 1,
+      "attempts": 2,
       "latest_run": {
         "id": 40955154888,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955154888",
-        "status": "completed",
-        "conclusion": "cancelled",
-        "attempt": 1
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
       },
       "source_number": 801,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/801",
