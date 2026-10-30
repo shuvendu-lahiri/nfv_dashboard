@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/nvx",
-  "generated_at": "2026-10-30T03:52:49.435121+00:00",
+  "generated_at": "2026-10-30T04:24:40.608973+00:00",
   "name": "nvx",
   "label": "NVX",
   "summary": {
@@ -11,9 +11,9 @@
     "workflow_attempts": 124,
     "without_report": 5,
     "refuted_prs": 10,
-    "properties": 287,
+    "properties": 288,
     "outcomes": {
-      "refuted": 13,
+      "refuted": 14,
       "verified": 201,
       "resources exhausted": 18,
       "type-check/audit failure": 55
@@ -1999,28 +1999,34 @@
       "head_sha": "5e46844aaa747e7630be141dd1c478cfbb5a9d4b",
       "head_branch": "nfv-pedro-657",
       "latest_report": {
-        "comment_id": 6385797194,
-        "url": "https://github.com/shuvendu-lahiri/nvx/pull/20#issuecomment-6385797194",
-        "published_at": "2026-10-24T15:06:58Z",
-        "updated_at": "2026-10-24T15:06:58Z",
-        "body_sha256": "94026fe2dd217c73f48c2da269a88ff5a8fcbe84b88176940bd0c817c071c725",
+        "comment_id": 6514538938,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/20#issuecomment-6514538938",
+        "published_at": "2026-10-30T03:53:02Z",
+        "updated_at": "2026-10-30T03:53:02Z",
+        "body_sha256": "47e67b75339750b96f8471ed8a54bb47b02d69be9d388fe705ff5f52f217e1f4",
         "source_sha_prefix": "5e46844aaa74",
         "base_sha_prefix": "6e21fec614b0",
         "run_id": 39898919181,
         "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39898919181",
         "counts": {
-          "refuted": 1,
+          "refuted": 2,
           "verified": 8,
           "resources exhausted": 0,
           "type-check/audit failure": 0
         },
-        "properties": 9,
+        "properties": 10,
         "refutations": [
           {
             "property_id": "P6",
-            "property": "A process-creation OSError closes the opened stderr log.",
-            "input": "`command is None = true`; abstract state: fallback command-file status = `true`; local executor environment setup outcome = `true`; executor-client log-directory creation outcome = `true`; subprocess creation outcome = `true`; response-reader setup outcome = `true`; stderr log close outcome = `false`; stderr log opening outcome = `true`; spawned process stdin availability = `true`; spawned process stdout availability = `true`; process terminate-call outcome = `true`; command lookup result = `true`",
-            "sketch": "If subprocess creation raises OSError and self._stderr_stream.close() also raises, cleanup does not complete and the following bare raise is skipped."
+            "property": "A Popen OSError still leaves the stderr log closed.",
+            "input": "`candidate.is_file() = false`; `command is None = true`; abstract state: local executor environment construction outcome = `false`; log-directory creation outcome = `false`; subprocess creation raises OSError = `true`; subprocess creation raises a non-OSError exception = `false`; response queue construction outcome = `false`; candidate path resolution outcome = `false`; sanitized environment construction outcome = `false`; stderr log close outcome = `true`; stderr log opening outcome = `false`; created process has a stdin protocol pipe = `true`; created process has a stdout protocol pipe = `true`; process termination outcome = `false`; reader thread construction outcome = `false`; reader thread start outcome = `false`; executor command lookup result = `false`",
+            "sketch": "If subprocess.Popen raises OSError and self._stderr_stream.close() also raises, the bare raise that would propagate the original process-creation error is not reached."
+          },
+          {
+            "property_id": "P10",
+            "property": "Without a polling exception, close attempts the process wait.",
+            "input": "`self._closed = false`; `self._process.poll() is None = true`; `self._reader.is_alive() = false`; abstract state: reader join raises = `false`; process polling exception outcome = `false`; shutdown request raises OSError or ScriptError = `true`; shutdown request raises another exception = `false`; stderr stream close raises OSError = `false`; stdin stream close raises OSError = `false`; termination after the failed shutdown request raises = `true`; termination after a wait timeout raises = `false`; five-second process wait raises another exception = `false`; five-second process wait timeout outcome = `false`",
+            "sketch": "If the shutdown request raises a handled exception and the ensuing _terminate call also raises, the outer handler is entered before self._process.wait(timeout=5.0), so that wait is skipped."
           }
         ]
       },
@@ -2055,7 +2061,7 @@
           "comment_id": 6385797194,
           "url": "https://github.com/shuvendu-lahiri/nvx/pull/20#issuecomment-6385797194",
           "published_at": "2026-10-24T15:06:58Z",
-          "updated_at": "2026-10-24T15:06:58Z",
+          "updated_at": "2026-10-30T03:53:01Z",
           "body_sha256": "94026fe2dd217c73f48c2da269a88ff5a8fcbe84b88176940bd0c817c071c725",
           "source_sha_prefix": "5e46844aaa74",
           "base_sha_prefix": "6e21fec614b0",
@@ -2076,6 +2082,38 @@
               "sketch": "If subprocess creation raises OSError and self._stderr_stream.close() also raises, cleanup does not complete and the following bare raise is skipped."
             }
           ]
+        },
+        {
+          "comment_id": 6514538938,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/20#issuecomment-6514538938",
+          "published_at": "2026-10-30T03:53:02Z",
+          "updated_at": "2026-10-30T03:53:02Z",
+          "body_sha256": "47e67b75339750b96f8471ed8a54bb47b02d69be9d388fe705ff5f52f217e1f4",
+          "source_sha_prefix": "5e46844aaa74",
+          "base_sha_prefix": "6e21fec614b0",
+          "run_id": 39898919181,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39898919181",
+          "counts": {
+            "refuted": 2,
+            "verified": 8,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 10,
+          "refutations": [
+            {
+              "property_id": "P6",
+              "property": "A Popen OSError still leaves the stderr log closed.",
+              "input": "`candidate.is_file() = false`; `command is None = true`; abstract state: local executor environment construction outcome = `false`; log-directory creation outcome = `false`; subprocess creation raises OSError = `true`; subprocess creation raises a non-OSError exception = `false`; response queue construction outcome = `false`; candidate path resolution outcome = `false`; sanitized environment construction outcome = `false`; stderr log close outcome = `true`; stderr log opening outcome = `false`; created process has a stdin protocol pipe = `true`; created process has a stdout protocol pipe = `true`; process termination outcome = `false`; reader thread construction outcome = `false`; reader thread start outcome = `false`; executor command lookup result = `false`",
+              "sketch": "If subprocess.Popen raises OSError and self._stderr_stream.close() also raises, the bare raise that would propagate the original process-creation error is not reached."
+            },
+            {
+              "property_id": "P10",
+              "property": "Without a polling exception, close attempts the process wait.",
+              "input": "`self._closed = false`; `self._process.poll() is None = true`; `self._reader.is_alive() = false`; abstract state: reader join raises = `false`; process polling exception outcome = `false`; shutdown request raises OSError or ScriptError = `true`; shutdown request raises another exception = `false`; stderr stream close raises OSError = `false`; stdin stream close raises OSError = `false`; termination after the failed shutdown request raises = `true`; termination after a wait timeout raises = `false`; five-second process wait raises another exception = `false`; five-second process wait timeout outcome = `false`",
+              "sketch": "If the shutdown request raises a handled exception and the ensuing _terminate call also raises, the outer handler is entered before self._process.wait(timeout=5.0), so that wait is skipped."
+            }
+          ]
         }
       ],
       "report_matches_current_head": true,
@@ -2083,8 +2121,8 @@
       "latest_run": {
         "id": 39898919181,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39898919181",
-        "status": "queued",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 3
       },
       "source_number": 657,

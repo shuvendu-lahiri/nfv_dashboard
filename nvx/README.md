@@ -5,14 +5,15 @@ Published results from the prototype [Neuro-Formal Verification](https://arxiv.o
 
 **[Live interactive dashboard](https://shuvendu-lahiri.github.io/nfv_dashboard/nvx/)** / [all repositories](https://shuvendu-lahiri.github.io/nfv_dashboard/) or [download the standalone HTML](index.html) (no server or external dependencies).
 
-Snapshot: 2026-10-30T03:52:49.435121+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
+Snapshot: 2026-10-30T04:24:40.608973+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
 
-**50 PRs attempted; 124 workflow attempts; 45 published reports; 10 PRs with 13 conditional refutations; 201 model verifications; 5 PRs without a published report.**
+**50 PRs attempted; 124 workflow attempts; 45 published reports; 10 PRs with 14 conditional refutations; 201 model verifications; 5 PRs without a published report.**
 
 ## All attempted PRs (refutations first)
 
 | PR | Change | Latest report | Properties | Refuted | Verified | Exhausted | Audit failure | Evidence |
 |---|---|---|---:|---:|---:|---:|---:|---|
+| [shuvendu-lahiri/nvx#20](https://github.com/shuvendu-lahiri/nvx/pull/20) | [Source change 657](https://redirect.github.com/microsoft/nvx/pull/657) / adversarial: keep executor close bounded when a child holds stdout | **REFUTED (model)** | 10 | **2** | 8 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/20#issuecomment-6514538938) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39898919181) |
 | [shuvendu-lahiri/nvx#13](https://github.com/shuvendu-lahiri/nvx/pull/13) | [Source change 681](https://redirect.github.com/microsoft/nvx/pull/681) / nvx\-rs: report the time probe's invalid options with one method | **REFUTED (model)** | 10 | **1** | 5 | 4 | 0 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/13#issuecomment-6514438588) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39893507724) |
 | [shuvendu-lahiri/nvx#17](https://github.com/shuvendu-lahiri/nvx/pull/17) | [Source change 678](https://redirect.github.com/microsoft/nvx/pull/678) / nvx\-rs: build the NVXS unit tests' epoch identities with one function | **REFUTED (model)** | 7 | **1** | 6 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/17#issuecomment-6514396713) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39896853340) |
 | [shuvendu-lahiri/nvx#45](https://github.com/shuvendu-lahiri/nvx/pull/45) | [Source change 823](https://redirect.github.com/microsoft/nvx/pull/823) / Specify sandbox launch and option contracts before fixture retirement | **REFUTED (model)** | 9 | **3** | 3 | 0 | 3 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/45#issuecomment-6512446360) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/40955054329) |
@@ -22,7 +23,6 @@ Snapshot: 2026-10-30T03:52:49.435121+00:00. Latest published report per PR suppl
 | [shuvendu-lahiri/nvx#39](https://github.com/shuvendu-lahiri/nvx/pull/39) | [Source change 831](https://redirect.github.com/microsoft/nvx/pull/831) / nvx\-rs: let an execution drive a program that its caller started | **REFUTED (model)** | 10 | **1** | 5 | 1 | 3 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/39#issuecomment-6511347815) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/40835334327) |
 | [shuvendu-lahiri/nvx#40](https://github.com/shuvendu-lahiri/nvx/pull/40) | [Source change 830](https://redirect.github.com/microsoft/nvx/pull/830) / nvx\-rs: retire the golden CLI scenarios | **REFUTED (model)** | 6 | **1** | 5 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/40#issuecomment-6511347416) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/40835350142) |
 | [shuvendu-lahiri/nvx#35](https://github.com/shuvendu-lahiri/nvx/pull/35) | [Source change 874](https://redirect.github.com/microsoft/nvx/pull/874) / nvx\-rs: encode what Ready reports about an activation, with conformance vectors | **REFUTED (model)** | 3 | **1** | 0 | 0 | 2 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/35#issuecomment-6510867527) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/40835273267) |
-| [shuvendu-lahiri/nvx#20](https://github.com/shuvendu-lahiri/nvx/pull/20) | [Source change 657](https://redirect.github.com/microsoft/nvx/pull/657) / adversarial: keep executor close bounded when a child holds stdout | **REFUTED (model)** / latest attempt: queued | 9 | **1** | 8 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/20#issuecomment-6385797194) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39898919181) / [latest attempt](https://github.com/shuvendu-lahiri/nvx/actions/runs/39898919181) |
 | [shuvendu-lahiri/nvx#19](https://github.com/shuvendu-lahiri/nvx/pull/19) | [Source change 658](https://redirect.github.com/microsoft/nvx/pull/658) / performance: keep results measured before a history reset out of the series | Published | 10 | 0 | 7 | 0 | 3 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/19#issuecomment-6514510507) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39898539854) |
 | [shuvendu-lahiri/nvx#14](https://github.com/shuvendu-lahiri/nvx/pull/14) | [Source change 680](https://redirect.github.com/microsoft/nvx/pull/680) / nvx\-rs: check the CLI session's replies through shared methods | Published | 7 | 0 | 6 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/14#issuecomment-6514444195) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39893712214) |
 | [shuvendu-lahiri/nvx#16](https://github.com/shuvendu-lahiri/nvx/pull/16) | [Source change 659](https://redirect.github.com/microsoft/nvx/pull/659) / microvm tests: stream OpenVMM transcripts to disk as they are read | Published | 10 | 0 | 8 | 0 | 2 | [Report](https://github.com/shuvendu-lahiri/nvx/pull/16#issuecomment-6514363939) / [run](https://github.com/shuvendu-lahiri/nvx/actions/runs/39896467670) |
@@ -67,6 +67,18 @@ Snapshot: 2026-10-30T03:52:49.435121+00:00. Latest published report per PR suppl
 ## Conditional model refutations
 
 The following property texts are extracted from the published reports, without new adjudication or inference. The original report contains assumptions, source overlays and native evidence.
+
+### shuvendu-lahiri/nvx#20 / P6
+
+A Popen OSError still leaves the stderr log closed\.
+
+[Original report](https://github.com/shuvendu-lahiri/nvx/pull/20#issuecomment-6514538938)
+
+### shuvendu-lahiri/nvx#20 / P10
+
+Without a polling exception, close attempts the process wait\.
+
+[Original report](https://github.com/shuvendu-lahiri/nvx/pull/20#issuecomment-6514538938)
 
 ### shuvendu-lahiri/nvx#13 / P2
 
@@ -139,12 +151,6 @@ A non\-list \`layers\` value produces the malformed\-configuration failure\.
 Encoding a clone produces exactly 17 bytes\.
 
 [Original report](https://github.com/shuvendu-lahiri/nvx/pull/35#issuecomment-6510867527)
-
-### shuvendu-lahiri/nvx#20 / P6
-
-A process\-creation OSError closes the opened stderr log\.
-
-[Original report](https://github.com/shuvendu-lahiri/nvx/pull/20#issuecomment-6385797194)
 
 ## Refresh and validate
 
