@@ -1,22 +1,22 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/nvx",
-  "generated_at": "2026-10-30T00:39:52.619150+00:00",
+  "generated_at": "2026-10-30T01:11:43.795194+00:00",
   "name": "nvx",
   "label": "NVX",
   "summary": {
     "selected_prs": 50,
     "attempted_prs": 50,
-    "published_reports": 39,
+    "published_reports": 43,
     "workflow_attempts": 104,
-    "without_report": 11,
-    "refuted_prs": 8,
-    "properties": 238,
+    "without_report": 7,
+    "refuted_prs": 10,
+    "properties": 269,
     "outcomes": {
-      "refuted": 9,
-      "verified": 168,
+      "refuted": 11,
+      "verified": 193,
       "resources exhausted": 17,
-      "type-check/audit failure": 44
+      "type-check/audit failure": 48
     }
   },
   "prs": [
@@ -3220,15 +3220,67 @@
       "state": "open",
       "head_sha": "efe2653c47db0d2e42d34bfaaf5136f932f42ca1",
       "head_branch": "nfv-campaign-901851d8-827-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6512116709,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/43#issuecomment-6512116709",
+        "published_at": "2026-10-30T00:47:43Z",
+        "updated_at": "2026-10-30T00:47:43Z",
+        "body_sha256": "675ede697a5994190cde6eb69161c612601b28913d5dda6cbafa73d6e084b8a7",
+        "source_sha_prefix": "efe2653c47db",
+        "base_sha_prefix": "f9dd52c5eff1",
+        "run_id": 40955012283,
+        "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955012283",
+        "counts": {
+          "refuted": 1,
+          "verified": 6,
+          "resources exhausted": 0,
+          "type-check/audit failure": 1
+        },
+        "properties": 8,
+        "refutations": [
+          {
+            "property_id": "P7",
+            "property": "The credit spend completes without panicking.",
+            "input": "`self.available = 0`; `length = 0`; abstract state: whether the window counts bytes rather than frames = `false`",
+            "sketch": "If the window counts frames and both self.available and length are zero, sendable returns the complete requested length of zero, but self.window.cost(length) returns one and the subtraction underflows."
+          }
+        ]
+      },
+      "report_history": [
+        {
+          "comment_id": 6512116709,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/43#issuecomment-6512116709",
+          "published_at": "2026-10-30T00:47:43Z",
+          "updated_at": "2026-10-30T00:47:43Z",
+          "body_sha256": "675ede697a5994190cde6eb69161c612601b28913d5dda6cbafa73d6e084b8a7",
+          "source_sha_prefix": "efe2653c47db",
+          "base_sha_prefix": "f9dd52c5eff1",
+          "run_id": 40955012283,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955012283",
+          "counts": {
+            "refuted": 1,
+            "verified": 6,
+            "resources exhausted": 0,
+            "type-check/audit failure": 1
+          },
+          "properties": 8,
+          "refutations": [
+            {
+              "property_id": "P7",
+              "property": "The credit spend completes without panicking.",
+              "input": "`self.available = 0`; `length = 0`; abstract state: whether the window counts bytes rather than frames = `false`",
+              "sketch": "If the window counts frames and both self.available and length are zero, sendable returns the complete requested length of zero, but self.window.cost(length) returns one and the subtraction underflows."
+            }
+          ]
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 2,
       "latest_run": {
         "id": 40955012283,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955012283",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       },
       "source_number": 827,
@@ -3286,15 +3338,53 @@
       "state": "open",
       "head_sha": "2a613c6956b5f0465178d80b881e0310f0cb7928",
       "head_branch": "nfv-campaign-901851d8-815-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6512209119,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/46#issuecomment-6512209119",
+        "published_at": "2026-10-30T00:54:39Z",
+        "updated_at": "2026-10-30T00:54:39Z",
+        "body_sha256": "8301619e975b5324f8189b579bcc55a5295eed07cca2e0b6429907a7b73cf34f",
+        "source_sha_prefix": "2a613c6956b5",
+        "base_sha_prefix": "340055e345af",
+        "run_id": 40955075088,
+        "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955075088",
+        "counts": {
+          "refuted": 0,
+          "verified": 4,
+          "resources exhausted": 0,
+          "type-check/audit failure": 0
+        },
+        "properties": 4,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6512209119,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/46#issuecomment-6512209119",
+          "published_at": "2026-10-30T00:54:39Z",
+          "updated_at": "2026-10-30T00:54:39Z",
+          "body_sha256": "8301619e975b5324f8189b579bcc55a5295eed07cca2e0b6429907a7b73cf34f",
+          "source_sha_prefix": "2a613c6956b5",
+          "base_sha_prefix": "340055e345af",
+          "run_id": 40955075088,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955075088",
+          "counts": {
+            "refuted": 0,
+            "verified": 4,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 4,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 2,
       "latest_run": {
         "id": 40955075088,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955075088",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       },
       "source_number": 815,
@@ -3308,15 +3398,67 @@
       "state": "open",
       "head_sha": "43f03f2be1ddf77b7bf65896d2cb21e712f90fae",
       "head_branch": "nfv-campaign-901851d8-814-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6512259817,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/47#issuecomment-6512259817",
+        "published_at": "2026-10-30T00:58:20Z",
+        "updated_at": "2026-10-30T00:58:20Z",
+        "body_sha256": "32b8a642772d5ea0ffd2a8a3b10a246e2f06ac64dc8c8a7d384e0849230c37e8",
+        "source_sha_prefix": "43f03f2be1dd",
+        "base_sha_prefix": "1a5285614e64",
+        "run_id": 40955092049,
+        "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955092049",
+        "counts": {
+          "refuted": 1,
+          "verified": 7,
+          "resources exhausted": 0,
+          "type-check/audit failure": 1
+        },
+        "properties": 9,
+        "refutations": [
+          {
+            "property_id": "P6",
+            "property": "The child terminates with launch-failure status 125.",
+            "input": "`error = 0`; `LAUNCH_FAILURE_STATUS = 0`; `stage.code() = 0`; abstract state: whether the launch report has a reader = `false`; native byte order = `true`; SIGPIPE mask syscall result = `-1`; launch-report write outcome = `false`",
+            "sketch": "If `LAUNCH_FAILURE_STATUS` is 0, `nix::libc::_exit(LAUNCH_FAILURE_STATUS)` terminates the child with status 0 after the failed mask and report operations, rather than with status 125."
+          }
+        ]
+      },
+      "report_history": [
+        {
+          "comment_id": 6512259817,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/47#issuecomment-6512259817",
+          "published_at": "2026-10-30T00:58:20Z",
+          "updated_at": "2026-10-30T00:58:20Z",
+          "body_sha256": "32b8a642772d5ea0ffd2a8a3b10a246e2f06ac64dc8c8a7d384e0849230c37e8",
+          "source_sha_prefix": "43f03f2be1dd",
+          "base_sha_prefix": "1a5285614e64",
+          "run_id": 40955092049,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955092049",
+          "counts": {
+            "refuted": 1,
+            "verified": 7,
+            "resources exhausted": 0,
+            "type-check/audit failure": 1
+          },
+          "properties": 9,
+          "refutations": [
+            {
+              "property_id": "P6",
+              "property": "The child terminates with launch-failure status 125.",
+              "input": "`error = 0`; `LAUNCH_FAILURE_STATUS = 0`; `stage.code() = 0`; abstract state: whether the launch report has a reader = `false`; native byte order = `true`; SIGPIPE mask syscall result = `-1`; launch-report write outcome = `false`",
+              "sketch": "If `LAUNCH_FAILURE_STATUS` is 0, `nix::libc::_exit(LAUNCH_FAILURE_STATUS)` terminates the child with status 0 after the failed mask and report operations, rather than with status 125."
+            }
+          ]
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 2,
       "latest_run": {
         "id": 40955092049,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955092049",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       },
       "source_number": 814,
@@ -3330,15 +3472,53 @@
       "state": "open",
       "head_sha": "5526beb0d94e09288d37c6606073717811368c0e",
       "head_branch": "nfv-campaign-901851d8-813-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6512090573,
+        "url": "https://github.com/shuvendu-lahiri/nvx/pull/48#issuecomment-6512090573",
+        "published_at": "2026-10-30T00:45:49Z",
+        "updated_at": "2026-10-30T00:45:49Z",
+        "body_sha256": "c1b28a8804ea1fe3069e6e2084881fa0a83e839907e92bc317b3d7c723c1d698",
+        "source_sha_prefix": "5526beb0d94e",
+        "base_sha_prefix": "679d2cc462da",
+        "run_id": 40955111250,
+        "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955111250",
+        "counts": {
+          "refuted": 0,
+          "verified": 8,
+          "resources exhausted": 0,
+          "type-check/audit failure": 2
+        },
+        "properties": 10,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6512090573,
+          "url": "https://github.com/shuvendu-lahiri/nvx/pull/48#issuecomment-6512090573",
+          "published_at": "2026-10-30T00:45:49Z",
+          "updated_at": "2026-10-30T00:45:49Z",
+          "body_sha256": "c1b28a8804ea1fe3069e6e2084881fa0a83e839907e92bc317b3d7c723c1d698",
+          "source_sha_prefix": "5526beb0d94e",
+          "base_sha_prefix": "679d2cc462da",
+          "run_id": 40955111250,
+          "run_url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955111250",
+          "counts": {
+            "refuted": 0,
+            "verified": 8,
+            "resources exhausted": 0,
+            "type-check/audit failure": 2
+          },
+          "properties": 10,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 2,
       "latest_run": {
         "id": 40955111250,
         "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955111250",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 2
       },
       "source_number": 813,
