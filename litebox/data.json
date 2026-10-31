@@ -1,22 +1,22 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/litebox",
-  "generated_at": "2026-10-31T09:22:12.995830+00:00",
+  "generated_at": "2026-10-31T10:05:34.244810+00:00",
   "name": "litebox",
   "label": "LiteBox",
   "summary": {
-    "selected_prs": 89,
-    "attempted_prs": 89,
-    "published_reports": 76,
-    "workflow_attempts": 160,
-    "without_report": 13,
+    "selected_prs": 94,
+    "attempted_prs": 94,
+    "published_reports": 79,
+    "workflow_attempts": 165,
+    "without_report": 15,
     "refuted_prs": 20,
-    "properties": 603,
+    "properties": 619,
     "outcomes": {
       "refuted": 25,
-      "verified": 425,
+      "verified": 440,
       "resources exhausted": 68,
-      "type-check/audit failure": 85
+      "type-check/audit failure": 86
     }
   },
   "prs": [
@@ -5745,8 +5745,8 @@
       "latest_run": {
         "id": 41188371366,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41188371366",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "failure",
         "attempt": 1
       }
     },
@@ -5757,15 +5757,53 @@
       "state": "open",
       "head_sha": "80eeb72d8ac050b70c494d29c52c217872c806cb",
       "head_branch": "nfv-campaign-901851d8-1698-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6541748682,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/89#issuecomment-6541748682",
+        "published_at": "2026-10-31T09:34:07Z",
+        "updated_at": "2026-10-31T09:34:07Z",
+        "body_sha256": "80eadb0439e9c5a98bf8d0168ba72ee92b64a9a9d14c55833e36e0b00155637d",
+        "source_sha_prefix": "80eeb72d8ac0",
+        "base_sha_prefix": "3b1aa970881f",
+        "run_id": 41188381224,
+        "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41188381224",
+        "counts": {
+          "refuted": 0,
+          "verified": 1,
+          "resources exhausted": 0,
+          "type-check/audit failure": 0
+        },
+        "properties": 1,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6541748682,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/89#issuecomment-6541748682",
+          "published_at": "2026-10-31T09:34:07Z",
+          "updated_at": "2026-10-31T09:34:07Z",
+          "body_sha256": "80eadb0439e9c5a98bf8d0168ba72ee92b64a9a9d14c55833e36e0b00155637d",
+          "source_sha_prefix": "80eeb72d8ac0",
+          "base_sha_prefix": "3b1aa970881f",
+          "run_id": 41188381224,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41188381224",
+          "counts": {
+            "refuted": 0,
+            "verified": 1,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 1,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 1,
       "latest_run": {
         "id": 41188381224,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41188381224",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 1
       }
     },
@@ -5783,7 +5821,7 @@
       "latest_run": {
         "id": 41188390312,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41188390312",
-        "status": "queued",
+        "status": "in_progress",
         "conclusion": null,
         "attempt": 1
       }
@@ -5795,15 +5833,53 @@
       "state": "open",
       "head_sha": "f4403616bd72a57f6f946b578070cb2267e63743",
       "head_branch": "nfv-campaign-901851d8-1692-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6542003816,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/91#issuecomment-6542003816",
+        "published_at": "2026-10-31T10:03:10Z",
+        "updated_at": "2026-10-31T10:03:10Z",
+        "body_sha256": "e924696beccc6041117bf51dc63125467abc21bbb8cb31a0d7f04df6aaefc515",
+        "source_sha_prefix": "f4403616bd72",
+        "base_sha_prefix": "1b92742ffab0",
+        "run_id": 41188398944,
+        "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41188398944",
+        "counts": {
+          "refuted": 0,
+          "verified": 9,
+          "resources exhausted": 0,
+          "type-check/audit failure": 1
+        },
+        "properties": 10,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6542003816,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/91#issuecomment-6542003816",
+          "published_at": "2026-10-31T10:03:10Z",
+          "updated_at": "2026-10-31T10:03:10Z",
+          "body_sha256": "e924696beccc6041117bf51dc63125467abc21bbb8cb31a0d7f04df6aaefc515",
+          "source_sha_prefix": "f4403616bd72",
+          "base_sha_prefix": "1b92742ffab0",
+          "run_id": 41188398944,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41188398944",
+          "counts": {
+            "refuted": 0,
+            "verified": 9,
+            "resources exhausted": 0,
+            "type-check/audit failure": 1
+          },
+          "properties": 10,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 1,
       "latest_run": {
         "id": 41188398944,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41188398944",
-        "status": "queued",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 1
       }
     },
@@ -5821,8 +5897,141 @@
       "latest_run": {
         "id": 41188407401,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41188407401",
-        "status": "queued",
+        "status": "completed",
+        "conclusion": "failure",
+        "attempt": 1
+      }
+    },
+    {
+      "number": 93,
+      "title": "NFV audit - change 1690: Prevent native fork/clone children from inheriting broker association memory",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/93",
+      "state": "open",
+      "head_sha": "400049e9887f04a62ec0d368542ee00acab9a2ed",
+      "head_branch": "nfv-campaign-901851d8-1690-head",
+      "latest_report": {
+        "comment_id": 6541872323,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/93#issuecomment-6541872323",
+        "published_at": "2026-10-31T09:48:13Z",
+        "updated_at": "2026-10-31T09:48:13Z",
+        "body_sha256": "c6e0f71d63d72b02265a03367c2080806e87ff54e390928c485b73ebd44cd77e",
+        "source_sha_prefix": "400049e9887f",
+        "base_sha_prefix": "4e62a4b9df78",
+        "run_id": 41188417447,
+        "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41188417447",
+        "counts": {
+          "refuted": 0,
+          "verified": 5,
+          "resources exhausted": 0,
+          "type-check/audit failure": 0
+        },
+        "properties": 5,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6541872323,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/93#issuecomment-6541872323",
+          "published_at": "2026-10-31T09:48:13Z",
+          "updated_at": "2026-10-31T09:48:13Z",
+          "body_sha256": "c6e0f71d63d72b02265a03367c2080806e87ff54e390928c485b73ebd44cd77e",
+          "source_sha_prefix": "400049e9887f",
+          "base_sha_prefix": "4e62a4b9df78",
+          "run_id": 41188417447,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41188417447",
+          "counts": {
+            "refuted": 0,
+            "verified": 5,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 5,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41188417447,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41188417447",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      }
+    },
+    {
+      "number": 94,
+      "title": "NFV audit - change 1689: Add /dev/tty support",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/94",
+      "state": "open",
+      "head_sha": "cf10eff5ba8d63b97ca62d41d16bb046b41b8e13",
+      "head_branch": "nfv-campaign-901851d8-1689-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41188426419,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41188426419",
+        "status": "completed",
+        "conclusion": "failure",
+        "attempt": 1
+      }
+    },
+    {
+      "number": 95,
+      "title": "NFV audit - change 1688: Serve broker calls on per-call lanes",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/95",
+      "state": "open",
+      "head_sha": "288b96dc9a0b0cac9ad622d09f2cc4d824a75f16",
+      "head_branch": "nfv-campaign-901851d8-1688-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41188435916,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41188435916",
+        "status": "completed",
+        "conclusion": "failure",
+        "attempt": 1
+      }
+    },
+    {
+      "number": 96,
+      "title": "NFV audit - change 1685: Stacked runners: Add ACPI CPU enumeration and IPIs to the HAL",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/96",
+      "state": "open",
+      "head_sha": "659e182c144404e5f3ce6ba4319cc34ee7ec0046",
+      "head_branch": "nfv-campaign-901851d8-1685-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41188443973,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41188443973",
+        "status": "in_progress",
         "conclusion": null,
+        "attempt": 1
+      }
+    },
+    {
+      "number": 97,
+      "title": "NFV audit - change 1684: Add termios2 ioctls and an ENOTTY fallback",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/97",
+      "state": "open",
+      "head_sha": "6efb55bd01c4b55ee42bd8c4fe2f5636e02518f7",
+      "head_branch": "nfv-campaign-901851d8-1684-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41188452421,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41188452421",
+        "status": "completed",
+        "conclusion": "failure",
         "attempt": 1
       }
     }
