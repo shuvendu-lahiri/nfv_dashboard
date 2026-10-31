@@ -1,22 +1,22 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/litebox",
-  "generated_at": "2026-10-31T00:00:19.883988+00:00",
+  "generated_at": "2026-10-31T00:56:28.614283+00:00",
   "name": "litebox",
   "label": "LiteBox",
   "summary": {
     "selected_prs": 74,
     "attempted_prs": 74,
-    "published_reports": 58,
+    "published_reports": 62,
     "workflow_attempts": 135,
-    "without_report": 16,
-    "refuted_prs": 12,
-    "properties": 431,
+    "without_report": 12,
+    "refuted_prs": 13,
+    "properties": 470,
     "outcomes": {
-      "refuted": 15,
-      "verified": 297,
-      "resources exhausted": 55,
-      "type-check/audit failure": 64
+      "refuted": 16,
+      "verified": 326,
+      "resources exhausted": 57,
+      "type-check/audit failure": 71
     }
   },
   "prs": [
@@ -4538,15 +4538,53 @@
       "state": "open",
       "head_sha": "e40d382d42212163e00a5858988d114c4770751e",
       "head_branch": "nfv-campaign-901851d8-1729-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6536573405,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/68#issuecomment-6536573405",
+        "published_at": "2026-10-31T00:34:23Z",
+        "updated_at": "2026-10-31T00:34:23Z",
+        "body_sha256": "2636076459cc636d459c43a1f041f572e8afbca0368596c86f3b304ba2fdf96f",
+        "source_sha_prefix": "e40d382d4221",
+        "base_sha_prefix": "927648911d57",
+        "run_id": 41147568263,
+        "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147568263",
+        "counts": {
+          "refuted": 0,
+          "verified": 8,
+          "resources exhausted": 0,
+          "type-check/audit failure": 2
+        },
+        "properties": 10,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6536573405,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/68#issuecomment-6536573405",
+          "published_at": "2026-10-31T00:34:23Z",
+          "updated_at": "2026-10-31T00:34:23Z",
+          "body_sha256": "2636076459cc636d459c43a1f041f572e8afbca0368596c86f3b304ba2fdf96f",
+          "source_sha_prefix": "e40d382d4221",
+          "base_sha_prefix": "927648911d57",
+          "run_id": 41147568263,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147568263",
+          "counts": {
+            "refuted": 0,
+            "verified": 8,
+            "resources exhausted": 0,
+            "type-check/audit failure": 2
+          },
+          "properties": 10,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 1,
       "latest_run": {
         "id": 41147568263,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147568263",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 1
       }
     },
@@ -4557,15 +4595,53 @@
       "state": "open",
       "head_sha": "70677b674aa682806b3812bf6f7e18eb1dd705c3",
       "head_branch": "nfv-campaign-901851d8-1727-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6536720238,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/69#issuecomment-6536720238",
+        "published_at": "2026-10-31T00:47:04Z",
+        "updated_at": "2026-10-31T00:47:04Z",
+        "body_sha256": "6b2d8ac916e65ade806245bb1b75c161fd29a401bff35323100baabb58a4158f",
+        "source_sha_prefix": "70677b674aa6",
+        "base_sha_prefix": "dadb0616d072",
+        "run_id": 41147579936,
+        "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147579936",
+        "counts": {
+          "refuted": 0,
+          "verified": 7,
+          "resources exhausted": 1,
+          "type-check/audit failure": 2
+        },
+        "properties": 10,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6536720238,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/69#issuecomment-6536720238",
+          "published_at": "2026-10-31T00:47:04Z",
+          "updated_at": "2026-10-31T00:47:04Z",
+          "body_sha256": "6b2d8ac916e65ade806245bb1b75c161fd29a401bff35323100baabb58a4158f",
+          "source_sha_prefix": "70677b674aa6",
+          "base_sha_prefix": "dadb0616d072",
+          "run_id": 41147579936,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147579936",
+          "counts": {
+            "refuted": 0,
+            "verified": 7,
+            "resources exhausted": 1,
+            "type-check/audit failure": 2
+          },
+          "properties": 10,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 1,
       "latest_run": {
         "id": 41147579936,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147579936",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 1
       }
     },
@@ -4576,15 +4652,53 @@
       "state": "open",
       "head_sha": "d317421d3932145346f8acca040542147b28e448",
       "head_branch": "nfv-campaign-901851d8-1725-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6536813949,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/70#issuecomment-6536813949",
+        "published_at": "2026-10-31T00:55:25Z",
+        "updated_at": "2026-10-31T00:55:25Z",
+        "body_sha256": "1241580491fb326adb8beda8ed64d5d1d62f053d09710f13492f39d6c4764594",
+        "source_sha_prefix": "d317421d3932",
+        "base_sha_prefix": "13e6d90eb5da",
+        "run_id": 41147591127,
+        "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147591127",
+        "counts": {
+          "refuted": 0,
+          "verified": 6,
+          "resources exhausted": 1,
+          "type-check/audit failure": 2
+        },
+        "properties": 9,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6536813949,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/70#issuecomment-6536813949",
+          "published_at": "2026-10-31T00:55:25Z",
+          "updated_at": "2026-10-31T00:55:25Z",
+          "body_sha256": "1241580491fb326adb8beda8ed64d5d1d62f053d09710f13492f39d6c4764594",
+          "source_sha_prefix": "d317421d3932",
+          "base_sha_prefix": "13e6d90eb5da",
+          "run_id": 41147591127,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147591127",
+          "counts": {
+            "refuted": 0,
+            "verified": 6,
+            "resources exhausted": 1,
+            "type-check/audit failure": 2
+          },
+          "properties": 9,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 1,
       "latest_run": {
         "id": 41147591127,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147591127",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 1
       }
     },
@@ -4633,15 +4747,67 @@
       "state": "open",
       "head_sha": "6c22d0537b188a683eb7b330011ec7c984ca4e78",
       "head_branch": "nfv-campaign-901851d8-1722-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6536704761,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/73#issuecomment-6536704761",
+        "published_at": "2026-10-31T00:45:44Z",
+        "updated_at": "2026-10-31T00:45:44Z",
+        "body_sha256": "ffc5a102ac25044b14e2382288b80cc05dcf7e2429bd6be1b1618314e07e7a5c",
+        "source_sha_prefix": "6c22d0537b18",
+        "base_sha_prefix": "5fd29d556d8e",
+        "run_id": 41147623141,
+        "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147623141",
+        "counts": {
+          "refuted": 1,
+          "verified": 8,
+          "resources exhausted": 0,
+          "type-check/audit failure": 1
+        },
+        "properties": 10,
+        "refutations": [
+          {
+            "property_id": "P9",
+            "property": "An open, nonempty write that is not blocked returns success.",
+            "input": "`state.manager_open = true`; `state.output.len() = 0`; `state.engine.output_stopped() = false`; `self.settings.output.contains(O::PROCESS | O::EXPAND_TABS) = false`; abstract state: allocation outcome of the source bounce-buffer operation = `false`; source ATOMIC_WRITE_SIZE setting = `1`; copy outcome of the source WriteBuffer operation = `true`; contents of the source WriteBuffer input = `[0]`; manager readiness state supplied to publication = `0`; source OUTPUT_CAPACITY setting = `2`; subsidiary readiness state supplied to publication = `0`",
+            "sketch": "If the manager is open, the input is nonempty, the WouldBlock condition is false, and allocation fails, bounce_buffer(input.len().min(available))? propagates the allocation error. This would skip copying, output processing, publication, and the successful byte-count return, so the property's otherwise case would not hold."
+          }
+        ]
+      },
+      "report_history": [
+        {
+          "comment_id": 6536704761,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/73#issuecomment-6536704761",
+          "published_at": "2026-10-31T00:45:44Z",
+          "updated_at": "2026-10-31T00:45:44Z",
+          "body_sha256": "ffc5a102ac25044b14e2382288b80cc05dcf7e2429bd6be1b1618314e07e7a5c",
+          "source_sha_prefix": "6c22d0537b18",
+          "base_sha_prefix": "5fd29d556d8e",
+          "run_id": 41147623141,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147623141",
+          "counts": {
+            "refuted": 1,
+            "verified": 8,
+            "resources exhausted": 0,
+            "type-check/audit failure": 1
+          },
+          "properties": 10,
+          "refutations": [
+            {
+              "property_id": "P9",
+              "property": "An open, nonempty write that is not blocked returns success.",
+              "input": "`state.manager_open = true`; `state.output.len() = 0`; `state.engine.output_stopped() = false`; `self.settings.output.contains(O::PROCESS | O::EXPAND_TABS) = false`; abstract state: allocation outcome of the source bounce-buffer operation = `false`; source ATOMIC_WRITE_SIZE setting = `1`; copy outcome of the source WriteBuffer operation = `true`; contents of the source WriteBuffer input = `[0]`; manager readiness state supplied to publication = `0`; source OUTPUT_CAPACITY setting = `2`; subsidiary readiness state supplied to publication = `0`",
+              "sketch": "If the manager is open, the input is nonempty, the WouldBlock condition is false, and allocation fails, bounce_buffer(input.len().min(available))? propagates the allocation error. This would skip copying, output processing, publication, and the successful byte-count return, so the property's otherwise case would not hold."
+            }
+          ]
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 1,
       "latest_run": {
         "id": 41147623141,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147623141",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 1
       }
     },

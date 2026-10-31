@@ -5,14 +5,15 @@ Published results from the prototype [Neuro-Formal Verification](https://arxiv.o
 
 **[Live interactive dashboard](https://shuvendu-lahiri.github.io/nfv_dashboard/litebox/)** / [all repositories](https://shuvendu-lahiri.github.io/nfv_dashboard/) or [download the standalone HTML](index.html) (no server or external dependencies).
 
-Snapshot: 2026-10-31T00:00:19.883988+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
+Snapshot: 2026-10-31T00:56:28.614283+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
 
-**74 PRs attempted; 135 workflow attempts; 58 published reports; 12 PRs with 15 conditional refutations; 297 model verifications; 16 PRs without a published report.**
+**74 PRs attempted; 135 workflow attempts; 62 published reports; 13 PRs with 16 conditional refutations; 326 model verifications; 12 PRs without a published report.**
 
 ## All attempted PRs (refutations first)
 
 | PR | Change | Latest report | Properties | Refuted | Verified | Exhausted | Audit failure | Evidence |
 |---|---|---|---:|---:|---:|---:|---:|---|
+| [shuvendu-lahiri/litebox#73](https://github.com/shuvendu-lahiri/litebox/pull/73) | NFV audit \- change 1722: Add pseudo\-terminal pairs | **REFUTED (model)** | 10 | **1** | 8 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/73#issuecomment-6536704761) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41147623141) |
 | [shuvendu-lahiri/litebox#65](https://github.com/shuvendu-lahiri/litebox/pull/65) | NFV audit \- change 1734: Support AF\_UNIX SOCK\_SEQPACKET sockets | **REFUTED (model)** | 10 | **1** | 9 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/65#issuecomment-6535926145) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41140753055) |
 | [shuvendu-lahiri/litebox#36](https://github.com/shuvendu-lahiri/litebox/pull/36) | Replay change 1040: Migrate Tar\-RO file system to new backend | **REFUTED (model)** | 10 | **1** | 5 | 4 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/36#issuecomment-6389082690) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39462655079) |
 | [shuvendu-lahiri/litebox#42](https://github.com/shuvendu-lahiri/litebox/pull/42) | Staged NFV audit \- change 1637: Cherry\-pick "LVBS: Clean up after a panic inside the vault" | **REFUTED (model)** / latest attempt: failure | 8 | **2** | 4 | 2 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/42#issuecomment-6388208161) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532822431) / [latest attempt](https://github.com/shuvendu-lahiri/litebox/actions/runs/39532822431) |
@@ -25,6 +26,9 @@ Snapshot: 2026-10-31T00:00:19.883988+00:00. Latest published report per PR suppl
 | [shuvendu-lahiri/litebox#8](https://github.com/shuvendu-lahiri/litebox/pull/8) | Replay change 1648: Cherry pick change 1564 Refactor to remove \`litebox::path::Arg\` | **REFUTED (model)** | 10 | **1** | 6 | 0 | 3 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/8#issuecomment-6383719541) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39357363330) |
 | [shuvendu-lahiri/litebox#3](https://github.com/shuvendu-lahiri/litebox/pull/3) | Replay change 1640: replace procfd special cases with filesystem symlinks | **REFUTED (model)** | 10 | **2** | 4 | 0 | 4 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/3#issuecomment-6383064179) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39390206732) |
 | [shuvendu-lahiri/litebox#2](https://github.com/shuvendu-lahiri/litebox/pull/2) | Replay change 1656: copy broker pipe and socket reads in bulk | **REFUTED (model)** | 9 | **1** | 8 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/2#issuecomment-6382629152) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39205431424) |
+| [shuvendu-lahiri/litebox#70](https://github.com/shuvendu-lahiri/litebox/pull/70) | NFV audit \- change 1725: Support NULL memref in the OP\-TEE shim | Published | 9 | 0 | 6 | 1 | 2 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/70#issuecomment-6536813949) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41147591127) |
+| [shuvendu-lahiri/litebox#69](https://github.com/shuvendu-lahiri/litebox/pull/69) | NFV audit \- change 1727: Add per\-session controlling terminals | Published | 10 | 0 | 7 | 1 | 2 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/69#issuecomment-6536720238) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41147579936) |
+| [shuvendu-lahiri/litebox#68](https://github.com/shuvendu-lahiri/litebox/pull/68) | NFV audit \- change 1729: Store inert termios settings for guest terminals | Published | 10 | 0 | 8 | 0 | 2 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/68#issuecomment-6536573405) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41147568263) |
 | [shuvendu-lahiri/litebox#67](https://github.com/shuvendu-lahiri/litebox/pull/67) | NFV audit \- change 1731: Stacked runners: Cap the CPU time charged per run at one slice | Published | 9 | 0 | 5 | 0 | 4 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/67#issuecomment-6536104263) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41140780172) |
 | [shuvendu-lahiri/litebox#64](https://github.com/shuvendu-lahiri/litebox/pull/64) | NFV audit \- change 1737: Change TA verification to take a X\.509 cert | Published | 7 | 0 | 7 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/64#issuecomment-6535837172) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41140738657) |
 | [shuvendu-lahiri/litebox#60](https://github.com/shuvendu-lahiri/litebox/pull/60) | NFV audit \- change 1743: Add symlink creation support | Published | 10 | 0 | 8 | 1 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/60#issuecomment-6535818771) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41140681353) |
@@ -75,12 +79,8 @@ Snapshot: 2026-10-31T00:00:19.883988+00:00. Latest published report per PR suppl
 | [shuvendu-lahiri/litebox#76](https://github.com/shuvendu-lahiri/litebox/pull/76) | NFV audit \- change 1719: Expose host symlinks in the userland LocalFs broker | No published report (in\_progress) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41147657427) |
 | [shuvendu-lahiri/litebox#75](https://github.com/shuvendu-lahiri/litebox/pull/75) | NFV audit \- change 1720: Expose symlinks in the 9p backend | No published report (in\_progress) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41147646230) |
 | [shuvendu-lahiri/litebox#74](https://github.com/shuvendu-lahiri/litebox/pull/74) | NFV audit \- change 1721: Consolidate Windows virtual\-memory tracking and fix reservation release bookkeeping | No published report (in\_progress) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41147635725) |
-| [shuvendu-lahiri/litebox#73](https://github.com/shuvendu-lahiri/litebox/pull/73) | NFV audit \- change 1722: Add pseudo\-terminal pairs | No published report (in\_progress) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41147623141) |
 | [shuvendu-lahiri/litebox#72](https://github.com/shuvendu-lahiri/litebox/pull/72) | NFV audit \- change 1723: Share broker ring association across platforms | No published report (in\_progress) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41147612949) |
 | [shuvendu-lahiri/litebox#71](https://github.com/shuvendu-lahiri/litebox/pull/71) | NFV audit \- change 1724: Harden OP\-TEE TA value/memref writeback | No published report (in\_progress) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41147600287) |
-| [shuvendu-lahiri/litebox#70](https://github.com/shuvendu-lahiri/litebox/pull/70) | NFV audit \- change 1725: Support NULL memref in the OP\-TEE shim | No published report (in\_progress) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41147591127) |
-| [shuvendu-lahiri/litebox#69](https://github.com/shuvendu-lahiri/litebox/pull/69) | NFV audit \- change 1727: Add per\-session controlling terminals | No published report (in\_progress) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41147579936) |
-| [shuvendu-lahiri/litebox#68](https://github.com/shuvendu-lahiri/litebox/pull/68) | NFV audit \- change 1729: Store inert termios settings for guest terminals | No published report (in\_progress) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41147568263) |
 | [shuvendu-lahiri/litebox#63](https://github.com/shuvendu-lahiri/litebox/pull/63) | NFV audit \- change 1738: Fix the Linux sysinfo ABI layout | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41140724678) |
 | [shuvendu-lahiri/litebox#61](https://github.com/shuvendu-lahiri/litebox/pull/61) | NFV audit \- change 1742: Name shared anonymous memory lazily | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41140695554) |
 | [shuvendu-lahiri/litebox#58](https://github.com/shuvendu-lahiri/litebox/pull/58) | NFV audit \- change 1746: Resume interrupted relative sleeps through restart\_syscall | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41140657618) |
@@ -91,6 +91,12 @@ Snapshot: 2026-10-31T00:00:19.883988+00:00. Latest published report per PR suppl
 ## Conditional model refutations
 
 The following property texts are extracted from the published reports, without new adjudication or inference. The original report contains assumptions, source overlays and native evidence.
+
+### shuvendu-lahiri/litebox#73 / P9
+
+An open, nonempty write that is not blocked returns success\.
+
+[Original report](https://github.com/shuvendu-lahiri/litebox/pull/73#issuecomment-6536704761)
 
 ### shuvendu-lahiri/litebox#65 / P7
 
