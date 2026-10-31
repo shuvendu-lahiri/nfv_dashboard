@@ -1,22 +1,22 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/litebox",
-  "generated_at": "2026-10-31T11:35:52.231338+00:00",
+  "generated_at": "2026-10-31T11:58:47.222323+00:00",
   "name": "litebox",
   "label": "LiteBox",
   "summary": {
     "selected_prs": 104,
     "attempted_prs": 104,
-    "published_reports": 88,
+    "published_reports": 90,
     "workflow_attempts": 175,
-    "without_report": 16,
-    "refuted_prs": 21,
-    "properties": 700,
+    "without_report": 14,
+    "refuted_prs": 23,
+    "properties": 720,
     "outcomes": {
-      "refuted": 26,
-      "verified": 502,
-      "resources exhausted": 74,
-      "type-check/audit failure": 98
+      "refuted": 28,
+      "verified": 516,
+      "resources exhausted": 75,
+      "type-check/audit failure": 101
     }
   },
   "prs": [
@@ -6531,15 +6531,67 @@
       "state": "open",
       "head_sha": "3047ea214ba1595b381c07d59c5bffeba4b602d3",
       "head_branch": "nfv-campaign-901851d8-1664-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6542854092,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/105#issuecomment-6542854092",
+        "published_at": "2026-10-31T11:36:10Z",
+        "updated_at": "2026-10-31T11:36:10Z",
+        "body_sha256": "350f84e34af05efa4ef65d766d6e450d3d85894719aec796dd7c8bde8898b6dd",
+        "source_sha_prefix": "3047ea214ba1",
+        "base_sha_prefix": "e65d6b390580",
+        "run_id": 41193032502,
+        "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41193032502",
+        "counts": {
+          "refuted": 1,
+          "verified": 8,
+          "resources exhausted": 0,
+          "type-check/audit failure": 1
+        },
+        "properties": 10,
+        "refutations": [
+          {
+            "property_id": "P3",
+            "property": "A failed handshake starting in New leaves the association Ended.",
+            "input": "abstract state: success of process activation = `true`; whether connection setup invokes the process callback = `false`; success of decoding the handshake request = `true`; whether the encoded response can be represented as a WireFrame = `true`; initial association state = `0`; presence of pending launch state = `false`; success of obtaining the request byte slice = `true`; presence of a handshake response in setup.response after connection setup = `false`; inner success state of the connection-setup result = `true`; outer success state of the connection-setup result = `true`; success of shared-buffer-pool construction = `true`; presence of startup data in the pending launch = `false`; availability of the mutable association-state borrow = `true`",
+            "sketch": "If the association is New, request decoding and shared-buffer construction succeed, litebox_broker_host::setup_connection yields Ok(Ok(host)), host.activate_process() succeeds, and setup.response is still None, the source assigns State::Active before evaluating setup.response.ok_or(Status::Denied)?. That expression can then return Status::Denied, so the conditional failure leaves the association Active rather than Ended even though the handshake does not succeed."
+          }
+        ]
+      },
+      "report_history": [
+        {
+          "comment_id": 6542854092,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/105#issuecomment-6542854092",
+          "published_at": "2026-10-31T11:36:10Z",
+          "updated_at": "2026-10-31T11:36:10Z",
+          "body_sha256": "350f84e34af05efa4ef65d766d6e450d3d85894719aec796dd7c8bde8898b6dd",
+          "source_sha_prefix": "3047ea214ba1",
+          "base_sha_prefix": "e65d6b390580",
+          "run_id": 41193032502,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41193032502",
+          "counts": {
+            "refuted": 1,
+            "verified": 8,
+            "resources exhausted": 0,
+            "type-check/audit failure": 1
+          },
+          "properties": 10,
+          "refutations": [
+            {
+              "property_id": "P3",
+              "property": "A failed handshake starting in New leaves the association Ended.",
+              "input": "abstract state: success of process activation = `true`; whether connection setup invokes the process callback = `false`; success of decoding the handshake request = `true`; whether the encoded response can be represented as a WireFrame = `true`; initial association state = `0`; presence of pending launch state = `false`; success of obtaining the request byte slice = `true`; presence of a handshake response in setup.response after connection setup = `false`; inner success state of the connection-setup result = `true`; outer success state of the connection-setup result = `true`; success of shared-buffer-pool construction = `true`; presence of startup data in the pending launch = `false`; availability of the mutable association-state borrow = `true`",
+              "sketch": "If the association is New, request decoding and shared-buffer construction succeed, litebox_broker_host::setup_connection yields Ok(Ok(host)), host.activate_process() succeeds, and setup.response is still None, the source assigns State::Active before evaluating setup.response.ok_or(Status::Denied)?. That expression can then return Status::Denied, so the conditional failure leaves the association Active rather than Ended even though the handshake does not succeed."
+            }
+          ]
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 1,
       "latest_run": {
         "id": 41193032502,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41193032502",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 1
       }
     },
@@ -6550,15 +6602,67 @@
       "state": "open",
       "head_sha": "efa0d580346346cb18cbf365c5564829ca0a49bb",
       "head_branch": "nfv-campaign-901851d8-1662-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6542883127,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/106#issuecomment-6542883127",
+        "published_at": "2026-10-31T11:39:29Z",
+        "updated_at": "2026-10-31T11:39:29Z",
+        "body_sha256": "1d25d5fc797bddeac97035927052cda31672c6f54845a4ec4969d0b3324f9b2e",
+        "source_sha_prefix": "efa0d5803463",
+        "base_sha_prefix": "fc1daefc5301",
+        "run_id": 41193041602,
+        "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41193041602",
+        "counts": {
+          "refuted": 1,
+          "verified": 6,
+          "resources exhausted": 1,
+          "type-check/audit failure": 2
+        },
+        "properties": 10,
+        "refutations": [
+          {
+            "property_id": "P5",
+            "property": "For a no-outcome hook, the result equals the input followed by the zero-valued trampoline footer.",
+            "input": "`addr = 0`; `callback = 0`; `input = [1]`; abstract state: append_trampoline_footer result = `[]`; hook_macho result variant = `1`; out after hook_macho = `[]`; limit payload = `0`; whether limit is Some = `false`; rewrite options = `0`; outcome trampoline bytes = `[]`; Mach-O trampoline page size = `1`; text-section state = `[]`; TRAMPOLINE_MAGIC bytes = `[0, 0, 0, 0, 0, 0, 0, 0]`; outcome trapped sites = `[]`",
+            "sketch": "If hook_macho leaves out empty while returning no outcome, out.extend_from_slice(header.as_bytes()) appends the footer without restoring the original input byte."
+          }
+        ]
+      },
+      "report_history": [
+        {
+          "comment_id": 6542883127,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/106#issuecomment-6542883127",
+          "published_at": "2026-10-31T11:39:29Z",
+          "updated_at": "2026-10-31T11:39:29Z",
+          "body_sha256": "1d25d5fc797bddeac97035927052cda31672c6f54845a4ec4969d0b3324f9b2e",
+          "source_sha_prefix": "efa0d5803463",
+          "base_sha_prefix": "fc1daefc5301",
+          "run_id": 41193041602,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41193041602",
+          "counts": {
+            "refuted": 1,
+            "verified": 6,
+            "resources exhausted": 1,
+            "type-check/audit failure": 2
+          },
+          "properties": 10,
+          "refutations": [
+            {
+              "property_id": "P5",
+              "property": "For a no-outcome hook, the result equals the input followed by the zero-valued trampoline footer.",
+              "input": "`addr = 0`; `callback = 0`; `input = [1]`; abstract state: append_trampoline_footer result = `[]`; hook_macho result variant = `1`; out after hook_macho = `[]`; limit payload = `0`; whether limit is Some = `false`; rewrite options = `0`; outcome trampoline bytes = `[]`; Mach-O trampoline page size = `1`; text-section state = `[]`; TRAMPOLINE_MAGIC bytes = `[0, 0, 0, 0, 0, 0, 0, 0]`; outcome trapped sites = `[]`",
+              "sketch": "If hook_macho leaves out empty while returning no outcome, out.extend_from_slice(header.as_bytes()) appends the footer without restoring the original input byte."
+            }
+          ]
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 1,
       "latest_run": {
         "id": 41193041602,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41193041602",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 1
       }
     },

@@ -5,14 +5,16 @@ Published results from the prototype [Neuro-Formal Verification](https://arxiv.o
 
 **[Live interactive dashboard](https://shuvendu-lahiri.github.io/nfv_dashboard/litebox/)** / [all repositories](https://shuvendu-lahiri.github.io/nfv_dashboard/) or [download the standalone HTML](index.html) (no server or external dependencies).
 
-Snapshot: 2026-10-31T11:35:52.231338+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
+Snapshot: 2026-10-31T11:58:47.222323+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
 
-**104 PRs attempted; 175 workflow attempts; 88 published reports; 21 PRs with 26 conditional refutations; 502 model verifications; 16 PRs without a published report.**
+**104 PRs attempted; 175 workflow attempts; 90 published reports; 23 PRs with 28 conditional refutations; 516 model verifications; 14 PRs without a published report.**
 
 ## All attempted PRs (refutations first)
 
 | PR | Change | Latest report | Properties | Refuted | Verified | Exhausted | Audit failure | Evidence |
 |---|---|---|---:|---:|---:|---:|---:|---|
+| [shuvendu-lahiri/litebox#106](https://github.com/shuvendu-lahiri/litebox/pull/106) | NFV audit \- change 1662: Consolidate trampoline footer definitions and decoding | **REFUTED (model)** | 10 | **1** | 6 | 1 | 2 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/106#issuecomment-6542883127) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41193041602) |
+| [shuvendu-lahiri/litebox#105](https://github.com/shuvendu-lahiri/litebox/pull/105) | NFV audit \- change 1664: Stacked runners: Support \`vfork\` and \`execve\` in Linux guests | **REFUTED (model)** | 10 | **1** | 8 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/105#issuecomment-6542854092) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41193032502) |
 | [shuvendu-lahiri/litebox#90](https://github.com/shuvendu-lahiri/litebox/pull/90) | NFV audit \- change 1696: Optimize and harden TA loading | **REFUTED (model)** | 10 | **1** | 8 | 1 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/90#issuecomment-6542115936) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41188390312) |
 | [shuvendu-lahiri/litebox#83](https://github.com/shuvendu-lahiri/litebox/pull/83) | NFV audit \- change 1707: Support shared anonymous mappings across native fork | **REFUTED (model)** | 10 | **1** | 7 | 1 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/83#issuecomment-6541601568) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41154929189) |
 | [shuvendu-lahiri/litebox#81](https://github.com/shuvendu-lahiri/litebox/pull/81) | NFV audit \- change 1709: Parse the \`dyld\` shared cache | **REFUTED (model)** | 10 | **1** | 8 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/81#issuecomment-6541591233) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41154906208) |
@@ -102,8 +104,6 @@ Snapshot: 2026-10-31T11:35:52.231338+00:00. Latest published report per PR suppl
 | [shuvendu-lahiri/litebox#7](https://github.com/shuvendu-lahiri/litebox/pull/7) | Replay change 1657: Cherry pick change 1566 Add support for symlink resolution | Published | 10 | 0 | 9 | 1 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/7#issuecomment-6383605651) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39399231191) |
 | [shuvendu-lahiri/litebox#27](https://github.com/shuvendu-lahiri/litebox/pull/27) | Replay change 1281: Cherry pick change 1165 Join the spawned handles in tests | Published | 7 | 0 | 7 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/27#issuecomment-6382201720) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39432560915) |
 | [shuvendu-lahiri/litebox#107](https://github.com/shuvendu-lahiri/litebox/pull/107) | NFV audit \- change 1659: Copy Linux guest I/O directly to and from the broker | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41193052690) |
-| [shuvendu-lahiri/litebox#106](https://github.com/shuvendu-lahiri/litebox/pull/106) | NFV audit \- change 1662: Consolidate trampoline footer definitions and decoding | No published report (in\_progress) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41193041602) |
-| [shuvendu-lahiri/litebox#105](https://github.com/shuvendu-lahiri/litebox/pull/105) | NFV audit \- change 1664: Stacked runners: Support \`vfork\` and \`execve\` in Linux guests | No published report (in\_progress) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41193032502) |
 | [shuvendu-lahiri/litebox#97](https://github.com/shuvendu-lahiri/litebox/pull/97) | NFV audit \- change 1684: Add termios2 ioctls and an ENOTTY fallback | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41188452421) |
 | [shuvendu-lahiri/litebox#95](https://github.com/shuvendu-lahiri/litebox/pull/95) | NFV audit \- change 1688: Serve broker calls on per\-call lanes | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41188435916) |
 | [shuvendu-lahiri/litebox#94](https://github.com/shuvendu-lahiri/litebox/pull/94) | NFV audit \- change 1689: Add /dev/tty support | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41188426419) |
@@ -121,6 +121,18 @@ Snapshot: 2026-10-31T11:35:52.231338+00:00. Latest published report per PR suppl
 ## Conditional model refutations
 
 The following property texts are extracted from the published reports, without new adjudication or inference. The original report contains assumptions, source overlays and native evidence.
+
+### shuvendu-lahiri/litebox#106 / P5
+
+For a no\-outcome hook, the result equals the input followed by the zero\-valued trampoline footer\.
+
+[Original report](https://github.com/shuvendu-lahiri/litebox/pull/106#issuecomment-6542883127)
+
+### shuvendu-lahiri/litebox#105 / P3
+
+A failed handshake starting in New leaves the association Ended\.
+
+[Original report](https://github.com/shuvendu-lahiri/litebox/pull/105#issuecomment-6542854092)
 
 ### shuvendu-lahiri/litebox#90 / P5
 
