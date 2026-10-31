@@ -1,21 +1,21 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/litebox",
-  "generated_at": "2026-10-31T10:05:34.244810+00:00",
+  "generated_at": "2026-10-31T10:31:16.472404+00:00",
   "name": "litebox",
   "label": "LiteBox",
   "summary": {
-    "selected_prs": 94,
-    "attempted_prs": 94,
-    "published_reports": 79,
-    "workflow_attempts": 165,
-    "without_report": 15,
-    "refuted_prs": 20,
-    "properties": 619,
+    "selected_prs": 104,
+    "attempted_prs": 104,
+    "published_reports": 81,
+    "workflow_attempts": 175,
+    "without_report": 23,
+    "refuted_prs": 21,
+    "properties": 639,
     "outcomes": {
-      "refuted": 25,
-      "verified": 440,
-      "resources exhausted": 68,
+      "refuted": 26,
+      "verified": 458,
+      "resources exhausted": 69,
       "type-check/audit failure": 86
     }
   },
@@ -5814,15 +5814,67 @@
       "state": "open",
       "head_sha": "bc814d19162670a575c2311cc430338a2317ada1",
       "head_branch": "nfv-campaign-901851d8-1696-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6542115936,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/90#issuecomment-6542115936",
+        "published_at": "2026-10-31T10:15:32Z",
+        "updated_at": "2026-10-31T10:15:32Z",
+        "body_sha256": "1bd4773a932db68ef292cd5478e55763377ddf0fd43df5c006155792397308a5",
+        "source_sha_prefix": "bc814d191626",
+        "base_sha_prefix": "102e4cd17379",
+        "run_id": 41188390312,
+        "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41188390312",
+        "counts": {
+          "refuted": 1,
+          "verified": 8,
+          "resources exhausted": 1,
+          "type-check/audit failure": 0
+        },
+        "properties": 10,
+        "refutations": [
+          {
+            "property_id": "P5",
+            "property": "The entry completes normally.",
+            "input": "`cfg!(feature = \"allow-unsigned-dynamic-ta\") = false`; `elf.len() = 0`; `head.uuid = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]`; `ta_bin.starts_with(&SHDR_MAGIC.to_le_bytes()) = false`; `ta_bin = []`; `ta_uuid = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]`; abstract state: whether debug assertions are enabled for the build = `true`; whether a TA verification key is available = `true`; whether raw TA-header parsing succeeds = `false`; UUID that would be produced by raw TA-header parsing = `[]`; whether the verified ELF ends at the end of the input TA bytes = `false`; whether signed TA parsing and verification succeeds = `true`",
+            "sketch": "If signed verification yields a matching UUID but selects an ELF with a different end pointer from the input bytes, ta_bin.as_ptr_range().end != elf.as_ptr_range().end is true. If debug assertions are enabled, the following unconditional debug assertion can prevent normal completion before the function reaches return None, conditionally refuting the requirement that this case complete by returning None."
+          }
+        ]
+      },
+      "report_history": [
+        {
+          "comment_id": 6542115936,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/90#issuecomment-6542115936",
+          "published_at": "2026-10-31T10:15:32Z",
+          "updated_at": "2026-10-31T10:15:32Z",
+          "body_sha256": "1bd4773a932db68ef292cd5478e55763377ddf0fd43df5c006155792397308a5",
+          "source_sha_prefix": "bc814d191626",
+          "base_sha_prefix": "102e4cd17379",
+          "run_id": 41188390312,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41188390312",
+          "counts": {
+            "refuted": 1,
+            "verified": 8,
+            "resources exhausted": 1,
+            "type-check/audit failure": 0
+          },
+          "properties": 10,
+          "refutations": [
+            {
+              "property_id": "P5",
+              "property": "The entry completes normally.",
+              "input": "`cfg!(feature = \"allow-unsigned-dynamic-ta\") = false`; `elf.len() = 0`; `head.uuid = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]`; `ta_bin.starts_with(&SHDR_MAGIC.to_le_bytes()) = false`; `ta_bin = []`; `ta_uuid = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]`; abstract state: whether debug assertions are enabled for the build = `true`; whether a TA verification key is available = `true`; whether raw TA-header parsing succeeds = `false`; UUID that would be produced by raw TA-header parsing = `[]`; whether the verified ELF ends at the end of the input TA bytes = `false`; whether signed TA parsing and verification succeeds = `true`",
+              "sketch": "If signed verification yields a matching UUID but selects an ELF with a different end pointer from the input bytes, ta_bin.as_ptr_range().end != elf.as_ptr_range().end is true. If debug assertions are enabled, the following unconditional debug assertion can prevent normal completion before the function reaches return None, conditionally refuting the requirement that this case complete by returning None."
+            }
+          ]
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 1,
       "latest_run": {
         "id": 41188390312,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41188390312",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 1
       }
     },
@@ -6004,15 +6056,53 @@
       "state": "open",
       "head_sha": "659e182c144404e5f3ce6ba4319cc34ee7ec0046",
       "head_branch": "nfv-campaign-901851d8-1685-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6542133416,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/96#issuecomment-6542133416",
+        "published_at": "2026-10-31T10:17:28Z",
+        "updated_at": "2026-10-31T10:17:28Z",
+        "body_sha256": "a4f8e23fa19fe276f35a54747ce65dc71f15f2aadff733364440a2d263a82225",
+        "source_sha_prefix": "659e182c1444",
+        "base_sha_prefix": "dd3eb9a372ef",
+        "run_id": 41188443973,
+        "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41188443973",
+        "counts": {
+          "refuted": 0,
+          "verified": 10,
+          "resources exhausted": 0,
+          "type-check/audit failure": 0
+        },
+        "properties": 10,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6542133416,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/96#issuecomment-6542133416",
+          "published_at": "2026-10-31T10:17:28Z",
+          "updated_at": "2026-10-31T10:17:28Z",
+          "body_sha256": "a4f8e23fa19fe276f35a54747ce65dc71f15f2aadff733364440a2d263a82225",
+          "source_sha_prefix": "659e182c1444",
+          "base_sha_prefix": "dd3eb9a372ef",
+          "run_id": 41188443973,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41188443973",
+          "counts": {
+            "refuted": 0,
+            "verified": 10,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 10,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 1,
       "latest_run": {
         "id": 41188443973,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41188443973",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 1
       }
     },
@@ -6032,6 +6122,196 @@
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41188452421",
         "status": "completed",
         "conclusion": "failure",
+        "attempt": 1
+      }
+    },
+    {
+      "number": 98,
+      "title": "NFV audit - change 1681: Direct host file I/O in the userland broker on Linux",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/98",
+      "state": "open",
+      "head_sha": "f4ddb4b7478e4c123604992063b5cbd2dceffbb2",
+      "head_branch": "nfv-campaign-901851d8-1681-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41192965442,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41192965442",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 1
+      }
+    },
+    {
+      "number": 99,
+      "title": "NFV audit - change 1679: Support Windows virtual memory placeholders",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/99",
+      "state": "open",
+      "head_sha": "51197317c388064ae2aa4e120b9d850ca04f418b",
+      "head_branch": "nfv-campaign-901851d8-1679-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41192974068,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41192974068",
+        "status": "queued",
+        "conclusion": null,
+        "attempt": 1
+      }
+    },
+    {
+      "number": 100,
+      "title": "NFV audit - change 1677: Implement Linux x86-64 signal XSAVE state handling",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/100",
+      "state": "open",
+      "head_sha": "8ffd535337824f2b7f23937d2ce4d785f8ab4738",
+      "head_branch": "nfv-campaign-901851d8-1677-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41192982693,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41192982693",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 1
+      }
+    },
+    {
+      "number": 101,
+      "title": "NFV audit - change 1675: Stacked runners: Support COW `fork` in Linux guests",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/101",
+      "state": "open",
+      "head_sha": "b66c78f0dbc861f54e84bbc44917fe00ce570dfd",
+      "head_branch": "nfv-campaign-901851d8-1675-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41192992185,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41192992185",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 1
+      }
+    },
+    {
+      "number": 102,
+      "title": "NFV audit - change 1674: Allow unsigned dynamic TAs in opt-in test builds",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/102",
+      "state": "open",
+      "head_sha": "fa46c193a83a65d38062474bb907bc1b2b5b9005",
+      "head_branch": "nfv-campaign-901851d8-1674-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41193002385,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41193002385",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 1
+      }
+    },
+    {
+      "number": 103,
+      "title": "NFV audit - change 1673: Support Randomization of Stack Padding Bytes",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/103",
+      "state": "open",
+      "head_sha": "59728ab0a59973cf73ebba6a66798e918b9d4028",
+      "head_branch": "nfv-campaign-901851d8-1673-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41193011823,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41193011823",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 1
+      }
+    },
+    {
+      "number": 104,
+      "title": "NFV audit - change 1666: Stacked runners: Run all runner processes in one kernel scheduler",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/104",
+      "state": "open",
+      "head_sha": "e1aa06afee9ef5bc5fc790f5b386f76223b8c347",
+      "head_branch": "nfv-campaign-901851d8-1666-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41193021858,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41193021858",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 1
+      }
+    },
+    {
+      "number": 105,
+      "title": "NFV audit - change 1664: Stacked runners: Support `vfork` and `execve` in Linux guests",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/105",
+      "state": "open",
+      "head_sha": "3047ea214ba1595b381c07d59c5bffeba4b602d3",
+      "head_branch": "nfv-campaign-901851d8-1664-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41193032502,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41193032502",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 1
+      }
+    },
+    {
+      "number": 106,
+      "title": "NFV audit - change 1662: Consolidate trampoline footer definitions and decoding",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/106",
+      "state": "open",
+      "head_sha": "efa0d580346346cb18cbf365c5564829ca0a49bb",
+      "head_branch": "nfv-campaign-901851d8-1662-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41193041602,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41193041602",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 1
+      }
+    },
+    {
+      "number": 107,
+      "title": "NFV audit - change 1659: Copy Linux guest I/O directly to and from the broker",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/107",
+      "state": "open",
+      "head_sha": "3e1eaa3a2e1221aa70c9064d4ec983e77acc8b5e",
+      "head_branch": "nfv-campaign-901851d8-1659-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41193052690,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41193052690",
+        "status": "in_progress",
+        "conclusion": null,
         "attempt": 1
       }
     }
