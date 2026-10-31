@@ -1,22 +1,22 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/litebox",
-  "generated_at": "2026-10-30T23:53:51.741410+00:00",
+  "generated_at": "2026-10-31T00:00:19.883988+00:00",
   "name": "litebox",
   "label": "LiteBox",
   "summary": {
-    "selected_prs": 64,
-    "attempted_prs": 64,
-    "published_reports": 57,
-    "workflow_attempts": 125,
-    "without_report": 7,
+    "selected_prs": 74,
+    "attempted_prs": 74,
+    "published_reports": 58,
+    "workflow_attempts": 135,
+    "without_report": 16,
     "refuted_prs": 12,
-    "properties": 422,
+    "properties": 431,
     "outcomes": {
       "refuted": 15,
-      "verified": 292,
+      "verified": 297,
       "resources exhausted": 55,
-      "type-check/audit failure": 60
+      "type-check/audit failure": 64
     }
   },
   "prs": [
@@ -4481,13 +4481,241 @@
       "state": "open",
       "head_sha": "3a403ad8acf6c6e24ee20a346f2e11c58aaf3d83",
       "head_branch": "nfv-campaign-901851d8-1731-head",
+      "latest_report": {
+        "comment_id": 6536104263,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/67#issuecomment-6536104263",
+        "published_at": "2026-10-30T23:57:09Z",
+        "updated_at": "2026-10-30T23:57:09Z",
+        "body_sha256": "eb89860bf3a86001346eb2599668ff2a9ba06158ddf5600b04a64d71a33a5bc5",
+        "source_sha_prefix": "3a403ad8acf6",
+        "base_sha_prefix": "bc0b9c042e39",
+        "run_id": 41140780172,
+        "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41140780172",
+        "counts": {
+          "refuted": 0,
+          "verified": 5,
+          "resources exhausted": 0,
+          "type-check/audit failure": 4
+        },
+        "properties": 9,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6536104263,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/67#issuecomment-6536104263",
+          "published_at": "2026-10-30T23:57:09Z",
+          "updated_at": "2026-10-30T23:57:09Z",
+          "body_sha256": "eb89860bf3a86001346eb2599668ff2a9ba06158ddf5600b04a64d71a33a5bc5",
+          "source_sha_prefix": "3a403ad8acf6",
+          "base_sha_prefix": "bc0b9c042e39",
+          "run_id": 41140780172,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41140780172",
+          "counts": {
+            "refuted": 0,
+            "verified": 5,
+            "resources exhausted": 0,
+            "type-check/audit failure": 4
+          },
+          "properties": 9,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41140780172,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41140780172",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      }
+    },
+    {
+      "number": 68,
+      "title": "NFV audit - change 1729: Store inert termios settings for guest terminals",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/68",
+      "state": "open",
+      "head_sha": "e40d382d42212163e00a5858988d114c4770751e",
+      "head_branch": "nfv-campaign-901851d8-1729-head",
       "latest_report": null,
       "report_history": [],
       "report_matches_current_head": null,
       "attempts": 1,
       "latest_run": {
-        "id": 41140780172,
-        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41140780172",
+        "id": 41147568263,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147568263",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 1
+      }
+    },
+    {
+      "number": 69,
+      "title": "NFV audit - change 1727: Add per-session controlling terminals",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/69",
+      "state": "open",
+      "head_sha": "70677b674aa682806b3812bf6f7e18eb1dd705c3",
+      "head_branch": "nfv-campaign-901851d8-1727-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41147579936,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147579936",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 1
+      }
+    },
+    {
+      "number": 70,
+      "title": "NFV audit - change 1725: Support NULL memref in the OP-TEE shim",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/70",
+      "state": "open",
+      "head_sha": "d317421d3932145346f8acca040542147b28e448",
+      "head_branch": "nfv-campaign-901851d8-1725-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41147591127,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147591127",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 1
+      }
+    },
+    {
+      "number": 71,
+      "title": "NFV audit - change 1724: Harden OP-TEE TA value/memref writeback",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/71",
+      "state": "open",
+      "head_sha": "f5f9933e6ad0dfaa4c14472900e74e4d8f7f67bc",
+      "head_branch": "nfv-campaign-901851d8-1724-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41147600287,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147600287",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 1
+      }
+    },
+    {
+      "number": 72,
+      "title": "NFV audit - change 1723: Share broker ring association across platforms",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/72",
+      "state": "open",
+      "head_sha": "702e3029b80dc793c8b2a9fb09970f2f3200732d",
+      "head_branch": "nfv-campaign-901851d8-1723-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41147612949,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147612949",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 1
+      }
+    },
+    {
+      "number": 73,
+      "title": "NFV audit - change 1722: Add pseudo-terminal pairs",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/73",
+      "state": "open",
+      "head_sha": "6c22d0537b188a683eb7b330011ec7c984ca4e78",
+      "head_branch": "nfv-campaign-901851d8-1722-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41147623141,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147623141",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 1
+      }
+    },
+    {
+      "number": 74,
+      "title": "NFV audit - change 1721: Consolidate Windows virtual-memory tracking and fix reservation release bookkeeping",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/74",
+      "state": "open",
+      "head_sha": "26afaedbd43a0067e5b8eab4828403f170f2a2ef",
+      "head_branch": "nfv-campaign-901851d8-1721-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41147635725,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147635725",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 1
+      }
+    },
+    {
+      "number": 75,
+      "title": "NFV audit - change 1720: Expose symlinks in the 9p backend",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/75",
+      "state": "open",
+      "head_sha": "5b664b1fa8133ae53a9cd60b690c6adf00846cbf",
+      "head_branch": "nfv-campaign-901851d8-1720-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41147646230,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147646230",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 1
+      }
+    },
+    {
+      "number": 76,
+      "title": "NFV audit - change 1719: Expose host symlinks in the userland LocalFs broker",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/76",
+      "state": "open",
+      "head_sha": "51fefe7ad28d3a083da20b4a57c587bd43c20465",
+      "head_branch": "nfv-campaign-901851d8-1719-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41147657427,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147657427",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 1
+      }
+    },
+    {
+      "number": 77,
+      "title": "NFV audit - change 1717: Direct host file I/O in the broker on Windows",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/77",
+      "state": "open",
+      "head_sha": "8891596d9fefcae11096ffde0d5049805cd598ec",
+      "head_branch": "nfv-campaign-901851d8-1717-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41147667730,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147667730",
         "status": "in_progress",
         "conclusion": null,
         "attempt": 1
