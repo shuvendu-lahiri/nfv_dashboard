@@ -5,14 +5,17 @@ Published results from the prototype [Neuro-Formal Verification](https://arxiv.o
 
 **[Live interactive dashboard](https://shuvendu-lahiri.github.io/nfv_dashboard/litebox/)** / [all repositories](https://shuvendu-lahiri.github.io/nfv_dashboard/) or [download the standalone HTML](index.html) (no server or external dependencies).
 
-Snapshot: 2026-10-31T08:38:07.205113+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
+Snapshot: 2026-10-31T09:22:12.995830+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
 
-**84 PRs attempted; 155 workflow attempts; 68 published reports; 17 PRs with 22 conditional refutations; 373 model verifications; 16 PRs without a published report.**
+**89 PRs attempted; 160 workflow attempts; 76 published reports; 20 PRs with 25 conditional refutations; 425 model verifications; 13 PRs without a published report.**
 
 ## All attempted PRs (refutations first)
 
 | PR | Change | Latest report | Properties | Refuted | Verified | Exhausted | Audit failure | Evidence |
 |---|---|---|---:|---:|---:|---:|---:|---|
+| [shuvendu-lahiri/litebox#83](https://github.com/shuvendu-lahiri/litebox/pull/83) | NFV audit \- change 1707: Support shared anonymous mappings across native fork | **REFUTED (model)** | 10 | **1** | 7 | 1 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/83#issuecomment-6541601568) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41154929189) |
+| [shuvendu-lahiri/litebox#81](https://github.com/shuvendu-lahiri/litebox/pull/81) | NFV audit \- change 1709: Parse the \`dyld\` shared cache | **REFUTED (model)** | 10 | **1** | 8 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/81#issuecomment-6541591233) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41154906208) |
+| [shuvendu-lahiri/litebox#86](https://github.com/shuvendu-lahiri/litebox/pull/86) | NFV audit \- change 1702: Prevent host stack exhaustion in native fork chains | **REFUTED (model)** | 10 | **1** | 8 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/86#issuecomment-6541492877) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41154961120) |
 | [shuvendu-lahiri/litebox#74](https://github.com/shuvendu-lahiri/litebox/pull/74) | NFV audit \- change 1721: Consolidate Windows virtual\-memory tracking and fix reservation release bookkeeping | **REFUTED (model)** | 10 | **2** | 6 | 1 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/74#issuecomment-6536937151) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41147635725) |
 | [shuvendu-lahiri/litebox#75](https://github.com/shuvendu-lahiri/litebox/pull/75) | NFV audit \- change 1720: Expose symlinks in the 9p backend | **REFUTED (model)** | 9 | **1** | 8 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/75#issuecomment-6536936167) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41147646230) |
 | [shuvendu-lahiri/litebox#77](https://github.com/shuvendu-lahiri/litebox/pull/77) | NFV audit \- change 1717: Direct host file I/O in the broker on Windows | **REFUTED (model)** | 10 | **2** | 8 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/77#issuecomment-6536933264) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41147667730) |
@@ -30,6 +33,11 @@ Snapshot: 2026-10-31T08:38:07.205113+00:00. Latest published report per PR suppl
 | [shuvendu-lahiri/litebox#8](https://github.com/shuvendu-lahiri/litebox/pull/8) | Replay change 1648: Cherry pick change 1564 Refactor to remove \`litebox::path::Arg\` | **REFUTED (model)** | 10 | **1** | 6 | 0 | 3 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/8#issuecomment-6383719541) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39357363330) |
 | [shuvendu-lahiri/litebox#3](https://github.com/shuvendu-lahiri/litebox/pull/3) | Replay change 1640: replace procfd special cases with filesystem symlinks | **REFUTED (model)** | 10 | **2** | 4 | 0 | 4 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/3#issuecomment-6383064179) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39390206732) |
 | [shuvendu-lahiri/litebox#2](https://github.com/shuvendu-lahiri/litebox/pull/2) | Replay change 1656: copy broker pipe and socket reads in bulk | **REFUTED (model)** | 9 | **1** | 8 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/2#issuecomment-6382629152) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39205431424) |
+| [shuvendu-lahiri/litebox#87](https://github.com/shuvendu-lahiri/litebox/pull/87) | NFV audit \- change 1701: Remove dual\-context \`dyld\` shared cache support | Published | 10 | 0 | 6 | 4 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/87#issuecomment-6541600199) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41154972324) |
+| [shuvendu-lahiri/litebox#80](https://github.com/shuvendu-lahiri/litebox/pull/80) | NFV audit \- change 1713: litebox\_runner\_linux\_userland: Support \`\-\-insert\-files\` | Published | 10 | 0 | 4 | 3 | 3 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/80#issuecomment-6541500273) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41154894342) |
+| [shuvendu-lahiri/litebox#82](https://github.com/shuvendu-lahiri/litebox/pull/82) | NFV audit \- change 1708: Keep guest\-to\-guest connections queued after client exits in smoltcp socket provider | Published | 8 | 0 | 5 | 0 | 3 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/82#issuecomment-6541430612) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41154917386) |
+| [shuvendu-lahiri/litebox#84](https://github.com/shuvendu-lahiri/litebox/pull/84) | NFV audit \- change 1706: Bypass the subpage compatibility layer for macOS guests | Published | 7 | 0 | 6 | 1 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/84#issuecomment-6541396235) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41154940198) |
+| [shuvendu-lahiri/litebox#79](https://github.com/shuvendu-lahiri/litebox/pull/79) | NFV audit \- change 1714: Support terminal foreground process groups | Published | 9 | 0 | 8 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/79#issuecomment-6541374092) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41154883667) |
 | [shuvendu-lahiri/litebox#76](https://github.com/shuvendu-lahiri/litebox/pull/76) | NFV audit \- change 1719: Expose host symlinks in the userland LocalFs broker | Published | 10 | 0 | 9 | 0 | 1 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/76#issuecomment-6536909267) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41147657427) |
 | [shuvendu-lahiri/litebox#71](https://github.com/shuvendu-lahiri/litebox/pull/71) | NFV audit \- change 1724: Harden OP\-TEE TA value/memref writeback | Published | 10 | 0 | 7 | 1 | 2 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/71#issuecomment-6536856272) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41147600287) |
 | [shuvendu-lahiri/litebox#70](https://github.com/shuvendu-lahiri/litebox/pull/70) | NFV audit \- change 1725: Support NULL memref in the OP\-TEE shim | Published | 9 | 0 | 6 | 1 | 2 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/70#issuecomment-6536813949) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41147591127) |
@@ -81,16 +89,13 @@ Snapshot: 2026-10-31T08:38:07.205113+00:00. Latest published report per PR suppl
 | [shuvendu-lahiri/litebox#9](https://github.com/shuvendu-lahiri/litebox/pull/9) | Replay change 1647: Cherry pick change 1558 Minor error cleanup for \`NoSearchPerms\` | Published | 10 | 0 | 10 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/9#issuecomment-6383869303) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39405410051) |
 | [shuvendu-lahiri/litebox#7](https://github.com/shuvendu-lahiri/litebox/pull/7) | Replay change 1657: Cherry pick change 1566 Add support for symlink resolution | Published | 10 | 0 | 9 | 1 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/7#issuecomment-6383605651) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39399231191) |
 | [shuvendu-lahiri/litebox#27](https://github.com/shuvendu-lahiri/litebox/pull/27) | Replay change 1281: Cherry pick change 1165 Join the spawned handles in tests | Published | 7 | 0 | 7 | 0 | 0 | [Report](https://github.com/shuvendu-lahiri/litebox/pull/27#issuecomment-6382201720) / [run](https://github.com/shuvendu-lahiri/litebox/actions/runs/39432560915) |
-| [shuvendu-lahiri/litebox#87](https://github.com/shuvendu-lahiri/litebox/pull/87) | NFV audit \- change 1701: Remove dual\-context \`dyld\` shared cache support | No published report (pending) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41154972324) |
-| [shuvendu-lahiri/litebox#86](https://github.com/shuvendu-lahiri/litebox/pull/86) | NFV audit \- change 1702: Prevent host stack exhaustion in native fork chains | No published report (in\_progress) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41154961120) |
-| [shuvendu-lahiri/litebox#85](https://github.com/shuvendu-lahiri/litebox/pull/85) | NFV audit \- change 1703: Simplify Windows shim syscall dispatch and object handling | No published report (in\_progress) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41154951212) |
-| [shuvendu-lahiri/litebox#84](https://github.com/shuvendu-lahiri/litebox/pull/84) | NFV audit \- change 1706: Bypass the subpage compatibility layer for macOS guests | No published report (in\_progress) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41154940198) |
-| [shuvendu-lahiri/litebox#83](https://github.com/shuvendu-lahiri/litebox/pull/83) | NFV audit \- change 1707: Support shared anonymous mappings across native fork | No published report (pending) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41154929189) |
-| [shuvendu-lahiri/litebox#82](https://github.com/shuvendu-lahiri/litebox/pull/82) | NFV audit \- change 1708: Keep guest\-to\-guest connections queued after client exits in smoltcp socket provider | No published report (in\_progress) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41154917386) |
-| [shuvendu-lahiri/litebox#81](https://github.com/shuvendu-lahiri/litebox/pull/81) | NFV audit \- change 1709: Parse the \`dyld\` shared cache | No published report (in\_progress) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41154906208) |
-| [shuvendu-lahiri/litebox#80](https://github.com/shuvendu-lahiri/litebox/pull/80) | NFV audit \- change 1713: litebox\_runner\_linux\_userland: Support \`\-\-insert\-files\` | No published report (in\_progress) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41154894342) |
-| [shuvendu-lahiri/litebox#79](https://github.com/shuvendu-lahiri/litebox/pull/79) | NFV audit \- change 1714: Support terminal foreground process groups | No published report (in\_progress) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41154883667) |
-| [shuvendu-lahiri/litebox#78](https://github.com/shuvendu-lahiri/litebox/pull/78) | NFV audit \- change 1716: Rename control\-ring epochs to wake counters | No published report (in\_progress) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41154872490) |
+| [shuvendu-lahiri/litebox#92](https://github.com/shuvendu-lahiri/litebox/pull/92) | NFV audit \- change 1691: Support Windows registry handle tags via NtSetInformationKey | No published report (queued) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41188407401) |
+| [shuvendu-lahiri/litebox#91](https://github.com/shuvendu-lahiri/litebox/pull/91) | NFV audit \- change 1692: Implement NtQueryFullAttributesFile for Windows Shim | No published report (queued) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41188398944) |
+| [shuvendu-lahiri/litebox#90](https://github.com/shuvendu-lahiri/litebox/pull/90) | NFV audit \- change 1696: Optimize and harden TA loading | No published report (queued) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41188390312) |
+| [shuvendu-lahiri/litebox#89](https://github.com/shuvendu-lahiri/litebox/pull/89) | NFV audit \- change 1698: Require readable fd for static backing data | No published report (in\_progress) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41188381224) |
+| [shuvendu-lahiri/litebox#88](https://github.com/shuvendu-lahiri/litebox/pull/88) | NFV audit \- change 1700: Support readlink of /proc/self/fd entries | No published report (in\_progress) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41188371366) |
+| [shuvendu-lahiri/litebox#85](https://github.com/shuvendu-lahiri/litebox/pull/85) | NFV audit \- change 1703: Simplify Windows shim syscall dispatch and object handling | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41154951212) |
+| [shuvendu-lahiri/litebox#78](https://github.com/shuvendu-lahiri/litebox/pull/78) | NFV audit \- change 1716: Rename control\-ring epochs to wake counters | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41154872490) |
 | [shuvendu-lahiri/litebox#63](https://github.com/shuvendu-lahiri/litebox/pull/63) | NFV audit \- change 1738: Fix the Linux sysinfo ABI layout | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41140724678) |
 | [shuvendu-lahiri/litebox#61](https://github.com/shuvendu-lahiri/litebox/pull/61) | NFV audit \- change 1742: Name shared anonymous memory lazily | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41140695554) |
 | [shuvendu-lahiri/litebox#58](https://github.com/shuvendu-lahiri/litebox/pull/58) | NFV audit \- change 1746: Resume interrupted relative sleeps through restart\_syscall | No published report (failure) | - | - | - | - | - | [Run](https://github.com/shuvendu-lahiri/litebox/actions/runs/41140657618) |
@@ -101,6 +106,24 @@ Snapshot: 2026-10-31T08:38:07.205113+00:00. Latest published report per PR suppl
 ## Conditional model refutations
 
 The following property texts are extracted from the published reports, without new adjudication or inference. The original report contains assumptions, source overlays and native evidence.
+
+### shuvendu-lahiri/litebox#83 / P3
+
+A successful decommit preserves state length and makes the entire target range inaccessible\.
+
+[Original report](https://github.com/shuvendu-lahiri/litebox/pull/83#issuecomment-6541601568)
+
+### shuvendu-lahiri/litebox#81 / P10
+
+An empty supplied subcache does not cause an indexing panic\.
+
+[Original report](https://github.com/shuvendu-lahiri/litebox/pull/81#issuecomment-6541591233)
+
+### shuvendu-lahiri/litebox#86 / P8
+
+Fork\-child preparation does not panic\.
+
+[Original report](https://github.com/shuvendu-lahiri/litebox/pull/86#issuecomment-6541492877)
 
 ### shuvendu-lahiri/litebox#74 / P7
 
