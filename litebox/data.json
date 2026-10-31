@@ -1,22 +1,22 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/litebox",
-  "generated_at": "2026-10-31T00:56:28.614283+00:00",
+  "generated_at": "2026-10-31T01:20:21.154974+00:00",
   "name": "litebox",
   "label": "LiteBox",
   "summary": {
     "selected_prs": 74,
     "attempted_prs": 74,
-    "published_reports": 62,
+    "published_reports": 68,
     "workflow_attempts": 135,
-    "without_report": 12,
-    "refuted_prs": 13,
-    "properties": 470,
+    "without_report": 6,
+    "refuted_prs": 17,
+    "properties": 529,
     "outcomes": {
-      "refuted": 16,
-      "verified": 326,
-      "resources exhausted": 57,
-      "type-check/audit failure": 71
+      "refuted": 22,
+      "verified": 373,
+      "resources exhausted": 59,
+      "type-check/audit failure": 75
     }
   },
   "prs": [
@@ -4709,15 +4709,53 @@
       "state": "open",
       "head_sha": "f5f9933e6ad0dfaa4c14472900e74e4d8f7f67bc",
       "head_branch": "nfv-campaign-901851d8-1724-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6536856272,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/71#issuecomment-6536856272",
+        "published_at": "2026-10-31T00:59:26Z",
+        "updated_at": "2026-10-31T00:59:26Z",
+        "body_sha256": "d36a0d664907a893e639129a5c0c4d6c32bb2b354869f31c78b4df645a1f0561",
+        "source_sha_prefix": "f5f9933e6ad0",
+        "base_sha_prefix": "74008708b9c9",
+        "run_id": 41147600287,
+        "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147600287",
+        "counts": {
+          "refuted": 0,
+          "verified": 7,
+          "resources exhausted": 1,
+          "type-check/audit failure": 2
+        },
+        "properties": 10,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6536856272,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/71#issuecomment-6536856272",
+          "published_at": "2026-10-31T00:59:26Z",
+          "updated_at": "2026-10-31T00:59:26Z",
+          "body_sha256": "d36a0d664907a893e639129a5c0c4d6c32bb2b354869f31c78b4df645a1f0561",
+          "source_sha_prefix": "f5f9933e6ad0",
+          "base_sha_prefix": "74008708b9c9",
+          "run_id": 41147600287,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147600287",
+          "counts": {
+            "refuted": 0,
+            "verified": 7,
+            "resources exhausted": 1,
+            "type-check/audit failure": 2
+          },
+          "properties": 10,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 1,
       "latest_run": {
         "id": 41147600287,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147600287",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 1
       }
     },
@@ -4728,15 +4766,67 @@
       "state": "open",
       "head_sha": "702e3029b80dc793c8b2a9fb09970f2f3200732d",
       "head_branch": "nfv-campaign-901851d8-1723-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6536868150,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/72#issuecomment-6536868150",
+        "published_at": "2026-10-31T01:00:30Z",
+        "updated_at": "2026-10-31T01:00:30Z",
+        "body_sha256": "de90531c6cb044b60caa7f8ddfc837afe467ee52ab8b633ede28dba49afdbd36",
+        "source_sha_prefix": "702e3029b80d",
+        "base_sha_prefix": "f0ac40b1e130",
+        "run_id": 41147612949,
+        "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147612949",
+        "counts": {
+          "refuted": 1,
+          "verified": 9,
+          "resources exhausted": 0,
+          "type-check/audit failure": 0
+        },
+        "properties": 10,
+        "refutations": [
+          {
+            "property_id": "P9",
+            "property": "An error result leaves the association failed.",
+            "input": "abstract state: host association identity = `0`; errors associated with demand polling observations = `[0]`; lane indices associated with demand observations = `[0]`; per-element results of `self.demand.try_next_lane() = [1]`; association status when failure recording is attempted = `[1]`; error carried by the association status during failure recording = `[0]`; per-lane availability state = `[true, true]`; converted control-ring error identities = `[0]`; per-element results of `self.association.ended() = [0]`; errors associated with post-demand ending observations = `[0]`; per-element results of `self.association.ended() = [0]`; errors associated with pre-demand ending observations = `[0]`; demand-wait error = `[7]`; per-element results of `let Err(error) = self.demand.wait_for_demand(wake_count) = [true]`",
+            "sketch": "If both calls to self.association.ended() observe a live association, demand polling reports Satisfied, and the demand wait returns an error, the error path would invoke failure reporting. If the association becomes peer-closed before failure recording, matches!(*status, HostAssociationStatus::Live) is false, so the wait error would be returned without being recorded as the association failure. This conditionally refutes the expectation that every demand-wait failure returned by next_lane is also recorded on the association."
+          }
+        ]
+      },
+      "report_history": [
+        {
+          "comment_id": 6536868150,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/72#issuecomment-6536868150",
+          "published_at": "2026-10-31T01:00:30Z",
+          "updated_at": "2026-10-31T01:00:30Z",
+          "body_sha256": "de90531c6cb044b60caa7f8ddfc837afe467ee52ab8b633ede28dba49afdbd36",
+          "source_sha_prefix": "702e3029b80d",
+          "base_sha_prefix": "f0ac40b1e130",
+          "run_id": 41147612949,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147612949",
+          "counts": {
+            "refuted": 1,
+            "verified": 9,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 10,
+          "refutations": [
+            {
+              "property_id": "P9",
+              "property": "An error result leaves the association failed.",
+              "input": "abstract state: host association identity = `0`; errors associated with demand polling observations = `[0]`; lane indices associated with demand observations = `[0]`; per-element results of `self.demand.try_next_lane() = [1]`; association status when failure recording is attempted = `[1]`; error carried by the association status during failure recording = `[0]`; per-lane availability state = `[true, true]`; converted control-ring error identities = `[0]`; per-element results of `self.association.ended() = [0]`; errors associated with post-demand ending observations = `[0]`; per-element results of `self.association.ended() = [0]`; errors associated with pre-demand ending observations = `[0]`; demand-wait error = `[7]`; per-element results of `let Err(error) = self.demand.wait_for_demand(wake_count) = [true]`",
+              "sketch": "If both calls to self.association.ended() observe a live association, demand polling reports Satisfied, and the demand wait returns an error, the error path would invoke failure reporting. If the association becomes peer-closed before failure recording, matches!(*status, HostAssociationStatus::Live) is false, so the wait error would be returned without being recorded as the association failure. This conditionally refutes the expectation that every demand-wait failure returned by next_lane is also recorded on the association."
+            }
+          ]
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 1,
       "latest_run": {
         "id": 41147612949,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147612949",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 1
       }
     },
@@ -4818,15 +4908,79 @@
       "state": "open",
       "head_sha": "26afaedbd43a0067e5b8eab4828403f170f2a2ef",
       "head_branch": "nfv-campaign-901851d8-1721-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6536937151,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/74#issuecomment-6536937151",
+        "published_at": "2026-10-31T01:06:39Z",
+        "updated_at": "2026-10-31T01:06:39Z",
+        "body_sha256": "12e31c1c3ce7a3bfd05c276fc2031245f25f99687f2941cbc5b29a7cc6efc506",
+        "source_sha_prefix": "26afaedbd43a",
+        "base_sha_prefix": "dae98ec08781",
+        "run_id": 41147635725,
+        "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147635725",
+        "counts": {
+          "refuted": 2,
+          "verified": 6,
+          "resources exhausted": 1,
+          "type-check/audit failure": 1
+        },
+        "properties": 10,
+        "refutations": [
+          {
+            "property_id": "P7",
+            "property": "An error leaves at least one reservation unattempted.",
+            "input": "abstract state: native deallocation error returned by platform.release_pages(reservation) = `[7]`; per-element results of `platform.release_pages(reservation) = [false]`; initial tracked reservation store = `[0]`; initial VMA presence for each reservation extent = `[true]`",
+            "sketch": "If the sole `unsafe { platform.release_pages(reservation) }?` returns an error, the reservation has already been popped and untracked, so the function fails with no pending reservation left for retry."
+          },
+          {
+            "property_id": "P8",
+            "property": "A failed output write after successful creation removes the new pages.",
+            "input": "`aligned_len = 1`; `commit = false`; `ptr.as_usize() = 1`; `is_placeholder = false`; abstract state: success of writing the resulting base address = `false`; mapped allocation-failure status = `0`; result of creating the private pages = `true`; success of writing the aligned region size = `false`; result of rolling back the newly created pages = `false`",
+            "sketch": "If the base-address write fails and self.global.page_manager.remove_pages(ptr, aligned_len) also fails, the discarded rollback result allows the function to return ACCESS_VIOLATION without establishing that the pages were removed."
+          }
+        ]
+      },
+      "report_history": [
+        {
+          "comment_id": 6536937151,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/74#issuecomment-6536937151",
+          "published_at": "2026-10-31T01:06:39Z",
+          "updated_at": "2026-10-31T01:06:39Z",
+          "body_sha256": "12e31c1c3ce7a3bfd05c276fc2031245f25f99687f2941cbc5b29a7cc6efc506",
+          "source_sha_prefix": "26afaedbd43a",
+          "base_sha_prefix": "dae98ec08781",
+          "run_id": 41147635725,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147635725",
+          "counts": {
+            "refuted": 2,
+            "verified": 6,
+            "resources exhausted": 1,
+            "type-check/audit failure": 1
+          },
+          "properties": 10,
+          "refutations": [
+            {
+              "property_id": "P7",
+              "property": "An error leaves at least one reservation unattempted.",
+              "input": "abstract state: native deallocation error returned by platform.release_pages(reservation) = `[7]`; per-element results of `platform.release_pages(reservation) = [false]`; initial tracked reservation store = `[0]`; initial VMA presence for each reservation extent = `[true]`",
+              "sketch": "If the sole `unsafe { platform.release_pages(reservation) }?` returns an error, the reservation has already been popped and untracked, so the function fails with no pending reservation left for retry."
+            },
+            {
+              "property_id": "P8",
+              "property": "A failed output write after successful creation removes the new pages.",
+              "input": "`aligned_len = 1`; `commit = false`; `ptr.as_usize() = 1`; `is_placeholder = false`; abstract state: success of writing the resulting base address = `false`; mapped allocation-failure status = `0`; result of creating the private pages = `true`; success of writing the aligned region size = `false`; result of rolling back the newly created pages = `false`",
+              "sketch": "If the base-address write fails and self.global.page_manager.remove_pages(ptr, aligned_len) also fails, the discarded rollback result allows the function to return ACCESS_VIOLATION without establishing that the pages were removed."
+            }
+          ]
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 1,
       "latest_run": {
         "id": 41147635725,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147635725",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 1
       }
     },
@@ -4837,15 +4991,67 @@
       "state": "open",
       "head_sha": "5b664b1fa8133ae53a9cd60b690c6adf00846cbf",
       "head_branch": "nfv-campaign-901851d8-1720-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6536936167,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/75#issuecomment-6536936167",
+        "published_at": "2026-10-31T01:06:34Z",
+        "updated_at": "2026-10-31T01:06:34Z",
+        "body_sha256": "572b01af07fb2c9449bd4b08ff4b72b5ad6a92ab61f5bf787cf82f25c15d5880",
+        "source_sha_prefix": "5b664b1fa813",
+        "base_sha_prefix": "158007cca1b0",
+        "run_id": 41147646230,
+        "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147646230",
+        "counts": {
+          "refuted": 1,
+          "verified": 8,
+          "resources exhausted": 0,
+          "type-check/audit failure": 0
+        },
+        "properties": 9,
+        "refutations": [
+          {
+            "property_id": "P4",
+            "property": "A selected non-directory, non-PATH fid is opened with the claimed translated flags.",
+            "input": "`walked == name = true`; abstract state: cached child fid identity = `1`; fallback fid identity = `2`; fallback fid-acquisition outcome = `false`; OFlags membership in RDWR, WRONLY, CREAT, EXCL, TRUNC, APPEND, DIRECTORY, NOFOLLOW, NONBLOCK, SYNC, DSYNC, DIRECT, NOATIME, and PATH order = `[true, true, false, false, false, false, false, false, false, false, false, false, false, false]`; the stopped walk has a child fid = `true`; server-side open outcome = `true`; walking handle stopped at a non-directory = `true`; supported open flags = `true`",
+            "sketch": "If RDWR and WRONLY are both set, oflags_to_lopen(flags - OFlags::CREAT - OFlags::EXCL) emits RDWR and skips WRONLY because the checks use an if/else-if."
+          }
+        ]
+      },
+      "report_history": [
+        {
+          "comment_id": 6536936167,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/75#issuecomment-6536936167",
+          "published_at": "2026-10-31T01:06:34Z",
+          "updated_at": "2026-10-31T01:06:34Z",
+          "body_sha256": "572b01af07fb2c9449bd4b08ff4b72b5ad6a92ab61f5bf787cf82f25c15d5880",
+          "source_sha_prefix": "5b664b1fa813",
+          "base_sha_prefix": "158007cca1b0",
+          "run_id": 41147646230,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147646230",
+          "counts": {
+            "refuted": 1,
+            "verified": 8,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 9,
+          "refutations": [
+            {
+              "property_id": "P4",
+              "property": "A selected non-directory, non-PATH fid is opened with the claimed translated flags.",
+              "input": "`walked == name = true`; abstract state: cached child fid identity = `1`; fallback fid identity = `2`; fallback fid-acquisition outcome = `false`; OFlags membership in RDWR, WRONLY, CREAT, EXCL, TRUNC, APPEND, DIRECTORY, NOFOLLOW, NONBLOCK, SYNC, DSYNC, DIRECT, NOATIME, and PATH order = `[true, true, false, false, false, false, false, false, false, false, false, false, false, false]`; the stopped walk has a child fid = `true`; server-side open outcome = `true`; walking handle stopped at a non-directory = `true`; supported open flags = `true`",
+              "sketch": "If RDWR and WRONLY are both set, oflags_to_lopen(flags - OFlags::CREAT - OFlags::EXCL) emits RDWR and skips WRONLY because the checks use an if/else-if."
+            }
+          ]
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 1,
       "latest_run": {
         "id": 41147646230,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147646230",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 1
       }
     },
@@ -4856,15 +5062,53 @@
       "state": "open",
       "head_sha": "51fefe7ad28d3a083da20b4a57c587bd43c20465",
       "head_branch": "nfv-campaign-901851d8-1719-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6536909267,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/76#issuecomment-6536909267",
+        "published_at": "2026-10-31T01:04:12Z",
+        "updated_at": "2026-10-31T01:04:12Z",
+        "body_sha256": "139c84d587a372d4656e5fa098d36a091846b1f26ae2a17ac39990025ad89c3f",
+        "source_sha_prefix": "51fefe7ad28d",
+        "base_sha_prefix": "a419aa33382a",
+        "run_id": 41147657427,
+        "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147657427",
+        "counts": {
+          "refuted": 0,
+          "verified": 9,
+          "resources exhausted": 0,
+          "type-check/audit failure": 1
+        },
+        "properties": 10,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6536909267,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/76#issuecomment-6536909267",
+          "published_at": "2026-10-31T01:04:12Z",
+          "updated_at": "2026-10-31T01:04:12Z",
+          "body_sha256": "139c84d587a372d4656e5fa098d36a091846b1f26ae2a17ac39990025ad89c3f",
+          "source_sha_prefix": "51fefe7ad28d",
+          "base_sha_prefix": "a419aa33382a",
+          "run_id": 41147657427,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147657427",
+          "counts": {
+            "refuted": 0,
+            "verified": 9,
+            "resources exhausted": 0,
+            "type-check/audit failure": 1
+          },
+          "properties": 10,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 1,
       "latest_run": {
         "id": 41147657427,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147657427",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 1
       }
     },
@@ -4875,15 +5119,79 @@
       "state": "open",
       "head_sha": "8891596d9fefcae11096ffde0d5049805cd598ec",
       "head_branch": "nfv-campaign-901851d8-1717-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6536933264,
+        "url": "https://github.com/shuvendu-lahiri/litebox/pull/77#issuecomment-6536933264",
+        "published_at": "2026-10-31T01:06:18Z",
+        "updated_at": "2026-10-31T01:06:18Z",
+        "body_sha256": "64b8dbd53366447be92378b6d980ec7ca56c758b155857d5ee1c7d3ae01de841",
+        "source_sha_prefix": "8891596d9fef",
+        "base_sha_prefix": "3320a36dda3e",
+        "run_id": 41147667730,
+        "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147667730",
+        "counts": {
+          "refuted": 2,
+          "verified": 8,
+          "resources exhausted": 0,
+          "type-check/audit failure": 0
+        },
+        "properties": 10,
+        "refutations": [
+          {
+            "property_id": "P3",
+            "property": "A single exposed raw part is written using its full length.",
+            "input": "`buf.len() = 4294967296`; `error.raw_os_error() == Some(ERROR_IO_PENDING.cast_signed()) = false`; `offset = 7`; `transferred = 0`; `call(length, &raw mut transferred, &raw mut overlapped) != 0 = true`; abstract state: whether the buffer exposes raw bytes = `true`; per-element results of `part.len() = [4294967296]`",
+            "sketch": "If the sole part has length 4294967296, u32::try_from(length).unwrap_or(u32::MAX) supplies WriteFile with 4294967295, not the full part length."
+          },
+          {
+            "property_id": "P9",
+            "property": "Fallback invokes the staging copy.",
+            "input": "`buf = [0]`; `offset = 0`; `self.instance_tag.same_instance(&file.instance_tag) = true`; `h.writable = true`; abstract state: bounce-buffer allocation result = `false`; staging-copy result = `false`; presence of an open file in the handle = `true`; seek_write transferred-byte count = `0`; seek_write I/O result = `false`; direct-write transferred-byte count = `0`; direct-write I/O result = `false`; whether windows::write_at returns Some = `false`",
+            "sketch": "If windows::write_at returns None and `let mut staged = bounce_buffer(buf.len())?;` fails, write returns before copying the buffer or calling seek_write."
+          }
+        ]
+      },
+      "report_history": [
+        {
+          "comment_id": 6536933264,
+          "url": "https://github.com/shuvendu-lahiri/litebox/pull/77#issuecomment-6536933264",
+          "published_at": "2026-10-31T01:06:18Z",
+          "updated_at": "2026-10-31T01:06:18Z",
+          "body_sha256": "64b8dbd53366447be92378b6d980ec7ca56c758b155857d5ee1c7d3ae01de841",
+          "source_sha_prefix": "8891596d9fef",
+          "base_sha_prefix": "3320a36dda3e",
+          "run_id": 41147667730,
+          "run_url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147667730",
+          "counts": {
+            "refuted": 2,
+            "verified": 8,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 10,
+          "refutations": [
+            {
+              "property_id": "P3",
+              "property": "A single exposed raw part is written using its full length.",
+              "input": "`buf.len() = 4294967296`; `error.raw_os_error() == Some(ERROR_IO_PENDING.cast_signed()) = false`; `offset = 7`; `transferred = 0`; `call(length, &raw mut transferred, &raw mut overlapped) != 0 = true`; abstract state: whether the buffer exposes raw bytes = `true`; per-element results of `part.len() = [4294967296]`",
+              "sketch": "If the sole part has length 4294967296, u32::try_from(length).unwrap_or(u32::MAX) supplies WriteFile with 4294967295, not the full part length."
+            },
+            {
+              "property_id": "P9",
+              "property": "Fallback invokes the staging copy.",
+              "input": "`buf = [0]`; `offset = 0`; `self.instance_tag.same_instance(&file.instance_tag) = true`; `h.writable = true`; abstract state: bounce-buffer allocation result = `false`; staging-copy result = `false`; presence of an open file in the handle = `true`; seek_write transferred-byte count = `0`; seek_write I/O result = `false`; direct-write transferred-byte count = `0`; direct-write I/O result = `false`; whether windows::write_at returns Some = `false`",
+              "sketch": "If windows::write_at returns None and `let mut staged = bounce_buffer(buf.len())?;` fails, write returns before copying the buffer or calling seek_write."
+            }
+          ]
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 1,
       "latest_run": {
         "id": 41147667730,
         "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147667730",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 1
       }
     }
