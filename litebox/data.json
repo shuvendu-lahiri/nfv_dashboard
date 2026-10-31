@@ -1,15 +1,15 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/litebox",
-  "generated_at": "2026-10-31T01:20:21.154974+00:00",
+  "generated_at": "2026-10-31T08:38:07.205113+00:00",
   "name": "litebox",
   "label": "LiteBox",
   "summary": {
-    "selected_prs": 74,
-    "attempted_prs": 74,
+    "selected_prs": 84,
+    "attempted_prs": 84,
     "published_reports": 68,
-    "workflow_attempts": 135,
-    "without_report": 6,
+    "workflow_attempts": 155,
+    "without_report": 16,
     "refuted_prs": 17,
     "properties": 529,
     "outcomes": {
@@ -5193,6 +5193,196 @@
         "status": "completed",
         "conclusion": "success",
         "attempt": 1
+      }
+    },
+    {
+      "number": 78,
+      "title": "NFV audit - change 1716: Rename control-ring epochs to wake counters",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/78",
+      "state": "open",
+      "head_sha": "6ad718fc8b14b5b5aaf77a3cb18f7a3e56da1218",
+      "head_branch": "nfv-campaign-901851d8-1716-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 2,
+      "latest_run": {
+        "id": 41154872490,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41154872490",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
+      }
+    },
+    {
+      "number": 79,
+      "title": "NFV audit - change 1714: Support terminal foreground process groups",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/79",
+      "state": "open",
+      "head_sha": "f2bcb6671c551cdbc5cd28cb6bc79998036f5644",
+      "head_branch": "nfv-campaign-901851d8-1714-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 2,
+      "latest_run": {
+        "id": 41154883667,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41154883667",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
+      }
+    },
+    {
+      "number": 80,
+      "title": "NFV audit - change 1713: litebox_runner_linux_userland: Support `--insert-files`",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/80",
+      "state": "open",
+      "head_sha": "f177d4d47e237b7d3f01fa862faca46810098b6f",
+      "head_branch": "nfv-campaign-901851d8-1713-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 2,
+      "latest_run": {
+        "id": 41154894342,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41154894342",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
+      }
+    },
+    {
+      "number": 81,
+      "title": "NFV audit - change 1709: Parse the `dyld` shared cache",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/81",
+      "state": "open",
+      "head_sha": "2cab6ef4c2f2bf3e07a7d6a71016267a96d5bbe9",
+      "head_branch": "nfv-campaign-901851d8-1709-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 2,
+      "latest_run": {
+        "id": 41154906208,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41154906208",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
+      }
+    },
+    {
+      "number": 82,
+      "title": "NFV audit - change 1708: Keep guest-to-guest connections queued after client exits in smoltcp socket provider",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/82",
+      "state": "open",
+      "head_sha": "e2334afb761bc260a4e501dfa64517d2d5c1154f",
+      "head_branch": "nfv-campaign-901851d8-1708-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 2,
+      "latest_run": {
+        "id": 41154917386,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41154917386",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
+      }
+    },
+    {
+      "number": 83,
+      "title": "NFV audit - change 1707: Support shared anonymous mappings across native fork",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/83",
+      "state": "open",
+      "head_sha": "62f2e377ba8034f34ce5c59bf28a3e8217bbd5fb",
+      "head_branch": "nfv-campaign-901851d8-1707-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 2,
+      "latest_run": {
+        "id": 41154929189,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41154929189",
+        "status": "pending",
+        "conclusion": null,
+        "attempt": 2
+      }
+    },
+    {
+      "number": 84,
+      "title": "NFV audit - change 1706: Bypass the subpage compatibility layer for macOS guests",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/84",
+      "state": "open",
+      "head_sha": "1d5b4e395a066004e9aed21de182ab4560f557c5",
+      "head_branch": "nfv-campaign-901851d8-1706-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 2,
+      "latest_run": {
+        "id": 41154940198,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41154940198",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
+      }
+    },
+    {
+      "number": 85,
+      "title": "NFV audit - change 1703: Simplify Windows shim syscall dispatch and object handling",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/85",
+      "state": "open",
+      "head_sha": "e9505a3c4040387bdacefff70edffd5a9d286483",
+      "head_branch": "nfv-campaign-901851d8-1703-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 2,
+      "latest_run": {
+        "id": 41154951212,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41154951212",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
+      }
+    },
+    {
+      "number": 86,
+      "title": "NFV audit - change 1702: Prevent host stack exhaustion in native fork chains",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/86",
+      "state": "open",
+      "head_sha": "ddee8302fd106e78b079191eb005b118062883e1",
+      "head_branch": "nfv-campaign-901851d8-1702-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 2,
+      "latest_run": {
+        "id": 41154961120,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41154961120",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 2
+      }
+    },
+    {
+      "number": 87,
+      "title": "NFV audit - change 1701: Remove dual-context `dyld` shared cache support",
+      "url": "https://github.com/shuvendu-lahiri/litebox/pull/87",
+      "state": "open",
+      "head_sha": "a3644b2a01cbe2ac796ab289c1c388194c1546ed",
+      "head_branch": "nfv-campaign-901851d8-1701-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 2,
+      "latest_run": {
+        "id": 41154972324,
+        "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41154972324",
+        "status": "pending",
+        "conclusion": null,
+        "attempt": 2
       }
     }
   ]

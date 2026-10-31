@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "generated_at": "2026-10-31T01:20:21.154974+00:00",
+  "generated_at": "2026-10-31T08:38:07.205113+00:00",
   "summary": {
-    "attempted_prs": 165,
+    "attempted_prs": 175,
     "published_reports": 153,
-    "workflow_attempts": 376,
-    "without_report": 12,
+    "workflow_attempts": 396,
+    "without_report": 22,
     "refuted_prs": 32,
     "properties": 976,
     "outcomes": {
@@ -41,13 +41,13 @@
       "name": "litebox",
       "label": "LiteBox",
       "repository": "shuvendu-lahiri/litebox",
-      "generated_at": "2026-10-31T01:20:21.154974+00:00",
+      "generated_at": "2026-10-31T08:38:07.205113+00:00",
       "summary": {
-        "selected_prs": 74,
-        "attempted_prs": 74,
+        "selected_prs": 84,
+        "attempted_prs": 84,
         "published_reports": 68,
-        "workflow_attempts": 135,
-        "without_report": 6,
+        "workflow_attempts": 155,
+        "without_report": 16,
         "refuted_prs": 17,
         "properties": 529,
         "outcomes": {
