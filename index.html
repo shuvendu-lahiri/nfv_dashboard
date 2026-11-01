@@ -19,6 +19,8 @@ a { color:#185c95; }
 .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr)); gap:18px; margin-top:18px; }
 .card,.totals { padding:22px; background:#fffdf8; border:1px solid var(--line); border-radius:12px; box-shadow:0 6px 18px #2430440a; }
 .totals { margin-top:18px; }
+.campaign { padding:14px; margin-bottom:16px; border-left:4px solid #a56b05; background:#fff4d9; }
+.campaign h3 { margin:0; }
 .outcome-bar { display:flex; height:14px; overflow:hidden; border-radius:7px; margin:16px 0; }
 .outcome-bar span { flex-basis:0; }
 .outcome-verified { background:#146343; }
@@ -46,25 +48,25 @@ footer { margin-top:22px; color:var(--muted); font-size:14px; overflow-wrap:anyw
 <header>
 <a href="https://arxiv.org/abs/2608.21516">Neuro-Formal Verification</a>
 <h1>NFV audit dashboards</h1>
-<p>Published results from the prototype NFV reviewer for Z3, LiteBox and NVX.</p>
+<p>Published results from the prototype NFV reviewer for Z3, LiteBox, NVX and gh-aw.</p>
 <p><strong>Conditional MODEL refutations are not confirmed source bugs.</strong>
 Verification concerns translated models under their stated assumptions; failure to refute is not evidence of correctness.</p>
 </header>
 <section class="totals" aria-label="Combined published results">
 <h2>Property outcomes across all projects</h2>
 <div class="outcome-tracker">
-<p class="muted">Shares of 1,167 properties in latest published reports. Percentages are rounded to one decimal place.</p>
+<p class="muted">Shares of 1,171 properties in latest published reports. Percentages are rounded to one decimal place.</p>
 <div class="outcome-bar" aria-hidden="true">
-<span class="outcome-verified" style="flex-grow:807"></span>
+<span class="outcome-verified" style="flex-grow:811"></span>
 <span class="outcome-refuted" style="flex-grow:47"></span>
 <span class="outcome-failed" style="flex-grow:186"></span>
 <span class="outcome-exhausted" style="flex-grow:127"></span>
 </div>
 <dl class="outcome-shares">
-<div><dt><span class="outcome-dot outcome-verified" aria-hidden="true"></span>Verified (model)</dt><dd><strong>69.2%</strong><span class="muted">807 / 1,167 properties</span></dd></div>
-<div><dt><span class="outcome-dot outcome-refuted" aria-hidden="true"></span>Refuted (model)</dt><dd><strong>4.0%</strong><span class="muted">47 / 1,167 properties</span></dd></div>
-<div><dt><span class="outcome-dot outcome-failed" aria-hidden="true"></span>Type-check / audit error</dt><dd><strong>15.9%</strong><span class="muted">186 / 1,167 properties</span></dd></div>
-<div><dt><span class="outcome-dot outcome-exhausted" aria-hidden="true"></span>Exhausted</dt><dd><strong>10.9%</strong><span class="muted">127 / 1,167 properties</span></dd></div>
+<div><dt><span class="outcome-dot outcome-verified" aria-hidden="true"></span>Verified (model)</dt><dd><strong>69.3%</strong><span class="muted">811 / 1,171 properties</span></dd></div>
+<div><dt><span class="outcome-dot outcome-refuted" aria-hidden="true"></span>Refuted (model)</dt><dd><strong>4.0%</strong><span class="muted">47 / 1,171 properties</span></dd></div>
+<div><dt><span class="outcome-dot outcome-failed" aria-hidden="true"></span>Type-check / audit error</dt><dd><strong>15.9%</strong><span class="muted">186 / 1,171 properties</span></dd></div>
+<div><dt><span class="outcome-dot outcome-exhausted" aria-hidden="true"></span>Exhausted</dt><dd><strong>10.8%</strong><span class="muted">127 / 1,171 properties</span></dd></div>
 </dl></div>
 <p id="totals"></p><p id="outcomes"></p>
 <p class="muted">Unpublished outcomes are unknown and excluded from these percentages.</p>
@@ -121,7 +123,21 @@ filters, highlighted refutations, original reports and workflow evidence.</p>
 <div><dt><span class="outcome-dot outcome-failed" aria-hidden="true"></span>Type-check / audit error</dt><dd><strong>19.1%</strong><span class="muted">55 / 288 properties</span></dd></div>
 <div><dt><span class="outcome-dot outcome-exhausted" aria-hidden="true"></span>Exhausted</dt><dd><strong>6.2%</strong><span class="muted">18 / 288 properties</span></dd></div>
 </dl></div></template>
-<script type="application/json" id="data">{"schema": 1, "generated_at": "2026-11-01T06:03:27.562449+00:00", "summary": {"attempted_prs": 195, "published_reports": 175, "workflow_attempts": 416, "without_report": 20, "refuted_prs": 38, "properties": 1167, "outcomes": {"refuted": 47, "verified": 807, "resources exhausted": 127, "type-check/audit failure": 186}}, "repositories": [{"name": "z3", "label": "Z3", "repository": "shuvendu-lahiri/z3", "generated_at": "2026-11-01T06:03:27.562449+00:00", "summary": {"selected_prs": 41, "attempted_prs": 41, "published_reports": 40, "workflow_attempts": 117, "without_report": 1, "refuted_prs": 5, "properties": 159, "outcomes": {"refuted": 5, "verified": 90, "resources exhausted": 34, "type-check/audit failure": 30}}}, {"name": "litebox", "label": "LiteBox", "repository": "shuvendu-lahiri/litebox", "generated_at": "2026-10-31T11:58:47.222323+00:00", "summary": {"selected_prs": 104, "attempted_prs": 104, "published_reports": 90, "workflow_attempts": 175, "without_report": 14, "refuted_prs": 23, "properties": 720, "outcomes": {"refuted": 28, "verified": 516, "resources exhausted": 75, "type-check/audit failure": 101}}}, {"name": "nvx", "label": "NVX", "repository": "shuvendu-lahiri/nvx", "generated_at": "2026-10-30T04:24:40.608973+00:00", "summary": {"selected_prs": 50, "attempted_prs": 50, "published_reports": 45, "workflow_attempts": 124, "without_report": 5, "refuted_prs": 10, "properties": 288, "outcomes": {"refuted": 14, "verified": 201, "resources exhausted": 18, "type-check/audit failure": 55}}}]}</script>
+<template id="outcome-tracker-gh-aw"><aside class="campaign" aria-label="Campaign status"><h3>Campaign paused</h3><p>100 source PRs selected; 1 attempted; 99 not attempted.</p><p>The pilot workflow completed and its report is published, but the campaign controller has not accepted the pilot: gh-aw transport formatting differs from the native report bytes. Supervision is stopped; no additional audits or retries have run. The plan contains 50 eligible source PRs each from pelikhan and dsyme. Results below are published model-conditional outcomes, not campaign acceptance or source-correctness claims.</p><p>249.88 / 20,000 AIC spent; 0 checked patches.</p></aside><div class="outcome-tracker">
+<p class="muted">Shares of 4 properties in latest published reports. Percentages are rounded to one decimal place.</p>
+<div class="outcome-bar" aria-hidden="true">
+<span class="outcome-verified" style="flex-grow:4"></span>
+<span class="outcome-refuted" style="flex-grow:0"></span>
+<span class="outcome-failed" style="flex-grow:0"></span>
+<span class="outcome-exhausted" style="flex-grow:0"></span>
+</div>
+<dl class="outcome-shares">
+<div><dt><span class="outcome-dot outcome-verified" aria-hidden="true"></span>Verified (model)</dt><dd><strong>100.0%</strong><span class="muted">4 / 4 properties</span></dd></div>
+<div><dt><span class="outcome-dot outcome-refuted" aria-hidden="true"></span>Refuted (model)</dt><dd><strong>0.0%</strong><span class="muted">0 / 4 properties</span></dd></div>
+<div><dt><span class="outcome-dot outcome-failed" aria-hidden="true"></span>Type-check / audit error</dt><dd><strong>0.0%</strong><span class="muted">0 / 4 properties</span></dd></div>
+<div><dt><span class="outcome-dot outcome-exhausted" aria-hidden="true"></span>Exhausted</dt><dd><strong>0.0%</strong><span class="muted">0 / 4 properties</span></dd></div>
+</dl></div></template>
+<script type="application/json" id="data">{"schema": 1, "generated_at": "2026-11-01T18:59:10.745194+00:00", "summary": {"attempted_prs": 196, "published_reports": 176, "workflow_attempts": 417, "without_report": 20, "refuted_prs": 38, "properties": 1171, "outcomes": {"refuted": 47, "verified": 811, "resources exhausted": 127, "type-check/audit failure": 186}}, "repositories": [{"name": "z3", "label": "Z3", "repository": "shuvendu-lahiri/z3", "generated_at": "2026-11-01T06:03:27.562449+00:00", "summary": {"selected_prs": 41, "attempted_prs": 41, "published_reports": 40, "workflow_attempts": 117, "without_report": 1, "refuted_prs": 5, "properties": 159, "outcomes": {"refuted": 5, "verified": 90, "resources exhausted": 34, "type-check/audit failure": 30}}}, {"name": "litebox", "label": "LiteBox", "repository": "shuvendu-lahiri/litebox", "generated_at": "2026-10-31T11:58:47.222323+00:00", "summary": {"selected_prs": 104, "attempted_prs": 104, "published_reports": 90, "workflow_attempts": 175, "without_report": 14, "refuted_prs": 23, "properties": 720, "outcomes": {"refuted": 28, "verified": 516, "resources exhausted": 75, "type-check/audit failure": 101}}}, {"name": "nvx", "label": "NVX", "repository": "shuvendu-lahiri/nvx", "generated_at": "2026-10-30T04:24:40.608973+00:00", "summary": {"selected_prs": 50, "attempted_prs": 50, "published_reports": 45, "workflow_attempts": 124, "without_report": 5, "refuted_prs": 10, "properties": 288, "outcomes": {"refuted": 14, "verified": 201, "resources exhausted": 18, "type-check/audit failure": 55}}}, {"name": "gh-aw", "label": "gh-aw", "repository": "shuvendu-lahiri/gh-aw", "generated_at": "2026-11-01T18:59:10.745194+00:00", "summary": {"selected_prs": 1, "attempted_prs": 1, "published_reports": 1, "workflow_attempts": 1, "without_report": 0, "refuted_prs": 0, "properties": 4, "outcomes": {"refuted": 0, "verified": 4, "resources exhausted": 0, "type-check/audit failure": 0}}, "campaign": {"repository": "shuvendu-lahiri/gh-aw", "status": "paused", "planned_prs": 100, "attempted_prs": 1, "workflow_attempts": 1, "spent_aic": "249.87792", "budget_aic": "20000", "checked_patches": 0, "note": "The pilot workflow completed and its report is published, but the campaign controller has not accepted the pilot: gh-aw transport formatting differs from the native report bytes. Supervision is stopped; no additional audits or retries have run. The plan contains 50 eligible source PRs each from pelikhan and dsyme. Results below are published model-conditional outcomes, not campaign acceptance or source-correctness claims."}}]}</script>
 <script>
 "use strict";
 const data = JSON.parse(document.getElementById("data").textContent);

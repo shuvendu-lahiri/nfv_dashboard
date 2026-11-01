@@ -4,6 +4,7 @@ import argparse
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
+from decimal import Decimal
 import hashlib
 import html
 import json
@@ -15,7 +16,7 @@ import subprocess
 REPOSITORY = "shuvendu-lahiri/litebox"
 WEB = f"https://github.com/{REPOSITORY}"
 DIRECTORY = Path(__file__).resolve().parent
-REPOSITORIES = {"z3": "Z3", "litebox": "LiteBox", "nvx": "NVX"}
+REPOSITORIES = {"z3": "Z3", "litebox": "LiteBox", "nvx": "NVX", "gh-aw": "gh-aw"}
 SITE = "https://shuvendu-lahiri.github.io/nfv_dashboard/"
 GITHUB = "https://github.com/shuvendu-lahiri/nfv_dashboard/blob/nfv-reports"
 STATUSES = ("refuted", "verified", "resources exhausted", "type-check/audit failure")
@@ -129,7 +130,7 @@ def run_numbers(run, heads, repository=REPOSITORY, prs=None):
     return numbers
 
 
-def build(pulls, comments, runs, generated_at, repository=REPOSITORY, cohort=None):
+def build(pulls, comments, runs, generated_at, repository=REPOSITORY, cohort=None, campaign=None):
     web = f"https://github.com/{repository}"
     prs = {pr["number"]: pr for pr in pulls}
     if len(prs) != len(pulls):
@@ -203,7 +204,7 @@ def build(pulls, comments, runs, generated_at, repository=REPOSITORY, cohort=Non
     for entry in entries:
         if entry["latest_report"]:
             totals.update(entry["latest_report"]["counts"])
-    return {
+    data = {
         "schema": 1, "repository": repository, "generated_at": generated_at,
         "name": repository.rsplit("/", 1)[1], "label": REPOSITORIES[repository.rsplit("/", 1)[1]],
         "summary": {
@@ -217,6 +218,44 @@ def build(pulls, comments, runs, generated_at, repository=REPOSITORY, cohort=Non
         },
         "prs": entries,
     }
+    if campaign is not None:
+        data["campaign"] = campaign
+        campaign_lines(data)
+    return data
+
+
+def campaign_lines(data):
+    campaign = data.get("campaign")
+    if campaign is None:
+        return []
+    summary = data["summary"]
+    if campaign["repository"] != data["repository"]:
+        raise ValueError("Campaign belongs to a different repository")
+    planned, patches = campaign["planned_prs"], campaign["checked_patches"]
+    spent, budget = Decimal(campaign["spent_aic"]), Decimal(campaign["budget_aic"])
+    if (type(planned) is not int or planned < summary["attempted_prs"]
+            or type(patches) is not int or patches < 0
+            or not spent.is_finite() or not budget.is_finite()
+            or spent < 0 or budget <= 0 or spent > budget
+            or campaign["attempted_prs"] != summary["attempted_prs"]
+            or campaign["workflow_attempts"] != summary["workflow_attempts"]):
+        raise ValueError("Invalid or stale campaign snapshot")
+    return [
+        f"Campaign {campaign['status']}",
+        f"{planned} source PRs selected; {summary['attempted_prs']} attempted; "
+        f"{planned - summary['attempted_prs']} not attempted.",
+        campaign["note"],
+        f"{spent:,.2f} / {budget:,.0f} AIC spent; {patches} checked patches.",
+    ]
+
+
+def render_campaign(data):
+    lines = campaign_lines(data)
+    if not lines:
+        return ""
+    return ('<aside class="campaign" aria-label="Campaign status">'
+            f"<h3>{html.escape(lines[0])}</h3>"
+            + "".join(f"<p>{html.escape(line)}</p>" for line in lines[1:]) + "</aside>")
 
 
 def ordered(data):
@@ -246,10 +285,17 @@ def render_markdown(data):
         f"{total['published_reports']} published reports; "
         f"{total['refuted_prs']} PRs with {total['outcomes']['refuted']} conditional refutations; "
         f"{total['outcomes']['verified']} model verifications; {total['without_report']} PRs without a published report.**", "",
+    ]
+    campaign = campaign_lines(data)
+    if campaign:
+        lines.extend([f"## {markdown(campaign[0])}", ""])
+        for line in campaign[1:]:
+            lines.extend([markdown(line), ""])
+    lines.extend([
         "## All attempted PRs (refutations first)", "",
         "| PR | Change | Latest report | Properties | Refuted | Verified | Exhausted | Audit failure | Evidence |",
         "|---|---|---|---:|---:|---:|---:|---:|---|",
-    ]
+    ])
     for entry in ordered(data):
         report = entry["latest_report"]
         label = f"{repository}#{entry['number']}"
@@ -355,10 +401,10 @@ def render_html(data, template_name="dashboard.html"):
     canonical = SITE if "repositories" in data else f"{SITE}{data['name']}/"
     repository_trackers = "\n".join(
         f'<template id="outcome-tracker-{html.escape(repository["name"], quote=True)}">'
-        f'{render_outcome_tracker(repository["summary"])}</template>'
+        f'{render_campaign(repository)}{render_outcome_tracker(repository["summary"])}</template>'
         for repository in data.get("repositories", []))
     return (template.replace("__NFV_CANONICAL__", html.escape(canonical, quote=True))
-            .replace("__NFV_OUTCOME_TRACKER__", render_outcome_tracker(data["summary"]))
+            .replace("__NFV_OUTCOME_TRACKER__", render_campaign(data) + render_outcome_tracker(data["summary"]))
             .replace("__NFV_REPOSITORY_TRACKERS__", repository_trackers)
             .replace("__NFV_DATA__", encoded))
 
@@ -376,7 +422,8 @@ def hub(snapshots):
     summary["outcomes"] = {status: sum(data["summary"]["outcomes"][status] for data in snapshots) for status in STATUSES}
     return {
         "schema": 1, "generated_at": max(data["generated_at"] for data in snapshots), "summary": summary,
-        "repositories": [{key: data[key] for key in ("name", "label", "repository", "generated_at", "summary")}
+        "repositories": [{key: data[key] for key in ("name", "label", "repository", "generated_at", "summary", "campaign")
+                          if key in data}
                          for data in snapshots],
     }
 
@@ -386,11 +433,13 @@ def main():
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument("--input-dir", type=Path, help="Read pulls/comments/review-runs JSON in each repository subdirectory")
     mode.add_argument("--check", action="store_true", help="Check generated files offline without changing them")
+    parser.add_argument("--project", choices=REPOSITORIES,
+                        help="Refresh only this project; retain other projects' saved evidence")
     args = parser.parse_args()
     generated_at = datetime.now(timezone.utc).isoformat()
 
     def collect(name):
-        if args.check:
+        if args.check or args.project and name != args.project:
             return json.loads((DIRECTORY / name / "data.json").read_text(encoding="utf-8"))
         repository = f"shuvendu-lahiri/{name}"
         if args.input_dir:
@@ -403,7 +452,9 @@ def main():
             runs = fetch(repository, "actions/workflows/nfv-pr-review.lock.yml/runs?per_page=100", "workflow_runs")
         cohort_path = DIRECTORY / name / "cohort.json"
         cohort = json.loads(cohort_path.read_text(encoding="utf-8")) if cohort_path.exists() else None
-        return build(pulls, comments, runs, generated_at, repository, cohort)
+        campaign_path = DIRECTORY / name / "campaign.json"
+        campaign = json.loads(campaign_path.read_text(encoding="utf-8")) if campaign_path.exists() else None
+        return build(pulls, comments, runs, generated_at, repository, cohort, campaign)
 
     with ThreadPoolExecutor(max_workers=len(REPOSITORIES)) as executor:
         snapshots = list(executor.map(collect, REPOSITORIES))

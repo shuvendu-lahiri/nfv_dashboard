@@ -1,0 +1,15 @@
+{
+  "repository": "shuvendu-lahiri/gh-aw",
+  "source_repository": "github/gh-aw",
+  "selection_policy": "Attempted replays from a frozen campaign of 50 eligible source PRs per strict author, pelikhan and dsyme. Unattempted source PRs are tracked in the campaign plan, not fabricated as replay PRs.",
+  "prs": [
+    {
+      "number": 3,
+      "source_number": 73588,
+      "source_title": "fix: check recorded attempt bounds before integer conversion",
+      "source_head_sha": "d440196ee867b8cc9727ae8ec2fc0823c915dea4",
+      "source_base_sha": "546f3995a4f95cb689888477d77a2d6f295a06ec",
+      "replay_head_sha": "b66a337c64e9456f6060e23cdcce9374fcdddaa5"
+    }
+  ]
+}

@@ -41,6 +41,58 @@ def run(number=2, run_id=100, conclusion="success"):
 
 
 class RefreshTests(unittest.TestCase):
+    def campaign(self):
+        return {
+            "repository": refresh.REPOSITORY, "status": "paused", "planned_prs": 100,
+            "attempted_prs": 1, "workflow_attempts": 1, "spent_aic": "249.87792",
+            "budget_aic": "20000", "checked_patches": 0,
+            "note": "Report is published; campaign acceptance remains blocked.",
+        }
+
+    def test_paused_plan_does_not_inflate_published_outcomes(self):
+        data = refresh.build([pr()], [comment()], [run()], "snapshot", campaign=self.campaign())
+        self.assertEqual(1, data["summary"]["attempted_prs"])
+        self.assertEqual(1, data["summary"]["properties"])
+        self.assertEqual(0, data["summary"]["without_report"])
+        rendered = refresh.render_html(data)
+        self.assertIn("Campaign paused", rendered)
+        self.assertIn("100 source PRs selected; 1 attempted; 99 not attempted.", rendered)
+        self.assertIn("249.88 / 20,000 AIC spent; 0 checked patches.", rendered)
+        combined = refresh.hub([data])
+        self.assertEqual(self.campaign(), combined["repositories"][0]["campaign"])
+        self.assertIn("Campaign paused", refresh.render_html(combined, "hub.html"))
+        self.assertIn("## Campaign paused", refresh.render_markdown(data))
+
+    def test_campaign_metadata_is_bound_and_escaped(self):
+        campaign = self.campaign()
+        campaign["note"] = "<script>alert(1)</script> @user"
+        data = refresh.build([pr()], [comment()], [run()], "snapshot", campaign=campaign)
+        self.assertNotIn("<script>alert", refresh.render_html(data))
+        self.assertNotIn("<script>alert", refresh.render_markdown(data))
+        self.assertIn("&lt;script&gt;", refresh.render_campaign(data))
+        for key, value in (("repository", "example/other"), ("planned_prs", 0),
+                           ("workflow_attempts", 2), ("spent_aic", "NaN")):
+            with self.subTest(key=key), self.assertRaises(ValueError):
+                refresh.build([pr()], [comment()], [run()], "snapshot",
+                              campaign={**self.campaign(), key: value})
+
+    def test_ghaw_published_pilot_counts_four_properties_not_the_plan(self):
+        repository = "shuvendu-lahiri/gh-aw"
+        header = BODY[:BODY.index("### P1")].replace("1 refuted, 0 verified", "0 refuted, 4 verified")
+        header = header.replace("refuted: 1", "refuted: 0").replace("verified: 0", "verified: 4")
+        body = header.replace(refresh.REPOSITORY, repository) + "\n".join(
+            f"### P{number}\n**Outcome: verified**\n" for number in range(1, 5))
+        value = comment(body)
+        value["issue_url"] = f"https://api.github.com/repos/{repository}/issues/2"
+        workflow = run()
+        workflow["pull_requests"][0]["url"] = f"https://api.github.com/repos/{repository}/pulls/2"
+        data = refresh.build([pr()], [value], [workflow], "snapshot", repository,
+                             campaign={**self.campaign(), "repository": repository})
+        self.assertEqual(4, data["summary"]["properties"])
+        self.assertEqual(4, data["summary"]["outcomes"]["verified"])
+        self.assertEqual(0, data["summary"]["outcomes"]["refuted"])
+        self.assertIn("<strong>100.0%</strong>", refresh.render_html(data))
+
     def test_reruns_do_not_duplicate_prs_or_properties(self):
         data = refresh.build([pr()], [comment()], [{**run(), "run_attempt": 2}], "snapshot")
         self.assertEqual(1, data["summary"]["attempted_prs"])

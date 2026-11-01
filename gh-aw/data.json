@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "repository": "shuvendu-lahiri/gh-aw",
+  "generated_at": "2026-11-01T18:59:10.745194+00:00",
+  "name": "gh-aw",
+  "label": "gh-aw",
+  "summary": {
+    "selected_prs": 1,
+    "attempted_prs": 1,
+    "published_reports": 1,
+    "workflow_attempts": 1,
+    "without_report": 0,
+    "refuted_prs": 0,
+    "properties": 4,
+    "outcomes": {
+      "refuted": 0,
+      "verified": 4,
+      "resources exhausted": 0,
+      "type-check/audit failure": 0
+    }
+  },
+  "prs": [
+    {
+      "number": 3,
+      "title": "fix: check recorded attempt bounds before integer conversion",
+      "url": "https://github.com/shuvendu-lahiri/gh-aw/pull/3",
+      "state": "open",
+      "head_sha": "b66a337c64e9456f6060e23cdcce9374fcdddaa5",
+      "head_branch": "nfv-campaign-901851d8-73588-head",
+      "latest_report": {
+        "comment_id": 6555126609,
+        "url": "https://github.com/shuvendu-lahiri/gh-aw/pull/3#issuecomment-6555126609",
+        "published_at": "2026-11-01T07:46:52Z",
+        "updated_at": "2026-11-01T07:46:52Z",
+        "body_sha256": "b394a963c3a7443e5335859c8acc021bdedbd0e5395e199551bf6717f394eaa4",
+        "source_sha_prefix": "b66a337c64e9",
+        "base_sha_prefix": "db2b8e216ea1",
+        "run_id": 41284849816,
+        "run_url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41284849816",
+        "counts": {
+          "refuted": 0,
+          "verified": 4,
+          "resources exhausted": 0,
+          "type-check/audit failure": 0
+        },
+        "properties": 4,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6555126609,
+          "url": "https://github.com/shuvendu-lahiri/gh-aw/pull/3#issuecomment-6555126609",
+          "published_at": "2026-11-01T07:46:52Z",
+          "updated_at": "2026-11-01T07:46:52Z",
+          "body_sha256": "b394a963c3a7443e5335859c8acc021bdedbd0e5395e199551bf6717f394eaa4",
+          "source_sha_prefix": "b66a337c64e9",
+          "base_sha_prefix": "db2b8e216ea1",
+          "run_id": 41284849816,
+          "run_url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41284849816",
+          "counts": {
+            "refuted": 0,
+            "verified": 4,
+            "resources exhausted": 0,
+            "type-check/audit failure": 0
+          },
+          "properties": 4,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41284849816,
+        "url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41284849816",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      },
+      "source_number": 73588,
+      "source_url": "https://redirect.github.com/github/gh-aw/pull/73588",
+      "source_head_sha": "d440196ee867b8cc9727ae8ec2fc0823c915dea4"
+    }
+  ],
+  "campaign": {
+    "repository": "shuvendu-lahiri/gh-aw",
+    "status": "paused",
+    "planned_prs": 100,
+    "attempted_prs": 1,
+    "workflow_attempts": 1,
+    "spent_aic": "249.87792",
+    "budget_aic": "20000",
+    "checked_patches": 0,
+    "note": "The pilot workflow completed and its report is published, but the campaign controller has not accepted the pilot: gh-aw transport formatting differs from the native report bytes. Supervision is stopped; no additional audits or retries have run. The plan contains 50 eligible source PRs each from pelikhan and dsyme. Results below are published model-conditional outcomes, not campaign acceptance or source-correctness claims."
+  }
+}

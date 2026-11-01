@@ -7,6 +7,7 @@
 | Z3 | [Open](https://shuvendu-lahiri.github.io/nfv_dashboard/z3/) | [Reports](z3/README.md) |
 | LiteBox | [Open](https://shuvendu-lahiri.github.io/nfv_dashboard/litebox/) | [Reports](litebox/README.md) |
 | NVX | [Open](https://shuvendu-lahiri.github.io/nfv_dashboard/nvx/) | [Reports](nvx/README.md) |
+| gh-aw | [Open](https://shuvendu-lahiri.github.io/nfv_dashboard/gh-aw/) | [Reports](gh-aw/README.md) |
 
 Published results from the prototype [Neuro-Formal Verification
 reviewer](https://arxiv.org/abs/2608.21516). Refutations are **conditional MODEL
@@ -17,6 +18,10 @@ Latest published reports supply the counts. Earlier reports remain in each
 repository's `data.json`. Failed or missing publication is shown explicitly, not
 as a successful zero-finding analysis. NVX retains its recorded campaign cohorts
 and source-change links; Z3 and LiteBox include all non-skipped reviewer attempts.
+gh-aw shows its published pilot even while campaign acceptance is blocked. Its
+campaign panel separates the 100-PR plan from actual attempts, explains the paused
+state, and records credit usage and checked patches; unattempted PRs contribute
+no property outcomes.
 
 The hub and each project dashboard show the percentage and count/total fraction
 of properties verified, refuted, rejected by type-check/audit, or exhausted.
@@ -32,6 +37,13 @@ python refresh.py
 python -m unittest discover
 python refresh.py --check
 ```
+
+Use `python refresh.py --project gh-aw` to refresh only gh-aw while retaining the
+other projects' saved evidence. `gh-aw/cohort.json` maps attempted replays to
+immutable source changes; `gh-aw/campaign.json` is the explicit campaign-status
+snapshot, not a workflow-status inference. Update it when the campaign changes;
+inconsistent attempt counts fail refresh rather than silently retaining stale
+campaign metadata.
 
 Refresh reads only PR metadata, published comments and workflow metadata. It never
 checks out or executes inspected PR code, starts audits, reruns proofs or changes
