@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated_at": "2026-10-31T11:58:47.222323+00:00",
+  "generated_at": "2026-11-01T06:03:27.562449+00:00",
   "summary": {
     "attempted_prs": 195,
     "published_reports": 175,
@@ -20,7 +20,7 @@
       "name": "z3",
       "label": "Z3",
       "repository": "shuvendu-lahiri/z3",
-      "generated_at": "2026-10-26T17:54:10.540224+00:00",
+      "generated_at": "2026-11-01T06:03:27.562449+00:00",
       "summary": {
         "selected_prs": 41,
         "attempted_prs": 41,
