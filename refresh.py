@@ -310,13 +310,57 @@ def render_markdown(data):
     return "\n".join(lines)
 
 
+def render_outcome_tracker(summary):
+    total = summary["properties"]
+    statuses = (
+        ("verified", "Verified (model)", "verified"),
+        ("refuted", "Refuted (model)", "refuted"),
+        ("type-check/audit failure", "Type-check / audit error", "failed"),
+        ("resources exhausted", "Exhausted", "exhausted"),
+    )
+    counts = [summary["outcomes"][status] for status, _, _ in statuses]
+    if (type(total) is not int or total < 0
+            or any(type(count) is not int or count < 0 for count in counts)
+            or sum(counts) != total):
+        raise ValueError("Invalid property outcome totals for percentage tracker")
+    parts = ['<div class="outcome-tracker">']
+    if total:
+        parts.append(
+            f'<p class="muted">Shares of {total:,} properties in latest published reports. '
+            'Percentages are rounded to one decimal place.</p>')
+        parts.append('<div class="outcome-bar" aria-hidden="true">')
+        for (_, _, class_name), count in zip(statuses, counts):
+            parts.append(f'<span class="outcome-{class_name}" style="flex-grow:{count}"></span>')
+        parts.append('</div>')
+    else:
+        parts.append('<p class="muted">No published property outcomes yet; percentages are unavailable.</p>')
+    parts.append('<dl class="outcome-shares">')
+    for (_, label, class_name), count in zip(statuses, counts):
+        percentage = f"{count / total * 100:.1f}%" if total else "N/A"
+        parts.append(
+            f'<div><dt><span class="outcome-dot outcome-{class_name}" aria-hidden="true"></span>'
+            f'{label}</dt><dd><strong>{percentage}</strong>'
+            f'<span class="muted">{count:,} / {total:,} properties</span></dd></div>')
+    parts.append('</dl></div>')
+    return "\n".join(parts)
+
+
 def render_html(data, template_name="dashboard.html"):
     template = (DIRECTORY / template_name).read_text(encoding="utf-8")
-    if template.count("__NFV_DATA__") != 1 or template.count("__NFV_CANONICAL__") != 1:
+    if (template.count("__NFV_DATA__") != 1 or template.count("__NFV_CANONICAL__") != 1
+            or template.count("__NFV_OUTCOME_TRACKER__") != 1
+            or template.count("__NFV_REPOSITORY_TRACKERS__") != (1 if "repositories" in data else 0)):
         raise ValueError("Invalid dashboard template")
     encoded = json.dumps(data, ensure_ascii=True).replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
     canonical = SITE if "repositories" in data else f"{SITE}{data['name']}/"
-    return template.replace("__NFV_CANONICAL__", html.escape(canonical, quote=True)).replace("__NFV_DATA__", encoded)
+    repository_trackers = "\n".join(
+        f'<template id="outcome-tracker-{html.escape(repository["name"], quote=True)}">'
+        f'{render_outcome_tracker(repository["summary"])}</template>'
+        for repository in data.get("repositories", []))
+    return (template.replace("__NFV_CANONICAL__", html.escape(canonical, quote=True))
+            .replace("__NFV_OUTCOME_TRACKER__", render_outcome_tracker(data["summary"]))
+            .replace("__NFV_REPOSITORY_TRACKERS__", repository_trackers)
+            .replace("__NFV_DATA__", encoded))
 
 
 def fetch(repository, endpoint, key=None):

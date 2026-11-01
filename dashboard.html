@@ -17,6 +17,17 @@ header p { max-width:110ch; color:#e2efeb; }
 header a { color:#d7efff; }
 a { color:#185c95; }
 .panel { margin-top:18px; padding:18px; background:#fffdf8; border:1px solid var(--line); border-radius:12px; box-shadow:0 6px 18px #2430440a; }
+.outcome-bar { display:flex; height:14px; overflow:hidden; border-radius:7px; margin:16px 0; }
+.outcome-bar span { flex-basis:0; }
+.outcome-verified { background:#146343; }
+.outcome-refuted { background:#a52020; }
+.outcome-failed { background:#7851a9; }
+.outcome-exhausted { background:#a56b05; }
+.outcome-shares { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(115px,100%),1fr)); gap:14px; margin:0; }
+.outcome-shares dt { font-weight:600; }
+.outcome-shares dd { margin:4px 0 0; font-weight:400; }
+.outcome-shares strong { display:block; font-size:26px; }
+.outcome-dot { display:inline-block; width:9px; height:9px; border-radius:50%; margin-right:6px; }
 .stats { display:grid; grid-template-columns:repeat(auto-fit,minmax(145px,1fr)); gap:12px; margin-top:18px; }
 .stat { background:#fffdf8; padding:16px; border:1px solid var(--line); border-radius:12px; }
 .stat strong { display:block; font-size:28px; }
@@ -55,6 +66,11 @@ footer { margin-top:20px; color:var(--muted); font-size:13px; }
 Refuted means a <strong>conditional MODEL refutation, not a confirmed source bug</strong>.
 Verification concerns a translated model under its assumptions. Failure to refute is not evidence of correctness.</p>
 </header>
+<section class="panel" aria-label="Project property outcomes">
+<h2>Property outcomes</h2>
+__NFV_OUTCOME_TRACKER__
+<p class="muted">Unpublished outcomes are unknown and excluded. These totals cover the whole project snapshot, independent of the PR filters below.</p>
+</section>
 <section class="stats" aria-label="Snapshot totals">
 <div class="stat"><strong id="attempted"></strong>PRs attempted</div>
 <div class="stat"><strong id="published"></strong>Published reports</div>

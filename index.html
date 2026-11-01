@@ -19,6 +19,17 @@ a { color:#185c95; }
 .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr)); gap:18px; margin-top:18px; }
 .card,.totals { padding:22px; background:#fffdf8; border:1px solid var(--line); border-radius:12px; box-shadow:0 6px 18px #2430440a; }
 .totals { margin-top:18px; }
+.outcome-bar { display:flex; height:14px; overflow:hidden; border-radius:7px; margin:16px 0; }
+.outcome-bar span { flex-basis:0; }
+.outcome-verified { background:#146343; }
+.outcome-refuted { background:#a52020; }
+.outcome-failed { background:#7851a9; }
+.outcome-exhausted { background:#a56b05; }
+.outcome-shares { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(115px,100%),1fr)); gap:14px; }
+.outcome-shares dt { font-weight:600; }
+.outcome-shares dd { margin:4px 0 0; font-weight:400; }
+.outcome-shares strong { display:block; font-size:26px; }
+.outcome-dot { display:inline-block; width:9px; height:9px; border-radius:50%; margin-right:6px; }
 .red { color:var(--red); font-weight:700; }
 .green { color:var(--green); font-weight:700; }
 .muted { color:var(--muted); font-size:14px; }
@@ -39,7 +50,25 @@ footer { margin-top:22px; color:var(--muted); font-size:14px; overflow-wrap:anyw
 <p><strong>Conditional MODEL refutations are not confirmed source bugs.</strong>
 Verification concerns translated models under their stated assumptions; failure to refute is not evidence of correctness.</p>
 </header>
-<section class="totals" aria-label="Combined published results"><h2>Across all repositories</h2><p id="totals"></p><p id="outcomes"></p></section>
+<section class="totals" aria-label="Combined published results">
+<h2>Property outcomes across all projects</h2>
+<div class="outcome-tracker">
+<p class="muted">Shares of 1,167 properties in latest published reports. Percentages are rounded to one decimal place.</p>
+<div class="outcome-bar" aria-hidden="true">
+<span class="outcome-verified" style="flex-grow:807"></span>
+<span class="outcome-refuted" style="flex-grow:47"></span>
+<span class="outcome-failed" style="flex-grow:186"></span>
+<span class="outcome-exhausted" style="flex-grow:127"></span>
+</div>
+<dl class="outcome-shares">
+<div><dt><span class="outcome-dot outcome-verified" aria-hidden="true"></span>Verified (model)</dt><dd><strong>69.2%</strong><span class="muted">807 / 1,167 properties</span></dd></div>
+<div><dt><span class="outcome-dot outcome-refuted" aria-hidden="true"></span>Refuted (model)</dt><dd><strong>4.0%</strong><span class="muted">47 / 1,167 properties</span></dd></div>
+<div><dt><span class="outcome-dot outcome-failed" aria-hidden="true"></span>Type-check / audit error</dt><dd><strong>15.9%</strong><span class="muted">186 / 1,167 properties</span></dd></div>
+<div><dt><span class="outcome-dot outcome-exhausted" aria-hidden="true"></span>Exhausted</dt><dd><strong>10.9%</strong><span class="muted">127 / 1,167 properties</span></dd></div>
+</dl></div>
+<p id="totals"></p><p id="outcomes"></p>
+<p class="muted">Unpublished outcomes are unknown and excluded from these percentages.</p>
+</section>
 <section id="repositories" class="grid" aria-label="Repository dashboards"></section>
 <footer>
 <p>Counts use the latest published report per PR, not every workflow attempt or previous report.
@@ -50,6 +79,48 @@ filters, highlighted refutations, original reports and workflow evidence.</p>
 <a href="data.json">Combined snapshot</a>. These pages are public static snapshots; no new audits or automatic refresh schedule are started by viewing them.</p>
 </footer>
 </main>
+<template id="outcome-tracker-z3"><div class="outcome-tracker">
+<p class="muted">Shares of 159 properties in latest published reports. Percentages are rounded to one decimal place.</p>
+<div class="outcome-bar" aria-hidden="true">
+<span class="outcome-verified" style="flex-grow:90"></span>
+<span class="outcome-refuted" style="flex-grow:5"></span>
+<span class="outcome-failed" style="flex-grow:30"></span>
+<span class="outcome-exhausted" style="flex-grow:34"></span>
+</div>
+<dl class="outcome-shares">
+<div><dt><span class="outcome-dot outcome-verified" aria-hidden="true"></span>Verified (model)</dt><dd><strong>56.6%</strong><span class="muted">90 / 159 properties</span></dd></div>
+<div><dt><span class="outcome-dot outcome-refuted" aria-hidden="true"></span>Refuted (model)</dt><dd><strong>3.1%</strong><span class="muted">5 / 159 properties</span></dd></div>
+<div><dt><span class="outcome-dot outcome-failed" aria-hidden="true"></span>Type-check / audit error</dt><dd><strong>18.9%</strong><span class="muted">30 / 159 properties</span></dd></div>
+<div><dt><span class="outcome-dot outcome-exhausted" aria-hidden="true"></span>Exhausted</dt><dd><strong>21.4%</strong><span class="muted">34 / 159 properties</span></dd></div>
+</dl></div></template>
+<template id="outcome-tracker-litebox"><div class="outcome-tracker">
+<p class="muted">Shares of 720 properties in latest published reports. Percentages are rounded to one decimal place.</p>
+<div class="outcome-bar" aria-hidden="true">
+<span class="outcome-verified" style="flex-grow:516"></span>
+<span class="outcome-refuted" style="flex-grow:28"></span>
+<span class="outcome-failed" style="flex-grow:101"></span>
+<span class="outcome-exhausted" style="flex-grow:75"></span>
+</div>
+<dl class="outcome-shares">
+<div><dt><span class="outcome-dot outcome-verified" aria-hidden="true"></span>Verified (model)</dt><dd><strong>71.7%</strong><span class="muted">516 / 720 properties</span></dd></div>
+<div><dt><span class="outcome-dot outcome-refuted" aria-hidden="true"></span>Refuted (model)</dt><dd><strong>3.9%</strong><span class="muted">28 / 720 properties</span></dd></div>
+<div><dt><span class="outcome-dot outcome-failed" aria-hidden="true"></span>Type-check / audit error</dt><dd><strong>14.0%</strong><span class="muted">101 / 720 properties</span></dd></div>
+<div><dt><span class="outcome-dot outcome-exhausted" aria-hidden="true"></span>Exhausted</dt><dd><strong>10.4%</strong><span class="muted">75 / 720 properties</span></dd></div>
+</dl></div></template>
+<template id="outcome-tracker-nvx"><div class="outcome-tracker">
+<p class="muted">Shares of 288 properties in latest published reports. Percentages are rounded to one decimal place.</p>
+<div class="outcome-bar" aria-hidden="true">
+<span class="outcome-verified" style="flex-grow:201"></span>
+<span class="outcome-refuted" style="flex-grow:14"></span>
+<span class="outcome-failed" style="flex-grow:55"></span>
+<span class="outcome-exhausted" style="flex-grow:18"></span>
+</div>
+<dl class="outcome-shares">
+<div><dt><span class="outcome-dot outcome-verified" aria-hidden="true"></span>Verified (model)</dt><dd><strong>69.8%</strong><span class="muted">201 / 288 properties</span></dd></div>
+<div><dt><span class="outcome-dot outcome-refuted" aria-hidden="true"></span>Refuted (model)</dt><dd><strong>4.9%</strong><span class="muted">14 / 288 properties</span></dd></div>
+<div><dt><span class="outcome-dot outcome-failed" aria-hidden="true"></span>Type-check / audit error</dt><dd><strong>19.1%</strong><span class="muted">55 / 288 properties</span></dd></div>
+<div><dt><span class="outcome-dot outcome-exhausted" aria-hidden="true"></span>Exhausted</dt><dd><strong>6.2%</strong><span class="muted">18 / 288 properties</span></dd></div>
+</dl></div></template>
 <script type="application/json" id="data">{"schema": 1, "generated_at": "2026-11-01T06:03:27.562449+00:00", "summary": {"attempted_prs": 195, "published_reports": 175, "workflow_attempts": 416, "without_report": 20, "refuted_prs": 38, "properties": 1167, "outcomes": {"refuted": 47, "verified": 807, "resources exhausted": 127, "type-check/audit failure": 186}}, "repositories": [{"name": "z3", "label": "Z3", "repository": "shuvendu-lahiri/z3", "generated_at": "2026-11-01T06:03:27.562449+00:00", "summary": {"selected_prs": 41, "attempted_prs": 41, "published_reports": 40, "workflow_attempts": 117, "without_report": 1, "refuted_prs": 5, "properties": 159, "outcomes": {"refuted": 5, "verified": 90, "resources exhausted": 34, "type-check/audit failure": 30}}}, {"name": "litebox", "label": "LiteBox", "repository": "shuvendu-lahiri/litebox", "generated_at": "2026-10-31T11:58:47.222323+00:00", "summary": {"selected_prs": 104, "attempted_prs": 104, "published_reports": 90, "workflow_attempts": 175, "without_report": 14, "refuted_prs": 23, "properties": 720, "outcomes": {"refuted": 28, "verified": 516, "resources exhausted": 75, "type-check/audit failure": 101}}}, {"name": "nvx", "label": "NVX", "repository": "shuvendu-lahiri/nvx", "generated_at": "2026-10-30T04:24:40.608973+00:00", "summary": {"selected_prs": 50, "attempted_prs": 50, "published_reports": 45, "workflow_attempts": 124, "without_report": 5, "refuted_prs": 10, "properties": 288, "outcomes": {"refuted": 14, "verified": 201, "resources exhausted": 18, "type-check/audit failure": 55}}}]}</script>
 <script>
 "use strict";
@@ -68,6 +139,7 @@ document.getElementById("outcomes").textContent =
 for (const repository of data.repositories) {
   const card = text("article", "", "card");
   card.append(text("h2", repository.label), text("p", repository.repository, "muted"));
+  card.append(document.getElementById(`outcome-tracker-${repository.name}`).content.cloneNode(true));
   const stats = document.createElement("dl");
   const summary = repository.summary;
   for (const [label, value, className] of [

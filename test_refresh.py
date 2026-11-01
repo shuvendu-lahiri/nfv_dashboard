@@ -129,6 +129,38 @@ class RefreshTests(unittest.TestCase):
         rendered = refresh.render_html(combined, "hub.html")
         self.assertNotIn("innerHTML", rendered)
         self.assertIn("Conditional MODEL refutations", rendered)
+        self.assertEqual(2, rendered.count("100.0%"))
+        self.assertIn('<template id="outcome-tracker-litebox">', rendered)
+        self.assertEqual(1, refresh.render_html(data).count("100.0%"))
+
+    def test_outcome_percentages_use_properties_not_prs_or_attempts(self):
+        summary = {
+            "properties": 10, "attempted_prs": 100, "workflow_attempts": 200,
+            "outcomes": {"verified": 6, "refuted": 1,
+                         "type-check/audit failure": 2, "resources exhausted": 1},
+        }
+        rendered = refresh.render_outcome_tracker(summary)
+        for percentage, count in (("60.0%", 6), ("20.0%", 2), ("10.0%", 1)):
+            self.assertIn(
+                f'<strong>{percentage}</strong><span class="muted">{count} / 10 properties</span>',
+                rendered)
+        self.assertIn('style="flex-grow:6"', rendered)
+
+    def test_no_published_properties_have_unavailable_percentages(self):
+        data = refresh.build([pr()], [], [run(conclusion="failure")], "snapshot")
+        rendered = refresh.render_outcome_tracker(data["summary"])
+        self.assertIn("No published property outcomes yet", rendered)
+        self.assertEqual(4, rendered.count("N/A"))
+        self.assertNotIn("%", rendered)
+        self.assertNotIn('class="outcome-bar"', rendered)
+
+    def test_invalid_percentage_totals_fail_explicitly(self):
+        for total, count in ((2, 1), (1, -1), (1, True), (1, "1")):
+            with self.subTest(total=total, count=count):
+                summary = {"properties": total, "outcomes": dict.fromkeys(refresh.STATUSES, 0)}
+                summary["outcomes"]["verified"] = count
+                with self.assertRaisesRegex(ValueError, "property outcome totals"):
+                    refresh.render_outcome_tracker(summary)
 
     def test_report_without_legacy_marker(self):
         report = refresh.parse_report(comment())

@@ -18,6 +18,11 @@ repository's `data.json`. Failed or missing publication is shown explicitly, not
 as a successful zero-finding analysis. NVX retains its recorded campaign cohorts
 and source-change links; Z3 and LiteBox include all non-skipped reviewer attempts.
 
+The hub and each project dashboard show the percentage and count/total fraction
+of properties verified, refuted, rejected by type-check/audit, or exhausted.
+Percentages use the latest published property outcomes, exclude unknown
+unpublished outcomes, and are unavailable when no properties have been reported.
+
 ## Refresh
 
 Requires Python 3.10+ and authenticated GitHub CLI read access:
