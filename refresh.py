@@ -16,7 +16,8 @@ import subprocess
 REPOSITORY = "shuvendu-lahiri/litebox"
 WEB = f"https://github.com/{REPOSITORY}"
 DIRECTORY = Path(__file__).resolve().parent
-REPOSITORIES = {"z3": "Z3", "litebox": "LiteBox", "nvx": "NVX", "gh-aw": "gh-aw"}
+REPOSITORIES = {"z3": "Z3", "litebox": "LiteBox", "nvx": "NVX", "gh-aw": "gh-aw",
+                "garnet": "Garnet"}
 SITE = "https://shuvendu-lahiri.github.io/nfv_dashboard/"
 GITHUB = "https://github.com/shuvendu-lahiri/nfv_dashboard/blob/nfv-reports"
 STATUSES = ("refuted", "verified", "resources exhausted", "type-check/audit failure")

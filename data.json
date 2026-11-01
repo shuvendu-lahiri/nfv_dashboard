@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "generated_at": "2026-11-01T18:59:10.745194+00:00",
+  "generated_at": "2026-11-01T19:09:51.708032+00:00",
   "summary": {
-    "attempted_prs": 196,
-    "published_reports": 176,
-    "workflow_attempts": 417,
-    "without_report": 20,
-    "refuted_prs": 38,
-    "properties": 1171,
+    "attempted_prs": 244,
+    "published_reports": 217,
+    "workflow_attempts": 465,
+    "without_report": 32,
+    "refuted_prs": 43,
+    "properties": 1509,
     "outcomes": {
-      "refuted": 47,
-      "verified": 811,
-      "resources exhausted": 127,
-      "type-check/audit failure": 186
+      "refuted": 53,
+      "verified": 894,
+      "resources exhausted": 355,
+      "type-check/audit failure": 207
     }
   },
   "repositories": [
@@ -109,6 +109,27 @@
         "budget_aic": "20000",
         "checked_patches": 0,
         "note": "The pilot workflow completed and its report is published, but the campaign controller has not accepted the pilot: gh-aw transport formatting differs from the native report bytes. Supervision is stopped; no additional audits or retries have run. The plan contains 50 eligible source PRs each from pelikhan and dsyme. Results below are published model-conditional outcomes, not campaign acceptance or source-correctness claims."
+      }
+    },
+    {
+      "name": "garnet",
+      "label": "Garnet",
+      "repository": "shuvendu-lahiri/garnet",
+      "generated_at": "2026-11-01T19:09:51.708032+00:00",
+      "summary": {
+        "selected_prs": 53,
+        "attempted_prs": 48,
+        "published_reports": 41,
+        "workflow_attempts": 48,
+        "without_report": 12,
+        "refuted_prs": 5,
+        "properties": 338,
+        "outcomes": {
+          "refuted": 6,
+          "verified": 83,
+          "resources exhausted": 228,
+          "type-check/audit failure": 21
+        }
       }
     }
   ]
