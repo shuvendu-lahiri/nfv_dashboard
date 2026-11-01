@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "generated_at": "2026-11-01T19:09:51.708032+00:00",
+  "generated_at": "2026-11-01T21:20:57.206822+00:00",
   "summary": {
-    "attempted_prs": 244,
-    "published_reports": 217,
-    "workflow_attempts": 465,
-    "without_report": 32,
+    "attempted_prs": 274,
+    "published_reports": 220,
+    "workflow_attempts": 495,
+    "without_report": 54,
     "refuted_prs": 43,
-    "properties": 1509,
+    "properties": 1531,
     "outcomes": {
       "refuted": 53,
-      "verified": 894,
-      "resources exhausted": 355,
-      "type-check/audit failure": 207
+      "verified": 899,
+      "resources exhausted": 371,
+      "type-check/audit failure": 208
     }
   },
   "repositories": [
@@ -115,20 +115,20 @@
       "name": "garnet",
       "label": "Garnet",
       "repository": "shuvendu-lahiri/garnet",
-      "generated_at": "2026-11-01T19:09:51.708032+00:00",
+      "generated_at": "2026-11-01T21:20:57.206822+00:00",
       "summary": {
-        "selected_prs": 53,
-        "attempted_prs": 48,
-        "published_reports": 41,
-        "workflow_attempts": 48,
-        "without_report": 12,
+        "selected_prs": 78,
+        "attempted_prs": 78,
+        "published_reports": 44,
+        "workflow_attempts": 78,
+        "without_report": 34,
         "refuted_prs": 5,
-        "properties": 338,
+        "properties": 360,
         "outcomes": {
           "refuted": 6,
-          "verified": 83,
-          "resources exhausted": 228,
-          "type-check/audit failure": 21
+          "verified": 88,
+          "resources exhausted": 244,
+          "type-check/audit failure": 22
         }
       }
     }

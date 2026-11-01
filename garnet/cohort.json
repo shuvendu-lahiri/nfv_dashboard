@@ -319,6 +319,156 @@
       "source_number": 1823,
       "source_title": "Add KV.benchmark: lean Tsavorite KV throughput benchmark",
       "source_head_sha": "87c97957faf15ddaea01350bc4496279caf73ece"
+    },
+    {
+      "number": 55,
+      "source_number": 1805,
+      "source_title": "Adjust v2 defaults",
+      "source_head_sha": "10558c24ea90394dfb361b8f29023399a5282eb1"
+    },
+    {
+      "number": 56,
+      "source_number": 1799,
+      "source_title": "Update ValueOverflowThreshold",
+      "source_head_sha": "83c6bf829a599c1ec482e23ad5ccbdfc4427ae7f"
+    },
+    {
+      "number": 57,
+      "source_number": 1797,
+      "source_title": "Avoid tempKv-driven scan iteration in Garnet callers",
+      "source_head_sha": "50efd59757b17f39631ffb71ade1cc8d0bfe1df3"
+    },
+    {
+      "number": 58,
+      "source_number": 1796,
+      "source_title": "Hold per-DB checkpoint locks until all general-BGSAVE per-DB checkpoints complete",
+      "source_head_sha": "68db9765dda913bed2e97d94c0c25c17ab277377"
+    },
+    {
+      "number": 59,
+      "source_number": 1780,
+      "source_title": "Update lifecycle for compaction, truncate, improve bftree file management",
+      "source_head_sha": "517a853e2114c079b845c11db56054e1d03d7ac9"
+    },
+    {
+      "number": 60,
+      "source_number": 1775,
+      "source_title": "Pause VectorManager cleanup before cluster/other resets of log",
+      "source_head_sha": "8df3f02fc5f52321c5684fe52a8e95318488a086"
+    },
+    {
+      "number": 61,
+      "source_number": 1767,
+      "source_title": "Fix MultiDatabaseSaveInProgressTest",
+      "source_head_sha": "e27ffc6ac61350a1dc5f50dae307bffd2559af73"
+    },
+    {
+      "number": 62,
+      "source_number": 1766,
+      "source_title": "Tighten InstanceIndexBuffer GC-safety",
+      "source_head_sha": "47e6bb15a29358254e875a8d7aa562a4558f2afb"
+    },
+    {
+      "number": 63,
+      "source_number": 1754,
+      "source_title": "Fix #1749: leaked transient X-lock [dev]",
+      "source_head_sha": "0dde811c9af1244e981fa483a49c4dbd2b599da1"
+    },
+    {
+      "number": 64,
+      "source_number": 1753,
+      "source_title": "Fix #1749: leaked transient X-lock [main]",
+      "source_head_sha": "97a349c22d750e8afc32b824c6d5602d6bb680e5"
+    },
+    {
+      "number": 65,
+      "source_number": 1752,
+      "source_title": "Fix misc memory bugs [main]",
+      "source_head_sha": "b5c8b57c645ede9804635c7feabadf7f192b1897"
+    },
+    {
+      "number": 66,
+      "source_number": 1751,
+      "source_title": "Fix misc memory bugs [dev]",
+      "source_head_sha": "0711bdc7453b081ff8e640db943711252b145286"
+    },
+    {
+      "number": 67,
+      "source_number": 1747,
+      "source_title": "Remove incremental snapshots [dev]",
+      "source_head_sha": "28920915d9b24ffc4164a637701abe650f3aaec0"
+    },
+    {
+      "number": 68,
+      "source_number": 1744,
+      "source_title": "Fix TLS blocking issue when buffer is doubled [main]",
+      "source_head_sha": "f2e8f14e8d7e9829675b779b84a3a6345cc56e4d"
+    },
+    {
+      "number": 69,
+      "source_number": 1743,
+      "source_title": "Fix TLS blocking issue when buffer is doubled [dev]",
+      "source_head_sha": "9094e875506da87a6533e78b790f268a95017682"
+    },
+    {
+      "number": 70,
+      "source_number": 1739,
+      "source_title": "Simplify etags [dev]",
+      "source_head_sha": "76f2088ef350920b1ecf2814d41a9504f6bfaf27"
+    },
+    {
+      "number": 71,
+      "source_number": 1725,
+      "source_title": "Eliminate synthetic RMW for RI.SET/RI.DEL AOF logging",
+      "source_head_sha": "d8ca7b41bea0e5feb3d7f74a3b1a53feddee5b1b"
+    },
+    {
+      "number": 72,
+      "source_number": 1720,
+      "source_title": "[Tsavorite] Replace SafeTailAddress background refresh with per-thread inflight publish protocol",
+      "source_head_sha": "4ff91380da9ac0395652bf1d17e78c96ae704751"
+    },
+    {
+      "number": 73,
+      "source_number": 1719,
+      "source_title": "Drain deferred DoReadPage callbacks before disposing scan iterator",
+      "source_head_sha": "512c3e48e3443179312af32a9e8cf792f7a2c2a4"
+    },
+    {
+      "number": 74,
+      "source_number": 1718,
+      "source_title": "Fix scan iterator [dev]",
+      "source_head_sha": "30c38f49d70f3c40a3ce0b71cfb5cabca16de1d2"
+    },
+    {
+      "number": 75,
+      "source_number": 1716,
+      "source_title": "Fix use-after-free in GetAllocationForRetry when page is evicted",
+      "source_head_sha": "8d124812e79790f4dd6f7a4f63d676e4d37caa6f"
+    },
+    {
+      "number": 76,
+      "source_number": 1712,
+      "source_title": " Internalize heap-size tracking into Tsavorite",
+      "source_head_sha": "d5c784fa0a7698356335674ae533a08ab812b02d"
+    },
+    {
+      "number": 77,
+      "source_number": 1689,
+      "source_title": "Add GarnetRecordDisposer with per-record dispose on page eviction",
+      "source_head_sha": "156b29240b5508cb7a0fc07493ace00fcf5776bb"
+    },
+    {
+      "number": 78,
+      "source_number": 1679,
+      "source_title": "Fix snapshot flush and checkpoint exception propagation [dev]",
+      "source_head_sha": "5d77742c094d725889fbf57f22f13b938b5432a9"
+    },
+    {
+      "number": 79,
+      "source_number": 1678,
+      "source_title": "Fix AOF persistence and WATCH for collection-emptying RMW ops [main]",
+      "source_head_sha": "b2e08ea4568a26d5a438f19ab6d0304e7e51483f"
     }
   ]
 }

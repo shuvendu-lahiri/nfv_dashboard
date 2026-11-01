@@ -1,22 +1,22 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/garnet",
-  "generated_at": "2026-11-01T19:09:51.708032+00:00",
+  "generated_at": "2026-11-01T21:20:57.206822+00:00",
   "name": "garnet",
   "label": "Garnet",
   "summary": {
-    "selected_prs": 53,
-    "attempted_prs": 48,
-    "published_reports": 41,
-    "workflow_attempts": 48,
-    "without_report": 12,
+    "selected_prs": 78,
+    "attempted_prs": 78,
+    "published_reports": 44,
+    "workflow_attempts": 78,
+    "without_report": 34,
     "refuted_prs": 5,
-    "properties": 338,
+    "properties": 360,
     "outcomes": {
       "refuted": 6,
-      "verified": 83,
-      "resources exhausted": 228,
-      "type-check/audit failure": 21
+      "verified": 88,
+      "resources exhausted": 244,
+      "type-check/audit failure": 22
     }
   },
   "prs": [
@@ -2726,8 +2726,14 @@
       "latest_report": null,
       "report_history": [],
       "report_matches_current_head": null,
-      "attempts": 0,
-      "latest_run": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41340334697,
+        "url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41340334697",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      },
       "source_number": 1838,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1838",
       "source_head_sha": "30f70455dbb393ffc3deb3cdca54b6d17896dba5"
@@ -2742,8 +2748,14 @@
       "latest_report": null,
       "report_history": [],
       "report_matches_current_head": null,
-      "attempts": 0,
-      "latest_run": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41340335268,
+        "url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41340335268",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      },
       "source_number": 1837,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1837",
       "source_head_sha": "2d6da502cf41e7a18f6d67637d70f81bda7d3494"
@@ -2758,8 +2770,14 @@
       "latest_report": null,
       "report_history": [],
       "report_matches_current_head": null,
-      "attempts": 0,
-      "latest_run": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41340853821,
+        "url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41340853821",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      },
       "source_number": 1834,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1834",
       "source_head_sha": "7e2981ac3e3e7d493f6d8ad7708534a01ade0068"
@@ -2774,8 +2792,14 @@
       "latest_report": null,
       "report_history": [],
       "report_matches_current_head": null,
-      "attempts": 0,
-      "latest_run": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41340853836,
+        "url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41340853836",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      },
       "source_number": 1831,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1831",
       "source_head_sha": "dc97630d2fd2465c3ea50a0f11a1e18dc084428d"
@@ -2790,11 +2814,681 @@
       "latest_report": null,
       "report_history": [],
       "report_matches_current_head": null,
-      "attempts": 0,
-      "latest_run": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41341198968,
+        "url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41341198968",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      },
       "source_number": 1823,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1823",
       "source_head_sha": "87c97957faf15ddaea01350bc4496279caf73ece"
+    },
+    {
+      "number": 55,
+      "title": "Adjust v2 defaults",
+      "url": "https://github.com/shuvendu-lahiri/garnet/pull/55",
+      "state": "open",
+      "head_sha": "af16d0ba7e9210ef9bad42168a1fadcf5258902e",
+      "head_branch": "nfv-replay-1805",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41341479591,
+        "url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41341479591",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      },
+      "source_number": 1805,
+      "source_url": "https://redirect.github.com/microsoft/garnet/pull/1805",
+      "source_head_sha": "10558c24ea90394dfb361b8f29023399a5282eb1"
+    },
+    {
+      "number": 56,
+      "title": "Update ValueOverflowThreshold",
+      "url": "https://github.com/shuvendu-lahiri/garnet/pull/56",
+      "state": "open",
+      "head_sha": "9547fb6fb696c3372084aa7cbb6bddc4d40093bc",
+      "head_branch": "nfv-replay-1799",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41341647044,
+        "url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41341647044",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      },
+      "source_number": 1799,
+      "source_url": "https://redirect.github.com/microsoft/garnet/pull/1799",
+      "source_head_sha": "83c6bf829a599c1ec482e23ad5ccbdfc4427ae7f"
+    },
+    {
+      "number": 57,
+      "title": "Avoid tempKv-driven scan iteration in Garnet callers",
+      "url": "https://github.com/shuvendu-lahiri/garnet/pull/57",
+      "state": "open",
+      "head_sha": "e165d95a4cfe149841eae59e057302341e6b7f30",
+      "head_branch": "nfv-replay-1797",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41341813311,
+        "url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41341813311",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      },
+      "source_number": 1797,
+      "source_url": "https://redirect.github.com/microsoft/garnet/pull/1797",
+      "source_head_sha": "50efd59757b17f39631ffb71ade1cc8d0bfe1df3"
+    },
+    {
+      "number": 58,
+      "title": "Hold per-DB checkpoint locks until all general-BGSAVE per-DB checkpoints complete",
+      "url": "https://github.com/shuvendu-lahiri/garnet/pull/58",
+      "state": "open",
+      "head_sha": "a7f29f523e8090c8956c1f4e6e44b94ebcec878d",
+      "head_branch": "nfv-replay-1796",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41342153653,
+        "url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41342153653",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      },
+      "source_number": 1796,
+      "source_url": "https://redirect.github.com/microsoft/garnet/pull/1796",
+      "source_head_sha": "68db9765dda913bed2e97d94c0c25c17ab277377"
+    },
+    {
+      "number": 59,
+      "title": "Update lifecycle for compaction, truncate, improve bftree file management",
+      "url": "https://github.com/shuvendu-lahiri/garnet/pull/59",
+      "state": "open",
+      "head_sha": "d0d48c06b4fc09f31edcc5e12983003009d5b29a",
+      "head_branch": "nfv-replay-1780",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41342154007,
+        "url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41342154007",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      },
+      "source_number": 1780,
+      "source_url": "https://redirect.github.com/microsoft/garnet/pull/1780",
+      "source_head_sha": "517a853e2114c079b845c11db56054e1d03d7ac9"
+    },
+    {
+      "number": 60,
+      "title": "Pause VectorManager cleanup before cluster/other resets of log",
+      "url": "https://github.com/shuvendu-lahiri/garnet/pull/60",
+      "state": "open",
+      "head_sha": "c38f9909425c1d29670c9744ef5bed6c67b068be",
+      "head_branch": "nfv-replay-1775",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41342607188,
+        "url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41342607188",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      },
+      "source_number": 1775,
+      "source_url": "https://redirect.github.com/microsoft/garnet/pull/1775",
+      "source_head_sha": "8df3f02fc5f52321c5684fe52a8e95318488a086"
+    },
+    {
+      "number": 61,
+      "title": "Fix MultiDatabaseSaveInProgressTest",
+      "url": "https://github.com/shuvendu-lahiri/garnet/pull/61",
+      "state": "open",
+      "head_sha": "b475c3b3d52f846dc8c944dcfd3fefd889d0b7c5",
+      "head_branch": "nfv-replay-1767",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41342608082,
+        "url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41342608082",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      },
+      "source_number": 1767,
+      "source_url": "https://redirect.github.com/microsoft/garnet/pull/1767",
+      "source_head_sha": "e27ffc6ac61350a1dc5f50dae307bffd2559af73"
+    },
+    {
+      "number": 62,
+      "title": "Tighten InstanceIndexBuffer GC-safety",
+      "url": "https://github.com/shuvendu-lahiri/garnet/pull/62",
+      "state": "open",
+      "head_sha": "58a48906d1584812323cac45d24574970d68c942",
+      "head_branch": "nfv-replay-1766",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41342938174,
+        "url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41342938174",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      },
+      "source_number": 1766,
+      "source_url": "https://redirect.github.com/microsoft/garnet/pull/1766",
+      "source_head_sha": "47e6bb15a29358254e875a8d7aa562a4558f2afb"
+    },
+    {
+      "number": 63,
+      "title": "Fix #1749: leaked transient X-lock [dev]",
+      "url": "https://github.com/shuvendu-lahiri/garnet/pull/63",
+      "state": "open",
+      "head_sha": "ac183f292aa348beb1a01dae2d8cc9b95ec8d1c0",
+      "head_branch": "nfv-replay-1754",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41343106455,
+        "url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41343106455",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      },
+      "source_number": 1754,
+      "source_url": "https://redirect.github.com/microsoft/garnet/pull/1754",
+      "source_head_sha": "0dde811c9af1244e981fa483a49c4dbd2b599da1"
+    },
+    {
+      "number": 64,
+      "title": "Fix #1749: leaked transient X-lock [main]",
+      "url": "https://github.com/shuvendu-lahiri/garnet/pull/64",
+      "state": "open",
+      "head_sha": "af2b64eccaaa043b0770a6ff4402c7ccba1f6cfc",
+      "head_branch": "nfv-replay-1753",
+      "latest_report": {
+        "comment_id": 6563172924,
+        "url": "https://github.com/shuvendu-lahiri/garnet/pull/64#issuecomment-6563172924",
+        "published_at": "2026-11-01T20:04:09Z",
+        "updated_at": "2026-11-01T20:04:09Z",
+        "body_sha256": "5e923e8a07a2d923ad78b5c42bbdf45853b640344b3083b5dd4161cb7398d9c5",
+        "source_sha_prefix": "af2b64eccaaa",
+        "base_sha_prefix": "2e3f8b8abb2d",
+        "run_id": 41343444637,
+        "run_url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41343444637",
+        "counts": {
+          "refuted": 0,
+          "verified": 3,
+          "resources exhausted": 1,
+          "type-check/audit failure": 0
+        },
+        "properties": 4,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6563172924,
+          "url": "https://github.com/shuvendu-lahiri/garnet/pull/64#issuecomment-6563172924",
+          "published_at": "2026-11-01T20:04:09Z",
+          "updated_at": "2026-11-01T20:04:09Z",
+          "body_sha256": "5e923e8a07a2d923ad78b5c42bbdf45853b640344b3083b5dd4161cb7398d9c5",
+          "source_sha_prefix": "af2b64eccaaa",
+          "base_sha_prefix": "2e3f8b8abb2d",
+          "run_id": 41343444637,
+          "run_url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41343444637",
+          "counts": {
+            "refuted": 0,
+            "verified": 3,
+            "resources exhausted": 1,
+            "type-check/audit failure": 0
+          },
+          "properties": 4,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41343444637,
+        "url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41343444637",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      },
+      "source_number": 1753,
+      "source_url": "https://redirect.github.com/microsoft/garnet/pull/1753",
+      "source_head_sha": "97a349c22d750e8afc32b824c6d5602d6bb680e5"
+    },
+    {
+      "number": 65,
+      "title": "Fix misc memory bugs [main]",
+      "url": "https://github.com/shuvendu-lahiri/garnet/pull/65",
+      "state": "open",
+      "head_sha": "f85a6ae82bfd3095b613dfb893642ae8773985fc",
+      "head_branch": "nfv-replay-1752",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41343804862,
+        "url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41343804862",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      },
+      "source_number": 1752,
+      "source_url": "https://redirect.github.com/microsoft/garnet/pull/1752",
+      "source_head_sha": "b5c8b57c645ede9804635c7feabadf7f192b1897"
+    },
+    {
+      "number": 66,
+      "title": "Fix misc memory bugs [dev]",
+      "url": "https://github.com/shuvendu-lahiri/garnet/pull/66",
+      "state": "open",
+      "head_sha": "fe3480abbc687edac1b64bd7c796ca4e4d6e2ca7",
+      "head_branch": "nfv-replay-1751",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41344136742,
+        "url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41344136742",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      },
+      "source_number": 1751,
+      "source_url": "https://redirect.github.com/microsoft/garnet/pull/1751",
+      "source_head_sha": "0711bdc7453b081ff8e640db943711252b145286"
+    },
+    {
+      "number": 67,
+      "title": "Remove incremental snapshots [dev]",
+      "url": "https://github.com/shuvendu-lahiri/garnet/pull/67",
+      "state": "open",
+      "head_sha": "bdd4f6eddd8b333555da04943b6270f84b58736a",
+      "head_branch": "nfv-replay-1747",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41344638579,
+        "url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41344638579",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      },
+      "source_number": 1747,
+      "source_url": "https://redirect.github.com/microsoft/garnet/pull/1747",
+      "source_head_sha": "28920915d9b24ffc4164a637701abe650f3aaec0"
+    },
+    {
+      "number": 68,
+      "title": "Fix TLS blocking issue when buffer is doubled [main]",
+      "url": "https://github.com/shuvendu-lahiri/garnet/pull/68",
+      "state": "open",
+      "head_sha": "4f4fb8211a37e777a84ff3e418bad8a09a1ba397",
+      "head_branch": "nfv-replay-1744",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41345072049,
+        "url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41345072049",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      },
+      "source_number": 1744,
+      "source_url": "https://redirect.github.com/microsoft/garnet/pull/1744",
+      "source_head_sha": "f2e8f14e8d7e9829675b779b84a3a6345cc56e4d"
+    },
+    {
+      "number": 69,
+      "title": "Fix TLS blocking issue when buffer is doubled [dev]",
+      "url": "https://github.com/shuvendu-lahiri/garnet/pull/69",
+      "state": "open",
+      "head_sha": "08913dfc799e1fcc57ddecddb11ad2300657c8d7",
+      "head_branch": "nfv-replay-1743",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41345161263,
+        "url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41345161263",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      },
+      "source_number": 1743,
+      "source_url": "https://redirect.github.com/microsoft/garnet/pull/1743",
+      "source_head_sha": "9094e875506da87a6533e78b790f268a95017682"
+    },
+    {
+      "number": 70,
+      "title": "Simplify etags [dev]",
+      "url": "https://github.com/shuvendu-lahiri/garnet/pull/70",
+      "state": "open",
+      "head_sha": "5ef146ac5abda9bda26800c06535862d12bf21a4",
+      "head_branch": "nfv-replay-1739",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41345541185,
+        "url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41345541185",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      },
+      "source_number": 1739,
+      "source_url": "https://redirect.github.com/microsoft/garnet/pull/1739",
+      "source_head_sha": "76f2088ef350920b1ecf2814d41a9504f6bfaf27"
+    },
+    {
+      "number": 71,
+      "title": "Eliminate synthetic RMW for RI.SET/RI.DEL AOF logging",
+      "url": "https://github.com/shuvendu-lahiri/garnet/pull/71",
+      "state": "open",
+      "head_sha": "cadd2cc2fcc8dcf29cb31d42f59f0e540f1ff62e",
+      "head_branch": "nfv-replay-1725",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41345541008,
+        "url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41345541008",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      },
+      "source_number": 1725,
+      "source_url": "https://redirect.github.com/microsoft/garnet/pull/1725",
+      "source_head_sha": "d8ca7b41bea0e5feb3d7f74a3b1a53feddee5b1b"
+    },
+    {
+      "number": 72,
+      "title": "[Tsavorite] Replace SafeTailAddress background refresh with per-thread inflight publish protocol",
+      "url": "https://github.com/shuvendu-lahiri/garnet/pull/72",
+      "state": "open",
+      "head_sha": "540bdfd9e2d935fed1262943dec80dfe36281dab",
+      "head_branch": "nfv-replay-1720",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41346070210,
+        "url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41346070210",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      },
+      "source_number": 1720,
+      "source_url": "https://redirect.github.com/microsoft/garnet/pull/1720",
+      "source_head_sha": "4ff91380da9ac0395652bf1d17e78c96ae704751"
+    },
+    {
+      "number": 73,
+      "title": "Drain deferred DoReadPage callbacks before disposing scan iterator",
+      "url": "https://github.com/shuvendu-lahiri/garnet/pull/73",
+      "state": "open",
+      "head_sha": "869648c50cc9a28cf25edcdbad4273dc40bb6eac",
+      "head_branch": "nfv-replay-1719",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41346070900,
+        "url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41346070900",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      },
+      "source_number": 1719,
+      "source_url": "https://redirect.github.com/microsoft/garnet/pull/1719",
+      "source_head_sha": "512c3e48e3443179312af32a9e8cf792f7a2c2a4"
+    },
+    {
+      "number": 74,
+      "title": "Fix scan iterator [dev]",
+      "url": "https://github.com/shuvendu-lahiri/garnet/pull/74",
+      "state": "open",
+      "head_sha": "b4f08c3bec72957f580512d1c30affaf6473baa8",
+      "head_branch": "nfv-replay-1718",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41346595439,
+        "url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41346595439",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      },
+      "source_number": 1718,
+      "source_url": "https://redirect.github.com/microsoft/garnet/pull/1718",
+      "source_head_sha": "30c38f49d70f3c40a3ce0b71cfb5cabca16de1d2"
+    },
+    {
+      "number": 75,
+      "title": "Fix use-after-free in GetAllocationForRetry when page is evicted",
+      "url": "https://github.com/shuvendu-lahiri/garnet/pull/75",
+      "state": "open",
+      "head_sha": "a85ea9f63ca9cf08a0961eb61ff1d9e808fa8f48",
+      "head_branch": "nfv-replay-1716",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41346792699,
+        "url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41346792699",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      },
+      "source_number": 1716,
+      "source_url": "https://redirect.github.com/microsoft/garnet/pull/1716",
+      "source_head_sha": "8d124812e79790f4dd6f7a4f63d676e4d37caa6f"
+    },
+    {
+      "number": 76,
+      "title": " Internalize heap-size tracking into Tsavorite",
+      "url": "https://github.com/shuvendu-lahiri/garnet/pull/76",
+      "state": "open",
+      "head_sha": "b79193a2134475f603ce9e302bb41e4ab1ab849a",
+      "head_branch": "nfv-replay-1712",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41347040544,
+        "url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41347040544",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      },
+      "source_number": 1712,
+      "source_url": "https://redirect.github.com/microsoft/garnet/pull/1712",
+      "source_head_sha": "d5c784fa0a7698356335674ae533a08ab812b02d"
+    },
+    {
+      "number": 77,
+      "title": "Add GarnetRecordDisposer with per-record dispose on page eviction",
+      "url": "https://github.com/shuvendu-lahiri/garnet/pull/77",
+      "state": "open",
+      "head_sha": "2758fdf1142206bd475318f69af438cba3302bf3",
+      "head_branch": "nfv-replay-1689",
+      "latest_report": {
+        "comment_id": 6563769117,
+        "url": "https://github.com/shuvendu-lahiri/garnet/pull/77#issuecomment-6563769117",
+        "published_at": "2026-11-01T20:56:21Z",
+        "updated_at": "2026-11-01T20:56:21Z",
+        "body_sha256": "a4d3ffca45db4e9eb26a8e2f38eb956be620a72bf2b15b76229ecbf6421f6260",
+        "source_sha_prefix": "2758fdf11422",
+        "base_sha_prefix": "50dab6ecaed0",
+        "run_id": 41347305716,
+        "run_url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41347305716",
+        "counts": {
+          "refuted": 0,
+          "verified": 1,
+          "resources exhausted": 6,
+          "type-check/audit failure": 1
+        },
+        "properties": 8,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6563769117,
+          "url": "https://github.com/shuvendu-lahiri/garnet/pull/77#issuecomment-6563769117",
+          "published_at": "2026-11-01T20:56:21Z",
+          "updated_at": "2026-11-01T20:56:21Z",
+          "body_sha256": "a4d3ffca45db4e9eb26a8e2f38eb956be620a72bf2b15b76229ecbf6421f6260",
+          "source_sha_prefix": "2758fdf11422",
+          "base_sha_prefix": "50dab6ecaed0",
+          "run_id": 41347305716,
+          "run_url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41347305716",
+          "counts": {
+            "refuted": 0,
+            "verified": 1,
+            "resources exhausted": 6,
+            "type-check/audit failure": 1
+          },
+          "properties": 8,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41347305716,
+        "url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41347305716",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      },
+      "source_number": 1689,
+      "source_url": "https://redirect.github.com/microsoft/garnet/pull/1689",
+      "source_head_sha": "156b29240b5508cb7a0fc07493ace00fcf5776bb"
+    },
+    {
+      "number": 78,
+      "title": "Fix snapshot flush and checkpoint exception propagation [dev]",
+      "url": "https://github.com/shuvendu-lahiri/garnet/pull/78",
+      "state": "open",
+      "head_sha": "84717677f7dcbb8614ba55dd12759b1d33be3d6d",
+      "head_branch": "nfv-replay-1679",
+      "latest_report": {
+        "comment_id": 6563907026,
+        "url": "https://github.com/shuvendu-lahiri/garnet/pull/78#issuecomment-6563907026",
+        "published_at": "2026-11-01T21:08:28Z",
+        "updated_at": "2026-11-01T21:08:28Z",
+        "body_sha256": "bbe4f3624747d41d7d277a2d1c23434be790db286360ea0c0ede4ba490328679",
+        "source_sha_prefix": "84717677f7dc",
+        "base_sha_prefix": "c50d95a46b3d",
+        "run_id": 41347916116,
+        "run_url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41347916116",
+        "counts": {
+          "refuted": 0,
+          "verified": 1,
+          "resources exhausted": 9,
+          "type-check/audit failure": 0
+        },
+        "properties": 10,
+        "refutations": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6563907026,
+          "url": "https://github.com/shuvendu-lahiri/garnet/pull/78#issuecomment-6563907026",
+          "published_at": "2026-11-01T21:08:28Z",
+          "updated_at": "2026-11-01T21:08:28Z",
+          "body_sha256": "bbe4f3624747d41d7d277a2d1c23434be790db286360ea0c0ede4ba490328679",
+          "source_sha_prefix": "84717677f7dc",
+          "base_sha_prefix": "c50d95a46b3d",
+          "run_id": 41347916116,
+          "run_url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41347916116",
+          "counts": {
+            "refuted": 0,
+            "verified": 1,
+            "resources exhausted": 9,
+            "type-check/audit failure": 0
+          },
+          "properties": 10,
+          "refutations": []
+        }
+      ],
+      "report_matches_current_head": true,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41347916116,
+        "url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41347916116",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      },
+      "source_number": 1679,
+      "source_url": "https://redirect.github.com/microsoft/garnet/pull/1679",
+      "source_head_sha": "5d77742c094d725889fbf57f22f13b938b5432a9"
+    },
+    {
+      "number": 79,
+      "title": "Fix AOF persistence and WATCH for collection-emptying RMW ops [main]",
+      "url": "https://github.com/shuvendu-lahiri/garnet/pull/79",
+      "state": "open",
+      "head_sha": "8944c3cc3b4cc849996bdfa717dc823093991724",
+      "head_branch": "nfv-replay-1678",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41349580618,
+        "url": "https://github.com/shuvendu-lahiri/garnet/actions/runs/41349580618",
+        "status": "completed",
+        "conclusion": "success",
+        "attempt": 1
+      },
+      "source_number": 1678,
+      "source_url": "https://redirect.github.com/microsoft/garnet/pull/1678",
+      "source_head_sha": "b2e08ea4568a26d5a438f19ab6d0304e7e51483f"
     }
   ]
 }
