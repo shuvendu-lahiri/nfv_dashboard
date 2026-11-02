@@ -60,7 +60,8 @@ class RefreshTests(unittest.TestCase):
         self.assertIn("249.88 / 20,000 AIC spent; 0 checked patches.", rendered)
         combined = refresh.hub([data])
         self.assertEqual(self.campaign(), combined["repositories"][0]["campaign"])
-        self.assertIn("Campaign paused", refresh.render_html(combined, "hub.html"))
+        self.assertNotIn('<aside class="campaign"', refresh.render_html(combined, "hub.html"))
+        self.assertIn('<aside class="campaign"', rendered)
         self.assertIn("## Campaign paused", refresh.render_markdown(data))
 
     def test_campaign_metadata_is_bound_and_escaped(self):

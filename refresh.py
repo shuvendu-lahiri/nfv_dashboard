@@ -402,7 +402,7 @@ def render_html(data, template_name="dashboard.html"):
     canonical = SITE if "repositories" in data else f"{SITE}{data['name']}/"
     repository_trackers = "\n".join(
         f'<template id="outcome-tracker-{html.escape(repository["name"], quote=True)}">'
-        f'{render_campaign(repository)}{render_outcome_tracker(repository["summary"])}</template>'
+        f'{render_outcome_tracker(repository["summary"])}</template>'
         for repository in data.get("repositories", []))
     return (template.replace("__NFV_CANONICAL__", html.escape(canonical, quote=True))
             .replace("__NFV_OUTCOME_TRACKER__", render_campaign(data) + render_outcome_tracker(data["summary"]))
