@@ -105,9 +105,10 @@ Verification concerns a translated model under its assumptions. Failure to refut
 <label>Order<select id="order"><option value="refuted">Refutations first</option><option value="date">Newest report first</option><option value="number">PR number</option></select></label>
 </div>
 <p id="meta" class="muted"></p>
+<p class="muted">Original PR opens the upstream change using GitHub's no-backlink redirect. Replay PR opens the fork's audited copy.</p>
 <div class="scroll">
 <table aria-describedby="meta">
-<thead><tr><th>PR</th><th>Change / refuted properties</th><th>Audit date</th><th>Status</th><th>Properties</th><th>Refuted</th><th>Verified fixes</th><th>Verified</th><th>Exhausted</th><th>Audit failure</th><th>Evidence</th></tr></thead>
+<thead><tr><th>Replay PR</th><th>Original PR</th><th>Change / refuted properties</th><th>Audit date</th><th>Status</th><th>Properties</th><th>Refuted</th><th>Verified fixes</th><th>Verified</th><th>Exhausted</th><th>Audit failure</th><th>Evidence</th></tr></thead>
 <tbody id="rows"></tbody>
 </table>
 </div>
@@ -178,11 +179,9 @@ function render() {
     row.className = nRefuted(entry) ? "has-refutation" : report ? "" : "no-report";
     const pr = document.createElement("td");
     pr.append(link(`#${entry.number}`, entry.url));
-    if (entry.source_number) {
-      const source = document.createElement("div");
-      source.append(link(`Source change ${entry.source_number}`, entry.source_url));
-      pr.append(source);
-    }
+    const source = document.createElement("td");
+    if (entry.source_number) source.append(link(`Original PR ${entry.source_number}`, entry.source_url));
+    else source.append(text("span", "Not mapped", "muted"));
     const title = text("td", entry.title, "title");
     if (nRefuted(entry)) {
       const details = document.createElement("details");
@@ -205,7 +204,7 @@ function render() {
       status.append(text("span", "No published report"));
       if (entry.latest_run) status.append(text("div", entry.latest_run.conclusion || entry.latest_run.status));
     }
-    row.append(pr, title, text("td", report ? report.published_at.slice(0, 10) : "-", "date"), status);
+    row.append(pr, source, title, text("td", report ? report.published_at.slice(0, 10) : "-", "date"), status);
     const fixes = report ? `${report.checked_fixes}${report.fix_unknown ? ` (+${report.fix_unknown} unknown)` : ""}` : "-";
     for (const value of report ? [report.properties, report.counts.refuted, fixes, report.counts.verified,
       report.counts["resources exhausted"], report.counts["type-check/audit failure"]] : ["-", "-", "-", "-", "-", "-"]) {

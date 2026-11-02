@@ -41,6 +41,34 @@ def run(number=2, run_id=100, conclusion="success"):
 
 
 class RefreshTests(unittest.TestCase):
+    def test_replay_headers_map_original_pr_without_backlinks(self):
+        headers = (
+            "Historical source replay of change 99 from microsoft/litebox.\n",
+            "Historical source replay of change 99 from microsoft/litebox, selected for a trial.",
+            "Read-only source replay of microsoft/litebox#99 at `abc`.",
+            "Replay of microsoft/litebox#99 (upstream head `abc`).",
+            "Historical replay of change 99, opened in an approved batch.",
+            "**Parser-fix rerun:** Recorded configuration.\n\n---\n\n"
+            "Replay of historical change 99 for an approved NFV pilot.",
+        )
+        for header in headers:
+            with self.subTest(header=header):
+                data = refresh.build([{**pr(), "body": header}], [comment()], [run()], "snapshot")
+                entry = data["prs"][0]
+                self.assertEqual(99, entry["source_number"])
+                self.assertEqual("https://redirect.github.com/microsoft/litebox/pull/99",
+                                 entry["source_url"])
+                self.assertIn("[Original PR 99](https://redirect.github.com/", refresh.render_markdown(data))
+                self.assertIn("<th>Original PR</th>", refresh.render_html(data))
+
+    def test_unrelated_or_embedded_source_references_are_not_guessed(self):
+        for body in ("Replay of other/repo#99", "User prose\nReplay of microsoft/litebox#99",
+                     "Fix issue #99", None):
+            with self.subTest(body=body):
+                data = refresh.build([{**pr(), "body": body}], [], [run()], "snapshot")
+                self.assertNotIn("source_url", data["prs"][0])
+                self.assertIn("| Not mapped |", refresh.render_markdown(data))
+
     def test_source_languages_survive_hub_and_project_rendering(self):
         data = refresh.build([pr()], [comment()], [run()], "snapshot")
         self.assertEqual(["Rust", "C"], data["languages"])

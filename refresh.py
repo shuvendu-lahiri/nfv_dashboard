@@ -20,6 +20,9 @@ REPOSITORIES = {"z3": "Z3", "litebox": "LiteBox", "nvx": "NVX", "gh-aw": "gh-aw"
                 "garnet": "Garnet"}
 LANGUAGES = {"z3": ["C++"], "litebox": ["Rust", "C"], "nvx": ["Rust", "Python"],
              "gh-aw": ["Go", "JavaScript"], "garnet": ["C#"]}
+SOURCE_REPOSITORIES = {"z3": "Z3Prover/z3", "litebox": "microsoft/litebox",
+                       "nvx": "microsoft/nvx", "gh-aw": "github/gh-aw",
+                       "garnet": "microsoft/garnet"}
 SITE = "https://shuvendu-lahiri.github.io/nfv_dashboard/"
 GITHUB = "https://github.com/shuvendu-lahiri/nfv_dashboard/blob/nfv-reports"
 STATUSES = ("refuted", "verified", "resources exhausted", "type-check/audit failure")
@@ -133,6 +136,26 @@ def run_numbers(run, heads, repository=REPOSITORY, prs=None):
     return numbers
 
 
+def replay_source(pr, repository):
+    source = SOURCE_REPOSITORIES[repository.rsplit("/", 1)[1]]
+    body = pr.get("body") or ""
+    if body.startswith("**Parser-fix rerun:**") and "\n---\n" in body:
+        body = body.split("\n---\n", 1)[1].lstrip()
+    patterns = (
+        rf"Historical source replay of change ([1-9]\d*) from {re.escape(source)}[.,]",
+        rf"(?:Read-only source replay|Replay) of {re.escape(source)}#([1-9]\d*)\b",
+    )
+    if repository == "shuvendu-lahiri/litebox":
+        patterns += (r"(?:Historical replay of change|Replay of historical change) ([1-9]\d*)\b",)
+    for pattern in patterns:
+        match = re.match(pattern, body)
+        if match:
+            number = int(match[1])
+            return {"source_number": number,
+                    "source_url": f"https://redirect.github.com/{source}/pull/{number}"}
+    return {}
+
+
 def build(pulls, comments, runs, generated_at, repository=REPOSITORY, cohort=None, campaign=None, fixes=None):
     web = f"https://github.com/{repository}"
     prs = {pr["number"]: pr for pr in pulls}
@@ -203,6 +226,8 @@ def build(pulls, comments, runs, generated_at, repository=REPOSITORY, cohort=Non
                 "source_url": f"https://redirect.github.com/{cohort['source_repository']}/pull/{source_number}",
                 "source_head_sha": original["source_head_sha"],
             })
+        else:
+            entries[-1].update(replay_source(pr, repository))
     totals = Counter({status: 0 for status in STATUSES})
     for entry in entries:
         if entry["latest_report"]:
@@ -347,15 +372,16 @@ def render_markdown(data):
             lines.extend([markdown(line), ""])
     lines.extend([
         "## All attempted PRs (refutations first)", "",
-        "| PR | Change | Latest report | Properties | Refuted | Verified fixes | Verified | Exhausted | Audit failure | Evidence |",
-        "|---|---|---|---:|---:|---:|---:|---:|---:|---|",
+        "Original PR links use GitHub's no-backlink redirect; Replay PR links open the fork's audited copy.", "",
+        "| Replay PR | Original PR | Change | Latest report | Properties | Refuted | Verified fixes | Verified | Exhausted | Audit failure | Evidence |",
+        "|---|---|---|---|---:|---:|---:|---:|---:|---:|---|",
     ])
     for entry in ordered(data):
         report = entry["latest_report"]
         label = f"{repository}#{entry['number']}"
         title = markdown(entry["title"])
-        if "source_number" in entry:
-            title = f"[Source change {entry['source_number']}]({entry['source_url']}) / {title}"
+        source = (f"[Original PR {entry['source_number']}]({entry['source_url']})"
+                  if "source_number" in entry else "Not mapped")
         if report:
             counts = report["counts"]
             result = "**REFUTED (model)**" if counts["refuted"] else "Published"
@@ -372,13 +398,13 @@ def render_markdown(data):
             evidence = f"[Report]({report['url']}) / [run]({report['run_url']})"
             if newer_attempt:
                 evidence += f" / [latest attempt]({run['url']})"
-            lines.append(f"| [{label}]({entry['url']}) | {title} | {result} | "
+            lines.append(f"| [{label}]({entry['url']}) | {source} | {title} | {result} | "
                          f"{report['properties']} | {' | '.join(values)} | {evidence} |")
         else:
             run = entry["latest_run"]
             status = (run["conclusion"] or run["status"]) if run else "not attempted"
             evidence = f"[Run]({run['url']})" if run else "-"
-            lines.append(f"| [{label}]({entry['url']}) | {title} | "
+            lines.append(f"| [{label}]({entry['url']}) | {source} | {title} | "
                          f"No published report ({markdown(status)}) | - | - | - | - | - | - | {evidence} |")
     lines.extend(["", "## Conditional model refutations", "",
                   "The following property texts are extracted from the published reports, without new adjudication "

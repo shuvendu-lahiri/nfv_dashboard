@@ -14,6 +14,13 @@ Language labels describe the repositories' main implementation languages, not
 every language in their tests, bindings or tooling, or the languages covered by
 each audit.
 
+Each project table separates the fork's **Replay PR** from the **Original PR**.
+Original PR links use `redirect.github.com`, GitHub's documented no-backlink
+redirect. Mappings come from recorded cohorts or recognized replay provenance
+headers, never from incidental references in copied descriptions. Unknown
+mappings are labeled rather than guessed. These links do not make public replays
+private or remove earlier upstream references.
+
 Published results from the prototype [Neuro-Formal Verification
 reviewer](https://arxiv.org/abs/2608.21516). Refutations are **conditional MODEL
 refutations, not confirmed source bugs**. Verification concerns translated models
