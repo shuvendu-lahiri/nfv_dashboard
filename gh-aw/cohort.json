@@ -122,6 +122,134 @@
       "source_head_sha": "45dc9a2c1b5d2596eb95f11e47ffd0ca28516272",
       "source_base_sha": "9f9df7b495928ca8ce89dcb0af68a51579f30665",
       "replay_head_sha": "d93fdc90563870e7b7638fdb8e4f5a7772ec83d9"
+    },
+    {
+      "number": 18,
+      "source_number": 37567,
+      "source_title": "Fix golint stringsseq modernize finding in nolint.go",
+      "source_head_sha": "714aa39ec784e4f43553bc293ca2c8fcac5e22a2",
+      "source_base_sha": "7c544f13a193778264e5a3ba1bfd1870c6dd35bd",
+      "replay_head_sha": "bd5dedde0a00eb5c530d096b5fd08b1f3a1bd88c"
+    },
+    {
+      "number": 19,
+      "source_number": 72951,
+      "source_title": "Deduplicate compiler tips across workflows",
+      "source_head_sha": "d2602fa8c4ba9f477b8889f33442ba1061150ff7",
+      "source_base_sha": "7453bbec81778d95d570382fd4679569bb795c45",
+      "replay_head_sha": "f0bfbf3f019eb9396eebdecddcf84ff6010a113b"
+    },
+    {
+      "number": 20,
+      "source_number": 37539,
+      "source_title": "Make safe-outputs sample runtime-expression substitution schema-aware",
+      "source_head_sha": "f575a58dbe9f40d2c98f9c714af483dec3f68661",
+      "source_base_sha": "57027f2fa363330eaff210bc9d07e68d77099b0d",
+      "replay_head_sha": "99ebd6d817a67c3f5cde09376924769c3d144b90"
+    },
+    {
+      "number": 21,
+      "source_number": 72942,
+      "source_title": "feat(cli): diagnose assign-to-agent credentials in doctor",
+      "source_head_sha": "8cd0d6f949b2ac73b8bb1d482e37db074bb42971",
+      "source_base_sha": "f99c392a1635c77a43f1eaf74653745574933f7a",
+      "replay_head_sha": "0c622045d455f59165ee3474bc790c24ff55792b"
+    },
+    {
+      "number": 22,
+      "source_number": 37537,
+      "source_title": "Accept runtime ${{ ... }} expressions in safe-outputs samples",
+      "source_head_sha": "5a6a39a6bbecefa974178001adfd78541dca3f04",
+      "source_base_sha": "98fff4425f3d49aa0e75eb222069918f3c65620c",
+      "replay_head_sha": "f297fd054ef554686b2a9d7d68acfe4d5139fbf9"
+    },
+    {
+      "number": 23,
+      "source_number": 72579,
+      "source_title": "fix(workflow): prevent compiler-only PR trigger filters from leaking",
+      "source_head_sha": "166d553d0bd0a11f29b925b9c9f3f5458c395126",
+      "source_base_sha": "78f47098946e3047ec010201f8144b35769a98be",
+      "replay_head_sha": "305e59726bf62fbb98447ae6fdb304fc8101b56e"
+    },
+    {
+      "number": 24,
+      "source_number": 37437,
+      "source_title": "feat(max-ai-credits): allow -1 to disable budget enforcement and steering",
+      "source_head_sha": "91e194fc9ed765af64c22fbf79b2016c70119c8c",
+      "source_base_sha": "21d3191b8acd005e5fd3c53e3bcc9650fd8992f2",
+      "replay_head_sha": "738c511e790496fb07bfa6fc14798e67184a13f2"
+    },
+    {
+      "number": 25,
+      "source_number": 72542,
+      "source_title": "Add privileged checkout and cross-run artifact execution diagnostics",
+      "source_head_sha": "00fcd38d06726f2a10b749e51bae76af379a9117",
+      "source_base_sha": "78f47098946e3047ec010201f8144b35769a98be",
+      "replay_head_sha": "089d5c700dfa68c9b62e1f436c47b998ed79b286"
+    },
+    {
+      "number": 26,
+      "source_number": 37359,
+      "source_title": "feat(compile): add hidden `--use-samples` flag for deterministic safe-outputs replay",
+      "source_head_sha": "fcba545d94dcad3690df68d6ab0c87cbf0d3c80f",
+      "source_base_sha": "f8e94752463b24d69c614f26a5b8e804c9fe81bd",
+      "replay_head_sha": "65bfb5de0304cb2132fb22022ad36c56729c40f6"
+    },
+    {
+      "number": 27,
+      "source_number": 72418,
+      "source_title": "Add interactive org and enterprise update rollouts",
+      "source_head_sha": "188d4c3d5e694c5749ecf19ce4c6bf9f317e9dc1",
+      "source_base_sha": "deb2957f7df6915057215f2927abe65d1b644010",
+      "replay_head_sha": "db0dd0656ac34f9ab32037f24fe4199dfc197986"
+    },
+    {
+      "number": 28,
+      "source_number": 37313,
+      "source_title": "feat(cli): add --gh-aw-ref convenience flag to compile",
+      "source_head_sha": "3348bf2fa95214a3dc8657dbc5dafddaff7355cb",
+      "source_base_sha": "32ae30022e09d4402ba2a4e3df78e701e84e6397",
+      "replay_head_sha": "5bb7e007faee3b8b23ac3fefabd74435e6de4b23"
+    },
+    {
+      "number": 29,
+      "source_number": 72412,
+      "source_title": "Add guided pull_request_target fixes and safe role restriction",
+      "source_head_sha": "ac923bce832867d58fdd42b49b26f3341a4b1b94",
+      "source_base_sha": "c28204cbbd087d54c8d7a753bda6b83c573def09",
+      "replay_head_sha": "29cc936c56f098c8d4705f1c23598f67ecc8bbb3"
+    },
+    {
+      "number": 30,
+      "source_number": 37225,
+      "source_title": "fix(safe-outputs): prevent MCP server git hangs; add base-branch + checkout manifest",
+      "source_head_sha": "5cc6f9b1d8e85cd99180081d96428ac144a5399a",
+      "source_base_sha": "af017a3952819935ad4a0f4f2199f0524691d7a1",
+      "replay_head_sha": "6c622fd1eebf048de14f073410d94247deff047f"
+    },
+    {
+      "number": 31,
+      "source_number": 72407,
+      "source_title": "Merge imported job outputs with main workflow precedence",
+      "source_head_sha": "33710e5b921ac4a05177822cae37917bd74580ba",
+      "source_base_sha": "497cbe1f7820eda5fc8fb73ced4cd3f38b815ac1",
+      "replay_head_sha": "ac9fd0b4ed50bf87d03e995fb737a3c3b5db88d6"
+    },
+    {
+      "number": 32,
+      "source_number": 36657,
+      "source_title": "feat: support multi-repo wildcard target-repo in safe_outputs job",
+      "source_head_sha": "b6f0a91033c210f53213cb98eaa319e67baa7bd4",
+      "source_base_sha": "9d9bdac39c566fe39072b4bbe7e531562e08ec19",
+      "replay_head_sha": "eaf1e09fd2952e42219c7f027e0fc34600b674c0"
+    },
+    {
+      "number": 33,
+      "source_number": 72395,
+      "source_title": "feat: add optional actions-lock integration to compile",
+      "source_head_sha": "0f9f28277eec2e16f35fad058ff30bd0db20a29e",
+      "source_base_sha": "e607be88f36631afa44311052df3af5b9a74e6aa",
+      "replay_head_sha": "2158fabed222d1e3c21dfe9403a9da132fda90cb"
     }
   ]
 }
