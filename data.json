@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated_at": "2026-11-02T10:35:00.309564+00:00",
+  "generated_at": "2026-11-02T10:51:35.167011+00:00",
   "summary": {
     "attempted_prs": 307,
     "published_reports": 236,
@@ -110,7 +110,7 @@
         "Go",
         "JavaScript"
       ],
-      "generated_at": "2026-11-02T10:35:00.309564+00:00",
+      "generated_at": "2026-11-02T10:51:35.167011+00:00",
       "summary": {
         "selected_prs": 34,
         "attempted_prs": 34,
@@ -138,7 +138,7 @@
         "spent_aic": "6777.05240",
         "budget_aic": "50000",
         "checked_patches": 3,
-        "note": "3 attempts remain unresolved in the controller. Goal: 10 conditional MODEL refutations with native checked fixes; continue within the 50,000-AIC aggregate cap, without an early target stop. Recorded spend below includes only fully accounted attempts; 42,000.00 AIC remains reserved for active or incompletely accounted attempts (12 finished attempts have incomplete usage). Total spent or reserved: 48,777.05 / 50,000 AIC. Missing usage is not zero consumption. The repository daily guard remains 20,000 AIC. The plan contains 50 eligible source PRs each from pelikhan and dsyme. Published outcomes are model-conditional, not source-correctness claims."
+        "note": "1 attempts remain unresolved in the controller. Goal: 10 conditional MODEL refutations with native checked fixes; continue within the 50,000-AIC aggregate cap, without an early target stop. Recorded spend below includes only fully accounted attempts; 42,000.00 AIC remains reserved for active or incompletely accounted attempts (14 finished attempts have incomplete usage). Total spent or reserved: 48,777.05 / 50,000 AIC. Missing usage is not zero consumption. The repository daily guard remains 20,000 AIC. The plan contains 50 eligible source PRs each from pelikhan and dsyme. Published outcomes are model-conditional, not source-correctness claims."
       }
     },
     {
