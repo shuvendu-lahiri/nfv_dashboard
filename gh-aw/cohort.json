@@ -274,6 +274,14 @@
       "source_head_sha": "d537011e17f28d975d37efd54f74ffc87a66ac27",
       "source_base_sha": "adab887a3f9b2ef08c605fb35e4dcd0c1f25491a",
       "replay_head_sha": "bbd1e6238b9d1bc36b337e622e972299183af0a7"
+    },
+    {
+      "number": 37,
+      "source_number": 71833,
+      "source_title": "Allow network credentials in safe-output integration jobs",
+      "source_head_sha": "7c4f4b2bff131b2044d5432d4456a96b034b7fbc",
+      "source_base_sha": "3de7cc191d85f95a65e5d64d2e386539ed7a36be",
+      "replay_head_sha": "84afbd652a11cc8bef8d8b8cb6fbcea9e5a18c2a"
     }
   ]
 }

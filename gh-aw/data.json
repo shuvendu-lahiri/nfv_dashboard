@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/gh-aw",
-  "generated_at": "2026-11-02T10:51:35.167011+00:00",
+  "generated_at": "2026-11-02T11:08:46.449218+00:00",
   "name": "gh-aw",
   "label": "gh-aw",
   "languages": [
@@ -9,18 +9,18 @@
     "JavaScript"
   ],
   "summary": {
-    "selected_prs": 34,
-    "attempted_prs": 34,
-    "published_reports": 17,
-    "workflow_attempts": 34,
+    "selected_prs": 35,
+    "attempted_prs": 35,
+    "published_reports": 18,
+    "workflow_attempts": 35,
     "without_report": 17,
     "refuted_prs": 3,
-    "properties": 104,
+    "properties": 106,
     "outcomes": {
       "refuted": 3,
-      "verified": 68,
+      "verified": 69,
       "resources exhausted": 13,
-      "type-check/audit failure": 20
+      "type-check/audit failure": 21
     },
     "checked_fixes": 3,
     "fix_unknown": 0,
@@ -1564,15 +1564,59 @@
       "state": "open",
       "head_sha": "91f1ad5485532c60e54cd5f9b624ba816d1dc24d",
       "head_branch": "nfv-campaign-901851d8-71848-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6575425771,
+        "url": "https://github.com/shuvendu-lahiri/gh-aw/pull/35#issuecomment-6575425771",
+        "published_at": "2026-11-02T10:58:13Z",
+        "updated_at": "2026-11-02T10:58:13Z",
+        "body_sha256": "57277af6a48cebc6f8fb310c9a0014969b5cf42eb6223d65ca1a7c536d14957f",
+        "source_sha_prefix": "91f1ad548553",
+        "base_sha_prefix": "b92adabe5e2f",
+        "run_id": 41428869796,
+        "run_url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41428869796",
+        "counts": {
+          "refuted": 0,
+          "verified": 1,
+          "resources exhausted": 0,
+          "type-check/audit failure": 1
+        },
+        "properties": 2,
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6575425771,
+          "url": "https://github.com/shuvendu-lahiri/gh-aw/pull/35#issuecomment-6575425771",
+          "published_at": "2026-11-02T10:58:13Z",
+          "updated_at": "2026-11-02T10:58:13Z",
+          "body_sha256": "57277af6a48cebc6f8fb310c9a0014969b5cf42eb6223d65ca1a7c536d14957f",
+          "source_sha_prefix": "91f1ad548553",
+          "base_sha_prefix": "b92adabe5e2f",
+          "run_id": 41428869796,
+          "run_url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41428869796",
+          "counts": {
+            "refuted": 0,
+            "verified": 1,
+            "resources exhausted": 0,
+            "type-check/audit failure": 1
+          },
+          "properties": 2,
+          "refutations": [],
+          "checked_fixes": 0,
+          "fix_unknown": 0,
+          "checked_fix_findings": []
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 1,
       "latest_run": {
         "id": 41428869796,
         "url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41428869796",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 1
       },
       "source_number": 71848,
@@ -1600,17 +1644,39 @@
       "source_number": 35901,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/35901",
       "source_head_sha": "d537011e17f28d975d37efd54f74ffc87a66ac27"
+    },
+    {
+      "number": 37,
+      "title": "Allow network credentials in safe-output integration jobs",
+      "url": "https://github.com/shuvendu-lahiri/gh-aw/pull/37",
+      "state": "open",
+      "head_sha": "84afbd652a11cc8bef8d8b8cb6fbcea9e5a18c2a",
+      "head_branch": "nfv-campaign-901851d8-71833-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41433741940,
+        "url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41433741940",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 1
+      },
+      "source_number": 71833,
+      "source_url": "https://redirect.github.com/github/gh-aw/pull/71833",
+      "source_head_sha": "7c4f4b2bff131b2044d5432d4456a96b034b7fbc"
     }
   ],
   "campaign": {
     "repository": "shuvendu-lahiri/gh-aw",
     "status": "running",
     "planned_prs": 100,
-    "attempted_prs": 34,
-    "workflow_attempts": 34,
-    "spent_aic": "6777.05240",
+    "attempted_prs": 35,
+    "workflow_attempts": 35,
+    "spent_aic": "7067.89480",
     "budget_aic": "50000",
     "checked_patches": 3,
-    "note": "1 attempts remain unresolved in the controller. Goal: 10 conditional MODEL refutations with native checked fixes; continue within the 50,000-AIC aggregate cap, without an early target stop. Recorded spend below includes only fully accounted attempts; 42,000.00 AIC remains reserved for active or incompletely accounted attempts (14 finished attempts have incomplete usage). Total spent or reserved: 48,777.05 / 50,000 AIC. Missing usage is not zero consumption. The repository daily guard remains 20,000 AIC. The plan contains 50 eligible source PRs each from pelikhan and dsyme. Published outcomes are model-conditional, not source-correctness claims."
+    "note": "1 attempts remain unresolved in the controller. Goal: 10 conditional MODEL refutations with native checked fixes; continue within the 50,000-AIC aggregate cap, without an early target stop. Recorded spend below includes only fully accounted attempts; 42,000.00 AIC remains reserved for active or incompletely accounted attempts (14 finished attempts have incomplete usage). Total spent or reserved: 49,067.89 / 50,000 AIC. Missing usage is not zero consumption. The repository daily guard remains 20,000 AIC. The plan contains 50 eligible source PRs each from pelikhan and dsyme. Published outcomes are model-conditional, not source-correctness claims."
   }
 }
