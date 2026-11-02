@@ -250,6 +250,14 @@
       "source_head_sha": "0f9f28277eec2e16f35fad058ff30bd0db20a29e",
       "source_base_sha": "e607be88f36631afa44311052df3af5b9a74e6aa",
       "replay_head_sha": "2158fabed222d1e3c21dfe9403a9da132fda90cb"
+    },
+    {
+      "number": 34,
+      "source_number": 35949,
+      "source_title": "fix: emit filter:'' in agent checkout when sparse-checkout is enabled (#35947)",
+      "source_head_sha": "b0335230ef93ee05d2a850f3ae68f03dc5ec84bb",
+      "source_base_sha": "fe1d2171585a75dc4ec5549f44d36237d54fdfff",
+      "replay_head_sha": "8e420d1795a45e890d7e2dc547e886109b63a98a"
     }
   ]
 }
