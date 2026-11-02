@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/gh-aw",
-  "generated_at": "2026-11-02T10:23:37.229558+00:00",
+  "generated_at": "2026-11-02T10:35:00.309564+00:00",
   "name": "gh-aw",
   "label": "gh-aw",
   "languages": [
@@ -9,22 +9,22 @@
     "JavaScript"
   ],
   "summary": {
-    "selected_prs": 32,
-    "attempted_prs": 32,
-    "published_reports": 15,
-    "workflow_attempts": 32,
+    "selected_prs": 34,
+    "attempted_prs": 34,
+    "published_reports": 17,
+    "workflow_attempts": 34,
     "without_report": 17,
-    "refuted_prs": 2,
-    "properties": 84,
+    "refuted_prs": 3,
+    "properties": 104,
     "outcomes": {
-      "refuted": 2,
-      "verified": 59,
-      "resources exhausted": 8,
-      "type-check/audit failure": 15
+      "refuted": 3,
+      "verified": 68,
+      "resources exhausted": 13,
+      "type-check/audit failure": 20
     },
-    "checked_fixes": 2,
+    "checked_fixes": 3,
     "fix_unknown": 0,
-    "checked_fix_prs": 2
+    "checked_fix_prs": 3
   },
   "prs": [
     {
@@ -1072,15 +1072,85 @@
       "state": "open",
       "head_sha": "089d5c700dfa68c9b62e1f436c47b998ed79b286",
       "head_branch": "nfv-campaign-901851d8-72542-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6574778373,
+        "url": "https://github.com/shuvendu-lahiri/gh-aw/pull/25#issuecomment-6574778373",
+        "published_at": "2026-11-02T10:24:37Z",
+        "updated_at": "2026-11-02T10:24:37Z",
+        "body_sha256": "d6a662ed343be2d625191d92e68f9a51d109ba749d3142d718824b83ee330e86",
+        "source_sha_prefix": "089d5c700dfa",
+        "base_sha_prefix": "93d34b1e9ae9",
+        "run_id": 41418383499,
+        "run_url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41418383499",
+        "counts": {
+          "refuted": 1,
+          "verified": 4,
+          "resources exhausted": 3,
+          "type-check/audit failure": 2
+        },
+        "properties": 10,
+        "refutations": [
+          {
+            "property_id": "P6",
+            "property": "The checkout check returns no error.",
+            "input": "`ok = true`; `checkoutpolicy.MatchesExpression(text, \"github.event.pull_request.merge_commit_sha\") = false`; `strings.HasPrefix(strings.TrimSpace(text), \"refs/pull/\") = false`; `ok = false`; `explicit = false`; abstract state: successful checkout input mapping = `true`; successful merged-guard analysis = `true`; merged-guard result for the ref selector = `false`; successful ref source-text analysis = `false`; per-element results of `len(expression.Sources) > 0 = []`; successful repository source-text analysis = `true`; per-element results of `len(expression.Sources) > 0 = []`; successful unsafe-checkout Boolean analysis = `true`; enabled classification of the unsafe-checkout input = `false`; known-value classification of the unsafe-checkout input = `true`",
+            "sketch": "If the mapping succeeds, the unsafe opt-out is absent, repository is not string-valued, and the string-valued ref reaches privilegedSourceText(ctx, text, path) but that call returns an error, then err != nil holds and the function returns that error instead of reaching its no-error return. This conditionally defeats the claimed no-error diagnostic-accumulation outcome without reconstructing a concrete workflow input or establishing a source-confirmed bug."
+          }
+        ],
+        "checked_fixes": 1,
+        "fix_unknown": 0,
+        "checked_fix_findings": [
+          {
+            "finding_id": "550d0f01cba4e399458f",
+            "patch": "followups/550d0f01cba4e399458f/2/fix/candidate.patch",
+            "patch_sha256": "e02a7a57427ec9eeb9196edc8070a5d3706965cbc2dab5a6e31020dcb57f29ae"
+          }
+        ]
+      },
+      "report_history": [
+        {
+          "comment_id": 6574778373,
+          "url": "https://github.com/shuvendu-lahiri/gh-aw/pull/25#issuecomment-6574778373",
+          "published_at": "2026-11-02T10:24:37Z",
+          "updated_at": "2026-11-02T10:24:37Z",
+          "body_sha256": "d6a662ed343be2d625191d92e68f9a51d109ba749d3142d718824b83ee330e86",
+          "source_sha_prefix": "089d5c700dfa",
+          "base_sha_prefix": "93d34b1e9ae9",
+          "run_id": 41418383499,
+          "run_url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41418383499",
+          "counts": {
+            "refuted": 1,
+            "verified": 4,
+            "resources exhausted": 3,
+            "type-check/audit failure": 2
+          },
+          "properties": 10,
+          "refutations": [
+            {
+              "property_id": "P6",
+              "property": "The checkout check returns no error.",
+              "input": "`ok = true`; `checkoutpolicy.MatchesExpression(text, \"github.event.pull_request.merge_commit_sha\") = false`; `strings.HasPrefix(strings.TrimSpace(text), \"refs/pull/\") = false`; `ok = false`; `explicit = false`; abstract state: successful checkout input mapping = `true`; successful merged-guard analysis = `true`; merged-guard result for the ref selector = `false`; successful ref source-text analysis = `false`; per-element results of `len(expression.Sources) > 0 = []`; successful repository source-text analysis = `true`; per-element results of `len(expression.Sources) > 0 = []`; successful unsafe-checkout Boolean analysis = `true`; enabled classification of the unsafe-checkout input = `false`; known-value classification of the unsafe-checkout input = `true`",
+              "sketch": "If the mapping succeeds, the unsafe opt-out is absent, repository is not string-valued, and the string-valued ref reaches privilegedSourceText(ctx, text, path) but that call returns an error, then err != nil holds and the function returns that error instead of reaching its no-error return. This conditionally defeats the claimed no-error diagnostic-accumulation outcome without reconstructing a concrete workflow input or establishing a source-confirmed bug."
+            }
+          ],
+          "checked_fixes": 1,
+          "fix_unknown": 0,
+          "checked_fix_findings": [
+            {
+              "finding_id": "550d0f01cba4e399458f",
+              "patch": "followups/550d0f01cba4e399458f/2/fix/candidate.patch",
+              "patch_sha256": "e02a7a57427ec9eeb9196edc8070a5d3706965cbc2dab5a6e31020dcb57f29ae"
+            }
+          ]
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 1,
       "latest_run": {
         "id": 41418383499,
         "url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41418383499",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 1
       },
       "source_number": 72542,
@@ -1116,15 +1186,59 @@
       "state": "open",
       "head_sha": "db0dd0656ac34f9ab32037f24fe4199dfc197986",
       "head_branch": "nfv-campaign-901851d8-72418-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6574771215,
+        "url": "https://github.com/shuvendu-lahiri/gh-aw/pull/27#issuecomment-6574771215",
+        "published_at": "2026-11-02T10:24:16Z",
+        "updated_at": "2026-11-02T10:24:16Z",
+        "body_sha256": "98b9a40f0664929ecb011ac1caa04b83dc0ff0107e0e57cb4370fdee1f054b6e",
+        "source_sha_prefix": "db0dd0656ac3",
+        "base_sha_prefix": "b3f1316f25a4",
+        "run_id": 41419923921,
+        "run_url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41419923921",
+        "counts": {
+          "refuted": 0,
+          "verified": 5,
+          "resources exhausted": 2,
+          "type-check/audit failure": 3
+        },
+        "properties": 10,
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6574771215,
+          "url": "https://github.com/shuvendu-lahiri/gh-aw/pull/27#issuecomment-6574771215",
+          "published_at": "2026-11-02T10:24:16Z",
+          "updated_at": "2026-11-02T10:24:16Z",
+          "body_sha256": "98b9a40f0664929ecb011ac1caa04b83dc0ff0107e0e57cb4370fdee1f054b6e",
+          "source_sha_prefix": "db0dd0656ac3",
+          "base_sha_prefix": "b3f1316f25a4",
+          "run_id": 41419923921,
+          "run_url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41419923921",
+          "counts": {
+            "refuted": 0,
+            "verified": 5,
+            "resources exhausted": 2,
+            "type-check/audit failure": 3
+          },
+          "properties": 10,
+          "refutations": [],
+          "checked_fixes": 0,
+          "fix_unknown": 0,
+          "checked_fix_findings": []
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 1,
       "latest_run": {
         "id": 41419923921,
         "url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41419923921",
-        "status": "queued",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 1
       },
       "source_number": 72418,
@@ -1435,24 +1549,68 @@
       "latest_run": {
         "id": 41428194225,
         "url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41428194225",
-        "status": "queued",
+        "status": "in_progress",
         "conclusion": null,
         "attempt": 1
       },
       "source_number": 35949,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/35949",
       "source_head_sha": "b0335230ef93ee05d2a850f3ae68f03dc5ec84bb"
+    },
+    {
+      "number": 35,
+      "title": "fix: stop treating gh-aw-detection as experimental",
+      "url": "https://github.com/shuvendu-lahiri/gh-aw/pull/35",
+      "state": "open",
+      "head_sha": "91f1ad5485532c60e54cd5f9b624ba816d1dc24d",
+      "head_branch": "nfv-campaign-901851d8-71848-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41428869796,
+        "url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41428869796",
+        "status": "in_progress",
+        "conclusion": null,
+        "attempt": 1
+      },
+      "source_number": 71848,
+      "source_url": "https://redirect.github.com/github/gh-aw/pull/71848",
+      "source_head_sha": "7204a126c209c4c26095dba784c4965cc93180ab"
+    },
+    {
+      "number": 36,
+      "title": "fix: safe output handlers now respect target-repo config",
+      "url": "https://github.com/shuvendu-lahiri/gh-aw/pull/36",
+      "state": "open",
+      "head_sha": "bbd1e6238b9d1bc36b337e622e972299183af0a7",
+      "head_branch": "nfv-campaign-901851d8-35901-head",
+      "latest_report": null,
+      "report_history": [],
+      "report_matches_current_head": null,
+      "attempts": 1,
+      "latest_run": {
+        "id": 41429537962,
+        "url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41429537962",
+        "status": "pending",
+        "conclusion": null,
+        "attempt": 1
+      },
+      "source_number": 35901,
+      "source_url": "https://redirect.github.com/github/gh-aw/pull/35901",
+      "source_head_sha": "d537011e17f28d975d37efd54f74ffc87a66ac27"
     }
   ],
   "campaign": {
     "repository": "shuvendu-lahiri/gh-aw",
     "status": "running",
     "planned_prs": 100,
-    "attempted_prs": 32,
-    "workflow_attempts": 32,
-    "spent_aic": "4760.10240",
+    "attempted_prs": 34,
+    "workflow_attempts": 34,
+    "spent_aic": "6777.05240",
     "budget_aic": "50000",
-    "checked_patches": 2,
-    "note": "4 attempts remain unresolved in the controller. Goal: 10 conditional MODEL refutations with native checked fixes; continue within the 50,000-AIC aggregate cap, without an early target stop. Recorded spend below includes only fully accounted attempts; 44,800.00 AIC remains reserved for active or incompletely accounted attempts (12 finished attempts have incomplete usage). Total spent or reserved: 49,560.10 / 50,000 AIC. Missing usage is not zero consumption. The repository daily guard remains 20,000 AIC. The plan contains 50 eligible source PRs each from pelikhan and dsyme. Published outcomes are model-conditional, not source-correctness claims."
+    "checked_patches": 3,
+    "note": "3 attempts remain unresolved in the controller. Goal: 10 conditional MODEL refutations with native checked fixes; continue within the 50,000-AIC aggregate cap, without an early target stop. Recorded spend below includes only fully accounted attempts; 42,000.00 AIC remains reserved for active or incompletely accounted attempts (12 finished attempts have incomplete usage). Total spent or reserved: 48,777.05 / 50,000 AIC. Missing usage is not zero consumption. The repository daily guard remains 20,000 AIC. The plan contains 50 eligible source PRs each from pelikhan and dsyme. Published outcomes are model-conditional, not source-correctness claims."
   }
 }

@@ -258,6 +258,22 @@
       "source_head_sha": "b0335230ef93ee05d2a850f3ae68f03dc5ec84bb",
       "source_base_sha": "fe1d2171585a75dc4ec5549f44d36237d54fdfff",
       "replay_head_sha": "8e420d1795a45e890d7e2dc547e886109b63a98a"
+    },
+    {
+      "number": 35,
+      "source_number": 71848,
+      "source_title": "fix: stop treating gh-aw-detection as experimental",
+      "source_head_sha": "7204a126c209c4c26095dba784c4965cc93180ab",
+      "source_base_sha": "a834ad4a318b980a99876d6876b894c9124d1efe",
+      "replay_head_sha": "91f1ad5485532c60e54cd5f9b624ba816d1dc24d"
+    },
+    {
+      "number": 36,
+      "source_number": 35901,
+      "source_title": "fix: safe output handlers now respect target-repo config",
+      "source_head_sha": "d537011e17f28d975d37efd54f74ffc87a66ac27",
+      "source_base_sha": "adab887a3f9b2ef08c605fb35e4dcd0c1f25491a",
+      "replay_head_sha": "bbd1e6238b9d1bc36b337e622e972299183af0a7"
     }
   ]
 }

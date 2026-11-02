@@ -21,6 +21,24 @@
       "validator": "NFV 4d40817 native followups.validate_artifact"
     },
     {
+      "run_id": 41418383499,
+      "comment_id": 6574778373,
+      "body_sha256": "d6a662ed343be2d625191d92e68f9a51d109ba749d3142d718824b83ee330e86",
+      "status": "complete",
+      "checked": [
+        {
+          "finding_id": "550d0f01cba4e399458f",
+          "patch": "followups/550d0f01cba4e399458f/2/fix/candidate.patch",
+          "patch_sha256": "e02a7a57427ec9eeb9196edc8070a5d3706965cbc2dab5a6e31020dcb57f29ae"
+        }
+      ],
+      "refutations": 1,
+      "report_sha256": "3f3220b58c7bf61d460636ca605f9c46052315539e282c960c266a96e232728a",
+      "bundle_sha256": "f81235fc0e21186698332f9eb837cfb82b42dfa0ebe95922db7be8265b699ef6",
+      "archive_sha256": "d58dced05a1ab569ecbea5681f34479c575a74b1b88e2c0535b26570695f16ed",
+      "validator": "NFV 4d40817 native followups.validate_artifact"
+    },
+    {
       "run_id": 41419957239,
       "comment_id": 6574011081,
       "body_sha256": "3188a12d0f78100a9d3fc6626bd1fe9d9b9460865b6d64cdaad136ba367e6f8e",

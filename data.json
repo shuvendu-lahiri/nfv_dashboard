@@ -1,21 +1,21 @@
 {
   "schema": 1,
-  "generated_at": "2026-11-02T10:23:37.229558+00:00",
+  "generated_at": "2026-11-02T10:35:00.309564+00:00",
   "summary": {
-    "attempted_prs": 305,
-    "published_reports": 234,
-    "workflow_attempts": 526,
+    "attempted_prs": 307,
+    "published_reports": 236,
+    "workflow_attempts": 528,
     "without_report": 71,
-    "refuted_prs": 45,
-    "properties": 1611,
-    "checked_fixes": 24,
+    "refuted_prs": 46,
+    "properties": 1631,
+    "checked_fixes": 25,
     "fix_unknown": 0,
-    "checked_fix_prs": 23,
+    "checked_fix_prs": 24,
     "outcomes": {
-      "refuted": 55,
-      "verified": 954,
-      "resources exhausted": 379,
-      "type-check/audit failure": 223
+      "refuted": 56,
+      "verified": 963,
+      "resources exhausted": 384,
+      "type-check/audit failure": 228
     }
   },
   "repositories": [
@@ -110,35 +110,35 @@
         "Go",
         "JavaScript"
       ],
-      "generated_at": "2026-11-02T10:23:37.229558+00:00",
+      "generated_at": "2026-11-02T10:35:00.309564+00:00",
       "summary": {
-        "selected_prs": 32,
-        "attempted_prs": 32,
-        "published_reports": 15,
-        "workflow_attempts": 32,
+        "selected_prs": 34,
+        "attempted_prs": 34,
+        "published_reports": 17,
+        "workflow_attempts": 34,
         "without_report": 17,
-        "refuted_prs": 2,
-        "properties": 84,
+        "refuted_prs": 3,
+        "properties": 104,
         "outcomes": {
-          "refuted": 2,
-          "verified": 59,
-          "resources exhausted": 8,
-          "type-check/audit failure": 15
+          "refuted": 3,
+          "verified": 68,
+          "resources exhausted": 13,
+          "type-check/audit failure": 20
         },
-        "checked_fixes": 2,
+        "checked_fixes": 3,
         "fix_unknown": 0,
-        "checked_fix_prs": 2
+        "checked_fix_prs": 3
       },
       "campaign": {
         "repository": "shuvendu-lahiri/gh-aw",
         "status": "running",
         "planned_prs": 100,
-        "attempted_prs": 32,
-        "workflow_attempts": 32,
-        "spent_aic": "4760.10240",
+        "attempted_prs": 34,
+        "workflow_attempts": 34,
+        "spent_aic": "6777.05240",
         "budget_aic": "50000",
-        "checked_patches": 2,
-        "note": "4 attempts remain unresolved in the controller. Goal: 10 conditional MODEL refutations with native checked fixes; continue within the 50,000-AIC aggregate cap, without an early target stop. Recorded spend below includes only fully accounted attempts; 44,800.00 AIC remains reserved for active or incompletely accounted attempts (12 finished attempts have incomplete usage). Total spent or reserved: 49,560.10 / 50,000 AIC. Missing usage is not zero consumption. The repository daily guard remains 20,000 AIC. The plan contains 50 eligible source PRs each from pelikhan and dsyme. Published outcomes are model-conditional, not source-correctness claims."
+        "checked_patches": 3,
+        "note": "3 attempts remain unresolved in the controller. Goal: 10 conditional MODEL refutations with native checked fixes; continue within the 50,000-AIC aggregate cap, without an early target stop. Recorded spend below includes only fully accounted attempts; 42,000.00 AIC remains reserved for active or incompletely accounted attempts (12 finished attempts have incomplete usage). Total spent or reserved: 48,777.05 / 50,000 AIC. Missing usage is not zero consumption. The repository daily guard remains 20,000 AIC. The plan contains 50 eligible source PRs each from pelikhan and dsyme. Published outcomes are model-conditional, not source-correctness claims."
       }
     },
     {
