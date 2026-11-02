@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated_at": "2026-11-02T11:08:46.449218+00:00",
+  "generated_at": "2026-11-02T11:24:59.815941+00:00",
   "summary": {
     "attempted_prs": 308,
     "published_reports": 237,
@@ -110,7 +110,7 @@
         "Go",
         "JavaScript"
       ],
-      "generated_at": "2026-11-02T11:08:46.449218+00:00",
+      "generated_at": "2026-11-02T11:24:59.815941+00:00",
       "summary": {
         "selected_prs": 35,
         "attempted_prs": 35,
