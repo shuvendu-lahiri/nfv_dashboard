@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "repository": "shuvendu-lahiri/gh-aw",
-  "generated_at": "2026-11-02T11:40:02.371657+00:00",
+  "generated_at": "2026-11-02T11:56:37.877071+00:00",
   "name": "gh-aw",
   "label": "gh-aw",
   "languages": [
@@ -11,16 +11,16 @@
   "summary": {
     "selected_prs": 35,
     "attempted_prs": 35,
-    "published_reports": 18,
+    "published_reports": 19,
     "workflow_attempts": 35,
-    "without_report": 17,
+    "without_report": 16,
     "refuted_prs": 3,
-    "properties": 106,
+    "properties": 116,
     "outcomes": {
       "refuted": 3,
-      "verified": 69,
-      "resources exhausted": 13,
-      "type-check/audit failure": 21
+      "verified": 74,
+      "resources exhausted": 16,
+      "type-check/audit failure": 23
     },
     "checked_fixes": 3,
     "fix_unknown": 0,
@@ -1652,15 +1652,59 @@
       "state": "open",
       "head_sha": "84afbd652a11cc8bef8d8b8cb6fbcea9e5a18c2a",
       "head_branch": "nfv-campaign-901851d8-71833-head",
-      "latest_report": null,
-      "report_history": [],
-      "report_matches_current_head": null,
+      "latest_report": {
+        "comment_id": 6576390498,
+        "url": "https://github.com/shuvendu-lahiri/gh-aw/pull/37#issuecomment-6576390498",
+        "published_at": "2026-11-02T11:49:39Z",
+        "updated_at": "2026-11-02T11:49:39Z",
+        "body_sha256": "00a6badd4cb50fa8526f5af44c34e8a824db4176e1fa5e63fb163b64f331f45b",
+        "source_sha_prefix": "84afbd652a11",
+        "base_sha_prefix": "5d3e06d41350",
+        "run_id": 41433741940,
+        "run_url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41433741940",
+        "counts": {
+          "refuted": 0,
+          "verified": 5,
+          "resources exhausted": 3,
+          "type-check/audit failure": 2
+        },
+        "properties": 10,
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
+      },
+      "report_history": [
+        {
+          "comment_id": 6576390498,
+          "url": "https://github.com/shuvendu-lahiri/gh-aw/pull/37#issuecomment-6576390498",
+          "published_at": "2026-11-02T11:49:39Z",
+          "updated_at": "2026-11-02T11:49:39Z",
+          "body_sha256": "00a6badd4cb50fa8526f5af44c34e8a824db4176e1fa5e63fb163b64f331f45b",
+          "source_sha_prefix": "84afbd652a11",
+          "base_sha_prefix": "5d3e06d41350",
+          "run_id": 41433741940,
+          "run_url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41433741940",
+          "counts": {
+            "refuted": 0,
+            "verified": 5,
+            "resources exhausted": 3,
+            "type-check/audit failure": 2
+          },
+          "properties": 10,
+          "refutations": [],
+          "checked_fixes": 0,
+          "fix_unknown": 0,
+          "checked_fix_findings": []
+        }
+      ],
+      "report_matches_current_head": true,
       "attempts": 1,
       "latest_run": {
         "id": 41433741940,
         "url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41433741940",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "attempt": 1
       },
       "source_number": 71833,
@@ -1670,13 +1714,13 @@
   ],
   "campaign": {
     "repository": "shuvendu-lahiri/gh-aw",
-    "status": "running",
+    "status": "blocked",
     "planned_prs": 100,
     "attempted_prs": 35,
     "workflow_attempts": 35,
-    "spent_aic": "7067.89480",
+    "spent_aic": "7670.14008",
     "budget_aic": "50000",
     "checked_patches": 3,
-    "note": "1 attempts remain unresolved in the controller. Goal: 10 conditional MODEL refutations with native checked fixes; continue within the 50,000-AIC aggregate cap, without an early target stop. Recorded spend below includes only fully accounted attempts; 42,000.00 AIC remains reserved for active or incompletely accounted attempts (14 finished attempts have incomplete usage). Total spent or reserved: 49,067.89 / 50,000 AIC. Missing usage is not zero consumption. The repository daily guard remains 20,000 AIC. The plan contains 50 eligible source PRs each from pelikhan and dsyme. Published outcomes are model-conditional, not source-correctness claims."
+    "note": "1 attempts remain unresolved in the controller. Goal: 10 conditional MODEL refutations with native checked fixes; continue within the 50,000-AIC aggregate cap, without an early target stop. Recorded spend below includes only fully accounted attempts; 39,200.00 AIC remains reserved for active or incompletely accounted attempts (14 finished attempts have incomplete usage). Total spent or reserved: 46,870.14 / 50,000 AIC. Missing usage is not zero consumption. The repository daily guard remains 20,000 AIC. The plan contains 50 eligible source PRs each from pelikhan and dsyme. Published outcomes are model-conditional, not source-correctness claims. Campaign control is paused for evidence/publication reconciliation."
   }
 }
