@@ -17,7 +17,10 @@
       "verified": 90,
       "resources exhausted": 34,
       "type-check/audit failure": 30
-    }
+    },
+    "checked_fixes": 3,
+    "fix_unknown": 0,
+    "checked_fix_prs": 3
   },
   "prs": [
     {
@@ -63,7 +66,10 @@
           "type-check/audit failure": 2
         },
         "properties": 5,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -215,7 +221,10 @@
           "type-check/audit failure": 0
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -272,7 +281,10 @@
           "type-check/audit failure": 9
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -348,7 +360,10 @@
           "type-check/audit failure": 2
         },
         "properties": 4,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -424,7 +439,10 @@
           "type-check/audit failure": 0
         },
         "properties": 1,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -500,7 +518,10 @@
           "type-check/audit failure": 0
         },
         "properties": 4,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -576,7 +597,10 @@
           "type-check/audit failure": 0
         },
         "properties": 1,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -652,7 +676,10 @@
           "type-check/audit failure": 2
         },
         "properties": 5,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -728,7 +755,10 @@
           "type-check/audit failure": 0
         },
         "properties": 7,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -817,6 +847,15 @@
             "property": "A normally completed search initialization leaves the factor-split clause counter at zero.",
             "input": "`factor_split_clauses = 0`; abstract state: contents of constrained before search initialization = `[]`; factor_split_clauses after refresh_bv_fields() = `1`; contents of split_atoms before search initialization = `[]`",
             "sketch": "If refresh_bv_fields() changes factor_split_clauses to 1 after it was reset, init_search_eh returns with a nonzero per-search counter."
+          }
+        ],
+        "checked_fixes": 1,
+        "fix_unknown": 0,
+        "checked_fix_findings": [
+          {
+            "finding_id": "320523b7ffda9ea7d359",
+            "patch": "followups/320523b7ffda9ea7d359/2/fix/candidate.patch",
+            "patch_sha256": "8b8c8f4149d9f18dbcd1ad0c5f72e8e3a1e662e2415c2ca8be7e88967153eec7"
           }
         ]
       },
@@ -908,7 +947,10 @@
           "type-check/audit failure": 0
         },
         "properties": 1,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -965,7 +1007,10 @@
           "type-check/audit failure": 0
         },
         "properties": 3,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1022,7 +1067,10 @@
           "type-check/audit failure": 0
         },
         "properties": 9,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1079,7 +1127,10 @@
           "type-check/audit failure": 1
         },
         "properties": 2,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1155,7 +1206,10 @@
           "type-check/audit failure": 0
         },
         "properties": 1,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1237,6 +1291,15 @@
             "property": "Under the complete padding guard, the returned string meets the known length lower bound.",
             "input": "`m_util.str.is_string(fresh, s) = true`; `fresh = true`; `lo.is_pos() = true`; `lo.is_unsigned() = true`; `lo.get_unsigned() = 2`; `lower_bound2(e, lo) = true`; `is_var(result) = false`; `m_util.is_seq(result) = true`; `m.is_value(result) = false`; `val = false`; abstract state: fresh concrete string returned for the unresolved sequence = `[0]`; expression selected by get_ite_value = `0`; representative value for the selected expression = `[]`; result after rewriting = `[]`; selected expression identity = `0`; fresh value requested for a variable result = `[]`",
             "sketch": "If the one-character fresh string encodes as the five-byte text `\\u{0}` and need is 2, `padded.length() < need` is false. The loop therefore skips appending `a`, leaving the reconstructed string shorter than the reported lower bound."
+          }
+        ],
+        "checked_fixes": 1,
+        "fix_unknown": 0,
+        "checked_fix_findings": [
+          {
+            "finding_id": "ae771fc95aa3e13cce19",
+            "patch": "followups/ae771fc95aa3e13cce19/2/fix/candidate.patch",
+            "patch_sha256": "04c81c2c3173162a831c942afdf896a0cf9ed83466d417d82c80e6f93afd235e"
           }
         ]
       },
@@ -1354,7 +1417,10 @@
           "type-check/audit failure": 0
         },
         "properties": 4,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1411,7 +1477,10 @@
           "type-check/audit failure": 1
         },
         "properties": 9,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1487,7 +1556,10 @@
           "type-check/audit failure": 0
         },
         "properties": 3,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1563,7 +1635,10 @@
           "type-check/audit failure": 1
         },
         "properties": 1,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1646,7 +1721,10 @@
             "input": "`negated = true`; `m.is_false(some_eq) = false`; `m.is_or(some_eq) = true`; abstract state: per-element results of `d->get_arg(i) = [1, 1]`; per-disjunct expression classifications = `[1, 3]`; left equality-operand identities for the disjuncts = `[0, 0]`; right equality-operand identities for the disjuncts = `[0, 0]`; per-element results of `m.are_distinct(x, y) = []`; non-or expression classification = `0`; left operand identity of a non-or equality = `0`; right operand identity of a non-or equality = `0`",
             "sketch": "If `m.is_true(e)` holds for the first disjunct while d has a repeated argument, gate_holds returns true before checking the later unsupported disjunct."
           }
-        ]
+        ],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1735,6 +1813,15 @@
             "property": "Acceptance requires the first xor argument to be fixed when present.",
             "input": "`m.is_xor(main_expr) = false`; abstract state: per-element results of `equiv(a, arg) = [true]`; per-occurrence xor argument fixedness = `[false]`; per-element results of `m.is_true(arg) || is_complement(arg) = [false]`",
             "sketch": "If equiv(a, arg) is true for another clause literal, check accepts the negated xor clause before checking whether the xor argument is fixed."
+          }
+        ],
+        "checked_fixes": 1,
+        "fix_unknown": 0,
+        "checked_fix_findings": [
+          {
+            "finding_id": "a09d1bcc5d128e3a211b",
+            "patch": "followups/a09d1bcc5d128e3a211b/1/fix/candidate.patch",
+            "patch_sha256": "f81ee1673b0d377ed20a5b0d69030ab0964d91391d09b90285b70c3328bbf023"
           }
         ]
       },
@@ -1826,7 +1913,10 @@
           "type-check/audit failure": 0
         },
         "properties": 1,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1909,7 +1999,10 @@
             "input": "`check_ineq(r) = false`; `m_conseq.is_zero() = false`; `reduce_eq() = true`; `m_conseq.is_zero() = false`; `reduce_eq() = true`; abstract state: per-element results of `coeff = [0]`; per-element results of `r2.m_coeffs.find(v, B) = [true]`; per-element results of `B = [1]`; pending tight inequalities = `0`",
             "sketch": "If coeff is zero, B is positive, and the lookup succeeds, !r2.m_coeffs.find(v, B) || (coeff > 0 && B > 0) || (coeff < 0 && B < 0) is false; the candidate is not skipped and fresh(m_ineqs) is called without strictly opposite signs."
           }
-        ]
+        ],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1992,7 +2085,10 @@
           "type-check/audit failure": 1
         },
         "properties": 3,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2068,7 +2164,10 @@
           "type-check/audit failure": 0
         },
         "properties": 1,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2144,7 +2243,10 @@
           "type-check/audit failure": 0
         },
         "properties": 1,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2220,7 +2322,10 @@
           "type-check/audit failure": 1
         },
         "properties": 1,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2296,7 +2401,10 @@
           "type-check/audit failure": 1
         },
         "properties": 2,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2372,7 +2480,10 @@
           "type-check/audit failure": 2
         },
         "properties": 4,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2448,7 +2559,10 @@
           "type-check/audit failure": 0
         },
         "properties": 4,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2505,7 +2619,10 @@
           "type-check/audit failure": 0
         },
         "properties": 1,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2562,7 +2679,10 @@
           "type-check/audit failure": 0
         },
         "properties": 7,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2619,7 +2739,10 @@
           "type-check/audit failure": 0
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2676,7 +2799,10 @@
           "type-check/audit failure": 0
         },
         "properties": 3,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2733,7 +2859,10 @@
           "type-check/audit failure": 0
         },
         "properties": 1,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2790,7 +2919,10 @@
           "type-check/audit failure": 1
         },
         "properties": 2,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2847,7 +2979,10 @@
           "type-check/audit failure": 0
         },
         "properties": 1,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2904,7 +3039,10 @@
           "type-check/audit failure": 0
         },
         "properties": 9,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2961,7 +3099,10 @@
           "type-check/audit failure": 0
         },
         "properties": 3,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {

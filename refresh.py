@@ -131,7 +131,7 @@ def run_numbers(run, heads, repository=REPOSITORY, prs=None):
     return numbers
 
 
-def build(pulls, comments, runs, generated_at, repository=REPOSITORY, cohort=None, campaign=None):
+def build(pulls, comments, runs, generated_at, repository=REPOSITORY, cohort=None, campaign=None, fixes=None):
     web = f"https://github.com/{repository}"
     prs = {pr["number"]: pr for pr in pulls}
     if len(prs) != len(pulls):
@@ -222,7 +222,52 @@ def build(pulls, comments, runs, generated_at, repository=REPOSITORY, cohort=Non
     if campaign is not None:
         data["campaign"] = campaign
         campaign_lines(data)
+    apply_fix_evidence(data, fixes)
     return data
+
+
+def apply_fix_evidence(data, evidence=None):
+    records = {}
+    if evidence is not None:
+        if evidence.get("schema") != 1 or evidence.get("repository") != data["repository"]:
+            raise ValueError("Invalid fix evidence repository or schema")
+        for record in evidence["reports"]:
+            key = (record["run_id"], record["comment_id"])
+            if key in records or record["status"] not in ("complete", "unavailable"):
+                raise ValueError("Duplicate or invalid fix evidence")
+            records[key] = record
+    checked = unknown = checked_prs = 0
+    for entry in data["prs"]:
+        report = entry["latest_report"]
+        if report is None:
+            continue
+        refuted = report["counts"]["refuted"]
+        record = records.get((report["run_id"], report["comment_id"]))
+        findings = []
+        missing = refuted
+        if record is not None and record["body_sha256"] == report["body_sha256"]:
+            if record["refutations"] != refuted:
+                raise ValueError("Fix evidence disagrees with published refutations")
+            if record["status"] == "complete":
+                findings = record["checked"]
+                if (len(findings) > refuted
+                        or len({finding["finding_id"] for finding in findings}) != len(findings)
+                        or any(not re.fullmatch(r"[0-9a-f]{64}", finding["patch_sha256"])
+                               or re.fullmatch(
+                                   rf"followups/{re.escape(finding['finding_id'])}/[12]/fix/candidate\.patch",
+                                   finding["patch"]) is None for finding in findings)):
+                    raise ValueError("Invalid checked-fix finding identity or patch")
+                missing = 0
+        report.update(checked_fixes=len(findings), fix_unknown=missing, checked_fix_findings=findings)
+        checked += len(findings)
+        unknown += missing
+        checked_prs += bool(findings)
+    data["summary"].update(checked_fixes=checked, fix_unknown=unknown, checked_fix_prs=checked_prs)
+
+
+def fix_count(report):
+    return (str(report["checked_fixes"])
+            + (f" (+{report['fix_unknown']} unknown)" if report["fix_unknown"] else ""))
 
 
 def campaign_lines(data):
@@ -286,6 +331,10 @@ def render_markdown(data):
         f"{total['published_reports']} published reports; "
         f"{total['refuted_prs']} PRs with {total['outcomes']['refuted']} conditional refutations; "
         f"{total['outcomes']['verified']} model verifications; {total['without_report']} PRs without a published report.**", "",
+        f"**{total['checked_fixes']} / {total['outcomes']['refuted']} refutations with a verified fix "
+        f"across {total['checked_fix_prs']} PRs; {total['fix_unknown']} refutations with unknown fix evidence.** "
+        "A verified fix means native checked repair of the complete translated property plus a hash-bound "
+        "candidate source patch, not proof of source correctness. Simplifications do not count.", "",
     ]
     campaign = campaign_lines(data)
     if campaign:
@@ -294,8 +343,8 @@ def render_markdown(data):
             lines.extend([markdown(line), ""])
     lines.extend([
         "## All attempted PRs (refutations first)", "",
-        "| PR | Change | Latest report | Properties | Refuted | Verified | Exhausted | Audit failure | Evidence |",
-        "|---|---|---|---:|---:|---:|---:|---:|---|",
+        "| PR | Change | Latest report | Properties | Refuted | Verified fixes | Verified | Exhausted | Audit failure | Evidence |",
+        "|---|---|---|---:|---:|---:|---:|---:|---:|---|",
     ])
     for entry in ordered(data):
         report = entry["latest_report"]
@@ -315,6 +364,7 @@ def render_markdown(data):
             values = [str(counts[status]) for status in STATUSES]
             if counts["refuted"]:
                 values[0] = f"**{values[0]}**"
+            values.insert(1, fix_count(report))
             evidence = f"[Report]({report['url']}) / [run]({report['run_url']})"
             if newer_attempt:
                 evidence += f" / [latest attempt]({run['url']})"
@@ -325,7 +375,7 @@ def render_markdown(data):
             status = (run["conclusion"] or run["status"]) if run else "not attempted"
             evidence = f"[Run]({run['url']})" if run else "-"
             lines.append(f"| [{label}]({entry['url']}) | {title} | "
-                         f"No published report ({markdown(status)}) | - | - | - | - | - | {evidence} |")
+                         f"No published report ({markdown(status)}) | - | - | - | - | - | - | {evidence} |")
     lines.extend(["", "## Conditional model refutations", "",
                   "The following property texts are extracted from the published reports, without new adjudication "
                   "or inference. The original report contains assumptions, source overlays and native evidence.", ""])
@@ -388,7 +438,18 @@ def render_outcome_tracker(summary):
             f'<div><dt><span class="outcome-dot outcome-{class_name}" aria-hidden="true"></span>'
             f'{label}</dt><dd><strong>{percentage}</strong>'
             f'<span class="muted">{count:,} / {total:,} properties</span></dd></div>')
-    parts.append('</dl></div>')
+    parts.append('</dl>')
+    if "checked_fixes" in summary:
+        checked, unknown, refuted = summary["checked_fixes"], summary["fix_unknown"], summary["outcomes"]["refuted"]
+        if (type(checked) is not int or type(unknown) is not int
+                or checked < 0 or unknown < 0 or checked + unknown > refuted):
+            raise ValueError("Invalid verified-fix totals")
+        parts.append(
+            f'<p class="verified-fixes"><strong>{checked:,} / {refuted:,} refutations with a verified fix</strong>'
+            f' <span class="muted">({unknown:,} with unknown fix evidence)</span></p>'
+            '<p class="muted">Native checked model repairs with hash-bound candidate source patches; '
+            'not proof of source correctness. Simplifications do not count.</p>')
+    parts.append('</div>')
     return "\n".join(parts)
 
 
@@ -418,7 +479,8 @@ def fetch(repository, endpoint, key=None):
 
 
 def hub(snapshots):
-    fields = ("attempted_prs", "published_reports", "workflow_attempts", "without_report", "refuted_prs", "properties")
+    fields = ("attempted_prs", "published_reports", "workflow_attempts", "without_report", "refuted_prs", "properties",
+              "checked_fixes", "fix_unknown", "checked_fix_prs")
     summary = {field: sum(data["summary"][field] for data in snapshots) for field in fields}
     summary["outcomes"] = {status: sum(data["summary"]["outcomes"][status] for data in snapshots) for status in STATUSES}
     return {
@@ -459,6 +521,10 @@ def main():
 
     with ThreadPoolExecutor(max_workers=len(REPOSITORIES)) as executor:
         snapshots = list(executor.map(collect, REPOSITORIES))
+    for data in snapshots:
+        path = DIRECTORY / data["name"] / "fixes.json"
+        evidence = json.loads(path.read_text(encoding="utf-8")) if path.exists() else None
+        apply_fix_evidence(data, evidence)
     outputs = {}
     for data in snapshots:
         base = DIRECTORY / data["name"]

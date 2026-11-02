@@ -1,0 +1,347 @@
+{
+  "schema": 1,
+  "repository": "shuvendu-lahiri/litebox",
+  "reports": [
+    {
+      "run_id": 39205431424,
+      "comment_id": 6382629152,
+      "body_sha256": "7a5737a99977b40bd7342ba346245a5878fb88d9881753bcdbcf1a62d76b34e3",
+      "status": "complete",
+      "checked": [
+        {
+          "finding_id": "f241d99f520854c2c5dc",
+          "patch": "followups/f241d99f520854c2c5dc/1/fix/candidate.patch",
+          "patch_sha256": "800227a229974457d383b9269b072100cbe83c805ff0222188225ac32c8d221a"
+        }
+      ],
+      "refutations": 1,
+      "report_sha256": "c7c7d29e530fd188d3d2928bc1813dd639c5958f56c4f609a40cce77391cfaf0",
+      "bundle_sha256": "2ecfb5030e7096e0782e7f1c7a7c81c5992a6584a5fbedf579d4feadc48e6fe0",
+      "archive_sha256": "11ffb6d3877aaac19448b6ba26876fe6075c09c35ece52a39693288e742c82bb",
+      "validator": "NFV 4d40817 native followups.validate_artifact"
+    },
+    {
+      "run_id": 39390206732,
+      "comment_id": 6383064179,
+      "body_sha256": "d076e4eb42789205928d6bb3141520b8df1dafa4863c2b5c159c4934273b135b",
+      "status": "complete",
+      "checked": [
+        {
+          "finding_id": "9abfa0abcd98546b69ab",
+          "patch": "followups/9abfa0abcd98546b69ab/1/fix/candidate.patch",
+          "patch_sha256": "4b23c5851eeec5096a81d9f9051176e8d88df41db2b0091367e1b389c02d14f6"
+        },
+        {
+          "finding_id": "6b84efd901da4e665890",
+          "patch": "followups/6b84efd901da4e665890/1/fix/candidate.patch",
+          "patch_sha256": "eb9be964a1d45c16383bcf4ad705a58d3c0028f2e90182dc98e465731801ff9e"
+        }
+      ],
+      "refutations": 2,
+      "report_sha256": "9f77e54b008c1b65d5c40849fb018629f891ea559fa2540266d84310ae4ab547",
+      "bundle_sha256": "f77ab7a8a12588dd0433c6d8b138e89554eb2eae585739938a5ea2cdddf96e57",
+      "archive_sha256": "e40f1a61dee61ddf1a9a1c83b5187f0bf4cafa7cd0a86b89d1a7ee198ae105cb",
+      "validator": "NFV 4d40817 native followups.validate_artifact"
+    },
+    {
+      "run_id": 39357363330,
+      "comment_id": 6383719541,
+      "body_sha256": "c1ee191bfbb0f9c84eb4d7acff76206811f8b43540ca5c4686d193b971cf7c24",
+      "status": "complete",
+      "checked": [],
+      "refutations": 1,
+      "report_sha256": "10039cea94c04919177de9fc566aec35d27fbb1620ea136e32a873011d5fa045",
+      "bundle_sha256": "043729e69675d9f26e2e8ee5607dd68b0af639b02e7dc7551013b0408764fdd1",
+      "archive_sha256": "7a764173d53fbc5fbff4dcc1a5017c892775026bf677cb41dcd95bd39f239b99",
+      "validator": "NFV 4d40817 native followups.validate_artifact"
+    },
+    {
+      "run_id": 39363406105,
+      "comment_id": 6384318525,
+      "body_sha256": "717e02dc0262d8cf1ec910e242003403f0ee4cbd95be9729ac8d046e8ca5c898",
+      "status": "complete",
+      "checked": [
+        {
+          "finding_id": "ef4565549fee14d479e1",
+          "patch": "followups/ef4565549fee14d479e1/2/fix/candidate.patch",
+          "patch_sha256": "4c04f218a66643feda0c5d873d30c06559dd66d849622726d902400a5705b5bb"
+        }
+      ],
+      "refutations": 1,
+      "report_sha256": "78ad2d3fb0d32981b8e29712f1984f66c23a557245888fc34eed671b5b8484ca",
+      "bundle_sha256": "3fcc692348f63053b38b6cce30b3c0589c0c2fff7f04200b71b99a98d74b8f43",
+      "archive_sha256": "71c9b714449cf4b7b702a25e91c2e7780acc0a0ddfe840f6ee44a93453aa249c",
+      "validator": "NFV 4d40817 native followups.validate_artifact"
+    },
+    {
+      "run_id": 39415165751,
+      "comment_id": 6385081547,
+      "body_sha256": "7bba03db129f771aedb1d932b6df16b7024ba3d04ab0112eee54060a23c416f3",
+      "status": "complete",
+      "checked": [],
+      "refutations": 1,
+      "report_sha256": "362ad0f28ba4082b066ede5f6eb0197c2acfa1bc022324c030e74c8dd6694928",
+      "bundle_sha256": "b224b7e72eacee1fc66fed57cc087700ee3df97af23df52cb394baaa9fcd80d0",
+      "archive_sha256": "67ed6085c601a82068ca42afaba84fa10c7f261b43696bc7b72cc7f933e90998",
+      "validator": "NFV 4d40817 native followups.validate_artifact"
+    },
+    {
+      "run_id": 39424463467,
+      "comment_id": 6386308409,
+      "body_sha256": "afc3caf4aafe07b92d42e6c6c0e15fbc777c7d9854ad66b12c29db3e7a1fea5e",
+      "status": "complete",
+      "checked": [
+        {
+          "finding_id": "b16219007c11f8d2caaa",
+          "patch": "followups/b16219007c11f8d2caaa/2/fix/candidate.patch",
+          "patch_sha256": "43fc7a4ff4e0ad8f48fdeb5bc8274edec8ae6948105b9c2b52ad8738224a00e1"
+        }
+      ],
+      "refutations": 1,
+      "report_sha256": "b15228ef5df2d2829fa4d8ec066180ae9d22d8355db4685bae3d1821a43143ff",
+      "bundle_sha256": "3207b5ec3bf3818f5a8de76247ac011314e962da6b48e72d13a26c08003e2329",
+      "archive_sha256": "1f447fd6eb0fab98024c0f02a73614636e2cfaf7bbbf72bfb580cf3cccacdb0d",
+      "validator": "NFV 4d40817 native followups.validate_artifact"
+    },
+    {
+      "run_id": 39447927739,
+      "comment_id": 6387051342,
+      "body_sha256": "a1332d1a4a18173918337beb51861ae4c76b6458296fd068296f57e1f23f1f78",
+      "status": "complete",
+      "checked": [],
+      "refutations": 1,
+      "report_sha256": "1daeb1fce8cc406b8cad4f5cc81525dfee8e4972711b3f475d07f218b9e8635e",
+      "bundle_sha256": "cfcf12c558df7e028c9dcb2e4d80b2a6ca08820553f2f623f31dcfaa801eceee",
+      "archive_sha256": "103b15e1651fc3ae1a2d0f6d0453491c32c293f0187c0c9dd8629641acb0f086",
+      "validator": "NFV 4d40817 native followups.validate_artifact"
+    },
+    {
+      "run_id": 39462655079,
+      "comment_id": 6389082690,
+      "body_sha256": "c51abb27b3f68639b95641a09d01ba1aa385a0d4655a2051554df09954a4fc24",
+      "status": "complete",
+      "checked": [],
+      "refutations": 1,
+      "report_sha256": "d2089e49e4750da058cc6d4fa62ad588c3891b2dda3e76f511b554d2a745bbb8",
+      "bundle_sha256": "a6d8ac021e63aa1679d608e3a2a4478019c37aab555d5049bbc8ea2629be6151",
+      "archive_sha256": "6d45cc93fade6275583c89e5e06ee6d226c02f66830382cf5baf637eca456264",
+      "validator": "NFV 4d40817 native followups.validate_artifact"
+    },
+    {
+      "run_id": 39532831209,
+      "comment_id": 6388205075,
+      "body_sha256": "a6709c440cb8db8f2603046c18df8a97a29d7737f4490f8e2044822c3ed98355",
+      "status": "complete",
+      "checked": [],
+      "refutations": 2,
+      "report_sha256": "b817e8790b5cefcdef2ad36e3fc1e2a2e2acc316138a29d2c2a64f82a9b67d06",
+      "bundle_sha256": "fb811a5789195bdb327ae987a4d1f0def2453ab27d1c0f4c1e350902815ff8c1",
+      "archive_sha256": "72e22ba01e56c9b737ebe4f1c6d270d1a87ac8b69c63ab3ad089c83c04b49be4",
+      "validator": "NFV 4d40817 native followups.validate_artifact"
+    },
+    {
+      "run_id": 39532822431,
+      "comment_id": 6388208161,
+      "body_sha256": "62e1df7c857d81fb4cca8362e9ba2872ac7eaaa07de6f87896cce2caf61afbf6",
+      "status": "complete",
+      "checked": [
+        {
+          "finding_id": "38e1ac0258f1bee6fdc9",
+          "patch": "followups/38e1ac0258f1bee6fdc9/2/fix/candidate.patch",
+          "patch_sha256": "78ed2fc8b8fc73a8d758966725a154ef6a6eec3c9c583961464d3dd8858e7caa"
+        }
+      ],
+      "refutations": 2,
+      "report_sha256": "8566d87e0736d2af369151fc5a5ae994d6567262cbd6e52493f864c485204c76",
+      "bundle_sha256": "5e098fac6772bf25cde50ff38990fafe296653a9444022daea0a5c06045a8dd2",
+      "archive_sha256": "6a737ce2e8f95b75af13454b62b0360812f71696aa4fd2dcaaba43f096189316",
+      "validator": "NFV 4d40817 native followups.validate_artifact"
+    },
+    {
+      "run_id": 39532819562,
+      "comment_id": 6388020752,
+      "body_sha256": "d14e6e4244d244262ac96c3a5daa1d5a26d993d95c3646bede33a4644df0aeab",
+      "status": "complete",
+      "checked": [],
+      "refutations": 1,
+      "report_sha256": "ee84629690b9455f4771cf305ba504db95a0be148140ab86376813b2b29dd5a3",
+      "bundle_sha256": "6eddda6db4117dff687bf42a6c776b95c2f2fb93c372d1a4b1517303acb1b39a",
+      "archive_sha256": "c4310daf41b68c5ba7cd3872819c46ad45c59d13bfd1e5c0b187d4016d31c82c",
+      "validator": "NFV 4d40817 native followups.validate_artifact"
+    },
+    {
+      "run_id": 41140753055,
+      "comment_id": 6535926145,
+      "body_sha256": "794c6902fecd37d591a1931221b6e9f433f14563ec6a64b0b8804d44c5ed0a3b",
+      "status": "complete",
+      "checked": [],
+      "refutations": 1,
+      "report_sha256": "a274b416c6938ca01abce834192c607f62eb5c69ad153d1055c8f49a02625de8",
+      "bundle_sha256": "3b5e5609c518393da94bd10fec09a90586e93b40d3abaf58b962a8bd471c244d",
+      "archive_sha256": "a446ba37848b6906a37f63e24d0a4d796c4e8f82631c2f195a8d5a24bef1a60c",
+      "validator": "NFV 4d40817 native followups.validate_artifact"
+    },
+    {
+      "run_id": 41147612949,
+      "comment_id": 6536868150,
+      "body_sha256": "de90531c6cb044b60caa7f8ddfc837afe467ee52ab8b633ede28dba49afdbd36",
+      "status": "complete",
+      "checked": [
+        {
+          "finding_id": "44cc54b0008f895f15aa",
+          "patch": "followups/44cc54b0008f895f15aa/2/fix/candidate.patch",
+          "patch_sha256": "d08ae3edfba34110882804e021acacc78b551f1bcc1678c0283d2ca2b9b672ed"
+        }
+      ],
+      "refutations": 1,
+      "report_sha256": "52c8812efb0106ab2308116a252bf442fd814104e60dffe121596afd9859dfbe",
+      "bundle_sha256": "76f1d5c322a17d21717ba32b556f4234754dad3209f5408a0a4eefbae3d95318",
+      "archive_sha256": "e04f645dd42ce19386f05a5db5796487b1508b2956dcd32ebc86a9beaf3fb0d6",
+      "validator": "NFV 4d40817 native followups.validate_artifact"
+    },
+    {
+      "run_id": 41147623141,
+      "comment_id": 6536704761,
+      "body_sha256": "ffc5a102ac25044b14e2382288b80cc05dcf7e2429bd6be1b1618314e07e7a5c",
+      "status": "complete",
+      "checked": [],
+      "refutations": 1,
+      "report_sha256": "774b57217d5b23d2629354cd23fa245808dc5289ac7be27a38c5369093976aff",
+      "bundle_sha256": "38cbea23f5ae049d351f2eca9a4b9714a58dccdb645fa917f78a83410c72c3e6",
+      "archive_sha256": "9391919a561728d4eb10d71b02692e95e8a5b6140948c2d5f818dce20b3cbff6",
+      "validator": "NFV 4d40817 native followups.validate_artifact"
+    },
+    {
+      "run_id": 41147635725,
+      "comment_id": 6536937151,
+      "body_sha256": "12e31c1c3ce7a3bfd05c276fc2031245f25f99687f2941cbc5b29a7cc6efc506",
+      "status": "complete",
+      "checked": [],
+      "refutations": 2,
+      "report_sha256": "3c2cf490b097feddb53632910076b111f0eeaf0dbe04c7945557d1c7d1caa68c",
+      "bundle_sha256": "380826e39c6cc786b5d65387a71609fe46d57ef227b153d7a62563a7fa1d57ba",
+      "archive_sha256": "bbfff4ed023e2df896ed916497fb340dd20d547107dd7eb59012d9656594a33c",
+      "validator": "NFV 4d40817 native followups.validate_artifact"
+    },
+    {
+      "run_id": 41147646230,
+      "comment_id": 6536936167,
+      "body_sha256": "572b01af07fb2c9449bd4b08ff4b72b5ad6a92ab61f5bf787cf82f25c15d5880",
+      "status": "complete",
+      "checked": [
+        {
+          "finding_id": "50082805df7241feecc6",
+          "patch": "followups/50082805df7241feecc6/2/fix/candidate.patch",
+          "patch_sha256": "fe9d1121371d8959f0fa9ead9aea675c2f97c688a8263bb191175542c63a5116"
+        }
+      ],
+      "refutations": 1,
+      "report_sha256": "1e4f09cf8313ab02b7d7bc767fb108700b3e3414e8ce6a2ecfec96877f8b4981",
+      "bundle_sha256": "8755e76684dade1c3f90a0f2ea6174cd148c4c4d658caa7b1573bfbe240b0a8e",
+      "archive_sha256": "cb0c1d6694db8f2734197a3f395653377084c7645cae3acea2aa143b8fdbecc7",
+      "validator": "NFV 4d40817 native followups.validate_artifact"
+    },
+    {
+      "run_id": 41147667730,
+      "comment_id": 6536933264,
+      "body_sha256": "64b8dbd53366447be92378b6d980ec7ca56c758b155857d5ee1c7d3ae01de841",
+      "status": "complete",
+      "checked": [],
+      "refutations": 2,
+      "report_sha256": "1c4c770c3a5360c435802fec72d2c19ad446367678d5b83d2912dbe74bc75755",
+      "bundle_sha256": "f4e429322be571cd7ae5bf55d7c66b88816cb8e207f45f906ba79d4fe2aa5c03",
+      "archive_sha256": "06843fef0e94504e8bbdd9fb2979e9a2453873709fec815d877cf3baa9d0365a",
+      "validator": "NFV 4d40817 native followups.validate_artifact"
+    },
+    {
+      "run_id": 41154906208,
+      "comment_id": 6541591233,
+      "body_sha256": "e66bf44572dbcb43051985461c0145e15246a5d02c01436f402fc92fdf0197f0",
+      "status": "complete",
+      "checked": [
+        {
+          "finding_id": "df8602d41ab2a7520187",
+          "patch": "followups/df8602d41ab2a7520187/1/fix/candidate.patch",
+          "patch_sha256": "e21f541ce92de96c08e703861e39d5095002988bd2bb99cc121ea629eb4c3955"
+        }
+      ],
+      "refutations": 1,
+      "report_sha256": "3c4a1b44e53311a75b400de720103d797911d027f41906be6b975d741945f2bb",
+      "bundle_sha256": "42c9abd48860bf79cf12da1264e0cedabba5b38ff10e2d6d7712874fe1c50b4c",
+      "archive_sha256": "5e88b5af943f4aae40a9d5633ba3fe8eeea72cdee70e4b8df7b406e63fbba96c",
+      "validator": "NFV 4d40817 native followups.validate_artifact"
+    },
+    {
+      "run_id": 41154929189,
+      "comment_id": 6541601568,
+      "body_sha256": "efc1059395002091efce34593129e5c26024e217d25e59ed076e1b8fd3a7a4ce",
+      "status": "complete",
+      "checked": [],
+      "refutations": 1,
+      "report_sha256": "9e2b40d8adf164d2dc02aa9b94550e8d15d0b92a9d63d576b2b1976b911b0039",
+      "bundle_sha256": "882b844c6e559f4e47a0fe76ad4b68f7b8a28a6787c6f8d038e2f4b26da67444",
+      "archive_sha256": "7e327b0a46684f01a26c94aee427639be0b9cff5198488aa9973f0196fba7851",
+      "validator": "NFV 4d40817 native followups.validate_artifact"
+    },
+    {
+      "run_id": 41154961120,
+      "comment_id": 6541492877,
+      "body_sha256": "00d42563198f62906629c4fbfdaeef295cd0fe2b2388ddf95ed524656c17bccf",
+      "status": "complete",
+      "checked": [],
+      "refutations": 1,
+      "report_sha256": "cae0198a44402e017f8ca92a50ecab8d1f638f8963368b53d1b4f53e7be1e003",
+      "bundle_sha256": "5c7c177f4ec74ab52e54919b49f22605ce7f956bd4e0e900f776ae62ee28cfb6",
+      "archive_sha256": "e61d601ea2af70905c6d330bff7fcc68eba039e509cc16459c8a8148ccfc7ed3",
+      "validator": "NFV 4d40817 native followups.validate_artifact"
+    },
+    {
+      "run_id": 41188390312,
+      "comment_id": 6542115936,
+      "body_sha256": "1bd4773a932db68ef292cd5478e55763377ddf0fd43df5c006155792397308a5",
+      "status": "complete",
+      "checked": [],
+      "refutations": 1,
+      "report_sha256": "2cbb5a42fa9d67c7bd88825bd3f4a44e4a2083bd582e55b268a43843ac7bdc43",
+      "bundle_sha256": "90efee432511c89dfc4316ad85089c5379df1c897179c952234997fcf1f86881",
+      "archive_sha256": "a8cab9d7abb30836c824108a79bf155c71ddab924d5a82500150b0e209d023b0",
+      "validator": "NFV 4d40817 native followups.validate_artifact"
+    },
+    {
+      "run_id": 41193032502,
+      "comment_id": 6542854092,
+      "body_sha256": "350f84e34af05efa4ef65d766d6e450d3d85894719aec796dd7c8bde8898b6dd",
+      "status": "complete",
+      "checked": [
+        {
+          "finding_id": "26641acd898b27391c85",
+          "patch": "followups/26641acd898b27391c85/1/fix/candidate.patch",
+          "patch_sha256": "bf750df5d6640e99404cc7d3d52b7c218b0b922179219c08984187a2c6198e27"
+        }
+      ],
+      "refutations": 1,
+      "report_sha256": "01c9ceca3bf9e3191b15eb3be217b54e8123d5e9f5e39b390a4e9d7104e630e0",
+      "bundle_sha256": "0f60150325669855a0517e6f6fd70e77643bbb1b46491f826a541fba41224198",
+      "archive_sha256": "cab8e585b7cd98fe1870281f6f619e26e57af754905f9948aa0c76e660f3b2d1",
+      "validator": "NFV 4d40817 native followups.validate_artifact"
+    },
+    {
+      "run_id": 41193041602,
+      "comment_id": 6542883127,
+      "body_sha256": "1d25d5fc797bddeac97035927052cda31672c6f54845a4ec4969d0b3324f9b2e",
+      "status": "complete",
+      "checked": [
+        {
+          "finding_id": "e959b3ba89a667edc3a1",
+          "patch": "followups/e959b3ba89a667edc3a1/1/fix/candidate.patch",
+          "patch_sha256": "1d2751aa1a8023d0e8c4856a8483bd571f8abe85d1e2af179049cb94b8383574"
+        }
+      ],
+      "refutations": 1,
+      "report_sha256": "a582991e675feff729b541acbf446cd8960346e9ac5eefe8dc175349a91fd69c",
+      "bundle_sha256": "dc7a988e2255ac0f3a3f780dfccaef865f0ad246241d30170dd7a64b03087b90",
+      "archive_sha256": "77a2c4807ad4a3fd9d7fc8fdd4297391d1cef901351bbfd97366320c8d1f8f3d",
+      "validator": "NFV 4d40817 native followups.validate_artifact"
+    }
+  ]
+}

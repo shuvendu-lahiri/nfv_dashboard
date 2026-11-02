@@ -41,6 +41,55 @@ def run(number=2, run_id=100, conclusion="success"):
 
 
 class RefreshTests(unittest.TestCase):
+    def fix_evidence(self, report, checked=True):
+        return {
+            "schema": 1, "repository": refresh.REPOSITORY, "reports": [{
+                "run_id": report["run_id"], "comment_id": report["comment_id"],
+                "body_sha256": report["body_sha256"], "status": "complete", "refutations": 1,
+                "checked": [{"finding_id": "finding", "patch_sha256": "a" * 64,
+                             "patch": "followups/finding/1/fix/candidate.patch"}] if checked else [],
+            }],
+        }
+
+    def test_checked_fix_counts_are_bound_to_latest_published_report(self):
+        data = refresh.build([pr()], [comment()], [run()], "snapshot")
+        evidence = self.fix_evidence(data["prs"][0]["latest_report"])
+        refresh.apply_fix_evidence(data, evidence)
+        self.assertEqual(1, data["summary"]["checked_fixes"])
+        self.assertEqual(0, data["summary"]["fix_unknown"])
+        self.assertEqual(1, data["summary"]["checked_fix_prs"])
+        self.assertIn("1 / 1 refutations with a verified fix", refresh.render_html(data))
+        self.assertIn("| Verified fixes |", refresh.render_markdown(data))
+        combined = refresh.hub([data])
+        self.assertEqual(1, combined["summary"]["checked_fixes"])
+        self.assertIn("1 / 1 refutations with a verified fix", refresh.render_html(combined, "hub.html"))
+        newer = refresh.build([pr()], [comment(), comment(comment_id=201)], [run()], "snapshot",
+                              fixes=evidence)
+        self.assertEqual(0, newer["summary"]["checked_fixes"])
+        self.assertEqual(1, newer["summary"]["fix_unknown"])
+
+    def test_missing_fix_evidence_is_unknown_not_zero(self):
+        data = refresh.build([pr()], [comment()], [run()], "snapshot")
+        self.assertEqual(1, data["summary"]["fix_unknown"])
+        evidence = self.fix_evidence(data["prs"][0]["latest_report"], checked=False)
+        refresh.apply_fix_evidence(data, evidence)
+        self.assertEqual(0, data["summary"]["checked_fixes"])
+        self.assertEqual(0, data["summary"]["fix_unknown"])
+        evidence["reports"][0]["body_sha256"] = "b" * 64
+        refresh.apply_fix_evidence(data, evidence)
+        self.assertEqual(1, data["summary"]["fix_unknown"])
+
+    def test_invalid_checked_fix_evidence_fails_explicitly(self):
+        data = refresh.build([pr()], [comment()], [run()], "snapshot")
+        evidence = self.fix_evidence(data["prs"][0]["latest_report"])
+        evidence["reports"][0]["checked"] *= 2
+        with self.assertRaisesRegex(ValueError, "checked-fix"):
+            refresh.apply_fix_evidence(data, evidence)
+        evidence = self.fix_evidence(data["prs"][0]["latest_report"])
+        evidence["reports"][0]["checked"][0]["patch_sha256"] = "wrong"
+        with self.assertRaisesRegex(ValueError, "checked-fix"):
+            refresh.apply_fix_evidence(data, evidence)
+
     def campaign(self):
         return {
             "repository": refresh.REPOSITORY, "status": "paused", "planned_prs": 100,

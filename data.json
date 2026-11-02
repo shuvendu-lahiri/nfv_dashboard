@@ -8,6 +8,9 @@
     "without_report": 72,
     "refuted_prs": 45,
     "properties": 1598,
+    "checked_fixes": 24,
+    "fix_unknown": 0,
+    "checked_fix_prs": 23,
     "outcomes": {
       "refuted": 55,
       "verified": 944,
@@ -34,7 +37,10 @@
           "verified": 90,
           "resources exhausted": 34,
           "type-check/audit failure": 30
-        }
+        },
+        "checked_fixes": 3,
+        "fix_unknown": 0,
+        "checked_fix_prs": 3
       }
     },
     {
@@ -55,7 +61,10 @@
           "verified": 516,
           "resources exhausted": 75,
           "type-check/audit failure": 101
-        }
+        },
+        "checked_fixes": 11,
+        "fix_unknown": 0,
+        "checked_fix_prs": 10
       }
     },
     {
@@ -76,7 +85,10 @@
           "verified": 201,
           "resources exhausted": 18,
           "type-check/audit failure": 55
-        }
+        },
+        "checked_fixes": 6,
+        "fix_unknown": 0,
+        "checked_fix_prs": 6
       }
     },
     {
@@ -97,7 +109,10 @@
           "verified": 49,
           "resources exhausted": 7,
           "type-check/audit failure": 13
-        }
+        },
+        "checked_fixes": 2,
+        "fix_unknown": 0,
+        "checked_fix_prs": 2
       },
       "campaign": {
         "repository": "shuvendu-lahiri/gh-aw",
@@ -129,7 +144,10 @@
           "verified": 88,
           "resources exhausted": 244,
           "type-check/audit failure": 22
-        }
+        },
+        "checked_fixes": 2,
+        "fix_unknown": 0,
+        "checked_fix_prs": 2
       }
     }
   ]

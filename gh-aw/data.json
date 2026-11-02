@@ -17,7 +17,10 @@
       "verified": 49,
       "resources exhausted": 7,
       "type-check/audit failure": 13
-    }
+    },
+    "checked_fixes": 2,
+    "fix_unknown": 0,
+    "checked_fix_prs": 2
   },
   "prs": [
     {
@@ -44,7 +47,10 @@
           "type-check/audit failure": 0
         },
         "properties": 4,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -126,7 +132,10 @@
           "type-check/audit failure": 3
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -186,7 +195,10 @@
           "type-check/audit failure": 2
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -290,7 +302,10 @@
           "type-check/audit failure": 1
         },
         "properties": 1,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -350,7 +365,10 @@
           "type-check/audit failure": 1
         },
         "properties": 1,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -432,7 +450,10 @@
           "type-check/audit failure": 1
         },
         "properties": 5,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -514,7 +535,10 @@
           "type-check/audit failure": 0
         },
         "properties": 7,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -580,6 +604,15 @@
             "property": "A nonempty result is beneath the per-user update-check directory.",
             "input": "`cacheDir = [47, 99]`; `fileName = [120]`; `info.IsDir() = true`; `info.Mode().Perm() = 0`; `filepath.Join(stateDir, fileName) = [1]`; `filepath.Join(cacheDir, \"gh-aw-update-check\") = [47, 99, 47, 103]`; `err != nil = false`; `err != nil = false`; `err != nil = false`; `os.IsExist(err) = false`; `err != nil = false`; abstract state: abstract classification of whether the runtime operating system is Windows = `false`; abstract containment of the returned path beneath the per-user gh-aw-update-check directory = `false`",
             "sketch": "If the directory-creation and inspection checks pass but filepath.Join(stateDir, fileName) yields a nonempty path outside the per-user gh-aw-update-check directory, the function returns that path. Under this conditional scenario, the returned path violates the stated containment property."
+          }
+        ],
+        "checked_fixes": 1,
+        "fix_unknown": 0,
+        "checked_fix_findings": [
+          {
+            "finding_id": "f693a04403979249f2b9",
+            "patch": "followups/f693a04403979249f2b9/1/fix/candidate.patch",
+            "patch_sha256": "2d63ba6840bfafd6253ea0b8ad01ad89257cc9d8baa504351ea5f890c0cc2baa"
           }
         ]
       },
@@ -648,7 +681,10 @@
           "type-check/audit failure": 1
         },
         "properties": 4,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -708,7 +744,10 @@
           "type-check/audit failure": 0
         },
         "properties": 3,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -790,7 +829,10 @@
           "type-check/audit failure": 0
         },
         "properties": 6,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -872,7 +914,10 @@
           "type-check/audit failure": 3
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1070,6 +1115,15 @@
             "property": "`--gh-aw-ref` selects release action mode.",
             "input": "abstract state: compile result when --action-mode and --action-tag are used = `[]`; action mode selected by --action-mode release = `[114, 101, 108, 101, 97, 115, 101]`; action tag selected by --action-tag main = `[109, 97, 105, 110]`; compile result when --gh-aw-ref is used = `[]`; action mode selected when --gh-aw-ref is used = `[]`; action tag selected when --gh-aw-ref is used = `[109, 97, 105, 110]`; value supplied as (ref) to --gh-aw-ref = `[109, 97, 105, 110]`",
             "sketch": "If `main` is retained as the tag but the selected mode is empty rather than `release`, then `compileCmd.Flags().String(\"gh-aw-ref\", \"\", \"Compile workflows to reference github/gh-aw at the given branch, tag, or SHA (e.g. main, my-feature, abc123). Convenience alias for --action-mode release --action-tag <ref>. Use this to E2E-test workflows compiled by an external repo against a specific gh-aw revision.\")` does not establish the documented equivalence."
+          }
+        ],
+        "checked_fixes": 1,
+        "fix_unknown": 0,
+        "checked_fix_findings": [
+          {
+            "finding_id": "99d2b6eaea1cc99cde4b",
+            "patch": "followups/99d2b6eaea1cc99cde4b/1/fix/candidate.patch",
+            "patch_sha256": "a7c4ec4720d7f0e891f6e9bf8bc7b7a78f553348ab538331dcf93d3a7bb9b27e"
           }
         ]
       },

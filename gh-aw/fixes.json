@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "repository": "shuvendu-lahiri/gh-aw",
+  "reports": [
+    {
+      "run_id": 41413333428,
+      "comment_id": 6573420369,
+      "body_sha256": "2e3f93e67aff48f62711382892c8b5563ff192eae21c5f768298c928d4a3ec47",
+      "status": "complete",
+      "checked": [
+        {
+          "finding_id": "f693a04403979249f2b9",
+          "patch": "followups/f693a04403979249f2b9/1/fix/candidate.patch",
+          "patch_sha256": "2d63ba6840bfafd6253ea0b8ad01ad89257cc9d8baa504351ea5f890c0cc2baa"
+        }
+      ],
+      "refutations": 1,
+      "report_sha256": "25268eef68a422615a7a13f636a56b8e2c32b48d8ebc7b8ac89c5ddd4bcb037f",
+      "bundle_sha256": "e8b24e3b7c6a0a9acdbfaa47fa824a323c5762eb96c3cc253b164227699a2b4d",
+      "archive_sha256": "6ffa9d1568d50acb2f63fcf9d46aa2883c33b36732f4e43b67acf19b27642b45",
+      "validator": "NFV 4d40817 native followups.validate_artifact"
+    },
+    {
+      "run_id": 41419957239,
+      "comment_id": 6574011081,
+      "body_sha256": "3188a12d0f78100a9d3fc6626bd1fe9d9b9460865b6d64cdaad136ba367e6f8e",
+      "status": "complete",
+      "checked": [
+        {
+          "finding_id": "99d2b6eaea1cc99cde4b",
+          "patch": "followups/99d2b6eaea1cc99cde4b/1/fix/candidate.patch",
+          "patch_sha256": "a7c4ec4720d7f0e891f6e9bf8bc7b7a78f553348ab538331dcf93d3a7bb9b27e"
+        }
+      ],
+      "refutations": 1,
+      "report_sha256": "85b1da69fbcfea69407f3ffca4ad5188bbe6e740ca39d373cadae9f302bb0211",
+      "bundle_sha256": "5c3bedb54602bff2c3b48c12bab6c8f15fd45b121790215ac8c1719940f944a3",
+      "archive_sha256": "7e29d17bfbb614705533dfb44b7ae334ecd0defc9e53a5533af64f21f91e50e4",
+      "validator": "NFV 4d40817 native followups.validate_artifact"
+    }
+  ]
+}

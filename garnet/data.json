@@ -17,7 +17,10 @@
       "verified": 88,
       "resources exhausted": 244,
       "type-check/audit failure": 22
-    }
+    },
+    "checked_fixes": 2,
+    "fix_unknown": 0,
+    "checked_fix_prs": 2
   },
   "prs": [
     {
@@ -44,7 +47,10 @@
           "type-check/audit failure": 0
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -104,7 +110,10 @@
           "type-check/audit failure": 4
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -164,7 +173,10 @@
           "type-check/audit failure": 0
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -224,7 +236,10 @@
           "type-check/audit failure": 0
         },
         "properties": 2,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -284,7 +299,10 @@
           "type-check/audit failure": 0
         },
         "properties": 1,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -344,7 +362,10 @@
           "type-check/audit failure": 0
         },
         "properties": 2,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -404,7 +425,10 @@
           "type-check/audit failure": 0
         },
         "properties": 7,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -464,7 +488,10 @@
           "type-check/audit failure": 0
         },
         "properties": 6,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -524,7 +551,10 @@
           "type-check/audit failure": 0
         },
         "properties": 6,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -606,7 +636,10 @@
           "type-check/audit failure": 0
         },
         "properties": 8,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -666,7 +699,10 @@
           "type-check/audit failure": 0
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -726,7 +762,10 @@
           "type-check/audit failure": 0
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -786,7 +825,10 @@
           "type-check/audit failure": 0
         },
         "properties": 3,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -846,7 +888,10 @@
           "type-check/audit failure": 0
         },
         "properties": 5,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -928,7 +973,10 @@
           "type-check/audit failure": 1
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -988,7 +1036,10 @@
           "type-check/audit failure": 0
         },
         "properties": 7,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1048,7 +1099,10 @@
           "type-check/audit failure": 1
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1108,7 +1162,10 @@
           "type-check/audit failure": 0
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1175,7 +1232,10 @@
             "input": "`AbortWithWrongNumberOfArguments(\"client|help\") = true`; `parseState.Count = 1`",
             "sketch": "If parseState.Count is 1 and AbortWithWrongNumberOfArguments(\"client|help\") returns true, the nonzero-argument branch returns true without calling WriteHelp."
           }
-        ]
+        ],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1242,7 +1302,10 @@
           "type-check/audit failure": 0
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1324,7 +1387,10 @@
           "type-check/audit failure": 0
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1391,7 +1457,10 @@
             "input": "abstract state: logger is null = `false`; startTask completes with a non-timeout exception = `2`",
             "sketch": "If startTask completes with a non-timeout exception while logger is null, logger?.LogError(ex, \"Error calling Start on network handler\") is skipped before the handler is disposed."
           }
-        ]
+        ],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1458,7 +1527,10 @@
           "type-check/audit failure": 2
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1518,7 +1590,10 @@
           "type-check/audit failure": 3
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1578,7 +1653,10 @@
           "type-check/audit failure": 1
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1660,7 +1738,10 @@
           "type-check/audit failure": 0
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1720,7 +1801,10 @@
           "type-check/audit failure": 1
         },
         "properties": 9,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1780,7 +1864,10 @@
           "type-check/audit failure": 0
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1846,6 +1933,15 @@
             "property": "Success exactly indicates that the mathematical reservation fits the budget.",
             "input": "`budgetBytes = 9223372036854775807`; `bytes = 1`; `usedBytes = 9223372036854775807`",
             "sketch": "If usedBytes and budgetBytes are both 9223372036854775807 and bytes is 1, the signed addition assigning next can wrap to a negative value. In that conditional scenario, next > budgetBytes is false, so the budget rejection is skipped and the compare-exchange can install the wrapped value before the method returns true."
+          }
+        ],
+        "checked_fixes": 1,
+        "fix_unknown": 0,
+        "checked_fix_findings": [
+          {
+            "finding_id": "b9a35931dd5226cea1ff",
+            "patch": "followups/b9a35931dd5226cea1ff/1/fix/candidate.patch",
+            "patch_sha256": "0d8b74f0612c92db35d0bbde25924340bbe5bfc501de11194d61398d2aba1370"
           }
         ]
       },
@@ -1936,7 +2032,10 @@
           "type-check/audit failure": 0
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1996,7 +2095,10 @@
           "type-check/audit failure": 0
         },
         "properties": 9,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2056,7 +2158,10 @@
           "type-check/audit failure": 1
         },
         "properties": 6,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2138,7 +2243,10 @@
           "type-check/audit failure": 0
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2198,7 +2306,10 @@
           "type-check/audit failure": 3
         },
         "properties": 7,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2265,7 +2376,10 @@
             "input": "`dbId = 0`; abstract state: expiration count supplied by the DefaultDatabase statistics request = `0`; key count supplied by the DefaultDatabase statistics request = `0`; whether the DefaultDatabase statistics request throws = `true`",
             "sketch": "If dbId is zero but GetDatabaseKeyspaceStats(DefaultDatabase) throws, the request is made but no tuple is returned normally."
           }
-        ]
+        ],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2332,7 +2446,10 @@
           "type-check/audit failure": 0
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2392,7 +2509,10 @@
           "type-check/audit failure": 1
         },
         "properties": 9,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2452,7 +2572,10 @@
           "type-check/audit failure": 0
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2512,7 +2635,10 @@
           "type-check/audit failure": 0
         },
         "properties": 5,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2572,7 +2698,10 @@
           "type-check/audit failure": 0
         },
         "properties": 9,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2644,6 +2773,15 @@
             "property": "For each key passed to ReadValueOrPending, the helper uses the immediate read status and output when the read is not pending; when it is pending, it waits for completion and replaces both with the single completed result. It then requires the selected status to be Found and returns the corresponding selected output.",
             "input": "abstract state: Found fields from the single completed pending results = `[true, true]`; output values from the single completed pending results = `[1, 1]`; Found fields returned by the immediate Read calls = `[false, true]`; output values produced by the immediate Read calls = `[0, 0]`; per-element results of `st.IsPending = [false, false]`; keys supplied to the two ReadValueOrPending calls = `[0, 1]`",
             "sketch": "If the first bContext.Read(k, ref output) produces st.IsPending as false and st.Found as false, the completion branch is skipped and st.Found remains false at the assertion."
+          }
+        ],
+        "checked_fixes": 1,
+        "fix_unknown": 0,
+        "checked_fix_findings": [
+          {
+            "finding_id": "2efc0f36e591535605e3",
+            "patch": "followups/2efc0f36e591535605e3/1/fix/candidate.patch",
+            "patch_sha256": "e437b6d8f74e7593f2e2a3b7588ea2fd348834c15e7ee16e25d585b871e615a3"
           }
         ]
       },
@@ -3048,7 +3186,10 @@
           "type-check/audit failure": 0
         },
         "properties": 4,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -3372,7 +3513,10 @@
           "type-check/audit failure": 1
         },
         "properties": 8,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -3432,7 +3576,10 @@
           "type-check/audit failure": 0
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {

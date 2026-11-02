@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "repository": "shuvendu-lahiri/z3",
+  "reports": [
+    {
+      "run_id": 39011193107,
+      "comment_id": 6383789499,
+      "body_sha256": "a07cf2551e98d6263c2e1b389b44cf9b2ddac1f22a530d5896d06d233654bc1c",
+      "status": "complete",
+      "checked": [
+        {
+          "finding_id": "320523b7ffda9ea7d359",
+          "patch": "followups/320523b7ffda9ea7d359/2/fix/candidate.patch",
+          "patch_sha256": "8b8c8f4149d9f18dbcd1ad0c5f72e8e3a1e662e2415c2ca8be7e88967153eec7"
+        }
+      ],
+      "refutations": 1,
+      "report_sha256": "cfc5854d3ca91efed170f9e33b43e3c42d8463d6eab67a033ee076f15c81b09e",
+      "bundle_sha256": "adcd4efa9f20a8a2316f4bbbffbaac66dba93ce17b1148a4f5abdd9073f78438",
+      "archive_sha256": "ecc5f1575b4bf848cffa9de6fc8c3a944ee174d0761b18f429ebbff4f0121b83",
+      "validator": "NFV 4d40817 native followups.validate_artifact"
+    },
+    {
+      "run_id": 39012427142,
+      "comment_id": 6388194175,
+      "body_sha256": "20fb4763c7131fe317285575119a884992f48e48e28d105128d2d5b9f240c8a2",
+      "status": "complete",
+      "checked": [
+        {
+          "finding_id": "ae771fc95aa3e13cce19",
+          "patch": "followups/ae771fc95aa3e13cce19/2/fix/candidate.patch",
+          "patch_sha256": "04c81c2c3173162a831c942afdf896a0cf9ed83466d417d82c80e6f93afd235e"
+        }
+      ],
+      "refutations": 1,
+      "report_sha256": "a088d5be66b368c6654be7d058820a84d223b61b8e61ff6f75db789af562d4be",
+      "bundle_sha256": "67147f9fc04e83087af1745788aab9158be4b5cf106ff2ff4ae0adc5fc6c0f14",
+      "archive_sha256": "5157991802003f440620c1d3ae08e143ac1508c346f723cab6d6776047d031b2",
+      "validator": "NFV 4d40817 native followups.validate_artifact"
+    },
+    {
+      "run_id": 39532863673,
+      "comment_id": 6385766326,
+      "body_sha256": "3f05bbafb1d45cd76bc9d9906a456d441247173d8bad337bd037dbe79cafc106",
+      "status": "complete",
+      "checked": [],
+      "refutations": 1,
+      "report_sha256": "1e7e3f2616ceee7d936c2026c9b0df45372b028a5efff60d133121349b819118",
+      "bundle_sha256": "edabddf4e4e1b08cf117e01b16b8c56c960733552f03f4f30edf1da2ac9df448",
+      "archive_sha256": "6e9041217df78627626f7016fedee6dbdc39e61e34483389f6a6e154b2995197",
+      "validator": "NFV 4d40817 native followups.validate_artifact"
+    },
+    {
+      "run_id": 39532858434,
+      "comment_id": 6385751609,
+      "body_sha256": "e45d2cb3f0c105aae3fb3000f136801cd72a409e946bc0f8eb3087ff0525b9b5",
+      "status": "complete",
+      "checked": [
+        {
+          "finding_id": "a09d1bcc5d128e3a211b",
+          "patch": "followups/a09d1bcc5d128e3a211b/1/fix/candidate.patch",
+          "patch_sha256": "f81ee1673b0d377ed20a5b0d69030ab0964d91391d09b90285b70c3328bbf023"
+        }
+      ],
+      "refutations": 1,
+      "report_sha256": "b2c3282472e7c84d4c5864ee282c5dbc068d061c41b18126f899ff64196a3bad",
+      "bundle_sha256": "bc44c9fdaea893844b69d782da257bc7d7b741d889eb822e9e31c55f287aa57d",
+      "archive_sha256": "2fc765c1cbf59135331733a36f8fce79c3c5ac7e66c9152989c44804fb0951a3",
+      "validator": "NFV 4d40817 native followups.validate_artifact"
+    },
+    {
+      "run_id": 39532855682,
+      "comment_id": 6386071462,
+      "body_sha256": "b44bfe0d8419e7731c56cbcebd0d8685a05c4aa757bd926cdf0a6a03dcfd6bcd",
+      "status": "complete",
+      "checked": [],
+      "refutations": 1,
+      "report_sha256": "b4cdc9eb994104e297e3da1e568964fc4472ed50373f24e03d8916915a66ae55",
+      "bundle_sha256": "15b78906b3a3ebae4a8c0ce8429ca2700b1fc40282daae5f6b9a8e7353c8c2a1",
+      "archive_sha256": "f47d9ca299c7488f782809ae0af6940388484ff574d52ed9013e8e76558a1853",
+      "validator": "NFV 4d40817 native followups.validate_artifact"
+    }
+  ]
+}

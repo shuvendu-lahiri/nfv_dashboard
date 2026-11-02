@@ -17,7 +17,10 @@
       "verified": 201,
       "resources exhausted": 18,
       "type-check/audit failure": 55
-    }
+    },
+    "checked_fixes": 6,
+    "fix_unknown": 0,
+    "checked_fix_prs": 6
   },
   "prs": [
     {
@@ -44,7 +47,10 @@
           "type-check/audit failure": 0
         },
         "properties": 8,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -130,7 +136,10 @@
           "type-check/audit failure": 0
         },
         "properties": 1,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -228,7 +237,10 @@
           "type-check/audit failure": 0
         },
         "properties": 1,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -326,7 +338,10 @@
           "type-check/audit failure": 0
         },
         "properties": 1,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -424,7 +439,10 @@
           "type-check/audit failure": 1
         },
         "properties": 5,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -541,7 +559,10 @@
           "type-check/audit failure": 0
         },
         "properties": 5,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -639,7 +660,10 @@
           "type-check/audit failure": 0
         },
         "properties": 3,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -756,7 +780,10 @@
           "type-check/audit failure": 0
         },
         "properties": 2,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -835,7 +862,10 @@
           "type-check/audit failure": 0
         },
         "properties": 1,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -933,7 +963,10 @@
           "type-check/audit failure": 0
         },
         "properties": 1,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1031,7 +1064,10 @@
           "type-check/audit failure": 2
         },
         "properties": 7,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1136,7 +1172,10 @@
           "type-check/audit failure": 3
         },
         "properties": 8,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1248,7 +1287,10 @@
             "input": "`DEFAULT_MEASURE_MS = 1`; abstract state: accepted clock option kinds = `[]`; accepted clock option values = `[]`; completion of the TSC-rate measurement call = `false`; completion of the diagnostic work before measurement = `true`",
             "sketch": "If measure_ms is positive but measure_tsc_hz(Duration::from_millis(measure_ms)) does not return, the measurement call occurs but evaluation never reaches the attempted write of the tsc_hz_measured line."
           }
-        ]
+        ],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1366,7 +1408,10 @@
           "type-check/audit failure": 1
         },
         "properties": 7,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1483,7 +1528,10 @@
           "type-check/audit failure": 0
         },
         "properties": 1,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1581,7 +1629,10 @@
           "type-check/audit failure": 2
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1700,7 +1751,10 @@
             "input": "`expected.0 = []`; `expected.1 = 0`; `assert_eq!(run(&cuts), expected, \"one byte at a time\") = false`; `stream.len() = 0`; abstract state: per-element results of `assert_eq!(run(&[cut]), expected, \"split at {cut}\") = [false]`",
             "sketch": "If expected.0 is empty, assert_eq!(expected.0.len(), 5) fails because its length is zero."
           }
-        ]
+        ],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1812,7 +1866,10 @@
           "type-check/audit failure": 2
         },
         "properties": 4,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1910,7 +1967,10 @@
           "type-check/audit failure": 3
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2027,6 +2087,15 @@
             "property": "Without a polling exception, close attempts the process wait.",
             "input": "`self._closed = false`; `self._process.poll() is None = true`; `self._reader.is_alive() = false`; abstract state: reader join raises = `false`; process polling exception outcome = `false`; shutdown request raises OSError or ScriptError = `true`; shutdown request raises another exception = `false`; stderr stream close raises OSError = `false`; stdin stream close raises OSError = `false`; termination after the failed shutdown request raises = `true`; termination after a wait timeout raises = `false`; five-second process wait raises another exception = `false`; five-second process wait timeout outcome = `false`",
             "sketch": "If the shutdown request raises a handled exception and the ensuing _terminate call also raises, the outer handler is entered before self._process.wait(timeout=5.0), so that wait is skipped."
+          }
+        ],
+        "checked_fixes": 1,
+        "fix_unknown": 0,
+        "checked_fix_findings": [
+          {
+            "finding_id": "293cd7f5eeefd401b711",
+            "patch": "followups/293cd7f5eeefd401b711/1/fix/candidate.patch",
+            "patch_sha256": "f000d09e27b65cc5088be9a7f69bb14daa51b62057b46fb815cc00a2dafc1fbe"
           }
         ]
       },
@@ -2153,7 +2222,10 @@
           "type-check/audit failure": 2
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2239,7 +2311,10 @@
           "type-check/audit failure": 4
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2340,7 +2415,10 @@
           "type-check/audit failure": 0
         },
         "properties": 2,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2441,7 +2519,10 @@
           "type-check/audit failure": 1
         },
         "properties": 4,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2520,7 +2601,10 @@
           "type-check/audit failure": 0
         },
         "properties": 7,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2580,7 +2664,10 @@
           "type-check/audit failure": 0
         },
         "properties": 3,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2659,7 +2746,10 @@
           "type-check/audit failure": 0
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2760,7 +2850,10 @@
           "type-check/audit failure": 1
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2820,7 +2913,10 @@
           "type-check/audit failure": 4
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2880,7 +2976,10 @@
           "type-check/audit failure": 3
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2959,7 +3058,10 @@
           "type-check/audit failure": 2
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -3044,6 +3146,15 @@
             "property": "Encoding a clone produces exactly 17 bytes.",
             "input": "`transaction.as_bytes() = []`; abstract state: whether self.transaction is Some = `true`; the stored bytes of transaction = `[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]`",
             "sketch": "If transaction.as_bytes() is empty for a present 16-byte transaction ID, encode appends the clone marker but none of the transaction bytes, so the returned encoding has length 1 instead of 17."
+          }
+        ],
+        "checked_fixes": 1,
+        "fix_unknown": 0,
+        "checked_fix_findings": [
+          {
+            "finding_id": "fab20ff7bc0655fbe5b4",
+            "patch": "followups/fab20ff7bc0655fbe5b4/1/fix/candidate.patch",
+            "patch_sha256": "e4bf64422e9d94722e9d8aa7c45dbdff8d8d04714d4d44b1281f74becf20d5f6"
           }
         ]
       },
@@ -3144,6 +3255,15 @@
             "input": "`code = 1`; abstract state: ordered codes in the macro-generated match arms = `[1, 1]`",
             "sketch": "If the abstract macro-generated declarations contain two `$code => Some($choice)` arms with code 1, `match code` selects the first matching arm. The function then cannot return the corresponding choice for both declarations, conditionally refuting the claimed exact correspondence."
           }
+        ],
+        "checked_fixes": 1,
+        "fix_unknown": 0,
+        "checked_fix_findings": [
+          {
+            "finding_id": "3436f66b25e2067cae73",
+            "patch": "followups/3436f66b25e2067cae73/1/fix/candidate.patch",
+            "patch_sha256": "caa5f12349b914ab4d738d5fa13cd59eaf776561ca3c11667f0c7d05aa965a1c"
+          }
         ]
       },
       "report_history": [
@@ -3217,7 +3337,10 @@
           "type-check/audit failure": 2
         },
         "properties": 7,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -3296,7 +3419,10 @@
           "type-check/audit failure": 2
         },
         "properties": 8,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -3362,6 +3488,15 @@
             "property": "A configured cgroup receives a kill attempt.",
             "input": "`process = 1`; `options.process_group = false`; `unreaped = false`; abstract state: whether options.cgroup is configured = `true`; panic from the configured cgroup kill = `false`; result of the configured cgroup kill = `false`; panic while dropping descriptors = `true`; result of sys::kill_process_group(process) = `false`; result of sys::kill_process(process) = `false`",
             "sketch": "If dropping descriptors panics while a cgroup is configured, control unwinds before `cgroup.kill(*scope)`, so the configured cgroup kill is not attempted."
+          }
+        ],
+        "checked_fixes": 1,
+        "fix_unknown": 0,
+        "checked_fix_findings": [
+          {
+            "finding_id": "bb6f70ddef29d89a95e4",
+            "patch": "followups/bb6f70ddef29d89a95e4/1/fix/candidate.patch",
+            "patch_sha256": "94931cf531e1c42f8b2cab8718d006259b2a1dab764b678ec571812f80df2c7b"
           }
         ]
       },
@@ -3456,6 +3591,15 @@
             "input": "`format.is_some_and(|format| equals_int(document, format, expected)) = true`; `shares.any = false`; `shares.exported = false`; `plan.is_some() = false`; abstract state: whether `deserialize_export` reports malformed configuration = `false`; per-element results of `matches!(document.node(layer), Node::Object(_)) = []`; identities of values yielded while iterating `layers` = `[]`; kind of the value stored under `layers` = `1`; presence of the `layers` member = `true`; result of constructing the sandbox launch = `0`; per-layer success of reading textual `path` = `[]`; result of the identity, scratch, hostname, and limit reads = `0`; per-layer recognition of the layer role = `[]`; per-layer success of reading textual `role` = `[]`; per-layer success of reading textual `uuid` = `[]`; success of final launch validation = `true`; success of attaching the export plan = `true`",
             "sketch": "If `layers` is an empty object, `iterate(document, layers_value)?` returns no items; the layer checks are skipped and the remaining valid configuration can be accepted."
           }
+        ],
+        "checked_fixes": 1,
+        "fix_unknown": 0,
+        "checked_fix_findings": [
+          {
+            "finding_id": "4f3de7703fa63d3a0906",
+            "patch": "followups/4f3de7703fa63d3a0906/1/fix/candidate.patch",
+            "patch_sha256": "aefd590c046283ade2a39e1df9784050f4928f657fd86819f349beb1bfa88ae9"
+          }
         ]
       },
       "report_history": [
@@ -3523,7 +3667,10 @@
           "type-check/audit failure": 2
         },
         "properties": 2,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -3612,7 +3759,10 @@
             "input": "`self.available = 0`; `length = 0`; abstract state: whether the window counts bytes rather than frames = `false`",
             "sketch": "If the window counts frames and both self.available and length are zero, sendable returns the complete requested length of zero, but self.window.cost(length) returns one and the subtraction underflows."
           }
-        ]
+        ],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -3679,7 +3829,10 @@
           "type-check/audit failure": 4
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -3758,7 +3911,10 @@
             "input": "abstract state: arguments[8..] for the read-only directory share = `[]`; arguments[8..] for the read-write directory share = `[1, 3]`; arguments[8..] for the read-only file share = `[4, 5, 6, 7]`; arguments[8..] for the read-write file share = `[4, 5, 6, 8]`; per-element results of `.ends_with(\" nvx_maps=1\") = [true, true, true, true]`; per-element results of `command_line.contains(\"nvx_share=\") = [false, false, false, false]`; per-element results of `command_line.ends_with(&format!(\" nvx_share={name},/workspace,{mode},file\")) = [false, true, false, true]`; success of export attachment and planning operations for the four access-and-kind cases = `[true, true, true, true]`",
             "sketch": "If the read-only directory case yields an empty `&arguments[8..]`, it cannot equal the required direct-mount argument pair."
           }
-        ]
+        ],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -3837,7 +3993,10 @@
           "type-check/audit failure": 0
         },
         "properties": 4,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -3903,6 +4062,15 @@
             "property": "The child terminates with launch-failure status 125.",
             "input": "`error = 0`; `LAUNCH_FAILURE_STATUS = 0`; `stage.code() = 0`; abstract state: whether the launch report has a reader = `false`; native byte order = `true`; SIGPIPE mask syscall result = `-1`; launch-report write outcome = `false`",
             "sketch": "If `LAUNCH_FAILURE_STATUS` is 0, `nix::libc::_exit(LAUNCH_FAILURE_STATUS)` terminates the child with status 0 after the failed mask and report operations, rather than with status 125."
+          }
+        ],
+        "checked_fixes": 1,
+        "fix_unknown": 0,
+        "checked_fix_findings": [
+          {
+            "finding_id": "3f7789b067dbc519b301",
+            "patch": "followups/3f7789b067dbc519b301/2/fix/candidate.patch",
+            "patch_sha256": "8e06f4da887ed191270480643208a851b5947277776d71eb435640fc16a36a44"
           }
         ]
       },
@@ -3971,7 +4139,10 @@
           "type-check/audit failure": 2
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -4031,7 +4202,10 @@
           "type-check/audit failure": 0
         },
         "properties": 4,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {

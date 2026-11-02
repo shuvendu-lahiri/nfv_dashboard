@@ -32,6 +32,14 @@ of properties verified, refuted, rejected by type-check/audit, or exhausted.
 Percentages use the latest published property outcomes, exclude unknown
 unpublished outcomes, and are unavailable when no properties have been reported.
 
+The hub, each project and each PR also show **refutations with a verified fix**.
+Counts use native checked repairs of the whole translated property and its witness
+plus SHA-256-bound candidate source patches, not simplifications. They do not prove
+source correctness or source/model equivalence. Per-project `fixes.json` records
+the native evidence index, bound to the exact published comment and run; missing
+or mismatched evidence is shown as unknown, never as an established zero. Totals
+use each PR's latest published report, without double-counting historical runs.
+
 ## Refresh
 
 Requires Python 3.10+ and authenticated GitHub CLI read access:

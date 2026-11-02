@@ -17,7 +17,10 @@
       "verified": 516,
       "resources exhausted": 75,
       "type-check/audit failure": 101
-    }
+    },
+    "checked_fixes": 11,
+    "fix_unknown": 0,
+    "checked_fix_prs": 10
   },
   "prs": [
     {
@@ -50,6 +53,15 @@
             "property": "An invalid queue range must panic.",
             "input": "`range.end = 1`; `queue = []`; `front.len() = 0`; `range.start = 0`; abstract state: allocation reservation outcome = `false`",
             "sketch": "If the empty queue is queried with range 0..1 and the allocation reservation fails, data.try_reserve_exact(range.len()) returns an error before the out-of-bounds slice expressions are reached."
+          }
+        ],
+        "checked_fixes": 1,
+        "fix_unknown": 0,
+        "checked_fix_findings": [
+          {
+            "finding_id": "f241d99f520854c2c5dc",
+            "patch": "followups/f241d99f520854c2c5dc/1/fix/candidate.patch",
+            "patch_sha256": "800227a229974457d383b9269b072100cbe83c805ff0222188225ac32c8d221a"
           }
         ]
       },
@@ -154,6 +166,20 @@
             "input": "`params.argv_and_env = [65, 0]`; `params.argv_len.reinterpret_as_unsigned() as usize = 1`; `params.env_len.reinterpret_as_unsigned() as usize = 0`; abstract state: whether the first argument is accepted as UTF-8 = `true`; whether the 9P TCP connection succeeds = `true`",
             "sketch": "If argv_len is 1 and argv_and_env is [65, 0], core::ffi::CStr::from_bytes_until_nul(\u00b6ms.argv_and_env[idx..]) can use the NUL outside the declared argv region. Parsing then succeeds and reaches filesystem construction instead of invoking invalid-parameter termination."
           }
+        ],
+        "checked_fixes": 2,
+        "fix_unknown": 0,
+        "checked_fix_findings": [
+          {
+            "finding_id": "9abfa0abcd98546b69ab",
+            "patch": "followups/9abfa0abcd98546b69ab/1/fix/candidate.patch",
+            "patch_sha256": "4b23c5851eeec5096a81d9f9051176e8d88df41db2b0091367e1b389c02d14f6"
+          },
+          {
+            "finding_id": "6b84efd901da4e665890",
+            "patch": "followups/6b84efd901da4e665890/1/fix/candidate.patch",
+            "patch_sha256": "eb9be964a1d45c16383bcf4ad705a58d3c0028f2e90182dc98e465731801ff9e"
+          }
         ]
       },
       "report_history": [
@@ -224,7 +250,10 @@
           "type-check/audit failure": 2
         },
         "properties": 9,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -300,7 +329,10 @@
           "type-check/audit failure": 0
         },
         "properties": 6,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -376,7 +408,10 @@
           "type-check/audit failure": 0
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -459,7 +494,10 @@
             "input": "`dirfd = 0`; `Errno::EINVAL = 22`; `Errno::ENOENT = 2`; `flags.intersects(AtFlags::AT_REMOVEDIR.complement()) = false`; `flags.contains(AtFlags::AT_REMOVEDIR) = false`; `pathname = [47]`; abstract state: normal completion of context acquisition = `false`; FsPath variant produced by path resolution = `0`; whether FsPath::new succeeds = `true`; FsPath::new failure code = `1`; absolute path produced by FsPath::new = `[47]`; converted rmdir_file error = `1`; rmdir_file success result = `true`; converted unlink_file error = `1`; unlink_file success result = `true`",
             "sketch": "If fs.context.read() does not complete normally after path resolution succeeds, sys_unlinkat reaches neither removal call and does not return the selected operation's result."
           }
-        ]
+        ],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -523,7 +561,10 @@
           "type-check/audit failure": 0
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -599,7 +640,10 @@
           "type-check/audit failure": 0
         },
         "properties": 4,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -675,7 +719,10 @@
           "type-check/audit failure": 1
         },
         "properties": 1,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -751,7 +798,10 @@
           "type-check/audit failure": 0
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -833,6 +883,15 @@
             "property": "If pre-mount setup succeeds and no LocalFs mount fails, the function returns no error.",
             "input": "abstract state: failure outcome of builder.build() = `true`; per-mount host paths = `[]`; per-mount failure outcomes of LocalFs::new(&mount.host, allocator) = `[]`; per-mount underlying I/O error kinds = `[]`; initial_files validation or mapping failure state = `false`; initial_files processing error kind = `0`",
             "sketch": "If the mount slice is empty, the loop performs no LocalFs construction and builder.build() is reached. If builder.build() returns an error, the function returns a contextualized I/O error rather than succeeding, contradicting the claimed successful-return requirement for the vacuous case in which all mount attempts succeed."
+          }
+        ],
+        "checked_fixes": 1,
+        "fix_unknown": 0,
+        "checked_fix_findings": [
+          {
+            "finding_id": "ef4565549fee14d479e1",
+            "patch": "followups/ef4565549fee14d479e1/2/fix/candidate.patch",
+            "patch_sha256": "4c04f218a66643feda0c5d873d30c06559dd66d849622726d902400a5705b5bb"
           }
         ]
       },
@@ -917,7 +976,10 @@
           "type-check/audit failure": 0
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1012,7 +1074,10 @@
           "type-check/audit failure": 1
         },
         "properties": 7,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1088,7 +1153,10 @@
           "type-check/audit failure": 0
         },
         "properties": 6,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1171,7 +1239,10 @@
             "input": "`is_bsp = true`; `Platform::new(vtl1_start, vtl1_end, text_phys_start, text_phys_end) = 1`; abstract state: platform previously stored in BOOT_PLATFORM = `0`; whether BOOT_PLATFORM already contains a platform = `false`; exceptional completion of BSP initialization before platform construction = `true`; whether hvcall::init returns an error = `false`",
             "sketch": "If the BSP-only initialization panics first, `Platform::new(vtl1_start, vtl1_end, text_phys_start, text_phys_end)` and the following `BOOT_PLATFORM.set(platform)` are skipped, so the BSP does not construct or publish a platform."
           }
-        ]
+        ],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1235,7 +1306,10 @@
           "type-check/audit failure": 3
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1311,7 +1385,10 @@
           "type-check/audit failure": 0
         },
         "properties": 1,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1387,7 +1464,10 @@
           "type-check/audit failure": 0
         },
         "properties": 2,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1463,7 +1543,10 @@
           "type-check/audit failure": 0
         },
         "properties": 4,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1539,7 +1622,10 @@
           "type-check/audit failure": 4
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1621,6 +1707,15 @@
             "property": "An empty pathname returns ENOENT.",
             "input": "`litebox_common_linux::AT_FDCWD = -100`; `self.fs.borrow().context.read().cwd().to_string() = [47]`; `dirfd = -1`; `PATH_MAX = 4096`; `pathname = []`",
             "sketch": "If pathname is empty and dirfd is a negative value other than litebox_common_linux::AT_FDCWD, `FsPath::new(dirfd, pathname, get_cwd)?` returns and propagates EBADF rather than producing a Cwd or Fd value that resolve_path_at would reject with ENOENT."
+          }
+        ],
+        "checked_fixes": 1,
+        "fix_unknown": 0,
+        "checked_fix_findings": [
+          {
+            "finding_id": "b16219007c11f8d2caaa",
+            "patch": "followups/b16219007c11f8d2caaa/2/fix/candidate.patch",
+            "patch_sha256": "43fc7a4ff4e0ad8f48fdeb5bc8274edec8ae6948105b9c2b52ad8738224a00e1"
           }
         ]
       },
@@ -1712,7 +1807,10 @@
           "type-check/audit failure": 0
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1788,7 +1886,10 @@
           "type-check/audit failure": 0
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1845,7 +1946,10 @@
           "type-check/audit failure": 0
         },
         "properties": 7,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -1928,7 +2032,10 @@
           "type-check/audit failure": 0
         },
         "properties": 1,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2004,7 +2111,10 @@
           "type-check/audit failure": 3
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2061,7 +2171,10 @@
           "type-check/audit failure": 2
         },
         "properties": 8,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2151,7 +2264,10 @@
             "input": "`Self::can_change_entries_in_dir(context, &parent) = true`; `flags.contains(OFlags::CREAT) = true`; `mode = 0`; abstract state: backend-provided seek behavior = `false`; backend file-creation outcome = `true`; descriptor-table insertion result = `0`; the open has reached the missing-target branch = `true`; outcome of obtaining an owned parent-directory handle = `false`; the parent directory has been resolved = `true`",
             "sketch": "If changing entries is permitted but `.owned_parent_dir(parent.handle)` returns an error, `open` propagates that error before file creation or descriptor insertion."
           }
-        ]
+        ],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2234,7 +2350,10 @@
           "type-check/audit failure": 1
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2317,7 +2436,10 @@
           "type-check/audit failure": 1
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2419,7 +2541,10 @@
           "type-check/audit failure": 1
         },
         "properties": 7,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2514,7 +2639,10 @@
           "type-check/audit failure": 3
         },
         "properties": 6,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2610,7 +2738,10 @@
             "input": "`BLOCK_SIZE = 0`; `h.get_typed::<Self>().idx = 0`; abstract state: per-element results of `file.node_info.clone() = [1]`; per-element results of `end = [0]`; per-element results of `start = [0]`; valid TarRo file handle = `true`; per-element results of `file.node_info = [0]`; per-element results of `file.mode = [0]`; per-element results of `file.owner = [0]`; maximum target usize value = `1`",
             "sketch": "If file.node_info.clone() yields an identity distinct from file.node_info, the returned status does not report the same NodeInfo associated with the indexed entry."
           }
-        ]
+        ],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2693,7 +2824,10 @@
           "type-check/audit failure": 1
         },
         "properties": 6,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2750,7 +2884,10 @@
           "type-check/audit failure": 1
         },
         "properties": 7,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2846,7 +2983,10 @@
             "input": "abstract state: sensitive internal state of the supplied cipher argument = `[2]`; whether self.cipher already contains a cipher = `true`; sensitive state observed after release of the replaced cipher = `[1]`; sensitive internal state of the previously stored cipher = `[1]`",
             "sketch": "If the prior cipher\u2019s abstract sensitive state remains nonzero when self.cipher = Some(cipher); replaces it, that prior state is not zeroized as it is released. The accepted refutation therefore conditionally shows that this replacement does not ensure the claimed zeroization behavior."
           }
-        ]
+        ],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -2967,7 +3107,10 @@
           "type-check/audit failure": 0
         },
         "properties": 9,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -3043,7 +3186,10 @@
           "type-check/audit failure": 0
         },
         "properties": 6,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -3131,6 +3277,15 @@
             "property": "A non-null location emits exactly one vault-panic line.",
             "input": "`if let Some(location) = unsafe { location.as_ref() } { = true`; abstract state: presence of an eviction buffer in the installed vault = `false`; validity and static lifetime of the non-null location pointer = `true`; number of matching vault-panic lines attributed to the serial print operation = `0`; presence outcome of VAULT.get() = `false`",
             "sketch": "If the non-null branch is selected under the abstract pointer-validity assumption and the abstract serial-output effect of crate::serial_println!(\"panicked inside the vault at {location}\"); is zero matching lines, the requirement to print exactly one such line is not satisfied. The accepted refutation therefore conditionally indicates that reaching this macro call alone does not establish the claimed line count, while the subsequent panic_to_vtl0 call remains unconditional in the captured source."
+          }
+        ],
+        "checked_fixes": 1,
+        "fix_unknown": 0,
+        "checked_fix_findings": [
+          {
+            "finding_id": "38e1ac0258f1bee6fdc9",
+            "patch": "followups/38e1ac0258f1bee6fdc9/2/fix/candidate.patch",
+            "patch_sha256": "78ed2fc8b8fc73a8d758966725a154ef6a6eec3c9c583961464d3dd8858e7caa"
           }
         ]
       },
@@ -3235,7 +3390,10 @@
             "input": "`VAULT_PRK_VA.cast_signed() = 12288`; `arg = 8192`; `thunk = 4096`; `vault_p4 = 0`; abstract state: interrupt state while trampoline runs = `true`; processor return-prediction behavior at the retpoline return = `false`; validity of the supplied thunk = `true`; caller ownership of the vault slot = `true`",
             "sketch": "If return prediction does not follow the RSB entry, the `\"ret\"` instruction can still transfer architecturally to thunk, but the intended claim that speculation remains in the capture loop does not follow."
           }
-        ]
+        ],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -3325,7 +3483,10 @@
           "type-check/audit failure": 1
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -3420,7 +3581,10 @@
           "type-check/audit failure": 2
         },
         "properties": 7,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -3496,7 +3660,10 @@
           "type-check/audit failure": 0
         },
         "properties": 2,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -3572,7 +3739,10 @@
           "type-check/audit failure": 4
         },
         "properties": 9,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -3629,7 +3799,10 @@
           "type-check/audit failure": 0
         },
         "properties": 5,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -3686,7 +3859,10 @@
           "type-check/audit failure": 2
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -3743,7 +3919,10 @@
           "type-check/audit failure": 4
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -3819,7 +3998,10 @@
           "type-check/audit failure": 0
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -3876,7 +4058,10 @@
           "type-check/audit failure": 2
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -3952,7 +4137,10 @@
           "type-check/audit failure": 3
         },
         "properties": 4,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -4028,7 +4216,10 @@
           "type-check/audit failure": 0
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -4104,7 +4295,10 @@
           "type-check/audit failure": 0
         },
         "properties": 1,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -4161,7 +4355,10 @@
           "type-check/audit failure": 1
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -4237,7 +4434,10 @@
           "type-check/audit failure": 0
         },
         "properties": 1,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -4313,7 +4513,10 @@
           "type-check/audit failure": 0
         },
         "properties": 7,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -4377,7 +4580,10 @@
             "input": "`queued = 0`; `self.data.len() = 0`; `DATAGRAM_OVERHEAD = 0`; `nonblocking = false`; `channel.room() = 0`; `channel.is_shut() = false`; abstract state: broker queued-byte accounting = `0`; outcome of charging the receiver quota = `false`; datagram identity and contents = `0`; queued datagram contents = `[]`; receiver quota charge = `0`; outcome of reserving one datagram slot = `false`; sender registration state after a failed wait = `false`; outcome of registering the sender as a waiter = `false`; sender registration in the channel waiters = `false`",
             "sketch": "If the channel is open with zero room and channel.wait(self)? returns an error without registering the sender, the question-mark operator propagates that error. The subsequent would-block return is then skipped, so the required waiter registration and blocking-mode-appropriate would-block result do not follow."
           }
-        ]
+        ],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -4441,7 +4647,10 @@
           "type-check/audit failure": 0
         },
         "properties": 1,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -4498,7 +4707,10 @@
           "type-check/audit failure": 4
         },
         "properties": 9,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -4555,7 +4767,10 @@
           "type-check/audit failure": 2
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -4612,7 +4827,10 @@
           "type-check/audit failure": 2
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -4669,7 +4887,10 @@
           "type-check/audit failure": 2
         },
         "properties": 9,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -4726,7 +4947,10 @@
           "type-check/audit failure": 2
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -4789,6 +5013,15 @@
             "property": "An error result leaves the association failed.",
             "input": "abstract state: host association identity = `0`; errors associated with demand polling observations = `[0]`; lane indices associated with demand observations = `[0]`; per-element results of `self.demand.try_next_lane() = [1]`; association status when failure recording is attempted = `[1]`; error carried by the association status during failure recording = `[0]`; per-lane availability state = `[true, true]`; converted control-ring error identities = `[0]`; per-element results of `self.association.ended() = [0]`; errors associated with post-demand ending observations = `[0]`; per-element results of `self.association.ended() = [0]`; errors associated with pre-demand ending observations = `[0]`; demand-wait error = `[7]`; per-element results of `let Err(error) = self.demand.wait_for_demand(wake_count) = [true]`",
             "sketch": "If both calls to self.association.ended() observe a live association, demand polling reports Satisfied, and the demand wait returns an error, the error path would invoke failure reporting. If the association becomes peer-closed before failure recording, matches!(*status, HostAssociationStatus::Live) is false, so the wait error would be returned without being recorded as the association failure. This conditionally refutes the expectation that every demand-wait failure returned by next_lane is also recorded on the association."
+          }
+        ],
+        "checked_fixes": 1,
+        "fix_unknown": 0,
+        "checked_fix_findings": [
+          {
+            "finding_id": "44cc54b0008f895f15aa",
+            "patch": "followups/44cc54b0008f895f15aa/2/fix/candidate.patch",
+            "patch_sha256": "d08ae3edfba34110882804e021acacc78b551f1bcc1678c0283d2ca2b9b672ed"
           }
         ]
       },
@@ -4861,7 +5094,10 @@
             "input": "`state.manager_open = true`; `state.output.len() = 0`; `state.engine.output_stopped() = false`; `self.settings.output.contains(O::PROCESS | O::EXPAND_TABS) = false`; abstract state: allocation outcome of the source bounce-buffer operation = `false`; source ATOMIC_WRITE_SIZE setting = `1`; copy outcome of the source WriteBuffer operation = `true`; contents of the source WriteBuffer input = `[0]`; manager readiness state supplied to publication = `0`; source OUTPUT_CAPACITY setting = `2`; subsidiary readiness state supplied to publication = `0`",
             "sketch": "If the manager is open, the input is nonempty, the WouldBlock condition is false, and allocation fails, bounce_buffer(input.len().min(available))? propagates the allocation error. This would skip copying, output processing, publication, and the successful byte-count return, so the property's otherwise case would not hold."
           }
-        ]
+        ],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -4938,7 +5174,10 @@
             "input": "`aligned_len = 1`; `commit = false`; `ptr.as_usize() = 1`; `is_placeholder = false`; abstract state: success of writing the resulting base address = `false`; mapped allocation-failure status = `0`; result of creating the private pages = `true`; success of writing the aligned region size = `false`; result of rolling back the newly created pages = `false`",
             "sketch": "If the base-address write fails and self.global.page_manager.remove_pages(ptr, aligned_len) also fails, the discarded rollback result allows the function to return ACCESS_VIOLATION without establishing that the pages were removed."
           }
-        ]
+        ],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -5015,6 +5254,15 @@
             "input": "`walked == name = true`; abstract state: cached child fid identity = `1`; fallback fid identity = `2`; fallback fid-acquisition outcome = `false`; OFlags membership in RDWR, WRONLY, CREAT, EXCL, TRUNC, APPEND, DIRECTORY, NOFOLLOW, NONBLOCK, SYNC, DSYNC, DIRECT, NOATIME, and PATH order = `[true, true, false, false, false, false, false, false, false, false, false, false, false, false]`; the stopped walk has a child fid = `true`; server-side open outcome = `true`; walking handle stopped at a non-directory = `true`; supported open flags = `true`",
             "sketch": "If RDWR and WRONLY are both set, oflags_to_lopen(flags - OFlags::CREAT - OFlags::EXCL) emits RDWR and skips WRONLY because the checks use an if/else-if."
           }
+        ],
+        "checked_fixes": 1,
+        "fix_unknown": 0,
+        "checked_fix_findings": [
+          {
+            "finding_id": "50082805df7241feecc6",
+            "patch": "followups/50082805df7241feecc6/2/fix/candidate.patch",
+            "patch_sha256": "fe9d1121371d8959f0fa9ead9aea675c2f97c688a8263bb191175542c63a5116"
+          }
         ]
       },
       "report_history": [
@@ -5079,7 +5327,10 @@
           "type-check/audit failure": 1
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -5149,7 +5400,10 @@
             "input": "`buf = [0]`; `offset = 0`; `self.instance_tag.same_instance(&file.instance_tag) = true`; `h.writable = true`; abstract state: bounce-buffer allocation result = `false`; staging-copy result = `false`; presence of an open file in the handle = `true`; seek_write transferred-byte count = `0`; seek_write I/O result = `false`; direct-write transferred-byte count = `0`; direct-write I/O result = `false`; whether windows::write_at returns Some = `false`",
             "sketch": "If windows::write_at returns None and `let mut staged = bounce_buffer(buf.len())?;` fails, write returns before copying the buffer or calling seek_write."
           }
-        ]
+        ],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -5238,7 +5492,10 @@
           "type-check/audit failure": 1
         },
         "properties": 9,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -5295,7 +5552,10 @@
           "type-check/audit failure": 3
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -5358,6 +5618,15 @@
             "property": "An empty supplied subcache does not cause an indexing panic.",
             "input": "`main.header.shared_region_size = 0`; `main.header.shared_region_start = 0`; abstract state: successful subcache-table parsing = `true`; per-element results of `entry.cache_vm_offset = [0]`; subcache-table UUID equality token = `[0]`; main cache magic value = `0`; image-table parsing result = `true`; mapping-range validation result = `false`; first-mapping address placeholders = `[0]`; per-subcache magic values = `[0]`; number of mappings in each supplied subcache = `[0]`; per-subcache UUID equality tokens = `[0]`",
             "sketch": "If the sole subcache has no mappings after the earlier checks pass, evaluating `subcache.mappings[0].address` panics before the placement condition can return an error."
+          }
+        ],
+        "checked_fixes": 1,
+        "fix_unknown": 0,
+        "checked_fix_findings": [
+          {
+            "finding_id": "df8602d41ab2a7520187",
+            "patch": "followups/df8602d41ab2a7520187/1/fix/candidate.patch",
+            "patch_sha256": "e21f541ce92de96c08e703861e39d5095002988bd2bb99cc121ea629eb4c3955"
           }
         ]
       },
@@ -5423,7 +5692,10 @@
           "type-check/audit failure": 3
         },
         "properties": 8,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -5487,7 +5759,10 @@
             "input": "`range.start = 0`; abstract state: caller ownership of addresses in the decommit range = `[true]`; end of the decommit range = `1`; accessibility before decommit = `[true]`; anonymous-mapping state before decommit = `[false]`; backing identities before decommit = `[10]`; contents before decommit = `[7]`; fixed-placement state before decommit = `[false]`; contents visible to other sharers before decommit = `[23]`; private-mapping state before decommit = `[false]`; accessibility after the mmap syscall = `[true]`; anonymous-mapping state after the mmap syscall = `[true]`; backing identities after the mmap syscall = `[11]`; contents after the mmap syscall = `[0]`; fixed-placement state after the mmap syscall = `[true]`; contents visible to other sharers after the mmap syscall = `[23]`; private-mapping state after the mmap syscall = `[true]`; whether the mmap syscall succeeds = `true`",
             "sketch": "If syscalls::syscall6( succeeds for range 0..1 but the resulting address remains accessible, decommit_pages reaches Ok even though the requested decommit range is not inaccessible."
           }
-        ]
+        ],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -5551,7 +5826,10 @@
           "type-check/audit failure": 0
         },
         "properties": 7,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -5634,7 +5912,10 @@
             "input": "abstract state: potential bootstrap_child panic outcome = `false`; potential bootstrap_child exit status = `0`; potential bootstrap_child Result outcome = `false`; cloned-child safety requirements are satisfied = `true`; panic unwinds through the copied runtime frames = `true`; prepare_fork_child panics = `true`; prepare_fork_child does not produce a successful Result = `false`",
             "sketch": "If `unsafe { Platform::prepare_fork_child() }` panics and unwinds, bootstrap_child is skipped and exit_fork_child is not called with status 127."
           }
-        ]
+        ],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -5698,7 +5979,10 @@
           "type-check/audit failure": 0
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -5774,7 +6058,10 @@
           "type-check/audit failure": 0
         },
         "properties": 1,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -5838,7 +6125,10 @@
             "input": "`cfg!(feature = \"allow-unsigned-dynamic-ta\") = false`; `elf.len() = 0`; `head.uuid = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]`; `ta_bin.starts_with(&SHDR_MAGIC.to_le_bytes()) = false`; `ta_bin = []`; `ta_uuid = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]`; abstract state: whether debug assertions are enabled for the build = `true`; whether a TA verification key is available = `true`; whether raw TA-header parsing succeeds = `false`; UUID that would be produced by raw TA-header parsing = `[]`; whether the verified ELF ends at the end of the input TA bytes = `false`; whether signed TA parsing and verification succeeds = `true`",
             "sketch": "If signed verification yields a matching UUID but selects an ELF with a different end pointer from the input bytes, ta_bin.as_ptr_range().end != elf.as_ptr_range().end is true. If debug assertions are enabled, the following unconditional debug assertion can prevent normal completion before the function reaches return None, conditionally refuting the requirement that this case complete by returning None."
           }
-        ]
+        ],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -5902,7 +6192,10 @@
           "type-check/audit failure": 1
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -5978,7 +6271,10 @@
           "type-check/audit failure": 0
         },
         "properties": 5,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -6073,7 +6369,10 @@
           "type-check/audit failure": 0
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -6149,7 +6448,10 @@
           "type-check/audit failure": 1
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -6206,7 +6508,10 @@
           "type-check/audit failure": 4
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -6263,7 +6568,10 @@
           "type-check/audit failure": 3
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -6320,7 +6628,10 @@
           "type-check/audit failure": 2
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -6377,7 +6688,10 @@
           "type-check/audit failure": 0
         },
         "properties": 2,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -6434,7 +6748,10 @@
           "type-check/audit failure": 1
         },
         "properties": 9,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -6491,7 +6808,10 @@
           "type-check/audit failure": 1
         },
         "properties": 10,
-        "refutations": []
+        "refutations": [],
+        "checked_fixes": 0,
+        "fix_unknown": 0,
+        "checked_fix_findings": []
       },
       "report_history": [
         {
@@ -6554,6 +6874,15 @@
             "property": "A failed handshake starting in New leaves the association Ended.",
             "input": "abstract state: success of process activation = `true`; whether connection setup invokes the process callback = `false`; success of decoding the handshake request = `true`; whether the encoded response can be represented as a WireFrame = `true`; initial association state = `0`; presence of pending launch state = `false`; success of obtaining the request byte slice = `true`; presence of a handshake response in setup.response after connection setup = `false`; inner success state of the connection-setup result = `true`; outer success state of the connection-setup result = `true`; success of shared-buffer-pool construction = `true`; presence of startup data in the pending launch = `false`; availability of the mutable association-state borrow = `true`",
             "sketch": "If the association is New, request decoding and shared-buffer construction succeed, litebox_broker_host::setup_connection yields Ok(Ok(host)), host.activate_process() succeeds, and setup.response is still None, the source assigns State::Active before evaluating setup.response.ok_or(Status::Denied)?. That expression can then return Status::Denied, so the conditional failure leaves the association Active rather than Ended even though the handshake does not succeed."
+          }
+        ],
+        "checked_fixes": 1,
+        "fix_unknown": 0,
+        "checked_fix_findings": [
+          {
+            "finding_id": "26641acd898b27391c85",
+            "patch": "followups/26641acd898b27391c85/1/fix/candidate.patch",
+            "patch_sha256": "bf750df5d6640e99404cc7d3d52b7c218b0b922179219c08984187a2c6198e27"
           }
         ]
       },
@@ -6625,6 +6954,15 @@
             "property": "For a no-outcome hook, the result equals the input followed by the zero-valued trampoline footer.",
             "input": "`addr = 0`; `callback = 0`; `input = [1]`; abstract state: append_trampoline_footer result = `[]`; hook_macho result variant = `1`; out after hook_macho = `[]`; limit payload = `0`; whether limit is Some = `false`; rewrite options = `0`; outcome trampoline bytes = `[]`; Mach-O trampoline page size = `1`; text-section state = `[]`; TRAMPOLINE_MAGIC bytes = `[0, 0, 0, 0, 0, 0, 0, 0]`; outcome trapped sites = `[]`",
             "sketch": "If hook_macho leaves out empty while returning no outcome, out.extend_from_slice(header.as_bytes()) appends the footer without restoring the original input byte."
+          }
+        ],
+        "checked_fixes": 1,
+        "fix_unknown": 0,
+        "checked_fix_findings": [
+          {
+            "finding_id": "e959b3ba89a667edc3a1",
+            "patch": "followups/e959b3ba89a667edc3a1/1/fix/candidate.patch",
+            "patch_sha256": "1d2751aa1a8023d0e8c4856a8483bd571f8abe85d1e2af179049cb94b8383574"
           }
         ]
       },

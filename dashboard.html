@@ -91,7 +91,7 @@ __NFV_OUTCOME_TRACKER__
 <p id="meta" class="muted"></p>
 <div class="scroll">
 <table aria-describedby="meta">
-<thead><tr><th>PR</th><th>Change / refuted properties</th><th>Audit date</th><th>Status</th><th>Properties</th><th>Refuted</th><th>Verified</th><th>Exhausted</th><th>Audit failure</th><th>Evidence</th></tr></thead>
+<thead><tr><th>PR</th><th>Change / refuted properties</th><th>Audit date</th><th>Status</th><th>Properties</th><th>Refuted</th><th>Verified fixes</th><th>Verified</th><th>Exhausted</th><th>Audit failure</th><th>Evidence</th></tr></thead>
 <tbody id="rows"></tbody>
 </table>
 </div>
@@ -189,8 +189,9 @@ function render() {
       if (entry.latest_run) status.append(text("div", entry.latest_run.conclusion || entry.latest_run.status));
     }
     row.append(pr, title, text("td", report ? report.published_at.slice(0, 10) : "-", "date"), status);
-    for (const value of report ? [report.properties, report.counts.refuted, report.counts.verified,
-      report.counts["resources exhausted"], report.counts["type-check/audit failure"]] : ["-", "-", "-", "-", "-"]) {
+    const fixes = report ? `${report.checked_fixes}${report.fix_unknown ? ` (+${report.fix_unknown} unknown)` : ""}` : "-";
+    for (const value of report ? [report.properties, report.counts.refuted, fixes, report.counts.verified,
+      report.counts["resources exhausted"], report.counts["type-check/audit failure"]] : ["-", "-", "-", "-", "-", "-"]) {
       row.append(text("td", value, "number"));
     }
     const evidence = document.createElement("td");
