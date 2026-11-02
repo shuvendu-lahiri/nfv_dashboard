@@ -18,6 +18,8 @@ WEB = f"https://github.com/{REPOSITORY}"
 DIRECTORY = Path(__file__).resolve().parent
 REPOSITORIES = {"z3": "Z3", "litebox": "LiteBox", "nvx": "NVX", "gh-aw": "gh-aw",
                 "garnet": "Garnet"}
+LANGUAGES = {"z3": ["C++"], "litebox": ["Rust", "C"], "nvx": ["Rust", "Python"],
+             "gh-aw": ["Go", "JavaScript"], "garnet": ["C#"]}
 SITE = "https://shuvendu-lahiri.github.io/nfv_dashboard/"
 GITHUB = "https://github.com/shuvendu-lahiri/nfv_dashboard/blob/nfv-reports"
 STATUSES = ("refuted", "verified", "resources exhausted", "type-check/audit failure")
@@ -208,6 +210,7 @@ def build(pulls, comments, runs, generated_at, repository=REPOSITORY, cohort=Non
     data = {
         "schema": 1, "repository": repository, "generated_at": generated_at,
         "name": repository.rsplit("/", 1)[1], "label": REPOSITORIES[repository.rsplit("/", 1)[1]],
+        "languages": LANGUAGES[repository.rsplit("/", 1)[1]],
         "summary": {
             "selected_prs": len(entries),
             "attempted_prs": sum(bool(e["attempts"] or e["latest_report"]) for e in entries),
@@ -320,6 +323,7 @@ def render_markdown(data):
     repository = data["repository"]
     lines = [
         f"# {data['label']} NFV audit dashboard", "",
+        f"**Main source languages:** {', '.join(data['languages'])}.", "",
         "Published results from the prototype [Neuro-Formal Verification](https://arxiv.org/abs/2608.21516) reviewer.",
         "**Refutations are conditional MODEL refutations, not confirmed source bugs. Verification concerns "
         "translated models under stated assumptions; failure to refute is not evidence of correctness.**", "",
@@ -485,7 +489,7 @@ def hub(snapshots):
     summary["outcomes"] = {status: sum(data["summary"]["outcomes"][status] for data in snapshots) for status in STATUSES}
     return {
         "schema": 1, "generated_at": max(data["generated_at"] for data in snapshots), "summary": summary,
-        "repositories": [{key: data[key] for key in ("name", "label", "repository", "generated_at", "summary", "campaign")
+        "repositories": [{key: data[key] for key in ("name", "label", "repository", "languages", "generated_at", "summary", "campaign")
                           if key in data}
                          for data in snapshots],
     }
@@ -522,6 +526,7 @@ def main():
     with ThreadPoolExecutor(max_workers=len(REPOSITORIES)) as executor:
         snapshots = list(executor.map(collect, REPOSITORIES))
     for data in snapshots:
+        data["languages"] = LANGUAGES[data["name"]]
         path = DIRECTORY / data["name"] / "fixes.json"
         evidence = json.loads(path.read_text(encoding="utf-8")) if path.exists() else None
         apply_fix_evidence(data, evidence)

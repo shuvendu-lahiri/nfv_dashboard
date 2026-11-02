@@ -1,5 +1,7 @@
 # LiteBox NFV audit dashboard
 
+**Main source languages:** Rust, C.
+
 Published results from the prototype [Neuro-Formal Verification](https://arxiv.org/abs/2608.21516) reviewer.
 **Refutations are conditional MODEL refutations, not confirmed source bugs. Verification concerns translated models under stated assumptions; failure to refute is not evidence of correctness.**
 

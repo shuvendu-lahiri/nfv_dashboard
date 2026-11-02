@@ -64,6 +64,7 @@ footer { margin-top:20px; color:var(--muted); font-size:13px; }
 <nav aria-label="Dashboards"><a href="../">All repositories</a> &middot; <a href="../z3/">Z3</a> &middot; <a href="../litebox/">LiteBox</a> &middot; <a href="../nvx/">NVX</a> &middot; <a href="../gh-aw/">gh-aw</a> &middot; <a href="../garnet/">Garnet</a></nav>
 <h1 id="dashboard-title">Neuro-Formal Verification Audit Dashboard</h1>
 <a id="repository"></a>
+<p id="languages"></p>
 <p>Published results from the prototype <a href="https://arxiv.org/abs/2608.21516">NFV reviewer</a>.
 Refuted means a <strong>conditional MODEL refutation, not a confirmed source bug</strong>.
 Verification concerns a translated model under its assumptions. Failure to refute is not evidence of correctness.</p>
@@ -129,6 +130,7 @@ document.title = `${data.label} - NFV Audit Dashboard`;
 byId("dashboard-title").textContent = `${data.label} - Neuro-Formal Verification Audit Dashboard`;
 byId("repository").textContent = data.repository;
 byId("repository").href = `https://github.com/${data.repository}`;
+byId("languages").textContent = `Main source languages: ${data.languages.join(", ")}`;
 byId("readme").href = `https://github.com/shuvendu-lahiri/nfv_dashboard/blob/nfv-reports/${data.name}/README.md`;
 byId("attempted").textContent = data.summary.attempted_prs;
 byId("published").textContent = data.summary.published_reports;

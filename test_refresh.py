@@ -41,6 +41,15 @@ def run(number=2, run_id=100, conclusion="success"):
 
 
 class RefreshTests(unittest.TestCase):
+    def test_source_languages_survive_hub_and_project_rendering(self):
+        data = refresh.build([pr()], [comment()], [run()], "snapshot")
+        self.assertEqual(["Rust", "C"], data["languages"])
+        self.assertIn("Main source languages:** Rust, C.", refresh.render_markdown(data))
+        combined = refresh.hub([data])
+        self.assertEqual(data["languages"], combined["repositories"][0]["languages"])
+        self.assertIn("repository.languages.join", refresh.render_html(combined, "hub.html"))
+        self.assertIn("data.languages.join", refresh.render_html(data))
+
     def fix_evidence(self, report, checked=True):
         return {
             "schema": 1, "repository": refresh.REPOSITORY, "reports": [{

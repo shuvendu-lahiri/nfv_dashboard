@@ -87,6 +87,7 @@ document.getElementById("outcomes").textContent =
 for (const repository of data.repositories) {
   const card = text("article", "", "card");
   card.append(text("h2", repository.label), text("p", repository.repository, "muted"));
+  card.append(text("p", `Main source languages: ${repository.languages.join(", ")}`, "muted"));
   card.append(document.getElementById(`outcome-tracker-${repository.name}`).content.cloneNode(true));
   const stats = document.createElement("dl");
   const summary = repository.summary;

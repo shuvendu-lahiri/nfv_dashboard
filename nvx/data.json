@@ -4263,5 +4263,9 @@
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/801",
       "source_head_sha": "42bfb8e13d63b4e04b15bb67b98f0044b3dd9259"
     }
+  ],
+  "languages": [
+    "Rust",
+    "Python"
   ]
 }

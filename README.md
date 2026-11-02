@@ -2,13 +2,17 @@
 
 **[Open the dashboard hub](https://shuvendu-lahiri.github.io/nfv_dashboard/)**
 
-| Repository | Live dashboard | GitHub-readable index |
-|---|---|---|
-| Z3 | [Open](https://shuvendu-lahiri.github.io/nfv_dashboard/z3/) | [Reports](z3/README.md) |
-| LiteBox | [Open](https://shuvendu-lahiri.github.io/nfv_dashboard/litebox/) | [Reports](litebox/README.md) |
-| NVX | [Open](https://shuvendu-lahiri.github.io/nfv_dashboard/nvx/) | [Reports](nvx/README.md) |
-| gh-aw | [Open](https://shuvendu-lahiri.github.io/nfv_dashboard/gh-aw/) | [Reports](gh-aw/README.md) |
-| Garnet | [Open](https://shuvendu-lahiri.github.io/nfv_dashboard/garnet/) | [Reports](garnet/README.md) |
+| Repository | Main source languages | Live dashboard | GitHub-readable index |
+|---|---|---|---|
+| Z3 | C++ | [Open](https://shuvendu-lahiri.github.io/nfv_dashboard/z3/) | [Reports](z3/README.md) |
+| LiteBox | Rust, C | [Open](https://shuvendu-lahiri.github.io/nfv_dashboard/litebox/) | [Reports](litebox/README.md) |
+| NVX | Rust, Python | [Open](https://shuvendu-lahiri.github.io/nfv_dashboard/nvx/) | [Reports](nvx/README.md) |
+| gh-aw | Go, JavaScript | [Open](https://shuvendu-lahiri.github.io/nfv_dashboard/gh-aw/) | [Reports](gh-aw/README.md) |
+| Garnet | C# | [Open](https://shuvendu-lahiri.github.io/nfv_dashboard/garnet/) | [Reports](garnet/README.md) |
+
+Language labels describe the repositories' main implementation languages, not
+every language in their tests, bindings or tooling, or the languages covered by
+each audit.
 
 Published results from the prototype [Neuro-Formal Verification
 reviewer](https://arxiv.org/abs/2608.21516). Refutations are **conditional MODEL
