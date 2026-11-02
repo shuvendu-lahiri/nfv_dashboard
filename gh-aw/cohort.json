@@ -1,7 +1,7 @@
 {
   "repository": "shuvendu-lahiri/gh-aw",
   "source_repository": "github/gh-aw",
-  "selection_policy": "Attempted replays from a frozen campaign of 50 eligible source PRs per strict author, pelikhan and dsyme. Unattempted source PRs are tracked in the campaign plan, not fabricated as replay PRs.",
+  "selection_policy": "Attempted immutable replays from a frozen cohort of 50 eligible PRs per strict author, pelikhan and dsyme. Unattempted changes are tracked only in the campaign plan.",
   "prs": [
     {
       "number": 3,
@@ -10,6 +10,118 @@
       "source_head_sha": "d440196ee867b8cc9727ae8ec2fc0823c915dea4",
       "source_base_sha": "546f3995a4f95cb689888477d77a2d6f295a06ec",
       "replay_head_sha": "b66a337c64e9456f6060e23cdcce9374fcdddaa5"
+    },
+    {
+      "number": 4,
+      "source_number": 73672,
+      "source_title": "Fix safe-output Git remote helper execution",
+      "source_head_sha": "77d2012726a12a359304d4e353ef21a09a2a53a4",
+      "source_base_sha": "6cf066f6821a79f2bb8132f4759a7c831845ef0c",
+      "replay_head_sha": "3c387245105ee6bdcc1cd141595e5bc1d25e1e9c"
+    },
+    {
+      "number": 5,
+      "source_number": 72093,
+      "source_title": "Soften container pin update failure messages",
+      "source_head_sha": "6d5d4a09b10c425109292d6bcf337e13603de39e",
+      "source_base_sha": "8aec4bab2bb5fc70904c0a1039d7260fd7c3b7f9",
+      "replay_head_sha": "28857db9a1db755668c7a5630b76860f048f794d"
+    },
+    {
+      "number": 6,
+      "source_number": 73590,
+      "source_title": "fix: remove overflow-prone allocation size hints",
+      "source_head_sha": "94cc6fa6b92df036f3c0c037620fd12d12d27554",
+      "source_base_sha": "546f3995a4f95cb689888477d77a2d6f295a06ec",
+      "replay_head_sha": "90955fa752ed17730420a6f2c20bac348b79cafb"
+    },
+    {
+      "number": 7,
+      "source_number": 61105,
+      "source_title": "Fix clean-checkout test and lint failures",
+      "source_head_sha": "8b4fd2b78807fad19ab814a523a19e01439524e7",
+      "source_base_sha": "ac594b6525e3dca31f0ccca99f70257d61b13725",
+      "replay_head_sha": "b24e196df5d128d5537d0a47c30e08da5646de8a"
+    },
+    {
+      "number": 8,
+      "source_number": 42250,
+      "source_title": "fix: support max field on custom safe-jobs",
+      "source_head_sha": "d92c7a73eb0d24ee40caa55688df3821e6e35f05",
+      "source_base_sha": "97705fd1ffcf55d6873300714c14ac42318b0e5b",
+      "replay_head_sha": "60503e8c60a5acb66a239f983d187dfae3cac0d2"
+    },
+    {
+      "number": 9,
+      "source_number": 73585,
+      "source_title": "Use standard slash-path validation for shell graders",
+      "source_head_sha": "ed787a46169aab9bbf06379c3206a41c951a4cae",
+      "source_base_sha": "546f3995a4f95cb689888477d77a2d6f295a06ec",
+      "replay_head_sha": "6236a0cf846fe1f4d06e69a043aaacb058b289e9"
+    },
+    {
+      "number": 10,
+      "source_number": 40154,
+      "source_title": "Fix call-workflow compiler passing undeclared payload input (#40152)",
+      "source_head_sha": "24c312fa7639d2ae7f7adfab6b6e063a7978d359",
+      "source_base_sha": "5c1590bc9c0b51880c753694e5ec49e932fa714b",
+      "replay_head_sha": "f0fa1e1f212b75ef9aa89f9dbffdbc28bc520fc5"
+    },
+    {
+      "number": 11,
+      "source_number": 73584,
+      "source_title": "fix(parser): confine local include symlink targets and reads",
+      "source_head_sha": "b0ed1afe61b800bdf16cfe8173298f97fc7a1e24",
+      "source_base_sha": "db0b20ea4439d2eebbe323887b7d3c15e59ba137",
+      "replay_head_sha": "981ff2a51a07c529bcfd673410f770f03fcb341f"
+    },
+    {
+      "number": 12,
+      "source_number": 39923,
+      "source_title": "Skip copilot-requests tip for individual (non-org) repository owners",
+      "source_head_sha": "14aaa714e8840f5d22fe7487c4a8ba3056f38795",
+      "source_base_sha": "69b8dc0b54ab01e8afa8458a755acb8f701fc7dd",
+      "replay_head_sha": "879a084f34cab1dbe521d00d2a52cbca3a2e7df1"
+    },
+    {
+      "number": 13,
+      "source_number": 73582,
+      "source_title": "fix(parser): confine import cache reads and atomic writes",
+      "source_head_sha": "67e789f56883931b2160ab8d720dace76037ef2e",
+      "source_base_sha": "546f3995a4f95cb689888477d77a2d6f295a06ec",
+      "replay_head_sha": "653a1d4081f306a6fddfdeb9a236218bc0de4a97"
+    },
+    {
+      "number": 14,
+      "source_number": 39707,
+      "source_title": "perf(workflow): check embedded action pins before gh-api network call in ActionResolver",
+      "source_head_sha": "5548abd9cb48375b4a49a28d445d39264c61bd70",
+      "source_base_sha": "cee4f9ca58c4c914d2cfe15f49129471e96de496",
+      "replay_head_sha": "c43fafc8c7360a16d9ea812b46e3f024fe217ecd"
+    },
+    {
+      "number": 15,
+      "source_number": 73583,
+      "source_title": "fix: isolate Syft outputs and update-check state",
+      "source_head_sha": "b3bf1d5386a2a481d83f8bca9fbce77faeae83a4",
+      "source_base_sha": "546f3995a4f95cb689888477d77a2d6f295a06ec",
+      "replay_head_sha": "c4ec661d80df9dc452998b298090d58a57fcacd8"
+    },
+    {
+      "number": 16,
+      "source_number": 38689,
+      "source_title": "Resolve --gh-aw-ref branch/tag to commit SHA at compile time",
+      "source_head_sha": "70b0f61248ade0f8a98cf4f4e186e7dc90a58131",
+      "source_base_sha": "2382a8de4772bfa4cffd5cecb4a74067af574d74",
+      "replay_head_sha": "0b1fd2376b92e7b8e8a8d1acd4873d7c92d76f5e"
+    },
+    {
+      "number": 17,
+      "source_number": 73575,
+      "source_title": "Reuse shared file writer for MCP compile progress",
+      "source_head_sha": "45dc9a2c1b5d2596eb95f11e47ffd0ca28516272",
+      "source_base_sha": "9f9df7b495928ca8ce89dcb0af68a51579f30665",
+      "replay_head_sha": "d93fdc90563870e7b7638fdb8e4f5a7772ec83d9"
     }
   ]
 }

@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "generated_at": "2026-11-01T18:59:10.745194+00:00",
+  "generated_at": "2026-11-02T08:42:58.833557+00:00",
   "summary": {
-    "attempted_prs": 196,
-    "published_reports": 176,
-    "workflow_attempts": 417,
-    "without_report": 20,
+    "attempted_prs": 210,
+    "published_reports": 178,
+    "workflow_attempts": 431,
+    "without_report": 32,
     "refuted_prs": 38,
-    "properties": 1171,
+    "properties": 1173,
     "outcomes": {
       "refuted": 47,
       "verified": 811,
       "resources exhausted": 127,
-      "type-check/audit failure": 186
+      "type-check/audit failure": 188
     }
   },
   "repositories": [
@@ -83,32 +83,32 @@
       "name": "gh-aw",
       "label": "gh-aw",
       "repository": "shuvendu-lahiri/gh-aw",
-      "generated_at": "2026-11-01T18:59:10.745194+00:00",
+      "generated_at": "2026-11-02T08:42:58.833557+00:00",
       "summary": {
-        "selected_prs": 1,
-        "attempted_prs": 1,
-        "published_reports": 1,
-        "workflow_attempts": 1,
-        "without_report": 0,
+        "selected_prs": 15,
+        "attempted_prs": 15,
+        "published_reports": 3,
+        "workflow_attempts": 15,
+        "without_report": 12,
         "refuted_prs": 0,
-        "properties": 4,
+        "properties": 6,
         "outcomes": {
           "refuted": 0,
           "verified": 4,
           "resources exhausted": 0,
-          "type-check/audit failure": 0
+          "type-check/audit failure": 2
         }
       },
       "campaign": {
         "repository": "shuvendu-lahiri/gh-aw",
-        "status": "paused",
+        "status": "running",
         "planned_prs": 100,
-        "attempted_prs": 1,
-        "workflow_attempts": 1,
-        "spent_aic": "249.87792",
-        "budget_aic": "20000",
+        "attempted_prs": 15,
+        "workflow_attempts": 15,
+        "spent_aic": "528.88016",
+        "budget_aic": "50000",
         "checked_patches": 0,
-        "note": "The pilot workflow completed and its report is published, but the campaign controller has not accepted the pilot: gh-aw transport formatting differs from the native report bytes. Supervision is stopped; no additional audits or retries have run. The plan contains 50 eligible source PRs each from pelikhan and dsyme. Results below are published model-conditional outcomes, not campaign acceptance or source-correctness claims."
+        "note": "Campaign resumed after accepting the existing pilot with a transport-aware publication check; native evidence validation is unchanged. 7 audits remain active. Target: 10 conditional MODEL refutations with native checked fixes. Recorded spend below includes only fully accounted attempts; 28,000.00 AIC remains reserved for active or incompletely accounted attempts (3 finished attempts have incomplete usage). Total spent or reserved: 28,528.88 / 50,000 AIC. The repository daily guard remains 20,000 AIC. The plan contains 50 eligible source PRs each from pelikhan and dsyme. Published outcomes are model-conditional, not source-correctness claims."
       }
     }
   ]
