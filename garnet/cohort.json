@@ -1,0 +1,474 @@
+{
+  "repository": "shuvendu-lahiri/garnet",
+  "source_repository": "microsoft/garnet",
+  "prs": [
+    {
+      "number": 2,
+      "source_number": 2289,
+      "source_title": "Fix RMW update parity, blocking-pop race, log dispose, migration and AAD refresh bugs",
+      "source_head_sha": "d90976ed2413012463bf3936487394a515deda90"
+    },
+    {
+      "number": 3,
+      "source_number": 2262,
+      "source_title": "Lua redis.call fast paths: fix replies, stats and cluster routing; add HGET/HSET/EXPIRE; HashGet returns NOTFOUND (breaking)",
+      "source_head_sha": "a1b36fb74d9e854b16fc74fb929569005271ce62"
+    },
+    {
+      "number": 4,
+      "source_number": 2334,
+      "source_title": "Configurable chunk size and pipelining for disk-based replica sync",
+      "source_head_sha": "902458fbd86080a3e249fa2affaadaaafdd37b0f"
+    },
+    {
+      "number": 5,
+      "source_number": 2311,
+      "source_title": "Fix DB selection in Lua scripts",
+      "source_head_sha": "a2b0d7ca9e575d2b474923079bcd1a9209e37df2"
+    },
+    {
+      "number": 6,
+      "source_number": 2309,
+      "source_title": "Honor exclusive infinite bounds in sorted set score ranges",
+      "source_head_sha": "7063b28c796e942dc08ba8a05e0767a831f4ce17"
+    },
+    {
+      "number": 7,
+      "source_number": 2308,
+      "source_title": "Return inf and -inf for infinite scores in ZSCAN",
+      "source_head_sha": "fb60af000df18c790cab5760de5156bf5c71d33d"
+    },
+    {
+      "number": 8,
+      "source_number": 2287,
+      "source_title": "Repro: replica replay loses AOF records after mid-chunk commit metadata",
+      "source_head_sha": "cbce121693e786f2a0eb7874cad704e75ec0acab"
+    },
+    {
+      "number": 9,
+      "source_number": 2278,
+      "source_title": "[Storage] Preserve imported ETags through migration and replay",
+      "source_head_sha": "75514ca3e995977a7fc20ef978117d4e0d855da0"
+    },
+    {
+      "number": 10,
+      "source_number": 2251,
+      "source_title": "Fix object-log reads across segment boundaries",
+      "source_head_sha": "7f5b45bce722bd7b5be0bf8a1d750f0eb8ea1b16"
+    },
+    {
+      "number": 11,
+      "source_number": 2247,
+      "source_title": "Fix INT64_MIN parsing for INCR and INCRBY",
+      "source_head_sha": "0528df2f9cf3851c9411c698f47e9da53dca0565"
+    },
+    {
+      "number": 12,
+      "source_number": 2242,
+      "source_title": "Fixes for expiration of `RENAME(NX)`'d keys in cluster",
+      "source_head_sha": "17a462442b512913199fdbeed0b15e93a61c2455"
+    },
+    {
+      "number": 13,
+      "source_number": 2236,
+      "source_title": "Fix `DBSIZE`, `INFO`, `KEYS`, and `SCAN` deadlocks in transactions",
+      "source_head_sha": "b0a83a4ed584872e481a3fe37a6c6cf15996cb8a"
+    },
+    {
+      "number": 14,
+      "source_number": 2226,
+      "source_title": "Introduce and use `UnsafeNullSessionLocker` for Vector Set operations in a transaction",
+      "source_head_sha": "a07fc025390e1b0a607d52a47b470c71934e3680"
+    },
+    {
+      "number": 15,
+      "source_number": 2168,
+      "source_title": "Add COPY command",
+      "source_head_sha": "336c1518b3a1e1209c58945ac631332a2f2dfbcd"
+    },
+    {
+      "number": 16,
+      "source_number": 2090,
+      "source_title": "Extend DUMP & RESTORE to support object types (#1343)",
+      "source_head_sha": "d8d62eb1eff017b01bc0138746c2cdec66540b31"
+    },
+    {
+      "number": 17,
+      "source_number": 1875,
+      "source_title": "Add server-side RESP protocol restrictions",
+      "source_head_sha": "bf242db9e92c840b4985d33087c7a52696ac7ab3"
+    },
+    {
+      "number": 18,
+      "source_number": 1825,
+      "source_title": "Feature: graceful shutdown for v2 ( #1382 )",
+      "source_head_sha": "b611f15ae69b1f135e25f54b388e9d763cf0f515"
+    },
+    {
+      "number": 19,
+      "source_number": 1801,
+      "source_title": "Implement CLIENT REPLY ON|OFF|SKIP (#1626)",
+      "source_head_sha": "0933039974c44b356cbf4539e88b735430de06b6"
+    },
+    {
+      "number": 20,
+      "source_number": 1684,
+      "source_title": "Replace PriorityQueue + Dictionary with IndexedPriorityQueue in Sorte\u2026",
+      "source_head_sha": "4dd38f7cb16b5d99b2a8857f2c2a8273588d3aa8"
+    },
+    {
+      "number": 21,
+      "source_number": 1574,
+      "source_title": "Amehlem/opentelemetry",
+      "source_head_sha": "b67aae48be8ef12f5bf4b219ab58626fa099ca69"
+    },
+    {
+      "number": 22,
+      "source_number": 1335,
+      "source_title": "Implement several HELP subcommands",
+      "source_head_sha": "aaf4f7147b5c192a5e780975f5eac4e861293980"
+    },
+    {
+      "number": 23,
+      "source_number": 1278,
+      "source_title": "Implement the inline command format",
+      "source_head_sha": "9db384c82227c64578fda7aff4c369a03f36bde8"
+    },
+    {
+      "number": 24,
+      "source_number": 2331,
+      "source_title": "[RESP] Fix EXEC aborting when a queued SUBSCRIBE enters subscription mode",
+      "source_head_sha": "79321148fcd2c8b51679f25caf3e77a95b5c0a84"
+    },
+    {
+      "number": 25,
+      "source_number": 2285,
+      "source_title": "Do not block in blocking commands run by EXEC or a script",
+      "source_head_sha": "cfe3427290eaf2c3a4be9eccb3cb03421f08e6f7"
+    },
+    {
+      "number": 26,
+      "source_number": 2268,
+      "source_title": "Improve network connection handling",
+      "source_head_sha": "eb475ecf193f536c301d121c74432ea56dc2425b"
+    },
+    {
+      "number": 27,
+      "source_number": 2229,
+      "source_title": "[Tsavorite] Account hash index memory in the log budget and bound overflow buckets",
+      "source_head_sha": "d4bbfad17461b45085f84cf0bd1b5c68dbc93949"
+    },
+    {
+      "number": 28,
+      "source_number": 2172,
+      "source_title": "[Tsavorite] Fix checkpoint abort abandoning in-flight flushes and stale checkpoint selection on recovery",
+      "source_head_sha": "7a55952a4ba5dd2d3d8a6192e09b2cb59e68d3ca"
+    },
+    {
+      "number": 29,
+      "source_number": 2159,
+      "source_title": "[Tsavorite] Fix silent data loss when the hash index checkpoint exceeds the OS single-request limit",
+      "source_head_sha": "f399f4b68048a2fa483eb85e1a303e010a2e32b3"
+    },
+    {
+      "number": 30,
+      "source_number": 2157,
+      "source_title": "Bound per-connection memory: adaptive network buffer budget, session buffer caps, and connection admission",
+      "source_head_sha": "89fa10963a14336ea01cb63aa25514e002a43bc9"
+    },
+    {
+      "number": 31,
+      "source_number": 2110,
+      "source_title": "Fix root causes behind recurring Garnet .NET CI flakes",
+      "source_head_sha": "54cead22d076ea5372a17cf15a38320c3cb82e15"
+    },
+    {
+      "number": 32,
+      "source_number": 2095,
+      "source_title": "Fix live-object mutation and scan liveness defects (#2092)",
+      "source_head_sha": "b215fc233c451a66df17ea7b91d01ffc527af3d4"
+    },
+    {
+      "number": 33,
+      "source_number": 2093,
+      "source_title": "Fix silent pre-listen hang and silent wrong-recovery on --recover (#2076)",
+      "source_head_sha": "821db70d20dfd97cc1aca99c0493eea422f30041"
+    },
+    {
+      "number": 34,
+      "source_number": 2063,
+      "source_title": "[Tsavorite] Scalable origin-return buffer pool + direct-VM native allocator",
+      "source_head_sha": "179e0772cc4978f2b796c1e46a7d24dd14957c30"
+    },
+    {
+      "number": 35,
+      "source_number": 2007,
+      "source_title": "Reduce disk reads on the tiered Vector Set search path",
+      "source_head_sha": "5f32b4bde28840f17694b6054f97cb6db4b28611"
+    },
+    {
+      "number": 36,
+      "source_number": 1989,
+      "source_title": "Fix CI BDN allocation flakiness",
+      "source_head_sha": "30091e501ab9f1347dc234536762a93188fcb290"
+    },
+    {
+      "number": 37,
+      "source_number": 1984,
+      "source_title": "Update docs, move purgebp to a debug subcommand",
+      "source_head_sha": "07e691a5d04ec544ac6e7657b83b5df20b628f2c"
+    },
+    {
+      "number": 38,
+      "source_number": 1980,
+      "source_title": "Fix misaligned object-log write of large overflow values",
+      "source_head_sha": "7b90b2b7de068a9d451206b2803ec2024f20646c"
+    },
+    {
+      "number": 39,
+      "source_number": 1970,
+      "source_title": "[Docs] Refresh unified-store, auth/config, and API docs",
+      "source_head_sha": "8dd4678ab8ccdd5364e2ddfa345a00b87263c859"
+    },
+    {
+      "number": 40,
+      "source_number": 1962,
+      "source_title": "Fix LoadModuleCS parsing for module paths containing spaces (#1951)",
+      "source_head_sha": "0738f732540b91620715f0bbf723b6cf0307480c"
+    },
+    {
+      "number": 41,
+      "source_number": 1924,
+      "source_title": "Update native storage device on Azure Linux docker container",
+      "source_head_sha": "21677b483353032c2fef95ea3f3f3c4c9e2a7856"
+    },
+    {
+      "number": 42,
+      "source_number": 1919,
+      "source_title": "Support INFO KEYSPACE command (#1668)",
+      "source_head_sha": "0ed0edebb67e1707567099f977e683a8f47acd76"
+    },
+    {
+      "number": 43,
+      "source_number": 1903,
+      "source_title": "Make alignment calculation consistent",
+      "source_head_sha": "78db5376cd466115d6fa9e4aff1d3d8acb2dbea8"
+    },
+    {
+      "number": 44,
+      "source_number": 1901,
+      "source_title": "Improve store info stats, optimize vector IO",
+      "source_head_sha": "fdcf05ac1a6da3aad90ee8b3db4a86712c38c2ef"
+    },
+    {
+      "number": 45,
+      "source_number": 1884,
+      "source_title": "Native storage device: improved error handling",
+      "source_head_sha": "df74069b7dd9e516f376db02726a8348f1c4c1d1"
+    },
+    {
+      "number": 46,
+      "source_number": 1879,
+      "source_title": "Small corner case handling in storage",
+      "source_head_sha": "d7c5f322354212d10a9e93cdc8eadc2426634e58"
+    },
+    {
+      "number": 47,
+      "source_number": 1867,
+      "source_title": "More IO optimizations",
+      "source_head_sha": "48663efa549458d1fa8c03236a14ee560d0c8a31"
+    },
+    {
+      "number": 48,
+      "source_number": 1860,
+      "source_title": "Simplified latch-free read cache design with eviction improvements",
+      "source_head_sha": "957ba2b5fb0497de7ffb1f47a24d2e510b861178"
+    },
+    {
+      "number": 49,
+      "source_number": 1854,
+      "source_title": "More IO optimization",
+      "source_head_sha": "2e7077cd5cbfaa031aa6a1eec2cae0a4f71ceb2c"
+    },
+    {
+      "number": 50,
+      "source_number": 1838,
+      "source_title": "Fix AOF page/memory size defaults and validation (#1811)",
+      "source_head_sha": "30f70455dbb393ffc3deb3cdca54b6d17896dba5"
+    },
+    {
+      "number": 51,
+      "source_number": 1837,
+      "source_title": "Optimize IO paths in KV",
+      "source_head_sha": "2d6da502cf41e7a18f6d67637d70f81bda7d3494"
+    },
+    {
+      "number": 52,
+      "source_number": 1834,
+      "source_title": "v1 backport pr 1798 v1",
+      "source_head_sha": "7e2981ac3e3e7d493f6d8ad7708534a01ade0068"
+    },
+    {
+      "number": 53,
+      "source_number": 1831,
+      "source_title": "[Tsavorite] Add native Linux storage backend, harden NativeStorageDevice, refresh storage benchmarks",
+      "source_head_sha": "dc97630d2fd2465c3ea50a0f11a1e18dc084428d"
+    },
+    {
+      "number": 54,
+      "source_number": 1823,
+      "source_title": "Add KV.benchmark: lean Tsavorite KV throughput benchmark",
+      "source_head_sha": "87c97957faf15ddaea01350bc4496279caf73ece"
+    },
+    {
+      "number": 55,
+      "source_number": 1805,
+      "source_title": "Adjust v2 defaults",
+      "source_head_sha": "10558c24ea90394dfb361b8f29023399a5282eb1"
+    },
+    {
+      "number": 56,
+      "source_number": 1799,
+      "source_title": "Update ValueOverflowThreshold",
+      "source_head_sha": "83c6bf829a599c1ec482e23ad5ccbdfc4427ae7f"
+    },
+    {
+      "number": 57,
+      "source_number": 1797,
+      "source_title": "Avoid tempKv-driven scan iteration in Garnet callers",
+      "source_head_sha": "50efd59757b17f39631ffb71ade1cc8d0bfe1df3"
+    },
+    {
+      "number": 58,
+      "source_number": 1796,
+      "source_title": "Hold per-DB checkpoint locks until all general-BGSAVE per-DB checkpoints complete",
+      "source_head_sha": "68db9765dda913bed2e97d94c0c25c17ab277377"
+    },
+    {
+      "number": 59,
+      "source_number": 1780,
+      "source_title": "Update lifecycle for compaction, truncate, improve bftree file management",
+      "source_head_sha": "517a853e2114c079b845c11db56054e1d03d7ac9"
+    },
+    {
+      "number": 60,
+      "source_number": 1775,
+      "source_title": "Pause VectorManager cleanup before cluster/other resets of log",
+      "source_head_sha": "8df3f02fc5f52321c5684fe52a8e95318488a086"
+    },
+    {
+      "number": 61,
+      "source_number": 1767,
+      "source_title": "Fix MultiDatabaseSaveInProgressTest",
+      "source_head_sha": "e27ffc6ac61350a1dc5f50dae307bffd2559af73"
+    },
+    {
+      "number": 62,
+      "source_number": 1766,
+      "source_title": "Tighten InstanceIndexBuffer GC-safety",
+      "source_head_sha": "47e6bb15a29358254e875a8d7aa562a4558f2afb"
+    },
+    {
+      "number": 63,
+      "source_number": 1754,
+      "source_title": "Fix #1749: leaked transient X-lock [dev]",
+      "source_head_sha": "0dde811c9af1244e981fa483a49c4dbd2b599da1"
+    },
+    {
+      "number": 64,
+      "source_number": 1753,
+      "source_title": "Fix #1749: leaked transient X-lock [main]",
+      "source_head_sha": "97a349c22d750e8afc32b824c6d5602d6bb680e5"
+    },
+    {
+      "number": 65,
+      "source_number": 1752,
+      "source_title": "Fix misc memory bugs [main]",
+      "source_head_sha": "b5c8b57c645ede9804635c7feabadf7f192b1897"
+    },
+    {
+      "number": 66,
+      "source_number": 1751,
+      "source_title": "Fix misc memory bugs [dev]",
+      "source_head_sha": "0711bdc7453b081ff8e640db943711252b145286"
+    },
+    {
+      "number": 67,
+      "source_number": 1747,
+      "source_title": "Remove incremental snapshots [dev]",
+      "source_head_sha": "28920915d9b24ffc4164a637701abe650f3aaec0"
+    },
+    {
+      "number": 68,
+      "source_number": 1744,
+      "source_title": "Fix TLS blocking issue when buffer is doubled [main]",
+      "source_head_sha": "f2e8f14e8d7e9829675b779b84a3a6345cc56e4d"
+    },
+    {
+      "number": 69,
+      "source_number": 1743,
+      "source_title": "Fix TLS blocking issue when buffer is doubled [dev]",
+      "source_head_sha": "9094e875506da87a6533e78b790f268a95017682"
+    },
+    {
+      "number": 70,
+      "source_number": 1739,
+      "source_title": "Simplify etags [dev]",
+      "source_head_sha": "76f2088ef350920b1ecf2814d41a9504f6bfaf27"
+    },
+    {
+      "number": 71,
+      "source_number": 1725,
+      "source_title": "Eliminate synthetic RMW for RI.SET/RI.DEL AOF logging",
+      "source_head_sha": "d8ca7b41bea0e5feb3d7f74a3b1a53feddee5b1b"
+    },
+    {
+      "number": 72,
+      "source_number": 1720,
+      "source_title": "[Tsavorite] Replace SafeTailAddress background refresh with per-thread inflight publish protocol",
+      "source_head_sha": "4ff91380da9ac0395652bf1d17e78c96ae704751"
+    },
+    {
+      "number": 73,
+      "source_number": 1719,
+      "source_title": "Drain deferred DoReadPage callbacks before disposing scan iterator",
+      "source_head_sha": "512c3e48e3443179312af32a9e8cf792f7a2c2a4"
+    },
+    {
+      "number": 74,
+      "source_number": 1718,
+      "source_title": "Fix scan iterator [dev]",
+      "source_head_sha": "30c38f49d70f3c40a3ce0b71cfb5cabca16de1d2"
+    },
+    {
+      "number": 75,
+      "source_number": 1716,
+      "source_title": "Fix use-after-free in GetAllocationForRetry when page is evicted",
+      "source_head_sha": "8d124812e79790f4dd6f7a4f63d676e4d37caa6f"
+    },
+    {
+      "number": 76,
+      "source_number": 1712,
+      "source_title": " Internalize heap-size tracking into Tsavorite",
+      "source_head_sha": "d5c784fa0a7698356335674ae533a08ab812b02d"
+    },
+    {
+      "number": 77,
+      "source_number": 1689,
+      "source_title": "Add GarnetRecordDisposer with per-record dispose on page eviction",
+      "source_head_sha": "156b29240b5508cb7a0fc07493ace00fcf5776bb"
+    },
+    {
+      "number": 78,
+      "source_number": 1679,
+      "source_title": "Fix snapshot flush and checkpoint exception propagation [dev]",
+      "source_head_sha": "5d77742c094d725889fbf57f22f13b938b5432a9"
+    },
+    {
+      "number": 79,
+      "source_number": 1678,
+      "source_title": "Fix AOF persistence and WATCH for collection-emptying RMW ops [main]",
+      "source_head_sha": "b2e08ea4568a26d5a438f19ab6d0304e7e51483f"
+    }
+  ]
+}

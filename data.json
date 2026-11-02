@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "generated_at": "2026-11-02T08:42:58.833557+00:00",
+  "generated_at": "2026-11-02T08:43:34.906303+00:00",
   "summary": {
-    "attempted_prs": 210,
-    "published_reports": 178,
-    "workflow_attempts": 431,
-    "without_report": 32,
-    "refuted_prs": 38,
-    "properties": 1173,
+    "attempted_prs": 288,
+    "published_reports": 222,
+    "workflow_attempts": 509,
+    "without_report": 66,
+    "refuted_prs": 43,
+    "properties": 1533,
     "outcomes": {
-      "refuted": 47,
-      "verified": 811,
-      "resources exhausted": 127,
-      "type-check/audit failure": 188
+      "refuted": 53,
+      "verified": 899,
+      "resources exhausted": 371,
+      "type-check/audit failure": 210
     }
   },
   "repositories": [
@@ -83,7 +83,7 @@
       "name": "gh-aw",
       "label": "gh-aw",
       "repository": "shuvendu-lahiri/gh-aw",
-      "generated_at": "2026-11-02T08:42:58.833557+00:00",
+      "generated_at": "2026-11-02T08:43:34.906303+00:00",
       "summary": {
         "selected_prs": 15,
         "attempted_prs": 15,
@@ -109,6 +109,27 @@
         "budget_aic": "50000",
         "checked_patches": 0,
         "note": "Campaign resumed after accepting the existing pilot with a transport-aware publication check; native evidence validation is unchanged. 7 audits remain active. Target: 10 conditional MODEL refutations with native checked fixes. Recorded spend below includes only fully accounted attempts; 28,000.00 AIC remains reserved for active or incompletely accounted attempts (3 finished attempts have incomplete usage). Total spent or reserved: 28,528.88 / 50,000 AIC. The repository daily guard remains 20,000 AIC. The plan contains 50 eligible source PRs each from pelikhan and dsyme. Published outcomes are model-conditional, not source-correctness claims."
+      }
+    },
+    {
+      "name": "garnet",
+      "label": "Garnet",
+      "repository": "shuvendu-lahiri/garnet",
+      "generated_at": "2026-11-01T21:20:57.206822+00:00",
+      "summary": {
+        "selected_prs": 78,
+        "attempted_prs": 78,
+        "published_reports": 44,
+        "workflow_attempts": 78,
+        "without_report": 34,
+        "refuted_prs": 5,
+        "properties": 360,
+        "outcomes": {
+          "refuted": 6,
+          "verified": 88,
+          "resources exhausted": 244,
+          "type-check/audit failure": 22
+        }
       }
     }
   ]

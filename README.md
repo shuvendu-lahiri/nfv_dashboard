@@ -8,6 +8,7 @@
 | LiteBox | [Open](https://shuvendu-lahiri.github.io/nfv_dashboard/litebox/) | [Reports](litebox/README.md) |
 | NVX | [Open](https://shuvendu-lahiri.github.io/nfv_dashboard/nvx/) | [Reports](nvx/README.md) |
 | gh-aw | [Open](https://shuvendu-lahiri.github.io/nfv_dashboard/gh-aw/) | [Reports](gh-aw/README.md) |
+| Garnet | [Open](https://shuvendu-lahiri.github.io/nfv_dashboard/garnet/) | [Reports](garnet/README.md) |
 
 Published results from the prototype [Neuro-Formal Verification
 reviewer](https://arxiv.org/abs/2608.21516). Refutations are **conditional MODEL
@@ -18,6 +19,9 @@ Latest published reports supply the counts. Earlier reports remain in each
 repository's `data.json`. Failed or missing publication is shown explicitly, not
 as a successful zero-finding analysis. NVX retains its recorded campaign cohorts
 and source-change links; Z3 and LiteBox include all non-skipped reviewer attempts.
+Garnet retains its selected replay cohort and immutable source-change links,
+including queued replays without reports. Use `python refresh.py --project garnet`
+to update Garnet while preserving other projects' snapshots.
 gh-aw shows its published pilot even while campaign acceptance is blocked. Its
 campaign panel separates the 100-PR plan from actual attempts, explains the paused
 state, and records credit usage and checked patches; unattempted PRs contribute
