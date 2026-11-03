@@ -20,7 +20,15 @@
     },
     "checked_fixes": 11,
     "fix_unknown": 0,
-    "checked_fix_prs": 10
+    "checked_fix_prs": 10,
+    "usage": {
+      "total_aic": "66734.43988",
+      "average_aic_per_pr": "667.3443988",
+      "measured_prs": 100,
+      "incomplete_prs": 4,
+      "no_ai_prs": 0,
+      "collected_at": "2026-11-03T23:16:52.769082+00:00"
+    }
   },
   "prs": [
     {
@@ -129,7 +137,11 @@
         "attempt": 2
       },
       "source_number": 1656,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1656"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1656",
+      "usage": {
+        "status": "measured",
+        "aic": "877.46208"
+      }
     },
     {
       "number": 3,
@@ -228,7 +240,11 @@
         "attempt": 2
       },
       "source_number": 1640,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1640"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1640",
+      "usage": {
+        "status": "measured",
+        "aic": "1263.41128"
+      }
     },
     {
       "number": 4,
@@ -309,7 +325,11 @@
         "attempt": 3
       },
       "source_number": 1641,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1641"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1641",
+      "usage": {
+        "status": "measured",
+        "aic": "1270.20344"
+      }
     },
     {
       "number": 6,
@@ -390,7 +410,11 @@
         "attempt": 4
       },
       "source_number": 1671,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1671"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1671",
+      "usage": {
+        "status": "measured",
+        "aic": "500.23336"
+      }
     },
     {
       "number": 7,
@@ -471,7 +495,11 @@
         "attempt": 2
       },
       "source_number": 1657,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1657"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1657",
+      "usage": {
+        "status": "measured",
+        "aic": "1299.23664"
+      }
     },
     {
       "number": 8,
@@ -547,7 +575,11 @@
         "attempt": 2
       },
       "source_number": 1648,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1648"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1648",
+      "usage": {
+        "status": "measured",
+        "aic": "725.44992"
+      }
     },
     {
       "number": 9,
@@ -628,7 +660,11 @@
         "attempt": 2
       },
       "source_number": 1647,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1647"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1647",
+      "usage": {
+        "status": "measured",
+        "aic": "926.02848"
+      }
     },
     {
       "number": 10,
@@ -709,7 +745,11 @@
         "attempt": 2
       },
       "source_number": 1646,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1646"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1646",
+      "usage": {
+        "status": "measured",
+        "aic": "472.71200"
+      }
     },
     {
       "number": 11,
@@ -790,7 +830,11 @@
         "attempt": 2
       },
       "source_number": 1643,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1643"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1643",
+      "usage": {
+        "status": "measured",
+        "aic": "320.05120"
+      }
     },
     {
       "number": 12,
@@ -871,7 +915,11 @@
         "attempt": 2
       },
       "source_number": 1642,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1642"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1642",
+      "usage": {
+        "status": "measured",
+        "aic": "713.35152"
+      }
     },
     {
       "number": 13,
@@ -972,7 +1020,11 @@
         "attempt": 2
       },
       "source_number": 1539,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1539"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1539",
+      "usage": {
+        "status": "measured",
+        "aic": "778.91880"
+      }
     },
     {
       "number": 14,
@@ -1072,7 +1124,11 @@
         "attempt": 2
       },
       "source_number": 1538,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1538"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1538",
+      "usage": {
+        "status": "measured",
+        "aic": "1270.88376"
+      }
     },
     {
       "number": 15,
@@ -1153,7 +1209,11 @@
         "attempt": 2
       },
       "source_number": 1533,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1533"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1533",
+      "usage": {
+        "status": "measured",
+        "aic": "569.40240"
+      }
     },
     {
       "number": 17,
@@ -1234,7 +1294,11 @@
         "attempt": 3
       },
       "source_number": 1672,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1672"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1672",
+      "usage": {
+        "status": "measured",
+        "aic": "382.96064"
+      }
     },
     {
       "number": 18,
@@ -1310,7 +1374,11 @@
         "attempt": 2
       },
       "source_number": 1470,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1470"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1470",
+      "usage": {
+        "status": "measured",
+        "aic": "530.53528"
+      }
     },
     {
       "number": 19,
@@ -1391,7 +1459,11 @@
         "attempt": 2
       },
       "source_number": 1469,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1469"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1469",
+      "usage": {
+        "status": "measured",
+        "aic": "1243.94512"
+      }
     },
     {
       "number": 20,
@@ -1472,7 +1544,11 @@
         "attempt": 2
       },
       "source_number": 1453,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1453"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1453",
+      "usage": {
+        "status": "measured",
+        "aic": "126.14656"
+      }
     },
     {
       "number": 21,
@@ -1553,7 +1629,11 @@
         "attempt": 2
       },
       "source_number": 1452,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1452"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1452",
+      "usage": {
+        "status": "measured",
+        "aic": "191.04088"
+      }
     },
     {
       "number": 22,
@@ -1634,7 +1714,11 @@
         "attempt": 2
       },
       "source_number": 1448,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1448"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1448",
+      "usage": {
+        "status": "measured",
+        "aic": "305.61584"
+      }
     },
     {
       "number": 23,
@@ -1715,7 +1799,11 @@
         "attempt": 2
       },
       "source_number": 1301,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1301"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1301",
+      "usage": {
+        "status": "measured",
+        "aic": "1629.61232"
+      }
     },
     {
       "number": 24,
@@ -1823,7 +1911,11 @@
         "attempt": 2
       },
       "source_number": 1297,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1297"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1297",
+      "usage": {
+        "status": "measured",
+        "aic": "1361.38856"
+      }
     },
     {
       "number": 25,
@@ -1904,7 +1996,11 @@
         "attempt": 3
       },
       "source_number": 1284,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1284"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1284",
+      "usage": {
+        "status": "incomplete",
+        "aic": null
+      }
     },
     {
       "number": 26,
@@ -1966,7 +2062,11 @@
         "attempt": 3
       },
       "source_number": 1282,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1282"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1282",
+      "usage": {
+        "status": "measured",
+        "aic": "1182.94992"
+      }
     },
     {
       "number": 27,
@@ -2054,7 +2154,11 @@
         "attempt": 2
       },
       "source_number": 1281,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1281"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1281",
+      "usage": {
+        "status": "measured",
+        "aic": "842.50792"
+      }
     },
     {
       "number": 28,
@@ -2135,7 +2239,11 @@
         "attempt": 2
       },
       "source_number": 1279,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1279"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1279",
+      "usage": {
+        "status": "measured",
+        "aic": "157.63952"
+      }
     },
     {
       "number": 29,
@@ -2197,7 +2305,11 @@
         "attempt": 2
       },
       "source_number": 1278,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1278"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1278",
+      "usage": {
+        "status": "measured",
+        "aic": "1550.60408"
+      }
     },
     {
       "number": 30,
@@ -2285,7 +2397,11 @@
         "attempt": 2
       },
       "source_number": 1273,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1273"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1273",
+      "usage": {
+        "status": "measured",
+        "aic": "983.46352"
+      }
     },
     {
       "number": 31,
@@ -2380,7 +2496,11 @@
         "attempt": 2
       },
       "source_number": 1272,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1272"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1272",
+      "usage": {
+        "status": "measured",
+        "aic": "1378.66584"
+      }
     },
     {
       "number": 32,
@@ -2468,7 +2588,11 @@
         "attempt": 2
       },
       "source_number": 1255,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1255"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1255",
+      "usage": {
+        "status": "measured",
+        "aic": "1196.11624"
+      }
     },
     {
       "number": 33,
@@ -2575,7 +2699,11 @@
         "attempt": 2
       },
       "source_number": 1254,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1254"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1254",
+      "usage": {
+        "status": "measured",
+        "aic": "1294.27208"
+      }
     },
     {
       "number": 34,
@@ -2675,7 +2803,11 @@
         "attempt": 2
       },
       "source_number": 1078,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1078"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1078",
+      "usage": {
+        "status": "measured",
+        "aic": "605.00224"
+      }
     },
     {
       "number": 35,
@@ -2769,7 +2901,11 @@
         "attempt": 2
       },
       "source_number": 1059,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1059"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1059",
+      "usage": {
+        "status": "measured",
+        "aic": "1547.57880"
+      }
     },
     {
       "number": 36,
@@ -2864,7 +3000,11 @@
         "attempt": 3
       },
       "source_number": 1040,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1040"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1040",
+      "usage": {
+        "status": "measured",
+        "aic": "925.55856"
+      }
     },
     {
       "number": 37,
@@ -2926,7 +3066,11 @@
         "attempt": 3
       },
       "source_number": 1676,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1676"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1676",
+      "usage": {
+        "status": "measured",
+        "aic": "436.42604"
+      }
     },
     {
       "number": 38,
@@ -3014,7 +3158,11 @@
         "attempt": 2
       },
       "source_number": 1668,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1668"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1668",
+      "usage": {
+        "status": "measured",
+        "aic": "1113.05498"
+      }
     },
     {
       "number": 39,
@@ -3153,7 +3301,11 @@
         "attempt": 2
       },
       "source_number": 1665,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1665"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1665",
+      "usage": {
+        "status": "measured",
+        "aic": "960.25190"
+      }
     },
     {
       "number": 40,
@@ -3234,7 +3386,11 @@
         "attempt": 3
       },
       "source_number": 1651,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1651"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1651",
+      "usage": {
+        "status": "measured",
+        "aic": "1000.12104"
+      }
     },
     {
       "number": 41,
@@ -3315,7 +3471,11 @@
         "attempt": 2
       },
       "source_number": 1652,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1652"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1652",
+      "usage": {
+        "status": "measured",
+        "aic": "700.59246"
+      }
     },
     {
       "number": 42,
@@ -3435,7 +3595,11 @@
         "attempt": 2
       },
       "source_number": 1637,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1637"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1637",
+      "usage": {
+        "status": "measured",
+        "aic": "1194.15504"
+      }
     },
     {
       "number": 43,
@@ -3537,7 +3701,11 @@
         "attempt": 2
       },
       "source_number": 1635,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1635"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1635",
+      "usage": {
+        "status": "measured",
+        "aic": "1543.71048"
+      }
     },
     {
       "number": 44,
@@ -3637,7 +3805,11 @@
         "attempt": 2
       },
       "source_number": 1633,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1633"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1633",
+      "usage": {
+        "status": "measured",
+        "aic": "1078.65492"
+      }
     },
     {
       "number": 45,
@@ -3718,7 +3890,11 @@
         "attempt": 2
       },
       "source_number": 1623,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1623"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1623",
+      "usage": {
+        "status": "measured",
+        "aic": "1176.48082"
+      }
     },
     {
       "number": 46,
@@ -3799,7 +3975,11 @@
         "attempt": 2
       },
       "source_number": 1621,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1621"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1621",
+      "usage": {
+        "status": "measured",
+        "aic": "469.32130"
+      }
     },
     {
       "number": 47,
@@ -3859,6 +4039,10 @@
         "status": "completed",
         "conclusion": "success",
         "attempt": 4
+      },
+      "usage": {
+        "status": "measured",
+        "aic": "735.54316"
       }
     },
     {
@@ -3921,7 +4105,11 @@
         "attempt": 1
       },
       "source_number": 1763,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1763"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1763",
+      "usage": {
+        "status": "measured",
+        "aic": "226.33898"
+      }
     },
     {
       "number": 49,
@@ -3983,7 +4171,11 @@
         "attempt": 1
       },
       "source_number": 1762,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1762"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1762",
+      "usage": {
+        "status": "measured",
+        "aic": "737.49624"
+      }
     },
     {
       "number": 50,
@@ -4045,7 +4237,11 @@
         "attempt": 1
       },
       "source_number": 1761,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1761"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1761",
+      "usage": {
+        "status": "measured",
+        "aic": "548.19584"
+      }
     },
     {
       "number": 51,
@@ -4066,7 +4262,11 @@
         "attempt": 1
       },
       "source_number": 1760,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1760"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1760",
+      "usage": {
+        "status": "measured",
+        "aic": "33.99752"
+      }
     },
     {
       "number": 52,
@@ -4128,7 +4328,11 @@
         "attempt": 1
       },
       "source_number": 1757,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1757"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1757",
+      "usage": {
+        "status": "measured",
+        "aic": "634.56560"
+      }
     },
     {
       "number": 53,
@@ -4190,7 +4394,11 @@
         "attempt": 1
       },
       "source_number": 1753,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1753"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1753",
+      "usage": {
+        "status": "measured",
+        "aic": "631.98568"
+      }
     },
     {
       "number": 54,
@@ -4211,7 +4419,11 @@
         "attempt": 1
       },
       "source_number": 1751,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1751"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1751",
+      "usage": {
+        "status": "measured",
+        "aic": "72.50904"
+      }
     },
     {
       "number": 55,
@@ -4273,7 +4485,11 @@
         "attempt": 1
       },
       "source_number": 1750,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1750"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1750",
+      "usage": {
+        "status": "measured",
+        "aic": "629.55044"
+      }
     },
     {
       "number": 56,
@@ -4294,7 +4510,11 @@
         "attempt": 1
       },
       "source_number": 1748,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1748"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1748",
+      "usage": {
+        "status": "measured",
+        "aic": "62.88176"
+      }
     },
     {
       "number": 57,
@@ -4356,7 +4576,11 @@
         "attempt": 1
       },
       "source_number": 1747,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1747"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1747",
+      "usage": {
+        "status": "measured",
+        "aic": "565.57056"
+      }
     },
     {
       "number": 58,
@@ -4377,7 +4601,11 @@
         "attempt": 1
       },
       "source_number": 1746,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1746"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1746",
+      "usage": {
+        "status": "measured",
+        "aic": "501.94680"
+      }
     },
     {
       "number": 59,
@@ -4439,7 +4667,11 @@
         "attempt": 1
       },
       "source_number": 1745,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1745"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1745",
+      "usage": {
+        "status": "measured",
+        "aic": "88.89520"
+      }
     },
     {
       "number": 60,
@@ -4501,7 +4733,11 @@
         "attempt": 1
       },
       "source_number": 1743,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1743"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1743",
+      "usage": {
+        "status": "measured",
+        "aic": "609.03584"
+      }
     },
     {
       "number": 61,
@@ -4522,7 +4758,11 @@
         "attempt": 1
       },
       "source_number": 1742,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1742"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1742",
+      "usage": {
+        "status": "measured",
+        "aic": "607.83504"
+      }
     },
     {
       "number": 62,
@@ -4584,7 +4824,11 @@
         "attempt": 1
       },
       "source_number": 1740,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1740"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1740",
+      "usage": {
+        "status": "measured",
+        "aic": "155.67480"
+      }
     },
     {
       "number": 63,
@@ -4605,7 +4849,11 @@
         "attempt": 1
       },
       "source_number": 1738,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1738"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1738",
+      "usage": {
+        "status": "measured",
+        "aic": "45.42496"
+      }
     },
     {
       "number": 64,
@@ -4667,7 +4915,11 @@
         "attempt": 1
       },
       "source_number": 1737,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1737"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1737",
+      "usage": {
+        "status": "measured",
+        "aic": "354.29528"
+      }
     },
     {
       "number": 65,
@@ -4743,7 +4995,11 @@
         "attempt": 1
       },
       "source_number": 1734,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1734"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1734",
+      "usage": {
+        "status": "measured",
+        "aic": "516.77888"
+      }
     },
     {
       "number": 66,
@@ -4805,7 +5061,11 @@
         "attempt": 1
       },
       "source_number": 1732,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1732"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1732",
+      "usage": {
+        "status": "measured",
+        "aic": "64.03064"
+      }
     },
     {
       "number": 67,
@@ -4867,7 +5127,11 @@
         "attempt": 1
       },
       "source_number": 1731,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1731"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1731",
+      "usage": {
+        "status": "measured",
+        "aic": "578.39848"
+      }
     },
     {
       "number": 68,
@@ -4929,7 +5193,11 @@
         "attempt": 1
       },
       "source_number": 1729,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1729"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1729",
+      "usage": {
+        "status": "measured",
+        "aic": "392.75528"
+      }
     },
     {
       "number": 69,
@@ -4991,7 +5259,11 @@
         "attempt": 1
       },
       "source_number": 1727,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1727"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1727",
+      "usage": {
+        "status": "measured",
+        "aic": "720.78376"
+      }
     },
     {
       "number": 70,
@@ -5053,7 +5325,11 @@
         "attempt": 1
       },
       "source_number": 1725,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1725"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1725",
+      "usage": {
+        "status": "measured",
+        "aic": "640.45488"
+      }
     },
     {
       "number": 71,
@@ -5115,7 +5391,11 @@
         "attempt": 1
       },
       "source_number": 1724,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1724"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1724",
+      "usage": {
+        "status": "measured",
+        "aic": "740.13064"
+      }
     },
     {
       "number": 72,
@@ -5197,7 +5477,11 @@
         "attempt": 1
       },
       "source_number": 1723,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1723"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1723",
+      "usage": {
+        "status": "measured",
+        "aic": "665.73264"
+      }
     },
     {
       "number": 73,
@@ -5273,7 +5557,11 @@
         "attempt": 1
       },
       "source_number": 1722,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1722"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1722",
+      "usage": {
+        "status": "measured",
+        "aic": "559.72248"
+      }
     },
     {
       "number": 74,
@@ -5361,7 +5649,11 @@
         "attempt": 1
       },
       "source_number": 1721,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1721"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1721",
+      "usage": {
+        "status": "measured",
+        "aic": "677.97728"
+      }
     },
     {
       "number": 75,
@@ -5443,7 +5735,11 @@
         "attempt": 1
       },
       "source_number": 1720,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1720"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1720",
+      "usage": {
+        "status": "measured",
+        "aic": "760.83040"
+      }
     },
     {
       "number": 76,
@@ -5505,7 +5801,11 @@
         "attempt": 1
       },
       "source_number": 1719,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1719"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1719",
+      "usage": {
+        "status": "measured",
+        "aic": "628.28216"
+      }
     },
     {
       "number": 77,
@@ -5593,7 +5893,11 @@
         "attempt": 1
       },
       "source_number": 1717,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1717"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1717",
+      "usage": {
+        "status": "measured",
+        "aic": "535.79520"
+      }
     },
     {
       "number": 78,
@@ -5614,7 +5918,11 @@
         "attempt": 2
       },
       "source_number": 1716,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1716"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1716",
+      "usage": {
+        "status": "measured",
+        "aic": "740.10360"
+      }
     },
     {
       "number": 79,
@@ -5676,7 +5984,11 @@
         "attempt": 2
       },
       "source_number": 1714,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1714"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1714",
+      "usage": {
+        "status": "measured",
+        "aic": "474.63032"
+      }
     },
     {
       "number": 80,
@@ -5738,7 +6050,11 @@
         "attempt": 2
       },
       "source_number": 1713,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1713"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1713",
+      "usage": {
+        "status": "measured",
+        "aic": "852.35384"
+      }
     },
     {
       "number": 81,
@@ -5820,7 +6136,11 @@
         "attempt": 2
       },
       "source_number": 1709,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1709"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1709",
+      "usage": {
+        "status": "measured",
+        "aic": "763.40104"
+      }
     },
     {
       "number": 82,
@@ -5882,7 +6202,11 @@
         "attempt": 2
       },
       "source_number": 1708,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1708"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1708",
+      "usage": {
+        "status": "measured",
+        "aic": "582.74392"
+      }
     },
     {
       "number": 83,
@@ -5958,7 +6282,11 @@
         "attempt": 2
       },
       "source_number": 1707,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1707"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1707",
+      "usage": {
+        "status": "measured",
+        "aic": "657.83944"
+      }
     },
     {
       "number": 84,
@@ -6020,7 +6348,11 @@
         "attempt": 2
       },
       "source_number": 1706,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1706"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1706",
+      "usage": {
+        "status": "measured",
+        "aic": "364.93744"
+      }
     },
     {
       "number": 85,
@@ -6041,7 +6373,11 @@
         "attempt": 2
       },
       "source_number": 1703,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1703"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1703",
+      "usage": {
+        "status": "incomplete",
+        "aic": null
+      }
     },
     {
       "number": 86,
@@ -6117,7 +6453,11 @@
         "attempt": 2
       },
       "source_number": 1702,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1702"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1702",
+      "usage": {
+        "status": "measured",
+        "aic": "550.88680"
+      }
     },
     {
       "number": 87,
@@ -6179,7 +6519,11 @@
         "attempt": 2
       },
       "source_number": 1701,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1701"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1701",
+      "usage": {
+        "status": "measured",
+        "aic": "563.75784"
+      }
     },
     {
       "number": 88,
@@ -6200,7 +6544,11 @@
         "attempt": 1
       },
       "source_number": 1700,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1700"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1700",
+      "usage": {
+        "status": "measured",
+        "aic": "602.81768"
+      }
     },
     {
       "number": 89,
@@ -6262,7 +6610,11 @@
         "attempt": 1
       },
       "source_number": 1698,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1698"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1698",
+      "usage": {
+        "status": "measured",
+        "aic": "71.88376"
+      }
     },
     {
       "number": 90,
@@ -6338,7 +6690,11 @@
         "attempt": 1
       },
       "source_number": 1696,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1696"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1696",
+      "usage": {
+        "status": "measured",
+        "aic": "653.04320"
+      }
     },
     {
       "number": 91,
@@ -6400,7 +6756,11 @@
         "attempt": 1
       },
       "source_number": 1692,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1692"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1692",
+      "usage": {
+        "status": "measured",
+        "aic": "557.92144"
+      }
     },
     {
       "number": 92,
@@ -6421,7 +6781,11 @@
         "attempt": 1
       },
       "source_number": 1691,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1691"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1691",
+      "usage": {
+        "status": "measured",
+        "aic": "67.43608"
+      }
     },
     {
       "number": 93,
@@ -6483,7 +6847,11 @@
         "attempt": 1
       },
       "source_number": 1690,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1690"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1690",
+      "usage": {
+        "status": "measured",
+        "aic": "257.03608"
+      }
     },
     {
       "number": 94,
@@ -6504,7 +6872,11 @@
         "attempt": 1
       },
       "source_number": 1689,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1689"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1689",
+      "usage": {
+        "status": "measured",
+        "aic": "63.26680"
+      }
     },
     {
       "number": 95,
@@ -6525,7 +6897,11 @@
         "attempt": 1
       },
       "source_number": 1688,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1688"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1688",
+      "usage": {
+        "status": "incomplete",
+        "aic": null
+      }
     },
     {
       "number": 96,
@@ -6587,7 +6963,11 @@
         "attempt": 1
       },
       "source_number": 1685,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1685"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1685",
+      "usage": {
+        "status": "measured",
+        "aic": "462.83272"
+      }
     },
     {
       "number": 97,
@@ -6608,7 +6988,11 @@
         "attempt": 1
       },
       "source_number": 1684,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1684"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1684",
+      "usage": {
+        "status": "measured",
+        "aic": "87.13112"
+      }
     },
     {
       "number": 98,
@@ -6670,7 +7054,11 @@
         "attempt": 1
       },
       "source_number": 1681,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1681"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1681",
+      "usage": {
+        "status": "measured",
+        "aic": "588.09824"
+      }
     },
     {
       "number": 99,
@@ -6732,7 +7120,11 @@
         "attempt": 1
       },
       "source_number": 1679,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1679"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1679",
+      "usage": {
+        "status": "measured",
+        "aic": "868.48648"
+      }
     },
     {
       "number": 100,
@@ -6794,7 +7186,11 @@
         "attempt": 1
       },
       "source_number": 1677,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1677"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1677",
+      "usage": {
+        "status": "measured",
+        "aic": "805.11184"
+      }
     },
     {
       "number": 101,
@@ -6856,7 +7252,11 @@
         "attempt": 1
       },
       "source_number": 1675,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1675"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1675",
+      "usage": {
+        "status": "measured",
+        "aic": "677.30664"
+      }
     },
     {
       "number": 102,
@@ -6918,7 +7318,11 @@
         "attempt": 1
       },
       "source_number": 1674,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1674"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1674",
+      "usage": {
+        "status": "measured",
+        "aic": "117.73064"
+      }
     },
     {
       "number": 103,
@@ -6980,7 +7384,11 @@
         "attempt": 1
       },
       "source_number": 1673,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1673"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1673",
+      "usage": {
+        "status": "measured",
+        "aic": "587.88760"
+      }
     },
     {
       "number": 104,
@@ -7042,7 +7450,11 @@
         "attempt": 1
       },
       "source_number": 1666,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1666"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1666",
+      "usage": {
+        "status": "measured",
+        "aic": "517.86232"
+      }
     },
     {
       "number": 105,
@@ -7124,7 +7536,11 @@
         "attempt": 1
       },
       "source_number": 1664,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1664"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1664",
+      "usage": {
+        "status": "measured",
+        "aic": "614.86968"
+      }
     },
     {
       "number": 106,
@@ -7206,7 +7622,11 @@
         "attempt": 1
       },
       "source_number": 1662,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1662"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1662",
+      "usage": {
+        "status": "measured",
+        "aic": "763.93008"
+      }
     },
     {
       "number": 107,
@@ -7227,7 +7647,11 @@
         "attempt": 1
       },
       "source_number": 1659,
-      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1659"
+      "source_url": "https://redirect.github.com/microsoft/litebox/pull/1659",
+      "usage": {
+        "status": "incomplete",
+        "aic": null
+      }
     }
   ],
   "languages": [

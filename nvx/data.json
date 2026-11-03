@@ -20,7 +20,15 @@
     },
     "checked_fixes": 6,
     "fix_unknown": 0,
-    "checked_fix_prs": 6
+    "checked_fix_prs": 6,
+    "usage": {
+      "total_aic": "31866.34530",
+      "average_aic_per_pr": "777.2279341463414634146341463",
+      "measured_prs": 41,
+      "incomplete_prs": 9,
+      "no_ai_prs": 0,
+      "collected_at": "2026-11-03T23:11:53.118856+00:00"
+    }
   },
   "prs": [
     {
@@ -110,7 +118,11 @@
       },
       "source_number": 747,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/747",
-      "source_head_sha": "8beb6e266b89b68f51b0b8f079745800b26d4855"
+      "source_head_sha": "8beb6e266b89b68f51b0b8f079745800b26d4855",
+      "usage": {
+        "status": "measured",
+        "aic": "758.75776"
+      }
     },
     {
       "number": 2,
@@ -211,7 +223,11 @@
       },
       "source_number": 758,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/758",
-      "source_head_sha": "52e385bb6a93d27ccce7524c4837d74e70b3710b"
+      "source_head_sha": "52e385bb6a93d27ccce7524c4837d74e70b3710b",
+      "usage": {
+        "status": "measured",
+        "aic": "318.96220"
+      }
     },
     {
       "number": 3,
@@ -312,7 +328,11 @@
       },
       "source_number": 755,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/755",
-      "source_head_sha": "37e2d27f9dff5d8ce4b97ab0606379a554e57cae"
+      "source_head_sha": "37e2d27f9dff5d8ce4b97ab0606379a554e57cae",
+      "usage": {
+        "status": "measured",
+        "aic": "254.45350"
+      }
     },
     {
       "number": 4,
@@ -413,7 +433,11 @@
       },
       "source_number": 750,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/750",
-      "source_head_sha": "d68ab667e4d2c55e59d730ad6f119a8b31446cc1"
+      "source_head_sha": "d68ab667e4d2c55e59d730ad6f119a8b31446cc1",
+      "usage": {
+        "status": "measured",
+        "aic": "222.00340"
+      }
     },
     {
       "number": 5,
@@ -533,7 +557,11 @@
       },
       "source_number": 742,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/742",
-      "source_head_sha": "185ed3354464eca00437ca99da74ed4ea884355a"
+      "source_head_sha": "185ed3354464eca00437ca99da74ed4ea884355a",
+      "usage": {
+        "status": "measured",
+        "aic": "711.33110"
+      }
     },
     {
       "number": 6,
@@ -634,7 +662,11 @@
       },
       "source_number": 705,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/705",
-      "source_head_sha": "3e75801e02acfdb8e1d61702794306924cd26684"
+      "source_head_sha": "3e75801e02acfdb8e1d61702794306924cd26684",
+      "usage": {
+        "status": "incomplete",
+        "aic": null
+      }
     },
     {
       "number": 7,
@@ -754,7 +786,11 @@
       },
       "source_number": 689,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/689",
-      "source_head_sha": "dcbb38c247b3c0c5c5744103a42e78703989a51f"
+      "source_head_sha": "dcbb38c247b3c0c5c5744103a42e78703989a51f",
+      "usage": {
+        "status": "measured",
+        "aic": "555.42480"
+      }
     },
     {
       "number": 8,
@@ -836,7 +872,11 @@
       },
       "source_number": 685,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/685",
-      "source_head_sha": "f5686796880df2c1bc2ed29bee7a50778c19ba77"
+      "source_head_sha": "f5686796880df2c1bc2ed29bee7a50778c19ba77",
+      "usage": {
+        "status": "measured",
+        "aic": "222.30882"
+      }
     },
     {
       "number": 9,
@@ -937,7 +977,11 @@
       },
       "source_number": 684,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/684",
-      "source_head_sha": "dbf5fb7eb363bc1cffae8a49f885b1da5042693f"
+      "source_head_sha": "dbf5fb7eb363bc1cffae8a49f885b1da5042693f",
+      "usage": {
+        "status": "measured",
+        "aic": "304.31236"
+      }
     },
     {
       "number": 10,
@@ -1038,7 +1082,11 @@
       },
       "source_number": 683,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/683",
-      "source_head_sha": "6fbfacf50ded6308e530b59fdf37455664aeb3eb"
+      "source_head_sha": "6fbfacf50ded6308e530b59fdf37455664aeb3eb",
+      "usage": {
+        "status": "measured",
+        "aic": "393.56630"
+      }
     },
     {
       "number": 11,
@@ -1146,7 +1194,11 @@
       },
       "source_number": 682,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/682",
-      "source_head_sha": "3a9c190461e1cb829480d39e09db1d25ad129cb6"
+      "source_head_sha": "3a9c190461e1cb829480d39e09db1d25ad129cb6",
+      "usage": {
+        "status": "measured",
+        "aic": "1024.72810"
+      }
     },
     {
       "number": 12,
@@ -1254,7 +1306,11 @@
       },
       "source_number": 714,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/714",
-      "source_head_sha": "490dfd595f1dfddab90ca617555fc6a2bf290c45"
+      "source_head_sha": "490dfd595f1dfddab90ca617555fc6a2bf290c45",
+      "usage": {
+        "status": "measured",
+        "aic": "1456.55516"
+      }
     },
     {
       "number": 13,
@@ -1382,7 +1438,11 @@
       },
       "source_number": 681,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/681",
-      "source_head_sha": "ce447e1ca1cef7917cb2a65e1982fb61cfb6ed60"
+      "source_head_sha": "ce447e1ca1cef7917cb2a65e1982fb61cfb6ed60",
+      "usage": {
+        "status": "measured",
+        "aic": "2224.06012"
+      }
     },
     {
       "number": 14,
@@ -1502,7 +1562,11 @@
       },
       "source_number": 680,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/680",
-      "source_head_sha": "8dbc2715830b2e5ea111c1bc41f4b70b449f849b"
+      "source_head_sha": "8dbc2715830b2e5ea111c1bc41f4b70b449f849b",
+      "usage": {
+        "status": "measured",
+        "aic": "1476.80128"
+      }
     },
     {
       "number": 15,
@@ -1603,7 +1667,11 @@
       },
       "source_number": 679,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/679",
-      "source_head_sha": "56ab021afe1c15ec7effd07b00c7bbcc0e0efd29"
+      "source_head_sha": "56ab021afe1c15ec7effd07b00c7bbcc0e0efd29",
+      "usage": {
+        "status": "measured",
+        "aic": "290.26064"
+      }
     },
     {
       "number": 16,
@@ -1718,7 +1786,11 @@
       },
       "source_number": 659,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/659",
-      "source_head_sha": "6a4743a74e2efac8604dea864d6e9e5e68978f83"
+      "source_head_sha": "6a4743a74e2efac8604dea864d6e9e5e68978f83",
+      "usage": {
+        "status": "measured",
+        "aic": "1378.43646"
+      }
     },
     {
       "number": 17,
@@ -1840,7 +1912,11 @@
       },
       "source_number": 678,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/678",
-      "source_head_sha": "897315d2d5dfd55f62c01b0c76af1e54ee3782df"
+      "source_head_sha": "897315d2d5dfd55f62c01b0c76af1e54ee3782df",
+      "usage": {
+        "status": "measured",
+        "aic": "1276.80044"
+      }
     },
     {
       "number": 18,
@@ -1941,7 +2017,11 @@
       },
       "source_number": 664,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/664",
-      "source_head_sha": "b2a8d7665bc27e4ffb095338b286701f3cad0dda"
+      "source_head_sha": "b2a8d7665bc27e4ffb095338b286701f3cad0dda",
+      "usage": {
+        "status": "measured",
+        "aic": "909.25558"
+      }
     },
     {
       "number": 19,
@@ -2049,7 +2129,11 @@
       },
       "source_number": 658,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/658",
-      "source_head_sha": "1b07ded43a33428db2a90947c89582252d5c9327"
+      "source_head_sha": "1b07ded43a33428db2a90947c89582252d5c9327",
+      "usage": {
+        "status": "measured",
+        "aic": "1582.94562"
+      }
     },
     {
       "number": 20,
@@ -2196,7 +2280,11 @@
       },
       "source_number": 657,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/657",
-      "source_head_sha": "756f215b2587ebecd3cb0b44d861853f98f21d71"
+      "source_head_sha": "756f215b2587ebecd3cb0b44d861853f98f21d71",
+      "usage": {
+        "status": "measured",
+        "aic": "1335.23202"
+      }
     },
     {
       "number": 21,
@@ -2285,7 +2373,11 @@
       },
       "source_number": 937,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/937",
-      "source_head_sha": "3d8aed5db3c3c905f69e3734a3d8af3f2a18ea60"
+      "source_head_sha": "3d8aed5db3c3c905f69e3734a3d8af3f2a18ea60",
+      "usage": {
+        "status": "measured",
+        "aic": "957.08532"
+      }
     },
     {
       "number": 22,
@@ -2367,7 +2459,11 @@
       },
       "source_number": 936,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/936",
-      "source_head_sha": "499fc744c36a1c1e7c624248713fe47675ab2c11"
+      "source_head_sha": "499fc744c36a1c1e7c624248713fe47675ab2c11",
+      "usage": {
+        "status": "measured",
+        "aic": "1101.98700"
+      }
     },
     {
       "number": 23,
@@ -2389,7 +2485,11 @@
       },
       "source_number": 935,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/935",
-      "source_head_sha": "a5385715a821e69ac6b1251926ee30774f5ab3ba"
+      "source_head_sha": "a5385715a821e69ac6b1251926ee30774f5ab3ba",
+      "usage": {
+        "status": "measured",
+        "aic": "89.91956"
+      }
     },
     {
       "number": 24,
@@ -2471,7 +2571,11 @@
       },
       "source_number": 916,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/916",
-      "source_head_sha": "58e87ff26b6038987d0181ea932c048cb9d1f51e"
+      "source_head_sha": "58e87ff26b6038987d0181ea932c048cb9d1f51e",
+      "usage": {
+        "status": "measured",
+        "aic": "265.77572"
+      }
     },
     {
       "number": 25,
@@ -2493,7 +2597,11 @@
       },
       "source_number": 908,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/908",
-      "source_head_sha": "049565ccedb2c752bc8f41bb373cf2f69f8059a1"
+      "source_head_sha": "049565ccedb2c752bc8f41bb373cf2f69f8059a1",
+      "usage": {
+        "status": "measured",
+        "aic": "96.40824"
+      }
     },
     {
       "number": 26,
@@ -2575,7 +2683,11 @@
       },
       "source_number": 900,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/900",
-      "source_head_sha": "4aa1c2666f9b4b16022a70beed324eef3b8c8150"
+      "source_head_sha": "4aa1c2666f9b4b16022a70beed324eef3b8c8150",
+      "usage": {
+        "status": "measured",
+        "aic": "687.37090"
+      }
     },
     {
       "number": 27,
@@ -2638,7 +2750,11 @@
       },
       "source_number": 894,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/894",
-      "source_head_sha": "eca76ea94e0cf478bac6d435dd2d2ca7e9771127"
+      "source_head_sha": "eca76ea94e0cf478bac6d435dd2d2ca7e9771127",
+      "usage": {
+        "status": "measured",
+        "aic": "351.57564"
+      }
     },
     {
       "number": 28,
@@ -2720,7 +2836,11 @@
       },
       "source_number": 893,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/893",
-      "source_head_sha": "1c1ac2a2520e1cb05810f5cb7f6b788827838f17"
+      "source_head_sha": "1c1ac2a2520e1cb05810f5cb7f6b788827838f17",
+      "usage": {
+        "status": "measured",
+        "aic": "527.49244"
+      }
     },
     {
       "number": 29,
@@ -2802,7 +2922,11 @@
       },
       "source_number": 886,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/886",
-      "source_head_sha": "7c97c9c06a1e341ae222ec964331e82531115fa6"
+      "source_head_sha": "7c97c9c06a1e341ae222ec964331e82531115fa6",
+      "usage": {
+        "status": "measured",
+        "aic": "1404.44464"
+      }
     },
     {
       "number": 30,
@@ -2824,7 +2948,11 @@
       },
       "source_number": 885,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/885",
-      "source_head_sha": "3fbaf8aeb78a0b8d610285461bb2f03a87e5e062"
+      "source_head_sha": "3fbaf8aeb78a0b8d610285461bb2f03a87e5e062",
+      "usage": {
+        "status": "incomplete",
+        "aic": null
+      }
     },
     {
       "number": 31,
@@ -2887,7 +3015,11 @@
       },
       "source_number": 881,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/881",
-      "source_head_sha": "5e751ca3fced46274c3555b327ed583d21dbdce0"
+      "source_head_sha": "5e751ca3fced46274c3555b327ed583d21dbdce0",
+      "usage": {
+        "status": "measured",
+        "aic": "628.51406"
+      }
     },
     {
       "number": 32,
@@ -2950,7 +3082,11 @@
       },
       "source_number": 880,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/880",
-      "source_head_sha": "9b6f035790f5a08e936db971b7d9df2990013669"
+      "source_head_sha": "9b6f035790f5a08e936db971b7d9df2990013669",
+      "usage": {
+        "status": "measured",
+        "aic": "808.49348"
+      }
     },
     {
       "number": 33,
@@ -3032,7 +3168,11 @@
       },
       "source_number": 877,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/877",
-      "source_head_sha": "060eefc2d3ccaca66aa5ab8429898cf96eb9750a"
+      "source_head_sha": "060eefc2d3ccaca66aa5ab8429898cf96eb9750a",
+      "usage": {
+        "status": "measured",
+        "aic": "1693.98164"
+      }
     },
     {
       "number": 34,
@@ -3114,7 +3254,11 @@
       },
       "source_number": 876,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/876",
-      "source_head_sha": "f3e0317c24773d0f2e9806ebe19f73822b258d10"
+      "source_head_sha": "f3e0317c24773d0f2e9806ebe19f73822b258d10",
+      "usage": {
+        "status": "measured",
+        "aic": "1123.68452"
+      }
     },
     {
       "number": 35,
@@ -3216,7 +3360,11 @@
       },
       "source_number": 874,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/874",
-      "source_head_sha": "f341f0903c1b5d8033bd4ca124753222cf5df3a2"
+      "source_head_sha": "f341f0903c1b5d8033bd4ca124753222cf5df3a2",
+      "usage": {
+        "status": "measured",
+        "aic": "202.70214"
+      }
     },
     {
       "number": 36,
@@ -3311,7 +3459,11 @@
       },
       "source_number": 873,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/873",
-      "source_head_sha": "c177b95758f8c130ddc11ff977ae52a7fe943f61"
+      "source_head_sha": "c177b95758f8c130ddc11ff977ae52a7fe943f61",
+      "usage": {
+        "status": "measured",
+        "aic": "625.38560"
+      }
     },
     {
       "number": 37,
@@ -3393,7 +3545,11 @@
       },
       "source_number": 871,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/871",
-      "source_head_sha": "0e11a6597e89aeb5356415771f9c6e03aa034a06"
+      "source_head_sha": "0e11a6597e89aeb5356415771f9c6e03aa034a06",
+      "usage": {
+        "status": "measured",
+        "aic": "632.17246"
+      }
     },
     {
       "number": 38,
@@ -3456,7 +3612,11 @@
       },
       "source_number": 864,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/864",
-      "source_head_sha": "b68497613398f4984fe9c86f2f7d1a32840f3177"
+      "source_head_sha": "b68497613398f4984fe9c86f2f7d1a32840f3177",
+      "usage": {
+        "status": "measured",
+        "aic": "523.68308"
+      }
     },
     {
       "number": 39,
@@ -3558,7 +3718,11 @@
       },
       "source_number": 831,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/831",
-      "source_head_sha": "d00841e174c5b6c6a1a3051baccb25e522f5e4ae"
+      "source_head_sha": "d00841e174c5b6c6a1a3051baccb25e522f5e4ae",
+      "usage": {
+        "status": "measured",
+        "aic": "1014.03288"
+      }
     },
     {
       "number": 40,
@@ -3641,7 +3805,11 @@
       },
       "source_number": 830,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/830",
-      "source_head_sha": "7b0feefc1bed24e8c276611117e16e16ae4a96bd"
+      "source_head_sha": "7b0feefc1bed24e8c276611117e16e16ae4a96bd",
+      "usage": {
+        "status": "measured",
+        "aic": "906.62368"
+      }
     },
     {
       "number": 41,
@@ -3704,7 +3872,11 @@
       },
       "source_number": 829,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/829",
-      "source_head_sha": "71aef6dd762a582bbcdde096a1a38300be373ea8"
+      "source_head_sha": "71aef6dd762a582bbcdde096a1a38300be373ea8",
+      "usage": {
+        "status": "measured",
+        "aic": "330.39280"
+      }
     },
     {
       "number": 42,
@@ -3726,7 +3898,11 @@
       },
       "source_number": 828,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/828",
-      "source_head_sha": "8d08b871f7fd27471b732ebee84ab0eecab3ae55"
+      "source_head_sha": "8d08b871f7fd27471b732ebee84ab0eecab3ae55",
+      "usage": {
+        "status": "incomplete",
+        "aic": null
+      }
     },
     {
       "number": 43,
@@ -3803,7 +3979,11 @@
       },
       "source_number": 827,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/827",
-      "source_head_sha": "004d3f8d1a299f562167731ade8d864fe1e780a3"
+      "source_head_sha": "004d3f8d1a299f562167731ade8d864fe1e780a3",
+      "usage": {
+        "status": "measured",
+        "aic": "420.20272"
+      }
     },
     {
       "number": 44,
@@ -3866,7 +4046,11 @@
       },
       "source_number": 824,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/824",
-      "source_head_sha": "ed3d733e99c24bcf245277e9367f9f9ecc3d5403"
+      "source_head_sha": "ed3d733e99c24bcf245277e9367f9f9ecc3d5403",
+      "usage": {
+        "status": "incomplete",
+        "aic": null
+      }
     },
     {
       "number": 45,
@@ -3967,7 +4151,11 @@
       },
       "source_number": 823,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/823",
-      "source_head_sha": "878ac04990f75f6433cdee8f4d1f9fda50e46483"
+      "source_head_sha": "878ac04990f75f6433cdee8f4d1f9fda50e46483",
+      "usage": {
+        "status": "measured",
+        "aic": "778.22112"
+      }
     },
     {
       "number": 46,
@@ -4030,7 +4218,11 @@
       },
       "source_number": 815,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/815",
-      "source_head_sha": "8c3d63e5fc12fe0208126b930fa992df43a70f48"
+      "source_head_sha": "8c3d63e5fc12fe0208126b930fa992df43a70f48",
+      "usage": {
+        "status": "incomplete",
+        "aic": null
+      }
     },
     {
       "number": 47,
@@ -4113,7 +4305,11 @@
       },
       "source_number": 814,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/814",
-      "source_head_sha": "8bea7f7194e35ad8743eaf2e424c53bda2fe5757"
+      "source_head_sha": "8bea7f7194e35ad8743eaf2e424c53bda2fe5757",
+      "usage": {
+        "status": "incomplete",
+        "aic": null
+      }
     },
     {
       "number": 48,
@@ -4176,7 +4372,11 @@
       },
       "source_number": 813,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/813",
-      "source_head_sha": "dca61fcd53f6b47288417de4d0214435a4871fec"
+      "source_head_sha": "dca61fcd53f6b47288417de4d0214435a4871fec",
+      "usage": {
+        "status": "incomplete",
+        "aic": null
+      }
     },
     {
       "number": 49,
@@ -4239,7 +4439,11 @@
       },
       "source_number": 807,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/807",
-      "source_head_sha": "8c0db85f004f61cd036830e975fa4c7463afeba6"
+      "source_head_sha": "8c0db85f004f61cd036830e975fa4c7463afeba6",
+      "usage": {
+        "status": "incomplete",
+        "aic": null
+      }
     },
     {
       "number": 50,
@@ -4261,7 +4465,11 @@
       },
       "source_number": 801,
       "source_url": "https://redirect.github.com/microsoft/nvx/pull/801",
-      "source_head_sha": "42bfb8e13d63b4e04b15bb67b98f0044b3dd9259"
+      "source_head_sha": "42bfb8e13d63b4e04b15bb67b98f0044b3dd9259",
+      "usage": {
+        "status": "incomplete",
+        "aic": null
+      }
     }
   ],
   "languages": [

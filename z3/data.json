@@ -20,7 +20,15 @@
     },
     "checked_fixes": 3,
     "fix_unknown": 0,
-    "checked_fix_prs": 3
+    "checked_fix_prs": 3,
+    "usage": {
+      "total_aic": "17279.60030",
+      "average_aic_per_pr": "454.7263236842105263157894737",
+      "measured_prs": 38,
+      "incomplete_prs": 3,
+      "no_ai_prs": 0,
+      "collected_at": "2026-11-03T23:11:38.425774+00:00"
+    }
   },
   "prs": [
     {
@@ -42,7 +50,11 @@
         "attempt": 1
       },
       "source_number": 11086,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11086"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11086",
+      "usage": {
+        "status": "measured",
+        "aic": "613.06202"
+      }
     },
     {
       "number": 20,
@@ -199,7 +211,11 @@
         "attempt": 5
       },
       "source_number": 10910,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/10910"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/10910",
+      "usage": {
+        "status": "incomplete",
+        "aic": null
+      }
     },
     {
       "number": 21,
@@ -261,7 +277,11 @@
         "attempt": 1
       },
       "source_number": 10888,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/10888"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/10888",
+      "usage": {
+        "status": "incomplete",
+        "aic": null
+      }
     },
     {
       "number": 22,
@@ -342,7 +362,11 @@
         "attempt": 1
       },
       "source_number": 10870,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/10870"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/10870",
+      "usage": {
+        "status": "incomplete",
+        "aic": null
+      }
     },
     {
       "number": 23,
@@ -423,7 +447,11 @@
         "attempt": 2
       },
       "source_number": 11165,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11165"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11165",
+      "usage": {
+        "status": "measured",
+        "aic": "543.39000"
+      }
     },
     {
       "number": 24,
@@ -504,7 +532,11 @@
         "attempt": 2
       },
       "source_number": 11164,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11164"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11164",
+      "usage": {
+        "status": "measured",
+        "aic": "323.95176"
+      }
     },
     {
       "number": 25,
@@ -585,7 +617,11 @@
         "attempt": 2
       },
       "source_number": 11159,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11159"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11159",
+      "usage": {
+        "status": "measured",
+        "aic": "444.93896"
+      }
     },
     {
       "number": 26,
@@ -666,7 +702,11 @@
         "attempt": 2
       },
       "source_number": 11162,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11162"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11162",
+      "usage": {
+        "status": "measured",
+        "aic": "229.35656"
+      }
     },
     {
       "number": 27,
@@ -747,7 +787,11 @@
         "attempt": 2
       },
       "source_number": 11160,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11160"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11160",
+      "usage": {
+        "status": "measured",
+        "aic": "751.04400"
+      }
     },
     {
       "number": 28,
@@ -835,7 +879,11 @@
         "attempt": 4
       },
       "source_number": 11161,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11161"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11161",
+      "usage": {
+        "status": "measured",
+        "aic": "1359.81992"
+      }
     },
     {
       "number": 29,
@@ -943,7 +991,11 @@
         "attempt": 2
       },
       "source_number": 11153,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11153"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11153",
+      "usage": {
+        "status": "measured",
+        "aic": "884.38048"
+      }
     },
     {
       "number": 30,
@@ -1005,7 +1057,11 @@
         "attempt": 4
       },
       "source_number": 11148,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11148"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11148",
+      "usage": {
+        "status": "measured",
+        "aic": "241.99184"
+      }
     },
     {
       "number": 31,
@@ -1067,7 +1123,11 @@
         "attempt": 3
       },
       "source_number": 11146,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11146"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11146",
+      "usage": {
+        "status": "measured",
+        "aic": "207.27920"
+      }
     },
     {
       "number": 32,
@@ -1129,7 +1189,11 @@
         "attempt": 2
       },
       "source_number": 11166,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11166"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11166",
+      "usage": {
+        "status": "measured",
+        "aic": "521.61752"
+      }
     },
     {
       "number": 33,
@@ -1210,7 +1274,11 @@
         "attempt": 3
       },
       "source_number": 11117,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11117"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11117",
+      "usage": {
+        "status": "measured",
+        "aic": "236.53960"
+      }
     },
     {
       "number": 34,
@@ -1291,7 +1359,11 @@
         "attempt": 2
       },
       "source_number": 11128,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11128"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11128",
+      "usage": {
+        "status": "measured",
+        "aic": "188.71608"
+      }
     },
     {
       "number": 35,
@@ -1425,7 +1497,11 @@
         "attempt": 2
       },
       "source_number": 11123,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11123"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11123",
+      "usage": {
+        "status": "measured",
+        "aic": "330.47984"
+      }
     },
     {
       "number": 36,
@@ -1487,7 +1563,11 @@
         "attempt": 3
       },
       "source_number": 11136,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11136"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11136",
+      "usage": {
+        "status": "measured",
+        "aic": "253.99424"
+      }
     },
     {
       "number": 37,
@@ -1568,7 +1648,11 @@
         "attempt": 2
       },
       "source_number": 11130,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11130"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11130",
+      "usage": {
+        "status": "measured",
+        "aic": "1056.00424"
+      }
     },
     {
       "number": 38,
@@ -1649,7 +1733,11 @@
         "attempt": 2
       },
       "source_number": 11114,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11114"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11114",
+      "usage": {
+        "status": "measured",
+        "aic": "458.81080"
+      }
     },
     {
       "number": 39,
@@ -1730,7 +1818,11 @@
         "attempt": 2
       },
       "source_number": 11111,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11111"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11111",
+      "usage": {
+        "status": "measured",
+        "aic": "294.66856"
+      }
     },
     {
       "number": 40,
@@ -1825,7 +1917,11 @@
         "attempt": 2
       },
       "source_number": 11245,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11245"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11245",
+      "usage": {
+        "status": "measured",
+        "aic": "1427.55662"
+      }
     },
     {
       "number": 41,
@@ -1933,7 +2029,11 @@
         "attempt": 2
       },
       "source_number": 11239,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11239"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11239",
+      "usage": {
+        "status": "measured",
+        "aic": "869.83088"
+      }
     },
     {
       "number": 42,
@@ -2014,7 +2114,11 @@
         "attempt": 2
       },
       "source_number": 11241,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11241"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11241",
+      "usage": {
+        "status": "measured",
+        "aic": "292.84138"
+      }
     },
     {
       "number": 43,
@@ -2109,7 +2213,11 @@
         "attempt": 2
       },
       "source_number": 11237,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11237"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11237",
+      "usage": {
+        "status": "measured",
+        "aic": "683.03120"
+      }
     },
     {
       "number": 44,
@@ -2190,7 +2298,11 @@
         "attempt": 2
       },
       "source_number": 11236,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11236"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11236",
+      "usage": {
+        "status": "measured",
+        "aic": "725.93346"
+      }
     },
     {
       "number": 45,
@@ -2271,7 +2383,11 @@
         "attempt": 2
       },
       "source_number": 11233,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11233"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11233",
+      "usage": {
+        "status": "measured",
+        "aic": "215.93438"
+      }
     },
     {
       "number": 46,
@@ -2352,7 +2468,11 @@
         "attempt": 2
       },
       "source_number": 11235,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11235"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11235",
+      "usage": {
+        "status": "measured",
+        "aic": "242.01612"
+      }
     },
     {
       "number": 47,
@@ -2433,7 +2553,11 @@
         "attempt": 2
       },
       "source_number": 11227,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11227"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11227",
+      "usage": {
+        "status": "measured",
+        "aic": "251.17890"
+      }
     },
     {
       "number": 48,
@@ -2514,7 +2638,11 @@
         "attempt": 2
       },
       "source_number": 11221,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11221"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11221",
+      "usage": {
+        "status": "measured",
+        "aic": "726.74724"
+      }
     },
     {
       "number": 49,
@@ -2595,7 +2723,11 @@
         "attempt": 2
       },
       "source_number": 11212,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11212"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11212",
+      "usage": {
+        "status": "measured",
+        "aic": "617.61952"
+      }
     },
     {
       "number": 50,
@@ -2657,7 +2789,11 @@
         "attempt": 1
       },
       "source_number": 11051,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11051"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11051",
+      "usage": {
+        "status": "measured",
+        "aic": "237.17518"
+      }
     },
     {
       "number": 51,
@@ -2719,7 +2855,11 @@
         "attempt": 1
       },
       "source_number": 11079,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11079"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11079",
+      "usage": {
+        "status": "measured",
+        "aic": "102.11002"
+      }
     },
     {
       "number": 52,
@@ -2781,7 +2921,11 @@
         "attempt": 1
       },
       "source_number": 11330,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11330"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11330",
+      "usage": {
+        "status": "measured",
+        "aic": "325.92216"
+      }
     },
     {
       "number": 53,
@@ -2843,7 +2987,11 @@
         "attempt": 1
       },
       "source_number": 11082,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11082"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11082",
+      "usage": {
+        "status": "measured",
+        "aic": "437.09126"
+      }
     },
     {
       "number": 54,
@@ -2905,7 +3053,11 @@
         "attempt": 1
       },
       "source_number": 11086,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11086"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11086",
+      "usage": {
+        "status": "measured",
+        "aic": "245.42650"
+      }
     },
     {
       "number": 55,
@@ -2967,7 +3119,11 @@
         "attempt": 1
       },
       "source_number": 11087,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11087"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11087",
+      "usage": {
+        "status": "measured",
+        "aic": "105.16442"
+      }
     },
     {
       "number": 56,
@@ -3029,7 +3185,11 @@
         "attempt": 1
       },
       "source_number": 11091,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11091"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11091",
+      "usage": {
+        "status": "measured",
+        "aic": "96.33520"
+      }
     },
     {
       "number": 57,
@@ -3091,7 +3251,11 @@
         "attempt": 1
       },
       "source_number": 11099,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11099"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11099",
+      "usage": {
+        "status": "measured",
+        "aic": "72.50042"
+      }
     },
     {
       "number": 58,
@@ -3153,7 +3317,11 @@
         "attempt": 1
       },
       "source_number": 11105,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11105"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11105",
+      "usage": {
+        "status": "measured",
+        "aic": "424.19816"
+      }
     },
     {
       "number": 59,
@@ -3215,7 +3383,11 @@
         "attempt": 1
       },
       "source_number": 11165,
-      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11165"
+      "source_url": "https://redirect.github.com/Z3Prover/z3/pull/11165",
+      "usage": {
+        "status": "measured",
+        "aic": "240.94166"
+      }
     }
   ],
   "languages": [

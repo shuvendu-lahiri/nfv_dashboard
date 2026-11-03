@@ -24,7 +24,15 @@
     },
     "checked_fixes": 3,
     "fix_unknown": 0,
-    "checked_fix_prs": 3
+    "checked_fix_prs": 3,
+    "usage": {
+      "total_aic": "8397.15624",
+      "average_aic_per_pr": "246.9751835294117647058823529",
+      "measured_prs": 34,
+      "incomplete_prs": 1,
+      "no_ai_prs": 0,
+      "collected_at": "2026-11-03T23:11:42.466280+00:00"
+    }
   },
   "prs": [
     {
@@ -91,7 +99,11 @@
       },
       "source_number": 73588,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/73588",
-      "source_head_sha": "d440196ee867b8cc9727ae8ec2fc0823c915dea4"
+      "source_head_sha": "d440196ee867b8cc9727ae8ec2fc0823c915dea4",
+      "usage": {
+        "status": "measured",
+        "aic": "249.87792"
+      }
     },
     {
       "number": 4,
@@ -113,7 +125,11 @@
       },
       "source_number": 73672,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/73672",
-      "source_head_sha": "77d2012726a12a359304d4e353ef21a09a2a53a4"
+      "source_head_sha": "77d2012726a12a359304d4e353ef21a09a2a53a4",
+      "usage": {
+        "status": "measured",
+        "aic": "64.14976"
+      }
     },
     {
       "number": 5,
@@ -179,7 +195,11 @@
       },
       "source_number": 72093,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/72093",
-      "source_head_sha": "6d5d4a09b10c425109292d6bcf337e13603de39e"
+      "source_head_sha": "6d5d4a09b10c425109292d6bcf337e13603de39e",
+      "usage": {
+        "status": "measured",
+        "aic": "743.65000"
+      }
     },
     {
       "number": 6,
@@ -245,7 +265,11 @@
       },
       "source_number": 73590,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/73590",
-      "source_head_sha": "94cc6fa6b92df036f3c0c037620fd12d12d27554"
+      "source_head_sha": "94cc6fa6b92df036f3c0c037620fd12d12d27554",
+      "usage": {
+        "status": "measured",
+        "aic": "640.90872"
+      }
     },
     {
       "number": 7,
@@ -267,7 +291,11 @@
       },
       "source_number": 61105,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/61105",
-      "source_head_sha": "8b4fd2b78807fad19ab814a523a19e01439524e7"
+      "source_head_sha": "8b4fd2b78807fad19ab814a523a19e01439524e7",
+      "usage": {
+        "status": "measured",
+        "aic": "55.01088"
+      }
     },
     {
       "number": 8,
@@ -289,7 +317,11 @@
       },
       "source_number": 42250,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/42250",
-      "source_head_sha": "d92c7a73eb0d24ee40caa55688df3821e6e35f05"
+      "source_head_sha": "d92c7a73eb0d24ee40caa55688df3821e6e35f05",
+      "usage": {
+        "status": "measured",
+        "aic": "45.32856"
+      }
     },
     {
       "number": 9,
@@ -355,7 +387,11 @@
       },
       "source_number": 73585,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/73585",
-      "source_head_sha": "ed787a46169aab9bbf06379c3206a41c951a4cae"
+      "source_head_sha": "ed787a46169aab9bbf06379c3206a41c951a4cae",
+      "usage": {
+        "status": "measured",
+        "aic": "108.15872"
+      }
     },
     {
       "number": 10,
@@ -421,7 +457,11 @@
       },
       "source_number": 40154,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/40154",
-      "source_head_sha": "24c312fa7639d2ae7f7adfab6b6e063a7978d359"
+      "source_head_sha": "24c312fa7639d2ae7f7adfab6b6e063a7978d359",
+      "usage": {
+        "status": "measured",
+        "aic": "55.06184"
+      }
     },
     {
       "number": 11,
@@ -443,7 +483,11 @@
       },
       "source_number": 73584,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/73584",
-      "source_head_sha": "b0ed1afe61b800bdf16cfe8173298f97fc7a1e24"
+      "source_head_sha": "b0ed1afe61b800bdf16cfe8173298f97fc7a1e24",
+      "usage": {
+        "status": "measured",
+        "aic": "69.49760"
+      }
     },
     {
       "number": 12,
@@ -509,7 +553,11 @@
       },
       "source_number": 39923,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/39923",
-      "source_head_sha": "14aaa714e8840f5d22fe7487c4a8ba3056f38795"
+      "source_head_sha": "14aaa714e8840f5d22fe7487c4a8ba3056f38795",
+      "usage": {
+        "status": "measured",
+        "aic": "320.38800"
+      }
     },
     {
       "number": 13,
@@ -531,7 +579,11 @@
       },
       "source_number": 73582,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/73582",
-      "source_head_sha": "67e789f56883931b2160ab8d720dace76037ef2e"
+      "source_head_sha": "67e789f56883931b2160ab8d720dace76037ef2e",
+      "usage": {
+        "status": "measured",
+        "aic": "46.28408"
+      }
     },
     {
       "number": 14,
@@ -597,7 +649,11 @@
       },
       "source_number": 39707,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/39707",
-      "source_head_sha": "5548abd9cb48375b4a49a28d445d39264c61bd70"
+      "source_head_sha": "5548abd9cb48375b4a49a28d445d39264c61bd70",
+      "usage": {
+        "status": "measured",
+        "aic": "375.35088"
+      }
     },
     {
       "number": 15,
@@ -689,7 +745,11 @@
       },
       "source_number": 73583,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/73583",
-      "source_head_sha": "b3bf1d5386a2a481d83f8bca9fbce77faeae83a4"
+      "source_head_sha": "b3bf1d5386a2a481d83f8bca9fbce77faeae83a4",
+      "usage": {
+        "status": "measured",
+        "aic": "545.16984"
+      }
     },
     {
       "number": 16,
@@ -755,7 +815,11 @@
       },
       "source_number": 38689,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/38689",
-      "source_head_sha": "70b0f61248ade0f8a98cf4f4e186e7dc90a58131"
+      "source_head_sha": "70b0f61248ade0f8a98cf4f4e186e7dc90a58131",
+      "usage": {
+        "status": "measured",
+        "aic": "202.21960"
+      }
     },
     {
       "number": 17,
@@ -821,7 +885,11 @@
       },
       "source_number": 73575,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/73575",
-      "source_head_sha": "45dc9a2c1b5d2596eb95f11e47ffd0ca28516272"
+      "source_head_sha": "45dc9a2c1b5d2596eb95f11e47ffd0ca28516272",
+      "usage": {
+        "status": "measured",
+        "aic": "187.17888"
+      }
     },
     {
       "number": 18,
@@ -843,7 +911,11 @@
       },
       "source_number": 37567,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/37567",
-      "source_head_sha": "714aa39ec784e4f43553bc293ca2c8fcac5e22a2"
+      "source_head_sha": "714aa39ec784e4f43553bc293ca2c8fcac5e22a2",
+      "usage": {
+        "status": "incomplete",
+        "aic": null
+      }
     },
     {
       "number": 19,
@@ -909,7 +981,11 @@
       },
       "source_number": 72951,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/72951",
-      "source_head_sha": "d2602fa8c4ba9f477b8889f33442ba1061150ff7"
+      "source_head_sha": "d2602fa8c4ba9f477b8889f33442ba1061150ff7",
+      "usage": {
+        "status": "measured",
+        "aic": "327.82648"
+      }
     },
     {
       "number": 20,
@@ -931,7 +1007,11 @@
       },
       "source_number": 37539,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/37539",
-      "source_head_sha": "f575a58dbe9f40d2c98f9c714af483dec3f68661"
+      "source_head_sha": "f575a58dbe9f40d2c98f9c714af483dec3f68661",
+      "usage": {
+        "status": "measured",
+        "aic": "46.45312"
+      }
     },
     {
       "number": 21,
@@ -997,7 +1077,11 @@
       },
       "source_number": 72942,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/72942",
-      "source_head_sha": "8cd0d6f949b2ac73b8bb1d482e37db074bb42971"
+      "source_head_sha": "8cd0d6f949b2ac73b8bb1d482e37db074bb42971",
+      "usage": {
+        "status": "measured",
+        "aic": "554.64112"
+      }
     },
     {
       "number": 22,
@@ -1019,7 +1103,11 @@
       },
       "source_number": 37537,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/37537",
-      "source_head_sha": "5a6a39a6bbecefa974178001adfd78541dca3f04"
+      "source_head_sha": "5a6a39a6bbecefa974178001adfd78541dca3f04",
+      "usage": {
+        "status": "measured",
+        "aic": "32.28024"
+      }
     },
     {
       "number": 23,
@@ -1041,7 +1129,11 @@
       },
       "source_number": 72579,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/72579",
-      "source_head_sha": "166d553d0bd0a11f29b925b9c9f3f5458c395126"
+      "source_head_sha": "166d553d0bd0a11f29b925b9c9f3f5458c395126",
+      "usage": {
+        "status": "measured",
+        "aic": "49.36376"
+      }
     },
     {
       "number": 24,
@@ -1063,7 +1155,11 @@
       },
       "source_number": 37437,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/37437",
-      "source_head_sha": "91e194fc9ed765af64c22fbf79b2016c70119c8c"
+      "source_head_sha": "91e194fc9ed765af64c22fbf79b2016c70119c8c",
+      "usage": {
+        "status": "measured",
+        "aic": "46.77344"
+      }
     },
     {
       "number": 25,
@@ -1155,7 +1251,11 @@
       },
       "source_number": 72542,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/72542",
-      "source_head_sha": "00fcd38d06726f2a10b749e51bae76af379a9117"
+      "source_head_sha": "00fcd38d06726f2a10b749e51bae76af379a9117",
+      "usage": {
+        "status": "measured",
+        "aic": "930.93328"
+      }
     },
     {
       "number": 26,
@@ -1177,7 +1277,11 @@
       },
       "source_number": 37359,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/37359",
-      "source_head_sha": "fcba545d94dcad3690df68d6ab0c87cbf0d3c80f"
+      "source_head_sha": "fcba545d94dcad3690df68d6ab0c87cbf0d3c80f",
+      "usage": {
+        "status": "measured",
+        "aic": "61.13608"
+      }
     },
     {
       "number": 27,
@@ -1243,7 +1347,11 @@
       },
       "source_number": 72418,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/72418",
-      "source_head_sha": "188d4c3d5e694c5749ecf19ce4c6bf9f317e9dc1"
+      "source_head_sha": "188d4c3d5e694c5749ecf19ce4c6bf9f317e9dc1",
+      "usage": {
+        "status": "measured",
+        "aic": "672.64376"
+      }
     },
     {
       "number": 28,
@@ -1335,7 +1443,11 @@
       },
       "source_number": 37313,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/37313",
-      "source_head_sha": "3348bf2fa95214a3dc8657dbc5dafddaff7355cb"
+      "source_head_sha": "3348bf2fa95214a3dc8657dbc5dafddaff7355cb",
+      "usage": {
+        "status": "measured",
+        "aic": "99.77664"
+      }
     },
     {
       "number": 29,
@@ -1357,7 +1469,11 @@
       },
       "source_number": 72412,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/72412",
-      "source_head_sha": "ac923bce832867d58fdd42b49b26f3341a4b1b94"
+      "source_head_sha": "ac923bce832867d58fdd42b49b26f3341a4b1b94",
+      "usage": {
+        "status": "measured",
+        "aic": "72.45384"
+      }
     },
     {
       "number": 30,
@@ -1379,7 +1495,11 @@
       },
       "source_number": 37225,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/37225",
-      "source_head_sha": "5cc6f9b1d8e85cd99180081d96428ac144a5399a"
+      "source_head_sha": "5cc6f9b1d8e85cd99180081d96428ac144a5399a",
+      "usage": {
+        "status": "measured",
+        "aic": "62.08408"
+      }
     },
     {
       "number": 31,
@@ -1445,7 +1565,11 @@
       },
       "source_number": 72407,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/72407",
-      "source_head_sha": "33710e5b921ac4a05177822cae37917bd74580ba"
+      "source_head_sha": "33710e5b921ac4a05177822cae37917bd74580ba",
+      "usage": {
+        "status": "measured",
+        "aic": "413.37296"
+      }
     },
     {
       "number": 32,
@@ -1467,7 +1591,11 @@
       },
       "source_number": 36657,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/36657",
-      "source_head_sha": "b6f0a91033c210f53213cb98eaa319e67baa7bd4"
+      "source_head_sha": "b6f0a91033c210f53213cb98eaa319e67baa7bd4",
+      "usage": {
+        "status": "measured",
+        "aic": "73.87816"
+      }
     },
     {
       "number": 33,
@@ -1533,7 +1661,11 @@
       },
       "source_number": 72395,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/72395",
-      "source_head_sha": "0f9f28277eec2e16f35fad058ff30bd0db20a29e"
+      "source_head_sha": "0f9f28277eec2e16f35fad058ff30bd0db20a29e",
+      "usage": {
+        "status": "measured",
+        "aic": "234.11208"
+      }
     },
     {
       "number": 34,
@@ -1555,7 +1687,11 @@
       },
       "source_number": 35949,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/35949",
-      "source_head_sha": "b0335230ef93ee05d2a850f3ae68f03dc5ec84bb"
+      "source_head_sha": "b0335230ef93ee05d2a850f3ae68f03dc5ec84bb",
+      "usage": {
+        "status": "measured",
+        "aic": "49.40304"
+      }
     },
     {
       "number": 35,
@@ -1621,7 +1757,11 @@
       },
       "source_number": 71848,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/71848",
-      "source_head_sha": "7204a126c209c4c26095dba784c4965cc93180ab"
+      "source_head_sha": "7204a126c209c4c26095dba784c4965cc93180ab",
+      "usage": {
+        "status": "measured",
+        "aic": "290.84240"
+      }
     },
     {
       "number": 36,
@@ -1643,7 +1783,11 @@
       },
       "source_number": 35901,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/35901",
-      "source_head_sha": "d537011e17f28d975d37efd54f74ffc87a66ac27"
+      "source_head_sha": "d537011e17f28d975d37efd54f74ffc87a66ac27",
+      "usage": {
+        "status": "measured",
+        "aic": "68.70120"
+      }
     },
     {
       "number": 37,
@@ -1709,7 +1853,11 @@
       },
       "source_number": 71833,
       "source_url": "https://redirect.github.com/github/gh-aw/pull/71833",
-      "source_head_sha": "7c4f4b2bff131b2044d5432d4456a96b034b7fbc"
+      "source_head_sha": "7c4f4b2bff131b2044d5432d4456a96b034b7fbc",
+      "usage": {
+        "status": "measured",
+        "aic": "602.24528"
+      }
     }
   ],
   "campaign": {

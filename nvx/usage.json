@@ -1,0 +1,3607 @@
+{
+  "schema": 1,
+  "repository": "shuvendu-lahiri/nvx",
+  "collected_at": "2026-11-03T23:11:53.118856+00:00",
+  "prs": [
+    {
+      "number": 1,
+      "workflow_attempts": 3,
+      "scope_matches": true,
+      "scope_sha256": "47676959df634fd9e3ab003c87ac0fdeb2cf94cad5d7606a22d092631b2cdb3c",
+      "runs": [
+        {
+          "run_id": 39888393336,
+          "attempt": 1,
+          "aic": "344.39480",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120202280564,
+              "name": "repository_context / agent",
+              "sha256": "f972e31e0048b8b28bfc67b94edc01dd5e6d22cf0091dd77d9c2dc45ef893012",
+              "aic": "52.25608"
+            },
+            {
+              "job_id": 120203062436,
+              "name": "repository_context / detection",
+              "sha256": "b9e2fa9307ec4f0efcdcefc195e2d4139ca276204b3ac34716b4f354d6b71347",
+              "aic": "9.82616"
+            },
+            {
+              "job_id": 120203543110,
+              "name": "agent",
+              "sha256": "b35db88a35aad2c346e51ec010a06c21c2c4da5b6eccaa1ab898466935d64e0f",
+              "aic": "265.44972"
+            },
+            {
+              "job_id": 120207701203,
+              "name": "detection",
+              "sha256": "53f1c13a5886607d78b48a38957943564702c7c9e12fa8126ea695f1002237b6",
+              "aic": "16.86284"
+            }
+          ]
+        },
+        {
+          "run_id": 39888393336,
+          "attempt": 2,
+          "aic": "365.36360",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120825507371,
+              "name": "repository_context / agent",
+              "sha256": "8af8bb73f8e0dca5292a963024cde29677de58d298d8a30d23391d4fb4216d82",
+              "aic": "34.64344"
+            },
+            {
+              "job_id": 120826410348,
+              "name": "repository_context / detection",
+              "sha256": "fe8ccfb4c5ee638de4c4f552f5c68763079824909b5fbf70053112679059b3e4",
+              "aic": "6.2624"
+            },
+            {
+              "job_id": 120826704604,
+              "name": "agent",
+              "sha256": "7a3afe3e6cc24667f0bf1827db5d012942c8614d14854aac34be38bf45c7dda6",
+              "aic": "316.63144"
+            },
+            {
+              "job_id": 120830449178,
+              "name": "detection",
+              "sha256": "c4864e98dff6a5a13fb7758788d3d80623f06c247025753a4525b03ec99fdb67",
+              "aic": "7.82632"
+            }
+          ]
+        },
+        {
+          "run_id": 39888393336,
+          "attempt": 3,
+          "aic": "48.99936",
+          "ai_jobs": 2,
+          "artifacts": [
+            {
+              "id": 12948113121,
+              "name": "908669d8-usage",
+              "sha256": "402ed07be9d849072a263cddd9c59a1f7c5ff915d47ec7d1c32c84ba21c200c9"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "workflow_attempts": 3,
+      "scope_matches": true,
+      "scope_sha256": "53d5eaae4b7cf8f5227885c6a60eb151310cb4265d1da8e0431a07ea9e760f85",
+      "runs": [
+        {
+          "run_id": 39890408953,
+          "attempt": 1,
+          "aic": "155.81988",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120209118564,
+              "name": "repository_context / agent",
+              "sha256": "d94254908b77f3b047d1d28945205afa200ff04951010dd28d068979b9a6f42c",
+              "aic": "29.97968"
+            },
+            {
+              "job_id": 120211963916,
+              "name": "repository_context / detection",
+              "sha256": "d38a36eeed88090fb7b7f7c6b2ea74f021164fefab5c62066ef2808cd6345fc7",
+              "aic": "7.54224"
+            },
+            {
+              "job_id": 120212521089,
+              "name": "agent",
+              "sha256": "39c16bff39d9228b5d3f96987abd9ea6166ddb95184d3ef504b2e89b90fe99f2",
+              "aic": "110.6468"
+            },
+            {
+              "job_id": 120214893787,
+              "name": "detection",
+              "sha256": "641e7398eeb4761ed4956da118bab44142ebefb4e7e86f04ce5898256cc41ea4",
+              "aic": "7.65116"
+            }
+          ]
+        },
+        {
+          "run_id": 39890408953,
+          "attempt": 2,
+          "aic": "88.12224",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120832696302,
+              "name": "repository_context / agent",
+              "sha256": "939c5623023fbcdde7ffbdce2dd8a9879ab07c0d8ffc7706f9ba2a7d607c38d9",
+              "aic": "25.1392"
+            },
+            {
+              "job_id": 120833172775,
+              "name": "repository_context / detection",
+              "sha256": "a750de6b45c9fc7d677798b0f8c7398feccc18f8cae049e44e61a7f5c510cd13",
+              "aic": "6.2844"
+            },
+            {
+              "job_id": 120833464761,
+              "name": "agent",
+              "sha256": "92cd29da26a7b5ddea5d6d3f25499b7499dfa883ce870c9405cb0c90379b5bff",
+              "aic": "45.19952"
+            },
+            {
+              "job_id": 120834351356,
+              "name": "detection",
+              "sha256": "f4efc09c4a77eea4135396a55665a8f5b16b91084599886f7a3a0a5850c82e11",
+              "aic": "11.49912"
+            }
+          ]
+        },
+        {
+          "run_id": 39890408953,
+          "attempt": 3,
+          "aic": "75.02008",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12947797572,
+              "name": "908669d8-usage",
+              "sha256": "a6fa3bfa57f2de52b4ca196eb5a62be27976c185622da7da43f4d6ed2a6e105e"
+            },
+            {
+              "id": 12948246744,
+              "name": "usage",
+              "sha256": "5f41567735cc4e1cc74b62969351edacc2456f3cec12f54b2b99c5bfbd7e8bf1"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "workflow_attempts": 3,
+      "scope_matches": true,
+      "scope_sha256": "11a240826146ca56881010fbcc825629ca79f6a8152dc00a7d859248b5661d71",
+      "runs": [
+        {
+          "run_id": 39890415139,
+          "attempt": 1,
+          "aic": "87.59998",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120208907026,
+              "name": "repository_context / agent",
+              "sha256": "c519c14344531c331dbccdf4c226047fb1ff6cb03b376feb5669ef898ce1bab8",
+              "aic": "27.60808"
+            },
+            {
+              "job_id": 120209756882,
+              "name": "repository_context / detection",
+              "sha256": "abd741e8b44f4dbff595c4e782a79b0dcaf99e4791bad190c3a5862ceac0f483",
+              "aic": "7.57804"
+            },
+            {
+              "job_id": 120210253126,
+              "name": "agent",
+              "sha256": "fb1ff6c28fb4583a7676ada017fcd474f1d745f6181f518d57e3edf43b2631d9",
+              "aic": "44.77918"
+            },
+            {
+              "job_id": 120211550992,
+              "name": "detection",
+              "sha256": "2964e46d611ea34e18fbc6ef8177fa426709079ddc270825542b872c8f2cf457",
+              "aic": "7.63468"
+            }
+          ]
+        },
+        {
+          "run_id": 39890415139,
+          "attempt": 2,
+          "aic": "80.66672",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120840393398,
+              "name": "repository_context / agent",
+              "sha256": "b83ed67ce7c1b104ffe9f7b9266526cf556580d3ac7380f47de86019c11c5e42",
+              "aic": "27.86072"
+            },
+            {
+              "job_id": 120841005319,
+              "name": "repository_context / detection",
+              "sha256": "a835ebef3570374fe99f2510151b5da15eb60afa141bded729961e1e7f2bb949",
+              "aic": "6.3596"
+            },
+            {
+              "job_id": 120841328632,
+              "name": "agent",
+              "sha256": "5ae220e71ed2c3cebbe7b692a532b41221e08c3b3b5fa8db4e7d5c40b054feb1",
+              "aic": "39.98008"
+            },
+            {
+              "job_id": 120842268640,
+              "name": "detection",
+              "sha256": "31b6225b56afa6a6e1b4cd83677c93a46c04747490ffee8d5829f072bc147397",
+              "aic": "6.46632"
+            }
+          ]
+        },
+        {
+          "run_id": 39890415139,
+          "attempt": 3,
+          "aic": "86.18680",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12948271500,
+              "name": "908669d8-usage",
+              "sha256": "e62e46c4a2da725a396f8ae0bbc0e0cf3c01e2376d01a854c517845aa71ae4f4"
+            },
+            {
+              "id": 12948073425,
+              "name": "usage",
+              "sha256": "a33356f8fce62d83ea84eebaeacc4d684bd245d426cb779190e9635c4f899e15"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "workflow_attempts": 3,
+      "scope_matches": true,
+      "scope_sha256": "35347502d01e370ddcec42e7dd73e237484be550c6068fd1f9f03fd1a9e2054d",
+      "runs": [
+        {
+          "run_id": 39890421003,
+          "attempt": 1,
+          "aic": "73.57036",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120208917763,
+              "name": "repository_context / agent",
+              "sha256": "cdadeb3fc13a6ecc02e8b81b116888308d46c34ce7e9c01224b6314bd6c94396",
+              "aic": "28.38212"
+            },
+            {
+              "job_id": 120210430398,
+              "name": "repository_context / detection",
+              "sha256": "6317be2a65f2e9a6e1dc827eb64def828b47d80ae5a6b2147be61ad94fef262c",
+              "aic": "7.56808"
+            },
+            {
+              "job_id": 120210895982,
+              "name": "agent",
+              "sha256": "084bbb23ee294146f2d1e432b5107e87cfc648aae687b4b94a6e4c8cbeb29c0a",
+              "aic": "30.01468"
+            },
+            {
+              "job_id": 120211991919,
+              "name": "detection",
+              "sha256": "31bad5abdd2c09021373247b20185e7fa84c27147b278c0c620cc38cc16a02b3",
+              "aic": "7.60548"
+            }
+          ]
+        },
+        {
+          "run_id": 39890421003,
+          "attempt": 2,
+          "aic": "73.27992",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120849455034,
+              "name": "repository_context / agent",
+              "sha256": "4138f2a5529513cd82c3b8205ccafcca0475793f7a4249569442672c2ea9bfe1",
+              "aic": "32.68832"
+            },
+            {
+              "job_id": 120849980209,
+              "name": "repository_context / detection",
+              "sha256": "b51eecdadf293224fa439244033bcd1f93dbba8f7c767dd7866d6c2fbd7771f7",
+              "aic": "6.2924"
+            },
+            {
+              "job_id": 120850302901,
+              "name": "agent",
+              "sha256": "94b9a5f4c843242ce64c4e4cabe7ec046fee4f5d8774863de1ddfb764c85e514",
+              "aic": "27.66288"
+            },
+            {
+              "job_id": 120851029833,
+              "name": "detection",
+              "sha256": "0e59670b64a86667a0884f259bbc4dac9d70753880c47c53f7bd58eaff49bac3",
+              "aic": "6.63632"
+            }
+          ]
+        },
+        {
+          "run_id": 39890421003,
+          "attempt": 3,
+          "aic": "75.15312",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12947474382,
+              "name": "908669d8-usage",
+              "sha256": "43fcc01397a93b437fc4643851884449601d559653d8eac409a874144d948812"
+            },
+            {
+              "id": 12948282218,
+              "name": "usage",
+              "sha256": "1b235b52b56eb226bcc764e7245d3cb9b73f6bbf22ef77203a7260402d2497a1"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "workflow_attempts": 3,
+      "scope_matches": true,
+      "scope_sha256": "970de74658ea64f246f85298c2b81372ee690c0e0b27984225f146bf24f9b7f5",
+      "runs": [
+        {
+          "run_id": 39890427567,
+          "attempt": 1,
+          "aic": "267.48054",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120208928871,
+              "name": "repository_context / agent",
+              "sha256": "0c5ac7fe2532ad082d80e3e777236bff57be764e54656d0b38b540bef03aa3fa",
+              "aic": "22.17776"
+            },
+            {
+              "job_id": 120211245483,
+              "name": "repository_context / detection",
+              "sha256": "52944ff78a09b203bb8d532509eacfb0af5af2ec9ab83dd7fcde71c5fb5466fe",
+              "aic": "14.67212"
+            },
+            {
+              "job_id": 120211814891,
+              "name": "agent",
+              "sha256": "95dc0c344ae95627d78d4426484c54d2537c9cd1d2a0320e21fe65cbeda93779",
+              "aic": "222.31218"
+            },
+            {
+              "job_id": 120215437378,
+              "name": "detection",
+              "sha256": "ed9b50b2d3c1db3d7efe36ac3f3b5176b2f0081e22827498b52f774b7d00d3de",
+              "aic": "8.31848"
+            }
+          ]
+        },
+        {
+          "run_id": 39890427567,
+          "attempt": 2,
+          "aic": "183.15384",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120851632976,
+              "name": "repository_context / agent",
+              "sha256": "914bf688ef7dfbee3cbb0b211c8adbb520c16d46b4341a2c380ce27346a26da6",
+              "aic": "22.53856"
+            },
+            {
+              "job_id": 120852047439,
+              "name": "repository_context / detection",
+              "sha256": "d03070ce9356e5a2b64e41bd9a951713b173b86b923ce1cd7e5a7347eb237c29",
+              "aic": "6.2872"
+            },
+            {
+              "job_id": 120852293203,
+              "name": "agent",
+              "sha256": "809ad2e77a10243a35911a5e9d2dfa16effff1000288f5792d75bb781c435caf",
+              "aic": "147.29856"
+            },
+            {
+              "job_id": 120854276799,
+              "name": "detection",
+              "sha256": "0d9467251fa18d6677af47054ebcbdc2c99ce745c52b4e3618c58e0f5c15cf28",
+              "aic": "7.02952"
+            }
+          ]
+        },
+        {
+          "run_id": 39890427567,
+          "attempt": 3,
+          "aic": "260.69672",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12948136742,
+              "name": "908669d8-usage",
+              "sha256": "fa83478c5d8333d5bc08d666585723395d4a86067c69650481eb001de7b2f06c"
+            },
+            {
+              "id": 12948971159,
+              "name": "usage",
+              "sha256": "82083cfb5ff16fa4468601f66d847ff8de83a9e66494060dd20f5950ad4ec226"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "workflow_attempts": 5,
+      "scope_matches": true,
+      "scope_sha256": "49d6674e24b3ecb5508e67293a68394b9eb8ebee604891a0663fa4c87103deeb",
+      "runs": [
+        {
+          "run_id": 39891550289,
+          "attempt": 1,
+          "aic": null,
+          "ai_jobs": 3,
+          "artifacts": [],
+          "reason": "usage artifact missing, expired or ambiguous",
+          "job_summaries": [
+            {
+              "job_id": 120212628206,
+              "name": "repository_context / agent",
+              "sha256": "8e3ce616773722f39a918e8a3b8220a4fa5fd6520be624805177d17ed8127381",
+              "aic": "25.19048"
+            },
+            {
+              "job_id": 120213426678,
+              "name": "repository_context / detection",
+              "sha256": "41f13664f446f2f7248af4f16943bc0d87873fa532947eaa404e5f3466035a1b",
+              "aic": "7.52764"
+            },
+            {
+              "job_id": 120213900120,
+              "name": "agent",
+              "sha256": "d814c59e6e09160f0c4417440b944a5ea92c9564a5dda0c8712db5f6db835535",
+              "aic": null
+            }
+          ]
+        },
+        {
+          "run_id": 39891550289,
+          "attempt": 2,
+          "aic": "294.19052",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120252771616,
+              "name": "repository_context / agent",
+              "sha256": "8e3ce616773722f39a918e8a3b8220a4fa5fd6520be624805177d17ed8127381",
+              "aic": "25.19048"
+            },
+            {
+              "job_id": 120252772231,
+              "name": "repository_context / detection",
+              "sha256": "41f13664f446f2f7248af4f16943bc0d87873fa532947eaa404e5f3466035a1b",
+              "aic": "7.52764"
+            },
+            {
+              "job_id": 120252772551,
+              "name": "agent",
+              "sha256": "0d573f9a2c2c95293892e543d4c3fb12b28151aa085b17cdbc88b60b8e0fb633",
+              "aic": "253.10776"
+            },
+            {
+              "job_id": 120257026816,
+              "name": "detection",
+              "sha256": "5f6541fdb13faaca12382175697ca18712cc4b86bc97086c0d5b964e4fb61702",
+              "aic": "8.36464"
+            }
+          ]
+        },
+        {
+          "run_id": 39891550289,
+          "attempt": 3,
+          "aic": "32.44152",
+          "ai_jobs": 2,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120853947734,
+              "name": "repository_context / agent",
+              "sha256": "a3413e5cf8d8ac7b62a92926a1d0490b097170b6e29fd17627fe8b702870005c",
+              "aic": "26.18072"
+            },
+            {
+              "job_id": 120854388192,
+              "name": "repository_context / detection",
+              "sha256": "4239ea7194a13e24f106d25ebf9341911c87fe3de0c1ee0fd3550e6d7794118f",
+              "aic": "6.2608"
+            }
+          ]
+        },
+        {
+          "run_id": 39891550289,
+          "attempt": 4,
+          "aic": "321.58352",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120961499902,
+              "name": "repository_context / agent",
+              "sha256": "e46c5d0fac89d34383567b238de2ede2af2c029bdf1191ea67f5245ec2eb7787",
+              "aic": "36.7792"
+            },
+            {
+              "job_id": 120961958205,
+              "name": "repository_context / detection",
+              "sha256": "e64e08ec6187f07807f7465d58361a4658c503f07464ce17c6ea69484bcbcd53",
+              "aic": "6.3184"
+            },
+            {
+              "job_id": 120962276522,
+              "name": "agent",
+              "sha256": "0b964750537539419a0d4e9370d8411cfc6b6f69580526f4c18c27cae92d2bbb",
+              "aic": "270.7992"
+            },
+            {
+              "job_id": 120966510863,
+              "name": "detection",
+              "sha256": "3cb542b04555bc1e39825191212953e2631b1b92c8ab6312758a8372e0395c7b",
+              "aic": "7.68672"
+            }
+          ]
+        },
+        {
+          "run_id": 39891550289,
+          "attempt": 5,
+          "aic": "263.60328",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12949150250,
+              "name": "aedec4a8-usage",
+              "sha256": "10aeab87cfc3fba2802549623a026df730e3d910b801449ef58cc6ae3076c8d6"
+            },
+            {
+              "id": 12948379783,
+              "name": "usage",
+              "sha256": "cf81e33a1d59594161157829c78025e3d31cf6fcc3b36ca8a62a854dcc2336d0"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "workflow_attempts": 3,
+      "scope_matches": true,
+      "scope_sha256": "f042e3354cc7336b255f1aa6b5ed5007531d86ef2c56884e45d92a54eaa1c85b",
+      "runs": [
+        {
+          "run_id": 39891744153,
+          "attempt": 1,
+          "aic": "187.74872",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120213298194,
+              "name": "repository_context / agent",
+              "sha256": "ee35c17c4b510070dd0ad63afca52aa9799ebb6d44ddc0e581a97aeefd2b255c",
+              "aic": "23.84824"
+            },
+            {
+              "job_id": 120214120111,
+              "name": "repository_context / detection",
+              "sha256": "238f7cb41439bfad1c919fd873983a13b7f082226fb1a7e0738054e036327535",
+              "aic": "7.64792"
+            },
+            {
+              "job_id": 120214600411,
+              "name": "agent",
+              "sha256": "cd28b25d4d6b2ab1a53505e69d3371a5fe618ca1e4e4196366b367c42e1533c1",
+              "aic": "148.50372"
+            },
+            {
+              "job_id": 120217513544,
+              "name": "detection",
+              "sha256": "c5b80e9d34282b2e11767a7c0398acbc8e87ed855df19b25fa0c1606ae71235e",
+              "aic": "7.74884"
+            }
+          ]
+        },
+        {
+          "run_id": 39891744153,
+          "attempt": 2,
+          "aic": "211.49824",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120854856615,
+              "name": "repository_context / agent",
+              "sha256": "70fef5dd61dffb4e5ed64b21b4ab49308e8a310a90827f05792cfc79353b2fc6",
+              "aic": "36.84568"
+            },
+            {
+              "job_id": 120855412216,
+              "name": "repository_context / detection",
+              "sha256": "3175c1d1f03f1d244eafddd78078dec8403601c8760ec3585e528e6903b6906b",
+              "aic": "17.39648"
+            },
+            {
+              "job_id": 120855932591,
+              "name": "agent",
+              "sha256": "83fd996e23998e152ca46fdda5d8323745caccb8c969b109203c8126c27ccfa5",
+              "aic": "150.49776"
+            },
+            {
+              "job_id": 120858049862,
+              "name": "detection",
+              "sha256": "1c6f3c4671107263d133ee90a9f61e28c0d9396c7956d15943f42ae61b1bc0d6",
+              "aic": "6.75832"
+            }
+          ]
+        },
+        {
+          "run_id": 39891744153,
+          "attempt": 3,
+          "aic": "156.17784",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12948870963,
+              "name": "908669d8-usage",
+              "sha256": "cb54ee78443bab628d74471e2db9a3550dcd4bc975bd31e461f1948e9a2c9ba1"
+            },
+            {
+              "id": 12949245798,
+              "name": "usage",
+              "sha256": "f087a15ca0ba58212993a782b416a763398976eb51d0d6682b674b9a17b9bf4c"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "workflow_attempts": 3,
+      "scope_matches": true,
+      "scope_sha256": "a8c2e37de1cd8a40a121d8a4a040658d2df8dc16188e5eb53c7a1cffc950abda",
+      "runs": [
+        {
+          "run_id": 39892492366,
+          "attempt": 1,
+          "aic": "59.92258",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120215645010,
+              "name": "repository_context / agent",
+              "sha256": "36da692b04ab170513ccfb5e16c85771860b7757bf98c78dcd19a1a3f4f4a337",
+              "aic": "29.13692"
+            },
+            {
+              "job_id": 120216530976,
+              "name": "repository_context / detection",
+              "sha256": "fb1397e24d858518b03112b0eb655412c022629f8de1299333a64f1753731b65",
+              "aic": "7.53304"
+            },
+            {
+              "job_id": 120217002371,
+              "name": "agent",
+              "sha256": "8106d04a5e74c3c89ff3b9fee7c20467be171cc458e7c97ce158b8af2247c681",
+              "aic": "15.8463"
+            },
+            {
+              "job_id": 120217729449,
+              "name": "detection",
+              "sha256": "25ba4d6df47475e69214e0ae407e65f9f9ac6f057863e6633ffba9d612e9396c",
+              "aic": "7.40632"
+            }
+          ]
+        },
+        {
+          "run_id": 39892492366,
+          "attempt": 2,
+          "aic": "130.51520",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120861765620,
+              "name": "repository_context / agent",
+              "sha256": "ee7ac779ed52e86b1761a4a440df49d7fdd7fe105f1d1aaae6742e6470b871c8",
+              "aic": "30.29432"
+            },
+            {
+              "job_id": 120862273143,
+              "name": "repository_context / detection",
+              "sha256": "19f8f63e70b7516ce4e17d6d981a62e5ff4d0ef4525afb191b17e2a6505ed446",
+              "aic": "6.316"
+            },
+            {
+              "job_id": 120862556129,
+              "name": "agent",
+              "sha256": "b3f6c5df276b578f640634d1f48c3aa833a248d3c643e5ce4863fa6016aa958b",
+              "aic": "87.01896"
+            },
+            {
+              "job_id": 120863851343,
+              "name": "detection",
+              "sha256": "f019a034bd56856ad23e55f6b7026243740ccddd0a602f756341b36c37fdb845",
+              "aic": "6.88592"
+            }
+          ]
+        },
+        {
+          "run_id": 39892492366,
+          "attempt": 3,
+          "aic": "31.87104",
+          "ai_jobs": 2,
+          "artifacts": [
+            {
+              "id": 12948523589,
+              "name": "908669d8-usage",
+              "sha256": "8cb49f4802b7ef9225fbf3429f9a98b39d34c6e3a8818f61d085919557218f63"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "workflow_attempts": 4,
+      "scope_matches": true,
+      "scope_sha256": "996e485e61f5907df803a443edea1dc95948a5c6552a148322862c874640baae",
+      "runs": [
+        {
+          "run_id": 39892693600,
+          "attempt": 1,
+          "aic": "30.61332",
+          "ai_jobs": 2,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120216309358,
+              "name": "repository_context / agent",
+              "sha256": "840355a613e4e45f1e4da3124ec629a67302dd210750fe7f8b4b8f4b92a64efd",
+              "aic": "23.06212"
+            },
+            {
+              "job_id": 120217156899,
+              "name": "repository_context / detection",
+              "sha256": "b079270b1c52280299b0c9b64ad0ef56f523beca0aa0766aae1deca5c05726ef",
+              "aic": "7.5512"
+            }
+          ]
+        },
+        {
+          "run_id": 39892693600,
+          "attempt": 2,
+          "aic": "86.16176",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120247731687,
+              "name": "repository_context / agent",
+              "sha256": "779fb767edb464eeec1de88f0b5b516c177a284c6fef1ce3fdbc891b2212921f",
+              "aic": "30.45592"
+            },
+            {
+              "job_id": 120248462206,
+              "name": "repository_context / detection",
+              "sha256": "4bb4feb7820cab11c1a4f7e5696cc5bd8016e1c20ee060eb267170449f478ec3",
+              "aic": "7.62516"
+            },
+            {
+              "job_id": 120248917995,
+              "name": "agent",
+              "sha256": "e6c652b4c811a20e03c2df402a021203c0fb925697d451089530d8c3dc3a8d6f",
+              "aic": "39.99368"
+            },
+            {
+              "job_id": 120250075361,
+              "name": "detection",
+              "sha256": "899ec71da6c5cfd9f4c4a92a23b75643ad3ce28e680ca9d03870a1e018a5b076",
+              "aic": "8.087"
+            }
+          ]
+        },
+        {
+          "run_id": 39892693600,
+          "attempt": 3,
+          "aic": "101.18520",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120864052047,
+              "name": "repository_context / agent",
+              "sha256": "e6e250d2f0bd9f66f4e5ab4bb0e755aa469e8d2b9146a69712ba21d5dec1a2e8",
+              "aic": "27.64296"
+            },
+            {
+              "job_id": 120864468672,
+              "name": "repository_context / detection",
+              "sha256": "2bd9a5f5ce0c338b5826556264a7ccdd95cc6b9c61c297877742d94de49b818d",
+              "aic": "6.248"
+            },
+            {
+              "job_id": 120864734679,
+              "name": "agent",
+              "sha256": "6f85cc003547172efce2cb68e71c7a3df9b287f8342d7b82e58494c793cd84c2",
+              "aic": "60.52312"
+            },
+            {
+              "job_id": 120865759662,
+              "name": "detection",
+              "sha256": "e42c3d65ccdc2d1571e00e775cd84e1821cd7b08f7c0c59c194f013f93b80b27",
+              "aic": "6.77112"
+            }
+          ]
+        },
+        {
+          "run_id": 39892693600,
+          "attempt": 4,
+          "aic": "86.35208",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12948418544,
+              "name": "3f2c3d55-usage",
+              "sha256": "a8936493959554fd24802ab670acdd5d9e64537103ec07b405ebb2c09b47e1c3"
+            },
+            {
+              "id": 12948518400,
+              "name": "usage",
+              "sha256": "3a02baf452a8d4696b2e99b2b9d04e68c39c5de04d73e6730cf6af20d756423c"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "workflow_attempts": 4,
+      "scope_matches": true,
+      "scope_sha256": "56f4719715e7151936da67afc4839d7d1d545280fc0f0e90d2cb155ea28686f8",
+      "runs": [
+        {
+          "run_id": 39892893751,
+          "attempt": 1,
+          "aic": "27.46000",
+          "ai_jobs": 2,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120216971106,
+              "name": "repository_context / agent",
+              "sha256": "74c8d1278d7dfe9bf231d2a7ac1700ee77af26891a8667ab0c31689eb5fd0f7b",
+              "aic": "19.89464"
+            },
+            {
+              "job_id": 120217923728,
+              "name": "repository_context / detection",
+              "sha256": "ed93a71dc7e5e52203f944efd74e27133b38cde160989ab2b61ea7ea63fe1a48",
+              "aic": "7.56536"
+            }
+          ]
+        },
+        {
+          "run_id": 39892893751,
+          "attempt": 2,
+          "aic": "154.46694",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120247775229,
+              "name": "repository_context / agent",
+              "sha256": "4190cfe0a002498d26049d2c8c09180a8acb1d680ea521a1268a3020a48abc7e",
+              "aic": "21.62396"
+            },
+            {
+              "job_id": 120249124666,
+              "name": "repository_context / detection",
+              "sha256": "8190b003c559ac65b15552ca152538895f2f8c30d990e2e01d422e13c684df41",
+              "aic": "7.81956"
+            },
+            {
+              "job_id": 120249593000,
+              "name": "agent",
+              "sha256": "767e154f481a14e6fa4ce89e82ab4d239e1b9c9a0ca014e5ccaee13ce336870b",
+              "aic": "117.25274"
+            },
+            {
+              "job_id": 120251760187,
+              "name": "detection",
+              "sha256": "dc92377290109055823e53e62542960e66c8f293f5523301fd05cf0b8c2da91f",
+              "aic": "7.77068"
+            }
+          ]
+        },
+        {
+          "run_id": 39892893751,
+          "attempt": 3,
+          "aic": "101.67648",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120866376821,
+              "name": "repository_context / agent",
+              "sha256": "6885d919efdb68ecdf81d20ffa19dd6c97a5af3f5f7663ef33ded30517a4ffa3",
+              "aic": "34.47528"
+            },
+            {
+              "job_id": 120866951079,
+              "name": "repository_context / detection",
+              "sha256": "2bdc7fcd68b32e7e9022da2f267452cb92c1a26a009fb1f7a29117f291e4a288",
+              "aic": "6.3192"
+            },
+            {
+              "job_id": 120867274436,
+              "name": "agent",
+              "sha256": "64d7e41c446271b567f8241e421420a32c1485a31dfc6aac2a86ae4907d17ca2",
+              "aic": "54.38728"
+            },
+            {
+              "job_id": 120868318467,
+              "name": "detection",
+              "sha256": "bd5fbf6c2c472331651e4b8c492856d777b208478b24a20e3a10c5adbd9cd19c",
+              "aic": "6.49472"
+            }
+          ]
+        },
+        {
+          "run_id": 39892893751,
+          "attempt": 4,
+          "aic": "109.96288",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12950791876,
+              "name": "3f2c3d55-usage",
+              "sha256": "72f0fbfe17a49513f4c0192d9eb42488abf5e19581ee8aed7e5361c795e3ae89"
+            },
+            {
+              "id": 12951071744,
+              "name": "usage",
+              "sha256": "4c8bd03fb8358053fb09fcf04d3adc33cdf023c2da047ccd515db73d4c8b0f49"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "workflow_attempts": 3,
+      "scope_matches": true,
+      "scope_sha256": "b961b0e07ca693fe60ff1122ff1b589e86c39e93af620ca0c725a24c2c868567",
+      "runs": [
+        {
+          "run_id": 39893495398,
+          "attempt": 1,
+          "aic": "409.40570",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120218833298,
+              "name": "repository_context / agent",
+              "sha256": "b76a524dc36ff2dcbdfd65529d350104911b6b69705110cca5bf1a98b52858ef",
+              "aic": "28.01568"
+            },
+            {
+              "job_id": 120219675317,
+              "name": "repository_context / detection",
+              "sha256": "e44b4f58f135b4f27c480390dd345ed84efe511a8aab0412facc0a559fe862f3",
+              "aic": "11.11472"
+            },
+            {
+              "job_id": 120220227837,
+              "name": "agent",
+              "sha256": "6ec0d54fdd8d11813d38d126aae37dfb099118e7092e60a727a0b88daeadc9da",
+              "aic": "361.80854"
+            },
+            {
+              "job_id": 120225197672,
+              "name": "detection",
+              "sha256": "bc71759d25c29995c33d32b4befe45b3991a7968569b82b5d2040898e5bfc50b",
+              "aic": "8.46676"
+            }
+          ]
+        },
+        {
+          "run_id": 39893495398,
+          "attempt": 2,
+          "aic": "269.35360",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120868636779,
+              "name": "repository_context / agent",
+              "sha256": "c7e852801784d6ac287922a2622e3a0bf4bd8b879a03273f8f9ba3c6f4cb5a83",
+              "aic": "21.89664"
+            },
+            {
+              "job_id": 120869121538,
+              "name": "repository_context / detection",
+              "sha256": "b2d08bf1d533dc72e8b310bc4b60f29f07fcecd1c396e244e3c23f3ebb71468f",
+              "aic": "6.3124"
+            },
+            {
+              "job_id": 120869410034,
+              "name": "agent",
+              "sha256": "5e4696f7fbcce32dcc3a75bb96bd4a465cc2cf2fdbd521bf99d8c8fc1602f5f5",
+              "aic": "228.57904"
+            },
+            {
+              "job_id": 120872408786,
+              "name": "detection",
+              "sha256": "71ba4c015f2eaa98dc24c7430594bf40e1bd40d2f961222415d7636068f73374",
+              "aic": "12.56552"
+            }
+          ]
+        },
+        {
+          "run_id": 39893495398,
+          "attempt": 3,
+          "aic": "345.96880",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12950617826,
+              "name": "908669d8-usage",
+              "sha256": "44016c5e82fb7044dc26ae38c57fd1cb6d84f2c3734f99cfae643db39fafb57c"
+            },
+            {
+              "id": 12951084103,
+              "name": "usage",
+              "sha256": "5db796f63d0c6294d598d72f0bc43cce9dccd202cd84c2848dcd9efc03ca9902"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "workflow_attempts": 3,
+      "scope_matches": true,
+      "scope_sha256": "343b82d912b28f44482c2bddec84cf77c82f2fcc9efa206973081aae821ea228",
+      "runs": [
+        {
+          "run_id": 39893502095,
+          "attempt": 1,
+          "aic": "557.06708",
+          "ai_jobs": 3,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120218876453,
+              "name": "repository_context / agent",
+              "sha256": "3a30a2837bde39f8e71bba31b106e1125950f58b71a25d1b74dbdb07e84475c4",
+              "aic": "25.86948"
+            },
+            {
+              "job_id": 120220357973,
+              "name": "repository_context / detection",
+              "sha256": "0b3fda8fd229d39754074760a27db898614f4ad394f5d48ea037b3846d96b674",
+              "aic": "7.54932"
+            },
+            {
+              "job_id": 120220824329,
+              "name": "agent",
+              "sha256": "f21229f4bbc48ab60ce4a6cc26d835f1f824e909d96b204f093d2b4e9b72ddbd",
+              "aic": "523.64828"
+            }
+          ]
+        },
+        {
+          "run_id": 39893502095,
+          "attempt": 2,
+          "aic": "418.96880",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120825497594,
+              "name": "repository_context / agent",
+              "sha256": "639c789f9eb76de072228a1dc503cb809900aa3b587807f1cf513fcf38b8919c",
+              "aic": "60.11016"
+            },
+            {
+              "job_id": 120825945665,
+              "name": "repository_context / detection",
+              "sha256": "dd84c33a7d4c3a89ef97e703e5a6e8bbde2e7fbcc080748355384a4beb11e1ff",
+              "aic": "14.00064"
+            },
+            {
+              "job_id": 120826257864,
+              "name": "agent",
+              "sha256": "4bc2a5da8e9142588f75fa8e7a37b8a4f449cd70413df369a556a8a5b505d92d",
+              "aic": "324.46672"
+            },
+            {
+              "job_id": 120830088239,
+              "name": "detection",
+              "sha256": "6c13514dab7523e52cecf228ccebfeef0bb5c0968fd50e607d18225313aec760",
+              "aic": "20.39128"
+            }
+          ]
+        },
+        {
+          "run_id": 39893502095,
+          "attempt": 3,
+          "aic": "480.51928",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12948422239,
+              "name": "908669d8-usage",
+              "sha256": "165e5d62a6272913f3aa35d57589bf9d53a5c431ecf3d5021db9e547a94b65a6"
+            },
+            {
+              "id": 12949504544,
+              "name": "usage",
+              "sha256": "c8ff6ec9c3d444256c6cb2afa2ba86f7300c1050b7d607f827c3283197f42887"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "workflow_attempts": 3,
+      "scope_matches": true,
+      "scope_sha256": "34d3bf851c3b6fa651891f3c82462ab82b406db726df14e3898cba34a9990e0b",
+      "runs": [
+        {
+          "run_id": 39893507724,
+          "attempt": 1,
+          "aic": "975.32708",
+          "ai_jobs": 3,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120218963405,
+              "name": "repository_context / agent",
+              "sha256": "3526ddff57d3bb81514c4f3ab944bd283281637058963de8f908e2004d54fc11",
+              "aic": "35.21424"
+            },
+            {
+              "job_id": 120221101906,
+              "name": "repository_context / detection",
+              "sha256": "2519a56f81d934f790f1c39f78e927ced672244ed35dbb28d97ff1af2464cb13",
+              "aic": "7.79496"
+            },
+            {
+              "job_id": 120221655675,
+              "name": "agent",
+              "sha256": "857a9a4c59812a3446b129280094b7016fc83e766b970e17d882b826bbf5f14e",
+              "aic": "932.31788"
+            }
+          ]
+        },
+        {
+          "run_id": 39893507724,
+          "attempt": 2,
+          "aic": "623.00568",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120872339869,
+              "name": "repository_context / agent",
+              "sha256": "cec8e3e484631da336d5bda1f4d83d9a205151127f4a09ee005899055e580f7c",
+              "aic": "37.92736"
+            },
+            {
+              "job_id": 120872876478,
+              "name": "repository_context / detection",
+              "sha256": "6c21ff6a16eaa7dabfd96eb5e951dbf7afe8cd984b1086743b55d047c7c30575",
+              "aic": "6.2736"
+            },
+            {
+              "job_id": 120873264758,
+              "name": "agent",
+              "sha256": "5d00546dd764adbefed2f24fcbf0f53d76f97139aff01a0cc42fe4b2ba4058d4",
+              "aic": "566.44304"
+            },
+            {
+              "job_id": 120880376773,
+              "name": "detection",
+              "sha256": "af98c5d95bbb1e42483ca0e6a4cd52ea79fa1e7d64ad0fa94310d663d34e8ec7",
+              "aic": "12.36168"
+            }
+          ]
+        },
+        {
+          "run_id": 39893507724,
+          "attempt": 3,
+          "aic": "625.72736",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12950504257,
+              "name": "908669d8-usage",
+              "sha256": "227e6cea0d11763ff63e345d61979960b1ec4b55203692f22c276f6f7ad03dce"
+            },
+            {
+              "id": 12952224444,
+              "name": "usage",
+              "sha256": "f110725cb8cbf9d5a79b24534a6804bf75c9876c0876d17497de36ad96a459c6"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "workflow_attempts": 3,
+      "scope_matches": true,
+      "scope_sha256": "3c0fb2dc4800cdb427c8b4838974d2f9d528abbfe51eadcf7c1e2e0c9ed3cb49",
+      "runs": [
+        {
+          "run_id": 39893712214,
+          "attempt": 1,
+          "aic": "336.46072",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120219548291,
+              "name": "repository_context / agent",
+              "sha256": "7d4b7b3fbef2e3156d8b3984cb3d5964f1c40218c2c156c1f5d7f801fa835805",
+              "aic": "29.63396"
+            },
+            {
+              "job_id": 120221871553,
+              "name": "repository_context / detection",
+              "sha256": "57aad2eb5ee0c088c3d0c007f0857176f71a78fcffe894c833cc92d0b5557dfe",
+              "aic": "7.52772"
+            },
+            {
+              "job_id": 120222301654,
+              "name": "agent",
+              "sha256": "2e472117b18e860354c9d3ae0437a027007c4ea49850fae457d22e5974714ce5",
+              "aic": "290.39596"
+            },
+            {
+              "job_id": 120226774700,
+              "name": "detection",
+              "sha256": "097504b23128db1e539fff8dbfe123c93343222969c428c8e20672290c02aff5",
+              "aic": "8.90308"
+            }
+          ]
+        },
+        {
+          "run_id": 39893712214,
+          "attempt": 2,
+          "aic": "561.20696",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120875289274,
+              "name": "repository_context / agent",
+              "sha256": "bfe697c5c0e423d2411166632a1635c9f08242dd63e9d5d5a471c95ca56dfdd6",
+              "aic": "31.49544"
+            },
+            {
+              "job_id": 120875761270,
+              "name": "repository_context / detection",
+              "sha256": "ae487c24bb13a2f94e4e92bff16764915ad713e408ff7c5c516751ed25814ff1",
+              "aic": "9.46136"
+            },
+            {
+              "job_id": 120876091163,
+              "name": "agent",
+              "sha256": "1eb6dec3adae16ac135969fd089148266ddcc70c91d4238442378a4b9018ae2f",
+              "aic": "512.21624"
+            },
+            {
+              "job_id": 120882055188,
+              "name": "detection",
+              "sha256": "b4fcb53fc2cfa2920b4d0078305b7cddf8df9c715a69aa62aee01f868c21e7f7",
+              "aic": "8.03392"
+            }
+          ]
+        },
+        {
+          "run_id": 39893712214,
+          "attempt": 3,
+          "aic": "579.13360",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12950478878,
+              "name": "908669d8-usage",
+              "sha256": "8655feaef4f19ddef83f0aad7e24258f1b3e30c53d34c2d6ba16fbc447cbd23f"
+            },
+            {
+              "id": 12953035112,
+              "name": "usage",
+              "sha256": "1922958dd2cba59cdd0a02f94d1f7fcea660d8e03490ba52e124b8108776bbbc"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "workflow_attempts": 3,
+      "scope_matches": true,
+      "scope_sha256": "76d173727b94966747644100661fc41c259036d46faeac810b4a9dcd3356d40f",
+      "runs": [
+        {
+          "run_id": 39895920868,
+          "attempt": 1,
+          "aic": "63.93840",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120226563187,
+              "name": "repository_context / agent",
+              "sha256": "b5c2952f1f9158e7673c4654db82ae0d3cc56d89a0924a1cd7c0299495385308",
+              "aic": "38.69584"
+            },
+            {
+              "job_id": 120227324132,
+              "name": "repository_context / detection",
+              "sha256": "2aef268c88ea4c4f6dddd70dafb091287a5193acb5a769d72db91ad5b9913b4e",
+              "aic": "7.53832"
+            },
+            {
+              "job_id": 120227776246,
+              "name": "agent",
+              "sha256": "09559951f4917936527db30ba39c11cd159093d4f53b3a8fb44455924d24cba3",
+              "aic": "10.0354"
+            },
+            {
+              "job_id": 120228452506,
+              "name": "detection",
+              "sha256": "66008463744831bbb89fcf7895fb0dad67bace8e790873e6d8097f28aa79d51e",
+              "aic": "7.66884"
+            }
+          ]
+        },
+        {
+          "run_id": 39895920868,
+          "attempt": 2,
+          "aic": "115.37936",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120881125751,
+              "name": "repository_context / agent",
+              "sha256": "72bbeb60d06d654a1f67f23d695f142724c6e18173b6749c51c7f96c9ec37f2f",
+              "aic": "46.11432"
+            },
+            {
+              "job_id": 120881728890,
+              "name": "repository_context / detection",
+              "sha256": "b6a54a4803ebdd6401dad9728f863ca3dd6f27635fb86edaae2186536e86ee67",
+              "aic": "6.316"
+            },
+            {
+              "job_id": 120882070302,
+              "name": "agent",
+              "sha256": "025b8533f9eccfd80913f85770f60549cca1e22c49932883f59aad7271a2961d",
+              "aic": "56.49112"
+            },
+            {
+              "job_id": 120883160838,
+              "name": "detection",
+              "sha256": "d8413bc876add6d2879d0d7885c4e0127a458400d8b381f777cd11d1018d1511",
+              "aic": "6.45792"
+            }
+          ]
+        },
+        {
+          "run_id": 39895920868,
+          "attempt": 3,
+          "aic": "110.94288",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12951201270,
+              "name": "908669d8-usage",
+              "sha256": "4dd0550b95211fe8b89ecb8ed7e7483e0f84f5de0f408a26f9ea7acf82447fde"
+            },
+            {
+              "id": 12951277290,
+              "name": "usage",
+              "sha256": "66dfa4fa9f3c133db934d1cfe581c87f4fa78cbc3d9e54c94e248b4345db56df"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "workflow_attempts": 3,
+      "scope_matches": true,
+      "scope_sha256": "2afcf2cee9b85ade4b2d4320497558392e238c2d266cd5037046dd8853918b29",
+      "runs": [
+        {
+          "run_id": 39896467670,
+          "attempt": 1,
+          "aic": "513.54486",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120228403437,
+              "name": "repository_context / agent",
+              "sha256": "bed68fad4feca3e1afd9a041020441a285f9c28a286f57a5a6fb8dc74540a983",
+              "aic": "23.77308"
+            },
+            {
+              "job_id": 120229115956,
+              "name": "repository_context / detection",
+              "sha256": "9e23886a2cbd503e2869cd500151e04aadbd31644b41ed2a7930700cb667896e",
+              "aic": "7.8014"
+            },
+            {
+              "job_id": 120229608059,
+              "name": "agent",
+              "sha256": "27ae909f71ab3682166c9e7e1b1566be9e513e890d4d4e2034830d8b0e38e617",
+              "aic": "463.46446"
+            },
+            {
+              "job_id": 120235854583,
+              "name": "detection",
+              "sha256": "84f24df58d584ade60d5276c936397d7644cef92caa089ed8662d7a45c4c54b2",
+              "aic": "18.50592"
+            }
+          ]
+        },
+        {
+          "run_id": 39896467670,
+          "attempt": 2,
+          "aic": "433.78896",
+          "ai_jobs": 3,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120883762561,
+              "name": "repository_context / agent",
+              "sha256": "fb95c38575f84ffbea21c42ade758137d9583f9f34a22711da40c29b503f362f",
+              "aic": "31.12776"
+            },
+            {
+              "job_id": 120884251121,
+              "name": "repository_context / detection",
+              "sha256": "ab8412c956d5978ef3f0f0accfe853e0365e80456c5d68b9a6f6efb17fbd804c",
+              "aic": "6.2796"
+            },
+            {
+              "job_id": 120884570269,
+              "name": "agent",
+              "sha256": "b705ebb8c7b2c2325816c2ac7227a21761c86d2852f9b3bef04d38d3abb47fbb",
+              "aic": "396.3816"
+            }
+          ]
+        },
+        {
+          "run_id": 39896467670,
+          "attempt": 3,
+          "aic": "431.10264",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12951053084,
+              "name": "908669d8-usage",
+              "sha256": "7c68d4587300d7052df023046fe80fc27bb9e1e2c748edbe5c89e7359100af00"
+            },
+            {
+              "id": 12952069168,
+              "name": "usage",
+              "sha256": "4910fdcd11fec435d3c1161f870fb6e915ababc6eca1beefee0e9e99350315e1"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "workflow_attempts": 3,
+      "scope_matches": true,
+      "scope_sha256": "e07f8ee6ed3dd05d93c442232b5c41459ea1cf359abf13216fcccce616c2e08b",
+      "runs": [
+        {
+          "run_id": 39896853340,
+          "attempt": 1,
+          "aic": "363.20604",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120229545834,
+              "name": "repository_context / agent",
+              "sha256": "afaf3c7b6d00403425049551cdd59145ee41eb79ae14065ef3070e3616fe2fa1",
+              "aic": "30.2348"
+            },
+            {
+              "job_id": 120230304880,
+              "name": "repository_context / detection",
+              "sha256": "486f434653807f2c127cdc47aaabce83b9d8300376a0bf2d1ee282c7054863dc",
+              "aic": "7.56404"
+            },
+            {
+              "job_id": 120230810887,
+              "name": "agent",
+              "sha256": "9c6dbe9e4214d50ef8bd2b17cb29152d2045fb4b1d780651973be7be1725c2db",
+              "aic": "307.70196"
+            },
+            {
+              "job_id": 120234903247,
+              "name": "detection",
+              "sha256": "b5e6f6adcd141167c4bba5f0c19983c7cc918ce6d718009d07e7349444bf5f18",
+              "aic": "17.70524"
+            }
+          ]
+        },
+        {
+          "run_id": 39896853340,
+          "attempt": 2,
+          "aic": "435.26256",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120884544386,
+              "name": "repository_context / agent",
+              "sha256": "127264b3406f71257241feaa654300a49e2058bacc80aecd44352084bed58ba3",
+              "aic": "32.28816"
+            },
+            {
+              "job_id": 120884975508,
+              "name": "repository_context / detection",
+              "sha256": "08f6be25d761eed2707f189360ecfa9eb06145c4b6410b34410bd972e1356b84",
+              "aic": "9.33096"
+            },
+            {
+              "job_id": 120885292477,
+              "name": "agent",
+              "sha256": "1fc2d78c493814c724a91e88a93d52bce598b0979bbced146d5d151a4ecf41bb",
+              "aic": "386.43952"
+            },
+            {
+              "job_id": 120889891497,
+              "name": "detection",
+              "sha256": "ee3ab65a8eb6ec2e769a2985bf2b7b082b096ad6bc758a7b7abdc7b0b6b1b912",
+              "aic": "7.20392"
+            }
+          ]
+        },
+        {
+          "run_id": 39896853340,
+          "attempt": 3,
+          "aic": "478.33184",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12951456372,
+              "name": "908669d8-usage",
+              "sha256": "caedb0b8e59e08a20974cd78f141e98c9899fec07dee90b428633d131cd61a46"
+            },
+            {
+              "id": 12952328173,
+              "name": "usage",
+              "sha256": "6a50bd5e75b1e5371026e500b3c5d0d4ea9a676f74eb9e8134da10c9235ae0d6"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "workflow_attempts": 3,
+      "scope_matches": true,
+      "scope_sha256": "0d7299b4951f52c68b62cc57eab82830f0d273e1d1cecba22ad89b12b905b6cf",
+      "runs": [
+        {
+          "run_id": 39896859074,
+          "attempt": 1,
+          "aic": "358.05286",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120229613318,
+              "name": "repository_context / agent",
+              "sha256": "9ae83e86aef0846568ae63b58b006a79dab9b242fc9b0efd801f5e1c3a33ee9e",
+              "aic": "24.39892"
+            },
+            {
+              "job_id": 120231084331,
+              "name": "repository_context / detection",
+              "sha256": "2f8b7b17c31e3b094bfc530a6efcdcae47cd148138f082bac9882e14075b6f45",
+              "aic": "15.38792"
+            },
+            {
+              "job_id": 120231619836,
+              "name": "agent",
+              "sha256": "1385e6df9e4add10c9edd83055b678de8bc4a5c09804899a525579a6e4810d8a",
+              "aic": "309.84706"
+            },
+            {
+              "job_id": 120236285021,
+              "name": "detection",
+              "sha256": "d2b5f6d094dd508862879515041c210281b0439f66aead324fe3245f1a4309ba",
+              "aic": "8.41896"
+            }
+          ]
+        },
+        {
+          "run_id": 39896859074,
+          "attempt": 2,
+          "aic": "302.68000",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120891607161,
+              "name": "repository_context / agent",
+              "sha256": "0503daf6fa1cf5362a7e4f0d9e630ebd05c348404303aa5b2d7b5ac6b0790617",
+              "aic": "24.80296"
+            },
+            {
+              "job_id": 120892107510,
+              "name": "repository_context / detection",
+              "sha256": "0093bae25f8de591f2fef478c8ae44969b99543e3958f5f5fc955bc96c40af07",
+              "aic": "8.09816"
+            },
+            {
+              "job_id": 120892446998,
+              "name": "agent",
+              "sha256": "2fddb7b4a53d355e389aa8c7c839da83e99bc27bad3e17853448819065968dae",
+              "aic": "262.91776"
+            },
+            {
+              "job_id": 120896205476,
+              "name": "detection",
+              "sha256": "7644f3dcc801f6c684e49fa21b5efd022a076ba095bd6d9e6cbca8bec6f73663",
+              "aic": "6.86112"
+            }
+          ]
+        },
+        {
+          "run_id": 39896859074,
+          "attempt": 3,
+          "aic": "248.52272",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12950936909,
+              "name": "908669d8-usage",
+              "sha256": "33d4f1bdbf7e4b60fc10d8ed4f2050fc507057b9ad894bc3cb934fcba32a8405"
+            },
+            {
+              "id": 12951482228,
+              "name": "usage",
+              "sha256": "56b2c2443bc1930dd0d630bd268356b70159ff4e5726659677663df1f3a62c7c"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "workflow_attempts": 3,
+      "scope_matches": true,
+      "scope_sha256": "3facf9c51161120f608fbff8a95da466f197ccc16af34a046508cd7091f371f1",
+      "runs": [
+        {
+          "run_id": 39898539854,
+          "attempt": 1,
+          "aic": "454.40618",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120234928439,
+              "name": "repository_context / agent",
+              "sha256": "e9e6c310e807e0c7117482a37e90e4a31874baa2e5c127cc45b303993cb96284",
+              "aic": "32.28276"
+            },
+            {
+              "job_id": 120235653795,
+              "name": "repository_context / detection",
+              "sha256": "93d0a518d36c8b5e3c7a492c52b7b6c12a097e5d9723efe1701f0d00ada1e5ec",
+              "aic": "7.58432"
+            },
+            {
+              "job_id": 120236179793,
+              "name": "agent",
+              "sha256": "80a99a0218a1e01023b40e6970aeeffde5b5007c50a9c436316fd37468e47491",
+              "aic": "405.56358"
+            },
+            {
+              "job_id": 120242668235,
+              "name": "detection",
+              "sha256": "d9595e167dc0d734135579855f56cfdd1c2d21e183ca5cf18a70f8df3b282c39",
+              "aic": "8.97552"
+            }
+          ]
+        },
+        {
+          "run_id": 39898539854,
+          "attempt": 2,
+          "aic": "614.20656",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120894686685,
+              "name": "repository_context / agent",
+              "sha256": "d2bd33ff78bf52429ed954a5c2f7ccad0557ef35d94bedbeebf19f4d861aa9aa",
+              "aic": "28.24472"
+            },
+            {
+              "job_id": 120895215493,
+              "name": "repository_context / detection",
+              "sha256": "2507c1d05c2f3f7985a190f68ffad0dd69b14ce7f537d85a8ec2b30a78025986",
+              "aic": "6.3448"
+            },
+            {
+              "job_id": 120895510553,
+              "name": "agent",
+              "sha256": "a51b6fcfab36bbd82bae918e882170ab907eba8d26188ea956245ab6cd034b31",
+              "aic": "547.77064"
+            },
+            {
+              "job_id": 120903157263,
+              "name": "detection",
+              "sha256": "969a756daf9f6a35b083b23cce68ebd6e37b2932ff21bdbd093833f2f348dce4",
+              "aic": "31.8464"
+            }
+          ]
+        },
+        {
+          "run_id": 39898539854,
+          "attempt": 3,
+          "aic": "514.33288",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12951017805,
+              "name": "908669d8-usage",
+              "sha256": "455ee25a0f7fb9dca737641a33f5a444a4d22d3fc49695a0d42f990297f26575"
+            },
+            {
+              "id": 12952821974,
+              "name": "usage",
+              "sha256": "92730e8d95cc66df322931053b91601d59536ed12610c5b516ea9f7b073505e8"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "workflow_attempts": 3,
+      "scope_matches": true,
+      "scope_sha256": "a7faad412d4414df0bdeb0fcbe8f7b8d2811490f6c212fdc89dd81306e8c8f01",
+      "runs": [
+        {
+          "run_id": 39898919181,
+          "attempt": 1,
+          "aic": "466.55786",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120236197308,
+              "name": "repository_context / agent",
+              "sha256": "d0a9462ce2971f9a12a27d23d238a27b120a876c8466dd9f75cea013f6d20a32",
+              "aic": "24.63888"
+            },
+            {
+              "job_id": 120236899903,
+              "name": "repository_context / detection",
+              "sha256": "41b55fb9d71ac5c2f0c98f28f77044b0936f71225a317e86dafd04e48cef58fe",
+              "aic": "7.54724"
+            },
+            {
+              "job_id": 120237421216,
+              "name": "agent",
+              "sha256": "1d778ebb4ec03271b689b83329ff6724ede1e53ac1559cd13b8bbcf5062732dc",
+              "aic": "425.59402"
+            },
+            {
+              "job_id": 120244146524,
+              "name": "detection",
+              "sha256": "df4a967461cd8e6d428e60a616d479cc8ba7894a641e0bda57f05c613b193a9e",
+              "aic": "8.77772"
+            }
+          ]
+        },
+        {
+          "run_id": 39898919181,
+          "attempt": 2,
+          "aic": "403.65688",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 120900078592,
+              "name": "repository_context / agent",
+              "sha256": "aa4d2474394be6635fbff6e6df566e9e7d212fb1d56a81600506fe2c1b6a99de",
+              "aic": "22.4192"
+            },
+            {
+              "job_id": 120900498916,
+              "name": "repository_context / detection",
+              "sha256": "0b6d8e411deea99e2652e367d7d67599da0ea86ae673d55eb8bb612de3f7395f",
+              "aic": "9.72304"
+            },
+            {
+              "job_id": 120900923193,
+              "name": "agent",
+              "sha256": "7e0786d7015cb903ba01832bd720e9e3f7c6d837c83ac7fa8cf43832f46b72a9",
+              "aic": "348.4292"
+            },
+            {
+              "job_id": 120905861502,
+              "name": "detection",
+              "sha256": "928e94e2553b15d3ddbf07b1d4acc60f6f04a3be0158a1d9115ec1d6ca065152",
+              "aic": "23.08544"
+            }
+          ]
+        },
+        {
+          "run_id": 39898919181,
+          "attempt": 3,
+          "aic": "465.01728",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12951975242,
+              "name": "908669d8-usage",
+              "sha256": "5a973b52cd9e5b456c22e207914e4468fdd66b737eb8bd56abc0389fddcf35b2"
+            },
+            {
+              "id": 12952454542,
+              "name": "usage",
+              "sha256": "65450c5dc9094c69acf499498f7a2d825c94df52d8e44fd58ea5ea9358b1ac4c"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "workflow_attempts": 2,
+      "scope_matches": true,
+      "scope_sha256": "9658508e4021054bffbcfd28fe1279653614b79495dc948cbb389aae66c3efe3",
+      "runs": [
+        {
+          "run_id": 40591658053,
+          "attempt": 1,
+          "aic": "475.20236",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 122498004549,
+              "name": "repository_context / agent",
+              "sha256": "6cda2eb9b4aac383e5584a4c246690e9279abb038a3044e36fa0f51b1f44b841",
+              "aic": "60.40056"
+            },
+            {
+              "job_id": 122504430497,
+              "name": "repository_context / detection",
+              "sha256": "0e3aa92a5ae54ea3652b21b6ff6914561bf74354147869886fc204b927017326",
+              "aic": "9.8172"
+            },
+            {
+              "job_id": 122505128880,
+              "name": "agent",
+              "sha256": "42d61698e8d0ba0ea88224e225602fcb5939eed3c5e77889cc5da0986e8092e4",
+              "aic": "393.86512"
+            },
+            {
+              "job_id": 122513772490,
+              "name": "detection",
+              "sha256": "1db539a9009a29a06cc92afca7c12605809b64ac016c79512645e60f7b037e7d",
+              "aic": "11.11948"
+            }
+          ]
+        },
+        {
+          "run_id": 40591658053,
+          "attempt": 2,
+          "aic": "481.88296",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12933789294,
+              "name": "4fb0d45e-usage",
+              "sha256": "ab73f8759308647e433fc84cb9a8e0cfac813fdf2a14e89f900d8a7ef199a10a"
+            },
+            {
+              "id": 12935573846,
+              "name": "usage",
+              "sha256": "08446db1aede63b7ba79ceee3feaf1d78d207f5282492a7c51f01e9e0e9f9549"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "workflow_attempts": 2,
+      "scope_matches": true,
+      "scope_sha256": "95dfe6189c4bcf1fdf5deb06b49937c3dbbdc2c7e03a6079eb01bd8685661c15",
+      "runs": [
+        {
+          "run_id": 40591675811,
+          "attempt": 1,
+          "aic": "497.73716",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 122497785038,
+              "name": "repository_context / agent",
+              "sha256": "35fbf61d18efcf7a43d2232ff7e22059a7689f3364caf4a05e8d6a3ff51c2905",
+              "aic": "64.18004"
+            },
+            {
+              "job_id": 122499255363,
+              "name": "repository_context / detection",
+              "sha256": "e69024131e5e80802572d1ee7bd7ed4e07877f16f88e8981b477fad368718372",
+              "aic": "18.35724"
+            },
+            {
+              "job_id": 122500103737,
+              "name": "agent",
+              "sha256": "611691ccf1b9d326fc7753e8c58602d2535530457d5ce3c75aa5fc38b6d01c8d",
+              "aic": "406.23328"
+            },
+            {
+              "job_id": 122509063247,
+              "name": "detection",
+              "sha256": "4d00a7392812c22b6dee12e956d8745e4e4bf9f45a96183824882bad3bca71c4",
+              "aic": "8.9666"
+            }
+          ]
+        },
+        {
+          "run_id": 40591675811,
+          "attempt": 2,
+          "aic": "604.24984",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12934883023,
+              "name": "4fb0d45e-usage",
+              "sha256": "ef147ea0a359ac503255896ce769df9b80a54ea185eda44acc7a2de25dc5e9fc"
+            },
+            {
+              "id": 12938031539,
+              "name": "usage",
+              "sha256": "c3f7674b70dbb44dbccee6579f8f4416ec4b4bfa02e8c231998a36dc9aec6c98"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "workflow_attempts": 2,
+      "scope_matches": true,
+      "scope_sha256": "c5a241a0f7a456bebdcaa03be6fe4ce62b966794796092cd35443d636c3f1420",
+      "runs": [
+        {
+          "run_id": 40591695929,
+          "attempt": 1,
+          "aic": "45.62100",
+          "ai_jobs": 2,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 122497988719,
+              "name": "repository_context / agent",
+              "sha256": "769fc6ea671835fa614805f222c636421f6dd6381f55655c7456d64fddeb0f0c",
+              "aic": "37.94492"
+            },
+            {
+              "job_id": 122503018000,
+              "name": "repository_context / detection",
+              "sha256": "2aded3ed1fa56643453367dc9133c165f38388f12a704841977b8d5ae0e9f7be",
+              "aic": "7.67608"
+            }
+          ]
+        },
+        {
+          "run_id": 40591695929,
+          "attempt": 2,
+          "aic": "44.29856",
+          "ai_jobs": 2,
+          "artifacts": [
+            {
+              "id": 12935835730,
+              "name": "4fb0d45e-usage",
+              "sha256": "fd39faf0d70d1e0e85586d207055ef8f77bef3568bf81b07cd3e6850969cbcf7"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "workflow_attempts": 2,
+      "scope_matches": true,
+      "scope_sha256": "1a91dcb58a600b262d5e8c87b9746f76ab3e3ba07a80c6ea9b4416148df6ebf5",
+      "runs": [
+        {
+          "run_id": 40591715292,
+          "attempt": 1,
+          "aic": "137.62724",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 122497947430,
+              "name": "repository_context / agent",
+              "sha256": "171eb7c6f8afd83b129d0e1ad6ecf02b7dac72244c5c9fd8432017f5016d7405",
+              "aic": "38.40964"
+            },
+            {
+              "job_id": 122500665502,
+              "name": "repository_context / detection",
+              "sha256": "721edd9b88646ecad752417cf98b340022e8daa6caa0247bdb43bbacbcdb8cf9",
+              "aic": "16.62156"
+            },
+            {
+              "job_id": 122501547173,
+              "name": "agent",
+              "sha256": "47a7c834074d5fac7e132e92e3b9d99fb43ae47a54dc0ee3031b485be82fd8e2",
+              "aic": "71.23396"
+            },
+            {
+              "job_id": 122503983213,
+              "name": "detection",
+              "sha256": "f8c4718d865733ee8ba090654b156508bd80fba298c1c7fb39b96cb10782c6df",
+              "aic": "11.36208"
+            }
+          ]
+        },
+        {
+          "run_id": 40591715292,
+          "attempt": 2,
+          "aic": "128.14848",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12934137610,
+              "name": "4fb0d45e-usage",
+              "sha256": "9b14ee5adbde39fa89368ddd85dfdddc33a828d419fff339e0facbad43065988"
+            },
+            {
+              "id": 12934777273,
+              "name": "usage",
+              "sha256": "b047d215c9cfd7400709ca75d206f08c88bc66c3eb26a977ad9747e5c6041319"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "workflow_attempts": 2,
+      "scope_matches": true,
+      "scope_sha256": "2d942c17303468e78d43e50ec6f837a385ef98b63756313610ce7321673cdc42",
+      "runs": [
+        {
+          "run_id": 40591736049,
+          "attempt": 1,
+          "aic": "39.91632",
+          "ai_jobs": 2,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 122497972397,
+              "name": "repository_context / agent",
+              "sha256": "87d1ab1f45948fe9d17035de1695d9ba13889e8fcd2e4599a1f511c58764cd99",
+              "aic": "32.19992"
+            },
+            {
+              "job_id": 122501773895,
+              "name": "repository_context / detection",
+              "sha256": "045acc5079dc604dbffee09f0ab0624070d2d18ba7fba6d8632c017ef56a4ecc",
+              "aic": "7.7164"
+            }
+          ]
+        },
+        {
+          "run_id": 40591736049,
+          "attempt": 2,
+          "aic": "56.49192",
+          "ai_jobs": 2,
+          "artifacts": [
+            {
+              "id": 12935273160,
+              "name": "4fb0d45e-usage",
+              "sha256": "bf2537de48c6aeda128210864a02009321bafdf320d521d2aa6b11d7c78a86ba"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "workflow_attempts": 2,
+      "scope_matches": true,
+      "scope_sha256": "6bc0fab346394be2a006d8ab387b3f3193017be43025b278c5a8768b18ef4ba4",
+      "runs": [
+        {
+          "run_id": 40591761649,
+          "attempt": 1,
+          "aic": "331.79578",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 122498304383,
+              "name": "repository_context / agent",
+              "sha256": "3a0d3eb2b4645fe1d576bc25f8c3e1d460af37c5fc4708876817feca59d16f73",
+              "aic": "35.48292"
+            },
+            {
+              "job_id": 122508140701,
+              "name": "repository_context / detection",
+              "sha256": "d2a43b40e15c19f2a0c926b353312cd6ae197727360e391656473680d4a32dd1",
+              "aic": "15.77212"
+            },
+            {
+              "job_id": 122509047039,
+              "name": "agent",
+              "sha256": "1d4ff1bce57af29a2d319ba4ba87447a4a49f82a0a57048c81cf8965c1f00433",
+              "aic": "272.22322"
+            },
+            {
+              "job_id": 122516145199,
+              "name": "detection",
+              "sha256": "6c5596163ca0c3b456736e6bd292e7ab669aa3b9526db9e333cf42f083609a43",
+              "aic": "8.31752"
+            }
+          ]
+        },
+        {
+          "run_id": 40591761649,
+          "attempt": 2,
+          "aic": "355.57512",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12935876339,
+              "name": "4fb0d45e-usage",
+              "sha256": "b012f658ea3e427553792f865af7637075c26015f0c9a19eef8beb2faa06b91e"
+            },
+            {
+              "id": 12937530570,
+              "name": "usage",
+              "sha256": "b4d38a4fa5b5087b00a2f16a9ee0ebc9d2040d9672af50fc99ff1246aac60d3a"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "workflow_attempts": 2,
+      "scope_matches": true,
+      "scope_sha256": "7738458e0820f0e7bc90a393a409ea130d32527e8c03c32ea754999058cbad73",
+      "runs": [
+        {
+          "run_id": 40591780072,
+          "attempt": 1,
+          "aic": "36.46356",
+          "ai_jobs": 2,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 122498180542,
+              "name": "repository_context / agent",
+              "sha256": "d2fbeecf95a66947bf613eece956a70fbb912ad500add34b8707025b8c7bddab",
+              "aic": "28.93148"
+            },
+            {
+              "job_id": 122505586143,
+              "name": "repository_context / detection",
+              "sha256": "725c1e77f0de6d233dd2dd1ef6cadc1d014a71545e25428d381d517bb98df100",
+              "aic": "7.53208"
+            }
+          ]
+        },
+        {
+          "run_id": 40591780072,
+          "attempt": 2,
+          "aic": "315.11208",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12934718079,
+              "name": "4fb0d45e-usage",
+              "sha256": "586c86f08e8fcacc8cba5c69940143f19299c83a9885b271b52dec1d46cc69f9"
+            },
+            {
+              "id": 12935779551,
+              "name": "usage",
+              "sha256": "413b72e8fd955c1ccff3b1442b11dad3cb1d423d840a5cfc6df2ff21b78baa4e"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "workflow_attempts": 2,
+      "scope_matches": true,
+      "scope_sha256": "0af25c03f17018fdbf03a2503c1c2abfea17c19d5c6842aac6fdfe340f529313",
+      "runs": [
+        {
+          "run_id": 40591795846,
+          "attempt": 1,
+          "aic": "270.46356",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 122498300186,
+              "name": "repository_context / agent",
+              "sha256": "e34f36411a19e3b2c5e889a40dc425b67c632d9e6594ccc0576a6e112b604979",
+              "aic": "43.40156"
+            },
+            {
+              "job_id": 122506874254,
+              "name": "repository_context / detection",
+              "sha256": "0d43d554c447688fa9462b8457ec8aee16b1b9e9f7bbf801ec8b3d144a763dd1",
+              "aic": "7.69832"
+            },
+            {
+              "job_id": 122507576357,
+              "name": "agent",
+              "sha256": "8b968d145dfe14be066482c03e6372feb398e2a37bfae2c1ac96399d9628de99",
+              "aic": "207.256"
+            },
+            {
+              "job_id": 122512740112,
+              "name": "detection",
+              "sha256": "7dd738328b68b1b84db6a6081bb2663b584096df0ec2cf454113cbe266b850ca",
+              "aic": "12.10768"
+            }
+          ]
+        },
+        {
+          "run_id": 40591795846,
+          "attempt": 2,
+          "aic": "257.02888",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12936235961,
+              "name": "4fb0d45e-usage",
+              "sha256": "579f466b494f5a25280d7aeec2292029d4a6e837b4b45861c738cc06997286e3"
+            },
+            {
+              "id": 12936364167,
+              "name": "usage",
+              "sha256": "88f8a99b8c80f73d7b6db246e55593e67f3fd9d830b548aa0404a5ce82a6e892"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 29,
+      "workflow_attempts": 2,
+      "scope_matches": true,
+      "scope_sha256": "04ed5f87f34230e022273e0ceb89ac81aed3c7fac9f7b6c5ebbd92c133774643",
+      "runs": [
+        {
+          "run_id": 40591813556,
+          "attempt": 1,
+          "aic": "725.89672",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 122498332127,
+              "name": "repository_context / agent",
+              "sha256": "8582a424882900ddbeba0dddb86ec3e2c5ab8568dd11384fae6de673ff2d3287",
+              "aic": "58.31736"
+            },
+            {
+              "job_id": 122509327132,
+              "name": "repository_context / detection",
+              "sha256": "7586c9e09b44a4e45f3f4c9bec0edd6bfe6167b7825c291b1c766e23e6c01626",
+              "aic": "7.74832"
+            },
+            {
+              "job_id": 122510056842,
+              "name": "agent",
+              "sha256": "db3b829e9c425c13717f29a5481855626a1ad10b2c99cc5dd17a6847a5ed2369",
+              "aic": "646.6582"
+            },
+            {
+              "job_id": 122521598774,
+              "name": "detection",
+              "sha256": "5414f75fef3da4b9306b0bf0d4965560583e88f5843f0f8b7e6377ed7819fccf",
+              "aic": "13.17284"
+            }
+          ]
+        },
+        {
+          "run_id": 40591813556,
+          "attempt": 2,
+          "aic": "678.54792",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12935667730,
+              "name": "4fb0d45e-usage",
+              "sha256": "45b6bfa4445875ab0cb24e2b61114668b5ac1ada54da1f7e50cc480600b36d56"
+            },
+            {
+              "id": 12938980027,
+              "name": "usage",
+              "sha256": "3e03b6cf4fb39493d27851c4c176d7481b4b6d54d9e5c38301f6e2e03e9bd57c"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 30,
+      "workflow_attempts": 2,
+      "scope_matches": true,
+      "scope_sha256": "ca38dcea20b7392bf2f870b178f73b3f0ed8aa002d3bbf54e8979fa1f5bd0bde",
+      "runs": [
+        {
+          "run_id": 40591830617,
+          "attempt": 1,
+          "aic": null,
+          "ai_jobs": 3,
+          "artifacts": [],
+          "reason": "usage artifact missing, expired or ambiguous",
+          "job_summaries": [
+            {
+              "job_id": 122498855599,
+              "name": "repository_context / agent",
+              "sha256": "a9b0da3b64520df9ae17eb8985f9b5a5e377c6ace6481f9818d26100e7dc14ce",
+              "aic": "53.85204"
+            },
+            {
+              "job_id": 122510530272,
+              "name": "repository_context / detection",
+              "sha256": "5d6e01714fab32a0e56b805e3acc601449d933b52c7064f47838becdfb2150c5",
+              "aic": "7.72812"
+            },
+            {
+              "job_id": 122511364546,
+              "name": "agent",
+              "sha256": "483d246b30c9a18ea3cfdd1f8c6af8c67cb947435be007ef940506c361b4de18",
+              "aic": null
+            }
+          ]
+        },
+        {
+          "run_id": 40591830617,
+          "attempt": 2,
+          "aic": null,
+          "ai_jobs": 3,
+          "artifacts": [
+            {
+              "id": 12936721556,
+              "name": "4fb0d45e-usage",
+              "sha256": "071f4f1dceb206b33ca5b74ff8ad5cfd8705bdc768c2edad6bfb773c27ed89c9"
+            },
+            {
+              "id": 12936163331,
+              "name": "usage",
+              "sha256": "f45c8ffa916f62628de58503d7a21776762be71074e27bf540dc55f20c4a3ce2"
+            }
+          ],
+          "reason": "per-response billing incomplete",
+          "job_summaries": [
+            {
+              "job_id": 123743315801,
+              "name": "repository_context / agent",
+              "sha256": "237d4d6fc899db6e9279bc77d4aab2d643d95e0f35c3b23265dea52181dc18e0",
+              "aic": "52.62568"
+            },
+            {
+              "job_id": 123756201866,
+              "name": "repository_context / detection",
+              "sha256": "6a0f643ac77d5d807f108ce610f6b9a3e6c76bc941b4d5ad130bd142966461d7",
+              "aic": "9.88496"
+            },
+            {
+              "job_id": 123757156340,
+              "name": "agent",
+              "sha256": "905076510114d1a667187af9cec10dcca6defe495d02cc7273898a32f2db33e6",
+              "aic": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 31,
+      "workflow_attempts": 2,
+      "scope_matches": true,
+      "scope_sha256": "23c9f2f9030cad5f8e87563d3b5b22a7e4b22e8f9282062afc0e70b8746a89f4",
+      "runs": [
+        {
+          "run_id": 40835208517,
+          "attempt": 1,
+          "aic": "560.81214",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 123318794193,
+              "name": "repository_context / agent",
+              "sha256": "c6edf068b031d60fa3f76027d06a3eeeea9504ce8536cb0e09d33e1f68a1ab54",
+              "aic": "41.15024"
+            },
+            {
+              "job_id": 123320803849,
+              "name": "repository_context / detection",
+              "sha256": "ac4f05aed5ddfda7b49cdac06db67ad11664f2750e5c5a3b04ec76f6ab910865",
+              "aic": "7.6256"
+            },
+            {
+              "job_id": 123321550078,
+              "name": "agent",
+              "sha256": "05924bd6b448fa76fd74de02119b72864829a7416d7946ea1dd4a4a71838361b",
+              "aic": "503.0505"
+            },
+            {
+              "job_id": 123329959479,
+              "name": "detection",
+              "sha256": "e4a2b7ab6a8d570e5dc00908269e4c4de4e3e7a2b9ba7506cdf6a06ff4541b28",
+              "aic": "8.9858"
+            }
+          ]
+        },
+        {
+          "run_id": 40835208517,
+          "attempt": 2,
+          "aic": "67.70192",
+          "ai_jobs": 2,
+          "artifacts": [
+            {
+              "id": 12940688625,
+              "name": "4fb0d45e-usage",
+              "sha256": "5bde50bd81dec7e2290b9f9ec7cf6fb74b95cd38b103d142a44a7ed4ae734941"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 32,
+      "workflow_attempts": 2,
+      "scope_matches": true,
+      "scope_sha256": "abcaa4f0a1ffdd9b1c0c92f2fd24b5b8d962f0ae5eb74632ed1f2a89d3ca4d1b",
+      "runs": [
+        {
+          "run_id": 40835224989,
+          "attempt": 1,
+          "aic": "269.74276",
+          "ai_jobs": 3,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 123318783442,
+              "name": "repository_context / agent",
+              "sha256": "5a059b6b18e0ea1e9d3a2bbb7ba9c42dad1553701e83058452396fd3c3058375",
+              "aic": "52.57236"
+            },
+            {
+              "job_id": 123319866418,
+              "name": "repository_context / detection",
+              "sha256": "977b6e66c9362c5c1f744fd6a6984b48817f1a0e908b7baccfde7dda820686d0",
+              "aic": "9.80524"
+            },
+            {
+              "job_id": 123320484144,
+              "name": "agent",
+              "sha256": "5de817893b61dae5ec7ec9780c8182d43bffeef8418639cba2b5a177cde31f98",
+              "aic": "207.36516"
+            }
+          ]
+        },
+        {
+          "run_id": 40835224989,
+          "attempt": 2,
+          "aic": "538.75072",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12940890107,
+              "name": "4fb0d45e-usage",
+              "sha256": "533aae30aef53384e080cf5a76a0bc0126235ced82b58fefb2ef195db37f80e2"
+            },
+            {
+              "id": 12940929918,
+              "name": "usage",
+              "sha256": "e2673ba601d1087aa22eded8beaeb2442daa3cb1fd16fc9ca0e9bff17080efc9"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 33,
+      "workflow_attempts": 2,
+      "scope_matches": true,
+      "scope_sha256": "217c96ea50fa268914f839fb9013a769c9c5304d484e85aa6a2fbbc3cf110b31",
+      "runs": [
+        {
+          "run_id": 40835242182,
+          "attempt": 1,
+          "aic": "934.71148",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 123318902242,
+              "name": "repository_context / agent",
+              "sha256": "9bad3a1e06e750fe1121eef11b295d67360f9b0913a03a13bc705b1d5a257807",
+              "aic": "63.34496"
+            },
+            {
+              "job_id": 123321984355,
+              "name": "repository_context / detection",
+              "sha256": "4d3e5adfd3e69d38fd1571a3508903f41033f06a92c43c85b2e4ec50c7f617a3",
+              "aic": "14.84676"
+            },
+            {
+              "job_id": 123322789698,
+              "name": "agent",
+              "sha256": "3e87bcd3d23508dd7d5d572c718269160b09d0983a7c177cb77dcd37b3d94175",
+              "aic": "842.97268"
+            },
+            {
+              "job_id": 123335911627,
+              "name": "detection",
+              "sha256": "157c08d53a914a134fbbb4e5a797efb1a1d22a8de08b977333dfb63b4c5b731c",
+              "aic": "13.54708"
+            }
+          ]
+        },
+        {
+          "run_id": 40835242182,
+          "attempt": 2,
+          "aic": "759.27016",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12940940619,
+              "name": "4fb0d45e-usage",
+              "sha256": "14971f03929bb0ff8b543a46fb374f56cdecb9b70a8855d6e195299d22b5c6f5"
+            },
+            {
+              "id": 12942443485,
+              "name": "usage",
+              "sha256": "8079ce82090f546dac3ab7ea6630eed5b81479755c0e4c98893a0a31cf07fef3"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 34,
+      "workflow_attempts": 2,
+      "scope_matches": true,
+      "scope_sha256": "9c3a7159f72b0aa9e5d89277d1e0f5f70cf097c0aaf0be3df88a0d29019b4231",
+      "runs": [
+        {
+          "run_id": 40835258683,
+          "attempt": 1,
+          "aic": "548.60028",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 123318949445,
+              "name": "repository_context / agent",
+              "sha256": "b04716d5cf4a818b7cf9421449c5f29952035a6869727d13350c6b3ed77eb827",
+              "aic": "60.65108"
+            },
+            {
+              "job_id": 123323040030,
+              "name": "repository_context / detection",
+              "sha256": "bf76a063c70078c83d49092a11d0fc3f38a81d0b8b2eea00a25380658b66b00a",
+              "aic": "7.75248"
+            },
+            {
+              "job_id": 123323646278,
+              "name": "agent",
+              "sha256": "e24dc16cc1bd54d26899629b1cf5ba07c5e1a9fea4983d5e122bb4163bffc3c7",
+              "aic": "471.12408"
+            },
+            {
+              "job_id": 123331616674,
+              "name": "detection",
+              "sha256": "bf5bcb4d54ac88d366bbc901852a5dd7ac62ddc3a0849b76318209e59125c8e0",
+              "aic": "9.07264"
+            }
+          ]
+        },
+        {
+          "run_id": 40835258683,
+          "attempt": 2,
+          "aic": "575.08424",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12940178326,
+              "name": "4fb0d45e-usage",
+              "sha256": "5c98266d6cd2a42789d0ab3ac07265cc3f56e8ad7fd6924720e31c4a22fbd1eb"
+            },
+            {
+              "id": 12942670681,
+              "name": "usage",
+              "sha256": "c9e21407d605550b75c4ef9f612e31022a285b39731a1a03229943d0f8c497a0"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 35,
+      "workflow_attempts": 2,
+      "scope_matches": true,
+      "scope_sha256": "c5ff79f1bb57ac8e39847c8abd8614a82e9d92924d983bd06028bd24a4b6ed0f",
+      "runs": [
+        {
+          "run_id": 40835273267,
+          "attempt": 1,
+          "aic": "100.93710",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 123319110566,
+              "name": "repository_context / agent",
+              "sha256": "31a3f5f8d9ef8d41edb91f3c15133090f0dbe3150ff0d01f61f30e58b6f35d24",
+              "aic": "32.72604"
+            },
+            {
+              "job_id": 123327065166,
+              "name": "repository_context / detection",
+              "sha256": "8469ea62c1d3794ae45e28ab5f91c9e65c9641b04e495c463eec93cf56775681",
+              "aic": "7.52676"
+            },
+            {
+              "job_id": 123327762342,
+              "name": "agent",
+              "sha256": "f2be845dec126e8970282048faff0c677533b3e411f1c895f77d9f2c3be2d647",
+              "aic": "52.91622"
+            },
+            {
+              "job_id": 123329649754,
+              "name": "detection",
+              "sha256": "6723339095ae815c7b22084ada2d1c4ce9df3c4b284b2e237a1912e8af59aff0",
+              "aic": "7.76808"
+            }
+          ]
+        },
+        {
+          "run_id": 40835273267,
+          "attempt": 2,
+          "aic": "101.76504",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12940661915,
+              "name": "4fb0d45e-usage",
+              "sha256": "9d7c273b420fcf87b82f697df8bc9b65a720ab17d3820bf3e71f89d955734a5f"
+            },
+            {
+              "id": 12941132114,
+              "name": "usage",
+              "sha256": "45607429df099fea2968ce651a2b0f8297857cfc4fa7cfb7b34b847a89008edf"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 36,
+      "workflow_attempts": 2,
+      "scope_matches": true,
+      "scope_sha256": "eaaa1c8af826cc09e1eb98deec0ab2d67ab33414f35fe5bb32167fff375f0089",
+      "runs": [
+        {
+          "run_id": 40835290323,
+          "attempt": 1,
+          "aic": "40.29152",
+          "ai_jobs": 2,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 123319059570,
+              "name": "repository_context / agent",
+              "sha256": "86e6c787a52d7fb064579f6db1b22f6625c3edda0169dd8934a7fe27e1e35cf0",
+              "aic": "32.7558"
+            },
+            {
+              "job_id": 123325124551,
+              "name": "repository_context / detection",
+              "sha256": "fb8e27c5014b523869d19c37ec43107566d514f820da53b7e6df046617a73837",
+              "aic": "7.53572"
+            }
+          ]
+        },
+        {
+          "run_id": 40835290323,
+          "attempt": 2,
+          "aic": "585.09408",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12941500768,
+              "name": "4fb0d45e-usage",
+              "sha256": "b931f27d32c80b1631cd6576de839394785c75d363c80076d20db1069b6ca250"
+            },
+            {
+              "id": 12943545229,
+              "name": "usage",
+              "sha256": "e8dd4b0cb7daa6a54f1011a08955337f6729a79760ad11c75b9c19ec0392d068"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 37,
+      "workflow_attempts": 2,
+      "scope_matches": true,
+      "scope_sha256": "bb1403eef52474f8271df6807f693cf48e0ef2f4fb0be58db018b35344f685fa",
+      "runs": [
+        {
+          "run_id": 40835305967,
+          "attempt": 1,
+          "aic": "222.50046",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 123319107294,
+              "name": "repository_context / agent",
+              "sha256": "686afa0c74039463fbe67ac692f2adbedd309e473f6acd43803ed843fe801bc5",
+              "aic": "25.18264"
+            },
+            {
+              "job_id": 123326132373,
+              "name": "repository_context / detection",
+              "sha256": "f3cc9f5d0f8bfcfc6a88e831d01f90987fab04f9d667ffbd2c0600a025e13c90",
+              "aic": "10.74096"
+            },
+            {
+              "job_id": 123326786909,
+              "name": "agent",
+              "sha256": "7768008d5887d37a4d77d38707f91ce54bfc619ccb4d806745ea7604ff0dba2b",
+              "aic": "174.16882"
+            },
+            {
+              "job_id": 123330730496,
+              "name": "detection",
+              "sha256": "169571dc9435aa54fd2f4f07bbc16fb0400cf279d31fe5f3fb4c99fd910141bb",
+              "aic": "12.40804"
+            }
+          ]
+        },
+        {
+          "run_id": 40835305967,
+          "attempt": 2,
+          "aic": "409.67200",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12940314964,
+              "name": "4fb0d45e-usage",
+              "sha256": "53e0ef49552448d99b976445ad8b00e11a5f1fb865dc72ae890f9575d95068f3"
+            },
+            {
+              "id": 12942430533,
+              "name": "usage",
+              "sha256": "6ac95ce7455e69146943dc3a3fc89a92efd37826a6d4024ed98bf4677689afcd"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 38,
+      "workflow_attempts": 2,
+      "scope_matches": true,
+      "scope_sha256": "90c1c01ea052b55504421a7d42b2c8f67f63ee7c9bae87df4f31e38f836ecbc9",
+      "runs": [
+        {
+          "run_id": 40835322389,
+          "attempt": 1,
+          "aic": "57.70468",
+          "ai_jobs": 2,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 123319049999,
+              "name": "repository_context / agent",
+              "sha256": "7a5e0c4de23791c6eb2450057337cb6b86686fea93bd0ba01adcab3f288e0d86",
+              "aic": "50.1474"
+            },
+            {
+              "job_id": 123324091932,
+              "name": "repository_context / detection",
+              "sha256": "879bf21a654024f7c7a68e73c4bf30487bf724a421b3d94f095479879a7aef86",
+              "aic": "7.55728"
+            }
+          ]
+        },
+        {
+          "run_id": 40835322389,
+          "attempt": 2,
+          "aic": "465.97840",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12942095246,
+              "name": "4fb0d45e-usage",
+              "sha256": "96fecf2c86266957c5f208fe0c3022afbcc4739d6bb7b90fccdc1ea0fbf3eedc"
+            },
+            {
+              "id": 12942438902,
+              "name": "usage",
+              "sha256": "799d2e81a88ee32b7054af20c857a83fe41f5caff5269cc0e86b64ace68dc0b8"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 39,
+      "workflow_attempts": 2,
+      "scope_matches": true,
+      "scope_sha256": "fdd25436c4743b5ae7040c3ac172c61ff7841bb11d8b5aab1dad0c1402aa10b4",
+      "runs": [
+        {
+          "run_id": 40835334327,
+          "attempt": 1,
+          "aic": "575.40600",
+          "ai_jobs": 4,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 123319236657,
+              "name": "repository_context / agent",
+              "sha256": "8f94fce78a9a8605c0e95bb4c9346b0beaf23baa711d3106a62606d4399e9689",
+              "aic": "39.72832"
+            },
+            {
+              "job_id": 123329059103,
+              "name": "repository_context / detection",
+              "sha256": "bebb535cc94004844401edf287a961e1a2c5b1b56213dac11a3de62e8f46af47",
+              "aic": "10.51088"
+            },
+            {
+              "job_id": 123329921738,
+              "name": "agent",
+              "sha256": "540847c1866051df98efc02802d2924be9c5669f2c5a3a324d8e2816c538464a",
+              "aic": "514.61756"
+            },
+            {
+              "job_id": 123338879814,
+              "name": "detection",
+              "sha256": "f3eb92a6776960ceba4bd82a5547836bb8d5a6d4d07893a1df5dbe8d26a97c10",
+              "aic": "10.54924"
+            }
+          ]
+        },
+        {
+          "run_id": 40835334327,
+          "attempt": 2,
+          "aic": "438.62688",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12941387142,
+              "name": "4fb0d45e-usage",
+              "sha256": "52b1a1bc2dffa1c6d0eb2712c9e1dbf876f4478e095b3c4169c2b4618dc474a1"
+            },
+            {
+              "id": 12941963380,
+              "name": "usage",
+              "sha256": "515cbaf65383af743f0172143ddfe23d1a67e03b63027fcde895e5f0f14de133"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 40,
+      "workflow_attempts": 2,
+      "scope_matches": true,
+      "scope_sha256": "9c2996a0d4696b589e232708b34a1259f5062a5821c5434d4359cd4328cae66e",
+      "runs": [
+        {
+          "run_id": 40835350142,
+          "attempt": 1,
+          "aic": "581.64192",
+          "ai_jobs": 3,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 123319205764,
+              "name": "repository_context / agent",
+              "sha256": "7b09addb9febbe00933fbc7974370d55ed2427901c40bff49cfa540d025ee7c6",
+              "aic": "38.87088"
+            },
+            {
+              "job_id": 123328148900,
+              "name": "repository_context / detection",
+              "sha256": "c4eababd3cb25b12b1120199aae59101556c7fdb834ecc2bd9f0d1a575436ff5",
+              "aic": "7.54676"
+            },
+            {
+              "job_id": 123328761036,
+              "name": "agent",
+              "sha256": "86bb8fc0bd010127f68ef2d8bc352681863f752c8914ee99c80ad0fd451fa94b",
+              "aic": "535.22428"
+            }
+          ]
+        },
+        {
+          "run_id": 40835350142,
+          "attempt": 2,
+          "aic": "324.98176",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12941163999,
+              "name": "4fb0d45e-usage",
+              "sha256": "59295e52a4933954469c9aa39595b18b64af3759a61cdf72054682154cdea499"
+            },
+            {
+              "id": 12942647537,
+              "name": "usage",
+              "sha256": "4e3480301f5aebe232bbab334b5cd71c4fa8fcfaba448718c0c1a0a178260c09"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 41,
+      "workflow_attempts": 2,
+      "scope_matches": true,
+      "scope_sha256": "ebb59500142c059fa7b6e1f5ac20ea2b0760f6835e03fda719cd13f9d734cdb0",
+      "runs": [
+        {
+          "run_id": 40954969307,
+          "attempt": 1,
+          "aic": "75.89240",
+          "ai_jobs": 2,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 123733576508,
+              "name": "repository_context / agent",
+              "sha256": "23fbedb65940dafab99147c9b09b325a826b6214fa1af09fbd4f3bf08e0f94ad",
+              "aic": "67.58528"
+            },
+            {
+              "job_id": 123735395144,
+              "name": "repository_context / detection",
+              "sha256": "dd305db54f41372ee4679851149227de6f144b4fd147ac7fcaf75a41a725006b",
+              "aic": "8.30712"
+            }
+          ]
+        },
+        {
+          "run_id": 40954969307,
+          "attempt": 2,
+          "aic": "254.50040",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12942584533,
+              "name": "4fb0d45e-usage",
+              "sha256": "1e76f3b596bb3d4e0a93c5cce2cf0fec71a10fd596c679a979e0cce7b4fb2053"
+            },
+            {
+              "id": 12944522078,
+              "name": "usage",
+              "sha256": "8547bb81b86e74664c8b5be496b7a1c2b3f4aefa653d25b2ecfcfb7ad28db319"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 42,
+      "workflow_attempts": 2,
+      "scope_matches": true,
+      "scope_sha256": "60d491a0d9c81daffb6ea33d55591d42227a7c7bb9e7fca4c64d8b5a3c08e30d",
+      "runs": [
+        {
+          "run_id": 40954992358,
+          "attempt": 1,
+          "aic": null,
+          "ai_jobs": 3,
+          "artifacts": [],
+          "reason": "usage artifact missing, expired or ambiguous",
+          "job_summaries": [
+            {
+              "job_id": 123733845671,
+              "name": "repository_context / agent",
+              "sha256": null,
+              "aic": null
+            },
+            {
+              "job_id": 123739993356,
+              "name": "detection",
+              "sha256": null,
+              "aic": null
+            },
+            {
+              "job_id": 123739995454,
+              "name": "agent",
+              "sha256": null,
+              "aic": null
+            }
+          ]
+        },
+        {
+          "run_id": 40954992358,
+          "attempt": 2,
+          "aic": null,
+          "ai_jobs": 3,
+          "artifacts": [
+            {
+              "id": 12944181037,
+              "name": "4fb0d45e-usage",
+              "sha256": "27555c915c6cfd6bfb16f8461d44282e81ed29343e0aa8b355a7e2478e42cc9b"
+            },
+            {
+              "id": 12943816947,
+              "name": "usage",
+              "sha256": "50924b474b36c1de56307d33eab22e1c3da49029686ff93772df4f8fccc96b51"
+            }
+          ],
+          "reason": "per-response billing incomplete",
+          "job_summaries": [
+            {
+              "job_id": 123810071763,
+              "name": "repository_context / agent",
+              "sha256": "bea35931c2749e02631dc1f562e024adbdef28f94c3103e4bd304f5727f8e03b",
+              "aic": "89.1408"
+            },
+            {
+              "job_id": 123812424194,
+              "name": "repository_context / detection",
+              "sha256": "ed37fd278f6f225ff9fa01737d653a043e9a7abea941d69746fb0f1b3f4d6b0b",
+              "aic": "6.2652"
+            },
+            {
+              "job_id": 123813046838,
+              "name": "agent",
+              "sha256": "aeeb644f0ed3610da7ef4b5e788ee03c3e8134877dc9b5765a8e107eadfef6ee",
+              "aic": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 43,
+      "workflow_attempts": 2,
+      "scope_matches": true,
+      "scope_sha256": "f348059dbde17d84340228062e939e00e250122d6e5b36f3e2c6234252931af6",
+      "runs": [
+        {
+          "run_id": 40955012283,
+          "attempt": 1,
+          "aic": "28.13008",
+          "ai_jobs": 1,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 123733705907,
+              "name": "repository_context / agent",
+              "sha256": "5d10048cd53b57db77d8d1df3c20d57e6cb4251f1411ade40186500ab5450750",
+              "aic": "28.13008"
+            }
+          ]
+        },
+        {
+          "run_id": 40955012283,
+          "attempt": 2,
+          "aic": "392.07264",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12943389947,
+              "name": "4fb0d45e-usage",
+              "sha256": "bfb3352888c2a593f63df9b9541780cdf6aa79aabcf2e7f056aed6f5338c0394"
+            },
+            {
+              "id": 12945715676,
+              "name": "usage",
+              "sha256": "2416e905d1ded702db60fdc77a72c62bb78b8f29799cca298edd024d5d9ddf95"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 44,
+      "workflow_attempts": 2,
+      "scope_matches": true,
+      "scope_sha256": "6c00a6ccab38eb8112cae99f293be9a170d8756556755badbfb5ebf7db5a18d8",
+      "runs": [
+        {
+          "run_id": 40955033538,
+          "attempt": 1,
+          "aic": null,
+          "ai_jobs": 3,
+          "artifacts": [],
+          "reason": "usage artifact missing, expired or ambiguous",
+          "job_summaries": [
+            {
+              "job_id": 123733665950,
+              "name": "repository_context / agent",
+              "sha256": "172f87a39f1b1a78570f4d323f34072b9c15415f7edeebea7bcd2b9007a8e36a",
+              "aic": "43.48328"
+            },
+            {
+              "job_id": 123738492633,
+              "name": "repository_context / detection",
+              "sha256": "21655c57f7c7eb4c9f88fd7dab6107134245d34802f09b724eae0964ba3288db",
+              "aic": "9.97416"
+            },
+            {
+              "job_id": 123739747546,
+              "name": "agent",
+              "sha256": null,
+              "aic": null
+            }
+          ]
+        },
+        {
+          "run_id": 40955033538,
+          "attempt": 2,
+          "aic": "701.09616",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12944322929,
+              "name": "4fb0d45e-usage",
+              "sha256": "8cd6aca5d4fdfad5eaf2dd362b3dc262d9b578d39c63e4fd64273e2afe0816fd"
+            },
+            {
+              "id": 12946372997,
+              "name": "usage",
+              "sha256": "31fbdf79686e93199ce3844bf218f7ef7ed96af209067ce3ee2123f503cc4fca"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 45,
+      "workflow_attempts": 2,
+      "scope_matches": true,
+      "scope_sha256": "e5f4bc5d45ca283be297dd8eeb1387b123b40878632d3d332d4224e577d25924",
+      "runs": [
+        {
+          "run_id": 40955054329,
+          "attempt": 1,
+          "aic": "114.87248",
+          "ai_jobs": 3,
+          "artifacts": [],
+          "reason": null,
+          "job_summaries": [
+            {
+              "job_id": 123733604701,
+              "name": "repository_context / agent",
+              "sha256": "f73671b869266f65927155d7c108a695e44c67a17c36ba6fd0e02a6be01dc638",
+              "aic": "52.08328"
+            },
+            {
+              "job_id": 123737027056,
+              "name": "repository_context / detection",
+              "sha256": "a6183d5afa75aa370b76c6f8e722acdc364756c54f9426a1fe0e6ae54443a582",
+              "aic": "6.3172"
+            },
+            {
+              "job_id": 123737871396,
+              "name": "agent",
+              "sha256": "94c14b8471c2129a300f7dbcc33e7df2a524013b1a6c585cbb19d22257833e0b",
+              "aic": "56.472"
+            }
+          ]
+        },
+        {
+          "run_id": 40955054329,
+          "attempt": 2,
+          "aic": "663.34864",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12943823605,
+              "name": "4fb0d45e-usage",
+              "sha256": "c7b82aaa03bd3d40bb3cfe3250f249c0c5bb0532d71af1fd5bd9911ebf18059e"
+            },
+            {
+              "id": 12946286657,
+              "name": "usage",
+              "sha256": "d0690d0d27e012c86f4236a7335357387917a01749922bdf3de8d08bbb373bb3"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 46,
+      "workflow_attempts": 2,
+      "scope_matches": true,
+      "scope_sha256": "c82e81769692218ff071d253587810693891539029a21561fe735595360e3714",
+      "runs": [
+        {
+          "run_id": 40955075088,
+          "attempt": 1,
+          "aic": null,
+          "ai_jobs": 1,
+          "artifacts": [],
+          "reason": "usage artifact missing, expired or ambiguous",
+          "job_summaries": [
+            {
+              "job_id": 123734013875,
+              "name": "repository_context / agent",
+              "sha256": null,
+              "aic": null
+            }
+          ]
+        },
+        {
+          "run_id": 40955075088,
+          "attempt": 2,
+          "aic": "202.78896",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12944712365,
+              "name": "4fb0d45e-usage",
+              "sha256": "b4c3a3b5ca87b31dd008153cd82f989f53488233d729c89c1e0f89800a957d1f"
+            },
+            {
+              "id": 12946065405,
+              "name": "usage",
+              "sha256": "01a80e55d7157a04b216597a0b36a9d08c734e47e9be3d7fcff1c1336e64118d"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 47,
+      "workflow_attempts": 2,
+      "scope_matches": true,
+      "scope_sha256": "74057132e75a8a309eca40a11d9490c675bc1edd86b1e3043a1fa20cc279635d",
+      "runs": [
+        {
+          "run_id": 40955092049,
+          "attempt": 1,
+          "aic": null,
+          "ai_jobs": 1,
+          "artifacts": [],
+          "reason": "usage upload incomplete",
+          "job_summaries": [
+            {
+              "job_id": 123733952180,
+              "name": "repository_context / agent",
+              "sha256": null,
+              "aic": null
+            }
+          ]
+        },
+        {
+          "run_id": 40955092049,
+          "attempt": 2,
+          "aic": "558.63192",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12943778926,
+              "name": "4fb0d45e-usage",
+              "sha256": "c1221dca887991729f4c360acb40bc9db369c010ed341249df8af5adcf407ecc"
+            },
+            {
+              "id": 12945272467,
+              "name": "usage",
+              "sha256": "57081dd61c3bb0e80cf6aa2b2f796d7a110e1ba144c1ea2c738d0ca176678cf1"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 48,
+      "workflow_attempts": 2,
+      "scope_matches": true,
+      "scope_sha256": "133b50abfc58adeeb497ab77e7d2b652851fbac08658e57a5eef10c2a6c8569b",
+      "runs": [
+        {
+          "run_id": 40955111250,
+          "attempt": 1,
+          "aic": null,
+          "ai_jobs": 1,
+          "artifacts": [],
+          "reason": "usage upload incomplete",
+          "job_summaries": [
+            {
+              "job_id": 123733801322,
+              "name": "repository_context / agent",
+              "sha256": null,
+              "aic": null
+            }
+          ]
+        },
+        {
+          "run_id": 40955111250,
+          "attempt": 2,
+          "aic": "403.41752",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12944565014,
+              "name": "4fb0d45e-usage",
+              "sha256": "d13d46be39c1ce8714185740a7dbe3d0d6eb05aa59a17c1e7ceae88e6dfe5059"
+            },
+            {
+              "id": 12944728704,
+              "name": "usage",
+              "sha256": "c4de94430ed92a89a3ca8a68cead1faf69f24c5f1c0857b12ba9846de6a097ba"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 49,
+      "workflow_attempts": 2,
+      "scope_matches": true,
+      "scope_sha256": "0f2ea43ba791cbe5d696f5d2e9ef2d9f6aa2868cc21bfe0ed824d8fc914a5a06",
+      "runs": [
+        {
+          "run_id": 40955134520,
+          "attempt": 1,
+          "aic": null,
+          "ai_jobs": 1,
+          "artifacts": [],
+          "reason": "usage upload incomplete",
+          "job_summaries": [
+            {
+              "job_id": 123734040190,
+              "name": "repository_context / agent",
+              "sha256": null,
+              "aic": null
+            }
+          ]
+        },
+        {
+          "run_id": 40955134520,
+          "attempt": 2,
+          "aic": "230.17384",
+          "ai_jobs": 4,
+          "artifacts": [
+            {
+              "id": 12943413913,
+              "name": "4fb0d45e-usage",
+              "sha256": "4724e6c7399e7ba57de74ecccda0dba0e7a1174dbfd977fed289759cd714e6ff"
+            },
+            {
+              "id": 12943823730,
+              "name": "usage",
+              "sha256": "bcf3f588d09dd2cd5f15c910b07f8abbb4ccd788712d7051d744311cca0211a1"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "number": 50,
+      "workflow_attempts": 2,
+      "scope_matches": true,
+      "scope_sha256": "873f055ca74ec5467d7f21b12d7df25b63427a2077085a2ee542d080fc12c338",
+      "runs": [
+        {
+          "run_id": 40955154888,
+          "attempt": 1,
+          "aic": null,
+          "ai_jobs": 1,
+          "artifacts": [],
+          "reason": "usage upload incomplete",
+          "job_summaries": [
+            {
+              "job_id": 123734061722,
+              "name": "repository_context / agent",
+              "sha256": null,
+              "aic": null
+            }
+          ]
+        },
+        {
+          "run_id": 40955154888,
+          "attempt": 2,
+          "aic": "69.16000",
+          "ai_jobs": 2,
+          "artifacts": [
+            {
+              "id": 12943944064,
+              "name": "4fb0d45e-usage",
+              "sha256": "5eac8a6a835f8105405ebf4302b2dbb1fea6178997a454fb4cc4a26fc988a432"
+            }
+          ],
+          "reason": null
+        }
+      ]
+    }
+  ]
+}

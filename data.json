@@ -16,6 +16,14 @@
       "verified": 969,
       "resources exhausted": 387,
       "type-check/audit failure": 231
+    },
+    "usage": {
+      "total_aic": "139182.00244",
+      "average_aic_per_pr": "531.2290169465648854961832061",
+      "measured_prs": 262,
+      "incomplete_prs": 20,
+      "no_ai_prs": 26,
+      "collected_at": "2026-11-03T23:16:52.769082+00:00"
     }
   },
   "repositories": [
@@ -43,7 +51,15 @@
         },
         "checked_fixes": 3,
         "fix_unknown": 0,
-        "checked_fix_prs": 3
+        "checked_fix_prs": 3,
+        "usage": {
+          "total_aic": "17279.60030",
+          "average_aic_per_pr": "454.7263236842105263157894737",
+          "measured_prs": 38,
+          "incomplete_prs": 3,
+          "no_ai_prs": 0,
+          "collected_at": "2026-11-03T23:11:38.425774+00:00"
+        }
       }
     },
     {
@@ -71,7 +87,15 @@
         },
         "checked_fixes": 11,
         "fix_unknown": 0,
-        "checked_fix_prs": 10
+        "checked_fix_prs": 10,
+        "usage": {
+          "total_aic": "66734.43988",
+          "average_aic_per_pr": "667.3443988",
+          "measured_prs": 100,
+          "incomplete_prs": 4,
+          "no_ai_prs": 0,
+          "collected_at": "2026-11-03T23:16:52.769082+00:00"
+        }
       }
     },
     {
@@ -99,7 +123,15 @@
         },
         "checked_fixes": 6,
         "fix_unknown": 0,
-        "checked_fix_prs": 6
+        "checked_fix_prs": 6,
+        "usage": {
+          "total_aic": "31866.34530",
+          "average_aic_per_pr": "777.2279341463414634146341463",
+          "measured_prs": 41,
+          "incomplete_prs": 9,
+          "no_ai_prs": 0,
+          "collected_at": "2026-11-03T23:11:53.118856+00:00"
+        }
       }
     },
     {
@@ -127,7 +159,15 @@
         },
         "checked_fixes": 3,
         "fix_unknown": 0,
-        "checked_fix_prs": 3
+        "checked_fix_prs": 3,
+        "usage": {
+          "total_aic": "8397.15624",
+          "average_aic_per_pr": "246.9751835294117647058823529",
+          "measured_prs": 34,
+          "incomplete_prs": 1,
+          "no_ai_prs": 0,
+          "collected_at": "2026-11-03T23:11:42.466280+00:00"
+        }
       },
       "campaign": {
         "repository": "shuvendu-lahiri/gh-aw",
@@ -165,7 +205,15 @@
         },
         "checked_fixes": 2,
         "fix_unknown": 0,
-        "checked_fix_prs": 2
+        "checked_fix_prs": 2,
+        "usage": {
+          "total_aic": "14904.46072",
+          "average_aic_per_pr": "304.1726677551020408163265306",
+          "measured_prs": 49,
+          "incomplete_prs": 3,
+          "no_ai_prs": 26,
+          "collected_at": "2026-11-03T23:11:52.298835+00:00"
+        }
       }
     }
   ]

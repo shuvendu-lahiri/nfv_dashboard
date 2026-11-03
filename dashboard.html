@@ -19,6 +19,8 @@ a { color:#185c95; }
 .panel { margin-top:18px; padding:18px; background:#fffdf8; border:1px solid var(--line); border-radius:12px; box-shadow:0 6px 18px #2430440a; }
 .campaign { padding:14px; margin-bottom:16px; border-left:4px solid #a56b05; background:#fff4d9; }
 .campaign h3 { margin:0; }
+.usage-summary { margin-top:18px; padding:14px; border-left:4px solid #216253; background:#edf5ef; }
+.usage-summary h3 { margin:0; }
 .outcome-bar { display:flex; height:14px; overflow:hidden; border-radius:7px; margin:16px 0; }
 .outcome-bar span { flex-basis:0; }
 .outcome-verified { background:#146343; }
@@ -93,7 +95,7 @@ __NFV_OUTCOME_TRACKER__
 <p class="muted">Original PR opens the upstream change using GitHub's no-backlink redirect. Replay PR opens the fork's audited copy.</p>
 <div class="scroll">
 <table aria-describedby="meta">
-<thead><tr><th>Replay PR</th><th>Original PR</th><th>Change / refuted properties</th><th>Audit date</th><th>Status</th><th>Properties</th><th>Refuted</th><th>Verified fixes</th><th>Verified</th><th>Exhausted</th><th>Audit failure</th><th>Evidence</th></tr></thead>
+<thead><tr><th>Replay PR</th><th>Original PR</th><th>Change / refuted properties</th><th>Audit date</th><th>Status</th><th>Properties</th><th>Refuted</th><th>Verified fixes</th><th>Verified</th><th>Exhausted</th><th>Audit failure</th><th>Review AIC (all attempts)</th><th>Evidence</th></tr></thead>
 <tbody id="rows"></tbody>
 </table>
 </div>
@@ -104,7 +106,7 @@ __NFV_OUTCOME_TRACKER__
 <p>Counts use each PR's latest published report. Missing reports are not zero-finding analyses.
 Older-head reports are labeled. Links lead to the original assumptions, source overlays and native evidence.
 This dashboard does not rerun proofs or adjudicate refutations. Comment hashes provide snapshot provenance, not authentication.</p>
-<p><a id="readme" href="https://github.com/shuvendu-lahiri/nfv_dashboard/blob/nfv-reports/README.md">GitHub-readable dashboard</a> &middot; <a href="data.json">Snapshot and report history</a> &middot;
+<p><a id="readme" href="https://github.com/shuvendu-lahiri/nfv_dashboard/blob/nfv-reports/README.md">GitHub-readable dashboard</a> &middot; <a href="data.json">Snapshot and report history</a> &middot; <a href="usage.json">Billing evidence</a> &middot;
 Layout reference: <a href="https://github.com/Z3Prover/coz3/blob/main/nfv_dashboard.html">CoZ3 NFV dashboard</a>.
 No external assets, network requests or dependencies are required to view this file.</p>
 </footer>
@@ -195,6 +197,11 @@ function render() {
       report.counts["resources exhausted"], report.counts["type-check/audit failure"]] : ["-", "-", "-", "-", "-", "-"]) {
       row.append(text("td", value, "number"));
     }
+    const usage = entry.usage;
+    const aic = usage?.status === "measured"
+      ? Number(usage.aic).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})
+      : usage?.status === "no_ai_jobs" ? "No AI jobs" : usage?.status === "not_attempted" ? "-" : "Unknown";
+    row.append(text("td", aic, "number"));
     const evidence = document.createElement("td");
     if (report) {
       evidence.append(link("Report", report.url), document.createElement("br"), link("Workflow", report.run_url));

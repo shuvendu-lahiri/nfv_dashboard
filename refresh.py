@@ -298,6 +298,118 @@ def fix_count(report):
             + (f" (+{report['fix_unknown']} unknown)" if report["fix_unknown"] else ""))
 
 
+def aic_amount(value):
+    if isinstance(value, bool) or not isinstance(value, (str, int, Decimal)):
+        raise ValueError("Invalid AIC measurement")
+    amount = Decimal(value)
+    if not amount.is_finite() or amount < 0:
+        raise ValueError("Invalid AIC measurement")
+    return amount
+
+
+def usage_scope(entry):
+    identity = {key: entry[key] for key in ("number", "head_sha", "attempts", "latest_run")}
+    return hashlib.sha256(json.dumps(identity, sort_keys=True).encode()).hexdigest()
+
+
+def usage_summary(total, measured, incomplete, no_ai):
+    return {
+        "total_aic": str(total),
+        "average_aic_per_pr": str(total / measured) if measured else None,
+        "measured_prs": measured, "incomplete_prs": incomplete, "no_ai_prs": no_ai,
+    }
+
+
+def apply_usage_evidence(data, evidence=None):
+    records = {}
+    owners = {}
+    if evidence is not None:
+        if evidence.get("schema") != 1 or evidence.get("repository") != data["repository"]:
+            raise ValueError("Invalid usage evidence repository or schema")
+        for record in evidence["prs"]:
+            number = record["number"]
+            if (type(number) is not int or number < 1 or number in records
+                    or type(record["scope_matches"]) is not bool
+                    or type(record["workflow_attempts"]) is not int
+                    or record["workflow_attempts"] < 0):
+                raise ValueError("Invalid or duplicate PR usage evidence")
+            identities = set()
+            for run in record["runs"]:
+                identity = (run["run_id"], run["attempt"])
+                if (any(type(value) is not int or value < 1 for value in identity)
+                        or identity in identities
+                        or type(run["ai_jobs"]) is not int or run["ai_jobs"] < 0):
+                    raise ValueError("Invalid or duplicate workflow usage identity")
+                identities.add(identity)
+                if identity in owners and owners[identity] != number:
+                    raise ValueError("Workflow usage assigned to multiple PRs")
+                owners[identity] = number
+                if run["aic"] is not None:
+                    aic_amount(run["aic"])
+            records[number] = record
+    total = Decimal(0)
+    measured = incomplete = no_ai = 0
+    for entry in data["prs"]:
+        entry["usage"] = {"status": "not_attempted", "aic": None}
+        if not (entry["attempts"] or entry["latest_report"]):
+            continue
+        record = records.get(entry["number"])
+        if (record is None or not record["scope_matches"]
+                or record["scope_sha256"] != usage_scope(entry)
+                or record["workflow_attempts"] != entry["attempts"]
+                or len(record["runs"]) != entry["attempts"]
+                or not record["runs"]
+                or any(run["aic"] is None for run in record["runs"])):
+            incomplete += 1
+            entry["usage"]["status"] = "incomplete"
+            continue
+        amount = sum((aic_amount(run["aic"]) for run in record["runs"]), Decimal(0))
+        if not any(run["ai_jobs"] for run in record["runs"]):
+            if amount:
+                raise ValueError("Billing evidence records charges without AI jobs")
+            no_ai += 1
+            entry["usage"] = {"status": "no_ai_jobs", "aic": "0"}
+        else:
+            measured += 1
+            total += amount
+            entry["usage"] = {"status": "measured", "aic": str(amount)}
+    data["summary"]["usage"] = usage_summary(total, measured, incomplete, no_ai)
+    if evidence is not None and "collected_at" in evidence:
+        data["summary"]["usage"]["collected_at"] = evidence["collected_at"]
+
+
+def usage_lines(summary):
+    usage = summary.get("usage")
+    if usage is None:
+        return []
+    average = usage["average_aic_per_pr"]
+    value = f"{aic_amount(average):,.2f}" if average is not None else "N/A"
+    lines = [
+        f"Average review AIC: {value} per PR",
+        f"Coverage: {usage['measured_prs']:,} / {summary['attempted_prs']:,} attempted PRs fully measured; "
+        f"{usage['incomplete_prs']:,} with incomplete usage; "
+        f"{usage['no_ai_prs']:,} with no AI execution.",
+        f"{aic_amount(usage['total_aic']):,.2f} AIC across fully measured PRs. "
+        "Includes retries, failed attempts, source-context and detection sessions. "
+        "Incomplete measurements are excluded, not counted as zero. "
+        "Quota-only PRs with no AI execution are excluded from the average.",
+    ]
+    if "collected_at" in usage:
+        lines.append(f"Billing evidence collected: {usage['collected_at']}. "
+                     "Review scope follows the saved project snapshots; "
+                     "campaign-controller spend and reservations are separate.")
+    return lines
+
+
+def render_usage(summary):
+    lines = usage_lines(summary)
+    if not lines:
+        return ""
+    return ('<aside class="usage-summary" aria-label="Review AIC usage">'
+            f"<h3>{html.escape(lines[0])}</h3>"
+            + "".join(f"<p>{html.escape(line)}</p>" for line in lines[1:]) + "</aside>")
+
+
 def campaign_lines(data):
     campaign = data.get("campaign")
     if campaign is None:
@@ -366,6 +478,10 @@ def render_markdown(data):
         "candidate source patch, not proof of source correctness. Simplifications do not count.", "",
     ]
     campaign = campaign_lines(data)
+    for line in usage_lines(total):
+        lines.extend([markdown(line), ""])
+    if "usage" in total:
+        lines.extend(["[Billing evidence and missing-data reasons](usage.json).", ""])
     if campaign:
         lines.extend([f"## {markdown(campaign[0])}", ""])
         for line in campaign[1:]:
@@ -373,8 +489,8 @@ def render_markdown(data):
     lines.extend([
         "## All attempted PRs (refutations first)", "",
         "Original PR links use GitHub's no-backlink redirect; Replay PR links open the fork's audited copy.", "",
-        "| Replay PR | Original PR | Change | Latest report | Properties | Refuted | Verified fixes | Verified | Exhausted | Audit failure | Evidence |",
-        "|---|---|---|---|---:|---:|---:|---:|---:|---:|---|",
+        "| Replay PR | Original PR | Change | Latest report | Properties | Refuted | Verified fixes | Verified | Exhausted | Audit failure | Review AIC (all attempts) | Evidence |",
+        "|---|---|---|---|---:|---:|---:|---:|---:|---:|---:|---|",
     ])
     for entry in ordered(data):
         report = entry["latest_report"]
@@ -382,6 +498,10 @@ def render_markdown(data):
         title = markdown(entry["title"])
         source = (f"[Original PR {entry['source_number']}]({entry['source_url']})"
                   if "source_number" in entry else "Not mapped")
+        usage = entry.get("usage", {})
+        aic = (f"{aic_amount(usage['aic']):,.2f}" if usage.get("status") == "measured"
+               else "No AI jobs" if usage.get("status") == "no_ai_jobs"
+               else "-" if usage.get("status") == "not_attempted" else "Unknown")
         if report:
             counts = report["counts"]
             result = "**REFUTED (model)**" if counts["refuted"] else "Published"
@@ -399,13 +519,13 @@ def render_markdown(data):
             if newer_attempt:
                 evidence += f" / [latest attempt]({run['url']})"
             lines.append(f"| [{label}]({entry['url']}) | {source} | {title} | {result} | "
-                         f"{report['properties']} | {' | '.join(values)} | {evidence} |")
+                         f"{report['properties']} | {' | '.join(values)} | {aic} | {evidence} |")
         else:
             run = entry["latest_run"]
             status = (run["conclusion"] or run["status"]) if run else "not attempted"
             evidence = f"[Run]({run['url']})" if run else "-"
             lines.append(f"| [{label}]({entry['url']}) | {source} | {title} | "
-                         f"No published report ({markdown(status)}) | - | - | - | - | - | - | {evidence} |")
+                         f"No published report ({markdown(status)}) | - | - | - | - | - | - | {aic} | {evidence} |")
     lines.extend(["", "## Conditional model refutations", "",
                   "The following property texts are extracted from the published reports, without new adjudication "
                   "or inference. The original report contains assumptions, source overlays and native evidence.", ""])
@@ -479,6 +599,7 @@ def render_outcome_tracker(summary):
             f' <span class="muted">({unknown:,} with unknown fix evidence)</span></p>'
             '<p class="muted">Native checked model repairs with hash-bound candidate source patches; '
             'not proof of source correctness. Simplifications do not count.</p>')
+    parts.append(render_usage(summary))
     parts.append('</div>')
     return "\n".join(parts)
 
@@ -513,6 +634,15 @@ def hub(snapshots):
               "checked_fixes", "fix_unknown", "checked_fix_prs")
     summary = {field: sum(data["summary"][field] for data in snapshots) for field in fields}
     summary["outcomes"] = {status: sum(data["summary"]["outcomes"][status] for data in snapshots) for status in STATUSES}
+    usages = [data["summary"].get("usage", usage_summary(Decimal(0), 0,
+               data["summary"]["attempted_prs"], 0)) for data in snapshots]
+    summary["usage"] = usage_summary(
+        sum((aic_amount(usage["total_aic"]) for usage in usages), Decimal(0)),
+        *(sum(usage[key] for usage in usages)
+          for key in ("measured_prs", "incomplete_prs", "no_ai_prs")))
+    collected = [usage["collected_at"] for usage in usages if "collected_at" in usage]
+    if collected:
+        summary["usage"]["collected_at"] = max(collected)
     return {
         "schema": 1, "generated_at": max(data["generated_at"] for data in snapshots), "summary": summary,
         "repositories": [{key: data[key] for key in ("name", "label", "repository", "languages", "generated_at", "summary", "campaign")
@@ -526,13 +656,15 @@ def main():
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument("--input-dir", type=Path, help="Read pulls/comments/review-runs JSON in each repository subdirectory")
     mode.add_argument("--check", action="store_true", help="Check generated files offline without changing them")
+    mode.add_argument("--render-only", action="store_true",
+                      help="Regenerate pages from saved metadata, fix evidence and usage evidence without network access")
     parser.add_argument("--project", choices=REPOSITORIES,
                         help="Refresh only this project; retain other projects' saved evidence")
     args = parser.parse_args()
     generated_at = datetime.now(timezone.utc).isoformat()
 
     def collect(name):
-        if args.check or args.project and name != args.project:
+        if args.check or args.render_only or args.project and name != args.project:
             return json.loads((DIRECTORY / name / "data.json").read_text(encoding="utf-8"))
         repository = f"shuvendu-lahiri/{name}"
         if args.input_dir:
@@ -556,6 +688,9 @@ def main():
         path = DIRECTORY / data["name"] / "fixes.json"
         evidence = json.loads(path.read_text(encoding="utf-8")) if path.exists() else None
         apply_fix_evidence(data, evidence)
+        path = DIRECTORY / data["name"] / "usage.json"
+        evidence = json.loads(path.read_text(encoding="utf-8")) if path.exists() else None
+        apply_usage_evidence(data, evidence)
     outputs = {}
     for data in snapshots:
         base = DIRECTORY / data["name"]

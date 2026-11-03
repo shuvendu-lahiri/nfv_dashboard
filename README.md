@@ -51,6 +51,51 @@ the native evidence index, bound to the exact published comment and run; missing
 or mismatched evidence is shown as unknown, never as an established zero. Totals
 use each PR's latest published report, without double-counting historical runs.
 
+## Review AIC averages
+
+The hub, repository cards and project pages show **average AIC per PR**, including
+all its reviewer attempts: retries, failures, source-context sessions and detection
+sessions. The overall average is total measured AIC divided by the number of fully
+measured PRs across repositories, not an unweighted mean of repository averages.
+Each PR's total is also shown in its project table.
+
+Only PRs with complete billing evidence for every captured attempt contribute to
+the average. Coverage lists fully measured PRs, incomplete measurements and PRs
+with no AI execution (for example, quota-only skips). Missing evidence is unknown,
+not zero; PRs with no AI execution are excluded from the average. Known zero-cost
+executed reviews remain eligible. The measured total is not total campaign spend
+when coverage is incomplete.
+
+`collect_usage.py` reads workflow job metadata and compact `usage` artifacts.
+It sums per-response `ai_credits_this_response` values for every executed agent
+and detection job, including reusable source-context workflows. It does not sum
+cumulative token counters, reuse daily guardrail measurements or count the same
+request twice. Artifacts are bound to each attempt's usage-upload step; missing,
+expired or incomplete artifacts fall back to retained job logs: only the final
+`AI Credits` output within the successful, timestamp-bound token-parser step of
+each executed AI job is accepted, not arbitrary agent output. If either source
+is incomplete, the PR remains unknown. Explicitly skipped AI execution steps
+establish zero usage; missing token logs alone do not. `usage.json`
+retains run/attempt identities, artifact/job-log hashes and reasons for missing evidence,
+bound to the saved PR/head/latest-run scope. Changed review scopes invalidate old
+usage measurements until recollected.
+
+Collect usage for the saved snapshots, then regenerate without changing report
+or campaign snapshots:
+
+```text
+python collect_usage.py --cache-dir <external-cache-directory>
+python refresh.py --render-only
+python -m unittest discover
+python refresh.py --check
+```
+
+Both collection and rendering are read-only with respect to reviewed repositories:
+they launch no audits, reruns or proofs. `--project garnet` is also supported by
+the collector. The external cache keeps terminal-run metadata, compact ZIPs and
+raw job logs out of the published site; only billing measurements and provenance
+are committed.
+
 ## Refresh
 
 Requires Python 3.10+ and authenticated GitHub CLI read access:

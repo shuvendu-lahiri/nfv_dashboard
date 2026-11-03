@@ -20,7 +20,15 @@
     },
     "checked_fixes": 2,
     "fix_unknown": 0,
-    "checked_fix_prs": 2
+    "checked_fix_prs": 2,
+    "usage": {
+      "total_aic": "14904.46072",
+      "average_aic_per_pr": "304.1726677551020408163265306",
+      "measured_prs": 49,
+      "incomplete_prs": 3,
+      "no_ai_prs": 26,
+      "collected_at": "2026-11-03T23:11:52.298835+00:00"
+    }
   },
   "prs": [
     {
@@ -84,7 +92,11 @@
       },
       "source_number": 2289,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/2289",
-      "source_head_sha": "d90976ed2413012463bf3936487394a515deda90"
+      "source_head_sha": "d90976ed2413012463bf3936487394a515deda90",
+      "usage": {
+        "status": "measured",
+        "aic": "383.99160"
+      }
     },
     {
       "number": 3,
@@ -147,7 +159,11 @@
       },
       "source_number": 2262,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/2262",
-      "source_head_sha": "a1b36fb74d9e854b16fc74fb929569005271ce62"
+      "source_head_sha": "a1b36fb74d9e854b16fc74fb929569005271ce62",
+      "usage": {
+        "status": "measured",
+        "aic": "273.63056"
+      }
     },
     {
       "number": 4,
@@ -210,7 +226,11 @@
       },
       "source_number": 2334,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/2334",
-      "source_head_sha": "902458fbd86080a3e249fa2affaadaaafdd37b0f"
+      "source_head_sha": "902458fbd86080a3e249fa2affaadaaafdd37b0f",
+      "usage": {
+        "status": "measured",
+        "aic": "387.37064"
+      }
     },
     {
       "number": 5,
@@ -273,7 +293,11 @@
       },
       "source_number": 2311,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/2311",
-      "source_head_sha": "a2b0d7ca9e575d2b474923079bcd1a9209e37df2"
+      "source_head_sha": "a2b0d7ca9e575d2b474923079bcd1a9209e37df2",
+      "usage": {
+        "status": "measured",
+        "aic": "109.75920"
+      }
     },
     {
       "number": 6,
@@ -336,7 +360,11 @@
       },
       "source_number": 2309,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/2309",
-      "source_head_sha": "7063b28c796e942dc08ba8a05e0767a831f4ce17"
+      "source_head_sha": "7063b28c796e942dc08ba8a05e0767a831f4ce17",
+      "usage": {
+        "status": "measured",
+        "aic": "105.03456"
+      }
     },
     {
       "number": 7,
@@ -399,7 +427,11 @@
       },
       "source_number": 2308,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/2308",
-      "source_head_sha": "fb60af000df18c790cab5760de5156bf5c71d33d"
+      "source_head_sha": "fb60af000df18c790cab5760de5156bf5c71d33d",
+      "usage": {
+        "status": "measured",
+        "aic": "115.24560"
+      }
     },
     {
       "number": 8,
@@ -462,7 +494,11 @@
       },
       "source_number": 2287,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/2287",
-      "source_head_sha": "cbce121693e786f2a0eb7874cad704e75ec0acab"
+      "source_head_sha": "cbce121693e786f2a0eb7874cad704e75ec0acab",
+      "usage": {
+        "status": "measured",
+        "aic": "263.91056"
+      }
     },
     {
       "number": 9,
@@ -525,7 +561,11 @@
       },
       "source_number": 2278,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/2278",
-      "source_head_sha": "75514ca3e995977a7fc20ef978117d4e0d855da0"
+      "source_head_sha": "75514ca3e995977a7fc20ef978117d4e0d855da0",
+      "usage": {
+        "status": "measured",
+        "aic": "285.60272"
+      }
     },
     {
       "number": 10,
@@ -588,7 +628,11 @@
       },
       "source_number": 2251,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/2251",
-      "source_head_sha": "7f5b45bce722bd7b5be0bf8a1d750f0eb8ea1b16"
+      "source_head_sha": "7f5b45bce722bd7b5be0bf8a1d750f0eb8ea1b16",
+      "usage": {
+        "status": "measured",
+        "aic": "267.32832"
+      }
     },
     {
       "number": 11,
@@ -610,7 +654,11 @@
       },
       "source_number": 2247,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/2247",
-      "source_head_sha": "0528df2f9cf3851c9411c698f47e9da53dca0565"
+      "source_head_sha": "0528df2f9cf3851c9411c698f47e9da53dca0565",
+      "usage": {
+        "status": "measured",
+        "aic": "43.92752"
+      }
     },
     {
       "number": 12,
@@ -673,7 +721,11 @@
       },
       "source_number": 2242,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/2242",
-      "source_head_sha": "17a462442b512913199fdbeed0b15e93a61c2455"
+      "source_head_sha": "17a462442b512913199fdbeed0b15e93a61c2455",
+      "usage": {
+        "status": "measured",
+        "aic": "271.28552"
+      }
     },
     {
       "number": 13,
@@ -736,7 +788,11 @@
       },
       "source_number": 2236,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/2236",
-      "source_head_sha": "b0a83a4ed584872e481a3fe37a6c6cf15996cb8a"
+      "source_head_sha": "b0a83a4ed584872e481a3fe37a6c6cf15996cb8a",
+      "usage": {
+        "status": "measured",
+        "aic": "338.50800"
+      }
     },
     {
       "number": 14,
@@ -799,7 +855,11 @@
       },
       "source_number": 2226,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/2226",
-      "source_head_sha": "a07fc025390e1b0a607d52a47b470c71934e3680"
+      "source_head_sha": "a07fc025390e1b0a607d52a47b470c71934e3680",
+      "usage": {
+        "status": "measured",
+        "aic": "391.96328"
+      }
     },
     {
       "number": 15,
@@ -862,7 +922,11 @@
       },
       "source_number": 2168,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/2168",
-      "source_head_sha": "336c1518b3a1e1209c58945ac631332a2f2dfbcd"
+      "source_head_sha": "336c1518b3a1e1209c58945ac631332a2f2dfbcd",
+      "usage": {
+        "status": "measured",
+        "aic": "201.85576"
+      }
     },
     {
       "number": 16,
@@ -925,7 +989,11 @@
       },
       "source_number": 2090,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/2090",
-      "source_head_sha": "d8d62eb1eff017b01bc0138746c2cdec66540b31"
+      "source_head_sha": "d8d62eb1eff017b01bc0138746c2cdec66540b31",
+      "usage": {
+        "status": "measured",
+        "aic": "202.06048"
+      }
     },
     {
       "number": 17,
@@ -947,7 +1015,11 @@
       },
       "source_number": 1875,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1875",
-      "source_head_sha": "bf242db9e92c840b4985d33087c7a52696ac7ab3"
+      "source_head_sha": "bf242db9e92c840b4985d33087c7a52696ac7ab3",
+      "usage": {
+        "status": "measured",
+        "aic": "51.65960"
+      }
     },
     {
       "number": 18,
@@ -1010,7 +1082,11 @@
       },
       "source_number": 1825,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1825",
-      "source_head_sha": "b611f15ae69b1f135e25f54b388e9d763cf0f515"
+      "source_head_sha": "b611f15ae69b1f135e25f54b388e9d763cf0f515",
+      "usage": {
+        "status": "measured",
+        "aic": "360.06872"
+      }
     },
     {
       "number": 19,
@@ -1073,7 +1149,11 @@
       },
       "source_number": 1801,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1801",
-      "source_head_sha": "0933039974c44b356cbf4539e88b735430de06b6"
+      "source_head_sha": "0933039974c44b356cbf4539e88b735430de06b6",
+      "usage": {
+        "status": "measured",
+        "aic": "284.86392"
+      }
     },
     {
       "number": 20,
@@ -1136,7 +1216,11 @@
       },
       "source_number": 1684,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1684",
-      "source_head_sha": "4dd38f7cb16b5d99b2a8857f2c2a8273588d3aa8"
+      "source_head_sha": "4dd38f7cb16b5d99b2a8857f2c2a8273588d3aa8",
+      "usage": {
+        "status": "measured",
+        "aic": "421.64440"
+      }
     },
     {
       "number": 21,
@@ -1199,7 +1283,11 @@
       },
       "source_number": 1574,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1574",
-      "source_head_sha": "b67aae48be8ef12f5bf4b219ab58626fa099ca69"
+      "source_head_sha": "b67aae48be8ef12f5bf4b219ab58626fa099ca69",
+      "usage": {
+        "status": "measured",
+        "aic": "339.47856"
+      }
     },
     {
       "number": 22,
@@ -1276,7 +1364,11 @@
       },
       "source_number": 1335,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1335",
-      "source_head_sha": "aaf4f7147b5c192a5e780975f5eac4e861293980"
+      "source_head_sha": "aaf4f7147b5c192a5e780975f5eac4e861293980",
+      "usage": {
+        "status": "measured",
+        "aic": "458.96624"
+      }
     },
     {
       "number": 23,
@@ -1339,7 +1431,11 @@
       },
       "source_number": 1278,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1278",
-      "source_head_sha": "9db384c82227c64578fda7aff4c369a03f36bde8"
+      "source_head_sha": "9db384c82227c64578fda7aff4c369a03f36bde8",
+      "usage": {
+        "status": "measured",
+        "aic": "361.98416"
+      }
     },
     {
       "number": 24,
@@ -1361,7 +1457,11 @@
       },
       "source_number": 2331,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/2331",
-      "source_head_sha": "79321148fcd2c8b51679f25caf3e77a95b5c0a84"
+      "source_head_sha": "79321148fcd2c8b51679f25caf3e77a95b5c0a84",
+      "usage": {
+        "status": "measured",
+        "aic": "57.62928"
+      }
     },
     {
       "number": 25,
@@ -1424,7 +1524,11 @@
       },
       "source_number": 2285,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/2285",
-      "source_head_sha": "cfe3427290eaf2c3a4be9eccb3cb03421f08e6f7"
+      "source_head_sha": "cfe3427290eaf2c3a4be9eccb3cb03421f08e6f7",
+      "usage": {
+        "status": "measured",
+        "aic": "391.94968"
+      }
     },
     {
       "number": 26,
@@ -1501,7 +1605,11 @@
       },
       "source_number": 2268,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/2268",
-      "source_head_sha": "eb475ecf193f536c301d121c74432ea56dc2425b"
+      "source_head_sha": "eb475ecf193f536c301d121c74432ea56dc2425b",
+      "usage": {
+        "status": "measured",
+        "aic": "410.67136"
+      }
     },
     {
       "number": 27,
@@ -1564,7 +1672,11 @@
       },
       "source_number": 2229,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/2229",
-      "source_head_sha": "d4bbfad17461b45085f84cf0bd1b5c68dbc93949"
+      "source_head_sha": "d4bbfad17461b45085f84cf0bd1b5c68dbc93949",
+      "usage": {
+        "status": "measured",
+        "aic": "455.75472"
+      }
     },
     {
       "number": 28,
@@ -1627,7 +1739,11 @@
       },
       "source_number": 2172,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/2172",
-      "source_head_sha": "7a55952a4ba5dd2d3d8a6192e09b2cb59e68d3ca"
+      "source_head_sha": "7a55952a4ba5dd2d3d8a6192e09b2cb59e68d3ca",
+      "usage": {
+        "status": "measured",
+        "aic": "295.97240"
+      }
     },
     {
       "number": 29,
@@ -1690,7 +1806,11 @@
       },
       "source_number": 2159,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/2159",
-      "source_head_sha": "f399f4b68048a2fa483eb85e1a303e010a2e32b3"
+      "source_head_sha": "f399f4b68048a2fa483eb85e1a303e010a2e32b3",
+      "usage": {
+        "status": "measured",
+        "aic": "357.66576"
+      }
     },
     {
       "number": 30,
@@ -1712,7 +1832,11 @@
       },
       "source_number": 2157,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/2157",
-      "source_head_sha": "89fa10963a14336ea01cb63aa25514e002a43bc9"
+      "source_head_sha": "89fa10963a14336ea01cb63aa25514e002a43bc9",
+      "usage": {
+        "status": "incomplete",
+        "aic": null
+      }
     },
     {
       "number": 31,
@@ -1775,7 +1899,11 @@
       },
       "source_number": 2110,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/2110",
-      "source_head_sha": "54cead22d076ea5372a17cf15a38320c3cb82e15"
+      "source_head_sha": "54cead22d076ea5372a17cf15a38320c3cb82e15",
+      "usage": {
+        "status": "measured",
+        "aic": "376.24144"
+      }
     },
     {
       "number": 32,
@@ -1838,7 +1966,11 @@
       },
       "source_number": 2095,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/2095",
-      "source_head_sha": "b215fc233c451a66df17ea7b91d01ffc527af3d4"
+      "source_head_sha": "b215fc233c451a66df17ea7b91d01ffc527af3d4",
+      "usage": {
+        "status": "measured",
+        "aic": "292.87616"
+      }
     },
     {
       "number": 33,
@@ -1901,7 +2033,11 @@
       },
       "source_number": 2093,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/2093",
-      "source_head_sha": "821db70d20dfd97cc1aca99c0493eea422f30041"
+      "source_head_sha": "821db70d20dfd97cc1aca99c0493eea422f30041",
+      "usage": {
+        "status": "measured",
+        "aic": "414.38032"
+      }
     },
     {
       "number": 34,
@@ -1984,7 +2120,11 @@
       },
       "source_number": 2063,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/2063",
-      "source_head_sha": "179e0772cc4978f2b796c1e46a7d24dd14957c30"
+      "source_head_sha": "179e0772cc4978f2b796c1e46a7d24dd14957c30",
+      "usage": {
+        "status": "measured",
+        "aic": "491.60128"
+      }
     },
     {
       "number": 35,
@@ -2006,7 +2146,11 @@
       },
       "source_number": 2007,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/2007",
-      "source_head_sha": "5f32b4bde28840f17694b6054f97cb6db4b28611"
+      "source_head_sha": "5f32b4bde28840f17694b6054f97cb6db4b28611",
+      "usage": {
+        "status": "incomplete",
+        "aic": null
+      }
     },
     {
       "number": 36,
@@ -2069,7 +2213,11 @@
       },
       "source_number": 1989,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1989",
-      "source_head_sha": "30091e501ab9f1347dc234536762a93188fcb290"
+      "source_head_sha": "30091e501ab9f1347dc234536762a93188fcb290",
+      "usage": {
+        "status": "measured",
+        "aic": "360.99432"
+      }
     },
     {
       "number": 37,
@@ -2132,7 +2280,11 @@
       },
       "source_number": 1984,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1984",
-      "source_head_sha": "07e691a5d04ec544ac6e7657b83b5df20b628f2c"
+      "source_head_sha": "07e691a5d04ec544ac6e7657b83b5df20b628f2c",
+      "usage": {
+        "status": "measured",
+        "aic": "382.39712"
+      }
     },
     {
       "number": 38,
@@ -2195,7 +2347,11 @@
       },
       "source_number": 1980,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1980",
-      "source_head_sha": "7b90b2b7de068a9d451206b2803ec2024f20646c"
+      "source_head_sha": "7b90b2b7de068a9d451206b2803ec2024f20646c",
+      "usage": {
+        "status": "measured",
+        "aic": "280.10696"
+      }
     },
     {
       "number": 39,
@@ -2217,7 +2373,11 @@
       },
       "source_number": 1970,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1970",
-      "source_head_sha": "8dd4678ab8ccdd5364e2ddfa345a00b87263c859"
+      "source_head_sha": "8dd4678ab8ccdd5364e2ddfa345a00b87263c859",
+      "usage": {
+        "status": "incomplete",
+        "aic": null
+      }
     },
     {
       "number": 40,
@@ -2280,7 +2440,11 @@
       },
       "source_number": 1962,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1962",
-      "source_head_sha": "0738f732540b91620715f0bbf723b6cf0307480c"
+      "source_head_sha": "0738f732540b91620715f0bbf723b6cf0307480c",
+      "usage": {
+        "status": "measured",
+        "aic": "325.44936"
+      }
     },
     {
       "number": 41,
@@ -2343,7 +2507,11 @@
       },
       "source_number": 1924,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1924",
-      "source_head_sha": "21677b483353032c2fef95ea3f3f3c4c9e2a7856"
+      "source_head_sha": "21677b483353032c2fef95ea3f3f3c4c9e2a7856",
+      "usage": {
+        "status": "measured",
+        "aic": "366.38576"
+      }
     },
     {
       "number": 42,
@@ -2420,7 +2588,11 @@
       },
       "source_number": 1919,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1919",
-      "source_head_sha": "0ed0edebb67e1707567099f977e683a8f47acd76"
+      "source_head_sha": "0ed0edebb67e1707567099f977e683a8f47acd76",
+      "usage": {
+        "status": "measured",
+        "aic": "421.41336"
+      }
     },
     {
       "number": 43,
@@ -2483,7 +2655,11 @@
       },
       "source_number": 1903,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1903",
-      "source_head_sha": "78db5376cd466115d6fa9e4aff1d3d8acb2dbea8"
+      "source_head_sha": "78db5376cd466115d6fa9e4aff1d3d8acb2dbea8",
+      "usage": {
+        "status": "measured",
+        "aic": "424.73136"
+      }
     },
     {
       "number": 44,
@@ -2546,7 +2722,11 @@
       },
       "source_number": 1901,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1901",
-      "source_head_sha": "fdcf05ac1a6da3aad90ee8b3db4a86712c38c2ef"
+      "source_head_sha": "fdcf05ac1a6da3aad90ee8b3db4a86712c38c2ef",
+      "usage": {
+        "status": "measured",
+        "aic": "401.25352"
+      }
     },
     {
       "number": 45,
@@ -2609,7 +2789,11 @@
       },
       "source_number": 1884,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1884",
-      "source_head_sha": "df74069b7dd9e516f376db02726a8348f1c4c1d1"
+      "source_head_sha": "df74069b7dd9e516f376db02726a8348f1c4c1d1",
+      "usage": {
+        "status": "measured",
+        "aic": "422.14344"
+      }
     },
     {
       "number": 46,
@@ -2672,7 +2856,11 @@
       },
       "source_number": 1879,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1879",
-      "source_head_sha": "d7c5f322354212d10a9e93cdc8eadc2426634e58"
+      "source_head_sha": "d7c5f322354212d10a9e93cdc8eadc2426634e58",
+      "usage": {
+        "status": "measured",
+        "aic": "198.85200"
+      }
     },
     {
       "number": 47,
@@ -2735,7 +2923,11 @@
       },
       "source_number": 1867,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1867",
-      "source_head_sha": "48663efa549458d1fa8c03236a14ee560d0c8a31"
+      "source_head_sha": "48663efa549458d1fa8c03236a14ee560d0c8a31",
+      "usage": {
+        "status": "measured",
+        "aic": "457.63592"
+      }
     },
     {
       "number": 48,
@@ -2830,7 +3022,11 @@
       },
       "source_number": 1860,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1860",
-      "source_head_sha": "957ba2b5fb0497de7ffb1f47a24d2e510b861178"
+      "source_head_sha": "957ba2b5fb0497de7ffb1f47a24d2e510b861178",
+      "usage": {
+        "status": "measured",
+        "aic": "421.01544"
+      }
     },
     {
       "number": 49,
@@ -2852,7 +3048,11 @@
       },
       "source_number": 1854,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1854",
-      "source_head_sha": "2e7077cd5cbfaa031aa6a1eec2cae0a4f71ceb2c"
+      "source_head_sha": "2e7077cd5cbfaa031aa6a1eec2cae0a4f71ceb2c",
+      "usage": {
+        "status": "no_ai_jobs",
+        "aic": "0"
+      }
     },
     {
       "number": 50,
@@ -2874,7 +3074,11 @@
       },
       "source_number": 1838,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1838",
-      "source_head_sha": "30f70455dbb393ffc3deb3cdca54b6d17896dba5"
+      "source_head_sha": "30f70455dbb393ffc3deb3cdca54b6d17896dba5",
+      "usage": {
+        "status": "no_ai_jobs",
+        "aic": "0"
+      }
     },
     {
       "number": 51,
@@ -2896,7 +3100,11 @@
       },
       "source_number": 1837,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1837",
-      "source_head_sha": "2d6da502cf41e7a18f6d67637d70f81bda7d3494"
+      "source_head_sha": "2d6da502cf41e7a18f6d67637d70f81bda7d3494",
+      "usage": {
+        "status": "no_ai_jobs",
+        "aic": "0"
+      }
     },
     {
       "number": 52,
@@ -2918,7 +3126,11 @@
       },
       "source_number": 1834,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1834",
-      "source_head_sha": "7e2981ac3e3e7d493f6d8ad7708534a01ade0068"
+      "source_head_sha": "7e2981ac3e3e7d493f6d8ad7708534a01ade0068",
+      "usage": {
+        "status": "no_ai_jobs",
+        "aic": "0"
+      }
     },
     {
       "number": 53,
@@ -2940,7 +3152,11 @@
       },
       "source_number": 1831,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1831",
-      "source_head_sha": "dc97630d2fd2465c3ea50a0f11a1e18dc084428d"
+      "source_head_sha": "dc97630d2fd2465c3ea50a0f11a1e18dc084428d",
+      "usage": {
+        "status": "no_ai_jobs",
+        "aic": "0"
+      }
     },
     {
       "number": 54,
@@ -2962,7 +3178,11 @@
       },
       "source_number": 1823,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1823",
-      "source_head_sha": "87c97957faf15ddaea01350bc4496279caf73ece"
+      "source_head_sha": "87c97957faf15ddaea01350bc4496279caf73ece",
+      "usage": {
+        "status": "no_ai_jobs",
+        "aic": "0"
+      }
     },
     {
       "number": 55,
@@ -2984,7 +3204,11 @@
       },
       "source_number": 1805,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1805",
-      "source_head_sha": "10558c24ea90394dfb361b8f29023399a5282eb1"
+      "source_head_sha": "10558c24ea90394dfb361b8f29023399a5282eb1",
+      "usage": {
+        "status": "no_ai_jobs",
+        "aic": "0"
+      }
     },
     {
       "number": 56,
@@ -3006,7 +3230,11 @@
       },
       "source_number": 1799,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1799",
-      "source_head_sha": "83c6bf829a599c1ec482e23ad5ccbdfc4427ae7f"
+      "source_head_sha": "83c6bf829a599c1ec482e23ad5ccbdfc4427ae7f",
+      "usage": {
+        "status": "no_ai_jobs",
+        "aic": "0"
+      }
     },
     {
       "number": 57,
@@ -3028,7 +3256,11 @@
       },
       "source_number": 1797,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1797",
-      "source_head_sha": "50efd59757b17f39631ffb71ade1cc8d0bfe1df3"
+      "source_head_sha": "50efd59757b17f39631ffb71ade1cc8d0bfe1df3",
+      "usage": {
+        "status": "no_ai_jobs",
+        "aic": "0"
+      }
     },
     {
       "number": 58,
@@ -3050,7 +3282,11 @@
       },
       "source_number": 1796,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1796",
-      "source_head_sha": "68db9765dda913bed2e97d94c0c25c17ab277377"
+      "source_head_sha": "68db9765dda913bed2e97d94c0c25c17ab277377",
+      "usage": {
+        "status": "no_ai_jobs",
+        "aic": "0"
+      }
     },
     {
       "number": 59,
@@ -3072,7 +3308,11 @@
       },
       "source_number": 1780,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1780",
-      "source_head_sha": "517a853e2114c079b845c11db56054e1d03d7ac9"
+      "source_head_sha": "517a853e2114c079b845c11db56054e1d03d7ac9",
+      "usage": {
+        "status": "no_ai_jobs",
+        "aic": "0"
+      }
     },
     {
       "number": 60,
@@ -3094,7 +3334,11 @@
       },
       "source_number": 1775,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1775",
-      "source_head_sha": "8df3f02fc5f52321c5684fe52a8e95318488a086"
+      "source_head_sha": "8df3f02fc5f52321c5684fe52a8e95318488a086",
+      "usage": {
+        "status": "no_ai_jobs",
+        "aic": "0"
+      }
     },
     {
       "number": 61,
@@ -3116,7 +3360,11 @@
       },
       "source_number": 1767,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1767",
-      "source_head_sha": "e27ffc6ac61350a1dc5f50dae307bffd2559af73"
+      "source_head_sha": "e27ffc6ac61350a1dc5f50dae307bffd2559af73",
+      "usage": {
+        "status": "no_ai_jobs",
+        "aic": "0"
+      }
     },
     {
       "number": 62,
@@ -3138,7 +3386,11 @@
       },
       "source_number": 1766,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1766",
-      "source_head_sha": "47e6bb15a29358254e875a8d7aa562a4558f2afb"
+      "source_head_sha": "47e6bb15a29358254e875a8d7aa562a4558f2afb",
+      "usage": {
+        "status": "no_ai_jobs",
+        "aic": "0"
+      }
     },
     {
       "number": 63,
@@ -3160,7 +3412,11 @@
       },
       "source_number": 1754,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1754",
-      "source_head_sha": "0dde811c9af1244e981fa483a49c4dbd2b599da1"
+      "source_head_sha": "0dde811c9af1244e981fa483a49c4dbd2b599da1",
+      "usage": {
+        "status": "measured",
+        "aic": "57.33184"
+      }
     },
     {
       "number": 64,
@@ -3223,7 +3479,11 @@
       },
       "source_number": 1753,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1753",
-      "source_head_sha": "97a349c22d750e8afc32b824c6d5602d6bb680e5"
+      "source_head_sha": "97a349c22d750e8afc32b824c6d5602d6bb680e5",
+      "usage": {
+        "status": "measured",
+        "aic": "217.10144"
+      }
     },
     {
       "number": 65,
@@ -3245,7 +3505,11 @@
       },
       "source_number": 1752,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1752",
-      "source_head_sha": "b5c8b57c645ede9804635c7feabadf7f192b1897"
+      "source_head_sha": "b5c8b57c645ede9804635c7feabadf7f192b1897",
+      "usage": {
+        "status": "no_ai_jobs",
+        "aic": "0"
+      }
     },
     {
       "number": 66,
@@ -3267,7 +3531,11 @@
       },
       "source_number": 1751,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1751",
-      "source_head_sha": "0711bdc7453b081ff8e640db943711252b145286"
+      "source_head_sha": "0711bdc7453b081ff8e640db943711252b145286",
+      "usage": {
+        "status": "no_ai_jobs",
+        "aic": "0"
+      }
     },
     {
       "number": 67,
@@ -3289,7 +3557,11 @@
       },
       "source_number": 1747,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1747",
-      "source_head_sha": "28920915d9b24ffc4164a637701abe650f3aaec0"
+      "source_head_sha": "28920915d9b24ffc4164a637701abe650f3aaec0",
+      "usage": {
+        "status": "no_ai_jobs",
+        "aic": "0"
+      }
     },
     {
       "number": 68,
@@ -3311,7 +3583,11 @@
       },
       "source_number": 1744,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1744",
-      "source_head_sha": "f2e8f14e8d7e9829675b779b84a3a6345cc56e4d"
+      "source_head_sha": "f2e8f14e8d7e9829675b779b84a3a6345cc56e4d",
+      "usage": {
+        "status": "no_ai_jobs",
+        "aic": "0"
+      }
     },
     {
       "number": 69,
@@ -3333,7 +3609,11 @@
       },
       "source_number": 1743,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1743",
-      "source_head_sha": "9094e875506da87a6533e78b790f268a95017682"
+      "source_head_sha": "9094e875506da87a6533e78b790f268a95017682",
+      "usage": {
+        "status": "no_ai_jobs",
+        "aic": "0"
+      }
     },
     {
       "number": 70,
@@ -3355,7 +3635,11 @@
       },
       "source_number": 1739,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1739",
-      "source_head_sha": "76f2088ef350920b1ecf2814d41a9504f6bfaf27"
+      "source_head_sha": "76f2088ef350920b1ecf2814d41a9504f6bfaf27",
+      "usage": {
+        "status": "no_ai_jobs",
+        "aic": "0"
+      }
     },
     {
       "number": 71,
@@ -3377,7 +3661,11 @@
       },
       "source_number": 1725,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1725",
-      "source_head_sha": "d8ca7b41bea0e5feb3d7f74a3b1a53feddee5b1b"
+      "source_head_sha": "d8ca7b41bea0e5feb3d7f74a3b1a53feddee5b1b",
+      "usage": {
+        "status": "no_ai_jobs",
+        "aic": "0"
+      }
     },
     {
       "number": 72,
@@ -3399,7 +3687,11 @@
       },
       "source_number": 1720,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1720",
-      "source_head_sha": "4ff91380da9ac0395652bf1d17e78c96ae704751"
+      "source_head_sha": "4ff91380da9ac0395652bf1d17e78c96ae704751",
+      "usage": {
+        "status": "no_ai_jobs",
+        "aic": "0"
+      }
     },
     {
       "number": 73,
@@ -3421,7 +3713,11 @@
       },
       "source_number": 1719,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1719",
-      "source_head_sha": "512c3e48e3443179312af32a9e8cf792f7a2c2a4"
+      "source_head_sha": "512c3e48e3443179312af32a9e8cf792f7a2c2a4",
+      "usage": {
+        "status": "no_ai_jobs",
+        "aic": "0"
+      }
     },
     {
       "number": 74,
@@ -3443,7 +3739,11 @@
       },
       "source_number": 1718,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1718",
-      "source_head_sha": "30c38f49d70f3c40a3ce0b71cfb5cabca16de1d2"
+      "source_head_sha": "30c38f49d70f3c40a3ce0b71cfb5cabca16de1d2",
+      "usage": {
+        "status": "no_ai_jobs",
+        "aic": "0"
+      }
     },
     {
       "number": 75,
@@ -3465,7 +3765,11 @@
       },
       "source_number": 1716,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1716",
-      "source_head_sha": "8d124812e79790f4dd6f7a4f63d676e4d37caa6f"
+      "source_head_sha": "8d124812e79790f4dd6f7a4f63d676e4d37caa6f",
+      "usage": {
+        "status": "no_ai_jobs",
+        "aic": "0"
+      }
     },
     {
       "number": 76,
@@ -3487,7 +3791,11 @@
       },
       "source_number": 1712,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1712",
-      "source_head_sha": "d5c784fa0a7698356335674ae533a08ab812b02d"
+      "source_head_sha": "d5c784fa0a7698356335674ae533a08ab812b02d",
+      "usage": {
+        "status": "measured",
+        "aic": "54.84952"
+      }
     },
     {
       "number": 77,
@@ -3550,7 +3858,11 @@
       },
       "source_number": 1689,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1689",
-      "source_head_sha": "156b29240b5508cb7a0fc07493ace00fcf5776bb"
+      "source_head_sha": "156b29240b5508cb7a0fc07493ace00fcf5776bb",
+      "usage": {
+        "status": "measured",
+        "aic": "271.42808"
+      }
     },
     {
       "number": 78,
@@ -3613,7 +3925,11 @@
       },
       "source_number": 1679,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1679",
-      "source_head_sha": "5d77742c094d725889fbf57f22f13b938b5432a9"
+      "source_head_sha": "5d77742c094d725889fbf57f22f13b938b5432a9",
+      "usage": {
+        "status": "measured",
+        "aic": "376.48896"
+      }
     },
     {
       "number": 79,
@@ -3635,7 +3951,11 @@
       },
       "source_number": 1678,
       "source_url": "https://redirect.github.com/microsoft/garnet/pull/1678",
-      "source_head_sha": "b2e08ea4568a26d5a438f19ab6d0304e7e51483f"
+      "source_head_sha": "b2e08ea4568a26d5a438f19ab6d0304e7e51483f",
+      "usage": {
+        "status": "no_ai_jobs",
+        "aic": "0"
+      }
     }
   ],
   "languages": [
