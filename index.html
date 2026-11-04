@@ -29,8 +29,6 @@ a { color:#185c95; }
 .repository-table tfoot th:first-child,.repository-table tfoot td { font-weight:700; background:#edf5ef; border-bottom:0; }
 .repository-table tbody tr:hover td,.repository-table tbody tr:hover th { background:#f3f6f1; }
 .cell-note { display:block; margin-top:3px; color:var(--muted); font-size:12px; font-weight:400; }
-.totals > summary { cursor:pointer; font-weight:600; }
-.totals > h2 { margin-top:18px; }
 .campaign { padding:14px; margin-bottom:16px; border-left:4px solid #a56b05; background:#fff4d9; }
 .campaign h3 { margin:0; }
 .usage-summary { margin-top:18px; padding:14px; border-left:4px solid #216253; background:#edf5ef; }
@@ -64,28 +62,8 @@ footer { margin-top:22px; color:var(--muted); font-size:14px; overflow-wrap:anyw
 <p><strong>Conditional MODEL refutations are not confirmed source bugs.</strong>
 Verification concerns translated models under their stated assumptions; failure to refute is not evidence of correctness.</p>
 </header>
-<section class="repositories" aria-labelledby="repositories-heading">
-<h2 id="repositories-heading">Repositories</h2>
-<div class="scroll" tabindex="0" role="region" aria-label="Repository metrics">
-<table class="repository-table">
-<caption>One row per project. Repository names open the detailed dashboards.</caption>
-<thead><tr><th scope="col">Repository</th><th scope="col">Languages</th><th scope="col">Published / attempted PRs</th><th scope="col">Properties</th><th scope="col">Model refutations</th><th scope="col">Verified model fixes</th><th scope="col">Model verifications</th><th scope="col">Avg review AIC / PR</th><th scope="col">Avg workflow time</th></tr></thead>
-<tbody>
-<tr data-repository="z3"><th scope="row"><a href="z3/" title="shuvendu-lahiri/z3">Z3</a></th><td class="languages">C++</td><td>40 / 41</td><td>159</td><td>5<span class="cell-note">5 PRs</span></td><td>3<span class="cell-note">0 unknown</span></td><td>90</td><td>454.73<span class="cell-note">38 / 41 PRs measured</span></td><td>22m 28s<span class="cell-note">38 / 40 runs timed</span></td></tr>
-<tr data-repository="litebox"><th scope="row"><a href="litebox/" title="shuvendu-lahiri/litebox">LiteBox</a></th><td class="languages">Rust, C</td><td>90 / 104</td><td>720</td><td>28<span class="cell-note">23 PRs</span></td><td>11<span class="cell-note">0 unknown</span></td><td>516</td><td>667.34<span class="cell-note">100 / 104 PRs measured</span></td><td>42m 00s<span class="cell-note">81 / 90 runs timed</span></td></tr>
-<tr data-repository="nvx"><th scope="row"><a href="nvx/" title="shuvendu-lahiri/nvx">NVX</a></th><td class="languages">Rust, Python</td><td>45 / 50</td><td>288</td><td>14<span class="cell-note">10 PRs</span></td><td>6<span class="cell-note">0 unknown</span></td><td>201</td><td>777.23<span class="cell-note">41 / 50 PRs measured</span></td><td>41m 19s<span class="cell-note">45 / 45 runs timed</span></td></tr>
-<tr data-repository="gh-aw"><th scope="row"><a href="gh-aw/" title="shuvendu-lahiri/gh-aw">gh-aw</a></th><td class="languages">Go, JavaScript</td><td>19 / 35</td><td>116</td><td>3<span class="cell-note">3 PRs</span></td><td>3<span class="cell-note">0 unknown</span></td><td>74</td><td>246.98<span class="cell-note">34 / 35 PRs measured</span></td><td>38m 56s<span class="cell-note">19 / 19 runs timed</span></td></tr>
-<tr data-repository="garnet"><th scope="row"><a href="garnet/" title="shuvendu-lahiri/garnet">Garnet</a></th><td class="languages">C#</td><td>44 / 78</td><td>360</td><td>6<span class="cell-note">5 PRs</span></td><td>2<span class="cell-note">0 unknown</span></td><td>88</td><td>304.17<span class="cell-note">49 / 78 PRs measured</span></td><td>26m 20s<span class="cell-note">44 / 44 runs timed</span></td></tr>
-</tbody>
-<tfoot><tr><th scope="row" colspan="2">All projects</th><td>238 / 308</td><td>1,643</td><td>56<span class="cell-note">46 PRs</span></td><td>25<span class="cell-note">0 unknown</span></td><td>969</td><td>531.23<span class="cell-note">262 / 308 PRs measured</span></td><td>35m 18s<span class="cell-note">227 / 238 runs timed</span></td></tr></tfoot>
-</table>
-</div>
-<p class="muted">Property counts use each PR's latest published report. Fixes are checked model repairs with candidate source patches, not proof of source correctness; unknown fix evidence is shown separately.</p>
-<p class="muted">AIC averages include all attempts of fully measured PRs. Workflow averages use latest-report runs, exclude the initial queue and include inter-job waits. Coverage is shown beneath each average; missing measurements are excluded, not zero. Overall averages are weighted by their measured PRs or runs.</p>
-</section>
-<details class="totals">
-<summary>Overall outcomes and measurement details</summary>
-<h2>Property outcomes across all projects</h2>
+<section class="totals" aria-labelledby="overall-heading">
+<h2 id="overall-heading">Overall results</h2>
 <div class="outcome-tracker">
 <p class="muted">Shares of 1,643 properties in latest published reports. Percentages are rounded to one decimal place.</p>
 <div class="outcome-bar" aria-hidden="true">
@@ -100,11 +78,31 @@ Verification concerns translated models under their stated assumptions; failure 
 <div><dt><span class="outcome-dot outcome-failed" aria-hidden="true"></span>Type-check / audit error</dt><dd><strong>14.1%</strong><span class="muted">231 / 1,643 properties</span></dd></div>
 <div><dt><span class="outcome-dot outcome-exhausted" aria-hidden="true"></span>Exhausted</dt><dd><strong>23.6%</strong><span class="muted">387 / 1,643 properties</span></dd></div>
 </dl>
-<p class="verified-fixes"><strong>25 / 56 refutations with a verified fix</strong> <span class="muted">(0 with unknown fix evidence)</span></p><p class="muted">Native checked model repairs with hash-bound candidate source patches; not proof of source correctness. Simplifications do not count.</p>
-<aside class="usage-summary" aria-label="Review AIC usage"><h3>Average review AIC: 531.23 per PR</h3><p>Coverage: 262 / 308 attempted PRs fully measured; 20 with incomplete usage; 26 with no AI execution.</p><p>139,182.00 AIC across fully measured PRs. Includes retries, failed attempts, source-context and detection sessions. Incomplete measurements are excluded, not counted as zero. Quota-only PRs with no AI execution are excluded from the average.</p><p>Billing evidence collected: 2026-11-03T23:16:52.769082+00:00. Review scope follows the saved project snapshots; campaign-controller spend and reservations are separate.</p></aside>
-</div><p class="workflow-timing"><strong>Average workflow time: 35m 18s (227 / 238 latest-report runs timed; 11 missing).</strong></p><p class="muted">First job start to last job completion, excluding the initial queue; includes setup, source-context, audit, publication and inter-job waits. Missing timings are excluded, not zero. Overall averages are weighted by timed runs.</p>
+<p class="verified-fixes"><strong>25 / 56 refutations with a verified fix (44.6%)</strong> <span class="muted">(0 with unknown fix evidence)</span></p><p class="muted">Native checked model repairs with hash-bound candidate source patches; not proof of source correctness. Simplifications do not count.</p>
+<aside class="usage-summary" aria-label="Review AIC usage"><h3>Average review AIC: 531.23 per PR</h3><p>Coverage: 262 / 308 attempted PRs fully measured (85.1%); 20 with incomplete usage; 26 with no AI execution.</p><p>139,182.00 AIC across fully measured PRs. Includes retries, failed attempts, source-context and detection sessions. Incomplete measurements are excluded, not counted as zero. Quota-only PRs with no AI execution are excluded from the average.</p><p>Billing evidence collected: 2026-11-03T23:16:52.769082+00:00. Review scope follows the saved project snapshots; campaign-controller spend and reservations are separate.</p></aside>
+</div><p class="workflow-timing"><strong>Average workflow time: 35m 18s (227 / 238 latest-report runs timed; 95.4% coverage; 11 missing).</strong></p><p class="muted">First job start to last job completion, excluding the initial queue; includes setup, source-context, audit, publication and inter-job waits. Missing timings are excluded, not zero. Overall averages are weighted by timed runs.</p>
 <p class="muted">Unpublished outcomes are unknown and excluded from these percentages.</p>
-</details>
+</section>
+<section class="repositories" aria-labelledby="repositories-heading">
+<h2 id="repositories-heading">Repositories</h2>
+<div class="scroll" tabindex="0" role="region" aria-label="Repository metrics">
+<table class="repository-table">
+<caption>One row per project. Repository names open the detailed dashboards.</caption>
+<thead><tr><th scope="col">Repository</th><th scope="col">Languages</th><th scope="col">Published / attempted PRs</th><th scope="col">Properties</th><th scope="col">Model refutations</th><th scope="col">Verified model fixes</th><th scope="col">Model verifications</th><th scope="col">Avg review AIC / PR</th><th scope="col">Avg workflow time</th></tr></thead>
+<tbody>
+<tr data-repository="z3"><th scope="row"><a href="z3/" title="shuvendu-lahiri/z3">Z3</a></th><td class="languages">C++</td><td>40 / 41<span class="cell-note">97.6% published</span></td><td>159</td><td>5 (3.1%)<span class="cell-note">5 PRs</span></td><td>3 (60.0%)<span class="cell-note">0 unknown</span></td><td>90 (56.6%)</td><td>454.73<span class="cell-note">38 / 41 PRs (92.7%)</span></td><td>22m 28s<span class="cell-note">38 / 40 runs (95.0%)</span></td></tr>
+<tr data-repository="litebox"><th scope="row"><a href="litebox/" title="shuvendu-lahiri/litebox">LiteBox</a></th><td class="languages">Rust, C</td><td>90 / 104<span class="cell-note">86.5% published</span></td><td>720</td><td>28 (3.9%)<span class="cell-note">23 PRs</span></td><td>11 (39.3%)<span class="cell-note">0 unknown</span></td><td>516 (71.7%)</td><td>667.34<span class="cell-note">100 / 104 PRs (96.2%)</span></td><td>42m 00s<span class="cell-note">81 / 90 runs (90.0%)</span></td></tr>
+<tr data-repository="nvx"><th scope="row"><a href="nvx/" title="shuvendu-lahiri/nvx">NVX</a></th><td class="languages">Rust, Python</td><td>45 / 50<span class="cell-note">90.0% published</span></td><td>288</td><td>14 (4.9%)<span class="cell-note">10 PRs</span></td><td>6 (42.9%)<span class="cell-note">0 unknown</span></td><td>201 (69.8%)</td><td>777.23<span class="cell-note">41 / 50 PRs (82.0%)</span></td><td>41m 19s<span class="cell-note">45 / 45 runs (100.0%)</span></td></tr>
+<tr data-repository="gh-aw"><th scope="row"><a href="gh-aw/" title="shuvendu-lahiri/gh-aw">gh-aw</a></th><td class="languages">Go, JavaScript</td><td>19 / 35<span class="cell-note">54.3% published</span></td><td>116</td><td>3 (2.6%)<span class="cell-note">3 PRs</span></td><td>3 (100.0%)<span class="cell-note">0 unknown</span></td><td>74 (63.8%)</td><td>246.98<span class="cell-note">34 / 35 PRs (97.1%)</span></td><td>38m 56s<span class="cell-note">19 / 19 runs (100.0%)</span></td></tr>
+<tr data-repository="garnet"><th scope="row"><a href="garnet/" title="shuvendu-lahiri/garnet">Garnet</a></th><td class="languages">C#</td><td>44 / 78<span class="cell-note">56.4% published</span></td><td>360</td><td>6 (1.7%)<span class="cell-note">5 PRs</span></td><td>2 (33.3%)<span class="cell-note">0 unknown</span></td><td>88 (24.4%)</td><td>304.17<span class="cell-note">49 / 78 PRs (62.8%)</span></td><td>26m 20s<span class="cell-note">44 / 44 runs (100.0%)</span></td></tr>
+</tbody>
+<tfoot><tr><th scope="row" colspan="2">All projects</th><td>238 / 308<span class="cell-note">77.3% published</span></td><td>1,643</td><td>56 (3.4%)<span class="cell-note">46 PRs</span></td><td>25 (44.6%)<span class="cell-note">0 unknown</span></td><td>969 (59.0%)</td><td>531.23<span class="cell-note">262 / 308 PRs (85.1%)</span></td><td>35m 18s<span class="cell-note">227 / 238 runs (95.4%)</span></td></tr></tfoot>
+</table>
+</div>
+<p class="muted">Property counts use each PR's latest published report. Fixes are checked model repairs with candidate source patches, not proof of source correctness; unknown fix evidence is shown separately.</p>
+<p class="muted">Outcome percentages use published properties; fix percentages use all model refutations, including those with unknown fix evidence. Publication rates use attempted PRs. Percentages are rounded to one decimal place; unavailable denominators show N/A. Overall percentages use combined counts, not averages of repository percentages.</p>
+<p class="muted">AIC averages include all attempts of fully measured PRs. Workflow averages use latest-report runs, exclude the initial queue and include inter-job waits. Coverage is shown beneath each average; missing measurements are excluded, not zero. Overall averages are weighted by their measured PRs or runs.</p>
+</section>
 <footer>
 <p>Counts use the latest published report per PR, not every workflow attempt or previous report.
 Missing reports remain unknown, not successful zero-finding analyses. Each dashboard includes search,

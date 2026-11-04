@@ -366,6 +366,10 @@ def collect_timing_evidence(data, evidence=None):
             "retrieved_at": datetime.now(timezone.utc).isoformat(), "reports": records}
 
 
+def percentage_text(count, total):
+    return f"{count / total * 100:.1f}%" if total else "N/A"
+
+
 def duration_text(seconds):
     if seconds is None:
         return "N/A"
@@ -378,6 +382,7 @@ def timing_text(summary):
     value = duration_text(timing["average_seconds"])
     return (f"Average workflow time: {value} "
             f"({timing['samples']} / {summary['published_reports']} latest-report runs timed; "
+            f"{percentage_text(timing['samples'], summary['published_reports'])} coverage; "
             f"{timing['missing']} missing).")
 
 
@@ -522,7 +527,8 @@ def usage_lines(summary):
     value = f"{aic_amount(average):,.2f}" if average is not None else "N/A"
     lines = [
         f"Average review AIC: {value} per PR",
-        f"Coverage: {usage['measured_prs']:,} / {summary['attempted_prs']:,} attempted PRs fully measured; "
+        f"Coverage: {usage['measured_prs']:,} / {summary['attempted_prs']:,} attempted PRs fully measured "
+        f"({percentage_text(usage['measured_prs'], summary['attempted_prs'])}); "
         f"{usage['incomplete_prs']:,} with incomplete usage; "
         f"{usage['no_ai_prs']:,} with no AI execution.",
         f"{aic_amount(usage['total_aic']):,.2f} AIC across fully measured PRs. "
@@ -721,7 +727,7 @@ def render_outcome_tracker(summary):
         parts.append('<p class="muted">No published property outcomes yet; percentages are unavailable.</p>')
     parts.append('<dl class="outcome-shares">')
     for (_, label, class_name), count in zip(statuses, counts):
-        percentage = f"{count / total * 100:.1f}%" if total else "N/A"
+        percentage = percentage_text(count, total)
         parts.append(
             f'<div><dt><span class="outcome-dot outcome-{class_name}" aria-hidden="true"></span>'
             f'{label}</dt><dd><strong>{percentage}</strong>'
@@ -733,7 +739,8 @@ def render_outcome_tracker(summary):
                 or checked < 0 or unknown < 0 or checked + unknown > refuted):
             raise ValueError("Invalid verified-fix totals")
         parts.append(
-            f'<p class="verified-fixes"><strong>{checked:,} / {refuted:,} refutations with a verified fix</strong>'
+            f'<p class="verified-fixes"><strong>{checked:,} / {refuted:,} refutations with a verified fix '
+            f'({percentage_text(checked, refuted)})</strong>'
             f' <span class="muted">({unknown:,} with unknown fix evidence)</span></p>'
             '<p class="muted">Native checked model repairs with hash-bound candidate source patches; '
             'not proof of source correctness. Simplifications do not count.</p>')
@@ -745,19 +752,26 @@ def render_outcome_tracker(summary):
 def render_repository_rows(data):
     def cells(summary):
         usage, timing = summary.get("usage"), summary["timing"]
+        properties, refuted = summary["properties"], summary["outcomes"]["refuted"]
+        published, attempted = summary["published_reports"], summary["attempted_prs"]
         average = usage["average_aic_per_pr"] if usage else None
         aic = f"{aic_amount(average):,.2f}" if average is not None else "N/A"
-        coverage = (f'{usage["measured_prs"]:,} / {summary["attempted_prs"]:,} PRs measured'
+        coverage = (f'{usage["measured_prs"]:,} / {attempted:,} PRs '
+                    f'({percentage_text(usage["measured_prs"], attempted)})'
                     if usage else "Not measured")
         values = [
-            f'{summary["published_reports"]:,} / {summary["attempted_prs"]:,}',
-            f'{summary["properties"]:,}',
-            f'{summary["outcomes"]["refuted"]:,}<span class="cell-note">{summary["refuted_prs"]:,} PRs</span>',
-            f'{summary["checked_fixes"]:,}<span class="cell-note">{summary["fix_unknown"]:,} unknown</span>',
-            f'{summary["outcomes"]["verified"]:,}',
+            f'{published:,} / {attempted:,}'
+            f'<span class="cell-note">{percentage_text(published, attempted)} published</span>',
+            f'{properties:,}',
+            f'{refuted:,} ({percentage_text(refuted, properties)})'
+            f'<span class="cell-note">{summary["refuted_prs"]:,} PRs</span>',
+            f'{summary["checked_fixes"]:,} ({percentage_text(summary["checked_fixes"], refuted)})'
+            f'<span class="cell-note">{summary["fix_unknown"]:,} unknown</span>',
+            f'{summary["outcomes"]["verified"]:,} ({percentage_text(summary["outcomes"]["verified"], properties)})',
             f'{aic}<span class="cell-note">{coverage}</span>',
             f'{duration_text(timing["average_seconds"])}'
-            f'<span class="cell-note">{timing["samples"]:,} / {summary["published_reports"]:,} runs timed</span>',
+            f'<span class="cell-note">{timing["samples"]:,} / {published:,} runs '
+            f'({percentage_text(timing["samples"], published)})</span>',
         ]
         return "".join(f"<td>{value}</td>" for value in values)
 

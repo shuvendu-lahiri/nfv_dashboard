@@ -270,7 +270,7 @@ class RefreshTests(unittest.TestCase):
         rendered = refresh.render_html(combined, "hub.html")
         self.assertNotIn("innerHTML", rendered)
         self.assertIn("Conditional MODEL refutations", rendered)
-        self.assertEqual(1, rendered.count("100.0%"))
+        self.assertEqual(1, rendered.count("<strong>100.0%</strong>"))
         self.assertIn('<tr data-repository="litebox">', rendered)
         self.assertNotIn('<template id="outcome-tracker-', rendered)
         self.assertEqual(1, refresh.render_html(data).count("100.0%"))
@@ -289,23 +289,55 @@ class RefreshTests(unittest.TestCase):
         self.assertIn("Next &lt;project&gt;", rows[1][1])
         self.assertIn("C++, &lt;test&gt;", rows[1][1])
         self.assertNotIn("Next <project>", rows[1][1])
-        self.assertIn('<th scope="row" colspan="2">All projects</th><td>1 / 2</td>', rendered)
+        self.assertIn('<th scope="row" colspan="2">All projects</th>'
+                      '<td>1 / 2<span class="cell-note">50.0% published</span></td>', rendered)
         self.assertNotIn('class="card"', rendered)
         self.assertNotIn("cloneNode", rendered)
         self.assertNotIn("__NFV_", rendered)
-        self.assertIn('<details class="totals">', rendered)
+        self.assertNotIn('<details class="totals">', rendered)
+        self.assertLess(rendered.index('<section class="totals"'), rendered.index('<section class="repositories"'))
         self.assertIn("Latest snapshot: snapshot.", rendered)
 
     def test_repository_table_distinguishes_unknown_measurements_from_known_zero(self):
         data = refresh.build([pr()], [comment()], [run()], "snapshot")
         unknown = refresh.render_repository_rows(refresh.hub([data]))
-        self.assertIn('N/A<span class="cell-note">0 / 1 runs timed</span>', unknown)
-        self.assertIn('N/A<span class="cell-note">0 / 1 PRs measured</span>', unknown)
+        self.assertIn('N/A<span class="cell-note">0 / 1 runs (0.0%)</span>', unknown)
+        self.assertIn('N/A<span class="cell-note">0 / 1 PRs (0.0%)</span>', unknown)
         data["summary"]["timing"] = refresh.timing_summary(1, 0, 1)
         data["summary"]["usage"] = refresh.usage_summary(refresh.Decimal(0), 1, 0, 0)
         measured = refresh.render_repository_rows(refresh.hub([data]))
-        self.assertIn('0m 00s<span class="cell-note">1 / 1 runs timed</span>', measured)
-        self.assertIn('0.00<span class="cell-note">1 / 1 PRs measured</span>', measured)
+        self.assertIn('0m 00s<span class="cell-note">1 / 1 runs (100.0%)</span>', measured)
+        self.assertIn('0.00<span class="cell-note">1 / 1 PRs (100.0%)</span>', measured)
+
+    def test_table_percentages_use_metric_denominators_and_pooled_totals(self):
+        first = refresh.build([pr()], [comment()], [run()], "snapshot")
+        first["summary"].update(
+            attempted_prs=4, published_reports=3, properties=10, checked_fixes=1, fix_unknown=1,
+            outcomes={"refuted": 2, "verified": 6, "resources exhausted": 2, "type-check/audit failure": 0},
+            timing=refresh.timing_summary(2, 120, 3),
+            usage=refresh.usage_summary(refresh.Decimal(40), 2, 2, 0))
+        second = refresh.build([pr()], [comment()], [run()], "snapshot")
+        rendered = refresh.render_repository_rows(refresh.hub([first, second]))
+        for value in ("75.0% published", "<td>2 (20.0%)", "<td>1 (50.0%)", "<td>6 (60.0%)",
+                      "2 / 4 PRs (50.0%)", "2 / 3 runs (66.7%)"):
+            self.assertIn(value, rendered)
+        total = rendered.split("<tfoot>")[1]
+        self.assertIn("<td>3 (27.3%)", total)
+        self.assertIn("<td>1 (33.3%)", total)
+        self.assertIn("<td>6 (54.5%)", total)
+        self.assertIn("(50.0%)", refresh.render_usage(first["summary"]))
+        self.assertIn("66.7% coverage", refresh.render_timing(first["summary"]))
+        self.assertIn("1 / 2 refutations with a verified fix (50.0%)",
+                      refresh.render_outcome_tracker(first["summary"]))
+
+    def test_table_zero_denominators_show_unavailable_percentages(self):
+        data = refresh.build([], [], [], "snapshot")
+        rendered = refresh.render_repository_rows(refresh.hub([data]))
+        self.assertIn("N/A published", rendered)
+        self.assertIn("<td>0 (N/A)", rendered)
+        self.assertIn("0 / 0 PRs (N/A)", rendered)
+        self.assertIn("0 / 0 runs (N/A)", rendered)
+        self.assertNotIn("0.0%", rendered)
 
     def test_outcome_percentages_use_properties_not_prs_or_attempts(self):
         summary = {
@@ -324,7 +356,7 @@ class RefreshTests(unittest.TestCase):
         data = refresh.build([pr()], [], [run(conclusion="failure")], "snapshot")
         rendered = refresh.render_outcome_tracker(data["summary"])
         self.assertIn("No published property outcomes yet", rendered)
-        self.assertEqual(4, rendered.count("N/A"))
+        self.assertEqual(4, rendered.count("<strong>N/A</strong>"))
         self.assertNotIn("%", rendered)
         self.assertNotIn('class="outcome-bar"', rendered)
 

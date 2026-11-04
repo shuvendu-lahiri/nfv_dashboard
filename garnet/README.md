@@ -13,11 +13,11 @@ Snapshot: 2026-11-01T21:20:57.206822+00:00. Latest published report per PR suppl
 
 **2 / 6 refutations with a verified fix across 2 PRs; 0 refutations with unknown fix evidence.** A verified fix means native checked repair of the complete translated property plus a hash-bound candidate source patch, not proof of source correctness. Simplifications do not count.
 
-**Average workflow time: 26m 20s (44 / 44 latest-report runs timed; 0 missing).** First job start to last job completion, excluding the initial queue. Missing timings are excluded. Metadata is retained in [timings.json](timings.json).
+**Average workflow time: 26m 20s (44 / 44 latest-report runs timed; 100.0% coverage; 0 missing).** First job start to last job completion, excluding the initial queue. Missing timings are excluded. Metadata is retained in [timings.json](timings.json).
 
 Average review AIC: 304\.17 per PR
 
-Coverage: 49 / 78 attempted PRs fully measured; 3 with incomplete usage; 26 with no AI execution\.
+Coverage: 49 / 78 attempted PRs fully measured \(62\.8%\); 3 with incomplete usage; 26 with no AI execution\.
 
 14,904\.46 AIC across fully measured PRs\. Includes retries, failed attempts, source\-context and detection sessions\. Incomplete measurements are excluded, not counted as zero\. Quota\-only PRs with no AI execution are excluded from the average\.
 

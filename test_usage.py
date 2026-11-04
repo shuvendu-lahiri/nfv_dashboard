@@ -126,7 +126,7 @@ class UsageTests(unittest.TestCase):
         refresh.apply_usage_evidence(data, proof)
         self.assertEqual({"total_aic": "12", "average_aic_per_pr": "12", "measured_prs": 1,
                           "incomplete_prs": 1, "no_ai_prs": 1}, data["summary"]["usage"])
-        self.assertIn("Coverage: 1 / 3 attempted PRs fully measured; 1 with incomplete usage; 1 with no AI execution.",
+        self.assertIn("Coverage: 1 / 3 attempted PRs fully measured (33.3%); 1 with incomplete usage; 1 with no AI execution.",
                       refresh.render_html(data))
 
     def test_new_scope_or_incomplete_attempt_list_invalidates_old_usage(self):

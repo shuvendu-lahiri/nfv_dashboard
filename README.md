@@ -7,8 +7,13 @@ properties, conditional model refutations, verified model fixes, model
 verifications, average review AIC and average workflow time. Measurement coverage
 appears beside the averages, with weighted totals in the final row. Select a
 repository name for its detailed PR dashboard, outcomes, campaign state and
-evidence. Overall outcome and measurement details are collapsed below the table.
+evidence. Overall results and measurement details are fully expanded above the table.
 The overview works without JavaScript and scrolls horizontally on narrow screens.
+Counts include percentages: outcomes as a share of published properties, verified
+fixes as a share of all refutations (including unknown fix evidence), publication
+as a share of attempted PRs, and AIC/timing coverage as a share of their displayed
+PR/run denominators. Overall percentages use pooled counts. Zero denominators
+show N/A rather than 0%; percentages are rounded to one decimal place.
 
 | Repository | Main source languages | Live dashboard | GitHub-readable index |
 |---|---|---|---|
