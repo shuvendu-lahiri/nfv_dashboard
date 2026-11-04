@@ -2,6 +2,14 @@
 
 **[Open the dashboard hub](https://shuvendu-lahiri.github.io/nfv_dashboard/)**
 
+The hub has one row per repository, with languages, published/attempted PRs,
+properties, conditional model refutations, verified model fixes, model
+verifications, average review AIC and average workflow time. Measurement coverage
+appears beside the averages, with weighted totals in the final row. Select a
+repository name for its detailed PR dashboard, outcomes, campaign state and
+evidence. Overall outcome and measurement details are collapsed below the table.
+The overview works without JavaScript and scrolls horizontally on narrow screens.
+
 | Repository | Main source languages | Live dashboard | GitHub-readable index |
 |---|---|---|---|
 | Z3 | C++ | [Open](https://shuvendu-lahiri.github.io/nfv_dashboard/z3/) | [Reports](z3/README.md) |

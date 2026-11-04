@@ -10,15 +10,27 @@
 :root { color-scheme:light; --ink:#243044; --muted:#596675; --line:#d8d4c9; --red:#a52020; --green:#146343; }
 * { box-sizing:border-box; }
 body { margin:0; color:var(--ink); background:linear-gradient(140deg,#f8f3e9,#eff5ef); font:16px/1.5 "Segoe UI",sans-serif; }
-main { max-width:1200px; margin:auto; padding:24px 18px 40px; }
+main { max-width:1440px; margin:auto; padding:24px 18px 40px; }
 header { color:white; background:linear-gradient(120deg,#23394e,#216253); padding:24px; border-radius:16px; }
 header a { color:#d7efff; }
 h1 { margin:8px 0; font-size:clamp(26px,4vw,38px); }
 h2 { margin-top:0; }
 a { color:#185c95; }
-.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr)); gap:18px; margin-top:18px; }
-.card,.totals { padding:22px; background:#fffdf8; border:1px solid var(--line); border-radius:12px; box-shadow:0 6px 18px #2430440a; }
-.totals { margin-top:18px; }
+.repositories,.totals { margin-top:18px; padding:22px; background:#fffdf8; border:1px solid var(--line); border-radius:12px; box-shadow:0 6px 18px #2430440a; }
+.scroll { overflow-x:auto; }
+.repository-table { width:100%; border-collapse:collapse; font-size:14px; }
+.repository-table caption { text-align:left; color:var(--muted); margin-bottom:12px; }
+.repository-table th,.repository-table td { padding:13px 10px; border-bottom:1px solid var(--line); vertical-align:top; }
+.repository-table th { text-align:left; }
+.repository-table td,.repository-table thead th:nth-child(n+3) { text-align:right; font-variant-numeric:tabular-nums; }
+.repository-table td { white-space:nowrap; }
+.repository-table td.languages { text-align:left; white-space:normal; }
+.repository-table th:first-child { position:sticky; left:0; background:#fffdf8; }
+.repository-table tfoot th:first-child,.repository-table tfoot td { font-weight:700; background:#edf5ef; border-bottom:0; }
+.repository-table tbody tr:hover td,.repository-table tbody tr:hover th { background:#f3f6f1; }
+.cell-note { display:block; margin-top:3px; color:var(--muted); font-size:12px; font-weight:400; }
+.totals > summary { cursor:pointer; font-weight:600; }
+.totals > h2 { margin-top:18px; }
 .campaign { padding:14px; margin-bottom:16px; border-left:4px solid #a56b05; background:#fff4d9; }
 .campaign h3 { margin:0; }
 .usage-summary { margin-top:18px; padding:14px; border-left:4px solid #216253; background:#edf5ef; }
@@ -40,75 +52,45 @@ a { color:#185c95; }
 dl { display:grid; grid-template-columns:1fr auto; gap:9px 16px; }
 dt,dd { margin:0; }
 dd { font-weight:700; font-variant-numeric:tabular-nums; }
-.open { display:inline-block; margin-top:8px; padding:10px 15px; color:white; background:#216253; border-radius:6px; text-decoration:none; }
 footer { margin-top:22px; color:var(--muted); font-size:14px; overflow-wrap:anywhere; }
 </style>
 </head>
 <body>
 <main>
-<noscript>Read the <a href="https://github.com/shuvendu-lahiri/nfv_dashboard/blob/nfv-reports/README.md">GitHub-readable dashboard index</a>.</noscript>
 <header>
 <a href="https://arxiv.org/abs/2608.21516">Neuro-Formal Verification</a>
 <h1>NFV audit dashboards</h1>
-<p>Published results from the prototype NFV reviewer for Z3, LiteBox, NVX, gh-aw and Garnet.</p>
+<p>Published results from the prototype NFV reviewer. Select a repository for PRs, property outcomes and evidence.</p>
 <p><strong>Conditional MODEL refutations are not confirmed source bugs.</strong>
 Verification concerns translated models under their stated assumptions; failure to refute is not evidence of correctness.</p>
 </header>
-<section class="totals" aria-label="Combined published results">
+<section class="repositories" aria-labelledby="repositories-heading">
+<h2 id="repositories-heading">Repositories</h2>
+<div class="scroll" tabindex="0" role="region" aria-label="Repository metrics">
+<table class="repository-table">
+<caption>One row per project. Repository names open the detailed dashboards.</caption>
+<thead><tr><th scope="col">Repository</th><th scope="col">Languages</th><th scope="col">Published / attempted PRs</th><th scope="col">Properties</th><th scope="col">Model refutations</th><th scope="col">Verified model fixes</th><th scope="col">Model verifications</th><th scope="col">Avg review AIC / PR</th><th scope="col">Avg workflow time</th></tr></thead>
+__NFV_REPOSITORY_ROWS__
+</table>
+</div>
+<p class="muted">Property counts use each PR's latest published report. Fixes are checked model repairs with candidate source patches, not proof of source correctness; unknown fix evidence is shown separately.</p>
+<p class="muted">AIC averages include all attempts of fully measured PRs. Workflow averages use latest-report runs, exclude the initial queue and include inter-job waits. Coverage is shown beneath each average; missing measurements are excluded, not zero. Overall averages are weighted by their measured PRs or runs.</p>
+</section>
+<details class="totals">
+<summary>Overall outcomes and measurement details</summary>
 <h2>Property outcomes across all projects</h2>
 __NFV_OUTCOME_TRACKER__
-<p id="totals"></p><p id="outcomes"></p>
 <p class="muted">Unpublished outcomes are unknown and excluded from these percentages.</p>
-</section>
-<section id="repositories" class="grid" aria-label="Repository dashboards"></section>
+</details>
 <footer>
 <p>Counts use the latest published report per PR, not every workflow attempt or previous report.
 Missing reports remain unknown, not successful zero-finding analyses. Each dashboard includes search,
 filters, highlighted refutations, original reports and workflow evidence.</p>
-<p id="snapshot"></p>
+<p>Latest snapshot: __NFV_SNAPSHOT__. Per-repository snapshots and report history are retained.</p>
 <p><a href="https://github.com/shuvendu-lahiri/nfv_dashboard">Dashboard repository</a> &middot;
 <a href="data.json">Combined snapshot</a>. These pages are public static snapshots; no new audits or automatic refresh schedule are started by viewing them.</p>
 </footer>
 </main>
-__NFV_REPOSITORY_TRACKERS__
 <script type="application/json" id="data">__NFV_DATA__</script>
-<script>
-"use strict";
-const data = JSON.parse(document.getElementById("data").textContent);
-const text = (tag, value, className) => {
-  const element = document.createElement(tag);
-  element.textContent = value;
-  if (className) element.className = className;
-  return element;
-};
-const s = data.summary;
-document.getElementById("totals").textContent =
-  `${s.attempted_prs} attempted PRs / ${s.workflow_attempts} workflow attempts / ${s.published_reports} published reports / ${s.properties} properties.`;
-document.getElementById("outcomes").textContent =
-  `${s.outcomes.refuted} conditional model refutations across ${s.refuted_prs} PRs; ${s.outcomes.verified} model verifications; ${s.outcomes["resources exhausted"]} resources exhausted; ${s.outcomes["type-check/audit failure"]} type-check/audit failures; ${s.without_report} PRs without reports.`;
-for (const repository of data.repositories) {
-  const card = text("article", "", "card");
-  card.append(text("h2", repository.label), text("p", repository.repository, "muted"));
-  card.append(text("p", `Main source languages: ${repository.languages.join(", ")}`, "muted"));
-  card.append(document.getElementById(`outcome-tracker-${repository.name}`).content.cloneNode(true));
-  const stats = document.createElement("dl");
-  const summary = repository.summary;
-  for (const [label, value, className] of [
-    ["PRs attempted", summary.attempted_prs, ""],
-    ["Published reports", summary.published_reports, ""],
-    ["Conditional refutations", summary.outcomes.refuted, "red"],
-    ["PRs with refutations", summary.refuted_prs, "red"],
-    ["Model verifications", summary.outcomes.verified, "green"],
-    ["Resources exhausted", summary.outcomes["resources exhausted"], ""],
-    ["Type-check / audit failures", summary.outcomes["type-check/audit failure"], ""],
-    ["PRs without reports", summary.without_report, ""],
-  ]) stats.append(text("dt", label), text("dd", value, className));
-  const link = text("a", `Open ${repository.label} dashboard`, "open");
-  link.href = `${repository.name}/`;
-  card.append(stats, link, text("p", `Snapshot: ${repository.generated_at}`, "muted"));
-  document.getElementById("repositories").append(card);
-}
-document.getElementById("snapshot").textContent = `Latest snapshot: ${data.generated_at}. Per-repository snapshots and report history are retained.`;
-</script>
 </body>
 </html>

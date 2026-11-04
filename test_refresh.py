@@ -77,7 +77,7 @@ class RefreshTests(unittest.TestCase):
         self.assertIn("Main source languages:** Rust, C.", refresh.render_markdown(data))
         combined = refresh.hub([data])
         self.assertEqual(data["languages"], combined["repositories"][0]["languages"])
-        self.assertIn("repository.languages.join", refresh.render_html(combined, "hub.html"))
+        self.assertIn('<td class="languages">Rust, C</td>', refresh.render_html(combined, "hub.html"))
         self.assertIn("data.languages.join", refresh.render_html(data))
 
     def fix_evidence(self, report, checked=True):
@@ -270,9 +270,42 @@ class RefreshTests(unittest.TestCase):
         rendered = refresh.render_html(combined, "hub.html")
         self.assertNotIn("innerHTML", rendered)
         self.assertIn("Conditional MODEL refutations", rendered)
-        self.assertEqual(2, rendered.count("100.0%"))
-        self.assertIn('<template id="outcome-tracker-litebox">', rendered)
+        self.assertEqual(1, rendered.count("100.0%"))
+        self.assertIn('<tr data-repository="litebox">', rendered)
+        self.assertNotIn('<template id="outcome-tracker-', rendered)
         self.assertEqual(1, refresh.render_html(data).count("100.0%"))
+
+    def test_hub_has_one_static_metric_row_per_repository_and_total_row(self):
+        first = refresh.build([pr()], [comment()], [run()], "snapshot")
+        second = refresh.build([pr()], [], [run()], "snapshot")
+        second.update(name="next", label="Next <project>", languages=["C++", "<test>"])
+        rendered = refresh.render_html(refresh.hub([first, second]), "hub.html")
+        rows = re.findall(r'<tr data-repository="([^"]+)">(.*?)</tr>', rendered, re.S)
+        self.assertEqual(["litebox", "next"], [name for name, _ in rows])
+        for _, row in rows:
+            self.assertEqual(9, len(re.findall(r"<t[dh](?:\s|>)", row)))
+        self.assertIn('<a href="litebox/"', rows[0][1])
+        self.assertIn('<a href="next/"', rows[1][1])
+        self.assertIn("Next &lt;project&gt;", rows[1][1])
+        self.assertIn("C++, &lt;test&gt;", rows[1][1])
+        self.assertNotIn("Next <project>", rows[1][1])
+        self.assertIn('<th scope="row" colspan="2">All projects</th><td>1 / 2</td>', rendered)
+        self.assertNotIn('class="card"', rendered)
+        self.assertNotIn("cloneNode", rendered)
+        self.assertNotIn("__NFV_", rendered)
+        self.assertIn('<details class="totals">', rendered)
+        self.assertIn("Latest snapshot: snapshot.", rendered)
+
+    def test_repository_table_distinguishes_unknown_measurements_from_known_zero(self):
+        data = refresh.build([pr()], [comment()], [run()], "snapshot")
+        unknown = refresh.render_repository_rows(refresh.hub([data]))
+        self.assertIn('N/A<span class="cell-note">0 / 1 runs timed</span>', unknown)
+        self.assertIn('N/A<span class="cell-note">0 / 1 PRs measured</span>', unknown)
+        data["summary"]["timing"] = refresh.timing_summary(1, 0, 1)
+        data["summary"]["usage"] = refresh.usage_summary(refresh.Decimal(0), 1, 0, 0)
+        measured = refresh.render_repository_rows(refresh.hub([data]))
+        self.assertIn('0m 00s<span class="cell-note">1 / 1 runs timed</span>', measured)
+        self.assertIn('0.00<span class="cell-note">1 / 1 PRs measured</span>', measured)
 
     def test_outcome_percentages_use_properties_not_prs_or_attempts(self):
         summary = {

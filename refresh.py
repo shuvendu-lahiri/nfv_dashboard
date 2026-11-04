@@ -366,14 +366,16 @@ def collect_timing_evidence(data, evidence=None):
             "retrieved_at": datetime.now(timezone.utc).isoformat(), "reports": records}
 
 
+def duration_text(seconds):
+    if seconds is None:
+        return "N/A"
+    minutes, seconds = divmod(round(seconds), 60)
+    return f"{minutes}m {seconds:02d}s"
+
+
 def timing_text(summary):
     timing = summary["timing"]
-    average = timing["average_seconds"]
-    if average is None:
-        value = "N/A"
-    else:
-        minutes, seconds = divmod(round(average), 60)
-        value = f"{minutes}m {seconds:02d}s"
+    value = duration_text(timing["average_seconds"])
     return (f"Average workflow time: {value} "
             f"({timing['samples']} / {summary['published_reports']} latest-report runs timed; "
             f"{timing['missing']} missing).")
@@ -740,22 +742,53 @@ def render_outcome_tracker(summary):
     return "\n".join(parts)
 
 
+def render_repository_rows(data):
+    def cells(summary):
+        usage, timing = summary.get("usage"), summary["timing"]
+        average = usage["average_aic_per_pr"] if usage else None
+        aic = f"{aic_amount(average):,.2f}" if average is not None else "N/A"
+        coverage = (f'{usage["measured_prs"]:,} / {summary["attempted_prs"]:,} PRs measured'
+                    if usage else "Not measured")
+        values = [
+            f'{summary["published_reports"]:,} / {summary["attempted_prs"]:,}',
+            f'{summary["properties"]:,}',
+            f'{summary["outcomes"]["refuted"]:,}<span class="cell-note">{summary["refuted_prs"]:,} PRs</span>',
+            f'{summary["checked_fixes"]:,}<span class="cell-note">{summary["fix_unknown"]:,} unknown</span>',
+            f'{summary["outcomes"]["verified"]:,}',
+            f'{aic}<span class="cell-note">{coverage}</span>',
+            f'{duration_text(timing["average_seconds"])}'
+            f'<span class="cell-note">{timing["samples"]:,} / {summary["published_reports"]:,} runs timed</span>',
+        ]
+        return "".join(f"<td>{value}</td>" for value in values)
+
+    rows = []
+    for repository in data["repositories"]:
+        name = html.escape(repository["name"], quote=True)
+        label = html.escape(repository["label"])
+        title = html.escape(repository["repository"], quote=True)
+        languages = html.escape(", ".join(repository["languages"]))
+        rows.append(
+            f'<tr data-repository="{name}"><th scope="row"><a href="{name}/" title="{title}">{label}</a></th>'
+            f'<td class="languages">{languages}</td>{cells(repository["summary"])}</tr>')
+    return ("<tbody>\n" + "\n".join(rows) + '\n</tbody>\n<tfoot><tr>'
+            '<th scope="row" colspan="2">All projects</th>'
+            + cells(data["summary"]) + "</tr></tfoot>")
+
+
 def render_html(data, template_name="dashboard.html"):
     template = (DIRECTORY / template_name).read_text(encoding="utf-8")
     if (template.count("__NFV_DATA__") != 1 or template.count("__NFV_CANONICAL__") != 1
             or template.count("__NFV_OUTCOME_TRACKER__") != 1
-            or template.count("__NFV_REPOSITORY_TRACKERS__") != (1 if "repositories" in data else 0)):
+            or template.count("__NFV_SNAPSHOT__") != (1 if "repositories" in data else 0)
+            or template.count("__NFV_REPOSITORY_ROWS__") != (1 if "repositories" in data else 0)):
         raise ValueError("Invalid dashboard template")
     encoded = json.dumps(data, ensure_ascii=True).replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
     canonical = SITE if "repositories" in data else f"{SITE}{data['name']}/"
-    repository_trackers = "\n".join(
-        f'<template id="outcome-tracker-{html.escape(repository["name"], quote=True)}">'
-        f'{render_outcome_tracker(repository["summary"])}{render_timing(repository["summary"])}</template>'
-        for repository in data.get("repositories", []))
     return (template.replace("__NFV_CANONICAL__", html.escape(canonical, quote=True))
             .replace("__NFV_OUTCOME_TRACKER__", render_campaign(data) + render_outcome_tracker(data["summary"])
                      + render_timing(data["summary"]))
-            .replace("__NFV_REPOSITORY_TRACKERS__", repository_trackers)
+            .replace("__NFV_REPOSITORY_ROWS__", render_repository_rows(data) if "repositories" in data else "")
+            .replace("__NFV_SNAPSHOT__", html.escape(data["generated_at"]))
             .replace("__NFV_DATA__", encoded))
 
 

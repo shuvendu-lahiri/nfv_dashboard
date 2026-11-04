@@ -10,15 +10,27 @@
 :root { color-scheme:light; --ink:#243044; --muted:#596675; --line:#d8d4c9; --red:#a52020; --green:#146343; }
 * { box-sizing:border-box; }
 body { margin:0; color:var(--ink); background:linear-gradient(140deg,#f8f3e9,#eff5ef); font:16px/1.5 "Segoe UI",sans-serif; }
-main { max-width:1200px; margin:auto; padding:24px 18px 40px; }
+main { max-width:1440px; margin:auto; padding:24px 18px 40px; }
 header { color:white; background:linear-gradient(120deg,#23394e,#216253); padding:24px; border-radius:16px; }
 header a { color:#d7efff; }
 h1 { margin:8px 0; font-size:clamp(26px,4vw,38px); }
 h2 { margin-top:0; }
 a { color:#185c95; }
-.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr)); gap:18px; margin-top:18px; }
-.card,.totals { padding:22px; background:#fffdf8; border:1px solid var(--line); border-radius:12px; box-shadow:0 6px 18px #2430440a; }
-.totals { margin-top:18px; }
+.repositories,.totals { margin-top:18px; padding:22px; background:#fffdf8; border:1px solid var(--line); border-radius:12px; box-shadow:0 6px 18px #2430440a; }
+.scroll { overflow-x:auto; }
+.repository-table { width:100%; border-collapse:collapse; font-size:14px; }
+.repository-table caption { text-align:left; color:var(--muted); margin-bottom:12px; }
+.repository-table th,.repository-table td { padding:13px 10px; border-bottom:1px solid var(--line); vertical-align:top; }
+.repository-table th { text-align:left; }
+.repository-table td,.repository-table thead th:nth-child(n+3) { text-align:right; font-variant-numeric:tabular-nums; }
+.repository-table td { white-space:nowrap; }
+.repository-table td.languages { text-align:left; white-space:normal; }
+.repository-table th:first-child { position:sticky; left:0; background:#fffdf8; }
+.repository-table tfoot th:first-child,.repository-table tfoot td { font-weight:700; background:#edf5ef; border-bottom:0; }
+.repository-table tbody tr:hover td,.repository-table tbody tr:hover th { background:#f3f6f1; }
+.cell-note { display:block; margin-top:3px; color:var(--muted); font-size:12px; font-weight:400; }
+.totals > summary { cursor:pointer; font-weight:600; }
+.totals > h2 { margin-top:18px; }
 .campaign { padding:14px; margin-bottom:16px; border-left:4px solid #a56b05; background:#fff4d9; }
 .campaign h3 { margin:0; }
 .usage-summary { margin-top:18px; padding:14px; border-left:4px solid #216253; background:#edf5ef; }
@@ -40,21 +52,39 @@ a { color:#185c95; }
 dl { display:grid; grid-template-columns:1fr auto; gap:9px 16px; }
 dt,dd { margin:0; }
 dd { font-weight:700; font-variant-numeric:tabular-nums; }
-.open { display:inline-block; margin-top:8px; padding:10px 15px; color:white; background:#216253; border-radius:6px; text-decoration:none; }
 footer { margin-top:22px; color:var(--muted); font-size:14px; overflow-wrap:anywhere; }
 </style>
 </head>
 <body>
 <main>
-<noscript>Read the <a href="https://github.com/shuvendu-lahiri/nfv_dashboard/blob/nfv-reports/README.md">GitHub-readable dashboard index</a>.</noscript>
 <header>
 <a href="https://arxiv.org/abs/2608.21516">Neuro-Formal Verification</a>
 <h1>NFV audit dashboards</h1>
-<p>Published results from the prototype NFV reviewer for Z3, LiteBox, NVX, gh-aw and Garnet.</p>
+<p>Published results from the prototype NFV reviewer. Select a repository for PRs, property outcomes and evidence.</p>
 <p><strong>Conditional MODEL refutations are not confirmed source bugs.</strong>
 Verification concerns translated models under their stated assumptions; failure to refute is not evidence of correctness.</p>
 </header>
-<section class="totals" aria-label="Combined published results">
+<section class="repositories" aria-labelledby="repositories-heading">
+<h2 id="repositories-heading">Repositories</h2>
+<div class="scroll" tabindex="0" role="region" aria-label="Repository metrics">
+<table class="repository-table">
+<caption>One row per project. Repository names open the detailed dashboards.</caption>
+<thead><tr><th scope="col">Repository</th><th scope="col">Languages</th><th scope="col">Published / attempted PRs</th><th scope="col">Properties</th><th scope="col">Model refutations</th><th scope="col">Verified model fixes</th><th scope="col">Model verifications</th><th scope="col">Avg review AIC / PR</th><th scope="col">Avg workflow time</th></tr></thead>
+<tbody>
+<tr data-repository="z3"><th scope="row"><a href="z3/" title="shuvendu-lahiri/z3">Z3</a></th><td class="languages">C++</td><td>40 / 41</td><td>159</td><td>5<span class="cell-note">5 PRs</span></td><td>3<span class="cell-note">0 unknown</span></td><td>90</td><td>454.73<span class="cell-note">38 / 41 PRs measured</span></td><td>22m 28s<span class="cell-note">38 / 40 runs timed</span></td></tr>
+<tr data-repository="litebox"><th scope="row"><a href="litebox/" title="shuvendu-lahiri/litebox">LiteBox</a></th><td class="languages">Rust, C</td><td>90 / 104</td><td>720</td><td>28<span class="cell-note">23 PRs</span></td><td>11<span class="cell-note">0 unknown</span></td><td>516</td><td>667.34<span class="cell-note">100 / 104 PRs measured</span></td><td>42m 00s<span class="cell-note">81 / 90 runs timed</span></td></tr>
+<tr data-repository="nvx"><th scope="row"><a href="nvx/" title="shuvendu-lahiri/nvx">NVX</a></th><td class="languages">Rust, Python</td><td>45 / 50</td><td>288</td><td>14<span class="cell-note">10 PRs</span></td><td>6<span class="cell-note">0 unknown</span></td><td>201</td><td>777.23<span class="cell-note">41 / 50 PRs measured</span></td><td>41m 19s<span class="cell-note">45 / 45 runs timed</span></td></tr>
+<tr data-repository="gh-aw"><th scope="row"><a href="gh-aw/" title="shuvendu-lahiri/gh-aw">gh-aw</a></th><td class="languages">Go, JavaScript</td><td>19 / 35</td><td>116</td><td>3<span class="cell-note">3 PRs</span></td><td>3<span class="cell-note">0 unknown</span></td><td>74</td><td>246.98<span class="cell-note">34 / 35 PRs measured</span></td><td>38m 56s<span class="cell-note">19 / 19 runs timed</span></td></tr>
+<tr data-repository="garnet"><th scope="row"><a href="garnet/" title="shuvendu-lahiri/garnet">Garnet</a></th><td class="languages">C#</td><td>44 / 78</td><td>360</td><td>6<span class="cell-note">5 PRs</span></td><td>2<span class="cell-note">0 unknown</span></td><td>88</td><td>304.17<span class="cell-note">49 / 78 PRs measured</span></td><td>26m 20s<span class="cell-note">44 / 44 runs timed</span></td></tr>
+</tbody>
+<tfoot><tr><th scope="row" colspan="2">All projects</th><td>238 / 308</td><td>1,643</td><td>56<span class="cell-note">46 PRs</span></td><td>25<span class="cell-note">0 unknown</span></td><td>969</td><td>531.23<span class="cell-note">262 / 308 PRs measured</span></td><td>35m 18s<span class="cell-note">227 / 238 runs timed</span></td></tr></tfoot>
+</table>
+</div>
+<p class="muted">Property counts use each PR's latest published report. Fixes are checked model repairs with candidate source patches, not proof of source correctness; unknown fix evidence is shown separately.</p>
+<p class="muted">AIC averages include all attempts of fully measured PRs. Workflow averages use latest-report runs, exclude the initial queue and include inter-job waits. Coverage is shown beneath each average; missing measurements are excluded, not zero. Overall averages are weighted by their measured PRs or runs.</p>
+</section>
+<details class="totals">
+<summary>Overall outcomes and measurement details</summary>
 <h2>Property outcomes across all projects</h2>
 <div class="outcome-tracker">
 <p class="muted">Shares of 1,643 properties in latest published reports. Percentages are rounded to one decimal place.</p>
@@ -73,142 +103,17 @@ Verification concerns translated models under their stated assumptions; failure 
 <p class="verified-fixes"><strong>25 / 56 refutations with a verified fix</strong> <span class="muted">(0 with unknown fix evidence)</span></p><p class="muted">Native checked model repairs with hash-bound candidate source patches; not proof of source correctness. Simplifications do not count.</p>
 <aside class="usage-summary" aria-label="Review AIC usage"><h3>Average review AIC: 531.23 per PR</h3><p>Coverage: 262 / 308 attempted PRs fully measured; 20 with incomplete usage; 26 with no AI execution.</p><p>139,182.00 AIC across fully measured PRs. Includes retries, failed attempts, source-context and detection sessions. Incomplete measurements are excluded, not counted as zero. Quota-only PRs with no AI execution are excluded from the average.</p><p>Billing evidence collected: 2026-11-03T23:16:52.769082+00:00. Review scope follows the saved project snapshots; campaign-controller spend and reservations are separate.</p></aside>
 </div><p class="workflow-timing"><strong>Average workflow time: 35m 18s (227 / 238 latest-report runs timed; 11 missing).</strong></p><p class="muted">First job start to last job completion, excluding the initial queue; includes setup, source-context, audit, publication and inter-job waits. Missing timings are excluded, not zero. Overall averages are weighted by timed runs.</p>
-<p id="totals"></p><p id="outcomes"></p>
 <p class="muted">Unpublished outcomes are unknown and excluded from these percentages.</p>
-</section>
-<section id="repositories" class="grid" aria-label="Repository dashboards"></section>
+</details>
 <footer>
 <p>Counts use the latest published report per PR, not every workflow attempt or previous report.
 Missing reports remain unknown, not successful zero-finding analyses. Each dashboard includes search,
 filters, highlighted refutations, original reports and workflow evidence.</p>
-<p id="snapshot"></p>
+<p>Latest snapshot: 2026-11-02T11:56:37.877071+00:00. Per-repository snapshots and report history are retained.</p>
 <p><a href="https://github.com/shuvendu-lahiri/nfv_dashboard">Dashboard repository</a> &middot;
 <a href="data.json">Combined snapshot</a>. These pages are public static snapshots; no new audits or automatic refresh schedule are started by viewing them.</p>
 </footer>
 </main>
-<template id="outcome-tracker-z3"><div class="outcome-tracker">
-<p class="muted">Shares of 159 properties in latest published reports. Percentages are rounded to one decimal place.</p>
-<div class="outcome-bar" aria-hidden="true">
-<span class="outcome-verified" style="flex-grow:90"></span>
-<span class="outcome-refuted" style="flex-grow:5"></span>
-<span class="outcome-failed" style="flex-grow:30"></span>
-<span class="outcome-exhausted" style="flex-grow:34"></span>
-</div>
-<dl class="outcome-shares">
-<div><dt><span class="outcome-dot outcome-verified" aria-hidden="true"></span>Verified (model)</dt><dd><strong>56.6%</strong><span class="muted">90 / 159 properties</span></dd></div>
-<div><dt><span class="outcome-dot outcome-refuted" aria-hidden="true"></span>Refuted (model)</dt><dd><strong>3.1%</strong><span class="muted">5 / 159 properties</span></dd></div>
-<div><dt><span class="outcome-dot outcome-failed" aria-hidden="true"></span>Type-check / audit error</dt><dd><strong>18.9%</strong><span class="muted">30 / 159 properties</span></dd></div>
-<div><dt><span class="outcome-dot outcome-exhausted" aria-hidden="true"></span>Exhausted</dt><dd><strong>21.4%</strong><span class="muted">34 / 159 properties</span></dd></div>
-</dl>
-<p class="verified-fixes"><strong>3 / 5 refutations with a verified fix</strong> <span class="muted">(0 with unknown fix evidence)</span></p><p class="muted">Native checked model repairs with hash-bound candidate source patches; not proof of source correctness. Simplifications do not count.</p>
-<aside class="usage-summary" aria-label="Review AIC usage"><h3>Average review AIC: 454.73 per PR</h3><p>Coverage: 38 / 41 attempted PRs fully measured; 3 with incomplete usage; 0 with no AI execution.</p><p>17,279.60 AIC across fully measured PRs. Includes retries, failed attempts, source-context and detection sessions. Incomplete measurements are excluded, not counted as zero. Quota-only PRs with no AI execution are excluded from the average.</p><p>Billing evidence collected: 2026-11-03T23:11:38.425774+00:00. Review scope follows the saved project snapshots; campaign-controller spend and reservations are separate.</p></aside>
-</div><p class="workflow-timing"><strong>Average workflow time: 22m 28s (38 / 40 latest-report runs timed; 2 missing).</strong></p><p class="muted">First job start to last job completion, excluding the initial queue; includes setup, source-context, audit, publication and inter-job waits. Missing timings are excluded, not zero. Overall averages are weighted by timed runs.</p></template>
-<template id="outcome-tracker-litebox"><div class="outcome-tracker">
-<p class="muted">Shares of 720 properties in latest published reports. Percentages are rounded to one decimal place.</p>
-<div class="outcome-bar" aria-hidden="true">
-<span class="outcome-verified" style="flex-grow:516"></span>
-<span class="outcome-refuted" style="flex-grow:28"></span>
-<span class="outcome-failed" style="flex-grow:101"></span>
-<span class="outcome-exhausted" style="flex-grow:75"></span>
-</div>
-<dl class="outcome-shares">
-<div><dt><span class="outcome-dot outcome-verified" aria-hidden="true"></span>Verified (model)</dt><dd><strong>71.7%</strong><span class="muted">516 / 720 properties</span></dd></div>
-<div><dt><span class="outcome-dot outcome-refuted" aria-hidden="true"></span>Refuted (model)</dt><dd><strong>3.9%</strong><span class="muted">28 / 720 properties</span></dd></div>
-<div><dt><span class="outcome-dot outcome-failed" aria-hidden="true"></span>Type-check / audit error</dt><dd><strong>14.0%</strong><span class="muted">101 / 720 properties</span></dd></div>
-<div><dt><span class="outcome-dot outcome-exhausted" aria-hidden="true"></span>Exhausted</dt><dd><strong>10.4%</strong><span class="muted">75 / 720 properties</span></dd></div>
-</dl>
-<p class="verified-fixes"><strong>11 / 28 refutations with a verified fix</strong> <span class="muted">(0 with unknown fix evidence)</span></p><p class="muted">Native checked model repairs with hash-bound candidate source patches; not proof of source correctness. Simplifications do not count.</p>
-<aside class="usage-summary" aria-label="Review AIC usage"><h3>Average review AIC: 667.34 per PR</h3><p>Coverage: 100 / 104 attempted PRs fully measured; 4 with incomplete usage; 0 with no AI execution.</p><p>66,734.44 AIC across fully measured PRs. Includes retries, failed attempts, source-context and detection sessions. Incomplete measurements are excluded, not counted as zero. Quota-only PRs with no AI execution are excluded from the average.</p><p>Billing evidence collected: 2026-11-03T23:16:52.769082+00:00. Review scope follows the saved project snapshots; campaign-controller spend and reservations are separate.</p></aside>
-</div><p class="workflow-timing"><strong>Average workflow time: 42m 00s (81 / 90 latest-report runs timed; 9 missing).</strong></p><p class="muted">First job start to last job completion, excluding the initial queue; includes setup, source-context, audit, publication and inter-job waits. Missing timings are excluded, not zero. Overall averages are weighted by timed runs.</p></template>
-<template id="outcome-tracker-nvx"><div class="outcome-tracker">
-<p class="muted">Shares of 288 properties in latest published reports. Percentages are rounded to one decimal place.</p>
-<div class="outcome-bar" aria-hidden="true">
-<span class="outcome-verified" style="flex-grow:201"></span>
-<span class="outcome-refuted" style="flex-grow:14"></span>
-<span class="outcome-failed" style="flex-grow:55"></span>
-<span class="outcome-exhausted" style="flex-grow:18"></span>
-</div>
-<dl class="outcome-shares">
-<div><dt><span class="outcome-dot outcome-verified" aria-hidden="true"></span>Verified (model)</dt><dd><strong>69.8%</strong><span class="muted">201 / 288 properties</span></dd></div>
-<div><dt><span class="outcome-dot outcome-refuted" aria-hidden="true"></span>Refuted (model)</dt><dd><strong>4.9%</strong><span class="muted">14 / 288 properties</span></dd></div>
-<div><dt><span class="outcome-dot outcome-failed" aria-hidden="true"></span>Type-check / audit error</dt><dd><strong>19.1%</strong><span class="muted">55 / 288 properties</span></dd></div>
-<div><dt><span class="outcome-dot outcome-exhausted" aria-hidden="true"></span>Exhausted</dt><dd><strong>6.2%</strong><span class="muted">18 / 288 properties</span></dd></div>
-</dl>
-<p class="verified-fixes"><strong>6 / 14 refutations with a verified fix</strong> <span class="muted">(0 with unknown fix evidence)</span></p><p class="muted">Native checked model repairs with hash-bound candidate source patches; not proof of source correctness. Simplifications do not count.</p>
-<aside class="usage-summary" aria-label="Review AIC usage"><h3>Average review AIC: 777.23 per PR</h3><p>Coverage: 41 / 50 attempted PRs fully measured; 9 with incomplete usage; 0 with no AI execution.</p><p>31,866.35 AIC across fully measured PRs. Includes retries, failed attempts, source-context and detection sessions. Incomplete measurements are excluded, not counted as zero. Quota-only PRs with no AI execution are excluded from the average.</p><p>Billing evidence collected: 2026-11-03T23:11:53.118856+00:00. Review scope follows the saved project snapshots; campaign-controller spend and reservations are separate.</p></aside>
-</div><p class="workflow-timing"><strong>Average workflow time: 41m 19s (45 / 45 latest-report runs timed; 0 missing).</strong></p><p class="muted">First job start to last job completion, excluding the initial queue; includes setup, source-context, audit, publication and inter-job waits. Missing timings are excluded, not zero. Overall averages are weighted by timed runs.</p></template>
-<template id="outcome-tracker-gh-aw"><div class="outcome-tracker">
-<p class="muted">Shares of 116 properties in latest published reports. Percentages are rounded to one decimal place.</p>
-<div class="outcome-bar" aria-hidden="true">
-<span class="outcome-verified" style="flex-grow:74"></span>
-<span class="outcome-refuted" style="flex-grow:3"></span>
-<span class="outcome-failed" style="flex-grow:23"></span>
-<span class="outcome-exhausted" style="flex-grow:16"></span>
-</div>
-<dl class="outcome-shares">
-<div><dt><span class="outcome-dot outcome-verified" aria-hidden="true"></span>Verified (model)</dt><dd><strong>63.8%</strong><span class="muted">74 / 116 properties</span></dd></div>
-<div><dt><span class="outcome-dot outcome-refuted" aria-hidden="true"></span>Refuted (model)</dt><dd><strong>2.6%</strong><span class="muted">3 / 116 properties</span></dd></div>
-<div><dt><span class="outcome-dot outcome-failed" aria-hidden="true"></span>Type-check / audit error</dt><dd><strong>19.8%</strong><span class="muted">23 / 116 properties</span></dd></div>
-<div><dt><span class="outcome-dot outcome-exhausted" aria-hidden="true"></span>Exhausted</dt><dd><strong>13.8%</strong><span class="muted">16 / 116 properties</span></dd></div>
-</dl>
-<p class="verified-fixes"><strong>3 / 3 refutations with a verified fix</strong> <span class="muted">(0 with unknown fix evidence)</span></p><p class="muted">Native checked model repairs with hash-bound candidate source patches; not proof of source correctness. Simplifications do not count.</p>
-<aside class="usage-summary" aria-label="Review AIC usage"><h3>Average review AIC: 246.98 per PR</h3><p>Coverage: 34 / 35 attempted PRs fully measured; 1 with incomplete usage; 0 with no AI execution.</p><p>8,397.16 AIC across fully measured PRs. Includes retries, failed attempts, source-context and detection sessions. Incomplete measurements are excluded, not counted as zero. Quota-only PRs with no AI execution are excluded from the average.</p><p>Billing evidence collected: 2026-11-03T23:11:42.466280+00:00. Review scope follows the saved project snapshots; campaign-controller spend and reservations are separate.</p></aside>
-</div><p class="workflow-timing"><strong>Average workflow time: 38m 56s (19 / 19 latest-report runs timed; 0 missing).</strong></p><p class="muted">First job start to last job completion, excluding the initial queue; includes setup, source-context, audit, publication and inter-job waits. Missing timings are excluded, not zero. Overall averages are weighted by timed runs.</p></template>
-<template id="outcome-tracker-garnet"><div class="outcome-tracker">
-<p class="muted">Shares of 360 properties in latest published reports. Percentages are rounded to one decimal place.</p>
-<div class="outcome-bar" aria-hidden="true">
-<span class="outcome-verified" style="flex-grow:88"></span>
-<span class="outcome-refuted" style="flex-grow:6"></span>
-<span class="outcome-failed" style="flex-grow:22"></span>
-<span class="outcome-exhausted" style="flex-grow:244"></span>
-</div>
-<dl class="outcome-shares">
-<div><dt><span class="outcome-dot outcome-verified" aria-hidden="true"></span>Verified (model)</dt><dd><strong>24.4%</strong><span class="muted">88 / 360 properties</span></dd></div>
-<div><dt><span class="outcome-dot outcome-refuted" aria-hidden="true"></span>Refuted (model)</dt><dd><strong>1.7%</strong><span class="muted">6 / 360 properties</span></dd></div>
-<div><dt><span class="outcome-dot outcome-failed" aria-hidden="true"></span>Type-check / audit error</dt><dd><strong>6.1%</strong><span class="muted">22 / 360 properties</span></dd></div>
-<div><dt><span class="outcome-dot outcome-exhausted" aria-hidden="true"></span>Exhausted</dt><dd><strong>67.8%</strong><span class="muted">244 / 360 properties</span></dd></div>
-</dl>
-<p class="verified-fixes"><strong>2 / 6 refutations with a verified fix</strong> <span class="muted">(0 with unknown fix evidence)</span></p><p class="muted">Native checked model repairs with hash-bound candidate source patches; not proof of source correctness. Simplifications do not count.</p>
-<aside class="usage-summary" aria-label="Review AIC usage"><h3>Average review AIC: 304.17 per PR</h3><p>Coverage: 49 / 78 attempted PRs fully measured; 3 with incomplete usage; 26 with no AI execution.</p><p>14,904.46 AIC across fully measured PRs. Includes retries, failed attempts, source-context and detection sessions. Incomplete measurements are excluded, not counted as zero. Quota-only PRs with no AI execution are excluded from the average.</p><p>Billing evidence collected: 2026-11-03T23:11:52.298835+00:00. Review scope follows the saved project snapshots; campaign-controller spend and reservations are separate.</p></aside>
-</div><p class="workflow-timing"><strong>Average workflow time: 26m 20s (44 / 44 latest-report runs timed; 0 missing).</strong></p><p class="muted">First job start to last job completion, excluding the initial queue; includes setup, source-context, audit, publication and inter-job waits. Missing timings are excluded, not zero. Overall averages are weighted by timed runs.</p></template>
 <script type="application/json" id="data">{"schema": 1, "generated_at": "2026-11-02T11:56:37.877071+00:00", "summary": {"attempted_prs": 308, "published_reports": 238, "workflow_attempts": 529, "without_report": 70, "refuted_prs": 46, "properties": 1643, "checked_fixes": 25, "fix_unknown": 0, "checked_fix_prs": 24, "outcomes": {"refuted": 56, "verified": 969, "resources exhausted": 387, "type-check/audit failure": 231}, "usage": {"total_aic": "139182.00244", "average_aic_per_pr": "531.2290169465648854961832061", "measured_prs": 262, "incomplete_prs": 20, "no_ai_prs": 26, "collected_at": "2026-11-03T23:16:52.769082+00:00"}, "timing": {"samples": 227, "missing": 11, "total_seconds": 480804.0, "average_seconds": 2118.079295154185}}, "repositories": [{"name": "z3", "label": "Z3", "repository": "shuvendu-lahiri/z3", "languages": ["C++"], "generated_at": "2026-11-01T06:03:27.562449+00:00", "summary": {"selected_prs": 41, "attempted_prs": 41, "published_reports": 40, "workflow_attempts": 117, "without_report": 1, "refuted_prs": 5, "properties": 159, "outcomes": {"refuted": 5, "verified": 90, "resources exhausted": 34, "type-check/audit failure": 30}, "checked_fixes": 3, "fix_unknown": 0, "checked_fix_prs": 3, "usage": {"total_aic": "17279.60030", "average_aic_per_pr": "454.7263236842105263157894737", "measured_prs": 38, "incomplete_prs": 3, "no_ai_prs": 0, "collected_at": "2026-11-03T23:11:38.425774+00:00"}, "timing": {"samples": 38, "missing": 2, "total_seconds": 51230.0, "average_seconds": 1348.157894736842}}}, {"name": "litebox", "label": "LiteBox", "repository": "shuvendu-lahiri/litebox", "languages": ["Rust", "C"], "generated_at": "2026-10-31T11:58:47.222323+00:00", "summary": {"selected_prs": 104, "attempted_prs": 104, "published_reports": 90, "workflow_attempts": 175, "without_report": 14, "refuted_prs": 23, "properties": 720, "outcomes": {"refuted": 28, "verified": 516, "resources exhausted": 75, "type-check/audit failure": 101}, "checked_fixes": 11, "fix_unknown": 0, "checked_fix_prs": 10, "usage": {"total_aic": "66734.43988", "average_aic_per_pr": "667.3443988", "measured_prs": 100, "incomplete_prs": 4, "no_ai_prs": 0, "collected_at": "2026-11-03T23:16:52.769082+00:00"}, "timing": {"samples": 81, "missing": 9, "total_seconds": 204085.0, "average_seconds": 2519.567901234568}}}, {"name": "nvx", "label": "NVX", "repository": "shuvendu-lahiri/nvx", "languages": ["Rust", "Python"], "generated_at": "2026-10-30T04:24:40.608973+00:00", "summary": {"selected_prs": 50, "attempted_prs": 50, "published_reports": 45, "workflow_attempts": 124, "without_report": 5, "refuted_prs": 10, "properties": 288, "outcomes": {"refuted": 14, "verified": 201, "resources exhausted": 18, "type-check/audit failure": 55}, "checked_fixes": 6, "fix_unknown": 0, "checked_fix_prs": 6, "usage": {"total_aic": "31866.34530", "average_aic_per_pr": "777.2279341463414634146341463", "measured_prs": 41, "incomplete_prs": 9, "no_ai_prs": 0, "collected_at": "2026-11-03T23:11:53.118856+00:00"}, "timing": {"samples": 45, "missing": 0, "total_seconds": 111564.0, "average_seconds": 2479.2}}}, {"name": "gh-aw", "label": "gh-aw", "repository": "shuvendu-lahiri/gh-aw", "languages": ["Go", "JavaScript"], "generated_at": "2026-11-02T11:56:37.877071+00:00", "summary": {"selected_prs": 35, "attempted_prs": 35, "published_reports": 19, "workflow_attempts": 35, "without_report": 16, "refuted_prs": 3, "properties": 116, "outcomes": {"refuted": 3, "verified": 74, "resources exhausted": 16, "type-check/audit failure": 23}, "checked_fixes": 3, "fix_unknown": 0, "checked_fix_prs": 3, "usage": {"total_aic": "8397.15624", "average_aic_per_pr": "246.9751835294117647058823529", "measured_prs": 34, "incomplete_prs": 1, "no_ai_prs": 0, "collected_at": "2026-11-03T23:11:42.466280+00:00"}, "timing": {"samples": 19, "missing": 0, "total_seconds": 44383.0, "average_seconds": 2335.9473684210525}}, "campaign": {"repository": "shuvendu-lahiri/gh-aw", "status": "blocked", "planned_prs": 100, "attempted_prs": 35, "workflow_attempts": 35, "spent_aic": "7670.14008", "budget_aic": "50000", "checked_patches": 3, "note": "1 attempts remain unresolved in the controller. Goal: 10 conditional MODEL refutations with native checked fixes; continue within the 50,000-AIC aggregate cap, without an early target stop. Recorded spend below includes only fully accounted attempts; 39,200.00 AIC remains reserved for active or incompletely accounted attempts (14 finished attempts have incomplete usage). Total spent or reserved: 46,870.14 / 50,000 AIC. Missing usage is not zero consumption. The repository daily guard remains 20,000 AIC. The plan contains 50 eligible source PRs each from pelikhan and dsyme. Published outcomes are model-conditional, not source-correctness claims. Campaign control is paused for evidence/publication reconciliation."}}, {"name": "garnet", "label": "Garnet", "repository": "shuvendu-lahiri/garnet", "languages": ["C#"], "generated_at": "2026-11-01T21:20:57.206822+00:00", "summary": {"selected_prs": 78, "attempted_prs": 78, "published_reports": 44, "workflow_attempts": 78, "without_report": 34, "refuted_prs": 5, "properties": 360, "outcomes": {"refuted": 6, "verified": 88, "resources exhausted": 244, "type-check/audit failure": 22}, "checked_fixes": 2, "fix_unknown": 0, "checked_fix_prs": 2, "usage": {"total_aic": "14904.46072", "average_aic_per_pr": "304.1726677551020408163265306", "measured_prs": 49, "incomplete_prs": 3, "no_ai_prs": 26, "collected_at": "2026-11-03T23:11:52.298835+00:00"}, "timing": {"samples": 44, "missing": 0, "total_seconds": 69542.0, "average_seconds": 1580.5}}}]}</script>
-<script>
-"use strict";
-const data = JSON.parse(document.getElementById("data").textContent);
-const text = (tag, value, className) => {
-  const element = document.createElement(tag);
-  element.textContent = value;
-  if (className) element.className = className;
-  return element;
-};
-const s = data.summary;
-document.getElementById("totals").textContent =
-  `${s.attempted_prs} attempted PRs / ${s.workflow_attempts} workflow attempts / ${s.published_reports} published reports / ${s.properties} properties.`;
-document.getElementById("outcomes").textContent =
-  `${s.outcomes.refuted} conditional model refutations across ${s.refuted_prs} PRs; ${s.outcomes.verified} model verifications; ${s.outcomes["resources exhausted"]} resources exhausted; ${s.outcomes["type-check/audit failure"]} type-check/audit failures; ${s.without_report} PRs without reports.`;
-for (const repository of data.repositories) {
-  const card = text("article", "", "card");
-  card.append(text("h2", repository.label), text("p", repository.repository, "muted"));
-  card.append(text("p", `Main source languages: ${repository.languages.join(", ")}`, "muted"));
-  card.append(document.getElementById(`outcome-tracker-${repository.name}`).content.cloneNode(true));
-  const stats = document.createElement("dl");
-  const summary = repository.summary;
-  for (const [label, value, className] of [
-    ["PRs attempted", summary.attempted_prs, ""],
-    ["Published reports", summary.published_reports, ""],
-    ["Conditional refutations", summary.outcomes.refuted, "red"],
-    ["PRs with refutations", summary.refuted_prs, "red"],
-    ["Model verifications", summary.outcomes.verified, "green"],
-    ["Resources exhausted", summary.outcomes["resources exhausted"], ""],
-    ["Type-check / audit failures", summary.outcomes["type-check/audit failure"], ""],
-    ["PRs without reports", summary.without_report, ""],
-  ]) stats.append(text("dt", label), text("dd", value, className));
-  const link = text("a", `Open ${repository.label} dashboard`, "open");
-  link.href = `${repository.name}/`;
-  card.append(stats, link, text("p", `Snapshot: ${repository.generated_at}`, "muted"));
-  document.getElementById("repositories").append(card);
-}
-document.getElementById("snapshot").textContent = `Latest snapshot: ${data.generated_at}. Per-repository snapshots and report history are retained.`;
-</script>
 </body>
 </html>
