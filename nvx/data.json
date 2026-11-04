@@ -28,6 +28,12 @@
       "incomplete_prs": 9,
       "no_ai_prs": 0,
       "collected_at": "2026-11-03T23:11:53.118856+00:00"
+    },
+    "timing": {
+      "samples": 45,
+      "missing": 0,
+      "total_seconds": 111564.0,
+      "average_seconds": 2479.2
     }
   },
   "prs": [
@@ -58,7 +64,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-24T08:25:03+00:00",
+          "completed_at": "2026-10-24T08:53:17+00:00",
+          "duration_seconds": 1694.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39888393336/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -151,7 +164,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 3,
+          "started_at": "2026-10-30T01:43:11+00:00",
+          "completed_at": "2026-10-30T01:55:11+00:00",
+          "duration_seconds": 720.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39890408953/attempts/3"
+        }
       },
       "report_history": [
         {
@@ -256,7 +276,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 3,
+          "started_at": "2026-10-30T01:43:16+00:00",
+          "completed_at": "2026-10-30T02:01:55+00:00",
+          "duration_seconds": 1119.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39890415139/attempts/3"
+        }
       },
       "report_history": [
         {
@@ -361,7 +388,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 3,
+          "started_at": "2026-10-30T01:43:20+00:00",
+          "completed_at": "2026-10-30T02:03:37+00:00",
+          "duration_seconds": 1217.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39890421003/attempts/3"
+        }
       },
       "report_history": [
         {
@@ -466,7 +500,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 3,
+          "started_at": "2026-10-30T01:43:31+00:00",
+          "completed_at": "2026-10-30T02:11:09+00:00",
+          "duration_seconds": 1658.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39890427567/attempts/3"
+        }
       },
       "report_history": [
         {
@@ -590,7 +631,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 5,
+          "started_at": "2026-10-30T01:43:38+00:00",
+          "completed_at": "2026-10-30T02:25:23+00:00",
+          "duration_seconds": 2505.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39891550289/attempts/5"
+        }
       },
       "report_history": [
         {
@@ -695,7 +743,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 3,
+          "started_at": "2026-10-30T01:43:42+00:00",
+          "completed_at": "2026-10-30T02:15:10+00:00",
+          "duration_seconds": 1888.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39891744153/attempts/3"
+        }
       },
       "report_history": [
         {
@@ -819,7 +874,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-24T11:32:17+00:00",
+          "completed_at": "2026-10-24T11:46:24+00:00",
+          "duration_seconds": 847.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39892492366/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -905,7 +967,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 4,
+          "started_at": "2026-10-30T01:43:51+00:00",
+          "completed_at": "2026-10-30T02:16:41+00:00",
+          "duration_seconds": 1970.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39892693600/attempts/4"
+        }
       },
       "report_history": [
         {
@@ -1010,7 +1079,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 4,
+          "started_at": "2026-10-30T02:48:01+00:00",
+          "completed_at": "2026-10-30T03:03:38+00:00",
+          "duration_seconds": 937.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39892893751/attempts/4"
+        }
       },
       "report_history": [
         {
@@ -1115,7 +1191,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 3,
+          "started_at": "2026-10-30T02:48:06+00:00",
+          "completed_at": "2026-10-30T03:17:38+00:00",
+          "duration_seconds": 1772.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39893495398/attempts/3"
+        }
       },
       "report_history": [
         {
@@ -1227,7 +1310,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 3,
+          "started_at": "2026-10-30T01:43:36+00:00",
+          "completed_at": "2026-10-30T02:39:33+00:00",
+          "duration_seconds": 3357.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39893502095/attempts/3"
+        }
       },
       "report_history": [
         {
@@ -1346,7 +1436,14 @@
         ],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 3,
+          "started_at": "2026-10-30T02:48:11+00:00",
+          "completed_at": "2026-10-30T03:45:10+00:00",
+          "duration_seconds": 3419.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39893507724/attempts/3"
+        }
       },
       "report_history": [
         {
@@ -1471,7 +1568,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 3,
+          "started_at": "2026-10-30T02:48:22+00:00",
+          "completed_at": "2026-10-30T03:45:45+00:00",
+          "duration_seconds": 3443.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39893712214/attempts/3"
+        }
       },
       "report_history": [
         {
@@ -1595,7 +1699,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 3,
+          "started_at": "2026-10-30T02:48:21+00:00",
+          "completed_at": "2026-10-30T03:12:38+00:00",
+          "duration_seconds": 1457.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39895920868/attempts/3"
+        }
       },
       "report_history": [
         {
@@ -1700,7 +1811,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 3,
+          "started_at": "2026-10-30T02:48:34+00:00",
+          "completed_at": "2026-10-30T03:39:11+00:00",
+          "duration_seconds": 3037.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39896467670/attempts/3"
+        }
       },
       "report_history": [
         {
@@ -1826,7 +1944,14 @@
         ],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 3,
+          "started_at": "2026-10-30T02:48:27+00:00",
+          "completed_at": "2026-10-30T03:41:58+00:00",
+          "duration_seconds": 3211.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39896853340/attempts/3"
+        }
       },
       "report_history": [
         {
@@ -1945,7 +2070,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 3,
+          "started_at": "2026-10-30T02:48:29+00:00",
+          "completed_at": "2026-10-30T03:17:17+00:00",
+          "duration_seconds": 1728.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39896859074/attempts/3"
+        }
       },
       "report_history": [
         {
@@ -2050,7 +2182,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 3,
+          "started_at": "2026-10-30T02:48:38+00:00",
+          "completed_at": "2026-10-30T03:51:05+00:00",
+          "duration_seconds": 3747.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39898539854/attempts/3"
+        }
       },
       "report_history": [
         {
@@ -2181,7 +2320,14 @@
             "patch": "followups/293cd7f5eeefd401b711/1/fix/candidate.patch",
             "patch_sha256": "f000d09e27b65cc5088be9a7f69bb14daa51b62057b46fb815cc00a2dafc1fbe"
           }
-        ]
+        ],
+        "workflow_timing": {
+          "attempt": 3,
+          "started_at": "2026-10-30T02:48:44+00:00",
+          "completed_at": "2026-10-30T03:53:33+00:00",
+          "duration_seconds": 3889.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/39898919181/attempts/3"
+        }
       },
       "report_history": [
         {
@@ -2313,7 +2459,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-29T21:25:11+00:00",
+          "completed_at": "2026-10-29T22:08:15+00:00",
+          "duration_seconds": 2584.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40591658053/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -2406,7 +2559,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-29T21:25:15+00:00",
+          "completed_at": "2026-10-29T22:20:19+00:00",
+          "duration_seconds": 3304.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40591675811/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -2518,7 +2678,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-29T21:25:24+00:00",
+          "completed_at": "2026-10-29T21:41:49+00:00",
+          "duration_seconds": 985.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40591715292/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -2630,7 +2797,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-29T21:25:33+00:00",
+          "completed_at": "2026-10-29T22:12:14+00:00",
+          "duration_seconds": 2801.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40591761649/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -2716,7 +2890,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-29T21:25:37+00:00",
+          "completed_at": "2026-10-29T22:07:50+00:00",
+          "duration_seconds": 2533.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40591780072/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -2783,7 +2964,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-29T21:25:41+00:00",
+          "completed_at": "2026-10-29T22:05:17+00:00",
+          "duration_seconds": 2376.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40591795846/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -2869,7 +3057,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-29T21:26:46+00:00",
+          "completed_at": "2026-10-29T22:33:32+00:00",
+          "duration_seconds": 4006.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40591813556/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -2981,7 +3176,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-29T07:24:25+00:00",
+          "completed_at": "2026-10-29T07:59:47+00:00",
+          "duration_seconds": 2122.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835208517/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -3048,7 +3250,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-29T23:01:43+00:00",
+          "completed_at": "2026-10-29T23:39:31+00:00",
+          "duration_seconds": 2268.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835224989/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -3115,7 +3324,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-29T23:01:50+00:00",
+          "completed_at": "2026-10-29T23:59:01+00:00",
+          "duration_seconds": 3431.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835242182/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -3201,7 +3417,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-29T23:01:51+00:00",
+          "completed_at": "2026-10-29T23:43:52+00:00",
+          "duration_seconds": 2521.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835258683/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -3300,7 +3523,14 @@
             "patch": "followups/fab20ff7bc0655fbe5b4/1/fix/candidate.patch",
             "patch_sha256": "e4bf64422e9d94722e9d8aa7c45dbdff8d8d04714d4d44b1281f74becf20d5f6"
           }
-        ]
+        ],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-29T23:02:04+00:00",
+          "completed_at": "2026-10-29T23:23:21+00:00",
+          "duration_seconds": 1277.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835273267/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -3412,7 +3642,14 @@
             "patch": "followups/3436f66b25e2067cae73/1/fix/candidate.patch",
             "patch_sha256": "caa5f12349b914ab4d738d5fa13cd59eaf776561ca3c11667f0c7d05aa965a1c"
           }
-        ]
+        ],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-29T23:02:06+00:00",
+          "completed_at": "2026-10-30T00:03:56+00:00",
+          "duration_seconds": 3710.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835290323/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -3492,7 +3729,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-29T23:02:06+00:00",
+          "completed_at": "2026-10-29T23:41:37+00:00",
+          "duration_seconds": 2371.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835305967/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -3578,7 +3822,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-29T23:02:09+00:00",
+          "completed_at": "2026-10-29T23:57:30+00:00",
+          "duration_seconds": 3321.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835322389/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -3658,7 +3909,14 @@
             "patch": "followups/bb6f70ddef29d89a95e4/1/fix/candidate.patch",
             "patch_sha256": "94931cf531e1c42f8b2cab8718d006259b2a1dab764b678ec571812f80df2c7b"
           }
-        ]
+        ],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-29T23:02:19+00:00",
+          "completed_at": "2026-10-29T23:56:23+00:00",
+          "duration_seconds": 3244.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835334327/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -3764,7 +4022,14 @@
             "patch": "followups/4f3de7703fa63d3a0906/1/fix/candidate.patch",
             "patch_sha256": "aefd590c046283ade2a39e1df9784050f4928f657fd86819f349beb1bfa88ae9"
           }
-        ]
+        ],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-29T23:02:18+00:00",
+          "completed_at": "2026-10-29T23:55:36+00:00",
+          "duration_seconds": 3198.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40835350142/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -3838,7 +4103,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-30T00:07:22+00:00",
+          "completed_at": "2026-10-30T00:30:46+00:00",
+          "duration_seconds": 1404.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40954969307/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -3938,7 +4210,14 @@
         ],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-30T00:07:22+00:00",
+          "completed_at": "2026-10-30T00:48:14+00:00",
+          "duration_seconds": 2452.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955012283/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -4012,7 +4291,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-30T00:07:30+00:00",
+          "completed_at": "2026-10-30T01:18:51+00:00",
+          "duration_seconds": 4281.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955033538/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -4098,7 +4384,14 @@
         ],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-30T00:07:32+00:00",
+          "completed_at": "2026-10-30T01:12:22+00:00",
+          "duration_seconds": 3890.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955054329/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -4184,7 +4477,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-30T00:07:37+00:00",
+          "completed_at": "2026-10-30T00:55:02+00:00",
+          "duration_seconds": 2845.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955075088/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -4264,7 +4564,14 @@
             "patch": "followups/3f7789b067dbc519b301/2/fix/candidate.patch",
             "patch_sha256": "8e06f4da887ed191270480643208a851b5947277776d71eb435640fc16a36a44"
           }
-        ]
+        ],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-30T00:07:46+00:00",
+          "completed_at": "2026-10-30T00:58:50+00:00",
+          "duration_seconds": 3064.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955092049/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -4338,7 +4645,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-30T00:07:41+00:00",
+          "completed_at": "2026-10-30T00:46:22+00:00",
+          "duration_seconds": 2321.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955111250/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -4405,7 +4719,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-30T00:07:48+00:00",
+          "completed_at": "2026-10-30T00:35:08+00:00",
+          "duration_seconds": 1640.0,
+          "url": "https://github.com/shuvendu-lahiri/nvx/actions/runs/40955134520/attempts/2"
+        }
       },
       "report_history": [
         {

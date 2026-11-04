@@ -8,6 +8,7 @@ from decimal import Decimal
 import hashlib
 import html
 import json
+import math
 from pathlib import Path
 import re
 import subprocess
@@ -156,7 +157,8 @@ def replay_source(pr, repository):
     return {}
 
 
-def build(pulls, comments, runs, generated_at, repository=REPOSITORY, cohort=None, campaign=None, fixes=None):
+def build(pulls, comments, runs, generated_at, repository=REPOSITORY, cohort=None, campaign=None, fixes=None,
+          timings=None):
     web = f"https://github.com/{repository}"
     prs = {pr["number"]: pr for pr in pulls}
     if len(prs) != len(pulls):
@@ -251,7 +253,139 @@ def build(pulls, comments, runs, generated_at, repository=REPOSITORY, cohort=Non
         data["campaign"] = campaign
         campaign_lines(data)
     apply_fix_evidence(data, fixes)
+    apply_timing_evidence(data, timings)
     return data
+
+
+def timestamp(value):
+    parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    if parsed.tzinfo is None:
+        raise ValueError("Workflow timing timestamp has no timezone")
+    return parsed
+
+
+def timing_summary(samples, total_seconds, published):
+    if (type(samples) is not int or not 0 <= samples <= published
+            or type(total_seconds) not in (int, float) or not math.isfinite(total_seconds)
+            or total_seconds < 0 or samples == 0 and total_seconds != 0):
+        raise ValueError("Invalid workflow timing totals")
+    return {"samples": samples, "missing": published - samples, "total_seconds": total_seconds,
+            "average_seconds": total_seconds / samples if samples else None}
+
+
+def report_key(report):
+    return report["run_id"], report["comment_id"], report["body_sha256"]
+
+
+def apply_timing_evidence(data, evidence=None):
+    records = {}
+    if evidence is not None:
+        if evidence["schema"] != 1 or evidence["repository"] != data["repository"]:
+            raise ValueError("Workflow timing evidence belongs to a different repository or schema")
+        for record in evidence["reports"]:
+            key = report_key(record)
+            if key in records or record["status"] not in ("complete", "unavailable"):
+                raise ValueError("Invalid or duplicate workflow timing evidence")
+            records[key] = record
+    durations = []
+    for entry in data["prs"]:
+        report = entry["latest_report"]
+        if report is None:
+            continue
+        report.pop("workflow_timing", None)
+        record = records.get(report_key(report))
+        if record is None or record["status"] == "unavailable":
+            continue
+        start, end = timestamp(record["started_at"]), timestamp(record["completed_at"])
+        if (type(record["attempt"]) is not int or record["attempt"] < 1
+                or not start <= timestamp(report["published_at"]) <= end):
+            raise ValueError("Workflow timing does not cover its published report")
+        seconds = (end - start).total_seconds()
+        durations.append(seconds)
+        report["workflow_timing"] = {
+            "attempt": record["attempt"], "started_at": record["started_at"],
+            "completed_at": record["completed_at"], "duration_seconds": seconds,
+            "url": f"{report['run_url']}/attempts/{record['attempt']}",
+        }
+    data["summary"]["timing"] = timing_summary(
+        len(durations), sum(durations), data["summary"]["published_reports"])
+
+
+def timing_record(report, jobs):
+    record = {key: report[key] for key in ("run_id", "comment_id", "body_sha256")}
+    attempts = {}
+    for job in jobs:
+        attempt = job["run_attempt"]
+        if job["run_id"] != report["run_id"] or type(attempt) is not int or attempt < 1:
+            raise ValueError("Workflow timing jobs have a mismatched run or attempt")
+        if job["conclusion"] != "skipped":
+            attempts.setdefault(attempt, []).append(job)
+    matches, diagnostics = [], []
+    for attempt, group in attempts.items():
+        if any(job["status"] != "completed" or not job["started_at"] or not job["completed_at"] for job in group):
+            continue
+        spans = [(timestamp(job["started_at"]), timestamp(job["completed_at"])) for job in group]
+        if any(end < start for start, end in spans):
+            diagnostics.append(f"Attempt {attempt} has job timing that ends before it starts")
+            continue
+        start, end = min(start for start, _ in spans), max(end for _, end in spans)
+        if start <= timestamp(report["published_at"]) <= end:
+            matches.append({"attempt": attempt, "started_at": start.isoformat(), "completed_at": end.isoformat()})
+    if len(matches) != 1:
+        reason = "; ".join(["No unique completed attempt covering publication time", *diagnostics])
+        return {**record, "status": "unavailable", "reason": reason}
+    return {**record, "status": "complete", **matches[0]}
+
+
+def fetch_timing_record(repository, report):
+    endpoint = f"repos/{repository}/actions/runs/{report['run_id']}/jobs?filter=all&per_page=100"
+    result = subprocess.run(["gh", "api", "--paginate", "--slurp", endpoint],
+                            capture_output=True, text=True, encoding="utf-8")
+    if result.returncode:
+        if "HTTP 404" in result.stderr:
+            return {**{key: report[key] for key in ("run_id", "comment_id", "body_sha256")},
+                    "status": "unavailable", "reason": "GitHub returned HTTP 404 for workflow job metadata"}
+        raise RuntimeError(f"Workflow timing fetch failed for {endpoint}: {result.stderr}")
+    pages = json.loads(result.stdout)
+    return timing_record(report, [job for page in pages for job in page["jobs"]])
+
+
+def collect_timing_evidence(data, evidence=None):
+    cached = {}
+    if evidence is not None:
+        apply_timing_evidence(data, evidence)
+        cached = {report_key(record): record for record in evidence["reports"] if record["status"] == "complete"}
+    reports = [entry["latest_report"] for entry in data["prs"] if entry["latest_report"]]
+
+    def collect(report):
+        return cached.get(report_key(report)) or fetch_timing_record(data["repository"], report)
+
+    with ThreadPoolExecutor(max_workers=5) as executor:
+        records = list(executor.map(collect, reports))
+    return {"schema": 1, "repository": data["repository"],
+            "retrieved_at": datetime.now(timezone.utc).isoformat(), "reports": records}
+
+
+def timing_text(summary):
+    timing = summary["timing"]
+    average = timing["average_seconds"]
+    if average is None:
+        value = "N/A"
+    else:
+        minutes, seconds = divmod(round(average), 60)
+        value = f"{minutes}m {seconds:02d}s"
+    return (f"Average workflow time: {value} "
+            f"({timing['samples']} / {summary['published_reports']} latest-report runs timed; "
+            f"{timing['missing']} missing).")
+
+
+def render_timing(summary):
+    if "timing" not in summary:
+        return ""
+    return ('<p class="workflow-timing"><strong>' + html.escape(timing_text(summary)) + '</strong></p>'
+            '<p class="muted">First job start to last job completion, excluding the initial queue; '
+            'includes setup, source-context, audit, publication and inter-job waits. '
+            'Missing timings are excluded, not zero. Overall averages are weighted by timed runs.</p>')
 
 
 def apply_fix_evidence(data, evidence=None):
@@ -476,6 +610,8 @@ def render_markdown(data):
         f"across {total['checked_fix_prs']} PRs; {total['fix_unknown']} refutations with unknown fix evidence.** "
         "A verified fix means native checked repair of the complete translated property plus a hash-bound "
         "candidate source patch, not proof of source correctness. Simplifications do not count.", "",
+        f"**{timing_text(total)}** First job start to last job completion, excluding the initial queue. "
+        "Missing timings are excluded. Metadata is retained in [timings.json](timings.json).", "",
     ]
     campaign = campaign_lines(data)
     for line in usage_lines(total):
@@ -614,10 +750,11 @@ def render_html(data, template_name="dashboard.html"):
     canonical = SITE if "repositories" in data else f"{SITE}{data['name']}/"
     repository_trackers = "\n".join(
         f'<template id="outcome-tracker-{html.escape(repository["name"], quote=True)}">'
-        f'{render_outcome_tracker(repository["summary"])}</template>'
+        f'{render_outcome_tracker(repository["summary"])}{render_timing(repository["summary"])}</template>'
         for repository in data.get("repositories", []))
     return (template.replace("__NFV_CANONICAL__", html.escape(canonical, quote=True))
-            .replace("__NFV_OUTCOME_TRACKER__", render_campaign(data) + render_outcome_tracker(data["summary"]))
+            .replace("__NFV_OUTCOME_TRACKER__", render_campaign(data) + render_outcome_tracker(data["summary"])
+                     + render_timing(data["summary"]))
             .replace("__NFV_REPOSITORY_TRACKERS__", repository_trackers)
             .replace("__NFV_DATA__", encoded))
 
@@ -643,6 +780,10 @@ def hub(snapshots):
     collected = [usage["collected_at"] for usage in usages if "collected_at" in usage]
     if collected:
         summary["usage"]["collected_at"] = max(collected)
+    summary["timing"] = timing_summary(
+        sum(data["summary"].get("timing", {}).get("samples", 0) for data in snapshots),
+        sum(data["summary"].get("timing", {}).get("total_seconds", 0) for data in snapshots),
+        summary["published_reports"])
     return {
         "schema": 1, "generated_at": max(data["generated_at"] for data in snapshots), "summary": summary,
         "repositories": [{key: data[key] for key in ("name", "label", "repository", "languages", "generated_at", "summary", "campaign")
@@ -658,13 +799,15 @@ def main():
     mode.add_argument("--check", action="store_true", help="Check generated files offline without changing them")
     mode.add_argument("--render-only", action="store_true",
                       help="Regenerate pages from saved metadata, fix evidence and usage evidence without network access")
+    mode.add_argument("--refresh-timings", action="store_true",
+                      help="Fetch job timings for saved latest reports without refreshing result snapshots")
     parser.add_argument("--project", choices=REPOSITORIES,
                         help="Refresh only this project; retain other projects' saved evidence")
     args = parser.parse_args()
     generated_at = datetime.now(timezone.utc).isoformat()
 
     def collect(name):
-        if args.check or args.render_only or args.project and name != args.project:
+        if args.check or args.render_only or args.refresh_timings or args.project and name != args.project:
             return json.loads((DIRECTORY / name / "data.json").read_text(encoding="utf-8"))
         repository = f"shuvendu-lahiri/{name}"
         if args.input_dir:
@@ -683,6 +826,7 @@ def main():
 
     with ThreadPoolExecutor(max_workers=len(REPOSITORIES)) as executor:
         snapshots = list(executor.map(collect, REPOSITORIES))
+    outputs = {}
     for data in snapshots:
         data["languages"] = LANGUAGES[data["name"]]
         path = DIRECTORY / data["name"] / "fixes.json"
@@ -691,7 +835,12 @@ def main():
         path = DIRECTORY / data["name"] / "usage.json"
         evidence = json.loads(path.read_text(encoding="utf-8")) if path.exists() else None
         apply_usage_evidence(data, evidence)
-    outputs = {}
+        path = DIRECTORY / data["name"] / "timings.json"
+        evidence = json.loads(path.read_text(encoding="utf-8")) if path.exists() else None
+        if args.refresh_timings and (not args.project or args.project == data["name"]):
+            evidence = collect_timing_evidence(data, evidence)
+            outputs[path] = json.dumps(evidence, indent=2, ensure_ascii=True) + "\n"
+        apply_timing_evidence(data, evidence)
     for data in snapshots:
         base = DIRECTORY / data["name"]
         outputs.update({

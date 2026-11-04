@@ -32,6 +32,12 @@
       "incomplete_prs": 1,
       "no_ai_prs": 0,
       "collected_at": "2026-11-03T23:11:42.466280+00:00"
+    },
+    "timing": {
+      "samples": 19,
+      "missing": 0,
+      "total_seconds": 44383.0,
+      "average_seconds": 2335.9473684210525
     }
   },
   "prs": [
@@ -62,7 +68,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-11-01T07:27:29+00:00",
+          "completed_at": "2026-11-01T07:47:13+00:00",
+          "duration_seconds": 1184.0,
+          "url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41284849816/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -158,7 +171,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-11-02T07:53:06+00:00",
+          "completed_at": "2026-11-02T08:47:14+00:00",
+          "duration_seconds": 3248.0,
+          "url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41409150540/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -228,7 +248,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-11-02T07:53:22+00:00",
+          "completed_at": "2026-11-02T08:46:29+00:00",
+          "duration_seconds": 3187.0,
+          "url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41409176759/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -350,7 +377,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-11-02T07:54:04+00:00",
+          "completed_at": "2026-11-02T08:26:50+00:00",
+          "duration_seconds": 1966.0,
+          "url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41409254306/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -420,7 +454,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-11-02T07:54:19+00:00",
+          "completed_at": "2026-11-02T08:18:03+00:00",
+          "duration_seconds": 1424.0,
+          "url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41409279703/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -516,7 +557,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-11-02T08:11:13+00:00",
+          "completed_at": "2026-11-02T08:46:09+00:00",
+          "duration_seconds": 2096.0,
+          "url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41411189001/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -612,7 +660,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-11-02T08:22:48+00:00",
+          "completed_at": "2026-11-02T08:58:33+00:00",
+          "duration_seconds": 2145.0,
+          "url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41412609572/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -695,7 +750,14 @@
             "patch": "followups/f693a04403979249f2b9/1/fix/candidate.patch",
             "patch_sha256": "2d63ba6840bfafd6253ea0b8ad01ad89257cc9d8baa504351ea5f890c0cc2baa"
           }
-        ]
+        ],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-11-02T08:28:38+00:00",
+          "completed_at": "2026-11-02T09:17:02+00:00",
+          "duration_seconds": 2904.0,
+          "url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41413333428/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -778,7 +840,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-11-02T08:28:52+00:00",
+          "completed_at": "2026-11-02T08:50:01+00:00",
+          "duration_seconds": 1269.0,
+          "url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41413363688/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -848,7 +917,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-11-02T08:34:43+00:00",
+          "completed_at": "2026-11-02T08:56:23+00:00",
+          "duration_seconds": 1300.0,
+          "url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41414064477/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -944,7 +1020,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-11-02T08:51:41+00:00",
+          "completed_at": "2026-11-02T09:23:03+00:00",
+          "duration_seconds": 1882.0,
+          "url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41416117966/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -1040,7 +1123,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-11-02T08:52:26+00:00",
+          "completed_at": "2026-11-02T09:44:18+00:00",
+          "duration_seconds": 3112.0,
+          "url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41416181507/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -1201,7 +1291,14 @@
             "patch": "followups/550d0f01cba4e399458f/2/fix/candidate.patch",
             "patch_sha256": "e02a7a57427ec9eeb9196edc8070a5d3706965cbc2dab5a6e31020dcb57f29ae"
           }
-        ]
+        ],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-11-02T09:09:43+00:00",
+          "completed_at": "2026-11-02T10:27:15+00:00",
+          "duration_seconds": 4652.0,
+          "url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41418383499/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -1310,7 +1407,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-11-02T09:21:13+00:00",
+          "completed_at": "2026-11-02T10:26:07+00:00",
+          "duration_seconds": 3894.0,
+          "url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41419923921/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -1393,7 +1497,14 @@
             "patch": "followups/99d2b6eaea1cc99cde4b/1/fix/candidate.patch",
             "patch_sha256": "a7c4ec4720d7f0e891f6e9bf8bc7b7a78f553348ab538331dcf93d3a7bb9b27e"
           }
-        ]
+        ],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-11-02T09:21:28+00:00",
+          "completed_at": "2026-11-02T09:46:52+00:00",
+          "duration_seconds": 1524.0,
+          "url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41419957239/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -1528,7 +1639,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-11-02T09:38:44+00:00",
+          "completed_at": "2026-11-02T10:22:46+00:00",
+          "duration_seconds": 2642.0,
+          "url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41422333871/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -1624,7 +1742,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-11-02T09:53:18+00:00",
+          "completed_at": "2026-11-02T10:19:10+00:00",
+          "duration_seconds": 1552.0,
+          "url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41424280837/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -1720,7 +1845,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-11-02T10:31:37+00:00",
+          "completed_at": "2026-11-02T10:58:46+00:00",
+          "duration_seconds": 1629.0,
+          "url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41428869796/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -1816,7 +1948,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-11-02T11:03:57+00:00",
+          "completed_at": "2026-11-02T11:50:10+00:00",
+          "duration_seconds": 2773.0,
+          "url": "https://github.com/shuvendu-lahiri/gh-aw/actions/runs/41433741940/attempts/1"
+        }
       },
       "report_history": [
         {

@@ -1,6 +1,8 @@
 import json
 import re
 import unittest
+from datetime import timedelta
+from unittest.mock import patch
 
 import refresh
 
@@ -417,6 +419,114 @@ class RefreshTests(unittest.TestCase):
                 self.assertEqual(flags, sorted(flags, reverse=True))
         combined = json.loads((refresh.DIRECTORY / "data.json").read_text(encoding="utf-8"))
         self.assertEqual(combined, refresh.hub(snapshots))
+
+
+class TimingTests(unittest.TestCase):
+    def data(self, count=1):
+        pulls, comments, runs = [], [], []
+        for number in range(2, 2 + count):
+            pulls.append(pr(number))
+            body = BODY.replace("in PR #2", f"in PR #{number}").replace("/runs/100", f"/runs/{100 + number}")
+            item = comment(body, comment_id=200 + number)
+            item["issue_url"] = item["issue_url"].rsplit("/", 1)[0] + f"/{number}"
+            comments.append(item)
+            runs.append(run(number, 100 + number))
+        return refresh.build(pulls, comments, runs, "snapshot")
+
+    def evidence(self, data, durations):
+        records = []
+        for entry, seconds in zip(data["prs"], durations):
+            report = entry["latest_report"]
+            start = refresh.timestamp(report["published_at"]) - timedelta(seconds=1)
+            records.append({
+                **{key: report[key] for key in ("run_id", "comment_id", "body_sha256")},
+                "status": "complete", "attempt": 1, "started_at": start.isoformat(),
+                "completed_at": (start + timedelta(seconds=seconds)).isoformat(),
+            })
+        return {"schema": 1, "repository": data["repository"], "reports": records}
+
+    def test_overall_average_is_weighted_by_timed_runs_and_excludes_missing(self):
+        first, second = self.data(), self.data(4)
+        refresh.apply_timing_evidence(first, self.evidence(first, [60]))
+        refresh.apply_timing_evidence(second, self.evidence(second, [180, 180, 180]))
+        timing = refresh.hub([first, second])["summary"]["timing"]
+        self.assertEqual(4, timing["samples"])
+        self.assertEqual(1, timing["missing"])
+        self.assertEqual(150, timing["average_seconds"])
+        self.assertIn("2m 30s", refresh.render_html(refresh.hub([first, second]), "hub.html"))
+        self.assertIn("3 / 4 latest-report runs timed", refresh.render_html(second))
+        self.assertIn("3 / 4 latest-report runs timed", refresh.render_markdown(second))
+
+    def test_missing_or_mismatched_timing_is_unavailable_not_zero(self):
+        data = self.data()
+        evidence = self.evidence(data, [60])
+        evidence["reports"][0]["body_sha256"] = "b" * 64
+        refresh.apply_timing_evidence(data, evidence)
+        self.assertIsNone(data["summary"]["timing"]["average_seconds"])
+        self.assertEqual(1, data["summary"]["timing"]["missing"])
+        self.assertIn("Average workflow time: N/A", refresh.render_html(data))
+        self.assertNotIn("workflow_timing", data["prs"][0]["latest_report"])
+
+    def test_historical_reports_do_not_add_timing_samples(self):
+        data = self.data()
+        evidence = self.evidence(data, [60])
+        old = data["prs"][0]["latest_report"]
+        data["prs"][0]["report_history"].append(dict(old))
+        data["prs"][0]["latest_report"] = {**old, "comment_id": 999}
+        refresh.apply_timing_evidence(data, evidence)
+        self.assertEqual(0, data["summary"]["timing"]["samples"])
+        evidence["reports"].extend(self.evidence(data, [120])["reports"])
+        refresh.apply_timing_evidence(data, evidence)
+        self.assertEqual(1, data["summary"]["timing"]["samples"])
+        self.assertEqual(120, data["summary"]["timing"]["average_seconds"])
+
+    def test_jobs_use_wall_clock_span_and_the_attempt_covering_publication(self):
+        report = self.data()["prs"][0]["latest_report"]
+
+        def job(start, end, attempt=1, conclusion="success"):
+            return {"run_id": report["run_id"], "run_attempt": attempt, "status": "completed",
+                    "conclusion": conclusion, "started_at": start, "completed_at": end}
+
+        jobs = [
+            job("2026-10-19T23:59:00Z", "2026-10-20T00:00:10Z"),
+            job("2026-10-20T00:00:05Z", "2026-10-20T00:01:00Z"),
+            job("2026-10-19T19:00:00Z", "2026-10-19T19:00:00Z", conclusion="skipped"),
+            job("2026-10-21T00:00:00Z", "2026-10-21T01:00:00Z", attempt=2),
+        ]
+        record = refresh.timing_record(report, jobs)
+        self.assertEqual("complete", record["status"])
+        self.assertEqual(1, record["attempt"])
+        seconds = (refresh.timestamp(record["completed_at"]) - refresh.timestamp(record["started_at"])).total_seconds()
+        self.assertEqual(120, seconds)
+        jobs[0]["status"] = "in_progress"
+        self.assertEqual("unavailable", refresh.timing_record(report, jobs)["status"])
+        jobs[0]["status"] = "completed"
+        jobs[0]["completed_at"] = "2026-10-19T23:58:00Z"
+        unavailable = refresh.timing_record(report, jobs)
+        self.assertEqual("unavailable", unavailable["status"])
+        self.assertIn("ends before it starts", unavailable["reason"])
+
+    def test_invalid_timing_and_ambiguous_attempts_fail_or_remain_unknown(self):
+        data = self.data()
+        evidence = self.evidence(data, [60])
+        evidence["reports"][0]["completed_at"] = "2026-10-19T00:00:00Z"
+        with self.assertRaisesRegex(ValueError, "does not cover"):
+            refresh.apply_timing_evidence(data, evidence)
+        report = data["prs"][0]["latest_report"]
+        jobs = [{"run_id": report["run_id"], "run_attempt": attempt, "status": "completed",
+                 "conclusion": "success", "started_at": "2026-10-19T23:59:00Z",
+                 "completed_at": "2026-10-20T00:01:00Z"} for attempt in (1, 2)]
+        self.assertEqual("unavailable", refresh.timing_record(report, jobs)["status"])
+
+    def test_api_errors_are_not_hidden_as_missing_timings(self):
+        report = self.data()["prs"][0]["latest_report"]
+        result = type("Result", (), {"returncode": 1, "stderr": "HTTP 403: rate limit", "stdout": ""})()
+        with patch.object(refresh.subprocess, "run", return_value=result):
+            with self.assertRaisesRegex(RuntimeError, "HTTP 403"):
+                refresh.fetch_timing_record(refresh.REPOSITORY, report)
+        result.stderr = "HTTP 404: Not Found"
+        with patch.object(refresh.subprocess, "run", return_value=result):
+            self.assertEqual("unavailable", refresh.fetch_timing_record(refresh.REPOSITORY, report)["status"])
 
 
 if __name__ == "__main__":

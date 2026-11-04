@@ -24,6 +24,12 @@
       "incomplete_prs": 20,
       "no_ai_prs": 26,
       "collected_at": "2026-11-03T23:16:52.769082+00:00"
+    },
+    "timing": {
+      "samples": 227,
+      "missing": 11,
+      "total_seconds": 480804.0,
+      "average_seconds": 2118.079295154185
     }
   },
   "repositories": [
@@ -59,6 +65,12 @@
           "incomplete_prs": 3,
           "no_ai_prs": 0,
           "collected_at": "2026-11-03T23:11:38.425774+00:00"
+        },
+        "timing": {
+          "samples": 38,
+          "missing": 2,
+          "total_seconds": 51230.0,
+          "average_seconds": 1348.157894736842
         }
       }
     },
@@ -95,6 +107,12 @@
           "incomplete_prs": 4,
           "no_ai_prs": 0,
           "collected_at": "2026-11-03T23:16:52.769082+00:00"
+        },
+        "timing": {
+          "samples": 81,
+          "missing": 9,
+          "total_seconds": 204085.0,
+          "average_seconds": 2519.567901234568
         }
       }
     },
@@ -131,6 +149,12 @@
           "incomplete_prs": 9,
           "no_ai_prs": 0,
           "collected_at": "2026-11-03T23:11:53.118856+00:00"
+        },
+        "timing": {
+          "samples": 45,
+          "missing": 0,
+          "total_seconds": 111564.0,
+          "average_seconds": 2479.2
         }
       }
     },
@@ -167,6 +191,12 @@
           "incomplete_prs": 1,
           "no_ai_prs": 0,
           "collected_at": "2026-11-03T23:11:42.466280+00:00"
+        },
+        "timing": {
+          "samples": 19,
+          "missing": 0,
+          "total_seconds": 44383.0,
+          "average_seconds": 2335.9473684210525
         }
       },
       "campaign": {
@@ -213,6 +243,12 @@
           "incomplete_prs": 3,
           "no_ai_prs": 26,
           "collected_at": "2026-11-03T23:11:52.298835+00:00"
+        },
+        "timing": {
+          "samples": 44,
+          "missing": 0,
+          "total_seconds": 69542.0,
+          "average_seconds": 1580.5
         }
       }
     }

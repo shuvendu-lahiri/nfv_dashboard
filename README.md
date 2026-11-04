@@ -96,6 +96,20 @@ the collector. The external cache keeps terminal-run metadata, compact ZIPs and
 raw job logs out of the published site; only billing measurements and provenance
 are committed.
 
+## Workflow timing averages
+
+The hub and project pages show **average workflow time** for the runs backing
+each PR's latest published report. This is wall-clock time from the first
+non-skipped job starting to the last job completing: the initial queue is
+excluded, while setup, source-context, auditing, publication and inter-job waits
+are included. Parallel jobs are not summed. Overall averages are weighted by
+timed runs, not repository averages. Coverage is shown as timed/published runs;
+missing timings are excluded, never treated as zero.
+
+Per-project `timings.json` binds GitHub job timestamps and attempt numbers to the
+exact published comment and run. A later rerun does not replace an older report's
+timing; missing or ambiguous attempt metadata remains unavailable.
+
 ## Refresh
 
 Requires Python 3.10+ and authenticated GitHub CLI read access:
@@ -105,6 +119,12 @@ python refresh.py
 python -m unittest discover
 python refresh.py --check
 ```
+
+Use `python refresh.py --refresh-timings` to fetch job timing metadata for saved
+latest reports without refreshing their frozen result counts; add `--project`
+to limit it to one repository. Existing complete timing records are reused;
+unavailable records are retried. Ordinary refreshes retain matching timing
+evidence, and offline `--check` recomputes the aggregates from it.
 
 Use `python refresh.py --project gh-aw` to refresh only gh-aw while retaining the
 other projects' saved evidence. `gh-aw/cohort.json` maps attempted replays to

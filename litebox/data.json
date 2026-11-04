@@ -28,6 +28,12 @@
       "incomplete_prs": 4,
       "no_ai_prs": 0,
       "collected_at": "2026-11-03T23:16:52.769082+00:00"
+    },
+    "timing": {
+      "samples": 81,
+      "missing": 9,
+      "total_seconds": 204085.0,
+      "average_seconds": 2519.567901234568
     }
   },
   "prs": [
@@ -71,7 +77,14 @@
             "patch": "followups/f241d99f520854c2c5dc/1/fix/candidate.patch",
             "patch_sha256": "800227a229974457d383b9269b072100cbe83c805ff0222188225ac32c8d221a"
           }
-        ]
+        ],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-24T09:02:20+00:00",
+          "completed_at": "2026-10-24T09:37:12+00:00",
+          "duration_seconds": 2092.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39205431424/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -194,7 +207,14 @@
             "patch": "followups/6b84efd901da4e665890/1/fix/candidate.patch",
             "patch_sha256": "eb9be964a1d45c16383bcf4ad705a58d3c0028f2e90182dc98e465731801ff9e"
           }
-        ]
+        ],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-24T09:41:41+00:00",
+          "completed_at": "2026-10-24T10:24:09+00:00",
+          "duration_seconds": 2548.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39390206732/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -273,7 +293,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 3,
+          "started_at": "2026-10-24T19:08:48+00:00",
+          "completed_at": "2026-10-24T19:51:19+00:00",
+          "duration_seconds": 2551.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39209801291/attempts/3"
+        }
       },
       "report_history": [
         {
@@ -443,7 +470,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-24T10:44:40+00:00",
+          "completed_at": "2026-10-24T11:23:34+00:00",
+          "duration_seconds": 2334.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39399231191/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -535,7 +569,14 @@
         ],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-24T10:57:56+00:00",
+          "completed_at": "2026-10-24T11:36:12+00:00",
+          "duration_seconds": 2296.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39357363330/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -608,7 +649,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-24T11:24:20+00:00",
+          "completed_at": "2026-10-24T11:52:59+00:00",
+          "duration_seconds": 1719.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39405410051/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -693,7 +741,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-24T11:42:40+00:00",
+          "completed_at": "2026-10-24T11:59:59+00:00",
+          "duration_seconds": 1039.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39358987665/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -778,7 +833,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-24T11:53:49+00:00",
+          "completed_at": "2026-10-24T12:07:16+00:00",
+          "duration_seconds": 807.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39409808199/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -863,7 +925,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-24T12:01:00+00:00",
+          "completed_at": "2026-10-24T12:25:34+00:00",
+          "duration_seconds": 1474.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39411981934/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -961,7 +1030,14 @@
             "patch": "followups/ef4565549fee14d479e1/2/fix/candidate.patch",
             "patch_sha256": "4c04f218a66643feda0c5d873d30c06559dd66d849622726d902400a5705b5bb"
           }
-        ]
+        ],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-24T12:16:28+00:00",
+          "completed_at": "2026-10-24T12:40:02+00:00",
+          "duration_seconds": 1414.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39363406105/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -1157,7 +1233,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-24T12:59:56+00:00",
+          "completed_at": "2026-10-24T13:24:19+00:00",
+          "duration_seconds": 1463.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39370711394/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -1334,7 +1417,14 @@
         ],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-24T13:22:31+00:00",
+          "completed_at": "2026-10-24T13:57:52+00:00",
+          "duration_seconds": 2121.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39415165751/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -1407,7 +1497,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-24T13:53:45+00:00",
+          "completed_at": "2026-10-24T14:37:10+00:00",
+          "duration_seconds": 2605.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39416362695/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -1492,7 +1589,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-24T14:11:55+00:00",
+          "completed_at": "2026-10-24T14:22:33+00:00",
+          "duration_seconds": 638.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39417204232/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -1577,7 +1681,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-24T14:23:32+00:00",
+          "completed_at": "2026-10-24T14:36:40+00:00",
+          "duration_seconds": 788.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39419250767/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -1662,7 +1773,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-24T14:55:48+00:00",
+          "completed_at": "2026-10-24T15:10:25+00:00",
+          "duration_seconds": 877.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39421605628/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -1747,7 +1865,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-24T15:04:50+00:00",
+          "completed_at": "2026-10-24T15:56:21+00:00",
+          "duration_seconds": 3091.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39422364492/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -1845,7 +1970,14 @@
             "patch": "followups/b16219007c11f8d2caaa/2/fix/candidate.patch",
             "patch_sha256": "43fc7a4ff4e0ad8f48fdeb5bc8274edec8ae6948105b9c2b52ad8738224a00e1"
           }
-        ]
+        ],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-24T15:11:08+00:00",
+          "completed_at": "2026-10-24T15:57:06+00:00",
+          "duration_seconds": 2758.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39424463467/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -2029,7 +2161,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 3,
+          "started_at": "2026-10-24T19:47:40+00:00",
+          "completed_at": "2026-10-24T20:12:40+00:00",
+          "duration_seconds": 1500.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39431692418/attempts/3"
+        }
       },
       "report_history": [
         {
@@ -2095,7 +2234,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-24T08:25:03+00:00",
+          "completed_at": "2026-10-24T08:51:25+00:00",
+          "duration_seconds": 1582.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39432560915/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -2187,7 +2333,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-24T15:52:13+00:00",
+          "completed_at": "2026-10-24T16:03:03+00:00",
+          "duration_seconds": 650.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39437995772/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -2272,7 +2425,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-24T15:58:02+00:00",
+          "completed_at": "2026-10-24T16:45:09+00:00",
+          "duration_seconds": 2827.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39440128194/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -2338,7 +2498,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-24T16:03:22+00:00",
+          "completed_at": "2026-10-24T16:36:00+00:00",
+          "duration_seconds": 1958.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39440593410/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -2437,7 +2604,14 @@
         ],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-24T16:17:26+00:00",
+          "completed_at": "2026-10-24T17:04:14+00:00",
+          "duration_seconds": 2808.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39447927739/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -2529,7 +2703,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-24T16:33:08+00:00",
+          "completed_at": "2026-10-24T17:14:09+00:00",
+          "duration_seconds": 2461.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39449644221/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -2836,7 +3017,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-24T17:05:06+00:00",
+          "completed_at": "2026-10-24T17:44:38+00:00",
+          "duration_seconds": 2372.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39460648199/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -2941,7 +3129,14 @@
         ],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 3,
+          "started_at": "2026-10-24T19:52:22+00:00",
+          "completed_at": "2026-10-24T20:21:19+00:00",
+          "duration_seconds": 1737.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39462655079/attempts/3"
+        }
       },
       "report_history": [
         {
@@ -3033,7 +3228,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 3,
+          "started_at": "2026-10-24T19:52:38+00:00",
+          "completed_at": "2026-10-24T20:18:06+00:00",
+          "duration_seconds": 1528.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39532837030/attempts/3"
+        }
       },
       "report_history": [
         {
@@ -3099,7 +3301,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-24T17:19:25+00:00",
+          "completed_at": "2026-10-24T17:48:41+00:00",
+          "duration_seconds": 1756.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39532833594/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -3334,7 +3543,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 3,
+          "started_at": "2026-10-24T20:02:43+00:00",
+          "completed_at": "2026-10-24T20:27:28+00:00",
+          "duration_seconds": 1485.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39532825730/attempts/3"
+        }
       },
       "report_history": [
         {
@@ -3419,7 +3635,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-24T17:37:36+00:00",
+          "completed_at": "2026-10-24T18:08:43+00:00",
+          "duration_seconds": 1867.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39532828639/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -3635,7 +3858,14 @@
         ],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-24T17:49:49+00:00",
+          "completed_at": "2026-10-24T18:37:24+00:00",
+          "duration_seconds": 2855.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39532819562/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -3838,7 +4068,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-24T18:09:55+00:00",
+          "completed_at": "2026-10-24T18:46:51+00:00",
+          "duration_seconds": 2216.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39532695234/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -3923,7 +4160,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-24T18:19:06+00:00",
+          "completed_at": "2026-10-24T18:32:11+00:00",
+          "duration_seconds": 785.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39532813376/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -4008,7 +4252,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 4,
+          "started_at": "2026-10-24T20:49:18+00:00",
+          "completed_at": "2026-10-24T21:31:53+00:00",
+          "duration_seconds": 2555.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/39871498222/attempts/4"
+        }
       },
       "report_history": [
         {
@@ -4072,7 +4323,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-30T21:21:28+00:00",
+          "completed_at": "2026-10-30T21:54:07+00:00",
+          "duration_seconds": 1959.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130426553/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -4138,7 +4396,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-30T21:21:35+00:00",
+          "completed_at": "2026-10-30T22:20:03+00:00",
+          "duration_seconds": 3508.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130444869/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -4204,7 +4469,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-30T21:21:44+00:00",
+          "completed_at": "2026-10-30T22:02:05+00:00",
+          "duration_seconds": 2421.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130462405/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -4295,7 +4567,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-30T21:22:01+00:00",
+          "completed_at": "2026-10-30T22:18:17+00:00",
+          "duration_seconds": 3376.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130499764/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -4361,7 +4640,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-30T21:22:12+00:00",
+          "completed_at": "2026-10-30T22:22:19+00:00",
+          "duration_seconds": 3607.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130517106/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -4452,7 +4738,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-30T21:22:25+00:00",
+          "completed_at": "2026-10-30T22:29:57+00:00",
+          "duration_seconds": 4052.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130552868/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -4543,7 +4836,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-30T21:22:42+00:00",
+          "completed_at": "2026-10-30T22:29:08+00:00",
+          "duration_seconds": 3986.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41130589390/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -4634,7 +4934,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-30T22:49:55+00:00",
+          "completed_at": "2026-10-30T23:02:23+00:00",
+          "duration_seconds": 748.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41140668369/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -4700,7 +5007,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-30T22:50:02+00:00",
+          "completed_at": "2026-10-30T23:39:17+00:00",
+          "duration_seconds": 2955.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41140681353/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -4791,7 +5105,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-30T22:50:21+00:00",
+          "completed_at": "2026-10-30T23:20:30+00:00",
+          "duration_seconds": 1809.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41140710653/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -4882,7 +5203,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-30T22:50:37+00:00",
+          "completed_at": "2026-10-30T23:41:03+00:00",
+          "duration_seconds": 3026.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41140738657/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -4955,7 +5283,14 @@
         ],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-30T22:50:41+00:00",
+          "completed_at": "2026-10-30T23:46:48+00:00",
+          "duration_seconds": 3367.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41140753055/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -5028,7 +5363,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-30T22:50:47+00:00",
+          "completed_at": "2026-10-30T23:18:12+00:00",
+          "duration_seconds": 1645.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41140765965/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -5094,7 +5436,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-30T22:50:56+00:00",
+          "completed_at": "2026-10-30T23:57:34+00:00",
+          "duration_seconds": 3998.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41140780172/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -5160,7 +5509,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-30T23:58:41+00:00",
+          "completed_at": "2026-10-31T00:35:01+00:00",
+          "duration_seconds": 2180.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147568263/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -5226,7 +5582,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-30T23:58:48+00:00",
+          "completed_at": "2026-10-31T00:47:27+00:00",
+          "duration_seconds": 2919.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147579936/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -5292,7 +5655,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-30T23:58:57+00:00",
+          "completed_at": "2026-10-31T00:56:00+00:00",
+          "duration_seconds": 3423.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147591127/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -5358,7 +5728,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-30T23:59:03+00:00",
+          "completed_at": "2026-10-31T00:59:55+00:00",
+          "duration_seconds": 3652.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147600287/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -5437,7 +5814,14 @@
             "patch": "followups/44cc54b0008f895f15aa/2/fix/candidate.patch",
             "patch_sha256": "d08ae3edfba34110882804e021acacc78b551f1bcc1678c0283d2ca2b9b672ed"
           }
-        ]
+        ],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-30T23:59:12+00:00",
+          "completed_at": "2026-10-31T01:00:58+00:00",
+          "duration_seconds": 3706.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147612949/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -5517,7 +5901,14 @@
         ],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-30T23:59:19+00:00",
+          "completed_at": "2026-10-31T00:46:14+00:00",
+          "duration_seconds": 2815.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147623141/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -5603,7 +5994,14 @@
         ],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-30T23:59:27+00:00",
+          "completed_at": "2026-10-31T01:07:12+00:00",
+          "duration_seconds": 4065.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147635725/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -5695,7 +6093,14 @@
             "patch": "followups/50082805df7241feecc6/2/fix/candidate.patch",
             "patch_sha256": "fe9d1121371d8959f0fa9ead9aea675c2f97c688a8263bb191175542c63a5116"
           }
-        ]
+        ],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-30T23:59:35+00:00",
+          "completed_at": "2026-10-31T01:07:43+00:00",
+          "duration_seconds": 4088.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147646230/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -5768,7 +6173,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-30T23:59:44+00:00",
+          "completed_at": "2026-10-31T01:04:36+00:00",
+          "duration_seconds": 3892.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147657427/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -5847,7 +6259,14 @@
         ],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-30T23:59:51+00:00",
+          "completed_at": "2026-10-31T01:06:50+00:00",
+          "duration_seconds": 4019.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41147667730/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -5951,7 +6370,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-31T08:15:28+00:00",
+          "completed_at": "2026-10-31T08:53:26+00:00",
+          "duration_seconds": 2278.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41154883667/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -6017,7 +6443,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-31T08:15:41+00:00",
+          "completed_at": "2026-10-31T09:07:36+00:00",
+          "duration_seconds": 3115.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41154894342/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -6096,7 +6529,14 @@
             "patch": "followups/df8602d41ab2a7520187/1/fix/candidate.patch",
             "patch_sha256": "e21f541ce92de96c08e703861e39d5095002988bd2bb99cc121ea629eb4c3955"
           }
-        ]
+        ],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-31T08:15:52+00:00",
+          "completed_at": "2026-10-31T09:17:45+00:00",
+          "duration_seconds": 3713.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41154906208/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -6169,7 +6609,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-31T08:16:04+00:00",
+          "completed_at": "2026-10-31T09:00:00+00:00",
+          "duration_seconds": 2636.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41154917386/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -6242,7 +6689,14 @@
         ],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-31T08:16:38+00:00",
+          "completed_at": "2026-10-31T09:18:36+00:00",
+          "duration_seconds": 3718.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41154929189/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -6315,7 +6769,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-31T08:16:23+00:00",
+          "completed_at": "2026-10-31T08:56:01+00:00",
+          "duration_seconds": 2378.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41154940198/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -6413,7 +6874,14 @@
         ],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-31T08:16:39+00:00",
+          "completed_at": "2026-10-31T09:07:02+00:00",
+          "duration_seconds": 3023.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41154961120/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -6486,7 +6954,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 2,
+          "started_at": "2026-10-31T08:16:46+00:00",
+          "completed_at": "2026-10-31T09:18:15+00:00",
+          "duration_seconds": 3689.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41154972324/attempts/2"
+        }
       },
       "report_history": [
         {
@@ -6577,7 +7052,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-31T09:21:43+00:00",
+          "completed_at": "2026-10-31T09:34:33+00:00",
+          "duration_seconds": 770.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41188381224/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -6650,7 +7132,14 @@
         ],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-31T09:22:11+00:00",
+          "completed_at": "2026-10-31T10:16:01+00:00",
+          "duration_seconds": 3230.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41188390312/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -6723,7 +7212,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-31T09:21:58+00:00",
+          "completed_at": "2026-10-31T10:03:41+00:00",
+          "duration_seconds": 2503.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41188398944/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -6814,7 +7310,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-31T09:22:13+00:00",
+          "completed_at": "2026-10-31T09:48:38+00:00",
+          "duration_seconds": 1585.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41188417447/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -6930,7 +7433,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-31T09:22:36+00:00",
+          "completed_at": "2026-10-31T10:17:54+00:00",
+          "duration_seconds": 3318.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41188443973/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -7021,7 +7531,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-31T10:29:57+00:00",
+          "completed_at": "2026-10-31T11:09:15+00:00",
+          "duration_seconds": 2358.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41192965442/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -7087,7 +7604,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-31T10:29:54+00:00",
+          "completed_at": "2026-10-31T11:31:14+00:00",
+          "duration_seconds": 3680.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41192974068/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -7153,7 +7677,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-31T10:30:02+00:00",
+          "completed_at": "2026-10-31T11:30:47+00:00",
+          "duration_seconds": 3645.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41192982693/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -7219,7 +7750,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-31T10:30:16+00:00",
+          "completed_at": "2026-10-31T11:27:42+00:00",
+          "duration_seconds": 3446.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41192992185/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -7285,7 +7823,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-31T10:30:17+00:00",
+          "completed_at": "2026-10-31T10:49:11+00:00",
+          "duration_seconds": 1134.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41193002385/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -7351,7 +7896,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-31T10:30:26+00:00",
+          "completed_at": "2026-10-31T11:15:51+00:00",
+          "duration_seconds": 2725.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41193011823/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -7417,7 +7969,14 @@
         "refutations": [],
         "checked_fixes": 0,
         "fix_unknown": 0,
-        "checked_fix_findings": []
+        "checked_fix_findings": [],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-31T10:30:33+00:00",
+          "completed_at": "2026-10-31T11:08:10+00:00",
+          "duration_seconds": 2257.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41193021858/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -7496,7 +8055,14 @@
             "patch": "followups/26641acd898b27391c85/1/fix/candidate.patch",
             "patch_sha256": "bf750df5d6640e99404cc7d3d52b7c218b0b922179219c08984187a2c6198e27"
           }
-        ]
+        ],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-31T10:30:41+00:00",
+          "completed_at": "2026-10-31T11:36:36+00:00",
+          "duration_seconds": 3955.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41193032502/attempts/1"
+        }
       },
       "report_history": [
         {
@@ -7582,7 +8148,14 @@
             "patch": "followups/e959b3ba89a667edc3a1/1/fix/candidate.patch",
             "patch_sha256": "1d2751aa1a8023d0e8c4856a8483bd571f8abe85d1e2af179049cb94b8383574"
           }
-        ]
+        ],
+        "workflow_timing": {
+          "attempt": 1,
+          "started_at": "2026-10-31T10:30:48+00:00",
+          "completed_at": "2026-10-31T11:40:04+00:00",
+          "duration_seconds": 4156.0,
+          "url": "https://github.com/shuvendu-lahiri/litebox/actions/runs/41193041602/attempts/1"
+        }
       },
       "report_history": [
         {
