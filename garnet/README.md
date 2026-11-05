@@ -1,15 +1,15 @@
-# Garnet NFV audit dashboard
+# Garnet NFV formal audit dashboard
 
 **Main source languages:** C#.
 
 Published results from the prototype [Neuro-Formal Verification](https://arxiv.org/abs/2608.21516) reviewer.
-**Refutations are conditional MODEL refutations, not confirmed source bugs. Verification concerns translated models under stated assumptions; failure to refute is not evidence of correctness.**
+Both verification and refutation are based on **machine-checked proofs** over translated models under their stated assumptions. Agents act as **translators, not proof reasoners**: they translate source and intent into formal models; formal verifiers establish the outcomes. Refutations are model results, not confirmed source bugs. Failure to refute is not evidence of correctness.
 
 **[Live interactive dashboard](https://shuvendu-lahiri.github.io/nfv_dashboard/garnet/)** / [all repositories](https://shuvendu-lahiri.github.io/nfv_dashboard/) or [download the standalone HTML](index.html) (no server or external dependencies).
 
 Snapshot: 2026-11-01T21:20:57.206822+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
 
-**78 PRs attempted; 78 workflow attempts; 44 published reports; 5 PRs with 6 conditional refutations; 88 model verifications; 34 PRs without a published report.**
+**78 PRs attempted; 78 workflow attempts; 44 published reports; 5 PRs with 6 refutations; 88 model verifications; 34 PRs without a published report.**
 
 **2 / 6 refutations with a verified fix across 2 PRs; 0 refutations with unknown fix evidence.** A verified fix means native checked repair of the complete translated property plus a hash-bound candidate source patch, not proof of source correctness. Simplifications do not count.
 

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="referrer" content="no-referrer">
 <link rel="canonical" href="https://shuvendu-lahiri.github.io/nfv_dashboard/z3/">
-<title>NFV Audit Dashboard</title>
+<title>NFV Formal Audit Dashboard</title>
 <style>
 :root { color-scheme: light; --ink:#243044; --muted:#596675; --line:#d8d4c9; --red:#a52020; --green:#146343; }
 * { box-sizing:border-box; }
@@ -64,12 +64,13 @@ footer { margin-top:20px; color:var(--muted); font-size:13px; }
 <noscript>This interactive dashboard requires JavaScript. Read the <a href="https://github.com/shuvendu-lahiri/nfv_dashboard/blob/nfv-reports/README.md">Markdown dashboard index</a> instead.</noscript>
 <header>
 <nav aria-label="Dashboards"><a href="../">All repositories</a> &middot; <a href="../z3/">Z3</a> &middot; <a href="../litebox/">LiteBox</a> &middot; <a href="../nvx/">NVX</a> &middot; <a href="../gh-aw/">gh-aw</a> &middot; <a href="../garnet/">Garnet</a></nav>
-<h1 id="dashboard-title">Neuro-Formal Verification Audit Dashboard</h1>
+<h1 id="dashboard-title">Neuro-Formal Verification Formal Audit Dashboard</h1>
 <a id="repository"></a>
 <p id="languages"></p>
 <p>Published results from the prototype <a href="https://arxiv.org/abs/2608.21516">NFV reviewer</a>.
-Refuted means a <strong>conditional MODEL refutation, not a confirmed source bug</strong>.
-Verification concerns a translated model under its assumptions. Failure to refute is not evidence of correctness.</p>
+Both verification and refutation are based on <strong>machine-checked proofs</strong> over translated models under their stated assumptions.
+Agents act as <strong>translators, not proof reasoners</strong>: they translate source and intent into formal models; formal verifiers establish the outcomes.
+Refutations are model results, not confirmed source bugs. Failure to refute is not evidence of correctness.</p>
 </header>
 <section class="panel" aria-label="Project property outcomes">
 <h2>Property outcomes</h2>
@@ -95,7 +96,7 @@ Verification concerns a translated model under its assumptions. Failure to refut
 <section class="stats" aria-label="Snapshot totals">
 <div class="stat"><strong id="attempted"></strong>PRs attempted</div>
 <div class="stat"><strong id="published"></strong>Published reports</div>
-<div class="stat"><strong id="refuted" class="red"></strong>Conditional refutations</div>
+<div class="stat"><strong id="refuted" class="red"></strong>Refutations</div>
 <div class="stat"><strong id="verified" class="green"></strong>Model verifications</div>
 <div class="stat"><strong id="exhausted"></strong>Resources exhausted</div>
 <div class="stat"><strong id="failed"></strong>Type-check / audit failures</div>
@@ -104,7 +105,7 @@ Verification concerns a translated model under its assumptions. Failure to refut
 <section class="panel">
 <div class="controls">
 <label>Search PR or title<input id="query" type="search" placeholder="PR number, title, property..."></label>
-<label>Show<select id="filter"><option value="all">All attempted PRs</option><option value="refuted">With conditional refutations</option><option value="published">With published reports</option><option value="missing">Without published reports</option></select></label>
+<label>Show<select id="filter"><option value="all">All attempted PRs</option><option value="refuted">With refutations</option><option value="published">With published reports</option><option value="missing">Without published reports</option></select></label>
 <label>Order<select id="order"><option value="refuted">Refutations first</option><option value="date">Newest report first</option><option value="number">PR number</option></select></label>
 </div>
 <p id="meta" class="muted"></p>
@@ -145,8 +146,8 @@ const link = (label, url) => {
   return element;
 };
 const nRefuted = entry => entry.latest_report ? entry.latest_report.counts.refuted : 0;
-document.title = `${data.label} - NFV Audit Dashboard`;
-byId("dashboard-title").textContent = `${data.label} - Neuro-Formal Verification Audit Dashboard`;
+document.title = `${data.label} - NFV Formal Audit Dashboard`;
+byId("dashboard-title").textContent = `${data.label} - Neuro-Formal Verification Formal Audit Dashboard`;
 byId("repository").textContent = data.repository;
 byId("repository").href = `https://github.com/${data.repository}`;
 byId("languages").textContent = `Main source languages: ${data.languages.join(", ")}`;
@@ -158,7 +159,7 @@ byId("verified").textContent = data.summary.outcomes.verified;
 byId("exhausted").textContent = data.summary.outcomes["resources exhausted"];
 byId("failed").textContent = data.summary.outcomes["type-check/audit failure"];
 byId("missing").textContent = data.summary.without_report;
-byId("snapshot").textContent = `Snapshot: ${data.generated_at}. ${data.summary.attempted_prs} PRs across ${data.summary.workflow_attempts} workflow attempts; ${data.summary.properties} properties in published reports; ${data.summary.refuted_prs} PRs with conditional refutations.`;
+byId("snapshot").textContent = `Snapshot: ${data.generated_at}. ${data.summary.attempted_prs} PRs across ${data.summary.workflow_attempts} workflow attempts; ${data.summary.properties} properties in published reports; ${data.summary.refuted_prs} PRs with refutations.`;
 function render() {
   const query = byId("query").value.toLowerCase();
   const filter = byId("filter").value;
@@ -188,7 +189,7 @@ function render() {
     const title = text("td", entry.title, "title");
     if (nRefuted(entry)) {
       const details = document.createElement("details");
-      details.append(text("summary", `${nRefuted(entry)} conditional model refutation(s)`));
+      details.append(text("summary", `${nRefuted(entry)} refutation(s)`));
       for (const finding of report.refutations) {
         details.append(text("p", `${finding.property_id}: ${finding.property}`));
         if (finding.input) details.append(text("p", `Input on which it fails: ${finding.input}`));

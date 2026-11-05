@@ -1,15 +1,15 @@
-# LiteBox NFV audit dashboard
+# LiteBox NFV formal audit dashboard
 
 **Main source languages:** Rust, C.
 
 Published results from the prototype [Neuro-Formal Verification](https://arxiv.org/abs/2608.21516) reviewer.
-**Refutations are conditional MODEL refutations, not confirmed source bugs. Verification concerns translated models under stated assumptions; failure to refute is not evidence of correctness.**
+Both verification and refutation are based on **machine-checked proofs** over translated models under their stated assumptions. Agents act as **translators, not proof reasoners**: they translate source and intent into formal models; formal verifiers establish the outcomes. Refutations are model results, not confirmed source bugs. Failure to refute is not evidence of correctness.
 
 **[Live interactive dashboard](https://shuvendu-lahiri.github.io/nfv_dashboard/litebox/)** / [all repositories](https://shuvendu-lahiri.github.io/nfv_dashboard/) or [download the standalone HTML](index.html) (no server or external dependencies).
 
 Snapshot: 2026-10-31T11:58:47.222323+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
 
-**104 PRs attempted; 175 workflow attempts; 90 published reports; 23 PRs with 28 conditional refutations; 516 model verifications; 14 PRs without a published report.**
+**104 PRs attempted; 175 workflow attempts; 90 published reports; 23 PRs with 28 refutations; 516 model verifications; 14 PRs without a published report.**
 
 **11 / 28 refutations with a verified fix across 10 PRs; 0 refutations with unknown fix evidence.** A verified fix means native checked repair of the complete translated property plus a hash-bound candidate source patch, not proof of source correctness. Simplifications do not count.
 

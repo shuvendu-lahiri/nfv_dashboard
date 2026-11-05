@@ -601,18 +601,21 @@ def render_markdown(data):
     total = data["summary"]
     repository = data["repository"]
     lines = [
-        f"# {data['label']} NFV audit dashboard", "",
+        f"# {data['label']} NFV formal audit dashboard", "",
         f"**Main source languages:** {', '.join(data['languages'])}.", "",
         "Published results from the prototype [Neuro-Formal Verification](https://arxiv.org/abs/2608.21516) reviewer.",
-        "**Refutations are conditional MODEL refutations, not confirmed source bugs. Verification concerns "
-        "translated models under stated assumptions; failure to refute is not evidence of correctness.**", "",
+        "Both verification and refutation are based on **machine-checked proofs** over translated models "
+        "under their stated assumptions. Agents act as **translators, not proof reasoners**: they translate "
+        "source and intent into formal models; formal verifiers establish the outcomes. "
+        "Refutations are model results, not confirmed source bugs. "
+        "Failure to refute is not evidence of correctness.", "",
         f"**[Live interactive dashboard]({SITE}{data['name']}/)** / [all repositories](" + SITE + ") "
         "or [download the standalone HTML](index.html) (no server or external dependencies).", "",
         f"Snapshot: {data['generated_at']}. Latest published report per PR supplies the counts; all report links are retained "
         "in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.", "",
         f"**{total['attempted_prs']} PRs attempted; {total['workflow_attempts']} workflow attempts; "
         f"{total['published_reports']} published reports; "
-        f"{total['refuted_prs']} PRs with {total['outcomes']['refuted']} conditional refutations; "
+        f"{total['refuted_prs']} PRs with {total['outcomes']['refuted']} refutations; "
         f"{total['outcomes']['verified']} model verifications; {total['without_report']} PRs without a published report.**", "",
         f"**{total['checked_fixes']} / {total['outcomes']['refuted']} refutations with a verified fix "
         f"across {total['checked_fix_prs']} PRs; {total['fix_unknown']} refutations with unknown fix evidence.** "

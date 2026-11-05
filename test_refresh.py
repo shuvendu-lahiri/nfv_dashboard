@@ -269,7 +269,7 @@ class RefreshTests(unittest.TestCase):
         self.assertEqual(1, combined["summary"]["outcomes"]["refuted"])
         rendered = refresh.render_html(combined, "hub.html")
         self.assertNotIn("innerHTML", rendered)
-        self.assertIn("Conditional MODEL refutations", rendered)
+        self.assertIn("Refutations are model results, not confirmed source bugs.", rendered)
         self.assertEqual(1, rendered.count("<strong>100.0%</strong>"))
         self.assertIn('<tr data-repository="litebox">', rendered)
         self.assertNotIn('<template id="outcome-tracker-', rendered)

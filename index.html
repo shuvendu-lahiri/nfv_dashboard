@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="referrer" content="no-referrer">
 <link rel="canonical" href="https://shuvendu-lahiri.github.io/nfv_dashboard/">
-<title>NFV audit dashboards</title>
+<title>NFV Formal Audit Dashboards</title>
 <style>
 :root { color-scheme:light; --ink:#243044; --muted:#596675; --line:#d8d4c9; --red:#a52020; --green:#146343; }
 * { box-sizing:border-box; }
@@ -57,10 +57,11 @@ footer { margin-top:22px; color:var(--muted); font-size:14px; overflow-wrap:anyw
 <main>
 <header>
 <a href="https://arxiv.org/abs/2608.21516">Neuro-Formal Verification</a>
-<h1>NFV audit dashboards</h1>
+<h1>NFV Formal Audit Dashboards</h1>
 <p>Published results from the prototype NFV reviewer. Select a repository for PRs, property outcomes and evidence.</p>
-<p><strong>Conditional MODEL refutations are not confirmed source bugs.</strong>
-Verification concerns translated models under their stated assumptions; failure to refute is not evidence of correctness.</p>
+<p>Both verification and refutation are based on <strong>machine-checked proofs</strong> over translated models under their stated assumptions.
+Agents act as <strong>translators, not proof reasoners</strong>: they translate source and intent into formal models; formal verifiers establish the outcomes.
+Refutations are model results, not confirmed source bugs. Failure to refute is not evidence of correctness.</p>
 </header>
 <section class="totals" aria-labelledby="overall-heading">
 <h2 id="overall-heading">Overall results</h2>

@@ -1,15 +1,15 @@
-# NVX NFV audit dashboard
+# NVX NFV formal audit dashboard
 
 **Main source languages:** Rust, Python.
 
 Published results from the prototype [Neuro-Formal Verification](https://arxiv.org/abs/2608.21516) reviewer.
-**Refutations are conditional MODEL refutations, not confirmed source bugs. Verification concerns translated models under stated assumptions; failure to refute is not evidence of correctness.**
+Both verification and refutation are based on **machine-checked proofs** over translated models under their stated assumptions. Agents act as **translators, not proof reasoners**: they translate source and intent into formal models; formal verifiers establish the outcomes. Refutations are model results, not confirmed source bugs. Failure to refute is not evidence of correctness.
 
 **[Live interactive dashboard](https://shuvendu-lahiri.github.io/nfv_dashboard/nvx/)** / [all repositories](https://shuvendu-lahiri.github.io/nfv_dashboard/) or [download the standalone HTML](index.html) (no server or external dependencies).
 
 Snapshot: 2026-10-30T04:24:40.608973+00:00. Latest published report per PR supplies the counts; all report links are retained in [data.json](data.json). Workflow attempts without a published report are not counted as zero findings.
 
-**50 PRs attempted; 124 workflow attempts; 45 published reports; 10 PRs with 14 conditional refutations; 201 model verifications; 5 PRs without a published report.**
+**50 PRs attempted; 124 workflow attempts; 45 published reports; 10 PRs with 14 refutations; 201 model verifications; 5 PRs without a published report.**
 
 **6 / 14 refutations with a verified fix across 6 PRs; 0 refutations with unknown fix evidence.** A verified fix means native checked repair of the complete translated property plus a hash-bound candidate source patch, not proof of source correctness. Simplifications do not count.
 

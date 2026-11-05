@@ -1,9 +1,9 @@
-# NFV audit dashboards
+# NFV Formal Audit Dashboards
 
 **[Open the dashboard hub](https://shuvendu-lahiri.github.io/nfv_dashboard/)**
 
 The hub has one row per repository, with languages, published/attempted PRs,
-properties, conditional model refutations, verified model fixes, model
+properties, refutations, verified model fixes, model
 verifications, average review AIC and average workflow time. Measurement coverage
 appears beside the averages, with weighted totals in the final row. Select a
 repository name for its detailed PR dashboard, outcomes, campaign state and
@@ -35,9 +35,12 @@ mappings are labeled rather than guessed. These links do not make public replays
 private or remove earlier upstream references.
 
 Published results from the prototype [Neuro-Formal Verification
-reviewer](https://arxiv.org/abs/2608.21516). Refutations are **conditional MODEL
-refutations, not confirmed source bugs**. Verification concerns translated models
-under their stated assumptions; failure to refute is not evidence of correctness.
+reviewer](https://arxiv.org/abs/2608.21516). Both verification and refutation are
+based on **machine-checked proofs** over translated models under their stated
+assumptions. Agents act as **translators, not proof reasoners**: they translate
+source and intent into formal models; formal verifiers establish the outcomes.
+Refutations are model results, not confirmed source bugs. Failure to refute is
+not evidence of correctness.
 
 Latest published reports supply the counts. Earlier reports remain in each
 repository's `data.json`. Failed or missing publication is shown explicitly, not
